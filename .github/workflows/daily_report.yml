@@ -1,0 +1,67 @@
+name: Daily AI/IT Stock News Report
+
+on:
+  schedule:
+    # 毎日 JST 6:00 (UTC 21:00) に実行
+    - cron: '0 21 * * *'
+  workflow_dispatch:  # 手動実行も可能
+
+jobs:
+  daily-report:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Fetch news data
+        run: |
+          python scripts/fetch_data.py
+        env:
+          TDNET_RSS_URL: ${{ secrets.TDNET_RSS_URL }}
+
+      - name: Analyze and generate report
+        run: |
+          python scripts/analyze_report.py
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+
+      - name: Send report to Discord
+        if: success()
+        uses: tsickert/discord-webhook@v6.0.0
+        with:
+          webhook-url: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          embed-title: "📊 AI/IT株式投資 日次レポート"
+          embed-description: "過去24時間のAI/IT関連ニュースを分析しました"
+          embed-color: 3066993
+          embed-timestamp: true
+          filename: output/daily_report.md
+
+      - name: Upload report as artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: daily-report-${{ github.run_number }}
+          path: |
+            output/articles.json
+            output/daily_report.md
+          retention-days: 30
+
+      - name: Notify on failure
+        if: failure()
+        uses: tsickert/discord-webhook@v6.0.0
+        with:
+          webhook-url: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          embed-title: "⚠️ 日次レポート生成エラー"
+          embed-description: "日次レポートの生成中にエラーが発生しました。GitHub Actionsのログを確認してください。"
+          embed-color: 15158332

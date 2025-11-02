@@ -1,0 +1,67 @@
+name: Weekly Portfolio Action Plan
+
+on:
+  schedule:
+    # 毎週金曜日 JST 20:00 (UTC 11:00) に実行
+    - cron: '0 11 * * 5'
+  workflow_dispatch:  # 手動実行も可能
+
+jobs:
+  weekly-action:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Update portfolio evaluation
+        run: |
+          python scripts/update_portfolio.py
+        env:
+          STOCK_API_KEY: ${{ secrets.STOCK_API_KEY }}
+
+      - name: Generate action plan
+        run: |
+          python scripts/generate_action.py
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+
+      - name: Send action report to Discord
+        if: success()
+        uses: tsickert/discord-webhook@v6.0.0
+        with:
+          webhook-url: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          embed-title: "💰 AI/IT株式投資 週次アクションレポート"
+          embed-description: "今週の推奨売買アクションと定期買い付けリマインド"
+          embed-color: 15844367
+          embed-timestamp: true
+          filename: output/weekly_action_report.md
+
+      - name: Upload reports as artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: weekly-action-${{ github.run_number }}
+          path: |
+            output/portfolio_summary.csv
+            output/weekly_action_report.md
+          retention-days: 90
+
+      - name: Notify on failure
+        if: failure()
+        uses: tsickert/discord-webhook@v6.0.0
+        with:
+          webhook-url: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          embed-title: "⚠️ 週次アクションレポート生成エラー"
+          embed-description: "週次レポートの生成中にエラーが発生しました。GitHub Actionsのログを確認してください。"
+          embed-color: 15158332
