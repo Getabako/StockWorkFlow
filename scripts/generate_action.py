@@ -142,7 +142,7 @@ def create_action_prompt(portfolio_df: pd.DataFrame) -> str:
     return prompt
 
 
-def generate_action_with_gemini(prompt: str, model_name: str = "gemini-1.5-flash-latest") -> str:
+def generate_action_with_gemini(prompt: str, model_name: str = "gemini-2.5-flash") -> str:
     """
     Gemini APIを使用してアクション提案を生成します。
 
