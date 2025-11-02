@@ -110,7 +110,7 @@ def create_analysis_prompt(articles: list) -> str:
     return prompt
 
 
-def analyze_with_gemini(prompt: str, model_name: str = "gemini-1.5-flash") -> str:
+def analyze_with_gemini(prompt: str, model_name: str = "gemini-1.5-flash-latest") -> str:
     """
     Gemini APIを使用してテキストを分析します。
 
