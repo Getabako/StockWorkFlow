@@ -38,14 +38,12 @@ jobs:
 
       - name: Send report to Discord
         if: success()
-        uses: tsickert/discord-webhook@v6.0.0
-        with:
-          webhook-url: ${{ secrets.DISCORD_WEBHOOK_URL }}
-          embed-title: "📊 AI/IT株式投資 日次レポート"
-          embed-description: "過去24時間のAI/IT関連ニュースを分析しました"
-          embed-color: 3066993
-          embed-timestamp: true
-          filename: output/daily_report.md
+        run: |
+          TIMESTAMP=$(date -u +"%Y-%m-%dT%H:%M:%S.000Z")
+          curl -H "Content-Type: multipart/form-data" \
+               -F "payload_json={\"embeds\":[{\"title\":\"📊 AI/IT株式投資 日次レポート\",\"description\":\"過去24時間のAI/IT関連ニュースを分析しました\",\"color\":3066993,\"timestamp\":\"$TIMESTAMP\"}]}" \
+               -F "file=@output/daily_report.md" \
+               "${{ secrets.DISCORD_WEBHOOK_URL }}"
 
       - name: Upload report as artifact
         if: always()
@@ -59,9 +57,8 @@ jobs:
 
       - name: Notify on failure
         if: failure()
-        uses: tsickert/discord-webhook@v6.0.0
-        with:
-          webhook-url: ${{ secrets.DISCORD_WEBHOOK_URL }}
-          embed-title: "⚠️ 日次レポート生成エラー"
-          embed-description: "日次レポートの生成中にエラーが発生しました。GitHub Actionsのログを確認してください。"
-          embed-color: 15158332
+        run: |
+          TIMESTAMP=$(date -u +"%Y-%m-%dT%H:%M:%S.000Z")
+          curl -H "Content-Type: application/json" \
+               -d "{\"embeds\":[{\"title\":\"⚠️ 日次レポート生成エラー\",\"description\":\"日次レポートの生成中にエラーが発生しました。GitHub Actionsのログを確認してください。\",\"color\":15158332,\"timestamp\":\"$TIMESTAMP\"}]}" \
+               "${{ secrets.DISCORD_WEBHOOK_URL }}"
