@@ -39,11 +39,11 @@ jobs:
       - name: Send action report to Discord
         if: success()
         run: |
-          TIMESTAMP=$(date -u +"%Y-%m-%dT%H:%M:%S.000Z")
-          curl -H "Content-Type: multipart/form-data" \
-               -F "payload_json={\"embeds\":[{\"title\":\"💰 AI/IT株式投資 週次アクションレポート\",\"description\":\"今週の推奨売買アクションと定期買い付けリマインド\",\"color\":15844367,\"timestamp\":\"$TIMESTAMP\"}]}" \
-               -F "file=@output/weekly_action_report.md" \
-               "${{ secrets.DISCORD_WEBHOOK_URL }}"
+          python scripts/send_to_discord.py \
+            "${{ secrets.DISCORD_WEBHOOK_URL }}" \
+            "💰 AI/IT株式投資 週次アクションレポート" \
+            "output/weekly_action_report.md" \
+            "15844367"
 
       - name: Upload reports as artifact
         if: always()
@@ -58,7 +58,15 @@ jobs:
       - name: Notify on failure
         if: failure()
         run: |
-          TIMESTAMP=$(date -u +"%Y-%m-%dT%H:%M:%S.000Z")
-          curl -H "Content-Type: application/json" \
-               -d "{\"embeds\":[{\"title\":\"⚠️ 週次アクションレポート生成エラー\",\"description\":\"週次レポートの生成中にエラーが発生しました。GitHub Actionsのログを確認してください。\",\"color\":15158332,\"timestamp\":\"$TIMESTAMP\"}]}" \
-               "${{ secrets.DISCORD_WEBHOOK_URL }}"
+          python -c "
+          import requests, json
+          from datetime import datetime
+          requests.post('${{ secrets.DISCORD_WEBHOOK_URL }}', json={
+            'embeds': [{
+              'title': '⚠️ 週次アクションレポート生成エラー',
+              'description': '週次レポートの生成中にエラーが発生しました。GitHub Actionsのログを確認してください。',
+              'color': 15158332,
+              'timestamp': datetime.utcnow().isoformat()
+            }]
+          })
+          "
