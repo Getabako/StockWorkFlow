@@ -41,6 +41,22 @@ jobs:
         run: |
           python scripts/convert_report_to_html.py output/weekly_action_report.md
 
+      - name: Copy HTML report to report directory
+        if: success()
+        run: |
+          mkdir -p report
+          cp output/weekly_action_report.html report/weekly_action_report.html
+          echo "✓ HTML report copied to report/"
+
+      - name: Commit and push HTML report
+        if: success()
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add report/weekly_action_report.html
+          git diff --staged --quiet || git commit -m "Update weekly action report HTML (automated)"
+          git push
+
       - name: Send action report to Discord
         if: success()
         run: |

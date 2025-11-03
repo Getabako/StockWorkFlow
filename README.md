@@ -75,9 +75,17 @@ MSFT,Microsoft Corporation,15,350.00
    - `Daily AI/IT Stock News Report` を選択 → `Run workflow`
    - `Weekly Portfolio Action Plan` を選択 → `Run workflow`
 
-### 5. レポートのダウンロード
+### 5. レポートの閲覧・ダウンロード
 
-**GitHub Actionsの成果物からダウンロード：**
+**方法1: GitHubリポジトリから最新のHTMLレポートを閲覧**
+
+最新のHTMLレポートは `report/` ディレクトリに自動保存されます：
+- [report/daily_report.html](report/daily_report.html) - 最新の日次レポート
+- [report/weekly_action_report.html](report/weekly_action_report.html) - 最新の週次レポート
+
+ファイルをクリックして「Raw」ボタンからダウンロード後、ブラウザで開いてください。
+
+**方法2: GitHub Actionsの成果物からダウンロード（PDF含む）**
 
 1. `Actions` タブを開く
 2. 実行されたワークフローを選択
