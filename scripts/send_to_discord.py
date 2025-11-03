@@ -183,6 +183,28 @@ def create_discord_embed(title: str, sections: dict, color: int) -> dict:
     return embed
 
 
+def get_mime_type(file_path: str) -> str:
+    """
+    ファイル拡張子からMIMEタイプを取得します。
+
+    Args:
+        file_path: ファイルパス
+
+    Returns:
+        MIMEタイプ
+    """
+    extension = os.path.splitext(file_path)[1].lower()
+    mime_types = {
+        '.md': 'text/markdown',
+        '.pdf': 'application/pdf',
+        '.html': 'text/html',
+        '.txt': 'text/plain',
+        '.json': 'application/json',
+        '.csv': 'text/csv'
+    }
+    return mime_types.get(extension, 'application/octet-stream')
+
+
 def send_to_discord(webhook_url: str, embed: dict, file_path: str = None):
     """
     Discordにメッセージを送信します。
@@ -198,9 +220,12 @@ def send_to_discord(webhook_url: str, embed: dict, file_path: str = None):
 
     if file_path and os.path.exists(file_path):
         # ファイル添付あり
+        mime_type = get_mime_type(file_path)
+        print(f"Attaching file: {os.path.basename(file_path)} ({mime_type})")
+
         with open(file_path, 'rb') as f:
             files = {
-                'file': (os.path.basename(file_path), f, 'text/markdown')
+                'file': (os.path.basename(file_path), f, mime_type)
             }
             data = {
                 'payload_json': json.dumps(payload)
@@ -225,16 +250,23 @@ def send_to_discord(webhook_url: str, embed: dict, file_path: str = None):
 def main():
     """メイン処理"""
     if len(sys.argv) < 4:
-        print("Usage: python send_to_discord.py <webhook_url> <title> <report_file> [color]")
+        print("Usage: python send_to_discord.py <webhook_url> <title> <report_file> [color] [attachment_file]")
+        print("  report_file: Markdownファイル（プレビュー生成用）")
+        print("  attachment_file: 添付ファイル（省略時はreport_fileを使用）")
         sys.exit(1)
 
     webhook_url = sys.argv[1]
     title = sys.argv[2]
     report_file = sys.argv[3]
     color = int(sys.argv[4]) if len(sys.argv) > 4 else 3066993
+    attachment_file = sys.argv[5] if len(sys.argv) > 5 else report_file
 
     if not os.path.exists(report_file):
         print(f"✗ Report file not found: {report_file}")
+        sys.exit(1)
+
+    if not os.path.exists(attachment_file):
+        print(f"✗ Attachment file not found: {attachment_file}")
         sys.exit(1)
 
     print(f"Parsing report: {report_file}")
@@ -244,7 +276,7 @@ def main():
     embed = create_discord_embed(title, sections, color)
 
     print(f"Sending to Discord...")
-    send_to_discord(webhook_url, embed, report_file)
+    send_to_discord(webhook_url, embed, attachment_file)
 
 
 if __name__ == "__main__":

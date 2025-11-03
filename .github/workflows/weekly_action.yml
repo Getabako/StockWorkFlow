@@ -64,7 +64,8 @@ jobs:
             "${{ secrets.DISCORD_WEBHOOK_URL }}" \
             "💰 AI/IT株式投資 週次アクションレポート" \
             "output/weekly_action_report.md" \
-            "15844367"
+            "15844367" \
+            "output/weekly_action_report.pdf"
 
       - name: Upload reports as artifact
         if: always()
