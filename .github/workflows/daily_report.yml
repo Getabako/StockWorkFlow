@@ -41,25 +41,34 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
 
+      - name: Set date variable
+        if: success()
+        run: |
+          echo "REPORT_DATE=$(date +'%Y_%m_%d')" >> $GITHUB_ENV
+          echo "Report date: $(date +'%Y_%m_%d')"
+
       - name: Convert report to HTML/PDF
         if: success()
         run: |
-          python scripts/convert_report_to_html.py output/daily_report.md
+          python scripts/convert_report_to_html.py output/daily_report.md output/
+          mv output/daily_report.html output/daily_report_${{ env.REPORT_DATE }}.html
+          mv output/daily_report.pdf output/daily_report_${{ env.REPORT_DATE }}.pdf
+          echo "✓ Renamed to daily_report_${{ env.REPORT_DATE }}.html/pdf"
 
       - name: Copy HTML report to report directory
         if: success()
         run: |
           mkdir -p report
-          cp output/daily_report.html report/daily_report.html
-          echo "✓ HTML report copied to report/"
+          cp output/daily_report_${{ env.REPORT_DATE }}.html report/daily_report_${{ env.REPORT_DATE }}.html
+          echo "✓ HTML report copied to report/daily_report_${{ env.REPORT_DATE }}.html"
 
       - name: Commit and push HTML report
         if: success()
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add report/daily_report.html
-          git diff --staged --quiet || git commit -m "Update daily report HTML (automated)"
+          git add report/daily_report_${{ env.REPORT_DATE }}.html
+          git diff --staged --quiet || git commit -m "Add daily report HTML for ${{ env.REPORT_DATE }} (automated)"
           git push origin main
 
       - name: Send report to Discord
@@ -67,21 +76,21 @@ jobs:
         run: |
           python scripts/send_to_discord.py \
             "${{ secrets.DISCORD_WEBHOOK_URL }}" \
-            "📊 AI/IT株式投資 日次レポート" \
+            "📊 AI/IT株式投資 日次レポート (${{ env.REPORT_DATE }})" \
             "output/daily_report.md" \
             "3066993" \
-            "output/daily_report.pdf"
+            "output/daily_report_${{ env.REPORT_DATE }}.pdf"
 
       - name: Upload report as artifact
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: daily-report-${{ github.run_number }}
+          name: daily-report-${{ env.REPORT_DATE }}
           path: |
             output/articles.json
             output/daily_report.md
-            output/daily_report.html
-            output/daily_report.pdf
+            output/daily_report_${{ env.REPORT_DATE }}.html
+            output/daily_report_${{ env.REPORT_DATE }}.pdf
           retention-days: 30
 
       - name: Notify on failure
