@@ -36,6 +36,11 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
 
+      - name: Convert report to HTML/PDF
+        if: success()
+        run: |
+          python scripts/convert_report_to_html.py output/weekly_action_report.md
+
       - name: Send action report to Discord
         if: success()
         run: |
@@ -53,6 +58,8 @@ jobs:
           path: |
             output/portfolio_summary.csv
             output/weekly_action_report.md
+            output/weekly_action_report.html
+            output/weekly_action_report.pdf
           retention-days: 90
 
       - name: Notify on failure
