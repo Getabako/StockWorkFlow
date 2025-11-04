@@ -114,20 +114,20 @@ def get_html_template() -> str:
         }}
 
         h1 {{
-            color: var(--primary-color);
+            color: #1e3a8a;
             font-size: 2.2em;
             margin: 30px 0 20px 0;
             padding-bottom: 15px;
-            border-bottom: 3px solid var(--primary-color);
+            border-bottom: 3px solid #1e3a8a;
             font-weight: 700;
         }}
 
         h2 {{
-            color: var(--secondary-color);
+            color: #0c4a6e;
             font-size: 1.8em;
             margin: 35px 0 20px 0;
             padding-left: 15px;
-            border-left: 5px solid var(--secondary-color);
+            border-left: 5px solid #0c4a6e;
             font-weight: 600;
         }}
 
