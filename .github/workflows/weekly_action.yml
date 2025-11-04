@@ -41,25 +41,34 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
 
+      - name: Set date variable
+        if: success()
+        run: |
+          echo "REPORT_DATE=$(date +'%Y_%m_%d')" >> $GITHUB_ENV
+          echo "Report date: $(date +'%Y_%m_%d')"
+
       - name: Convert report to HTML/PDF
         if: success()
         run: |
-          python scripts/convert_report_to_html.py output/weekly_action_report.md
+          python scripts/convert_report_to_html.py output/weekly_action_report.md output/
+          mv output/weekly_action_report.html output/weekly_action_report_${{ env.REPORT_DATE }}.html
+          mv output/weekly_action_report.pdf output/weekly_action_report_${{ env.REPORT_DATE }}.pdf
+          echo "✓ Renamed to weekly_action_report_${{ env.REPORT_DATE }}.html/pdf"
 
       - name: Copy HTML report to report directory
         if: success()
         run: |
-          mkdir -p report
-          cp output/weekly_action_report.html report/weekly_action_report.html
-          echo "✓ HTML report copied to report/"
+          mkdir -p report/weekly
+          cp output/weekly_action_report_${{ env.REPORT_DATE }}.html report/weekly/weekly_action_report_${{ env.REPORT_DATE }}.html
+          echo "✓ HTML report copied to report/weekly/weekly_action_report_${{ env.REPORT_DATE }}.html"
 
       - name: Commit and push HTML report
         if: success()
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add report/weekly_action_report.html
-          git diff --staged --quiet || git commit -m "Update weekly action report HTML (automated)"
+          git add report/weekly/weekly_action_report_${{ env.REPORT_DATE }}.html
+          git diff --staged --quiet || git commit -m "Add weekly action report HTML for ${{ env.REPORT_DATE }} (automated)"
           git push origin main
 
       - name: Send action report to Discord
@@ -67,21 +76,21 @@ jobs:
         run: |
           python scripts/send_to_discord.py \
             "${{ secrets.DISCORD_WEBHOOK_URL }}" \
-            "💰 AI/IT株式投資 週次アクションレポート" \
+            "💰 AI/IT株式投資 週次アクションレポート (${{ env.REPORT_DATE }})" \
             "output/weekly_action_report.md" \
             "15844367" \
-            "output/weekly_action_report.pdf"
+            "output/weekly_action_report_${{ env.REPORT_DATE }}.pdf"
 
       - name: Upload reports as artifact
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: weekly-action-${{ github.run_number }}
+          name: weekly-action-${{ env.REPORT_DATE }}
           path: |
             output/portfolio_summary.csv
             output/weekly_action_report.md
-            output/weekly_action_report.html
-            output/weekly_action_report.pdf
+            output/weekly_action_report_${{ env.REPORT_DATE }}.html
+            output/weekly_action_report_${{ env.REPORT_DATE }}.pdf
           retention-days: 90
 
       - name: Notify on failure

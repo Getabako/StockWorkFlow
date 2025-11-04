@@ -62,16 +62,16 @@ jobs:
       - name: Copy HTML report to report directory
         if: success()
         run: |
-          mkdir -p report
-          cp output/daily_report_${{ env.REPORT_DATE }}.html report/daily_report_${{ env.REPORT_DATE }}.html
-          echo "✓ HTML report copied to report/daily_report_${{ env.REPORT_DATE }}.html"
+          mkdir -p report/daily
+          cp output/daily_report_${{ env.REPORT_DATE }}.html report/daily/daily_report_${{ env.REPORT_DATE }}.html
+          echo "✓ HTML report copied to report/daily/daily_report_${{ env.REPORT_DATE }}.html"
 
       - name: Commit and push HTML report
         if: success()
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add report/daily_report_${{ env.REPORT_DATE }}.html
+          git add report/daily/daily_report_${{ env.REPORT_DATE }}.html
           git diff --staged --quiet || git commit -m "Add daily report HTML for ${{ env.REPORT_DATE }} (automated)"
           git push origin main
 
