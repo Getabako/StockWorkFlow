@@ -35,6 +35,10 @@ jobs:
         env:
           TDNET_RSS_URL: ${{ secrets.TDNET_RSS_URL }}
 
+      - name: Fetch stock prices
+        run: |
+          python scripts/fetch_stock_prices.py
+
       - name: Analyze and generate report
         run: |
           python scripts/analyze_report.py
@@ -88,6 +92,7 @@ jobs:
           name: daily-report-${{ env.REPORT_DATE }}
           path: |
             output/articles.json
+            output/stock_prices.json
             output/daily_report.md
             output/daily_report_${{ env.REPORT_DATE }}.html
             output/daily_report_${{ env.REPORT_DATE }}.pdf

@@ -34,12 +34,31 @@ def load_articles(input_file: str = "output/articles.json") -> dict:
         return json.load(f)
 
 
-def create_analysis_prompt(articles: list) -> str:
+def load_stock_prices(input_file: str = "output/stock_prices.json") -> dict:
+    """
+    株価データをJSONファイルから読み込みます。
+
+    Args:
+        input_file: 入力ファイルパス
+
+    Returns:
+        株価データ（ファイルが存在しない場合はNone）
+    """
+    if not os.path.exists(input_file):
+        print(f"  Stock prices file not found: {input_file}")
+        return None
+
+    with open(input_file, 'r', encoding='utf-8') as f:
+        return json.load(f)
+
+
+def create_analysis_prompt(articles: list, stock_prices: dict = None) -> str:
     """
     Gemini APIに送信するプロンプトを生成します。
 
     Args:
         articles: 記事のリスト
+        stock_prices: 株価データ（オプション）
 
     Returns:
         プロンプト文字列
@@ -57,8 +76,31 @@ def create_analysis_prompt(articles: list) -> str:
 概要: {article['summary']}
 """
 
+    # 株価情報を整形
+    portfolio_text = ""
+    if stock_prices and stock_prices.get('stocks'):
+        portfolio_summary = stock_prices.get('portfolio_summary', {})
+        portfolio_text = f"""
+## ポートフォリオ現在値（{datetime.now().strftime('%Y年%m月%d日')}時点）
+
+**ポートフォリオサマリー**:
+- 総評価額: {portfolio_summary.get('total_current_value', 0):,.2f}
+- 総購入額: {portfolio_summary.get('total_purchase_value', 0):,.2f}
+- 総損益: {portfolio_summary.get('total_gain_loss', 0):+,.2f} ({portfolio_summary.get('total_gain_loss_percent', 0):+.2f}%)
+
+**保有銘柄**:
+"""
+        for stock in stock_prices['stocks']:
+            portfolio_text += f"""
+- **{stock['name']} ({stock['symbol']})**
+  - 現在値: {stock['currency']} {stock['current_price']:,.2f} ({stock['change_percent']:+.2f}%)
+  - 保有株数: {stock['shares']}株
+  - 評価額: {stock['currency']} {stock['current_value']:,.2f}
+  - 損益: {stock['currency']} {stock['gain_loss']:+,.2f} ({stock['gain_loss_percent']:+.2f}%)
+"""
+
     prompt = f"""
-あなたはAI/IT関連の株式投資アナリストです。以下のニュース記事から、投資判断に重要な「ファクト（事実）」を抽出・分析してください。
+あなたはAI/IT関連の株式投資アナリストです。以下のニュース記事とポートフォリオ情報から、投資判断に重要な「ファクト（事実）」を抽出・分析してください。
 
 特に以下の情報を重点的に探してください：
 1. **M&A（企業買収・合併）**: 企業の統合や買収の発表
@@ -71,6 +113,7 @@ def create_analysis_prompt(articles: list) -> str:
 
 ## 入力記事（過去24時間）
 {articles_text}
+{portfolio_text}
 
 ## 出力フォーマット
 以下のMarkdown形式でレポートを作成してください：
@@ -79,7 +122,10 @@ def create_analysis_prompt(articles: list) -> str:
 **作成日時**: {datetime.now().strftime('%Y年%m月%d日 %H:%M')}
 
 ## エグゼクティブサマリー
-（3-5行で全体の要約）
+（3-5行で全体の要約。ポートフォリオの状況にも簡単に言及）
+
+## ポートフォリオ状況
+{portfolio_text if portfolio_text else "（ポートフォリオ情報が利用できません）"}
 
 ## 重要ファクト
 ### M&A・企業買収
@@ -166,6 +212,14 @@ def main():
     articles = data.get('articles', [])
     print(f"✓ Loaded {len(articles)} articles")
 
+    # 株価データを読み込む
+    print("\nLoading stock prices...")
+    stock_prices = load_stock_prices()
+    if stock_prices:
+        print(f"✓ Loaded stock prices for {len(stock_prices.get('stocks', []))} stocks")
+    else:
+        print("  (Stock prices not available)")
+
     if len(articles) == 0:
         print("\nNo articles found. Creating empty report...")
         empty_report = f"""# AI/IT株式投資 日次レポート
@@ -181,7 +235,7 @@ def main():
     else:
         # プロンプトを生成
         print("\nCreating analysis prompt...")
-        prompt = create_analysis_prompt(articles)
+        prompt = create_analysis_prompt(articles, stock_prices)
 
         # Gemini APIで分析
         report = analyze_with_gemini(prompt)
