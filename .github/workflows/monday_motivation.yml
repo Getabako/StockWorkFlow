@@ -1,0 +1,101 @@
+name: Monday Morning Investment Motivation
+
+on:
+  schedule:
+    # 毎週月曜日 JST 6:00 (UTC 21:00 on Sunday) に実行
+    - cron: '0 21 * * 0'
+  workflow_dispatch:  # 手動実行も可能
+
+permissions:
+  contents: read
+
+jobs:
+  send-motivation:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+
+      - name: Send motivation message to Discord
+        run: |
+          python -c "
+          import requests
+          import json
+          from datetime import datetime
+
+          webhook_url = '${{ secrets.DISCORD_WEBHOOK_URL }}'
+
+          embed = {
+            'embeds': [{
+              'title': '📈 月曜日の朝です！今週も投資で成功を掴みましょう！',
+              'description': '''
+**おはようございます！新しい週のスタートです！**
+
+今日は投資のチャンスを見つける絶好の日です。
+午前中に以下のことをしましょう：
+
+✅ **市場の動向をチェック**
+   - 先週末からの主要ニュースを確認
+   - 注目している銘柄の値動きをチェック
+
+✅ **投資戦略を見直す**
+   - ポートフォリオの状況を確認
+   - 今週の売買計画を立てる
+
+✅ **情報収集をする**
+   - AI/IT業界の最新トレンドをキャッチアップ
+   - 決算発表やイベントスケジュールを確認
+
+**💡 今週の投資格言**
+「成功する投資家は、市場の声に耳を傾け、自分の計画に従って行動する」
+
+今週も着実に資産を増やしていきましょう！
+頑張ってください！ 💪
+              ''',
+              'color': 3447003,  # Blue color
+              'thumbnail': {
+                'url': 'https://raw.githubusercontent.com/microsoft/fluentui-emoji/main/assets/Chart%20increasing/Color/chart_increasing_color.svg'
+              },
+              'footer': {
+                'text': '今週も賢い投資判断を！'
+              },
+              'timestamp': datetime.utcnow().isoformat()
+            }]
+          }
+
+          response = requests.post(webhook_url, json=embed)
+
+          if response.status_code == 204:
+            print('✓ モチベーションメッセージをDiscordに送信しました！')
+          else:
+            print(f'Error: {response.status_code}')
+            print(response.text)
+            exit(1)
+          "
+
+      - name: Notify on failure
+        if: failure()
+        run: |
+          python -c "
+          import requests, json
+          from datetime import datetime
+          requests.post('${{ secrets.DISCORD_WEBHOOK_URL }}', json={
+            'embeds': [{
+              'title': '⚠️ モチベーションメッセージ送信エラー',
+              'description': 'モチベーションメッセージの送信中にエラーが発生しました。GitHub Actionsのログを確認してください。',
+              'color': 15158332,
+              'timestamp': datetime.utcnow().isoformat()
+            }]
+          })
+          "

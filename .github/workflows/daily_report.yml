@@ -2,8 +2,8 @@ name: Daily AI/IT Stock News Report
 
 on:
   schedule:
-    # 毎日 JST 6:00 (UTC 21:00) に実行
-    - cron: '0 21 * * *'
+    # 月曜日から金曜日 JST 6:00 (UTC 21:00) に実行
+    - cron: '0 21 * * 1-5'
   workflow_dispatch:  # 手動実行も可能
 
 permissions:
