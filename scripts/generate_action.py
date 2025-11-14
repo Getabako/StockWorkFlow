@@ -18,7 +18,8 @@ if not GEMINI_API_KEY:
 genai.configure(api_key=GEMINI_API_KEY)
 
 # 投資方針設定（カスタマイズ可能）
-INVESTMENT_BUDGET = 3000000  # 追加投資予算: 300万円
+INVESTMENT_BUDGET_JPY = 3000000  # 追加投資予算: 300万円
+INVESTMENT_BUDGET_USD = 20000  # 追加投資予算（USD換算、1ドル=150円想定）
 FOCUS_ON_BUYING = True  # 買い推奨をメインにする
 MIN_PROFIT_THRESHOLD_PCT = 10.0  # 売却候補の最低利益率: 10%
 
@@ -154,7 +155,7 @@ def create_action_prompt(portfolio_df: pd.DataFrame, ai_insights: dict = None) -
 
 ## 投資方針と現状
 1. **投資ステージ**: ポートフォリオ構築期（買い増し段階）
-2. **追加投資予算**: 約${INVESTMENT_BUDGET:,.0f}
+2. **追加投資予算**: 約¥{INVESTMENT_BUDGET_JPY:,}（約${INVESTMENT_BUDGET_USD:,}）
 3. **投資目標**:
    - 有望な AI/IT 銘柄を選定し、分散投資でポートフォリオを構築
    - 各銘柄の選定理由と懸念点を理解した上で投資判断
@@ -163,6 +164,7 @@ def create_action_prompt(portfolio_df: pd.DataFrame, ai_insights: dict = None) -
    - 長期保有を前提とした成長株投資
    - まずは買い増しを優先し、利確は後回し
    - 分散投資でリスクを管理
+   - 予算を考慮し、現実的な投資額と株数を提案
 
 ## 現在のポートフォリオ概要
 - 総評価額: ${total_value:,.2f}
@@ -187,7 +189,7 @@ def create_action_prompt(portfolio_df: pd.DataFrame, ai_insights: dict = None) -
 
 #### 1. [銘柄名] ([シンボル])
 **現在価格**: $XXX.XX
-**推奨投資額**: $XX,XXX - $XX,XXX
+**推奨投資額**: $X,XXX - $X,XXX（予算¥3,000,000 = 約$20,000の範囲内で現実的な金額）
 **推奨株数**: XX-XX株
 
 **📈 選定ポイント（買うべき理由）**:
@@ -204,8 +206,10 @@ def create_action_prompt(portfolio_df: pd.DataFrame, ai_insights: dict = None) -
 **💡 推奨される買い方**:
 - **戦略**: （例：一括購入 / 分割購入）
 - **理由**: （なぜその買い方が良いのか）
-- **具体例**: （例：今週XX株、来週XX株など）
+- **具体例**: （例：今週$2,000で5株、来週$3,000で7株など、予算内で分散）
 - **エントリーポイント**: （理想的な買い場のタイミング）
+
+**重要**: 追加投資予算は約$20,000（¥3,000,000）です。複数銘柄への分散投資を考慮し、1銘柄あたりの推奨投資額は$2,000〜$8,000程度の現実的な範囲で提案してください。
 
 ---
 
