@@ -78,6 +78,63 @@ def parse_markdown_report(file_path: str) -> dict:
     return sections
 
 
+def create_weekly_summary_embed(title: str, sections: dict, color: int) -> dict:
+    """
+    週次レポート用の要約Embedを作成します（詳細はPDFを参照）。
+
+    Args:
+        title: Embedのタイトル
+        sections: セクション情報
+        color: Embedの色
+
+    Returns:
+        Discord Embed形式の辞書
+    """
+    embed = {
+        "title": title,
+        "color": color,
+        "timestamp": datetime.utcnow().isoformat(),
+        "description": "📄 **詳細な分析はPDFファイルをご確認ください**\n\n以下は主要なポイントの要約です。",
+        "fields": []
+    }
+
+    # 週次レポートの主要セクションのみを抽出（絵文字を含む可能性があるセクション名）
+    key_sections = [
+        "📊 ポートフォリオサマリー",
+        "ポートフォリオサマリー",
+        "🎯 今週の投資推奨銘柄",
+        "今週の投資推奨銘柄",
+        "📅 来週の注目イベント",
+        "来週の注目イベント"
+    ]
+
+    for section_name in key_sections:
+        if section_name in sections and sections[section_name]:
+            content = sections[section_name].strip()
+            if content:
+                # 最初の500文字まで + 省略記号
+                if len(content) > 500:
+                    content = content[:500] + "...\n\n*(続きはPDFをご確認ください)*"
+
+                # 絵文字を除去したセクション名を使用
+                clean_name = section_name.replace("📊 ", "").replace("🎯 ", "").replace("📅 ", "")
+                embed["fields"].append({
+                    "name": clean_name,
+                    "value": content,
+                    "inline": False
+                })
+
+    # フィールドが空の場合はメッセージを追加
+    if not embed["fields"]:
+        embed["fields"].append({
+            "name": "レポート",
+            "value": "週次アクションレポートを生成しました。詳細はPDFファイルをご確認ください。",
+            "inline": False
+        })
+
+    return embed
+
+
 def create_discord_embed(title: str, sections: dict, color: int) -> dict:
     """
     Discord Embed形式のデータを作成します。
@@ -120,10 +177,13 @@ def create_discord_embed(title: str, sections: dict, color: int) -> dict:
         "その他の重要情報",
         "投資への示唆",
         "ポートフォリオサマリー",
+        "📊 ポートフォリオサマリー",
         "今週の推奨アクション",
+        "🎯 今週の投資推奨銘柄",
         "定期買い付けリマインド",
         "ポートフォリオ最適化の提案",
-        "来週の注意事項"
+        "来週の注意事項",
+        "📅 来週の注目イベント"
     ]
 
     # 順序に従ってセクションを追加
@@ -273,7 +333,12 @@ def main():
     sections = parse_markdown_report(report_file)
 
     print(f"Creating Discord embed...")
-    embed = create_discord_embed(title, sections, color)
+    # 週次レポートの場合は要約版embedを使用
+    if "週次" in title or "weekly" in title.lower():
+        print("  Using summary format for weekly report")
+        embed = create_weekly_summary_embed(title, sections, color)
+    else:
+        embed = create_discord_embed(title, sections, color)
 
     print(f"Sending to Discord...")
     send_to_discord(webhook_url, embed, attachment_file)
