@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI/IT株式投資 日次レポート</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #0ea5e9;
+            --success-color: #10b981;
+            --danger-color: #ef4444;
+            --warning-color: #f59e0b;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-primary: #1e293b;
+            --text-secondary: #64748b;
+            --border-color: #e2e8f0;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        body {
+            font-family: 'Noto Sans JP', 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: var(--text-primary);
+            line-height: 1.7;
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            border-radius: 16px;
+            box-shadow: var(--shadow-lg);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            animation: pulse 15s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            50% { transform: translate(-10%, -10%) scale(1.1); }
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            font-weight: 700;
+            margin-bottom: 10px;
+            position: relative;
+            z-index: 1;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .header .subtitle {
+            font-size: 1.1em;
+            opacity: 0.95;
+            position: relative;
+            z-index: 1;
+            font-weight: 300;
+        }
+
+        .content {
+            padding: 50px;
+        }
+
+        h1 {
+            color: #1e3a8a;
+            font-size: 2.2em;
+            margin: 30px 0 20px 0;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #1e3a8a;
+            font-weight: 700;
+        }
+
+        h2 {
+            color: #0c4a6e;
+            font-size: 1.8em;
+            margin: 35px 0 20px 0;
+            padding-left: 15px;
+            border-left: 5px solid #0c4a6e;
+            font-weight: 600;
+        }
+
+        h3 {
+            color: var(--text-primary);
+            font-size: 1.4em;
+            margin: 25px 0 15px 0;
+            padding: 12px 20px;
+            background: linear-gradient(90deg, var(--bg-color) 0%, transparent 100%);
+            border-radius: 8px;
+            font-weight: 600;
+        }
+
+        h4 {
+            color: var(--text-secondary);
+            font-size: 1.1em;
+            margin: 20px 0 10px 0;
+            font-weight: 500;
+        }
+
+        p {
+            margin: 15px 0;
+            color: var(--text-primary);
+            font-size: 1.05em;
+        }
+
+        strong {
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        em {
+            font-style: italic;
+            color: var(--text-secondary);
+        }
+
+        ul, ol {
+            margin: 20px 0;
+            padding-left: 30px;
+        }
+
+        li {
+            margin: 12px 0;
+            line-height: 1.8;
+            color: var(--text-primary);
+        }
+
+        ul li {
+            list-style-type: none;
+            position: relative;
+            padding-left: 25px;
+        }
+
+        ul li::before {
+            content: '▸';
+            color: var(--primary-color);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+            font-size: 1.2em;
+        }
+
+        blockquote {
+            margin: 25px 0;
+            padding: 20px 25px;
+            background: var(--bg-color);
+            border-left: 5px solid var(--warning-color);
+            border-radius: 0 8px 8px 0;
+            font-style: italic;
+            color: var(--text-secondary);
+            box-shadow: var(--shadow);
+        }
+
+        hr {
+            border: none;
+            border-top: 2px solid var(--border-color);
+            margin: 40px 0;
+            opacity: 0.5;
+        }
+
+        code {
+            background: #f1f5f9;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            color: #dc2626;
+        }
+
+        pre {
+            background: #1e293b;
+            color: #e2e8f0;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 20px 0;
+            box-shadow: var(--shadow);
+        }
+
+        pre code {
+            background: none;
+            color: inherit;
+            padding: 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        th {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: white;
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        td {
+            padding: 15px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        tr:hover {
+            background: var(--bg-color);
+        }
+
+        .summary-box {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            border-left: 5px solid var(--warning-color);
+            padding: 25px;
+            margin: 25px 0;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+
+        .info-box {
+            background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+            border-left: 5px solid var(--primary-color);
+            padding: 25px;
+            margin: 25px 0;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+
+        .success-box {
+            background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+            border-left: 5px solid var(--success-color);
+            padding: 25px;
+            margin: 25px 0;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+
+        .footer {
+            background: var(--bg-color);
+            padding: 30px;
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 0.9em;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .footer p {
+            margin: 5px 0;
+            color: var(--text-secondary);
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 0.85em;
+            font-weight: 500;
+            margin: 0 5px;
+        }
+
+        .badge-primary {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        .badge-success {
+            background: var(--success-color);
+            color: white;
+        }
+
+        .badge-warning {
+            background: var(--warning-color);
+            color: white;
+        }
+
+        .badge-danger {
+            background: var(--danger-color);
+            color: white;
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+
+            .container {
+                box-shadow: none;
+                max-width: 100%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 20px 10px;
+            }
+
+            .header {
+                padding: 30px 20px;
+            }
+
+            .header h1 {
+                font-size: 1.8em;
+            }
+
+            .content {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            h3 {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>AI/IT株式投資 日次レポート</h1>
+            <div class="subtitle">AI/IT株式投資レポート - Powered by Gemini AI</div>
+        </div>
+
+        <div class="content">
+            <h1 id="aiit">AI/IT株式投資 日次レポート</h1>
+<p><strong>作成日時</strong>: 2025年11月19日 21:09</p>
+<h2 id="_1">エグゼクティブサマリー</h2>
+<p>AI業界はNVIDIAの決算発表を目前に控え、市場の注目と懸念が交錯しています。GoogleのGemini AIモデルへの高評価や、xAIとサウジアラビアによる大規模データセンター計画、NVIDIAとBrookfieldのAIインフラ投資プログラムなど、AIインフラとモデル開発への巨額投資が活発です。一方で、Armへの独禁調査、AIによる雇用削減、AIの政治的・社会的な影響といった成長の裏にある課題も浮上しており、持続可能性への視点が重要性を増しています。ポートフォリオではNVIDIAの動向が最大の焦点であり、他の保有銘柄は現在のAIトレンドの恩恵を十分に享受できていない状況が続いています。</p>
+<h2 id="_2">ポートフォリオ状況</h2>
+<h2 id="20251119">ポートフォリオ現在値（2025年11月19日時点）</h2>
+<p><strong>ポートフォリオサマリー</strong>:<br />
+- 総評価額: 382,822.39<br />
+- 総購入額: 573,020.94<br />
+- 総損益: -190,198.55 (-33.19%)</p>
+<p><strong>保有銘柄</strong>:</p>
+<ul>
+<li><strong>LITALICO Inc. (7366.T)</strong></li>
+<li>現在値: JPY 1,221.00 (+2.26%)</li>
+<li>保有株数: 300株</li>
+<li>評価額: JPY 366,300.00</li>
+<li>
+<p>損益: JPY +88,086.00 (+31.66%)</p>
+</li>
+<li>
+<p><strong>QUALCOMM Incorporated (QCOM)</strong></p>
+</li>
+<li>現在値: USD 166.11 (+0.64%)</li>
+<li>保有株数: 2株</li>
+<li>評価額: USD 332.22</li>
+<li>
+<p>損益: USD -46,642.78 (-99.29%)</p>
+</li>
+<li>
+<p><strong>Tesla, Inc. (TSLA)</strong></p>
+</li>
+<li>現在値: USD 403.99 (+0.68%)</li>
+<li>保有株数: 1株</li>
+<li>評価額: USD 403.99</li>
+<li>
+<p>損益: USD -37,867.01 (-98.94%)</p>
+</li>
+<li>
+<p><strong>NVIDIA Corporation (NVDA)</strong></p>
+</li>
+<li>現在値: USD 186.52 (+2.85%)</li>
+<li>保有株数: 82株</li>
+<li>評価額: USD 15,294.64</li>
+<li>
+<p>損益: USD -132,046.24 (-89.62%)</p>
+</li>
+<li>
+<p><strong>Intel Corporation (INTC)</strong></p>
+</li>
+<li>現在値: USD 35.11 (+2.27%)</li>
+<li>保有株数: 14株</li>
+<li>評価額: USD 491.54</li>
+<li>損益: USD -61,728.52 (-99.21%)</li>
+</ul>
+<h2 id="_3">重要ファクト</h2>
+<h3 id="ma">M&amp;A・企業買収</h3>
+<ul>
+<li><strong>Abbott LaboratoriesがExact Sciences Corp.の買収に近づいている</strong> (記事14) - 医療検査会社。</li>
+<li><strong>Adobe Inc.がマーケティングソフトウェア会社Semrush Holdings Inc.を19億ドルで買収合意</strong> (記事22)。</li>
+</ul>
+<h3 id="_4">戦略的提携・パートナーシップ</h3>
+<ul>
+<li><strong>Google GeminiがMcLaren Formula 1 Teamの未来構築に活用される</strong> (記事1)。</li>
+<li><strong>Brookfield Asset ManagementがNVIDIA、クウェートの政府系ファンドと提携し、100億ドル規模のグローバルAIインフラプログラムを目標としている</strong> (記事10)。</li>
+<li><strong>サウジアラビアのAI企業HumainがxAI、AMD、Lumaを含む企業への投資攻勢をかけている</strong> (記事16)。</li>
+<li><strong>Elon MuskのxAIがサウジアラビアの国営AIベンチャーHumainと提携し、NVIDIAチップを使用する500MWデータセンターをサウジアラビアに建設予定</strong> (記事19)。</li>
+</ul>
+<h3 id="_5">大型契約・受注</h3>
+<ul>
+<li><strong>AIスタートアップFirebirdがアルメニアのスーパーコンピュータープロジェクト向けにNVIDIAチップの米国政府からの輸出承認を得た</strong> (記事21)。</li>
+<li><strong>Elon MuskのxAIがNVIDIAチップを使用する500MWデータセンターをサウジアラビアに建設予定</strong> (記事19)。</li>
+</ul>
+<h3 id="_6">新製品・新技術</h3>
+<ul>
+<li><strong>Google MapsにGemini関連のホリデー向け新機能が4つ追加された</strong> (記事4)。</li>
+<li><strong>Google ResearchがポーランドでAIの活用事例（教育、災害対応）を発表</strong> (記事5)。</li>
+<li><strong>Armが最も先進的なスマートフォン向けコンピューティングプラットフォーム「Lumex Platform」を発表。新しいC1 CPUクラスタとMali G1-Ultra GPUを統合し、AIを高速化・スマート化・パーソナル化する設計</strong> (記事8)。</li>
+<li><strong>Citadel SecuritiesがMicrosoft, Amazon, Alphabet, Metaの社債を対象としたAI債券取引バスケットの市場形成を開始</strong> (記事9)。</li>
+<li><strong>Alphabet株が新Gemini AIモデルへの高評価を受け急騰</strong> (記事20)。</li>
+</ul>
+<h3 id="_7">業績・財務情報</h3>
+<ul>
+<li><strong>NVIDIAの第3四半期決算発表が予定されており、市場の注目とAI支出への懸念が高まっている</strong> (記事10, 12, 13, 17)。</li>
+<li><strong>Alphabet Inc.の株価が、新しくリリースされたGemini AIモデルへの絶賛レビューを受けて急騰した</strong> (記事20)。</li>
+<li><strong>緊急サービス会社RapidSOSがApax Digital Funds主導で1億ドルを調達し、評価額10億ドル超に達した</strong> (記事25)。</li>
+</ul>
+<h3 id="_8">規制・政策変更</h3>
+<ul>
+<li><strong>Googleがヨーロッパ向けにAIを活用したよりスマートで安全な年齢認証アプローチを議論</strong> (記事6)。</li>
+<li><strong>オランダ政府が中国企業所有のチップメーカーNexperiaへの権限行使を停止し、中国側へ支配権を返還</strong> (記事23)。これにより半導体地政学リスクの一端が緩和された。</li>
+<li><strong>Meta Platforms Inc.がオーストラリアの16歳未満のSNS利用禁止規制遵守に際し、年齢確認の困難さを警告</strong> (記事28)。</li>
+<li><strong>EUがAI分野の競争力強化と地元テック企業支援のため、デジタル規制の合理化計画を発表</strong> (記事29)。</li>
+<li><strong>韓国の独占禁止当局がArm Holdings Plcのソウルオフィスを検査。ライセンス慣行に対する継続的な監視の一環</strong> (記事36)。</li>
+</ul>
+<h3 id="_9">人事</h3>
+<ul>
+<li><strong>Meta AIの主任研究者Yann LeCun氏が退社し、新会社を設立する予定</strong> (記事11)。</li>
+<li><strong>Larry Summers氏がJeffrey Epstein氏との関係を理由にOpenAIのボードを退任</strong> (記事26)。</li>
+</ul>
+<h3 id="_10">その他の重要情報</h3>
+<ul>
+<li><strong>Google DeepMindがアジア太平洋地域のAI推進のためシンガポールに新AI研究ラボを開設</strong> (記事7)。</li>
+<li><strong>ハッカーがランサムウェア交渉を強化するためにAIを利用している</strong> (記事18)。</li>
+<li><strong>Nokia OyjがAIデータセンター接続のためのネットワークインフラに焦点を当てるよう事業を再編</strong> (記事24)。</li>
+<li><strong>ドイツのルフトハンザ航空など、AIの活用を理由に人員削減を発表する企業が増加している</strong> (記事31)。</li>
+<li><strong>AIが2028年の選挙で主要な政治的争点となる可能性が高く、データセンター、エネルギー消費、労働力置換、AIの信頼性に関する懸念が高まっている</strong> (記事32, 33)。</li>
+</ul>
+<h2 id="_11">投資への示唆</h2>
+<p>AIインフラとモデル開発への投資は活発であり、NVIDIAやGoogleのような主要企業は引き続きこのトレンドの恩恵を受けます。特に、NVIDIAの決算結果と市場の反応は、保有銘柄に大きな影響を与えるため注視が必要です。しかし、規制強化や地政学的リスク、AIによる社会変化（雇用影響、政治化）といった潜在的なリスク要因も高まっており、これらを踏まえたポートフォリオ戦略の見直しが必要となるでしょう。</p>
+<hr />
+<p><em>このレポートはAI（Gemini）により自動生成されています。投資判断は必ずご自身で行ってください。</em></p>
+        </div>
+
+        <div class="footer">
+            <p>このレポートはAI（Google Gemini）により自動生成されています。</p>
+            <p>投資判断は必ずご自身の責任で行ってください。</p>
+            <p>生成日時: 2025年11月19日 21:10:28</p>
+        </div>
+    </div>
+</body>
+</html>
