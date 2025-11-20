@@ -25,7 +25,10 @@ style: |
     color: #000000;
     text-align: left;
     max-width: 70%;
-    line-height: 1.5;
+    max-height: 55%;
+    overflow: hidden;
+    line-height: 1.4;
+    font-size: 0.9em;
   }
   ul, ol {
     margin-left: 0;
