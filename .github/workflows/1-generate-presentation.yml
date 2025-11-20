@@ -242,12 +242,33 @@ jobs:
         run: |
           python3 scripts/generate_index.py
 
+      - name: Update workflow options with new presentation
+        run: |
+          PRES_NAME="${{ env.TOPIC_NAME }}"
+
+          # Update workflows 2, 3, 4 with the new presentation option
+          for WORKFLOW in "2-generate-presentation-images.yml" "3-insert-images-to-slides.yml" "4-create-video.yml"; do
+            WORKFLOW_FILE=".github/workflows/$WORKFLOW"
+
+            if [ -f "$WORKFLOW_FILE" ]; then
+              # Check if the presentation is already in the options
+              if ! grep -q "'$PRES_NAME'" "$WORKFLOW_FILE"; then
+                # Find the first option line and add after it
+                sed -i "s/options:/options:\n          - '$PRES_NAME'/" "$WORKFLOW_FILE"
+                echo "✓ Added $PRES_NAME to $WORKFLOW"
+              else
+                echo "✓ $PRES_NAME already exists in $WORKFLOW"
+              fi
+            fi
+          done
+
       - name: Commit presentation files
         run: |
           git add presentations/${{ env.TOPIC_NAME }}/
           git add slides/ || true
           git add images/ || true
           git add presentations.json || true
+          git add .github/workflows/*.yml || true
 
           if [ "${{ env.GENERATE_IMAGES }}" == "true" ]; then
             COMMIT_MSG="feat: Add presentation with images - ${{ env.TOPIC_NAME }}"
