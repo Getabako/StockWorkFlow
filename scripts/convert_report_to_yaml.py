@@ -85,9 +85,46 @@ def parse_markdown_to_slides(md_content: str, date_str: str) -> dict:
         if '免責' in title or '注意' in title or 'AI' in title and '生成' in content:
             continue
 
+        # エグゼクティブサマリー
+        if 'サマリー' in title or 'エグゼクティブ' in title or '概要' in title:
+            # 最初の2-3文を抽出
+            sentences = re.split(r'[。]', content)
+            summary_text = '。'.join(sentences[:3]).strip()
+            if summary_text and not summary_text.endswith('。'):
+                summary_text += '。'
+
+            if len(summary_text) > 150:
+                summary_text = summary_text[:147] + '...'
+
+            slides.append({
+                'title': '📋 本日のサマリー',
+                'content': summary_text
+            })
+            script_notes.append({
+                'slide': slide_num,
+                'script': content
+            })
+            slide_num += 1
+
         # ニュースセクションの処理
-        if 'ニュース' in title or 'NEWS' in title.upper():
+        elif 'ニュース' in title or 'NEWS' in title.upper() or 'ファクト' in title:
             news_items = extract_news_headlines(content)
+
+            # ニュースが見つからない場合は箇条書きを探す
+            if not news_items:
+                for line in content.split('\n'):
+                    line = line.strip()
+                    if line.startswith('*') or line.startswith('-') or line.startswith('•'):
+                        clean_line = re.sub(r'^\*+\s*|\-\s*|•\s*', '', line).strip()
+                        # **太字**を抽出
+                        bold_match = re.search(r'\*\*([^*]+)\*\*', clean_line)
+                        if bold_match:
+                            headline = bold_match.group(1).strip()
+                            detail = re.sub(r'\*\*[^*]+\*\*[：:]?\s*', '', clean_line).strip()
+                            news_items.append({
+                                'headline': headline[:50] + '...' if len(headline) > 50 else headline,
+                                'detail': detail
+                            })
 
             # 最大5件まで表示
             for i, item in enumerate(news_items[:5]):
@@ -103,14 +140,17 @@ def parse_markdown_to_slides(md_content: str, date_str: str) -> dict:
 
         # 市場概況セクション
         elif '市場' in title or 'マーケット' in title:
-            # 簡潔なサマリーを抽出
+            # サマリーを抽出
             summary_lines = []
             for line in content.split('\n'):
                 if line.strip().startswith('-') or line.strip().startswith('•'):
                     clean_line = line.strip().lstrip('-•').strip()
-                    if len(clean_line) < 60:
+                    if clean_line:
+                        # 長い場合は切り詰め
+                        if len(clean_line) > 80:
+                            clean_line = clean_line[:77] + '...'
                         summary_lines.append(f'• {clean_line}')
-                    if len(summary_lines) >= 4:
+                    if len(summary_lines) >= 5:
                         break
 
             if summary_lines:
@@ -126,13 +166,17 @@ def parse_markdown_to_slides(md_content: str, date_str: str) -> dict:
 
         # 投資示唆セクション
         elif '投資' in title or '示唆' in title or 'アクション' in title:
-            # 重要なポイントのみ抽出
+            # 投資ポイントを抽出（段落全体を使用）
+            # 最初の3文を抽出
+            sentences = re.split(r'[。\n]', content)
             key_points = []
-            for line in content.split('\n'):
-                if line.strip().startswith('-') or line.strip().startswith('•'):
-                    clean_line = line.strip().lstrip('-•').strip()
-                    if len(clean_line) < 50:
-                        key_points.append(f'• {clean_line}')
+            for sentence in sentences:
+                sentence = sentence.strip()
+                if sentence and len(sentence) > 10:
+                    # 長い場合は切り詰め
+                    if len(sentence) > 100:
+                        sentence = sentence[:97] + '...'
+                    key_points.append(f'• {sentence}')
                     if len(key_points) >= 3:
                         break
 
@@ -143,7 +187,7 @@ def parse_markdown_to_slides(md_content: str, date_str: str) -> dict:
                 })
                 script_notes.append({
                     'slide': slide_num,
-                    'script': f"投資のポイントです。{' '.join([p.lstrip('• ') for p in key_points])}"
+                    'script': f"投資のポイントです。{content}"
                 })
                 slide_num += 1
 
