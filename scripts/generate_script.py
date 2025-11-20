@@ -2,6 +2,9 @@
 """
 スライドから原稿を生成するスクリプト
 Gemini APIを使用してスライドの内容から自然な原稿を生成します
+
+YAMLにscript_notesが含まれている場合はそれを直接使用し、
+含まれていない場合はAIで原稿を生成します。
 """
 
 import sys
@@ -9,9 +12,51 @@ import os
 import json
 import re
 import time
+import yaml
+import argparse
 from pathlib import Path
 import google.generativeai as genai
 from google.api_core import exceptions as google_exceptions
+
+
+def load_script_notes_from_yaml(yaml_file):
+    """
+    YAMLファイルからscript_notesを読み込む
+
+    Args:
+        yaml_file: YAMLファイルのパス
+
+    Returns:
+        script_notesのリスト、またはNone（script_notesがない場合）
+    """
+    try:
+        with open(yaml_file, 'r', encoding='utf-8') as f:
+            data = yaml.safe_load(f)
+
+        if 'script_notes' in data and data['script_notes']:
+            slides = data.get('slides', [])
+            script_notes = data['script_notes']
+
+            # script_notesとslidesを組み合わせる
+            scripts = []
+            for note in script_notes:
+                slide_num = note.get('slide', len(scripts) + 1)
+                # 対応するスライドのタイトルを取得
+                title = ''
+                if slide_num <= len(slides):
+                    title = slides[slide_num - 1].get('title', f'スライド {slide_num}')
+
+                scripts.append({
+                    'index': slide_num,
+                    'title': title,
+                    'script': note.get('script', '')
+                })
+
+            return scripts
+    except Exception as e:
+        print(f"YAMLからのscript_notes読み込みに失敗: {e}")
+
+    return None
 
 def parse_marp_slides(slide_file):
     """
@@ -164,53 +209,67 @@ def generate_script_for_slide(model, slide, total_slides, max_retries=3):
                 print(f"  最大リトライ回数に達しました。エラー: {e}")
                 raise
 
-def generate_full_script(slide_file, output_file):
+def generate_full_script(slide_file, output_file, yaml_file=None):
     """
     スライドファイル全体の原稿を生成
 
     Args:
         slide_file: スライドファイルのパス
         output_file: 出力ファイルのパス
+        yaml_file: YAMLファイルのパス（script_notesがある場合に使用）
     """
-    # APIキーの確認
-    api_key = os.environ.get('GOOGLE_AI_API_KEY')
-    if not api_key:
-        raise ValueError("GOOGLE_AI_API_KEY環境変数が設定されていません")
+    scripts = None
 
-    # Gemini APIの初期化
-    genai.configure(api_key=api_key)
-    model = genai.GenerativeModel('gemini-2.0-flash-exp')
+    # YAMLからscript_notesを読み込む（利用可能な場合）
+    if yaml_file and os.path.exists(yaml_file):
+        print(f"YAMLファイルからscript_notesを読み込み中: {yaml_file}")
+        scripts = load_script_notes_from_yaml(yaml_file)
+        if scripts:
+            print(f"✓ script_notesを使用します（{len(scripts)}スライド分）")
+        else:
+            print("YAMLにscript_notesがないため、AIで生成します")
 
-    # スライドを解析
-    print(f"スライドを解析中: {slide_file}")
-    slides = parse_marp_slides(slide_file)
-    print(f"スライド数: {len(slides)}")
+    # script_notesがない場合はAIで生成
+    if not scripts:
+        # APIキーの確認
+        api_key = os.environ.get('GOOGLE_AI_API_KEY')
+        if not api_key:
+            raise ValueError("GOOGLE_AI_API_KEY環境変数が設定されていません")
 
-    # 各スライドの原稿を生成
-    scripts = []
-    for i, slide in enumerate(slides):
-        print(f"原稿生成中: スライド {slide['index']} - {slide['title']}")
-        script = generate_script_for_slide(model, slide, len(slides))
+        # Gemini APIの初期化
+        genai.configure(api_key=api_key)
+        model = genai.GenerativeModel('gemini-2.0-flash-exp')
 
-        scripts.append({
-            'index': slide['index'],
-            'title': slide['title'],
-            'script': script
-        })
+        # スライドを解析
+        print(f"スライドを解析中: {slide_file}")
+        slides = parse_marp_slides(slide_file)
+        print(f"スライド数: {len(slides)}")
 
-        print(f"  生成完了: {len(script)}文字")
+        # 各スライドの原稿を生成
+        scripts = []
+        for i, slide in enumerate(slides):
+            print(f"原稿生成中: スライド {slide['index']} - {slide['title']}")
+            script = generate_script_for_slide(model, slide, len(slides))
 
-        # レート制限対策：各スライド間に7秒待機（最後のスライドを除く）
-        # Gemini APIは1分間に10リクエストまでなので、6秒に1リクエストのペース
-        if i < len(slides) - 1:
-            wait_time = 7
-            print(f"  レート制限対策のため{wait_time}秒待機中...")
-            time.sleep(wait_time)
+            scripts.append({
+                'index': slide['index'],
+                'title': slide['title'],
+                'script': script
+            })
+
+            print(f"  生成完了: {len(script)}文字")
+
+            # レート制限対策：各スライド間に7秒待機（最後のスライドを除く）
+            # Gemini APIは1分間に10リクエストまでなので、6秒に1リクエストのペース
+            if i < len(slides) - 1:
+                wait_time = 7
+                print(f"  レート制限対策のため{wait_time}秒待機中...")
+                time.sleep(wait_time)
 
     # JSONとして保存
     output_data = {
         'slides': scripts,
-        'total_slides': len(slides)
+        'total_slides': len(scripts)
     }
 
     with open(output_file, 'w', encoding='utf-8') as f:
@@ -231,11 +290,20 @@ def generate_full_script(slide_file, output_file):
     return output_file
 
 def main():
-    if len(sys.argv) < 2:
-        print("使用方法: python generate_script.py <slide_file>")
-        sys.exit(1)
+    parser = argparse.ArgumentParser(
+        description='スライドから原稿を生成するスクリプト'
+    )
+    parser.add_argument('slide_file', help='スライドファイルのパス')
+    parser.add_argument(
+        '--yaml', '-y',
+        help='YAMLファイルのパス（script_notesがある場合に使用）',
+        default=None
+    )
 
-    slide_file = sys.argv[1]
+    args = parser.parse_args()
+
+    slide_file = args.slide_file
+    yaml_file = args.yaml
 
     if not os.path.exists(slide_file):
         print(f"エラー: スライドファイルが見つかりません: {slide_file}")
@@ -249,7 +317,7 @@ def main():
     output_file = output_dir / f"{slide_path.stem}_script.json"
 
     # 原稿を生成
-    script_file = generate_full_script(slide_file, output_file)
+    script_file = generate_full_script(slide_file, output_file, yaml_file)
 
     # GitHub Actions用に環境変数に保存
     if 'GITHUB_ENV' in os.environ:

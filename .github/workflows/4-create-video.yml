@@ -72,7 +72,26 @@ jobs:
           if [ ! -f "$SLIDE_FILE" ]; then
             SLIDE_FILE="${{ env.PRESENTATION_DIR }}/${{ github.event.inputs.presentation_name }}_slide.md"
           fi
-          python3 scripts/generate_script.py "$SLIDE_FILE"
+
+          # YAMLファイルを探す（script_notesがある場合に使用）
+          YAML_FILE=""
+          # Daily reportの場合（AI_IT株式日次レポート_YYYY_MM_DD形式）
+          if [[ "${{ github.event.inputs.presentation_name }}" == AI_IT株式日次レポート_* ]]; then
+            DATE_STR=$(echo "${{ github.event.inputs.presentation_name }}" | sed 's/AI_IT株式日次レポート_//')
+            YAML_FILE="inputs/daily_report_${DATE_STR}.yml"
+          else
+            # 通常のプレゼンテーション
+            YAML_FILE="inputs/${{ github.event.inputs.presentation_name }}.yml"
+          fi
+
+          # YAMLファイルが存在する場合は--yamlオプションを追加
+          if [ -f "$YAML_FILE" ]; then
+            echo "Using YAML file for script_notes: $YAML_FILE"
+            python3 scripts/generate_script.py "$SLIDE_FILE" --yaml "$YAML_FILE"
+          else
+            echo "No YAML file found, generating script with AI"
+            python3 scripts/generate_script.py "$SLIDE_FILE"
+          fi
 
       - name: Generate audio
         run: |
