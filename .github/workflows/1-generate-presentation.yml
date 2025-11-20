@@ -10,6 +10,7 @@ on:
         options:
           - 'ai_industry_trends_2025.yml'
           - '知能検査ケーススタディ.yml'
+          - 'daily_report_2025_11_20.yml'
       generate_images:
         description: '画像も生成する'
         required: false

@@ -72,6 +72,21 @@ jobs:
           python scripts/convert_report_to_yaml.py output/daily_report.md inputs/ ${{ env.REPORT_DATE }}
           echo "✓ YAML file created for SlideMovie workflow"
 
+      - name: Update workflow options with new YAML file
+        if: success()
+        run: |
+          NEW_FILE="daily_report_${{ env.REPORT_DATE }}.yml"
+          WORKFLOW_FILE=".github/workflows/1-generate-presentation.yml"
+
+          # Check if the file is already in the options
+          if ! grep -q "$NEW_FILE" "$WORKFLOW_FILE"; then
+            # Add the new option after the last existing option
+            sed -i "/- '知能検査ケーススタディ.yml'/a\\          - '$NEW_FILE'" "$WORKFLOW_FILE"
+            echo "✓ Added $NEW_FILE to workflow options"
+          else
+            echo "✓ $NEW_FILE already exists in workflow options"
+          fi
+
       - name: Commit and push reports
         if: success()
         run: |
@@ -79,6 +94,7 @@ jobs:
           git config --local user.name "github-actions[bot]"
           git add report/daily/daily_report_${{ env.REPORT_DATE }}.html
           git add inputs/daily_report_${{ env.REPORT_DATE }}.yml
+          git add .github/workflows/1-generate-presentation.yml
           git diff --staged --quiet || git commit -m "Add daily report HTML and YAML for ${{ env.REPORT_DATE }} (automated)"
           git push origin main
 
