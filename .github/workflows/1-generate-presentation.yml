@@ -245,10 +245,9 @@ jobs:
       - name: Commit presentation files
         run: |
           git add presentations/${{ env.TOPIC_NAME }}/
-          git add slides/
-          git add images/
-          git add output/
-          git add presentations.json
+          git add slides/ || true
+          git add images/ || true
+          git add presentations.json || true
 
           if [ "${{ env.GENERATE_IMAGES }}" == "true" ]; then
             COMMIT_MSG="feat: Add presentation with images - ${{ env.TOPIC_NAME }}"
