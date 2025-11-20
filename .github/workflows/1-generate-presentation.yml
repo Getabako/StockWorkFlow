@@ -6,8 +6,10 @@ on:
       input_file:
         description: '入力YAMLファイル'
         required: true
-        type: string
-        default: 'ai_industry_trends_2025.yml'
+        type: choice
+        options:
+          - 'ai_industry_trends_2025.yml'
+          - '知能検査ケーススタディ.yml'
       generate_images:
         description: '画像も生成する'
         required: false
