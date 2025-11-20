@@ -66,13 +66,20 @@ jobs:
           cp output/daily_report_${{ env.REPORT_DATE }}.html report/daily/daily_report_${{ env.REPORT_DATE }}.html
           echo "✓ HTML report copied to report/daily/daily_report_${{ env.REPORT_DATE }}.html"
 
-      - name: Commit and push HTML report
+      - name: Convert report to YAML for SlideMovie
+        if: success()
+        run: |
+          python scripts/convert_report_to_yaml.py output/daily_report.md inputs/ ${{ env.REPORT_DATE }}
+          echo "✓ YAML file created for SlideMovie workflow"
+
+      - name: Commit and push reports
         if: success()
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add report/daily/daily_report_${{ env.REPORT_DATE }}.html
-          git diff --staged --quiet || git commit -m "Add daily report HTML for ${{ env.REPORT_DATE }} (automated)"
+          git add inputs/daily_report_${{ env.REPORT_DATE }}.yml
+          git diff --staged --quiet || git commit -m "Add daily report HTML and YAML for ${{ env.REPORT_DATE }} (automated)"
           git push origin main
 
       - name: Send report to Discord
