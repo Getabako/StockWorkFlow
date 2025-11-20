@@ -88,6 +88,8 @@ def parse_markdown_to_slides(md_content: str, date_str: str) -> dict:
 
                 sub_lines = subsection.strip().split('\n')
                 sub_title = sub_lines[0].strip() if sub_lines else ''
+                # ### マーカーを削除
+                sub_title = sub_title.lstrip('#').strip()
                 sub_content = '\n'.join(sub_lines[1:]).strip()
 
                 # 箇条書きから重要な項目を抽出
