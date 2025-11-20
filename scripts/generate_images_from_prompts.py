@@ -22,7 +22,7 @@ from io import BytesIO
 class CharacterImageGenerator:
     """キャラクター対応画像生成クラス"""
 
-    def __init__(self, api_key: str, character_dir: Path):
+    def __init__(self, api_key: str, character_dir: Path = None):
         self.api_key = api_key
         self.character_dir = character_dir
 
@@ -35,6 +35,9 @@ class CharacterImageGenerator:
     def _load_character_images(self) -> Dict[str, Path]:
         """キャラクター画像パスを読み込み"""
         images = {}
+
+        if not self.character_dir or not self.character_dir.exists():
+            return images
 
         for char_folder in self.character_dir.iterdir():
             if not char_folder.is_dir() or char_folder.name == 'ロゴ':

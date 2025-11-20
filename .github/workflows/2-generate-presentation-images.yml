@@ -96,14 +96,13 @@ jobs:
 
           echo "Cleaned images directory: $IMAGES_DIR"
 
-      - name: Generate image prompts with character support
+      - name: Generate image prompts
         env:
           GOOGLE_AI_API_KEY: ${{ secrets.GOOGLE_AI_API_KEY }}
         run: |
           # スライド内容を分析して詳細な画像プロンプトを生成
           python3 scripts/generate_image_prompts_with_characters.py \
-            "${{ env.MD_FILE }}" \
-            --character-dir "presentations/character"
+            "${{ env.MD_FILE }}"
 
           echo "Generated image prompts CSV: ${{ env.PRES_DIR }}/画像プロンプト.csv"
 
@@ -111,11 +110,10 @@ jobs:
         env:
           GOOGLE_AI_API_KEY: ${{ secrets.GOOGLE_AI_API_KEY }}
         run: |
-          # 画像プロンプトCSVから画像を生成（キャラクター対応）
+          # 画像プロンプトCSVから画像を生成
           python3 scripts/generate_images_from_prompts.py \
             "${{ env.PRES_DIR }}/画像プロンプト.csv" \
-            --output-dir "${{ env.IMAGES_DIR }}" \
-            --character-dir "presentations/character"
+            --output-dir "${{ env.IMAGES_DIR }}"
 
       - name: Upload generated images as artifact
         uses: actions/upload-artifact@v4

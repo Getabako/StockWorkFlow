@@ -106,7 +106,7 @@ jobs:
           python3 scripts/create_slide.py ${{ env.INPUT_FILE }}
           echo "Created slide: slides/${{ env.TOPIC_NAME }}_slide.md"
 
-      - name: Step 2 - Generate image prompts with character support
+      - name: Step 2 - Generate image prompts
         if: env.GENERATE_IMAGES == 'true'
         env:
           GOOGLE_AI_API_KEY: ${{ secrets.GOOGLE_AI_API_KEY }}
@@ -114,21 +114,19 @@ jobs:
           # スライド内容を分析して詳細な画像プロンプトを生成
           python3 scripts/generate_image_prompts_with_characters.py \
             "slides/${{ env.TOPIC_NAME }}_slide.md" \
-            --output "slides/${{ env.TOPIC_NAME }}_imageprompt.csv" \
-            --character-dir "presentations/character"
+            --output "slides/${{ env.TOPIC_NAME }}_imageprompt.csv"
 
           echo "Generated image prompts: slides/${{ env.TOPIC_NAME }}_imageprompt.csv"
 
-      - name: Step 3 - Generate images with character support
+      - name: Step 3 - Generate images
         if: env.GENERATE_IMAGES == 'true'
         env:
           GOOGLE_AI_API_KEY: ${{ secrets.GOOGLE_AI_API_KEY }}
         run: |
-          # 画像プロンプトCSVから画像を生成（キャラクター対応・日本人・文字なし）
+          # 画像プロンプトCSVから画像を生成
           python3 scripts/generate_images_from_prompts.py \
             "slides/${{ env.TOPIC_NAME }}_imageprompt.csv" \
-            --output-dir "images" \
-            --character-dir "presentations/character"
+            --output-dir "images"
 
           echo "Generated images:"
           ls -la images/ || echo "No images directory"

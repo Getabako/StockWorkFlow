@@ -64,7 +64,7 @@ class CharacterManager:
 class SlideAnalyzer:
     """スライド分析クラス"""
 
-    def __init__(self, md_file: Path, api_key: str, character_manager: CharacterManager):
+    def __init__(self, md_file: Path, api_key: str, character_manager: CharacterManager = None):
         self.md_file = md_file
         self.api_key = api_key
         self.character_manager = character_manager
@@ -107,20 +107,26 @@ class SlideAnalyzer:
     def generate_image_prompt(self, slide: Dict[str, str]) -> str:
         """スライド内容から画像プロンプトを生成"""
 
-        characters_info = self.character_manager.get_all_characters_info()
+        if self.character_manager:
+            characters_info = self.character_manager.get_all_characters_info()
+            character_section = f"""
+利用可能な登場人物:
+{characters_info}
+"""
+            character_instruction = "2. 講師や指導者が必要な場合は、「塾頭高崎翔太」を優先的に使用してください（名前を明記）"
+        else:
+            character_section = ""
+            character_instruction = "2. 人物が必要な場合は、日本人のビジネスパーソンや講師を使用してください"
 
         prompt = f"""以下のプレゼンテーションスライドの内容に最適な画像を生成するための、詳細なプロンプトを作成してください。
 
 スライドタイトル: {slide['title']}
 スライド内容:
 {slide['content']}
-
-利用可能な登場人物:
-{characters_info}
-
+{character_section}
 要件:
 1. スライドの内容を視覚的に表現する具体的な画像を提案してください
-2. 講師や指導者が必要な場合は、「塾頭高崎翔太」を優先的に使用してください（名前を明記）
+{character_instruction}
 3. 抽象的な背景ではなく、スライドの内容を具体的に表現する画像にしてください
 4. 縦長（3:4）のアスペクト比に適した構図にしてください
 5. 画像は教育・プレゼンテーション用途であることを意識してください
@@ -193,11 +199,9 @@ def main():
     else:
         output_path = md_path.parent / '画像プロンプト.csv'
 
-    # キャラクターディレクトリ
-    character_dir = Path(args.character_dir)
-    if not character_dir.exists():
-        print(f"Error: Character directory not found: {character_dir}")
-        sys.exit(1)
+    # キャラクターディレクトリ（オプショナル）
+    character_dir = Path(args.character_dir) if args.character_dir else None
+    use_characters = character_dir and character_dir.exists()
 
     # APIキー取得
     api_key = os.environ.get('GOOGLE_AI_API_KEY')
@@ -207,11 +211,15 @@ def main():
 
     print(f"Processing slides from: {md_path}")
     print(f"Output CSV: {output_path}")
-    print(f"Character directory: {character_dir}")
 
-    # キャラクターマネージャー初期化
-    char_manager = CharacterManager(character_dir)
-    print(f"Loaded {len(char_manager.characters)} characters")
+    # キャラクターマネージャー初期化（オプショナル）
+    if use_characters:
+        print(f"Character directory: {character_dir}")
+        char_manager = CharacterManager(character_dir)
+        print(f"Loaded {len(char_manager.characters)} characters")
+    else:
+        print("No character directory specified - generating prompts without characters")
+        char_manager = None
 
     # スライド分析器初期化
     analyzer = SlideAnalyzer(md_path, api_key, char_manager)
