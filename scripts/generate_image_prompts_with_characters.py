@@ -204,9 +204,9 @@ def main():
     use_characters = character_dir and character_dir.exists()
 
     # APIキー取得
-    api_key = os.environ.get('GOOGLE_AI_API_KEY')
+    api_key = os.environ.get('GEMINI_API_KEY')
     if not api_key:
-        print("Error: GOOGLE_AI_API_KEY environment variable not set")
+        print("Error: GEMINI_API_KEY environment variable not set")
         sys.exit(1)
 
     print(f"Processing slides from: {md_path}")

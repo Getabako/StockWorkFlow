@@ -232,9 +232,9 @@ def generate_full_script(slide_file, output_file, yaml_file=None):
     # script_notesがない場合はAIで生成
     if not scripts:
         # APIキーの確認
-        api_key = os.environ.get('GOOGLE_AI_API_KEY')
+        api_key = os.environ.get('GEMINI_API_KEY')
         if not api_key:
-            raise ValueError("GOOGLE_AI_API_KEY環境変数が設定されていません")
+            raise ValueError("GEMINI_API_KEY環境変数が設定されていません")
 
         # Gemini APIの初期化
         genai.configure(api_key=api_key)

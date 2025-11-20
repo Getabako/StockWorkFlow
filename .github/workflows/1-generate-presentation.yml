@@ -109,7 +109,7 @@ jobs:
       - name: Step 2 - Generate image prompts
         if: env.GENERATE_IMAGES == 'true'
         env:
-          GOOGLE_AI_API_KEY: ${{ secrets.GOOGLE_AI_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
           # スライド内容を分析して詳細な画像プロンプトを生成
           python3 scripts/generate_image_prompts_with_characters.py \
@@ -121,7 +121,7 @@ jobs:
       - name: Step 3 - Generate images
         if: env.GENERATE_IMAGES == 'true'
         env:
-          GOOGLE_AI_API_KEY: ${{ secrets.GOOGLE_AI_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
           # 画像プロンプトCSVから画像を生成
           python3 scripts/generate_images_from_prompts.py \

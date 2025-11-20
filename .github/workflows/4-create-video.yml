@@ -65,7 +65,7 @@ jobs:
 
       - name: Generate script from slides
         env:
-          GOOGLE_AI_API_KEY: ${{ secrets.GOOGLE_AI_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
           # スライドのMarkdownファイルを使用
           SLIDE_FILE="${{ env.PRESENTATION_DIR }}/${{ github.event.inputs.presentation_name }}_slide_with_images.md"
