@@ -11,39 +11,6 @@ from datetime import datetime
 from pathlib import Path
 
 
-def extract_news_headlines(content: str) -> list:
-    """
-    ニュースセクションから見出しと詳細を抽出
-
-    Returns:
-        list of dict: [{'headline': '見出し', 'detail': '詳細説明'}, ...]
-    """
-    news_items = []
-
-    # 番号付きリスト項目を抽出（例: 1. **タイトル**: 説明）
-    pattern = r'\d+\.\s+\*\*([^*]+)\*\*[：:]\s*(.+?)(?=\n\d+\.|$)'
-    matches = re.findall(pattern, content, re.DOTALL)
-
-    for title, detail in matches:
-        # 見出しを簡潔に（最初の重要な情報のみ）
-        headline = title.strip()
-
-        # 詳細から余計な部分を削除
-        detail = detail.strip()
-        detail = re.sub(r'\(記事\d+\)', '', detail).strip()
-
-        # 見出しが長すぎる場合は切り詰め
-        if len(headline) > 50:
-            headline = headline[:47] + '...'
-
-        news_items.append({
-            'headline': headline,
-            'detail': detail
-        })
-
-    return news_items
-
-
 def parse_markdown_to_slides(md_content: str, date_str: str) -> dict:
     """
     MarkdownをSlideMovie用のYAML形式に変換（YouTube最適化版）
@@ -64,10 +31,10 @@ def parse_markdown_to_slides(md_content: str, date_str: str) -> dict:
         'script': f'{formatted_date}のAI・IT株式ニュースをお届けします。'
     })
 
-    # セクションを分割
-    sections = re.split(r'\n## ', md_content)
-
     slide_num = 2
+
+    # セクションを分割（## で分割）
+    sections = re.split(r'\n## ', md_content)
 
     for section in sections[1:]:
         lines = section.strip().split('\n')
@@ -78,23 +45,25 @@ def parse_markdown_to_slides(md_content: str, date_str: str) -> dict:
         content = '\n'.join(lines[1:]).strip()
 
         # ポートフォリオセクションはスキップ
-        if 'ポートフォリオ' in title or 'portfolio' in title.lower():
+        if 'ポートフォリオ' in title:
             continue
 
-        # 免責事項はスキップ（音声で毎回読み上げ）
-        if '免責' in title or '注意' in title or 'AI' in title and '生成' in content:
+        # 免責事項はスキップ
+        if '免責' in title or '注意' in title:
             continue
 
         # エグゼクティブサマリー
-        if 'サマリー' in title or 'エグゼクティブ' in title or '概要' in title:
-            # 最初の2-3文を抽出
+        if 'サマリー' in title or 'エグゼクティブ' in title:
+            # 最初の3文を抽出
             sentences = re.split(r'[。]', content)
-            summary_text = '。'.join(sentences[:3]).strip()
+            summary_sentences = [s.strip() for s in sentences if s.strip()][:3]
+            summary_text = '。'.join(summary_sentences)
             if summary_text and not summary_text.endswith('。'):
                 summary_text += '。'
 
-            if len(summary_text) > 150:
-                summary_text = summary_text[:147] + '...'
+            # 長すぎる場合は切り詰め
+            if len(summary_text) > 200:
+                summary_text = summary_text[:197] + '...'
 
             slides.append({
                 'title': '📋 本日のサマリー',
@@ -106,79 +75,82 @@ def parse_markdown_to_slides(md_content: str, date_str: str) -> dict:
             })
             slide_num += 1
 
-        # ニュースセクションの処理
-        elif 'ニュース' in title or 'NEWS' in title.upper() or 'ファクト' in title:
-            news_items = extract_news_headlines(content)
+        # 重要ファクトセクション
+        elif '重要ファクト' in title or 'ファクト' in title:
+            # ### サブセクションを解析
+            subsections = re.split(r'\n### ', content)
 
-            # ニュースが見つからない場合は箇条書きを探す
-            if not news_items:
-                for line in content.split('\n'):
+            facts_collected = []
+
+            for subsection in subsections:
+                if not subsection.strip():
+                    continue
+
+                sub_lines = subsection.strip().split('\n')
+                sub_title = sub_lines[0].strip() if sub_lines else ''
+                sub_content = '\n'.join(sub_lines[1:]).strip()
+
+                # 箇条書きから重要な項目を抽出
+                for line in sub_content.split('\n'):
                     line = line.strip()
-                    if line.startswith('*') or line.startswith('-') or line.startswith('•'):
-                        clean_line = re.sub(r'^\*+\s*|\-\s*|•\s*', '', line).strip()
+                    if not line:
+                        continue
+
+                    # * や - で始まる箇条書きを処理
+                    if line.startswith('*') or line.startswith('-'):
+                        clean_line = re.sub(r'^[\*\-]\s*', '', line).strip()
+
                         # **太字**を抽出
                         bold_match = re.search(r'\*\*([^*]+)\*\*', clean_line)
                         if bold_match:
                             headline = bold_match.group(1).strip()
+                            # 詳細部分を抽出
                             detail = re.sub(r'\*\*[^*]+\*\*[：:]?\s*', '', clean_line).strip()
-                            news_items.append({
-                                'headline': headline[:50] + '...' if len(headline) > 50 else headline,
-                                'detail': detail
+
+                            # 見出しが長すぎる場合は切り詰め
+                            if len(headline) > 60:
+                                headline = headline[:57] + '...'
+
+                            facts_collected.append({
+                                'headline': headline,
+                                'detail': detail,
+                                'category': sub_title
                             })
 
-            # 最大5件まで表示
-            for i, item in enumerate(news_items[:5]):
+            # 最大5件のファクトをスライドに
+            for i, fact in enumerate(facts_collected[:5]):
                 slides.append({
-                    'title': f'📰 ニュース {i+1}',
-                    'content': item['headline']
+                    'title': f'📰 {fact["category"]}' if fact['category'] else f'📰 ニュース {i+1}',
+                    'content': fact['headline']
                 })
                 script_notes.append({
                     'slide': slide_num,
-                    'script': f"{item['headline']}。{item['detail']}"
+                    'script': f"{fact['headline']}。{fact['detail']}"
                 })
                 slide_num += 1
 
-        # 市場概況セクション
-        elif '市場' in title or 'マーケット' in title:
-            # サマリーを抽出
-            summary_lines = []
-            for line in content.split('\n'):
-                if line.strip().startswith('-') or line.strip().startswith('•'):
-                    clean_line = line.strip().lstrip('-•').strip()
-                    if clean_line:
-                        # 長い場合は切り詰め
-                        if len(clean_line) > 80:
-                            clean_line = clean_line[:77] + '...'
-                        summary_lines.append(f'• {clean_line}')
-                    if len(summary_lines) >= 5:
-                        break
-
-            if summary_lines:
-                slides.append({
-                    'title': '📈 市場概況',
-                    'content': '\n'.join(summary_lines)
-                })
-                script_notes.append({
-                    'slide': slide_num,
-                    'script': f"本日の市場概況です。{' '.join([l.lstrip('• ') for l in summary_lines])}"
-                })
-                slide_num += 1
-
-        # 投資示唆セクション
-        elif '投資' in title or '示唆' in title or 'アクション' in title:
-            # 投資ポイントを抽出（段落全体を使用）
-            # 最初の3文を抽出
+        # 投資への示唆セクション
+        elif '投資' in title or '示唆' in title:
+            # 文を抽出
             sentences = re.split(r'[。\n]', content)
             key_points = []
+
             for sentence in sentences:
                 sentence = sentence.strip()
-                if sentence and len(sentence) > 10:
-                    # 長い場合は切り詰め
-                    if len(sentence) > 100:
-                        sentence = sentence[:97] + '...'
-                    key_points.append(f'• {sentence}')
-                    if len(key_points) >= 3:
-                        break
+                # 空や短すぎる文はスキップ
+                if not sentence or len(sentence) < 15:
+                    continue
+                # 免責事項をスキップ
+                if 'AI' in sentence and '生成' in sentence:
+                    continue
+
+                # 長い場合は切り詰め
+                if len(sentence) > 100:
+                    sentence = sentence[:97] + '...'
+
+                key_points.append(f'• {sentence}')
+                if len(key_points) >= 3:
+                    break
 
             if key_points:
                 slides.append({
