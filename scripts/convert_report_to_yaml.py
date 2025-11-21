@@ -28,7 +28,7 @@ def parse_markdown_to_slides(md_content: str, date_str: str) -> dict:
     })
     script_notes.append({
         'slide': 1,
-        'script': f'{formatted_date}のAI・IT株式ニュースをお届けします。'
+        'script': f'うぃっすー！if塾AIニュースのお時間です。{formatted_date}のAI・IT株式ニュースをお届けします。'
     })
 
     slide_num = 2
@@ -172,7 +172,7 @@ def parse_markdown_to_slides(md_content: str, date_str: str) -> dict:
     })
     script_notes.append({
         'slide': slide_num,
-        'script': '本日のAI・IT株式ニュースは以上です。このレポートはAI、Geminiにより自動生成されています。投資判断は必ずご自身で行ってください。ご視聴ありがとうございました。'
+        'script': '本日のAI・IT株式ニュースは以上です。このレポートはAI、Geminiにより自動生成されています。投資判断は必ずご自身で行ってください。この動画がいいと思ったらチャンネル登録、いいねをよろしくね！'
     })
 
     return {
