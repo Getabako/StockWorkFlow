@@ -19,6 +19,9 @@ const talkImages = [
   staticFile("talk6.png"),
 ];
 
+// 背景画像
+const backgroundImage = staticFile("background.jpeg");
+
 // スライド画像のメタデータをインポート
 let slidesMetadata: any;
 try {
@@ -109,6 +112,19 @@ export const Video: React.FC<VideoProps> = ({ slides, fps, totalFrames }) => {
         backgroundColor: "#2d2d2d",
       }}
     >
+      {/* 最背面の背景画像 */}
+      <Img
+        src={backgroundImage}
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "100%",
+          height: "100%",
+          objectFit: "cover",
+        }}
+      />
+
       {/* スライド画像（背景） */}
       {currentSlideImage && (
         <div
