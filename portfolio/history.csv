@@ -1,0 +1,4 @@
+date,action,symbol,name,shares,price_per_share,total_amount,reason,report_reference
+2025-11-18,BUY,AVGO,BROADCOM INC,5,53665,268325,レポート推奨,daily_report_2025_11_18
+2025-11-18,BUY,GOOG,ALPHABET INC-C,28,45545,1275260,レポート推奨,daily_report_2025_11_18
+2025-11-18,BUY,AMD,AMD,18,38281,689058,レポート推奨,daily_report_2025_11_18

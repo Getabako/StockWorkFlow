@@ -1,0 +1,206 @@
+name: Update Portfolio Data
+
+on:
+  workflow_dispatch:
+    inputs:
+      action_type:
+        description: '更新タイプ'
+        required: true
+        type: choice
+        options:
+          - 'add_transaction'
+          - 'update_buying_power'
+          - 'both'
+      transaction_date:
+        description: '取引日 (YYYY-MM-DD)'
+        required: false
+        type: string
+      transaction_action:
+        description: '売買 (BUY/SELL)'
+        required: false
+        type: choice
+        options:
+          - 'BUY'
+          - 'SELL'
+      symbol:
+        description: '銘柄コード (例: NVDA, 7366.T)'
+        required: false
+        type: string
+      name:
+        description: '銘柄名'
+        required: false
+        type: string
+      shares:
+        description: '株数'
+        required: false
+        type: string
+      price_per_share:
+        description: '1株あたり価格（円）'
+        required: false
+        type: string
+      reason:
+        description: '売買理由'
+        required: false
+        type: string
+      buying_power:
+        description: '新しい買付余力（円）'
+        required: false
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  update-portfolio:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pandas
+
+      - name: Add transaction
+        if: github.event.inputs.action_type == 'add_transaction' || github.event.inputs.action_type == 'both'
+        run: |
+          python3 << 'EOF'
+          import csv
+          import json
+          import os
+          from datetime import datetime
+
+          # 入力パラメータ
+          date = "${{ github.event.inputs.transaction_date }}" or datetime.now().strftime('%Y-%m-%d')
+          action = "${{ github.event.inputs.transaction_action }}"
+          symbol = "${{ github.event.inputs.symbol }}"
+          name = "${{ github.event.inputs.name }}"
+          shares = int("${{ github.event.inputs.shares }}" or "0")
+          price = float("${{ github.event.inputs.price_per_share }}" or "0")
+          reason = "${{ github.event.inputs.reason }}" or "手動入力"
+          total = shares * price
+
+          if not symbol or shares == 0:
+              print("Error: Symbol and shares are required")
+              exit(1)
+
+          # 取引履歴に追加
+          history_file = "portfolio/history.csv"
+          with open(history_file, 'a', newline='', encoding='utf-8') as f:
+              writer = csv.writer(f)
+              writer.writerow([date, action, symbol, name, shares, price, total, reason, "manual_entry"])
+
+          print(f"✓ Added transaction: {action} {shares} {symbol} @ ¥{price:,.0f}")
+
+          # ポートフォリオCSVを更新
+          portfolio_file = "data/portfolio.csv"
+          portfolio = []
+
+          with open(portfolio_file, 'r', encoding='utf-8') as f:
+              reader = csv.DictReader(f)
+              for row in reader:
+                  portfolio.append(row)
+
+          # 銘柄を検索
+          found = False
+          for stock in portfolio:
+              if stock['symbol'] == symbol:
+                  found = True
+                  current_shares = int(stock['shares'])
+                  current_price = float(stock['purchase_price'])
+
+                  if action == 'BUY':
+                      # 平均取得単価を計算
+                      total_cost = (current_shares * current_price) + (shares * price)
+                      new_shares = current_shares + shares
+                      new_avg_price = total_cost / new_shares
+                      stock['shares'] = str(new_shares)
+                      stock['purchase_price'] = f"{new_avg_price:.2f}"
+                  elif action == 'SELL':
+                      new_shares = current_shares - shares
+                      if new_shares <= 0:
+                          portfolio.remove(stock)
+                      else:
+                          stock['shares'] = str(new_shares)
+                  break
+
+          # 新規銘柄の場合
+          if not found and action == 'BUY':
+              portfolio.append({
+                  'symbol': symbol,
+                  'name': name,
+                  'shares': str(shares),
+                  'purchase_price': str(price)
+              })
+
+          # ポートフォリオを保存
+          with open(portfolio_file, 'w', newline='', encoding='utf-8') as f:
+              writer = csv.DictWriter(f, fieldnames=['symbol', 'name', 'shares', 'purchase_price'])
+              writer.writeheader()
+              writer.writerows(portfolio)
+
+          print(f"✓ Updated portfolio.csv")
+          EOF
+
+      - name: Update buying power
+        if: github.event.inputs.action_type == 'update_buying_power' || github.event.inputs.action_type == 'both'
+        run: |
+          python3 << 'EOF'
+          import json
+          from datetime import datetime
+
+          buying_power = "${{ github.event.inputs.buying_power }}"
+
+          if not buying_power:
+              print("Error: Buying power is required")
+              exit(1)
+
+          account_file = "portfolio/account.json"
+
+          with open(account_file, 'r', encoding='utf-8') as f:
+              account = json.load(f)
+
+          account['buying_power'] = int(buying_power)
+          account['last_updated'] = datetime.now().strftime('%Y-%m-%d')
+
+          with open(account_file, 'w', encoding='utf-8') as f:
+              json.dump(account, f, ensure_ascii=False, indent=2)
+
+          print(f"✓ Updated buying power to ¥{int(buying_power):,}")
+          EOF
+
+      - name: Commit changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add data/portfolio.csv portfolio/history.csv portfolio/account.json
+          git diff --staged --quiet || git commit -m "Update portfolio data (manual update)"
+          git push origin main
+
+      - name: Summary
+        run: |
+          echo "## Portfolio Update Complete! 📊" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Action Type:** ${{ github.event.inputs.action_type }}" >> $GITHUB_STEP_SUMMARY
+          if [ "${{ github.event.inputs.action_type }}" == "add_transaction" ] || [ "${{ github.event.inputs.action_type }}" == "both" ]; then
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "**Transaction:**" >> $GITHUB_STEP_SUMMARY
+            echo "- Date: ${{ github.event.inputs.transaction_date }}" >> $GITHUB_STEP_SUMMARY
+            echo "- Action: ${{ github.event.inputs.transaction_action }}" >> $GITHUB_STEP_SUMMARY
+            echo "- Symbol: ${{ github.event.inputs.symbol }}" >> $GITHUB_STEP_SUMMARY
+            echo "- Shares: ${{ github.event.inputs.shares }}" >> $GITHUB_STEP_SUMMARY
+            echo "- Price: ¥${{ github.event.inputs.price_per_share }}" >> $GITHUB_STEP_SUMMARY
+          fi
+          if [ "${{ github.event.inputs.action_type }}" == "update_buying_power" ] || [ "${{ github.event.inputs.action_type }}" == "both" ]; then
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "**Buying Power:** ¥${{ github.event.inputs.buying_power }}" >> $GITHUB_STEP_SUMMARY
+          fi
