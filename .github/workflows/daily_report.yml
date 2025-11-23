@@ -131,6 +131,7 @@ jobs:
           git add report/daily/
           git add inputs/daily_report_${{ env.REPORT_DATE }}.yml
           git diff --staged --quiet || git commit -m "Add daily reports for ${{ env.REPORT_DATE }} (automated)"
+          git pull --rebase origin main || true
           git push origin main
 
       - name: Send Market Report to Discord
@@ -207,6 +208,7 @@ jobs:
         run: |
           git add presentations/${{ env.PRESENTATION_NAME }}/
           git diff --staged --quiet || git commit -m "Add presentation slides for ${{ env.REPORT_DATE }}"
+          git pull --rebase origin main || true
           git push origin main
 
       # 動画生成（自動実行時またはgenerate_video=true時、generate_slides_only=false時）
@@ -275,6 +277,7 @@ jobs:
           git add presentations/scripts_output/ || true
           git add presentations/audio_output/ || true
           git diff --staged --quiet || git commit -m "feat: Add video - ${{ env.PRESENTATION_NAME }}"
+          git pull --rebase origin main || true
           git push origin main
 
       - name: Upload video to YouTube
