@@ -210,17 +210,17 @@ jobs:
           git push origin main
 
       # 動画生成（自動実行時またはgenerate_video=true時、generate_slides_only=false時）
-      - name: Generate Video
+      - name: Prepare slide images for video
+        if: success() && (github.event_name == 'schedule' || github.event.inputs.generate_video == 'true') && github.event.inputs.generate_slides_only != 'true'
+        run: |
+          python3 scripts/prepare_slides_for_video.py "presentations/${{ env.PRESENTATION_NAME }}"
+
+      - name: Generate script from slides
         if: success() && (github.event_name == 'schedule' || github.event.inputs.generate_video == 'true') && github.event.inputs.generate_slides_only != 'true'
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
           PRESENTATION_DIR="presentations/${{ env.PRESENTATION_NAME }}"
-
-          # Prepare slide images
-          python3 scripts/prepare_slides_for_video.py "$PRESENTATION_DIR"
-
-          # Generate script from slides
           SLIDE_FILE="$PRESENTATION_DIR/${{ env.PRESENTATION_NAME }}_slide_with_images.md"
           if [ ! -f "$SLIDE_FILE" ]; then
             SLIDE_FILE="$PRESENTATION_DIR/${{ env.PRESENTATION_NAME }}_slide.md"
@@ -233,13 +233,19 @@ jobs:
             python3 scripts/generate_script.py "$SLIDE_FILE"
           fi
 
-          # Generate audio
+      - name: Generate audio
+        if: success() && (github.event_name == 'schedule' || github.event.inputs.generate_video == 'true') && github.event.inputs.generate_slides_only != 'true'
+        run: |
           python3 scripts/generate_audio.py "$SCRIPT_FILE"
 
-          # Generate timings
+      - name: Generate timings
+        if: success() && (github.event_name == 'schedule' || github.event.inputs.generate_video == 'true') && github.event.inputs.generate_slides_only != 'true'
+        run: |
           python3 scripts/generate_timings.py "$AUDIO_METADATA"
 
-          # Prepare Remotion project
+      - name: Prepare Remotion project
+        if: success() && (github.event_name == 'schedule' || github.event.inputs.generate_video == 'true') && github.event.inputs.generate_slides_only != 'true'
+        run: |
           cp $AUDIO_DIR/video_timings.json remotion-project/timings.json
           mkdir -p remotion-project/public/presentations/audio_output
           cp $AUDIO_DIR/*.mp3 remotion-project/public/presentations/audio_output/
@@ -247,9 +253,10 @@ jobs:
           cp slide_images/*.png remotion-project/public/slides/
           cp slide_images/slides_metadata.json remotion-project/
 
-          # Render video
+      - name: Render video
+        if: success() && (github.event_name == 'schedule' || github.event.inputs.generate_video == 'true') && github.event.inputs.generate_slides_only != 'true'
+        run: |
           cd remotion-project && npm run build
-
           echo "✓ Video generated"
 
       - name: Save Video Output
