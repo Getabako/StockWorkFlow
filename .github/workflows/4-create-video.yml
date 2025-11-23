@@ -183,11 +183,14 @@ jobs:
           TITLE="【AI IT株式】日次レポート ${DATE_STR}"
 
           # 説明文を生成
-          DESCRIPTION="AI・IT関連株式の日次市場分析レポートです。
+          DESCRIPTION=$(cat <<'EOF'
+AI・IT関連株式の日次市場分析レポートです。
 
 本動画はAIによって自動生成されています。
 
-#AI株 #IT株 #株式投資 #市場分析 #日次レポート"
+#AI株 #IT株 #株式投資 #市場分析 #日次レポート
+EOF
+)
 
           # YouTubeにアップロード
           python3 scripts/upload_to_youtube.py \
