@@ -182,21 +182,11 @@ jobs:
           DATE_STR=$(echo "${{ github.event.inputs.presentation_name }}" | grep -oE '[0-9]{4}_[0-9]{2}_[0-9]{2}' | sed 's/_/\//g')
           TITLE="【AI IT株式】日次レポート ${DATE_STR}"
 
-          # 説明文を生成
-          DESCRIPTION=$(cat <<'EOF'
-AI・IT関連株式の日次市場分析レポートです。
-
-本動画はAIによって自動生成されています。
-
-#AI株 #IT株 #株式投資 #市場分析 #日次レポート
-EOF
-)
-
           # YouTubeにアップロード
           python3 scripts/upload_to_youtube.py \
             "videos/${{ github.event.inputs.presentation_name }}/video.mp4" \
             --title "$TITLE" \
-            --description "$DESCRIPTION" \
+            --description "AI・IT関連株式の日次市場分析レポートです。本動画はAIによって自動生成されています。#AI株 #IT株 #株式投資" \
             --tags "AI" "IT" "株式投資" "市場分析" "日次レポート" "自動生成" \
             --privacy public
 
