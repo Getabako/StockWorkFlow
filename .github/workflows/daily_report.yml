@@ -277,6 +277,35 @@ jobs:
           git diff --staged --quiet || git commit -m "feat: Add video - ${{ env.PRESENTATION_NAME }}"
           git push origin main
 
+      - name: Upload video to YouTube
+        if: success() && (github.event_name == 'schedule' || github.event.inputs.generate_video == 'true') && github.event.inputs.generate_slides_only != 'true'
+        env:
+          YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
+          YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+        run: |
+          # YouTubeの認証情報が設定されている場合のみアップロード
+          if [ -n "$YOUTUBE_CLIENT_ID" ] && [ -n "$YOUTUBE_CLIENT_SECRET" ] && [ -n "$YOUTUBE_REFRESH_TOKEN" ]; then
+            python3 scripts/upload_to_youtube.py \
+              "videos/${{ env.PRESENTATION_NAME }}/video.mp4" \
+              --title "AI/IT株式日次レポート ${{ env.REPORT_DATE }}" \
+              --description "本日のAI/IT市場の動向分析レポートです。
+
+主な内容：
+- 市場情勢の分析
+- 重要ニュースの解説
+- 投資への示唆
+
+📊 詳細なレポートはDiscordで配信中
+🤖 自動生成レポート
+
+#AI #IT #株式投資 #市場分析 #日次レポート" \
+              --tags AI IT 株式投資 市場分析 日次レポート NVIDIA AMD Broadcom
+            echo "✓ YouTube upload completed"
+          else
+            echo "YouTube credentials not configured, skipping upload"
+          fi
+
       - name: Upload reports as artifact
         if: always()
         uses: actions/upload-artifact@v4
