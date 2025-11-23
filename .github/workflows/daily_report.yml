@@ -159,14 +159,33 @@ jobs:
           PRESENTATION_NAME="AI_IT株式日次レポート_${{ env.REPORT_DATE }}"
           echo "PRESENTATION_NAME=$PRESENTATION_NAME" >> $GITHUB_ENV
 
-          # 1. Generate presentation from YAML
-          python3 scripts/generate_presentation.py "inputs/daily_report_${{ env.REPORT_DATE }}.yml"
+          # Create directories
+          mkdir -p slides images presentations/$PRESENTATION_NAME/images
 
-          # 2. Generate slide images
-          python3 scripts/generate_slide_images.py "presentations/$PRESENTATION_NAME"
+          # 1. Create slide from YAML
+          python3 scripts/create_slide.py "inputs/daily_report_${{ env.REPORT_DATE }}.yml"
 
-          # 3. Insert images into slides
-          python3 scripts/insert_images_to_slides.py "presentations/$PRESENTATION_NAME"
+          # 2. Generate image prompts
+          python3 scripts/generate_image_prompts_with_characters.py \
+            "slides/${PRESENTATION_NAME}_slide.md" \
+            --output "slides/${PRESENTATION_NAME}_imageprompt.csv"
+
+          # 3. Generate images
+          python3 scripts/generate_images_from_prompts.py \
+            "slides/${PRESENTATION_NAME}_imageprompt.csv" \
+            --output-dir "images"
+
+          # 4. Insert images into slides
+          python3 scripts/insert_images_to_slides.py \
+            "slides/${PRESENTATION_NAME}_slide.md" \
+            --images-dir "images" \
+            --alignment "right" \
+            --width "45%" \
+            --aspect-ratio "3:4"
+
+          # Copy to presentation directory
+          cp "slides/${PRESENTATION_NAME}_slide.md" "presentations/$PRESENTATION_NAME/${PRESENTATION_NAME}_slide_with_images.md"
+          cp -r images presentations/$PRESENTATION_NAME/
 
           echo "✓ Presentation slides generated"
 
