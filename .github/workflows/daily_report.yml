@@ -57,6 +57,13 @@ jobs:
         run: npm install
         working-directory: ./remotion-project
 
+      - name: Install Marp CLI
+        run: npm install -g @marp-team/marp-cli
+
+      - name: Install Japanese fonts
+        run: |
+          sudo apt-get install -y fonts-noto-cjk fonts-noto-cjk-extra
+
       - name: Fetch news data
         run: |
           python scripts/fetch_data.py
@@ -186,6 +193,12 @@ jobs:
           # Copy to presentation directory
           cp "slides/${PRESENTATION_NAME}_slide.md" "presentations/$PRESENTATION_NAME/${PRESENTATION_NAME}_slide_with_images.md"
           cp -r images presentations/$PRESENTATION_NAME/
+
+          # 5. Export slides as individual PNG images using marp
+          marp "slides/${PRESENTATION_NAME}_slide.md" \
+            -o "presentations/$PRESENTATION_NAME/slide.png" \
+            --images png \
+            --allow-local-files
 
           echo "✓ Presentation slides generated"
 
