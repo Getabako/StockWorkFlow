@@ -1,4 +1,4 @@
-name: 4. Create Video
+name: "4. Create Video"
 
 on:
   workflow_dispatch:
