@@ -136,6 +136,10 @@ jobs:
             "3066993" \
             "output/market_report_${{ env.REPORT_DATE }}.pdf"
 
+      - name: Wait before sending second report
+        if: success()
+        run: sleep 5
+
       - name: Send Portfolio Impact Report to Discord
         if: success()
         run: |
