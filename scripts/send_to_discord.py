@@ -98,14 +98,19 @@ def create_weekly_summary_embed(title: str, sections: dict, color: int) -> dict:
         "fields": []
     }
 
-    # 週次レポートの主要セクションのみを抽出（絵文字を含む可能性があるセクション名）
+    # 週次レポート・ポートフォリオレポートの主要セクションのみを抽出
     key_sections = [
         "📊 ポートフォリオサマリー",
         "ポートフォリオサマリー",
         "🎯 今週の投資推奨銘柄",
         "今週の投資推奨銘柄",
         "📅 来週の注目イベント",
-        "来週の注目イベント"
+        "来週の注目イベント",
+        # ポートフォリオ影響分析レポート用
+        "サマリー",
+        "本日のアクション提案",
+        "新規購入候補",
+        "明日以降の注目点"
     ]
 
     for section_name in key_sections:
@@ -333,9 +338,9 @@ def main():
     sections = parse_markdown_report(report_file)
 
     print(f"Creating Discord embed...")
-    # 週次レポートの場合は要約版embedを使用
-    if "週次" in title or "weekly" in title.lower():
-        print("  Using summary format for weekly report")
+    # 週次レポートまたはポートフォリオレポートの場合は要約版embedを使用
+    if "週次" in title or "weekly" in title.lower() or "ポートフォリオ" in title or "portfolio" in title.lower():
+        print("  Using summary format for long report")
         embed = create_weekly_summary_embed(title, sections, color)
     else:
         embed = create_discord_embed(title, sections, color)
