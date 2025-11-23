@@ -1,420 +1,259 @@
 {
   "fps": 30,
-  "totalDuration": 201.88,
-  "totalFrames": 6056,
+  "totalDuration": 138.82,
+  "totalFrames": 4164,
   "slides": [
     {
       "index": 1,
       "title": "AI/IT株式ニュース",
       "audioFile": "presentations/audio_output/slide_01.mp3",
-      "duration": 6.38,
-      "durationFrames": 191,
+      "duration": 10.52,
+      "durationFrames": 315,
       "startTime": 0,
-      "endTime": 6.38,
+      "endTime": 10.52,
       "startFrame": 0,
-      "endFrame": 191,
+      "endFrame": 315,
       "subtitles": [
         {
-          "text": "2025/11/20のAI・IT株式ニュースをお届けします。",
+          "text": "うぃっすー！",
           "start": 0,
-          "end": 6.38,
+          "end": 1.1446153846153846,
           "startFrame": 0,
-          "endFrame": 191
+          "endFrame": 34
+        },
+        {
+          "text": "if塾AIニュースのお時間です。",
+          "start": 1.4446153846153846,
+          "end": 4.496923076923077,
+          "startFrame": 43,
+          "endFrame": 134
+        },
+        {
+          "text": "2025/11/23のAI・IT株式ニュースをお届けします。",
+          "start": 4.796923076923076,
+          "end": 10.52,
+          "startFrame": 143,
+          "endFrame": 315
         }
       ],
-      "fullScript": "2025/11/20のAI・IT株式ニュースをお届けします。"
+      "fullScript": "うぃっすー！if塾AIニュースのお時間です。2025/11/23のAI・IT株式ニュースをお届けします。"
     },
     {
       "index": 2,
       "title": "📋 本日のサマリー",
       "audioFile": "presentations/audio_output/slide_02.mp3",
-      "duration": 39.68,
-      "durationFrames": 1190,
-      "startTime": 6.38,
-      "endTime": 46.06,
-      "startFrame": 191,
-      "endFrame": 1381,
+      "duration": 29.48,
+      "durationFrames": 884,
+      "startTime": 10.52,
+      "endTime": 40.0,
+      "startFrame": 315,
+      "endFrame": 1200,
       "subtitles": [
         {
-          "text": "AI業界ではGoogleがGeminiの機能拡張や新画像生成モ\nデル「Nano Banana Pro」を発表し",
-          "start": 6.38,
-          "end": 15.584107142857142,
-          "startFrame": 191,
-          "endFrame": 467
+          "text": "本日のAI/IT市場は、UAEによるアフリカのAIインフラへの\n10億ドル規模の投資計画が最大の注目点となりました。",
+          "start": 10.52,
+          "end": 20.39309090909091,
+          "startFrame": 315,
+          "endFrame": 611
         },
         {
-          "text": "競争を激化させています。",
-          "start": 15.884107142857143,
-          "end": 17.929464285714285,
-          "startFrame": 476,
-          "endFrame": 537
+          "text": "これはAI技術の地理的拡大と新興市場における普及加速を示唆し",
+          "start": 20.69309090909091,
+          "end": 25.889454545454548,
+          "startFrame": 620,
+          "endFrame": 776
         },
         {
-          "text": "NVIDIAは好調な業績予測を示したものの、\n市場ではAIバブルへの懸念が再燃し株価は後退しました。",
-          "start": 18.229464285714286,
-          "end": 26.581339285714286,
-          "startFrame": 546,
-          "endFrame": 797
+          "text": "AIエコシステムの新たな成長機会を\n創出する可能性を秘めています。",
+          "start": 26.18945454545455,
+          "end": 31.73224242424243,
+          "startFrame": 785,
+          "endFrame": 951
         },
         {
-          "text": "また、Anthropicへの投資が「循環型AI取引」の懸念を引\nき起こしています。",
-          "start": 26.881339285714287,
-          "end": 33.699196428571426,
-          "startFrame": 806,
-          "endFrame": 1010
-        },
-        {
-          "text": "ポートフォリオはLITALICOを除き、AI関連主要銘柄で大幅\nな含み損を抱えており、市場の警戒感が強まる中",
-          "start": 33.99919642857142,
-          "end": 43.03285714285714,
-          "startFrame": 1019,
-          "endFrame": 1290
-        },
-        {
-          "text": "一層の慎重な判断が求められます。",
-          "start": 43.33285714285714,
-          "end": 46.059999999999995,
-          "startFrame": 1299,
-          "endFrame": 1381
+          "text": "また、ITハードウェア業界におけるグローバルサプライチェーンの\n再編の動きも報告されています。",
+          "start": 32.032242424242426,
+          "end": 40.0,
+          "startFrame": 960,
+          "endFrame": 1200
         }
       ],
-      "fullScript": "AI業界ではGoogleがGeminiの機能拡張や新画像生成モデル「Nano Banana Pro」を発表し、競争を激化させています。NVIDIAは好調な業績予測を示したものの、市場ではAIバブルへの懸念が再燃し株価は後退しました。また、Anthropicへの投資が「循環型AI取引」の懸念を引き起こしています。ポートフォリオはLITALICOを除き、AI関連主要銘柄で大幅な含み損を抱えており、市場の警戒感が強まる中、一層の慎重な判断が求められます。"
+      "fullScript": "本日のAI/IT市場は、UAEによるアフリカのAIインフラへの10億ドル規模の投資計画が最大の注目点となりました。これはAI技術の地理的拡大と新興市場における普及加速を示唆し、AIエコシステムの新たな成長機会を創出する可能性を秘めています。また、ITハードウェア業界におけるグローバルサプライチェーンの再編の動きも報告されています。"
     },
     {
       "index": 3,
-      "title": "📰 M&A・企業買収",
+      "title": "📰 大型契約・受注",
       "audioFile": "presentations/audio_output/slide_03.mp3",
-      "duration": 16.52,
-      "durationFrames": 495,
-      "startTime": 46.06,
-      "endTime": 62.58,
-      "startFrame": 1381,
-      "endFrame": 1877,
+      "duration": 31.92,
+      "durationFrames": 957,
+      "startTime": 40.0,
+      "endTime": 71.92,
+      "startFrame": 1200,
+      "endFrame": 2157,
       "subtitles": [
         {
-          "text": "Palo Alto Networks (PANW)。",
-          "start": 46.06,
-          "end": 50.28367346938776,
-          "startFrame": 1381,
-          "endFrame": 1508
+          "text": "UAEによるアフリカAIインフラへの10億ドル投資計画。",
+          "start": 40.0,
+          "end": 44.88727272727273,
+          "startFrame": 1200,
+          "endFrame": 1346
         },
         {
-          "text": "は、Chronosphere Inc. を33.5億ドルで買収\nし、AI対応サイバーセキュリティ製品を強化すると発表しました。",
-          "start": 50.583673469387755,
-          "end": 60.65551020408164,
-          "startFrame": 1517,
-          "endFrame": 1819
+          "text": "アラブ首長国連邦（UAE）は、\nアフリカ大陸におけるAIインフラおよびサービスの拡大に向け",
+          "start": 45.18727272727273,
+          "end": 52.86727272727273,
+          "startFrame": 1355,
+          "endFrame": 1586
         },
         {
-          "text": "（記事13, 18）",
-          "start": 60.955510204081634,
-          "end": 62.58,
-          "startFrame": 1828,
-          "endFrame": 1877
+          "text": "10億ドル規模の投資を計画していることを発表しました。",
+          "start": 53.167272727272724,
+          "end": 57.879999999999995,
+          "startFrame": 1595,
+          "endFrame": 1736
+        },
+        {
+          "text": "これは、これまでAI技術の導入で遅れをとっていたアフリカにおけ\nる技術普及を加速させ",
+          "start": 58.17999999999999,
+          "end": 65.33636363636363,
+          "startFrame": 1745,
+          "endFrame": 1960
+        },
+        {
+          "text": "AIエコシステムのグローバルな分散化を\n促進する戦略的な動きと見られます。",
+          "start": 65.63636363636363,
+          "end": 71.91999999999999,
+          "startFrame": 1969,
+          "endFrame": 2157
         }
       ],
-      "fullScript": "Palo Alto Networks (PANW)。は、Chronosphere Inc. を33.5億ドルで買収し、AI対応サイバーセキュリティ製品を強化すると発表しました。（記事13, 18）"
+      "fullScript": "UAEによるアフリカAIインフラへの10億ドル投資計画。アラブ首長国連邦（UAE）は、アフリカ大陸におけるAIインフラおよびサービスの拡大に向け、10億ドル規模の投資を計画していることを発表しました。これは、これまでAI技術の導入で遅れをとっていたアフリカにおける技術普及を加速させ、AIエコシステムのグローバルな分散化を促進する戦略的な動きと見られます。"
     },
     {
       "index": 4,
-      "title": "📰 戦略的提携・パートナーシップ",
+      "title": "📰 その他の重要情報",
       "audioFile": "presentations/audio_output/slide_04.mp3",
-      "duration": 14.46,
-      "durationFrames": 433,
-      "startTime": 62.58,
-      "endTime": 77.03999999999999,
-      "startFrame": 1877,
-      "endFrame": 2311,
+      "duration": 31.0,
+      "durationFrames": 930,
+      "startTime": 71.92,
+      "endTime": 102.92,
+      "startFrame": 2157,
+      "endFrame": 3087,
       "subtitles": [
         {
-          "text": "Merck KGaA。",
-          "start": 62.58,
-          "end": 64.35571428571428,
-          "startFrame": 1877,
-          "endFrame": 1930
+          "text": "グローバルサプライチェーンの再編動向。",
+          "start": 71.92,
+          "end": 75.03098901098902,
+          "startFrame": 2157,
+          "endFrame": 2250
         },
         {
-          "text": "はValo Health Inc. の\nAIプラットフォームを利用し",
-          "start": 64.65571428571428,
-          "end": 69.98285714285714,
-          "startFrame": 1939,
-          "endFrame": 2099
+          "text": "中国を拠点と\nするWi-Fi大手TP-Link Systems Inc.が",
+          "start": 75.33098901098901,
+          "end": 81.22549450549451,
+          "startFrame": 2259,
+          "endFrame": 2436
         },
         {
-          "text": "パーキンソン病治療薬の開発を\n行う30億ドル以上の提携を発表しました。",
-          "start": 70.28285714285714,
-          "end": 75.77142857142857,
-          "startFrame": 2108,
-          "endFrame": 2273
+          "text": "ベトナムでの製造を強化し米国市場への供給を行うなど",
+          "start": 81.5254945054945,
+          "end": 85.6189010989011,
+          "startFrame": 2445,
+          "endFrame": 2568
         },
         {
-          "text": "（記事22）",
-          "start": 76.07142857142857,
-          "end": 77.03999999999999,
-          "startFrame": 2282,
-          "endFrame": 2311
+          "text": "ITハードウェア業界におけるサプライチェーンの\n地政学的リスク分散の動きが加速していることが示唆されました。",
+          "start": 85.9189010989011,
+          "end": 94.59692307692308,
+          "startFrame": 2577,
+          "endFrame": 2837
+        },
+        {
+          "text": "これは、AI関連ハードウェアを含む広範なIT製品の供給体制に間\n接的な影響を与える可能性があります。",
+          "start": 94.89692307692307,
+          "end": 102.92,
+          "startFrame": 2846,
+          "endFrame": 3087
         }
       ],
-      "fullScript": "Merck KGaA。はValo Health Inc. のAIプラットフォームを利用し、パーキンソン病治療薬の開発を行う30億ドル以上の提携を発表しました。（記事22）"
+      "fullScript": "グローバルサプライチェーンの再編動向。中国を拠点とするWi-Fi大手TP-Link Systems Inc.が、ベトナムでの製造を強化し米国市場への供給を行うなど、ITハードウェア業界におけるサプライチェーンの地政学的リスク分散の動きが加速していることが示唆されました。これは、AI関連ハードウェアを含む広範なIT製品の供給体制に間接的な影響を与える可能性があります。"
     },
     {
       "index": 5,
-      "title": "📰 戦略的提携・パートナーシップ",
+      "title": "📰 その他の重要情報",
       "audioFile": "presentations/audio_output/slide_05.mp3",
-      "duration": 13.7,
-      "durationFrames": 411,
-      "startTime": 77.03999999999999,
-      "endTime": 90.74,
-      "startFrame": 2311,
-      "endFrame": 2722,
+      "duration": 18.9,
+      "durationFrames": 567,
+      "startTime": 102.92,
+      "endTime": 121.82,
+      "startFrame": 3087,
+      "endFrame": 3654,
       "subtitles": [
         {
-          "text": "Uber Technologies Inc.。",
-          "start": 77.03999999999999,
-          "end": 80.24,
-          "startFrame": 2311,
-          "endFrame": 2407
+          "text": "サイバーセキュリティへの懸念。",
+          "start": 102.92,
+          "end": 105.34920353982301,
+          "startFrame": 3087,
+          "endFrame": 3160
         },
         {
-          "text": "はStarship Technologies Inc. と\n提携し",
-          "start": 80.53999999999999,
-          "end": 84.99217391304347,
-          "startFrame": 2416,
-          "endFrame": 2549
+          "text": "ハーバード大学のデータベースが\nフィッシング攻撃により不正アクセスを受ける事件が発生しました。",
+          "start": 105.649203539823,
+          "end": 113.0987610619469,
+          "startFrame": 3169,
+          "endFrame": 3392
         },
         {
-          "text": "12月より英国の一部でロボットによる配送サービスを開始します。",
-          "start": 85.29217391304347,
-          "end": 89.60521739130434,
-          "startFrame": 2558,
-          "endFrame": 2688
-        },
-        {
-          "text": "（記事36）",
-          "start": 89.90521739130433,
-          "end": 90.73999999999998,
-          "startFrame": 2697,
-          "endFrame": 2722
+          "text": "これは、学術機関のみならず、企業におけるデータセキュリティの重\n要性と継続的な脅威を再認識させるものです。",
+          "start": 113.3987610619469,
+          "end": 121.82,
+          "startFrame": 3401,
+          "endFrame": 3654
         }
       ],
-      "fullScript": "Uber Technologies Inc.。はStarship Technologies Inc. と提携し、12月より英国の一部でロボットによる配送サービスを開始します。（記事36）"
+      "fullScript": "サイバーセキュリティへの懸念。ハーバード大学のデータベースがフィッシング攻撃により不正アクセスを受ける事件が発生しました。これは、学術機関のみならず、企業におけるデータセキュリティの重要性と継続的な脅威を再認識させるものです。"
     },
     {
       "index": 6,
-      "title": "📰 戦略的提携・パートナーシップ",
-      "audioFile": "presentations/audio_output/slide_06.mp3",
-      "duration": 12.34,
-      "durationFrames": 370,
-      "startTime": 90.74,
-      "endTime": 103.08,
-      "startFrame": 2722,
-      "endFrame": 3092,
-      "subtitles": [
-        {
-          "text": "Google (Alphabet)。",
-          "start": 90.74,
-          "end": 93.34888888888888,
-          "startFrame": 2722,
-          "endFrame": 2800
-        },
-        {
-          "text": "はWestinghouseと提携し、Google Cloudの\nAIを活用して原子力発電の再活性化に取り組んでいます。",
-          "start": 93.64888888888888,
-          "end": 102.0553086419753,
-          "startFrame": 2809,
-          "endFrame": 3061
-        },
-        {
-          "text": "（記事9）",
-          "start": 102.3553086419753,
-          "end": 103.07999999999998,
-          "startFrame": 3070,
-          "endFrame": 3092
-        }
-      ],
-      "fullScript": "Google (Alphabet)。はWestinghouseと提携し、Google CloudのAIを活用して原子力発電の再活性化に取り組んでいます。（記事9）"
-    },
-    {
-      "index": 7,
-      "title": "📰 戦略的提携・パートナーシップ",
-      "audioFile": "presentations/audio_output/slide_07.mp3",
-      "duration": 9.24,
-      "durationFrames": 277,
-      "startTime": 103.08,
-      "endTime": 112.32,
-      "startFrame": 3092,
-      "endFrame": 3369,
-      "subtitles": [
-        {
-          "text": "Google (Alphabet)。",
-          "start": 103.08,
-          "end": 105.2104109589041,
-          "startFrame": 3092,
-          "endFrame": 3156
-        },
-        {
-          "text": "と は、GeForce NOWとChromebookの独占的な\nFast Passをローンチします。",
-          "start": 105.5104109589041,
-          "end": 111.30986301369862,
-          "startFrame": 3165,
-          "endFrame": 3339
-        },
-        {
-          "text": "（記事10）",
-          "start": 111.60986301369861,
-          "end": 112.31999999999998,
-          "startFrame": 3348,
-          "endFrame": 3369
-        }
-      ],
-      "fullScript": "Google (Alphabet)。と は、GeForce NOWとChromebookの独占的なFast Passをローンチします。（記事10）"
-    },
-    {
-      "index": 8,
-      "title": "💡 投資のポイント",
-      "audioFile": "presentations/audio_output/slide_08.mp3",
-      "duration": 75.3,
-      "durationFrames": 2259,
-      "startTime": 112.32,
-      "endTime": 187.62,
-      "startFrame": 3369,
-      "endFrame": 5628,
-      "subtitles": [
-        {
-          "text": "投資のポイントです。",
-          "start": 112.32,
-          "end": 114.12604534005037,
-          "startFrame": 3369,
-          "endFrame": 3423
-        },
-        {
-          "text": "AI市場の成長期待は依然高いものの、NVIDIAの株価が好調な\nガイダンスにもかかわらず後退したことや",
-          "start": 114.42604534005036,
-          "end": 123.45627204030225,
-          "startFrame": 3432,
-          "endFrame": 3703
-        },
-        {
-          "text": "Anthropicへの投資に関する「循環型AI取引」の懸念など\n市場全体のバブルへの警戒感が強まっています",
-          "start": 123.75627204030225,
-          "end": 133.1477078085642,
-          "startFrame": 3712,
-          "endFrame": 3994
-        },
-        {
-          "text": "Googleの積極的なAI製品展開は競争激化を示唆し",
-          "start": 133.44770780856422,
-          "end": 138.1434256926952,
-          "startFrame": 4003,
-          "endFrame": 4144
-        },
-        {
-          "text": "ポートフォリオ内の半導体企業（QCOM, INTC）は\n製品差別化とコスト競争力の維持がより重要になります。",
-          "start": 138.4434256926952,
-          "end": 148.0154659949622,
-          "startFrame": 4153,
-          "endFrame": 4440
-        },
-        {
-          "text": "NVIDIAの中国へのAIチップ輸出規制に関するホワイトハウス\nの動向は、地政学的リスクが緩和される可能性を示唆しますが",
-          "start": 148.3154659949622,
-          "end": 158.97113350125943,
-          "startFrame": 4449,
-          "endFrame": 4769
-        },
-        {
-          "text": "引き続き監視が必要です。",
-          "start": 159.27113350125944,
-          "end": 161.43838790931989,
-          "startFrame": 4778,
-          "endFrame": 4843
-        },
-        {
-          "text": "現状、ポートフォリオのAI関連銘柄は大きな含み損を抱えているた\nめ、個別の企業競争力と市場全体のセンチメント",
-          "start": 161.7383879093199,
-          "end": 171.3104282115869,
-          "startFrame": 4852,
-          "endFrame": 5139
-        },
-        {
-          "text": "そしてマクロ経済リスクを慎重に見極める必要があります。",
-          "start": 171.6104282115869,
-          "end": 176.48675062972293,
-          "startFrame": 5148,
-          "endFrame": 5294
-        },
-        {
-          "text": "---",
-          "start": 176.78675062972295,
-          "end": 177.32856423173806,
-          "startFrame": 5303,
-          "endFrame": 5319
-        },
-        {
-          "text": "*このレポートはAI（Gemini）に\nより自動生成されています。",
-          "start": 177.62856423173807,
-          "end": 183.4079093198993,
-          "startFrame": 5328,
-          "endFrame": 5502
-        },
-        {
-          "text": "投資判断は必ずご自身で行ってください。",
-          "start": 183.7079093198993,
-          "end": 187.13939546599502,
-          "startFrame": 5511,
-          "endFrame": 5614
-        },
-        {
-          "text": "*",
-          "start": 187.43939546599503,
-          "end": 187.62000000000006,
-          "startFrame": 5623,
-          "endFrame": 5628
-        }
-      ],
-      "fullScript": "投資のポイントです。AI市場の成長期待は依然高いものの、NVIDIAの株価が好調なガイダンスにもかかわらず後退したことや、Anthropicへの投資に関する「循環型AI取引」の懸念など、市場全体のバブルへの警戒感が強まっています。Googleの積極的なAI製品展開は競争激化を示唆し、ポートフォリオ内の半導体企業（QCOM, INTC）は製品差別化とコスト競争力の維持がより重要になります。NVIDIAの中国へのAIチップ輸出規制に関するホワイトハウスの動向は、地政学的リスクが緩和される可能性を示唆しますが、引き続き監視が必要です。現状、ポートフォリオのAI関連銘柄は大きな含み損を抱えているため、個別の企業競争力と市場全体のセンチメント、そしてマクロ経済リスクを慎重に見極める必要があります。\n\n---\n*このレポートはAI（Gemini）により自動生成されています。投資判断は必ずご自身で行ってください。*"
-    },
-    {
-      "index": 9,
       "title": "📊 まとめ",
-      "audioFile": "presentations/audio_output/slide_09.mp3",
-      "duration": 14.26,
-      "durationFrames": 427,
-      "startTime": 187.62,
-      "endTime": 201.88,
-      "startFrame": 5628,
-      "endFrame": 6056,
+      "audioFile": "presentations/audio_output/slide_06.mp3",
+      "duration": 17.0,
+      "durationFrames": 510,
+      "startTime": 121.82,
+      "endTime": 138.82,
+      "startFrame": 3654,
+      "endFrame": 4164,
       "subtitles": [
         {
           "text": "本日のAI・IT株式ニュースは以上です。",
-          "start": 187.62,
-          "end": 190.8009523809524,
-          "startFrame": 5628,
-          "endFrame": 5724
+          "start": 121.82,
+          "end": 125.07252525252525,
+          "startFrame": 3654,
+          "endFrame": 3752
         },
         {
           "text": "このレポートはAI、Geminiにより自動生成されています。",
-          "start": 191.1009523809524,
-          "end": 195.87238095238098,
-          "startFrame": 5733,
-          "endFrame": 5876
+          "start": 125.37252525252525,
+          "end": 130.25131313131314,
+          "startFrame": 3761,
+          "endFrame": 3907
         },
         {
           "text": "投資判断は必ずご自身で行ってください。",
-          "start": 196.172380952381,
-          "end": 199.19428571428574,
-          "startFrame": 5885,
-          "endFrame": 5975
+          "start": 130.55131313131315,
+          "end": 133.64121212121213,
+          "startFrame": 3916,
+          "endFrame": 4009
         },
         {
-          "text": "ご視聴ありがとうございました。",
-          "start": 199.49428571428575,
-          "end": 201.88000000000002,
-          "startFrame": 5984,
-          "endFrame": 6056
+          "text": "この動画がいいと思ったらチャンネル登録、いいねをよろしくね！",
+          "start": 133.94121212121215,
+          "end": 138.82000000000002,
+          "startFrame": 4018,
+          "endFrame": 4164
         }
       ],
-      "fullScript": "本日のAI・IT株式ニュースは以上です。このレポートはAI、Geminiにより自動生成されています。投資判断は必ずご自身で行ってください。ご視聴ありがとうございました。"
+      "fullScript": "本日のAI・IT株式ニュースは以上です。このレポートはAI、Geminiにより自動生成されています。投資判断は必ずご自身で行ってください。この動画がいいと思ったらチャンネル登録、いいねをよろしくね！"
     }
   ]
 }
