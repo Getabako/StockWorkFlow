@@ -1,7 +1,7 @@
 {
   "fps": 30,
-  "totalDuration": 178.1,
-  "totalFrames": 5343,
+  "totalDuration": 171.84,
+  "totalFrames": 5155,
   "slides": [
     {
       "index": 1,
@@ -42,246 +42,253 @@
       "index": 2,
       "title": "📋 本日のサマリー",
       "audioFile": "presentations/audio_output/slide_02.mp3",
-      "duration": 44.56,
-      "durationFrames": 1336,
+      "duration": 48.62,
+      "durationFrames": 1458,
       "startTime": 10.3,
-      "endTime": 54.86,
+      "endTime": 58.92,
       "startFrame": 309,
-      "endFrame": 1645,
+      "endFrame": 1767,
       "subtitles": [
         {
-          "text": "AI業界では、AlibabaがChatGPT対抗アプリ「Qwe\nn」で強力なデビューを飾り",
+          "text": "今日のAI/IT市場は、\n主要プレイヤー間の競争激化と大規模投資が特徴的です。",
           "start": 10.3,
-          "end": 17.87856,
+          "end": 16.981194029850748,
           "startFrame": 309,
-          "endFrame": 536
+          "endFrame": 509
         },
         {
-          "text": "Appleは次期iOSにAI機能を統合するなど、\n大手テック企業による開発競争が激化しています。",
-          "start": 18.17856,
-          "end": 26.27384,
-          "startFrame": 545,
-          "endFrame": 788
+          "text": "AnthropicとOpenAIはそれぞれ新AIモデルやツール\nを発表し、GoogleもAIによるUI設計を進めるなど",
+          "start": 17.28119402985075,
+          "end": 27.478805970149253,
+          "startFrame": 518,
+          "endFrame": 824
         },
         {
-          "text": "また、TeslaはカスタムAIチップの開発を加速させ",
-          "start": 26.57384,
-          "end": 31.05208,
-          "startFrame": 797,
-          "endFrame": 931
+          "text": "AI技術の具体的な応用が加速しています。",
+          "start": 27.778805970149254,
+          "end": 31.295223880597014,
+          "startFrame": 833,
+          "endFrame": 938
         },
         {
-          "text": "NVIDIAやOpenAIを中心と\nする経済圏における多様なAIハードウェア戦略が進展。",
-          "start": 31.35208,
-          "end": 38.7584,
-          "startFrame": 940,
-          "endFrame": 1162
+          "text": "一方で、Amazonが米国政府機関向けAIサービスに最大500\n億ドルを投資する巨大な動きがある中",
+          "start": 31.595223880597015,
+          "end": 40.03462686567164,
+          "startFrame": 947,
+          "endFrame": 1201
         },
         {
-          "text": "AIブームによるメモリー部品の供給逼迫も継続しており、\nサプライチェーンへの影響が顕著です。",
-          "start": 39.0584,
-          "end": 46.8092,
-          "startFrame": 1171,
-          "endFrame": 1404
+          "text": "NVIDIAの高性能AIチップの対中輸出規制に関する米政府の動\n向が地政学的リスクとして浮上しています。",
+          "start": 40.33462686567164,
+          "end": 49.30149253731343,
+          "startFrame": 1210,
+          "endFrame": 1479
         },
         {
-          "text": "OpenAIによるAppleエンジニアの引き抜きも続き、\n人材獲得競争の様相を呈しています。",
-          "start": 47.109199999999994,
-          "end": 54.85999999999999,
-          "startFrame": 1413,
-          "endFrame": 1645
+          "text": "AIへの巨額投資が信用市場に与える影響やバブル懸念も顕在化して\nおり、期待と同時にリスクも高まる一日でした。",
+          "start": 49.601492537313426,
+          "end": 58.919999999999995,
+          "startFrame": 1488,
+          "endFrame": 1767
         }
       ],
-      "fullScript": "AI業界では、AlibabaがChatGPT対抗アプリ「Qwen」で強力なデビューを飾り、Appleは次期iOSにAI機能を統合するなど、大手テック企業による開発競争が激化しています。また、TeslaはカスタムAIチップの開発を加速させ、NVIDIAやOpenAIを中心とする経済圏における多様なAIハードウェア戦略が進展。AIブームによるメモリー部品の供給逼迫も継続しており、サプライチェーンへの影響が顕著です。OpenAIによるAppleエンジニアの引き抜きも続き、人材獲得競争の様相を呈しています。"
+      "fullScript": "今日のAI/IT市場は、主要プレイヤー間の競争激化と大規模投資が特徴的です。AnthropicとOpenAIはそれぞれ新AIモデルやツールを発表し、GoogleもAIによるUI設計を進めるなど、AI技術の具体的な応用が加速しています。一方で、Amazonが米国政府機関向けAIサービスに最大500億ドルを投資する巨大な動きがある中、NVIDIAの高性能AIチップの対中輸出規制に関する米政府の動向が地政学的リスクとして浮上しています。AIへの巨額投資が信用市場に与える影響やバブル懸念も顕在化しており、期待と同時にリスクも高まる一日でした。"
     },
     {
       "index": 3,
       "title": "📰 M&A・企業買収",
       "audioFile": "presentations/audio_output/slide_03.mp3",
-      "duration": 23.54,
-      "durationFrames": 706,
-      "startTime": 54.86,
-      "endTime": 78.4,
-      "startFrame": 1645,
-      "endFrame": 2352,
+      "duration": 21.58,
+      "durationFrames": 647,
+      "startTime": 58.92,
+      "endTime": 80.5,
+      "startFrame": 1767,
+      "endFrame": 2415,
       "subtitles": [
         {
-          "text": "GoTo GroupのCEO交代とGrabによる買収加速。",
-          "start": 54.86,
-          "end": 59.79654135338346,
-          "startFrame": 1645,
-          "endFrame": 1793
+          "text": "Tencent、Ubisoftの一部ユニットに大型投資。",
+          "start": 58.92,
+          "end": 62.70993548387097,
+          "startFrame": 1767,
+          "endFrame": 1881
         },
         {
-          "text": "インドネシアのGoTo Groupは新CEOを任命し、Grab\nHoldingsによる同社の買収が加速する見込みです",
-          "start": 60.09654135338346,
-          "end": 69.7993984962406,
-          "startFrame": 1802,
-          "endFrame": 2093
+          "text": "Tencent Holdings Ltd.がUbisoft Entertainment SAの「Assassin’s Creed」などの人気フランチャイズを管理するユニットVantage Studiosに11.6億ユーロの投資を完了しました。",
+          "start": 63.00993548387097,
+          "end": 79.38787096774193,
+          "startFrame": 1890,
+          "endFrame": 2381
         },
         {
-          "text": "これはテクノロジー業界における統合の動きを示しています。",
-          "start": 70.0993984962406,
-          "end": 74.86571428571428,
-          "startFrame": 2102,
-          "endFrame": 2245
-        },
-        {
-          "text": "（AI/ITへの直接的な影響は限定的）",
-          "start": 75.16571428571427,
-          "end": 78.39999999999999,
-          "startFrame": 2254,
-          "endFrame": 2351
+          "text": "(記事32)",
+          "start": 79.68787096774193,
+          "end": 80.5,
+          "startFrame": 2390,
+          "endFrame": 2415
         }
       ],
-      "fullScript": "GoTo GroupのCEO交代とGrabによる買収加速。インドネシアのGoTo Groupは新CEOを任命し、Grab Holdingsによる同社の買収が加速する見込みです。これはテクノロジー業界における統合の動きを示しています。（AI/ITへの直接的な影響は限定的）"
+      "fullScript": "Tencent、Ubisoftの一部ユニットに大型投資。Tencent Holdings Ltd.がUbisoft Entertainment SAの「Assassin’s Creed」などの人気フランチャイズを管理するユニットVantage Studiosに11.6億ユーロの投資を完了しました。(記事32)"
     },
     {
       "index": 4,
-      "title": "📰 新製品・新技術",
+      "title": "📰 M&A・企業買収",
       "audioFile": "presentations/audio_output/slide_04.mp3",
-      "duration": 21.54,
-      "durationFrames": 646,
-      "startTime": 78.4,
-      "endTime": 99.94,
-      "startFrame": 2352,
-      "endFrame": 2998,
+      "duration": 17.08,
+      "durationFrames": 512,
+      "startTime": 80.5,
+      "endTime": 97.58,
+      "startFrame": 2415,
+      "endFrame": 2927,
       "subtitles": [
         {
-          "text": "AlibabaのAIアプリ「Qwen」が好調なデビュー。",
-          "start": 78.4,
-          "end": 83.01669291338584,
-          "startFrame": 2352,
-          "endFrame": 2490
+          "text": "イタリア政府のサイバーセキュリティ戦略。",
+          "start": 80.5,
+          "end": 83.97956989247312,
+          "startFrame": 2415,
+          "endFrame": 2519
         },
         {
-          "text": "Alibaba Group Holding Ltd.の主要AIアプリ「Qwen」が再ローンチ後1週間で1,000万ダウンロードを突破し",
-          "start": 83.31669291338584,
-          "end": 94.36377952755906,
-          "startFrame": 2499,
-          "endFrame": 2830
+          "text": "イタリア政府は、機密性の高いデジタルインフラ保護のため、\n政府支援のサイバーセキュリティ組織設立を検討しており",
+          "start": 84.27956989247312,
+          "end": 93.67440860215054,
+          "startFrame": 2528,
+          "endFrame": 2810
         },
         {
-          "text": "OpenAIのChatGPTに\n対抗する強力な動きを見せています。",
-          "start": 94.66377952755906,
-          "end": 99.94,
-          "startFrame": 2839,
-          "endFrame": 2998
+          "text": "買収も視野に入れています。",
+          "start": 93.97440860215053,
+          "end": 96.23612903225806,
+          "startFrame": 2819,
+          "endFrame": 2887
+        },
+        {
+          "text": "(記事24)",
+          "start": 96.53612903225806,
+          "end": 97.58,
+          "startFrame": 2896,
+          "endFrame": 2927
         }
       ],
-      "fullScript": "AlibabaのAIアプリ「Qwen」が好調なデビュー。Alibaba Group Holding Ltd.の主要AIアプリ「Qwen」が再ローンチ後1週間で1,000万ダウンロードを突破し、OpenAIのChatGPTに対抗する強力な動きを見せています。"
+      "fullScript": "イタリア政府のサイバーセキュリティ戦略。イタリア政府は、機密性の高いデジタルインフラ保護のため、政府支援のサイバーセキュリティ組織設立を検討しており、買収も視野に入れています。(記事24)"
     },
     {
       "index": 5,
-      "title": "📰 新製品・新技術",
+      "title": "📰 戦略的提携・パートナーシップ",
       "audioFile": "presentations/audio_output/slide_05.mp3",
-      "duration": 21.18,
-      "durationFrames": 635,
-      "startTime": 99.94,
-      "endTime": 121.12,
-      "startFrame": 2998,
-      "endFrame": 3633,
+      "duration": 16.92,
+      "durationFrames": 507,
+      "startTime": 97.58,
+      "endTime": 114.5,
+      "startFrame": 2927,
+      "endFrame": 3435,
       "subtitles": [
         {
-          "text": "Apple iOS 27にAI機能を統合。",
-          "start": 99.94,
-          "end": 103.64330434782609,
-          "startFrame": 2998,
-          "endFrame": 3109
+          "text": "Google、欧州でのAI未来構築へ意欲。",
+          "start": 97.58,
+          "end": 101.47454545454545,
+          "startFrame": 2927,
+          "endFrame": 3044
         },
         {
-          "text": "Appleの\n次期主要iPhoneソフトウェアアップデート「iOS 27」は",
-          "start": 103.94330434782609,
-          "end": 110.46817391304347,
-          "startFrame": 3118,
-          "endFrame": 3314
+          "text": "Google/Alphabetは、欧州のAI未来を「共に」構築\nする姿勢を強調しており、欧州でのAI展開強化を示唆しています。",
+          "start": 101.77454545454545,
+          "end": 113.27272727272727,
+          "startFrame": 3053,
+          "endFrame": 3398
         },
         {
-          "text": "品質改善とともに新しいAI機能を搭載する予定です。",
-          "start": 110.76817391304347,
-          "end": 115.17686956521739,
-          "startFrame": 3323,
-          "endFrame": 3455
-        },
-        {
-          "text": "これは主要テック企業のAI機能組み込み戦略を\n加速させるものです。",
-          "start": 115.47686956521738,
-          "end": 121.11999999999999,
-          "startFrame": 3464,
-          "endFrame": 3633
+          "text": "(記事2)",
+          "start": 113.57272727272726,
+          "end": 114.49999999999999,
+          "startFrame": 3407,
+          "endFrame": 3434
         }
       ],
-      "fullScript": "Apple iOS 27にAI機能を統合。Appleの次期主要iPhoneソフトウェアアップデート「iOS 27」は、品質改善とともに新しいAI機能を搭載する予定です。これは主要テック企業のAI機能組み込み戦略を加速させるものです。"
+      "fullScript": "Google、欧州でのAI未来構築へ意欲。Google/Alphabetは、欧州のAI未来を「共に」構築する姿勢を強調しており、欧州でのAI展開強化を示唆しています。(記事2)"
     },
     {
       "index": 6,
-      "title": "📰 新製品・新技術",
+      "title": "📰 大型契約・受注",
       "audioFile": "presentations/audio_output/slide_06.mp3",
-      "duration": 25.14,
-      "durationFrames": 754,
-      "startTime": 121.12,
-      "endTime": 146.26,
-      "startFrame": 3633,
-      "endFrame": 4387,
+      "duration": 20.0,
+      "durationFrames": 600,
+      "startTime": 114.5,
+      "endTime": 134.5,
+      "startFrame": 3435,
+      "endFrame": 4035,
       "subtitles": [
         {
-          "text": "TeslaがカスタムAIチップ開発を加速。",
-          "start": 121.12,
-          "end": 125.02409090909092,
-          "startFrame": 3633,
-          "endFrame": 3750
+          "text": "Amazon、米国政府機関向けAIサービスに500億ドル投資。",
+          "start": 114.5,
+          "end": 119.69385964912281,
+          "startFrame": 3435,
+          "endFrame": 3590
         },
         {
-          "text": "Teslaは自社開発AIチップ「AI5」のテープアウト（最終設\n計段階）に近づき、「AI6」チップの開発を開始しました。",
-          "start": 125.32409090909091,
-          "end": 136.2927272727273,
-          "startFrame": 3759,
-          "endFrame": 4088
+          "text": "Amazon.com Inc.は、米国政府機関向けにAIおよび\n高性能コンピューティングサービスを拡大するため",
+          "start": 119.99385964912281,
+          "end": 129.04122807017544,
+          "startFrame": 3599,
+          "endFrame": 3871
         },
         {
-          "text": "イーロン・マスク氏率いる企業のカスタムチップ戦略は、\nコスト削減競争とAI処理能力向上を目的としています。",
-          "start": 136.5927272727273,
-          "end": 146.26000000000002,
-          "startFrame": 4097,
-          "endFrame": 4387
+          "text": "最大500億ドルを投資する計画を発表しました。",
+          "start": 129.34122807017545,
+          "end": 133.19473684210527,
+          "startFrame": 3880,
+          "endFrame": 3995
+        },
+        {
+          "text": "(記事14)",
+          "start": 133.49473684210528,
+          "end": 134.50000000000003,
+          "startFrame": 4004,
+          "endFrame": 4035
         }
       ],
-      "fullScript": "TeslaがカスタムAIチップ開発を加速。Teslaは自社開発AIチップ「AI5」のテープアウト（最終設計段階）に近づき、「AI6」チップの開発を開始しました。イーロン・マスク氏率いる企業のカスタムチップ戦略は、コスト削減競争とAI処理能力向上を目的としています。"
+      "fullScript": "Amazon、米国政府機関向けAIサービスに500億ドル投資。Amazon.com Inc.は、米国政府機関向けにAIおよび高性能コンピューティングサービスを拡大するため、最大500億ドルを投資する計画を発表しました。(記事14)"
     },
     {
       "index": 7,
-      "title": "📰 人事",
+      "title": "📰 大型契約・受注",
       "audioFile": "presentations/audio_output/slide_07.mp3",
-      "duration": 14.84,
-      "durationFrames": 445,
-      "startTime": 146.26,
-      "endTime": 161.1,
-      "startFrame": 4387,
-      "endFrame": 4833,
+      "duration": 20.34,
+      "durationFrames": 610,
+      "startTime": 134.5,
+      "endTime": 154.84,
+      "startFrame": 4035,
+      "endFrame": 4645,
       "subtitles": [
         {
-          "text": "OpenAIがAppleエンジニアを引き抜き。",
-          "start": 146.26,
-          "end": 149.67166666666665,
-          "startFrame": 4387,
-          "endFrame": 4490
+          "text": "小規模AIスタートアップが米国政府契約を獲得。",
+          "start": 134.5,
+          "end": 138.71811320754716,
+          "startFrame": 4035,
+          "endFrame": 4161
         },
         {
-          "text": "OpenAIはAppleのエンジニアを\n引き抜き続けていることが報じられています。",
-          "start": 149.97166666666666,
-          "end": 155.905,
-          "startFrame": 4499,
-          "endFrame": 4677
+          "text": "米国国防総省および情報機関向けAI/MLデータラベリングの\n7年契約を",
+          "start": 139.01811320754717,
+          "end": 145.25358490566038,
+          "startFrame": 4170,
+          "endFrame": 4357
         },
         {
-          "text": "これはAI分野における人材獲得競争の\n激しさを浮き彫りにしています。",
-          "start": 156.205,
-          "end": 161.10000000000002,
-          "startFrame": 4686,
-          "endFrame": 4833
+          "text": "より小規模なAIスタートアップが競合の\nScale AI Inc.を破って獲得しました。",
+          "start": 145.5535849056604,
+          "end": 153.43962264150943,
+          "startFrame": 4366,
+          "endFrame": 4603
+        },
+        {
+          "text": "(記事13)",
+          "start": 153.73962264150944,
+          "end": 154.84,
+          "startFrame": 4612,
+          "endFrame": 4645
         }
       ],
-      "fullScript": "OpenAIがAppleエンジニアを引き抜き。OpenAIはAppleのエンジニアを引き抜き続けていることが報じられています。これはAI分野における人材獲得競争の激しさを浮き彫りにしています。"
+      "fullScript": "小規模AIスタートアップが米国政府契約を獲得。米国国防総省および情報機関向けAI/MLデータラベリングの7年契約を、より小規模なAIスタートアップが競合のScale AI Inc.を破って獲得しました。(記事13)"
     },
     {
       "index": 8,
@@ -289,38 +296,38 @@
       "audioFile": "presentations/audio_output/slide_08.mp3",
       "duration": 17.0,
       "durationFrames": 510,
-      "startTime": 161.1,
-      "endTime": 178.1,
-      "startFrame": 4833,
-      "endFrame": 5343,
+      "startTime": 154.84,
+      "endTime": 171.84,
+      "startFrame": 4645,
+      "endFrame": 5155,
       "subtitles": [
         {
           "text": "本日のAI・IT株式ニュースは以上です。",
-          "start": 161.1,
-          "end": 164.35252525252525,
-          "startFrame": 4833,
-          "endFrame": 4930
+          "start": 154.84,
+          "end": 158.09252525252526,
+          "startFrame": 4645,
+          "endFrame": 4742
         },
         {
           "text": "このレポートはAI、Geminiにより自動生成されています。",
-          "start": 164.65252525252527,
-          "end": 169.53131313131314,
-          "startFrame": 4939,
-          "endFrame": 5085
+          "start": 158.39252525252527,
+          "end": 163.27131313131315,
+          "startFrame": 4751,
+          "endFrame": 4898
         },
         {
           "text": "投資判断は必ずご自身で行ってください。",
-          "start": 169.83131313131315,
-          "end": 172.92121212121214,
-          "startFrame": 5094,
-          "endFrame": 5187
+          "start": 163.57131313131316,
+          "end": 166.66121212121215,
+          "startFrame": 4907,
+          "endFrame": 4999
         },
         {
           "text": "この動画がいいと思ったらチャンネル登録、いいねをよろしくね！",
-          "start": 173.22121212121215,
-          "end": 178.10000000000002,
-          "startFrame": 5196,
-          "endFrame": 5343
+          "start": 166.96121212121216,
+          "end": 171.84000000000003,
+          "startFrame": 5008,
+          "endFrame": 5155
         }
       ],
       "fullScript": "本日のAI・IT株式ニュースは以上です。このレポートはAI、Geminiにより自動生成されています。投資判断は必ずご自身で行ってください。この動画がいいと思ったらチャンネル登録、いいねをよろしくね！"
