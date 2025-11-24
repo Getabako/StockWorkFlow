@@ -1,312 +1,326 @@
 {
   "fps": 30,
-  "totalDuration": 188.1,
-  "totalFrames": 5643,
+  "totalDuration": 178.1,
+  "totalFrames": 5343,
   "slides": [
     {
       "index": 1,
       "title": "AI/IT株式ニュース",
       "audioFile": "presentations/audio_output/slide_01.mp3",
-      "duration": 10.52,
-      "durationFrames": 315,
+      "duration": 10.3,
+      "durationFrames": 309,
       "startTime": 0,
-      "endTime": 10.52,
+      "endTime": 10.3,
       "startFrame": 0,
-      "endFrame": 315,
+      "endFrame": 309,
       "subtitles": [
         {
           "text": "うぃっすー！",
           "start": 0,
-          "end": 1.1446153846153846,
+          "end": 1.1192307692307695,
           "startFrame": 0,
-          "endFrame": 34
+          "endFrame": 33
         },
         {
           "text": "if塾AIニュースのお時間です。",
-          "start": 1.4446153846153846,
-          "end": 4.496923076923077,
-          "startFrame": 43,
-          "endFrame": 134
+          "start": 1.4192307692307695,
+          "end": 4.403846153846155,
+          "startFrame": 42,
+          "endFrame": 132
         },
         {
-          "text": "2025/11/23のAI・IT株式ニュースをお届けします。",
-          "start": 4.796923076923076,
-          "end": 10.52,
-          "startFrame": 143,
-          "endFrame": 315
+          "text": "2025/11/24のAI・IT株式ニュースをお届けします。",
+          "start": 4.703846153846155,
+          "end": 10.3,
+          "startFrame": 141,
+          "endFrame": 309
         }
       ],
-      "fullScript": "うぃっすー！if塾AIニュースのお時間です。2025/11/23のAI・IT株式ニュースをお届けします。"
+      "fullScript": "うぃっすー！if塾AIニュースのお時間です。2025/11/24のAI・IT株式ニュースをお届けします。"
     },
     {
       "index": 2,
       "title": "📋 本日のサマリー",
       "audioFile": "presentations/audio_output/slide_02.mp3",
-      "duration": 39.36,
-      "durationFrames": 1180,
-      "startTime": 10.52,
-      "endTime": 49.879999999999995,
-      "startFrame": 315,
-      "endFrame": 1496,
+      "duration": 44.56,
+      "durationFrames": 1336,
+      "startTime": 10.3,
+      "endTime": 54.86,
+      "startFrame": 309,
+      "endFrame": 1645,
       "subtitles": [
         {
-          "text": "本日のAI/IT市場では",
-          "start": 10.52,
-          "end": 12.753756097560975,
-          "startFrame": 315,
-          "endFrame": 382
+          "text": "AI業界では、AlibabaがChatGPT対抗アプリ「Qwe\nn」で強力なデビューを飾り",
+          "start": 10.3,
+          "end": 17.87856,
+          "startFrame": 309,
+          "endFrame": 536
         },
         {
-          "text": "アラブ首長国連邦（UAE）がアフリカにおけるAIインフラ・サー\nビスに10億ドル規模の大型投資計画を発表し",
-          "start": 13.053756097560976,
-          "end": 22.733365853658537,
-          "startFrame": 391,
-          "endFrame": 682
+          "text": "Appleは次期iOSにAI機能を統合するなど、\n大手テック企業による開発競争が激化しています。",
+          "start": 18.17856,
+          "end": 26.27384,
+          "startFrame": 545,
+          "endFrame": 788
         },
         {
-          "text": "AI技術のグローバル展開、\n特に新興市場への浸透が加速する兆しを見せています。",
-          "start": 23.033365853658538,
-          "end": 30.106926829268293,
-          "startFrame": 691,
-          "endFrame": 903
+          "text": "また、TeslaはカスタムAIチップの開発を加速させ",
+          "start": 26.57384,
+          "end": 31.05208,
+          "startFrame": 797,
+          "endFrame": 931
         },
         {
-          "text": "一方で、米中間の技術分断はITサプライチェーンに引き続き影響を\n与えており、中国系企業の独立性確保が課題となっています。",
-          "start": 30.406926829268293,
-          "end": 41.389560975609754,
-          "startFrame": 912,
-          "endFrame": 1241
+          "text": "NVIDIAやOpenAIを中心と\nする経済圏における多様なAIハードウェア戦略が進展。",
+          "start": 31.35208,
+          "end": 38.7584,
+          "startFrame": 940,
+          "endFrame": 1162
         },
         {
-          "text": "また、教育機関へのサイバー攻撃が頻発しており、\nセキュリティ対策の重要性が高まっています。",
-          "start": 41.68956097560975,
-          "end": 49.879999999999995,
-          "startFrame": 1250,
-          "endFrame": 1496
+          "text": "AIブームによるメモリー部品の供給逼迫も継続しており、\nサプライチェーンへの影響が顕著です。",
+          "start": 39.0584,
+          "end": 46.8092,
+          "startFrame": 1171,
+          "endFrame": 1404
+        },
+        {
+          "text": "OpenAIによるAppleエンジニアの引き抜きも続き、\n人材獲得競争の様相を呈しています。",
+          "start": 47.109199999999994,
+          "end": 54.85999999999999,
+          "startFrame": 1413,
+          "endFrame": 1645
         }
       ],
-      "fullScript": "本日のAI/IT市場では、アラブ首長国連邦（UAE）がアフリカにおけるAIインフラ・サービスに10億ドル規模の大型投資計画を発表し、AI技術のグローバル展開、特に新興市場への浸透が加速する兆しを見せています。一方で、米中間の技術分断はITサプライチェーンに引き続き影響を与えており、中国系企業の独立性確保が課題となっています。また、教育機関へのサイバー攻撃が頻発しており、セキュリティ対策の重要性が高まっています。"
+      "fullScript": "AI業界では、AlibabaがChatGPT対抗アプリ「Qwen」で強力なデビューを飾り、Appleは次期iOSにAI機能を統合するなど、大手テック企業による開発競争が激化しています。また、TeslaはカスタムAIチップの開発を加速させ、NVIDIAやOpenAIを中心とする経済圏における多様なAIハードウェア戦略が進展。AIブームによるメモリー部品の供給逼迫も継続しており、サプライチェーンへの影響が顕著です。OpenAIによるAppleエンジニアの引き抜きも続き、人材獲得競争の様相を呈しています。"
     },
     {
       "index": 3,
-      "title": "📰 大型契約・受注",
+      "title": "📰 M&A・企業買収",
       "audioFile": "presentations/audio_output/slide_03.mp3",
-      "duration": 31.7,
-      "durationFrames": 951,
-      "startTime": 49.879999999999995,
-      "endTime": 81.58,
-      "startFrame": 1496,
-      "endFrame": 2447,
+      "duration": 23.54,
+      "durationFrames": 706,
+      "startTime": 54.86,
+      "endTime": 78.4,
+      "startFrame": 1645,
+      "endFrame": 2352,
       "subtitles": [
         {
-          "text": "UAEによるアフリカAIインフラ投資計画。",
-          "start": 49.879999999999995,
-          "end": 53.59724137931034,
-          "startFrame": 1496,
-          "endFrame": 1607
+          "text": "GoTo GroupのCEO交代とGrabによる買収加速。",
+          "start": 54.86,
+          "end": 59.79654135338346,
+          "startFrame": 1645,
+          "endFrame": 1793
         },
         {
-          "text": "アラブ首長国連邦（UAE）は、アフリカ大陸全体のAIインフラと\nサービスの拡張に10億ドルを投資する計画を発表しました。",
-          "start": 53.89724137931034,
-          "end": 64.34091954022988,
-          "startFrame": 1616,
-          "endFrame": 1930
+          "text": "インドネシアのGoTo Groupは新CEOを任命し、Grab\nHoldingsによる同社の買収が加速する見込みです",
+          "start": 60.09654135338346,
+          "end": 69.7993984962406,
+          "startFrame": 1802,
+          "endFrame": 2093
         },
         {
-          "text": "これにより、AI技術の普及が遅れていたアフリカ市場での大きな成\n長機会が生まれることが期待されます。",
-          "start": 64.64091954022987,
-          "end": 73.31448275862067,
-          "startFrame": 1939,
-          "endFrame": 2199
+          "text": "これはテクノロジー業界における統合の動きを示しています。",
+          "start": 70.0993984962406,
+          "end": 74.86571428571428,
+          "startFrame": 2102,
+          "endFrame": 2245
         },
         {
-          "text": "これは、AIインフラ構築やAIサービス提供企業にとって潜在的な\n大型契約の創出に繋がります。",
-          "start": 73.61448275862067,
-          "end": 81.57999999999998,
-          "startFrame": 2208,
-          "endFrame": 2447
+          "text": "（AI/ITへの直接的な影響は限定的）",
+          "start": 75.16571428571427,
+          "end": 78.39999999999999,
+          "startFrame": 2254,
+          "endFrame": 2351
         }
       ],
-      "fullScript": "UAEによるアフリカAIインフラ投資計画。アラブ首長国連邦（UAE）は、アフリカ大陸全体のAIインフラとサービスの拡張に10億ドルを投資する計画を発表しました。これにより、AI技術の普及が遅れていたアフリカ市場での大きな成長機会が生まれることが期待されます。これは、AIインフラ構築やAIサービス提供企業にとって潜在的な大型契約の創出に繋がります。"
+      "fullScript": "GoTo GroupのCEO交代とGrabによる買収加速。インドネシアのGoTo Groupは新CEOを任命し、Grab Holdingsによる同社の買収が加速する見込みです。これはテクノロジー業界における統合の動きを示しています。（AI/ITへの直接的な影響は限定的）"
     },
     {
       "index": 4,
-      "title": "📰 戦略的提携・パートナーシップ",
+      "title": "📰 新製品・新技術",
       "audioFile": "presentations/audio_output/slide_04.mp3",
-      "duration": 32.9,
-      "durationFrames": 987,
-      "startTime": 81.58,
-      "endTime": 114.47999999999999,
-      "startFrame": 2447,
-      "endFrame": 3434,
+      "duration": 21.54,
+      "durationFrames": 646,
+      "startTime": 78.4,
+      "endTime": 99.94,
+      "startFrame": 2352,
+      "endFrame": 2998,
       "subtitles": [
         {
-          "text": "アフリカAI市場への参入。",
-          "start": 81.58,
-          "end": 83.90824858757063,
-          "startFrame": 2447,
-          "endFrame": 2517
+          "text": "AlibabaのAIアプリ「Qwen」が好調なデビュー。",
+          "start": 78.4,
+          "end": 83.01669291338584,
+          "startFrame": 2352,
+          "endFrame": 2490
         },
         {
-          "text": "UAEの10億ドル投資計画は、アフリカ各国政府や現地のAI関連\n企業、グローバルなAIインフラプロバイダーとの間で",
-          "start": 84.20824858757062,
-          "end": 94.23762711864407,
-          "startFrame": 2526,
-          "endFrame": 2827
+          "text": "Alibaba Group Holding Ltd.の主要AIアプリ「Qwen」が再ローンチ後1週間で1,000万ダウンロードを突破し",
+          "start": 83.31669291338584,
+          "end": 94.36377952755906,
+          "startFrame": 2499,
+          "endFrame": 2830
         },
         {
-          "text": "今後の広範な戦略的提携やパートナーシップを\n促進する強力な動機付けとなるでしょう。",
-          "start": 94.53762711864407,
-          "end": 101.70146892655367,
-          "startFrame": 2836,
-          "endFrame": 3051
-        },
-        {
-          "text": "これは、OpenAIがグローバルサプライチェーンを構築している\n文脈と同様に",
-          "start": 102.00146892655367,
-          "end": 108.62802259887005,
-          "startFrame": 3060,
-          "endFrame": 3258
-        },
-        {
-          "text": "AI技術の地域的・国際的な展開を加速させる動きと捉えられます。",
-          "start": 108.92802259887004,
-          "end": 114.47999999999999,
-          "startFrame": 3267,
-          "endFrame": 3434
+          "text": "OpenAIのChatGPTに\n対抗する強力な動きを見せています。",
+          "start": 94.66377952755906,
+          "end": 99.94,
+          "startFrame": 2839,
+          "endFrame": 2998
         }
       ],
-      "fullScript": "アフリカAI市場への参入。UAEの10億ドル投資計画は、アフリカ各国政府や現地のAI関連企業、グローバルなAIインフラプロバイダーとの間で、今後の広範な戦略的提携やパートナーシップを促進する強力な動機付けとなるでしょう。これは、OpenAIがグローバルサプライチェーンを構築している文脈と同様に、AI技術の地域的・国際的な展開を加速させる動きと捉えられます。"
+      "fullScript": "AlibabaのAIアプリ「Qwen」が好調なデビュー。Alibaba Group Holding Ltd.の主要AIアプリ「Qwen」が再ローンチ後1週間で1,000万ダウンロードを突破し、OpenAIのChatGPTに対抗する強力な動きを見せています。"
     },
     {
       "index": 5,
-      "title": "📰 その他の重要情報",
+      "title": "📰 新製品・新技術",
       "audioFile": "presentations/audio_output/slide_05.mp3",
-      "duration": 32.96,
-      "durationFrames": 988,
-      "startTime": 114.47999999999999,
-      "endTime": 147.44,
-      "startFrame": 3434,
-      "endFrame": 4423,
+      "duration": 21.18,
+      "durationFrames": 635,
+      "startTime": 99.94,
+      "endTime": 121.12,
+      "startFrame": 2998,
+      "endFrame": 3633,
       "subtitles": [
         {
-          "text": "地政学・サプライチェーン再編。",
-          "start": 114.47999999999999,
-          "end": 117.0691304347826,
-          "startFrame": 3434,
-          "endFrame": 3512
+          "text": "Apple iOS 27にAI機能を統合。",
+          "start": 99.94,
+          "end": 103.64330434782609,
+          "startFrame": 2998,
+          "endFrame": 3109
         },
         {
-          "text": "中国にルーツを持つWi-Fi大手TP-Link Systems\nInc.が、ベトナム工場での生産を巡り",
-          "start": 117.36913043478259,
-          "end": 125.99956521739128,
-          "startFrame": 3521,
-          "endFrame": 3779
+          "text": "Appleの\n次期主要iPhoneソフトウェアアップデート「iOS 27」は",
+          "start": 103.94330434782609,
+          "end": 110.46817391304347,
+          "startFrame": 3118,
+          "endFrame": 3314
         },
         {
-          "text": "米国国家安全保障当局に対し中国政府から\nの独立性を示す困難に直面しています。",
-          "start": 126.29956521739128,
-          "end": 132.6860869565217,
-          "startFrame": 3788,
-          "endFrame": 3980
+          "text": "品質改善とともに新しいAI機能を搭載する予定です。",
+          "start": 110.76817391304347,
+          "end": 115.17686956521739,
+          "startFrame": 3323,
+          "endFrame": 3455
         },
         {
-          "text": "これは、米中間の技術・サプライチェーン分断がITハードウェア企\n業に与える継続的な影響と",
-          "start": 132.98608695652172,
-          "end": 140.4082608695652,
-          "startFrame": 3989,
-          "endFrame": 4212
-        },
-        {
-          "text": "グローバルサプライチェーンの多様化・再編の\n必要性を改めて浮き彫りにしています。",
-          "start": 140.7082608695652,
-          "end": 147.44,
-          "startFrame": 4221,
-          "endFrame": 4423
+          "text": "これは主要テック企業のAI機能組み込み戦略を\n加速させるものです。",
+          "start": 115.47686956521738,
+          "end": 121.11999999999999,
+          "startFrame": 3464,
+          "endFrame": 3633
         }
       ],
-      "fullScript": "地政学・サプライチェーン再編。中国にルーツを持つWi-Fi大手TP-Link Systems Inc.が、ベトナム工場での生産を巡り、米国国家安全保障当局に対し中国政府からの独立性を示す困難に直面しています。これは、米中間の技術・サプライチェーン分断がITハードウェア企業に与える継続的な影響と、グローバルサプライチェーンの多様化・再編の必要性を改めて浮き彫りにしています。"
+      "fullScript": "Apple iOS 27にAI機能を統合。Appleの次期主要iPhoneソフトウェアアップデート「iOS 27」は、品質改善とともに新しいAI機能を搭載する予定です。これは主要テック企業のAI機能組み込み戦略を加速させるものです。"
     },
     {
       "index": 6,
-      "title": "📰 その他の重要情報",
+      "title": "📰 新製品・新技術",
       "audioFile": "presentations/audio_output/slide_06.mp3",
-      "duration": 23.66,
-      "durationFrames": 709,
-      "startTime": 147.44,
-      "endTime": 171.1,
-      "startFrame": 4423,
-      "endFrame": 5133,
+      "duration": 25.14,
+      "durationFrames": 754,
+      "startTime": 121.12,
+      "endTime": 146.26,
+      "startFrame": 3633,
+      "endFrame": 4387,
       "subtitles": [
         {
-          "text": "サイバーセキュリティインシデント。",
-          "start": 147.44,
-          "end": 150.03677852348994,
-          "startFrame": 4423,
-          "endFrame": 4501
+          "text": "TeslaがカスタムAIチップ開発を加速。",
+          "start": 121.12,
+          "end": 125.02409090909092,
+          "startFrame": 3633,
+          "endFrame": 3750
         },
         {
-          "text": "ハーバード大学のデータベースが\nフィッシング攻撃により不正アクセスされたことが報じられました。",
-          "start": 150.33677852348995,
-          "end": 157.363355704698,
-          "startFrame": 4510,
-          "endFrame": 4720
+          "text": "Teslaは自社開発AIチップ「AI5」のテープアウト（最終設\n計段階）に近づき、「AI6」チップの開発を開始しました。",
+          "start": 125.32409090909091,
+          "end": 136.2927272727273,
+          "startFrame": 3759,
+          "endFrame": 4088
         },
         {
-          "text": "主要な教育機関を狙ったサイバー攻撃が続いており、\nデータセキュリティとサイバーレジリエンスの強化が",
-          "start": 157.663355704698,
-          "end": 164.99543624161075,
-          "startFrame": 4729,
-          "endFrame": 4949
-        },
-        {
-          "text": "AI/IT業界を含むあらゆる組織にと\nって喫緊の課題であることを示しています。",
-          "start": 165.29543624161076,
-          "end": 171.10000000000002,
-          "startFrame": 4958,
-          "endFrame": 5133
+          "text": "イーロン・マスク氏率いる企業のカスタムチップ戦略は、\nコスト削減競争とAI処理能力向上を目的としています。",
+          "start": 136.5927272727273,
+          "end": 146.26000000000002,
+          "startFrame": 4097,
+          "endFrame": 4387
         }
       ],
-      "fullScript": "サイバーセキュリティインシデント。ハーバード大学のデータベースがフィッシング攻撃により不正アクセスされたことが報じられました。主要な教育機関を狙ったサイバー攻撃が続いており、データセキュリティとサイバーレジリエンスの強化が、AI/IT業界を含むあらゆる組織にとって喫緊の課題であることを示しています。"
+      "fullScript": "TeslaがカスタムAIチップ開発を加速。Teslaは自社開発AIチップ「AI5」のテープアウト（最終設計段階）に近づき、「AI6」チップの開発を開始しました。イーロン・マスク氏率いる企業のカスタムチップ戦略は、コスト削減競争とAI処理能力向上を目的としています。"
     },
     {
       "index": 7,
-      "title": "📊 まとめ",
+      "title": "📰 人事",
       "audioFile": "presentations/audio_output/slide_07.mp3",
+      "duration": 14.84,
+      "durationFrames": 445,
+      "startTime": 146.26,
+      "endTime": 161.1,
+      "startFrame": 4387,
+      "endFrame": 4833,
+      "subtitles": [
+        {
+          "text": "OpenAIがAppleエンジニアを引き抜き。",
+          "start": 146.26,
+          "end": 149.67166666666665,
+          "startFrame": 4387,
+          "endFrame": 4490
+        },
+        {
+          "text": "OpenAIはAppleのエンジニアを\n引き抜き続けていることが報じられています。",
+          "start": 149.97166666666666,
+          "end": 155.905,
+          "startFrame": 4499,
+          "endFrame": 4677
+        },
+        {
+          "text": "これはAI分野における人材獲得競争の\n激しさを浮き彫りにしています。",
+          "start": 156.205,
+          "end": 161.10000000000002,
+          "startFrame": 4686,
+          "endFrame": 4833
+        }
+      ],
+      "fullScript": "OpenAIがAppleエンジニアを引き抜き。OpenAIはAppleのエンジニアを引き抜き続けていることが報じられています。これはAI分野における人材獲得競争の激しさを浮き彫りにしています。"
+    },
+    {
+      "index": 8,
+      "title": "📊 まとめ",
+      "audioFile": "presentations/audio_output/slide_08.mp3",
       "duration": 17.0,
       "durationFrames": 510,
-      "startTime": 171.1,
-      "endTime": 188.1,
-      "startFrame": 5133,
-      "endFrame": 5643,
+      "startTime": 161.1,
+      "endTime": 178.1,
+      "startFrame": 4833,
+      "endFrame": 5343,
       "subtitles": [
         {
           "text": "本日のAI・IT株式ニュースは以上です。",
-          "start": 171.1,
-          "end": 174.35252525252525,
-          "startFrame": 5133,
-          "endFrame": 5230
+          "start": 161.1,
+          "end": 164.35252525252525,
+          "startFrame": 4833,
+          "endFrame": 4930
         },
         {
           "text": "このレポートはAI、Geminiにより自動生成されています。",
-          "start": 174.65252525252527,
-          "end": 179.53131313131314,
-          "startFrame": 5239,
-          "endFrame": 5385
+          "start": 164.65252525252527,
+          "end": 169.53131313131314,
+          "startFrame": 4939,
+          "endFrame": 5085
         },
         {
           "text": "投資判断は必ずご自身で行ってください。",
-          "start": 179.83131313131315,
-          "end": 182.92121212121214,
-          "startFrame": 5394,
-          "endFrame": 5487
+          "start": 169.83131313131315,
+          "end": 172.92121212121214,
+          "startFrame": 5094,
+          "endFrame": 5187
         },
         {
           "text": "この動画がいいと思ったらチャンネル登録、いいねをよろしくね！",
-          "start": 183.22121212121215,
-          "end": 188.10000000000002,
-          "startFrame": 5496,
-          "endFrame": 5643
+          "start": 173.22121212121215,
+          "end": 178.10000000000002,
+          "startFrame": 5196,
+          "endFrame": 5343
         }
       ],
       "fullScript": "本日のAI・IT株式ニュースは以上です。このレポートはAI、Geminiにより自動生成されています。投資判断は必ずご自身で行ってください。この動画がいいと思ったらチャンネル登録、いいねをよろしくね！"
