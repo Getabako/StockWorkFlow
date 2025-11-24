@@ -50,42 +50,42 @@ style: |
 ![bg right:45%](images/002.png)
 # 📋 本日のサマリー
 
-AI業界では、AlibabaがChatGPT対抗アプリ「Qwen」で強力なデビューを飾り、Appleは次期iOSにAI機能を統合するなど、大手テック企業による開発競争が激化しています。また、TeslaはカスタムAIチップの開発を加速させ、NVIDIAやOpenAIを中心とする経済圏における多様なAIハードウェア戦略が進展。AIブームによるメモリー部品の供給逼迫も継続しており、サプライチェーン...
+今日のAI/IT市場は、主要プレイヤー間の競争激化と大規模投資が特徴的です。AnthropicとOpenAIはそれぞれ新AIモデルやツールを発表し、GoogleもAIによるUI設計を進めるなど、AI技術の具体的な応用が加速しています。一方で、Amazonが米国政府機関向けAIサービスに最大500億ドルを投資する巨大な動きがある中、NVIDIAの高性能AIチップの対中輸出規制に関する米政府の動...
 
 ---
 
 ![bg right:45%](images/003.png)
 # 📰 M&A・企業買収
 
-GoTo GroupのCEO交代とGrabによる買収加速
+Tencent、Ubisoftの一部ユニットに大型投資
 
 ---
 
 ![bg right:45%](images/004.png)
-# 📰 新製品・新技術
+# 📰 M&A・企業買収
 
-AlibabaのAIアプリ「Qwen」が好調なデビュー
+イタリア政府のサイバーセキュリティ戦略
 
 ---
 
 ![bg right:45%](images/005.png)
-# 📰 新製品・新技術
+# 📰 戦略的提携・パートナーシップ
 
-Apple iOS 27にAI機能を統合
+Google、欧州でのAI未来構築へ意欲
 
 ---
 
 ![bg right:45%](images/006.png)
-# 📰 新製品・新技術
+# 📰 大型契約・受注
 
-TeslaがカスタムAIチップ開発を加速
+Amazon、米国政府機関向けAIサービスに500億ドル投資
 
 ---
 
 ![bg right:45%](images/007.png)
-# 📰 人事
+# 📰 大型契約・受注
 
-OpenAIがAppleエンジニアを引き抜き
+小規模AIスタートアップが米国政府契約を獲得
 
 ---
 
