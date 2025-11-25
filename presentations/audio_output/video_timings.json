@@ -1,294 +1,308 @@
 {
   "fps": 30,
-  "totalDuration": 171.84,
-  "totalFrames": 5155,
+  "totalDuration": 193.4,
+  "totalFrames": 5802,
   "slides": [
     {
       "index": 1,
       "title": "AI/IT株式ニュース",
       "audioFile": "presentations/audio_output/slide_01.mp3",
-      "duration": 10.3,
-      "durationFrames": 309,
+      "duration": 10.38,
+      "durationFrames": 311,
       "startTime": 0,
-      "endTime": 10.3,
+      "endTime": 10.38,
       "startFrame": 0,
-      "endFrame": 309,
+      "endFrame": 311,
       "subtitles": [
         {
           "text": "うぃっすー！",
           "start": 0,
-          "end": 1.1192307692307695,
+          "end": 1.1284615384615386,
           "startFrame": 0,
           "endFrame": 33
         },
         {
           "text": "if塾AIニュースのお時間です。",
-          "start": 1.4192307692307695,
-          "end": 4.403846153846155,
+          "start": 1.4284615384615387,
+          "end": 4.437692307692308,
           "startFrame": 42,
-          "endFrame": 132
+          "endFrame": 133
         },
         {
-          "text": "2025/11/24のAI・IT株式ニュースをお届けします。",
-          "start": 4.703846153846155,
-          "end": 10.3,
-          "startFrame": 141,
-          "endFrame": 309
+          "text": "2025/11/25のAI・IT株式ニュースをお届けします。",
+          "start": 4.737692307692308,
+          "end": 10.38,
+          "startFrame": 142,
+          "endFrame": 311
         }
       ],
-      "fullScript": "うぃっすー！if塾AIニュースのお時間です。2025/11/24のAI・IT株式ニュースをお届けします。"
+      "fullScript": "うぃっすー！if塾AIニュースのお時間です。2025/11/25のAI・IT株式ニュースをお届けします。"
     },
     {
       "index": 2,
       "title": "📋 本日のサマリー",
       "audioFile": "presentations/audio_output/slide_02.mp3",
-      "duration": 48.62,
-      "durationFrames": 1458,
-      "startTime": 10.3,
-      "endTime": 58.92,
-      "startFrame": 309,
-      "endFrame": 1767,
+      "duration": 49.0,
+      "durationFrames": 1470,
+      "startTime": 10.38,
+      "endTime": 59.38,
+      "startFrame": 311,
+      "endFrame": 1781,
       "subtitles": [
         {
-          "text": "今日のAI/IT市場は、\n主要プレイヤー間の競争激化と大規模投資が特徴的です。",
-          "start": 10.3,
-          "end": 16.981194029850748,
-          "startFrame": 309,
-          "endFrame": 509
+          "text": "本日のAI/IT市場は、GoogleがAIチップ市場でNVID\nIAの強力な競争相手として本格的に台頭し",
+          "start": 10.38,
+          "end": 19.15717391304348,
+          "startFrame": 311,
+          "endFrame": 574
         },
         {
-          "text": "AnthropicとOpenAIはそれぞれ新AIモデルやツール\nを発表し、GoogleもAIによるUI設計を進めるなど",
-          "start": 17.28119402985075,
-          "end": 27.478805970149253,
-          "startFrame": 518,
-          "endFrame": 824
+          "text": "Metaからの大型受注が報じられるなど、\nAIインフラ競争の激化が最も顕著な動きとなりました。",
+          "start": 19.45717391304348,
+          "end": 27.373840579710148,
+          "startFrame": 583,
+          "endFrame": 821
         },
         {
-          "text": "AI技術の具体的な応用が加速しています。",
-          "start": 27.778805970149254,
-          "end": 31.295223880597014,
-          "startFrame": 833,
-          "endFrame": 938
+          "text": "GoogleはAIエージェントの実用化や\n既存製品へのAI統合も活発化させています。",
+          "start": 27.67384057971015,
+          "end": 34.730000000000004,
+          "startFrame": 830,
+          "endFrame": 1041
         },
         {
-          "text": "一方で、Amazonが米国政府機関向けAIサービスに最大500\n億ドルを投資する巨大な動きがある中",
-          "start": 31.595223880597015,
-          "end": 40.03462686567164,
-          "startFrame": 947,
-          "endFrame": 1201
+          "text": "また、AIとコンテンツ業界間の協調（Warner\nMusicとSunoの和解）や、Alibaba",
+          "start": 35.03,
+          "end": 43.11876811594203,
+          "startFrame": 1050,
+          "endFrame": 1293
         },
         {
-          "text": "NVIDIAの高性能AIチップの対中輸出規制に関する米政府の動\n向が地政学的リスクとして浮上しています。",
-          "start": 40.33462686567164,
-          "end": 49.30149253731343,
-          "startFrame": 1210,
-          "endFrame": 1479
+          "text": "Ant Groupといったアジア企業の\nAI関連事業の好調な成長も報じられました。",
+          "start": 43.41876811594203,
+          "end": 50.30282608695652,
+          "startFrame": 1302,
+          "endFrame": 1509
         },
         {
-          "text": "AIへの巨額投資が信用市場に与える影響やバブル懸念も顕在化して\nおり、期待と同時にリスクも高まる一日でした。",
-          "start": 49.601492537313426,
-          "end": 58.919999999999995,
-          "startFrame": 1488,
-          "endFrame": 1767
+          "text": "一方で、AIの倫理的課題や規制の動き、AI搭載製品の市場受容性\nといった側面も引き続き注目されています。",
+          "start": 50.60282608695652,
+          "end": 59.379999999999995,
+          "startFrame": 1518,
+          "endFrame": 1781
         }
       ],
-      "fullScript": "今日のAI/IT市場は、主要プレイヤー間の競争激化と大規模投資が特徴的です。AnthropicとOpenAIはそれぞれ新AIモデルやツールを発表し、GoogleもAIによるUI設計を進めるなど、AI技術の具体的な応用が加速しています。一方で、Amazonが米国政府機関向けAIサービスに最大500億ドルを投資する巨大な動きがある中、NVIDIAの高性能AIチップの対中輸出規制に関する米政府の動向が地政学的リスクとして浮上しています。AIへの巨額投資が信用市場に与える影響やバブル懸念も顕在化しており、期待と同時にリスクも高まる一日でした。"
+      "fullScript": "本日のAI/IT市場は、GoogleがAIチップ市場でNVIDIAの強力な競争相手として本格的に台頭し、Metaからの大型受注が報じられるなど、AIインフラ競争の激化が最も顕著な動きとなりました。GoogleはAIエージェントの実用化や既存製品へのAI統合も活発化させています。また、AIとコンテンツ業界間の協調（Warner MusicとSunoの和解）や、Alibaba、Ant Groupといったアジア企業のAI関連事業の好調な成長も報じられました。一方で、AIの倫理的課題や規制の動き、AI搭載製品の市場受容性といった側面も引き続き注目されています。"
     },
     {
       "index": 3,
-      "title": "📰 M&A・企業買収",
+      "title": "📰 戦略的提携・パートナーシップ",
       "audioFile": "presentations/audio_output/slide_03.mp3",
-      "duration": 21.58,
-      "durationFrames": 647,
-      "startTime": 58.92,
-      "endTime": 80.5,
-      "startFrame": 1767,
-      "endFrame": 2415,
+      "duration": 22.88,
+      "durationFrames": 686,
+      "startTime": 59.38,
+      "endTime": 82.26,
+      "startFrame": 1781,
+      "endFrame": 2467,
       "subtitles": [
         {
-          "text": "Tencent、Ubisoftの一部ユニットに大型投資。",
-          "start": 58.92,
-          "end": 62.70993548387097,
-          "startFrame": 1767,
-          "endFrame": 1881
+          "text": "GoogleとAccel Atomsが\nインドのAIイノベーションプログラムを共同開始。",
+          "start": 59.38,
+          "end": 65.76608108108108,
+          "startFrame": 1781,
+          "endFrame": 1972
         },
         {
-          "text": "Tencent Holdings Ltd.がUbisoft Entertainment SAの「Assassin’s Creed」などの人気フランチャイズを管理するユニットVantage Studiosに11.6億ユーロの投資を完了しました。",
-          "start": 63.00993548387097,
-          "end": 79.38787096774193,
-          "startFrame": 1890,
-          "endFrame": 2381
+          "text": "GoogleはAccel Atomsと提携し、インドにおけるA\nIスタートアップの育成プログラムを立ち上げました。",
+          "start": 66.06608108108108,
+          "end": 74.38283783783784,
+          "startFrame": 1981,
+          "endFrame": 2231
         },
         {
-          "text": "(記事32)",
-          "start": 79.68787096774193,
-          "end": 80.5,
-          "startFrame": 2390,
-          "endFrame": 2415
+          "text": "これは、地域ごとのAIエコシステムの構築と初期段階のAI企業へ\nの支援強化を示すものです。",
+          "start": 74.68283783783784,
+          "end": 81.21743243243243,
+          "startFrame": 2240,
+          "endFrame": 2436
+        },
+        {
+          "text": "(記事6)",
+          "start": 81.51743243243243,
+          "end": 82.25999999999999,
+          "startFrame": 2445,
+          "endFrame": 2467
         }
       ],
-      "fullScript": "Tencent、Ubisoftの一部ユニットに大型投資。Tencent Holdings Ltd.がUbisoft Entertainment SAの「Assassin’s Creed」などの人気フランチャイズを管理するユニットVantage Studiosに11.6億ユーロの投資を完了しました。(記事32)"
+      "fullScript": "GoogleとAccel AtomsがインドのAIイノベーションプログラムを共同開始。GoogleはAccel Atomsと提携し、インドにおけるAIスタートアップの育成プログラムを立ち上げました。これは、地域ごとのAIエコシステムの構築と初期段階のAI企業への支援強化を示すものです。(記事6)"
     },
     {
       "index": 4,
-      "title": "📰 M&A・企業買収",
+      "title": "📰 戦略的提携・パートナーシップ",
       "audioFile": "presentations/audio_output/slide_04.mp3",
-      "duration": 17.08,
-      "durationFrames": 512,
-      "startTime": 80.5,
-      "endTime": 97.58,
-      "startFrame": 2415,
-      "endFrame": 2927,
+      "duration": 23.74,
+      "durationFrames": 712,
+      "startTime": 82.26,
+      "endTime": 106.0,
+      "startFrame": 2467,
+      "endFrame": 3180,
       "subtitles": [
         {
-          "text": "イタリア政府のサイバーセキュリティ戦略。",
-          "start": 80.5,
-          "end": 83.97956989247312,
-          "startFrame": 2415,
-          "endFrame": 2519
+          "text": "Warner MusicとAI音楽スタートアップSunoが著作\n権訴訟を和解し、新たな音楽制作パートナーシップに合意。",
+          "start": 82.26,
+          "end": 92.37236641221375,
+          "startFrame": 2467,
+          "endFrame": 2771
         },
         {
-          "text": "イタリア政府は、機密性の高いデジタルインフラ保護のため、\n政府支援のサイバーセキュリティ組織設立を検討しており",
-          "start": 84.27956989247312,
-          "end": 93.67440860215054,
-          "startFrame": 2528,
-          "endFrame": 2810
+          "text": "AIとコンテンツ業界（特に音楽）の間で\n生じていた著作権に関する緊張が緩和され",
+          "start": 92.67236641221375,
+          "end": 99.29770992366413,
+          "startFrame": 2780,
+          "endFrame": 2978
         },
         {
-          "text": "買収も視野に入れています。",
-          "start": 93.97440860215053,
-          "end": 96.23612903225806,
-          "startFrame": 2819,
-          "endFrame": 2887
+          "text": "協力的なビジネスモデルの構築に向けた重要な一歩となりました。",
+          "start": 99.59770992366413,
+          "end": 104.82824427480917,
+          "startFrame": 2987,
+          "endFrame": 3144
         },
         {
-          "text": "(記事24)",
-          "start": 96.53612903225806,
-          "end": 97.58,
-          "startFrame": 2896,
-          "endFrame": 2927
+          "text": "(記事7)",
+          "start": 105.12824427480916,
+          "end": 106.0,
+          "startFrame": 3153,
+          "endFrame": 3180
         }
       ],
-      "fullScript": "イタリア政府のサイバーセキュリティ戦略。イタリア政府は、機密性の高いデジタルインフラ保護のため、政府支援のサイバーセキュリティ組織設立を検討しており、買収も視野に入れています。(記事24)"
+      "fullScript": "Warner MusicとAI音楽スタートアップSunoが著作権訴訟を和解し、新たな音楽制作パートナーシップに合意。AIとコンテンツ業界（特に音楽）の間で生じていた著作権に関する緊張が緩和され、協力的なビジネスモデルの構築に向けた重要な一歩となりました。(記事7)"
     },
     {
       "index": 5,
-      "title": "📰 戦略的提携・パートナーシップ",
+      "title": "📰 大型契約・受注",
       "audioFile": "presentations/audio_output/slide_05.mp3",
-      "duration": 16.92,
-      "durationFrames": 507,
-      "startTime": 97.58,
-      "endTime": 114.5,
-      "startFrame": 2927,
-      "endFrame": 3435,
+      "duration": 28.02,
+      "durationFrames": 840,
+      "startTime": 106.0,
+      "endTime": 134.02,
+      "startFrame": 3180,
+      "endFrame": 4020,
       "subtitles": [
         {
-          "text": "Google、欧州でのAI未来構築へ意欲。",
-          "start": 97.58,
-          "end": 101.47454545454545,
-          "startFrame": 2927,
-          "endFrame": 3044
+          "text": "Meta PlatformsがGoogleの\nAIチップ（TPU）に数十億ドルを費やす可能性が浮上。",
+          "start": 106.0,
+          "end": 113.8225,
+          "startFrame": 3180,
+          "endFrame": 3414
         },
         {
-          "text": "Google/Alphabetは、欧州のAI未来を「共に」構築\nする姿勢を強調しており、欧州でのAI展開強化を示唆しています。",
-          "start": 101.77454545454545,
-          "end": 113.27272727272727,
-          "startFrame": 3053,
-          "endFrame": 3398
+          "text": "MetaがGoogleのAIチップの主要顧客となることで",
+          "start": 114.1225,
+          "end": 118.5925,
+          "startFrame": 3423,
+          "endFrame": 3557
         },
         {
-          "text": "(記事2)",
-          "start": 113.57272727272726,
-          "end": 114.49999999999999,
-          "startFrame": 3407,
-          "endFrame": 3434
+          "text": "NVIDIAが支配するAIチップ市場に\nGoogleのTPUが本格的に食い込むことになります。",
+          "start": 118.8925,
+          "end": 126.23607142857142,
+          "startFrame": 3566,
+          "endFrame": 3787
+        },
+        {
+          "text": "これは、AIインフラ市場における競争の激化と多様化を明確に示す\nものです。",
+          "start": 126.53607142857142,
+          "end": 132.28321428571428,
+          "startFrame": 3796,
+          "endFrame": 3968
+        },
+        {
+          "text": "(記事8, 24)",
+          "start": 132.5832142857143,
+          "end": 134.02,
+          "startFrame": 3977,
+          "endFrame": 4020
         }
       ],
-      "fullScript": "Google、欧州でのAI未来構築へ意欲。Google/Alphabetは、欧州のAI未来を「共に」構築する姿勢を強調しており、欧州でのAI展開強化を示唆しています。(記事2)"
+      "fullScript": "Meta PlatformsがGoogleのAIチップ（TPU）に数十億ドルを費やす可能性が浮上。MetaがGoogleのAIチップの主要顧客となることで、NVIDIAが支配するAIチップ市場にGoogleのTPUが本格的に食い込むことになります。これは、AIインフラ市場における競争の激化と多様化を明確に示すものです。(記事8, 24)"
     },
     {
       "index": 6,
       "title": "📰 大型契約・受注",
       "audioFile": "presentations/audio_output/slide_06.mp3",
-      "duration": 20.0,
-      "durationFrames": 600,
-      "startTime": 114.5,
-      "endTime": 134.5,
-      "startFrame": 3435,
-      "endFrame": 4035,
+      "duration": 18.38,
+      "durationFrames": 551,
+      "startTime": 134.02,
+      "endTime": 152.4,
+      "startFrame": 4020,
+      "endFrame": 4572,
       "subtitles": [
         {
-          "text": "Amazon、米国政府機関向けAIサービスに500億ドル投資。",
-          "start": 114.5,
-          "end": 119.69385964912281,
-          "startFrame": 3435,
-          "endFrame": 3590
+          "text": "台湾の大富豪がプライベートクレジットファンドを\n通じて15億ドルをAI分野に投資。",
+          "start": 134.02,
+          "end": 141.3519587628866,
+          "startFrame": 4020,
+          "endFrame": 4240
         },
         {
-          "text": "Amazon.com Inc.は、米国政府機関向けにAIおよび\n高性能コンピューティングサービスを拡大するため",
-          "start": 119.99385964912281,
-          "end": 129.04122807017544,
-          "startFrame": 3599,
-          "endFrame": 3871
+          "text": "AI分野への大規模な資金流入が依然として活発であることを示して\nおり、AI投資熱の継続を裏付けています。",
+          "start": 141.6519587628866,
+          "end": 151.000206185567,
+          "startFrame": 4249,
+          "endFrame": 4530
         },
         {
-          "text": "最大500億ドルを投資する計画を発表しました。",
-          "start": 129.34122807017545,
-          "end": 133.19473684210527,
-          "startFrame": 3880,
-          "endFrame": 3995
-        },
-        {
-          "text": "(記事14)",
-          "start": 133.49473684210528,
-          "end": 134.50000000000003,
-          "startFrame": 4004,
-          "endFrame": 4035
+          "text": "(記事22)",
+          "start": 151.30020618556702,
+          "end": 152.4,
+          "startFrame": 4539,
+          "endFrame": 4572
         }
       ],
-      "fullScript": "Amazon、米国政府機関向けAIサービスに500億ドル投資。Amazon.com Inc.は、米国政府機関向けにAIおよび高性能コンピューティングサービスを拡大するため、最大500億ドルを投資する計画を発表しました。(記事14)"
+      "fullScript": "台湾の大富豪がプライベートクレジットファンドを通じて15億ドルをAI分野に投資。AI分野への大規模な資金流入が依然として活発であることを示しており、AI投資熱の継続を裏付けています。(記事22)"
     },
     {
       "index": 7,
-      "title": "📰 大型契約・受注",
+      "title": "📰 新製品・新技術",
       "audioFile": "presentations/audio_output/slide_07.mp3",
-      "duration": 20.34,
-      "durationFrames": 610,
-      "startTime": 134.5,
-      "endTime": 154.84,
-      "startFrame": 4035,
-      "endFrame": 4645,
+      "duration": 24.0,
+      "durationFrames": 720,
+      "startTime": 152.4,
+      "endTime": 176.4,
+      "startFrame": 4572,
+      "endFrame": 5292,
       "subtitles": [
         {
-          "text": "小規模AIスタートアップが米国政府契約を獲得。",
-          "start": 134.5,
-          "end": 138.71811320754716,
-          "startFrame": 4035,
-          "endFrame": 4161
+          "text": "GoogleがAIエージェントの\n「代理電話（Agentic Calling）」機能を提供開始。",
+          "start": 152.4,
+          "end": 159.73581081081082,
+          "startFrame": 4572,
+          "endFrame": 4792
         },
         {
-          "text": "米国国防総省および情報機関向けAI/MLデータラベリングの\n7年契約を",
-          "start": 139.01811320754717,
-          "end": 145.25358490566038,
-          "startFrame": 4170,
-          "endFrame": 4357
+          "text": "AIがユーザーに代わってローカルビジネスに\n電話をかけ情報を収集する機能が米国でリリースされました。",
+          "start": 160.03581081081083,
+          "end": 167.6837837837838,
+          "startFrame": 4801,
+          "endFrame": 5030
         },
         {
-          "text": "より小規模なAIスタートアップが競合の\nScale AI Inc.を破って獲得しました。",
-          "start": 145.5535849056604,
-          "end": 153.43962264150943,
-          "startFrame": 4366,
-          "endFrame": 4603
+          "text": "これにより、AIが実世界でのタスクを自律的に遂行するAIエージ\nェントの実用化が加速しています。",
+          "start": 167.98378378378382,
+          "end": 175.31959459459463,
+          "startFrame": 5039,
+          "endFrame": 5259
         },
         {
-          "text": "(記事13)",
-          "start": 153.73962264150944,
-          "end": 154.84,
-          "startFrame": 4612,
-          "endFrame": 4645
+          "text": "(記事2)",
+          "start": 175.61959459459464,
+          "end": 176.40000000000006,
+          "startFrame": 5268,
+          "endFrame": 5292
         }
       ],
-      "fullScript": "小規模AIスタートアップが米国政府契約を獲得。米国国防総省および情報機関向けAI/MLデータラベリングの7年契約を、より小規模なAIスタートアップが競合のScale AI Inc.を破って獲得しました。(記事13)"
+      "fullScript": "GoogleがAIエージェントの「代理電話（Agentic Calling）」機能を提供開始。AIがユーザーに代わってローカルビジネスに電話をかけ情報を収集する機能が米国でリリースされました。これにより、AIが実世界でのタスクを自律的に遂行するAIエージェントの実用化が加速しています。(記事2)"
     },
     {
       "index": 8,
@@ -296,38 +310,38 @@
       "audioFile": "presentations/audio_output/slide_08.mp3",
       "duration": 17.0,
       "durationFrames": 510,
-      "startTime": 154.84,
-      "endTime": 171.84,
-      "startFrame": 4645,
-      "endFrame": 5155,
+      "startTime": 176.4,
+      "endTime": 193.4,
+      "startFrame": 5292,
+      "endFrame": 5802,
       "subtitles": [
         {
           "text": "本日のAI・IT株式ニュースは以上です。",
-          "start": 154.84,
-          "end": 158.09252525252526,
-          "startFrame": 4645,
-          "endFrame": 4742
+          "start": 176.4,
+          "end": 179.65252525252527,
+          "startFrame": 5292,
+          "endFrame": 5389
         },
         {
           "text": "このレポートはAI、Geminiにより自動生成されています。",
-          "start": 158.39252525252527,
-          "end": 163.27131313131315,
-          "startFrame": 4751,
-          "endFrame": 4898
+          "start": 179.95252525252528,
+          "end": 184.83131313131315,
+          "startFrame": 5398,
+          "endFrame": 5544
         },
         {
           "text": "投資判断は必ずご自身で行ってください。",
-          "start": 163.57131313131316,
-          "end": 166.66121212121215,
-          "startFrame": 4907,
-          "endFrame": 4999
+          "start": 185.13131313131316,
+          "end": 188.22121212121215,
+          "startFrame": 5553,
+          "endFrame": 5646
         },
         {
           "text": "この動画がいいと思ったらチャンネル登録、いいねをよろしくね！",
-          "start": 166.96121212121216,
-          "end": 171.84000000000003,
-          "startFrame": 5008,
-          "endFrame": 5155
+          "start": 188.52121212121216,
+          "end": 193.40000000000003,
+          "startFrame": 5655,
+          "endFrame": 5802
         }
       ],
       "fullScript": "本日のAI・IT株式ニュースは以上です。このレポートはAI、Geminiにより自動生成されています。投資判断は必ずご自身で行ってください。この動画がいいと思ったらチャンネル登録、いいねをよろしくね！"
