@@ -81,12 +81,48 @@ def upload_video(youtube, video_file, title, description, tags=None, category_id
         アップロードされた動画のID
     """
     if tags is None:
-        tags = ["AI", "IT", "株式投資", "市場分析", "日次レポート"]
+        tags = ["AI", "IT", "株式投資", "市場分析", "日次レポート", "if塾", "プログラミング教育", "完全自動化", "AI活用"]
+
+    # 概要欄のテンプレートを作成
+    enhanced_description = f"""{description}
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🤖 塾頭高崎の完全自動化への挑戦について
+━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+このコンテンツは、if塾塾頭による「ブログ・SNS完全自動化プロジェクト」の
+実験的な取り組みとして、AIが自動生成したものです。
+
+私たちは、AI技術を活用した情報発信の可能性を探求しており、
+徐々に品質を向上させています。現在の記事内容と実際の活動に
+大きなズレはありませんが、細部については異なる場合があります。
+
+※現時点では事実と異なる内容が含まれる可能性があります
+※最新の正確な情報については、お問い合わせください
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📚 無料AI教育・導入コンサルのご案内
+━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+if塾では、無料のAI教育やAI導入コンサルティングを
+受け付けております。お気軽にお問い合わせください。
+
+🔗 お問い合わせフォーム:
+https://docs.google.com/forms/d/e/1FAIpQLSdu-w12JZxtiEMySp84T82JrguXhh8ZcADP5_4RKHLvv9cqSQ/viewform
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📣 チャンネル登録・高評価よろしくお願いします！
+━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+この技術的挑戦に共感していただけましたら、
+ぜひチャンネル登録とグッドボタンをお願いします！
+
+#AI #完全自動化 #if塾 #プログラミング教育 #AIニュース #株式投資"""
 
     body = {
         "snippet": {
             "title": title,
-            "description": description,
+            "description": enhanced_description,
             "tags": tags,
             "categoryId": category_id,
             "defaultLanguage": "ja",
