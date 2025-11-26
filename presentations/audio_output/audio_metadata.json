@@ -4,50 +4,56 @@
       "index": 1,
       "title": "AI/IT株式ニュース",
       "audio_file": "presentations/audio_output/slide_01.mp3",
-      "script": "うぃっすー！if塾AIニュースのお時間です。2025/11/25のAI・IT株式ニュースをお届けします。"
+      "script": "うぃっすー！if塾AIニュースのお時間です。2025/11/26のAI・IT株式ニュースをお届けします。"
     },
     {
       "index": 2,
       "title": "📋 本日のサマリー",
       "audio_file": "presentations/audio_output/slide_02.mp3",
-      "script": "本日のAI/IT市場は、GoogleがAIチップ市場でNVIDIAの強力な競争相手として本格的に台頭し、Metaからの大型受注が報じられるなど、AIインフラ競争の激化が最も顕著な動きとなりました。GoogleはAIエージェントの実用化や既存製品へのAI統合も活発化させています。また、AIとコンテンツ業界間の協調（Warner MusicとSunoの和解）や、Alibaba、Ant Groupといったアジア企業のAI関連事業の好調な成長も報じられました。一方で、AIの倫理的課題や規制の動き、AI搭載製品の市場受容性といった側面も引き続き注目されています。"
+      "script": "今日のAI/IT市場は、AIの具体的な社会実装とインフラ投資の活発化を示す一方で、その成長に伴う物理的制約や市場の過熱感、雇用への影響が顕在化しました。Googleは次世代AIモデル「Gemini 3」の進化を示し、AIとロボットの融合や自動運転の商用展開が進展。DellのAIサーバー販売予測上方修正は需要の強さを示すも、メモリチップや電力不足といったインフラ側の供給制約が懸念材料です。また、HPやMcKinseyにおけるAI活用を理由とした人員削減は、AIが雇用構造にもたらす変化を浮き彫りにし、ソフトバンク株下落に見られるAI関連投資の過熱感への警戒も高まっています。"
     },
     {
       "index": 3,
-      "title": "📰 戦略的提携・パートナーシップ",
+      "title": "📰 M&A・企業買収",
       "audio_file": "presentations/audio_output/slide_03.mp3",
-      "script": "GoogleとAccel AtomsがインドのAIイノベーションプログラムを共同開始。GoogleはAccel Atomsと提携し、インドにおけるAIスタートアップの育成プログラムを立ち上げました。これは、地域ごとのAIエコシステムの構築と初期段階のAI企業への支援強化を示すものです。(記事6)"
+      "script": "デジタル決済。イタリア政府はデジタル決済プラットフォームPagoPaを2つの国営企業に最大5億ユーロで売却する交渉を進めている。(Bloomberg Technology, 記事17)"
     },
     {
       "index": 4,
-      "title": "📰 戦略的提携・パートナーシップ",
+      "title": "📰 M&A・企業買収",
       "audio_file": "presentations/audio_output/slide_04.mp3",
-      "script": "Warner MusicとAI音楽スタートアップSunoが著作権訴訟を和解し、新たな音楽制作パートナーシップに合意。AIとコンテンツ業界（特に音楽）の間で生じていた著作権に関する緊張が緩和され、協力的なビジネスモデルの構築に向けた重要な一歩となりました。(記事7)"
+      "script": "ゲーム。ByteDanceはゲームスタジオShanghai Moonton Technology Co.の売却交渉を再開し、サウジアラビアのSavvy Games Groupと協議中と報じられている。(Bloomberg Technology, 記事20)"
     },
     {
       "index": 5,
-      "title": "📰 大型契約・受注",
+      "title": "📰 M&A・企業買収",
       "audio_file": "presentations/audio_output/slide_05.mp3",
-      "script": "Meta PlatformsがGoogleのAIチップ（TPU）に数十億ドルを費やす可能性が浮上。MetaがGoogleのAIチップの主要顧客となることで、NVIDIAが支配するAIチップ市場にGoogleのTPUが本格的に食い込むことになります。これは、AIインフラ市場における競争の激化と多様化を明確に示すものです。(記事8, 24)"
+      "script": "金融・仮想通貨。Robinhood Markets Inc.とSusquehanna International Groupが、かつてFTX傘下だったLedgerX取引所の買収を進め、予測市場への足がかりを得る。(Bloomberg Technology, 記事21)"
     },
     {
       "index": 6,
-      "title": "📰 大型契約・受注",
+      "title": "📰 M&A・企業買収",
       "audio_file": "presentations/audio_output/slide_06.mp3",
-      "script": "台湾の大富豪がプライベートクレジットファンドを通じて15億ドルをAI分野に投資。AI分野への大規模な資金流入が依然として活発であることを示しており、AI投資熱の継続を裏付けています。(記事22)"
+      "script": "金融・仮想通貨。Naver Corp.が、韓国最大の仮想通貨取引所Upbitの運営会社Dunamu Inc.を約103億ドルの全株式取引で買収することに合意。デジタル資産市場での足場を固める狙い。(Bloomberg Technology, 記事28)"
     },
     {
       "index": 7,
       "title": "📰 新製品・新技術",
       "audio_file": "presentations/audio_output/slide_07.mp3",
-      "script": "GoogleがAIエージェントの「代理電話（Agentic Calling）」機能を提供開始。AIがユーザーに代わってローカルビジネスに電話をかけ情報を収集する機能が米国でリリースされました。これにより、AIが実世界でのタスクを自律的に遂行するAIエージェントの実用化が加速しています。(記事2)"
+      "script": "AIモデル。Google/AlphabetのCEO Sundar Pichaiが、Google AI: Release Notes podcastで次世代AIモデル「Gemini 3」について深く議論した。(Google/Alphabet, 記事1)"
     },
     {
       "index": 8,
       "title": "📊 まとめ",
       "audio_file": "presentations/audio_output/slide_08.mp3",
-      "script": "本日のAI・IT株式ニュースは以上です。このレポートはAI、Geminiにより自動生成されています。投資判断は必ずご自身で行ってください。この動画がいいと思ったらチャンネル登録、いいねをよろしくね！"
+      "script": "本日のAI・IT株式ニュースは以上です。"
+    },
+    {
+      "index": 9,
+      "title": "🤖 塾頭高崎の完全自動化への挑戦",
+      "audio_file": "presentations/audio_output/slide_09.mp3",
+      "script": "ご視聴いただきありがとうございました。実はこのレポート、if塾の塾頭高崎による「完全自動化への挑戦」プロジェクトの一環として、AIが自動生成しています。将来的には塾頭が執筆しているような自然な記事になることを目指しており、現時点では事実と異なる内容が含まれる可能性もあります。この挑戦に共感していただけたら、ぜひチャンネル登録とグッドボタンをよろしくお願いします！また、無料のAI教育や導入コンサルも受け付けています。詳しくは概要欄のリンクからお問い合わせください。"
     }
   ],
-  "total_slides": 8
+  "total_slides": 9
 }
