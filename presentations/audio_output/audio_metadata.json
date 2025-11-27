@@ -4,43 +4,43 @@
       "index": 1,
       "title": "AI/IT株式ニュース",
       "audio_file": "presentations/audio_output/slide_01.mp3",
-      "script": "うぃっすー！if塾AIニュースのお時間です。2025/11/26のAI・IT株式ニュースをお届けします。"
+      "script": "うぃっすー！if塾AIニュースのお時間です。2025/11/27のAI・IT株式ニュースをお届けします。"
     },
     {
       "index": 2,
       "title": "📋 本日のサマリー",
       "audio_file": "presentations/audio_output/slide_02.mp3",
-      "script": "今日のAI/IT市場は、AIの具体的な社会実装とインフラ投資の活発化を示す一方で、その成長に伴う物理的制約や市場の過熱感、雇用への影響が顕在化しました。Googleは次世代AIモデル「Gemini 3」の進化を示し、AIとロボットの融合や自動運転の商用展開が進展。DellのAIサーバー販売予測上方修正は需要の強さを示すも、メモリチップや電力不足といったインフラ側の供給制約が懸念材料です。また、HPやMcKinseyにおけるAI活用を理由とした人員削減は、AIが雇用構造にもたらす変化を浮き彫りにし、ソフトバンク株下落に見られるAI関連投資の過熱感への警戒も高まっています。"
+      "script": "今日のAI/IT市場は、大手テック企業によるAIの多様な応用展開と、AIインフラへの大規模投資が加速していることを示しました。Google、OpenAI、Amazon、Alibabaは消費者向けAIサービスの競争を激化させる一方、AIの根幹を支えるデータセンターインフラの拡充に向けたM&Aや110億ドル規模の大型投資が発表されています。また、防衛分野でのAI活用や量子コンピューティングの進展も見られる中、中国政府がヒューマノイドロボット分野のバブルリスクを警告するなど、AI関連市場の加熱と同時にリスクへの懸念も浮上しています。"
     },
     {
       "index": 3,
       "title": "📰 M&A・企業買収",
       "audio_file": "presentations/audio_output/slide_03.mp3",
-      "script": "デジタル決済。イタリア政府はデジタル決済プラットフォームPagoPaを2つの国営企業に最大5億ユーロで売却する交渉を進めている。(Bloomberg Technology, 記事17)"
+      "script": "データセンター事業者の買収競争。Digital Realty Trust Inc.とEquinix Inc.が、北欧のデータセンター事業者atNorth Holding ABの買収に向けた次期入札ラウンドに進んでいることが報じられました (記事 9)。AI需要の爆発的な増加に伴い、データセンターインフラの確保と強化が加速していることを示唆します。"
     },
     {
       "index": 4,
-      "title": "📰 M&A・企業買収",
+      "title": "📰 戦略的提携・パートナーシップ",
       "audio_file": "presentations/audio_output/slide_04.mp3",
-      "script": "ゲーム。ByteDanceはゲームスタジオShanghai Moonton Technology Co.の売却交渉を再開し、サウジアラビアのSavvy Games Groupと協議中と報じられている。(Bloomberg Technology, 記事20)"
+      "script": "Googleと学術機関のAI研究提携深化。Google/Alphabetは、テルアビブ大学とのAI研究パートナーシップを深化させることを発表しました (記事 2)。これは、AIの基礎研究と人材育成への継続的な投資姿勢を示すものです。"
     },
     {
       "index": 5,
-      "title": "📰 M&A・企業買収",
+      "title": "📰 戦略的提携・パートナーシップ",
       "audio_file": "presentations/audio_output/slide_05.mp3",
-      "script": "金融・仮想通貨。Robinhood Markets Inc.とSusquehanna International Groupが、かつてFTX傘下だったLedgerX取引所の買収を進め、予測市場への足がかりを得る。(Bloomberg Technology, 記事21)"
+      "script": "インドでのAIデータセンター合弁事業。Mukesh Ambani率いるReliance Industries Ltd.、Brookfield Asset Management Ltd.、Digital Realty Trust Inc.の合弁事業であるDigital Connexionが、インド南部で110億ドルを投じてAIデータセンターを開発する協定を締結しました (記事 12)。これは、AIインフラ構築におけるグローバルなパートナーシップの重要性を示します。"
     },
     {
       "index": 6,
-      "title": "📰 M&A・企業買収",
+      "title": "📰 大型契約・受注",
       "audio_file": "presentations/audio_output/slide_06.mp3",
-      "script": "金融・仮想通貨。Naver Corp.が、韓国最大の仮想通貨取引所Upbitの運営会社Dunamu Inc.を約103億ドルの全株式取引で買収することに合意。デジタル資産市場での足場を固める狙い。(Bloomberg Technology, 記事28)"
+      "script": "インドでの110億ドル規模AIデータセンター建設。上記のDigital ConnexionによるインドでのAIデータセンター建設は、2030年までに110億ドル規模の投資となる見込みです (記事 12)。AI需要の急増に応える大規模インフラ投資が世界各地で進んでいることを裏付けています。"
     },
     {
       "index": 7,
       "title": "📰 新製品・新技術",
       "audio_file": "presentations/audio_output/slide_07.mp3",
-      "script": "AIモデル。Google/AlphabetのCEO Sundar Pichaiが、Google AI: Release Notes podcastで次世代AIモデル「Gemini 3」について深く議論した。(Google/Alphabet, 記事1)"
+      "script": "Googleの消費者向けAI体験。Google/Alphabetは、ホリデーシーズンに向けてAIを活用した3つの新しいモバイルアプリ「Learn Everything」「W.T.V.」「Art Chat」を発表しました (記事 1)。"
     },
     {
       "index": 8,

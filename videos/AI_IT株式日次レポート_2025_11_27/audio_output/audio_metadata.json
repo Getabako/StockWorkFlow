@@ -1,0 +1,59 @@
+{
+  "audio_files": [
+    {
+      "index": 1,
+      "title": "AI/IT株式ニュース",
+      "audio_file": "presentations/audio_output/slide_01.mp3",
+      "script": "うぃっすー！if塾AIニュースのお時間です。2025/11/27のAI・IT株式ニュースをお届けします。"
+    },
+    {
+      "index": 2,
+      "title": "📋 本日のサマリー",
+      "audio_file": "presentations/audio_output/slide_02.mp3",
+      "script": "今日のAI/IT市場は、大手テック企業によるAIの多様な応用展開と、AIインフラへの大規模投資が加速していることを示しました。Google、OpenAI、Amazon、Alibabaは消費者向けAIサービスの競争を激化させる一方、AIの根幹を支えるデータセンターインフラの拡充に向けたM&Aや110億ドル規模の大型投資が発表されています。また、防衛分野でのAI活用や量子コンピューティングの進展も見られる中、中国政府がヒューマノイドロボット分野のバブルリスクを警告するなど、AI関連市場の加熱と同時にリスクへの懸念も浮上しています。"
+    },
+    {
+      "index": 3,
+      "title": "📰 M&A・企業買収",
+      "audio_file": "presentations/audio_output/slide_03.mp3",
+      "script": "データセンター事業者の買収競争。Digital Realty Trust Inc.とEquinix Inc.が、北欧のデータセンター事業者atNorth Holding ABの買収に向けた次期入札ラウンドに進んでいることが報じられました (記事 9)。AI需要の爆発的な増加に伴い、データセンターインフラの確保と強化が加速していることを示唆します。"
+    },
+    {
+      "index": 4,
+      "title": "📰 戦略的提携・パートナーシップ",
+      "audio_file": "presentations/audio_output/slide_04.mp3",
+      "script": "Googleと学術機関のAI研究提携深化。Google/Alphabetは、テルアビブ大学とのAI研究パートナーシップを深化させることを発表しました (記事 2)。これは、AIの基礎研究と人材育成への継続的な投資姿勢を示すものです。"
+    },
+    {
+      "index": 5,
+      "title": "📰 戦略的提携・パートナーシップ",
+      "audio_file": "presentations/audio_output/slide_05.mp3",
+      "script": "インドでのAIデータセンター合弁事業。Mukesh Ambani率いるReliance Industries Ltd.、Brookfield Asset Management Ltd.、Digital Realty Trust Inc.の合弁事業であるDigital Connexionが、インド南部で110億ドルを投じてAIデータセンターを開発する協定を締結しました (記事 12)。これは、AIインフラ構築におけるグローバルなパートナーシップの重要性を示します。"
+    },
+    {
+      "index": 6,
+      "title": "📰 大型契約・受注",
+      "audio_file": "presentations/audio_output/slide_06.mp3",
+      "script": "インドでの110億ドル規模AIデータセンター建設。上記のDigital ConnexionによるインドでのAIデータセンター建設は、2030年までに110億ドル規模の投資となる見込みです (記事 12)。AI需要の急増に応える大規模インフラ投資が世界各地で進んでいることを裏付けています。"
+    },
+    {
+      "index": 7,
+      "title": "📰 新製品・新技術",
+      "audio_file": "presentations/audio_output/slide_07.mp3",
+      "script": "Googleの消費者向けAI体験。Google/Alphabetは、ホリデーシーズンに向けてAIを活用した3つの新しいモバイルアプリ「Learn Everything」「W.T.V.」「Art Chat」を発表しました (記事 1)。"
+    },
+    {
+      "index": 8,
+      "title": "📊 まとめ",
+      "audio_file": "presentations/audio_output/slide_08.mp3",
+      "script": "本日のAI・IT株式ニュースは以上です。"
+    },
+    {
+      "index": 9,
+      "title": "🤖 塾頭高崎の完全自動化への挑戦",
+      "audio_file": "presentations/audio_output/slide_09.mp3",
+      "script": "ご視聴いただきありがとうございました。実はこのレポート、if塾の塾頭高崎による「完全自動化への挑戦」プロジェクトの一環として、AIが自動生成しています。将来的には塾頭が執筆しているような自然な記事になることを目指しており、現時点では事実と異なる内容が含まれる可能性もあります。この挑戦に共感していただけたら、ぜひチャンネル登録とグッドボタンをよろしくお願いします！また、無料のAI教育や導入コンサルも受け付けています。詳しくは概要欄のリンクからお問い合わせください。"
+    }
+  ],
+  "total_slides": 9
+}
