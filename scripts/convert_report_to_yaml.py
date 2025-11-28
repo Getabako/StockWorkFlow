@@ -66,7 +66,7 @@ def parse_markdown_to_slides(md_content: str, date_str: str) -> dict:
                 summary_text = summary_text[:197] + '...'
 
             slides.append({
-                'title': '📋 本日のサマリー',
+                'title': '本日のサマリー',
                 'content': summary_text
             })
             script_notes.append({
@@ -122,7 +122,7 @@ def parse_markdown_to_slides(md_content: str, date_str: str) -> dict:
             # 最大5件のファクトをスライドに
             for i, fact in enumerate(facts_collected[:5]):
                 slides.append({
-                    'title': f'📰 {fact["category"]}' if fact['category'] else f'📰 ニュース {i+1}',
+                    'title': f'{fact["category"]}' if fact['category'] else f'ニュース {i+1}',
                     'content': fact['headline']
                 })
                 script_notes.append({
@@ -156,7 +156,7 @@ def parse_markdown_to_slides(md_content: str, date_str: str) -> dict:
 
             if key_points:
                 slides.append({
-                    'title': '💡 投資のポイント',
+                    'title': '投資のポイント',
                     'content': '\n'.join(key_points)
                 })
                 script_notes.append({
@@ -167,7 +167,7 @@ def parse_markdown_to_slides(md_content: str, date_str: str) -> dict:
 
     # 締めスライド
     slides.append({
-        'title': '📊 まとめ',
+        'title': 'まとめ',
         'content': '本日のレポートは以上です\n\nご視聴ありがとうございました'
     })
     script_notes.append({
@@ -178,7 +178,7 @@ def parse_markdown_to_slides(md_content: str, date_str: str) -> dict:
 
     # 免責事項とCTAスライドを追加
     slides.append({
-        'title': '🤖 塾頭高崎の完全自動化への挑戦',
+        'title': '塾頭高崎の完全自動化への挑戦',
         'content': '※このコンテンツはAIが自動生成しています\n\nAI技術の限界に挑戦中！\n共感いただけたらチャンネル登録・グッドボタンを\nよろしくお願いします！'
     })
     script_notes.append({
