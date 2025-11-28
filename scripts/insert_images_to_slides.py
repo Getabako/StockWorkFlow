@@ -79,11 +79,15 @@ class SlideImageInserter:
             # ヘッダースライド（marp設定）をスキップ
             is_header = (i == 0 and 'marp: true' in slide_content)
 
+            # サマリースライドかどうか判定（サマリーには画像を挿入しない）
+            is_summary = 'サマリー' in slide_content or 'summary' in slide_content.lower() or '_class: summary' in slide_content
+
             slide_data.append({
                 'index': i,
                 'content': slide_content,
                 'has_image': has_image,
-                'is_header': is_header
+                'is_header': is_header,
+                'is_summary': is_summary
             })
 
         return slide_data
@@ -166,6 +170,12 @@ class SlideImageInserter:
         for slide in slides:
             # ヘッダースライドはそのまま
             if slide['is_header']:
+                modified_slides.append(slide['content'])
+                continue
+
+            # サマリースライドは画像を挿入しない
+            if slide.get('is_summary', False):
+                print(f"Slide {slide['index']}: Summary slide, skipping image insertion...")
                 modified_slides.append(slide['content'])
                 continue
 

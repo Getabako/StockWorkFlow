@@ -185,6 +185,15 @@ def main():
 
     output_dir.mkdir(parents=True, exist_ok=True)
 
+    # 既存の画像を削除（新規生成のため）
+    existing_images = list(output_dir.glob('*.png'))
+    if existing_images:
+        print(f"Removing {len(existing_images)} existing images...")
+        for img in existing_images:
+            img.unlink()
+            print(f"  Deleted: {img.name}")
+        print()
+
     # キャラクターディレクトリ
     character_dir = Path(args.character_dir)
     if not character_dir.exists():
@@ -222,13 +231,6 @@ def main():
         aspect_ratio = row.get('aspect_ratio', '3:4')
 
         output_path = output_dir / f"{slide_number}.png"
-
-        # すでに画像が存在する場合はスキップ
-        if output_path.exists():
-            print(f"[{i}/{len(rows)}] {title}")
-            print(f"  Image already exists, skipping...")
-            success_count += 1
-            continue
 
         print(f"[{i}/{len(rows)}] {title}")
         print(f"  Character: {character}")
