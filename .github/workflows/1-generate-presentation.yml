@@ -8,9 +8,14 @@ on:
         required: true
         type: choice
         options:
+          - 'daily_report_2025_11_27.yml'
+          - 'daily_report_2025_11_26.yml'
+          - 'daily_report_2025_11_25.yml'
+          - 'daily_report_2025_11_24.yml'
+          - 'daily_report_2025_11_23.yml'
+          - 'daily_report_2025_11_20.yml'
           - 'ai_industry_trends_2025.yml'
           - '知能検査ケーススタディ.yml'
-          - 'daily_report_2025_11_20.yml'
       generate_images:
         description: '画像も生成する'
         required: false
