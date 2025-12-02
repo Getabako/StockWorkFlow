@@ -1,0 +1,110 @@
+name: Weekly Portfolio Action Plan
+
+on:
+  schedule:
+    # 毎週土曜日 JST 6:00 (UTC 21:00 on Friday) に実行
+    - cron: '0 21 * * 5'
+  workflow_dispatch:  # 手動実行も可能
+
+permissions:
+  contents: write
+
+jobs:
+  weekly-action:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Update portfolio evaluation
+        run: |
+          python scripts/update_portfolio.py
+        env:
+          STOCK_API_KEY: ${{ secrets.STOCK_API_KEY }}
+
+      - name: Generate action plan
+        run: |
+          python scripts/generate_action.py
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+
+      - name: Set date variable
+        if: success()
+        run: |
+          echo "REPORT_DATE=$(date +'%Y_%m_%d')" >> $GITHUB_ENV
+          echo "Report date: $(date +'%Y_%m_%d')"
+
+      - name: Convert report to HTML/PDF
+        if: success()
+        run: |
+          python scripts/convert_report_to_html.py output/weekly_action_report.md output/
+          mv output/weekly_action_report.html output/weekly_action_report_${{ env.REPORT_DATE }}.html
+          mv output/weekly_action_report.pdf output/weekly_action_report_${{ env.REPORT_DATE }}.pdf
+          echo "✓ Renamed to weekly_action_report_${{ env.REPORT_DATE }}.html/pdf"
+
+      - name: Copy HTML report to report directory
+        if: success()
+        run: |
+          mkdir -p report/weekly
+          cp output/weekly_action_report_${{ env.REPORT_DATE }}.html report/weekly/weekly_action_report_${{ env.REPORT_DATE }}.html
+          echo "✓ HTML report copied to report/weekly/weekly_action_report_${{ env.REPORT_DATE }}.html"
+
+      - name: Commit and push HTML report
+        if: success()
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add report/weekly/weekly_action_report_${{ env.REPORT_DATE }}.html
+          git diff --staged --quiet || git commit -m "Add weekly action report HTML for ${{ env.REPORT_DATE }} (automated)"
+          git push origin main
+
+      - name: Send action report to Discord
+        if: success()
+        run: |
+          python scripts/send_to_discord.py \
+            "${{ secrets.DISCORD_WEBHOOK_URL }}" \
+            "💰 AI/IT株式投資 週次アクションレポート (${{ env.REPORT_DATE }})" \
+            "output/weekly_action_report.md" \
+            "15844367" \
+            "output/weekly_action_report_${{ env.REPORT_DATE }}.pdf"
+
+      - name: Upload reports as artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: weekly-action-${{ env.REPORT_DATE }}
+          path: |
+            output/portfolio_summary.csv
+            output/weekly_action_report.md
+            output/weekly_action_report_${{ env.REPORT_DATE }}.html
+            output/weekly_action_report_${{ env.REPORT_DATE }}.pdf
+          retention-days: 90
+
+      - name: Notify on failure
+        if: failure()
+        run: |
+          python -c "
+          import requests, json
+          from datetime import datetime
+          requests.post('${{ secrets.DISCORD_WEBHOOK_URL }}', json={
+            'embeds': [{
+              'title': '⚠️ 週次アクションレポート生成エラー',
+              'description': '週次レポートの生成中にエラーが発生しました。GitHub Actionsのログを確認してください。',
+              'color': 15158332,
+              'timestamp': datetime.utcnow().isoformat()
+            }]
+          })
+          "

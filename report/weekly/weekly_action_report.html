@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI/IT株式投資 週次アクションレポート</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #0ea5e9;
+            --success-color: #10b981;
+            --danger-color: #ef4444;
+            --warning-color: #f59e0b;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-primary: #1e293b;
+            --text-secondary: #64748b;
+            --border-color: #e2e8f0;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        body {
+            font-family: 'Noto Sans JP', 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: var(--text-primary);
+            line-height: 1.7;
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            border-radius: 16px;
+            box-shadow: var(--shadow-lg);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            animation: pulse 15s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            50% { transform: translate(-10%, -10%) scale(1.1); }
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            font-weight: 700;
+            margin-bottom: 10px;
+            position: relative;
+            z-index: 1;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .header .subtitle {
+            font-size: 1.1em;
+            opacity: 0.95;
+            position: relative;
+            z-index: 1;
+            font-weight: 300;
+        }
+
+        .content {
+            padding: 50px;
+        }
+
+        h1 {
+            color: #1e3a8a;
+            font-size: 2.2em;
+            margin: 30px 0 20px 0;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #1e3a8a;
+            font-weight: 700;
+        }
+
+        h2 {
+            color: #0c4a6e;
+            font-size: 1.8em;
+            margin: 35px 0 20px 0;
+            padding-left: 15px;
+            border-left: 5px solid #0c4a6e;
+            font-weight: 600;
+        }
+
+        h3 {
+            color: var(--text-primary);
+            font-size: 1.4em;
+            margin: 25px 0 15px 0;
+            padding: 12px 20px;
+            background: linear-gradient(90deg, var(--bg-color) 0%, transparent 100%);
+            border-radius: 8px;
+            font-weight: 600;
+        }
+
+        h4 {
+            color: var(--text-secondary);
+            font-size: 1.1em;
+            margin: 20px 0 10px 0;
+            font-weight: 500;
+        }
+
+        p {
+            margin: 15px 0;
+            color: var(--text-primary);
+            font-size: 1.05em;
+        }
+
+        strong {
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        em {
+            font-style: italic;
+            color: var(--text-secondary);
+        }
+
+        ul, ol {
+            margin: 20px 0;
+            padding-left: 30px;
+        }
+
+        li {
+            margin: 12px 0;
+            line-height: 1.8;
+            color: var(--text-primary);
+        }
+
+        ul li {
+            list-style-type: none;
+            position: relative;
+            padding-left: 25px;
+        }
+
+        ul li::before {
+            content: '▸';
+            color: var(--primary-color);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+            font-size: 1.2em;
+        }
+
+        blockquote {
+            margin: 25px 0;
+            padding: 20px 25px;
+            background: var(--bg-color);
+            border-left: 5px solid var(--warning-color);
+            border-radius: 0 8px 8px 0;
+            font-style: italic;
+            color: var(--text-secondary);
+            box-shadow: var(--shadow);
+        }
+
+        hr {
+            border: none;
+            border-top: 2px solid var(--border-color);
+            margin: 40px 0;
+            opacity: 0.5;
+        }
+
+        code {
+            background: #f1f5f9;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            color: #dc2626;
+        }
+
+        pre {
+            background: #1e293b;
+            color: #e2e8f0;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 20px 0;
+            box-shadow: var(--shadow);
+        }
+
+        pre code {
+            background: none;
+            color: inherit;
+            padding: 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        th {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: white;
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        td {
+            padding: 15px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        tr:hover {
+            background: var(--bg-color);
+        }
+
+        .summary-box {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            border-left: 5px solid var(--warning-color);
+            padding: 25px;
+            margin: 25px 0;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+
+        .info-box {
+            background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+            border-left: 5px solid var(--primary-color);
+            padding: 25px;
+            margin: 25px 0;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+
+        .success-box {
+            background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+            border-left: 5px solid var(--success-color);
+            padding: 25px;
+            margin: 25px 0;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+
+        .footer {
+            background: var(--bg-color);
+            padding: 30px;
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 0.9em;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .footer p {
+            margin: 5px 0;
+            color: var(--text-secondary);
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 0.85em;
+            font-weight: 500;
+            margin: 0 5px;
+        }
+
+        .badge-primary {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        .badge-success {
+            background: var(--success-color);
+            color: white;
+        }
+
+        .badge-warning {
+            background: var(--warning-color);
+            color: white;
+        }
+
+        .badge-danger {
+            background: var(--danger-color);
+            color: white;
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+
+            .container {
+                box-shadow: none;
+                max-width: 100%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 20px 10px;
+            }
+
+            .header {
+                padding: 30px 20px;
+            }
+
+            .header h1 {
+                font-size: 1.8em;
+            }
+
+            .content {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            h3 {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>AI/IT株式投資 週次アクションレポート</h1>
+            <div class="subtitle">AI/IT株式投資レポート - Powered by Gemini AI</div>
+        </div>
+
+        <div class="content">
+            <h1 id="aiit">AI/IT株式投資 週次アクションレポート</h1>
+<p><strong>作成日時</strong>: 2025年11月04日 03:29</p>
+<h2 id="_1">ポートフォリオサマリー</h2>
+<p>現在の総評価額は約$29.6万に対し、総損益は約$-27.6万（-48.25%）と深刻な含み損を抱えています。特に保有する米国株は、取得単価と現在の株価が著しく乖離しており、これは過去の株式分割を考慮していないデータ、あるいはデータ入力ミスが原因である可能性が高いと見受けられます。現在、投資方針に定める「含み益が10.0%以上の銘柄」は存在せず、生活費捻出のための利確目標達成が困難な状況です。</p>
+<h2 id="_2">今週の推奨アクション</h2>
+<h3 id="1">1. 生活費捻出のための利確提案</h3>
+<p><strong>目標金額</strong>: $50,000</p>
+<p>現在のポートフォリオには、投資方針に定める「含み益が10.0%以上の銘柄」が一つも存在しません。そのため、<strong>今週はルールに基づいた利確提案はできません。</strong></p>
+<p>生活費捻出の目標である$50,000を達成するには、現時点では含み損を抱えている銘柄を売却する、つまり損切りを行うしかありません。しかし、これは「長期資産増額」と「有望銘柄は保持する」という貴殿の投資方針に反します。この目標と方針のバランスについて再考が必要です。</p>
+<p><strong>合計利確見込額</strong>: $0</p>
+<h3 id="2">2. 定期買い付けリマインド</h3>
+<p>現在、ポートフォリオ全体が深刻な含み損にあり、新規買い付けのための現金ポジションが不明ですが、長期資産増額を目指すのであれば、成長期待の高いAI/IT関連銘柄への継続的な積み立ては有効な戦略です。特に、ポートフォリオに既に組み込まれているNVIDIA (NVDA) など、今後も業界を牽引する銘柄の押し目買いや、より幅広いAI/IT関連ETFへの分散投資を検討する良い機会かもしれません。</p>
+<h3 id="3">3. ポートフォリオ最適化の提案</h3>
+<ul>
+<li><strong>データ精査の最優先</strong>: 最も喫緊の課題は、ポートフォリオデータの正確性の確認です。特にQCOM, TSLA, NVDA, INTCの取得単価が現在の株価と著しく乖離しており、過去の株式分割やデータ入力ミスが原因である可能性が高いです。また、LITALICO (7366.T) の現在価格が不明確です。正確な損益状況を把握するため、これらのデータの再確認と修正を最優先で行ってください。正確なデータがなければ、適切な投資判断はできません。</li>
+<li><strong>投資方針と目標の再検討</strong>: 週次$50,000の生活費捻出目標と、現状のポートフォリオのパフォーマンスには大きな乖離があります。この目標を達成するためには、含み益銘柄からの売却が必須ですが、現状ではそれが不可能です。生活費捻出の緊急度が高い場合、投資方針（長期保有、含み益10%以上での利確）の見直しや、ポートフォリオの抜本的な改善策（例：高配当株の組み入れ、異なるセクターへの分散など）を検討する必要があります。</li>
+<li><strong>リスク分散の重要性</strong>: 現在のポートフォリオはAI/ITセクターに集中しており、特定のセクターリスクが高い状態です。長期的な資産増額を目指すのであれば、他の成長セクターや、より安定した資産（例：債券、高配当株など）への分散投資も検討し、ポートフォリオ全体の安定性を高めることを推奨します。</li>
+<li><strong>損益改善戦略</strong>: 現状の多大な含み損を抱える銘柄については、単に放置するだけでなく、今後の市場動向や各社の事業戦略を注視し、損切りラインの設定や、損益通算を考慮した戦略的な売買の検討も必要かもしれません。</li>
+</ul>
+<h2 id="_3">来週の注意事項</h2>
+<p>株式市場は、米国の金融政策（金利動向）、インフレ指標、地政学リスク、そして企業の決算発表など、様々な要因に影響を受けます。来週もこれらの経済指標や主要企業のニュースに注意を払い、特に保有銘柄に関連する報道は確認するようにしてください。正確な取得単価の確認と修正が完了次第、改めてポートフォリオ全体のパフォーマンスを見直し、次のアクションを検討しましょう。</p>
+<hr />
+<p><em>このレポートはAI（Gemini）により自動生成されています。最終的な投資判断はご自身で行ってください。</em></p>
+        </div>
+
+        <div class="footer">
+            <p>このレポートはAI（Google Gemini）により自動生成されています。</p>
+            <p>投資判断は必ずご自身の責任で行ってください。</p>
+            <p>生成日時: 2025年11月04日 03:29:32</p>
+        </div>
+    </div>
+</body>
+</html>
