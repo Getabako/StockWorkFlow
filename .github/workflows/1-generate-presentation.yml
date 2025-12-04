@@ -109,7 +109,7 @@ jobs:
       - name: Copy background image
         run: |
           # 背景画像をimagesフォルダにコピー
-          cp remotion-project/public/slideBackground.png images/
+          cp assets/images/slideBackground.png images/
           echo "Copied background image to images/"
 
       - name: Step 1 - Create slide (text only)

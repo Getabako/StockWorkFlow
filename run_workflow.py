@@ -28,6 +28,7 @@ project_root = Path(__file__).parent
 sys.path.insert(0, str(project_root))
 
 from agents import WorkflowOrchestrator
+from agents.cc_orchestrator import CCWorkflowOrchestrator
 
 
 def main():
@@ -39,11 +40,17 @@ def main():
     # 完全なワークフローを実行（情報収集→レポート→スライド→脚本→動画）
     python run_workflow.py
 
+    # Claude Codeモードで実行（調査と画像生成以外はClaude Code CLIで処理）
+    python run_workflow.py --claude-code
+
     # 情報収集エージェントのみ実行
     python run_workflow.py --agent researcher
 
     # レポートが既にある場合、スライド作成から開始
     python run_workflow.py --start-from slide_creator --report output/daily_report.md
+
+    # Claude Codeモードで途中から実行
+    python run_workflow.py --claude-code --start-from slide_creator --report output/daily_report.md
 
     # 利用可能なエージェントとスキルを表示
     python run_workflow.py --status
@@ -122,10 +129,27 @@ def main():
         help='結果を保存するJSONファイルパス'
     )
 
+    parser.add_argument(
+        '--claude-code', '-cc',
+        action='store_true',
+        help='Claude Codeモードを使用（調査と画像生成以外はClaude Code CLIで処理）'
+    )
+
     args = parser.parse_args()
 
-    # オーケストレーターを初期化
-    orchestrator = WorkflowOrchestrator(background_image=args.background)
+    # オーケストレーターを初期化（Claude Codeモードまたは通常モード）
+    if args.claude_code:
+        print("\n*** Claude Codeモードで実行 ***")
+        print("AI使用状況:")
+        print("  - 情報収集: Gemini (RSS/Web検索)")
+        print("  - レポート作成: Claude Code CLI")
+        print("  - スライド作成: Claude Code CLI")
+        print("  - 画像生成: Gemini")
+        print("  - 脚本作成: Claude Code CLI")
+        print("  - 動画編集: Edge TTS + Remotion")
+        orchestrator = CCWorkflowOrchestrator(background_image=args.background)
+    else:
+        orchestrator = WorkflowOrchestrator(background_image=args.background)
 
     # ステータス表示
     if args.status:

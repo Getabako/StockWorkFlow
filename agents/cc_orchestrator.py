@@ -1,0 +1,272 @@
+"""
+CCWorkflowOrchestrator（オーケストレーター - Claude Code版）
+Claude Codeを使用するサブエージェントを統括するオーケストレーター
+
+調べるところと画像生成はGemini、それ以外はClaude Codeを使用
+"""
+
+from datetime import datetime
+from pathlib import Path
+from typing import Dict, Any, List, Optional
+from .claude_code_base_agent import ClaudeCodeBaseAgent
+from .researcher import ResearcherAgent  # Gemini版（RSS/Web検索なのでそのまま）
+from .cc_summarizer import CCSummarizerAgent  # Claude Code版
+from .cc_slide_creator import CCSlideCreatorAgent  # Claude Code版
+from .image_generator import ImageGeneratorAgent  # Gemini版（画像生成）
+from .cc_script_writer import CCScriptWriterAgent  # Claude Code版
+from .video_editor import VideoEditorAgent  # Gemini不要（Edge TTS + Remotion）
+
+
+class CCWorkflowOrchestrator(ClaudeCodeBaseAgent):
+    """Claude Codeを中心としたワークフローを統括するオーケストレーター"""
+
+    def __init__(self, background_image: str = "images/slideBackground.png"):
+        super().__init__(
+            name="CCWorkflowOrchestrator",
+            description="ワークフロー全体を統括（Claude Code版）- 調査と画像生成はGemini、それ以外はClaude Code"
+        )
+        self.skills = ["workflow_management", "agent_coordination", "error_handling"]
+        self.background_image = background_image
+
+        # サブエージェントを初期化
+        # Gemini使用: researcher (RSS/Web), image_generator (画像生成)
+        # Claude Code使用: summarizer, slide_creator, script_writer
+        # AI不要: video_editor (Edge TTS + Remotion)
+        self.agents = {
+            "researcher": ResearcherAgent(),  # Gemini（RSS/Web検索）
+            "summarizer": CCSummarizerAgent(),  # Claude Code
+            "slide_creator": CCSlideCreatorAgent(background_image=background_image),  # Claude Code
+            "image_generator": ImageGeneratorAgent(),  # Gemini（画像生成）
+            "script_writer": CCScriptWriterAgent(),  # Claude Code
+            "video_editor": VideoEditorAgent(),  # AI不要
+        }
+
+        # ワークフロー定義
+        self.workflow_steps = [
+            {"agent": "researcher", "name": "情報収集", "required_context": [], "ai": "Gemini"},
+            {"agent": "summarizer", "name": "レポート作成", "required_context": ["articles"], "ai": "Claude Code"},
+            {"agent": "slide_creator", "name": "スライド作成", "required_context": ["report"], "ai": "Claude Code"},
+            {"agent": "image_generator", "name": "画像生成", "required_context": ["slides_data"], "ai": "Gemini"},
+            {"agent": "script_writer", "name": "脚本作成", "required_context": ["slide_file"], "ai": "Claude Code"},
+            {"agent": "video_editor", "name": "動画編集", "required_context": ["scripts", "slides_data"], "ai": "Edge TTS"},
+        ]
+
+    def run_step(self, step: Dict, context: Dict[str, Any]) -> Dict[str, Any]:
+        """
+        単一のワークフローステップを実行
+
+        Args:
+            step: ステップ定義
+            context: 現在のコンテキスト
+
+        Returns:
+            ステップの実行結果
+        """
+        agent_name = step["agent"]
+        step_name = step["name"]
+        ai_engine = step.get("ai", "Unknown")
+
+        self.log(f"=== {step_name} ({agent_name}) [AI: {ai_engine}] ===")
+
+        # 必要なコンテキストが揃っているか確認
+        for required in step.get("required_context", []):
+            if required not in context:
+                self.log(f"Missing required context: {required}", "WARNING")
+
+        # エージェントを取得して実行
+        agent = self.agents.get(agent_name)
+        if not agent:
+            raise ValueError(f"Unknown agent: {agent_name}")
+
+        try:
+            result = agent.execute(context)
+
+            # 結果をコンテキストにマージ
+            context.update(result)
+            self.log(f"{step_name} completed successfully")
+
+            return result
+
+        except Exception as e:
+            self.log(f"{step_name} failed: {str(e)}", "ERROR")
+            raise
+
+    def run_full_workflow(self, initial_context: Optional[Dict[str, Any]] = None) -> Dict[str, Any]:
+        """
+        完全なワークフローを実行
+
+        Args:
+            initial_context: 初期コンテキスト
+
+        Returns:
+            最終結果
+        """
+        self.log("Starting full workflow (Claude Code mode)...")
+        self.log("AI Engine Configuration:")
+        self.log("  - 情報収集: Gemini (RSS/Web)")
+        self.log("  - レポート作成: Claude Code")
+        self.log("  - スライド作成: Claude Code")
+        self.log("  - 画像生成: Gemini")
+        self.log("  - 脚本作成: Claude Code")
+        self.log("  - 動画編集: Edge TTS + Remotion")
+
+        start_time = datetime.now()
+
+        context = initial_context or {}
+        results = {}
+
+        for step in self.workflow_steps:
+            try:
+                result = self.run_step(step, context)
+                results[step["agent"]] = result
+            except Exception as e:
+                self.log(f"Workflow stopped at {step['name']}: {str(e)}", "ERROR")
+                results["error"] = {
+                    "step": step["name"],
+                    "message": str(e)
+                }
+                break
+
+        end_time = datetime.now()
+        duration = (end_time - start_time).total_seconds()
+
+        results["workflow_summary"] = {
+            "start_time": start_time.isoformat(),
+            "end_time": end_time.isoformat(),
+            "duration_seconds": duration,
+            "completed_steps": len([s for s in self.workflow_steps if s["agent"] in results]),
+            "mode": "claude_code"
+        }
+
+        self.log(f"Workflow completed in {duration:.1f} seconds")
+        return results
+
+    def run_partial_workflow(self, start_from: str, initial_context: Dict[str, Any]) -> Dict[str, Any]:
+        """
+        途中からワークフローを実行
+
+        Args:
+            start_from: 開始するステップのエージェント名
+            initial_context: 初期コンテキスト（前のステップの結果を含む）
+
+        Returns:
+            最終結果
+        """
+        self.log(f"Starting partial workflow from {start_from} (Claude Code mode)...")
+
+        # 開始位置を特定
+        start_index = None
+        for i, step in enumerate(self.workflow_steps):
+            if step["agent"] == start_from:
+                start_index = i
+                break
+
+        if start_index is None:
+            raise ValueError(f"Unknown step: {start_from}")
+
+        context = initial_context
+        results = {}
+
+        for step in self.workflow_steps[start_index:]:
+            try:
+                result = self.run_step(step, context)
+                results[step["agent"]] = result
+            except Exception as e:
+                self.log(f"Workflow stopped at {step['name']}: {str(e)}", "ERROR")
+                results["error"] = {
+                    "step": step["name"],
+                    "message": str(e)
+                }
+                break
+
+        return results
+
+    def run_single_agent(self, agent_name: str, context: Dict[str, Any]) -> Dict[str, Any]:
+        """
+        単一のエージェントのみを実行
+
+        Args:
+            agent_name: エージェント名
+            context: コンテキスト
+
+        Returns:
+            実行結果
+        """
+        self.log(f"Running single agent: {agent_name}")
+
+        agent = self.agents.get(agent_name)
+        if not agent:
+            raise ValueError(f"Unknown agent: {agent_name}")
+
+        return agent.execute(context)
+
+    def get_workflow_status(self) -> Dict[str, Any]:
+        """ワークフローの状態を取得"""
+        return {
+            "orchestrator": self.name,
+            "mode": "claude_code",
+            "agents": {
+                name: agent.get_status()
+                for name, agent in self.agents.items()
+            },
+            "workflow_steps": [
+                {
+                    "step": i + 1,
+                    "name": step["name"],
+                    "agent": step["agent"],
+                    "ai_engine": step.get("ai", "Unknown")
+                }
+                for i, step in enumerate(self.workflow_steps)
+            ]
+        }
+
+    def execute(self, context: Dict[str, Any]) -> Dict[str, Any]:
+        """
+        エージェントのメイン処理を実行
+
+        Args:
+            context: 実行コンテキスト
+                - mode: "full" | "partial" | "single"（デフォルト: "full"）
+                - start_from: 部分実行時の開始ステップ
+                - agent: 単一実行時のエージェント名
+
+        Returns:
+            実行結果
+        """
+        mode = context.get("mode", "full")
+
+        if mode == "full":
+            return self.run_full_workflow(context)
+
+        elif mode == "partial":
+            start_from = context.get("start_from")
+            if not start_from:
+                raise ValueError("start_from is required for partial mode")
+            return self.run_partial_workflow(start_from, context)
+
+        elif mode == "single":
+            agent_name = context.get("agent")
+            if not agent_name:
+                raise ValueError("agent is required for single mode")
+            return self.run_single_agent(agent_name, context)
+
+        else:
+            raise ValueError(f"Unknown mode: {mode}")
+
+
+# 使用例
+if __name__ == "__main__":
+    # オーケストレーターを初期化
+    orchestrator = CCWorkflowOrchestrator(background_image="images/slideBackground.png")
+
+    # ワークフローの状態を表示
+    print("\n=== Workflow Status (Claude Code Mode) ===")
+    status = orchestrator.get_workflow_status()
+    for step in status["workflow_steps"]:
+        print(f"  {step['step']}. {step['name']} ({step['agent']}) - AI: {step['ai_engine']}")
+
+    print("\n=== Available Agents ===")
+    for name, info in status["agents"].items():
+        print(f"  - {name}: {info['description']}")
+        print(f"    Model: {info['model']}")
+        print(f"    Skills: {', '.join(info['skills'])}")

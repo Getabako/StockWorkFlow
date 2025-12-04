@@ -143,7 +143,7 @@ def create_marp_slide(input_file, output_dir):
     # メインセクション - 背景画像を使用
     content.append("  section {")
     content.append("    font-family: 'Noto Sans JP', 'Hiragino Sans', 'BIZ UDPGothic', sans-serif;")
-    content.append("    background-image: url('images/slideBackground.png');")
+    content.append("    background-image: url('../images/slideBackground.png');")
     content.append("    background-size: cover;")
     content.append("    background-position: center;")
     content.append("    background-repeat: no-repeat;")

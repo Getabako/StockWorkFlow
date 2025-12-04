@@ -59,6 +59,10 @@ class SlideGenerationSkill(BaseSkill):
 
     def generate_header(self) -> str:
         """Marpスライドのヘッダーを生成"""
+        # スライドがslidesディレクトリに生成されるため、相対パスを調整
+        bg_path = self.background_image
+        if not bg_path.startswith('../') and not bg_path.startswith('/'):
+            bg_path = f"../{bg_path}"
         return f"""---
 marp: true
 theme: default
@@ -77,7 +81,7 @@ style: |
 
   section {{
     font-family: 'Noto Sans JP', sans-serif;
-    background-image: url('{self.background_image}');
+    background-image: url('{bg_path}');
     background-size: cover;
     background-position: center;
     padding: 40px 60px;

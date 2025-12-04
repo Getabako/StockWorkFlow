@@ -103,8 +103,8 @@ class SlideImageInserter:
         Returns:
             画像が挿入されたスライド内容
         """
-        # 画像の相対パスを計算
-        relative_path = f"images/{image_path.name}"
+        # 画像の相対パスを計算（スライドがslidesディレクトリにあるため../images/を使用）
+        relative_path = f"../images/{image_path.name}"
 
         # 画像タグを作成
         # 3:4の縦長画像の場合、上下幅をスライドに合わせる

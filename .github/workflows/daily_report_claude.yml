@@ -1,9 +1,6 @@
-name: Daily AI/IT Stock News Report
+name: Daily AI/IT Stock News Report (Claude)
 
 on:
-  schedule:
-    # 月曜日から金曜日 JST 6:00 (UTC 21:00) に実行
-    - cron: '0 21 * * 1-5'
   workflow_dispatch:
     inputs:
       generate_video:
@@ -21,9 +18,13 @@ permissions:
   contents: write
 
 jobs:
-  daily-report:
+  daily-report-claude:
     runs-on: ubuntu-latest
     timeout-minutes: 90
+
+    env:
+      # Claude APIを使用（調査と画像生成以外）
+      AI_PROVIDER: claude
 
     steps:
       - name: Checkout repository
@@ -52,6 +53,7 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
+          pip install requests  # Claude API用
 
       - name: Install Node dependencies
         run: npm install
@@ -64,6 +66,7 @@ jobs:
         run: |
           sudo apt-get install -y fonts-noto-cjk fonts-noto-cjk-extra
 
+      # ===== 情報収集（Gemini使用 - RSS/Web検索） =====
       - name: Fetch news data
         run: |
           python scripts/fetch_data.py
@@ -74,17 +77,18 @@ jobs:
         run: |
           python scripts/fetch_stock_prices.py
 
-      - name: Generate Market Analysis Report
+      # ===== レポート生成（Claude使用） =====
+      - name: Generate Market Analysis Report with Claude
         run: |
-          python scripts/analyze_market.py
+          python scripts/analyze_market_claude.py
         env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
 
-      - name: Generate Portfolio Impact Report
+      - name: Generate Portfolio Impact Report with Claude
         run: |
-          python scripts/analyze_portfolio_impact.py
+          python scripts/analyze_portfolio_impact_claude.py
         env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
 
       - name: Set date variable
         if: success()
@@ -130,7 +134,7 @@ jobs:
           git config --local user.name "github-actions[bot]"
           git add report/daily/
           git add inputs/daily_report_${{ env.REPORT_DATE }}.yml
-          git diff --staged --quiet || git commit -m "Add daily reports for ${{ env.REPORT_DATE }} (automated)"
+          git diff --staged --quiet || git commit -m "Add daily reports for ${{ env.REPORT_DATE }} (Claude)"
           git pull --rebase origin main || true
           git push origin main
 
@@ -139,7 +143,7 @@ jobs:
         run: |
           python scripts/send_to_discord.py \
             "${{ secrets.DISCORD_WEBHOOK_URL }}" \
-            "📊 AI/IT市場 日次情勢レポート (${{ env.REPORT_DATE }})" \
+            "📊 AI/IT市場 日次情勢レポート (${{ env.REPORT_DATE }}) - Claude分析" \
             "output/market_report.md" \
             "3066993" \
             "output/market_report_${{ env.REPORT_DATE }}.pdf"
@@ -153,16 +157,17 @@ jobs:
         run: |
           python scripts/send_to_discord.py \
             "${{ secrets.DISCORD_WEBHOOK_URL }}" \
-            "💼 ポートフォリオ影響分析レポート (${{ env.REPORT_DATE }})" \
+            "💼 ポートフォリオ影響分析レポート (${{ env.REPORT_DATE }}) - Claude分析" \
             "output/portfolio_impact_report.md" \
             "15844367" \
             "output/portfolio_impact_report_${{ env.REPORT_DATE }}.pdf"
 
-      # スライド・動画生成（自動実行時またはgenerate_video=true時）
-      - name: Generate Presentation Slides
-        if: success() && (github.event_name == 'schedule' || github.event.inputs.generate_video == 'true' || github.event.inputs.generate_slides_only == 'true')
+      # ===== スライド生成（Claude使用） =====
+      - name: Generate Presentation Slides with Claude
+        if: success() && (github.event.inputs.generate_video == 'true' || github.event.inputs.generate_slides_only == 'true')
         env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}  # 画像生成用
         run: |
           PRESENTATION_NAME="AI_IT株式日次レポート_${{ env.REPORT_DATE }}"
           echo "PRESENTATION_NAME=$PRESENTATION_NAME" >> $GITHUB_ENV
@@ -176,12 +181,12 @@ jobs:
           # 1. Create slide from YAML
           python3 scripts/create_slide.py "inputs/daily_report_${{ env.REPORT_DATE }}.yml"
 
-          # 2. Generate image prompts
+          # 2. Generate image prompts (Gemini使用 - 画像生成)
           python3 scripts/generate_image_prompts_with_characters.py \
             "slides/${PRESENTATION_NAME}_slide.md" \
             --output "slides/${PRESENTATION_NAME}_imageprompt.csv"
 
-          # 3. Generate images
+          # 3. Generate images (Gemini使用 - 画像生成)
           python3 scripts/generate_images_from_prompts.py \
             "slides/${PRESENTATION_NAME}_imageprompt.csv" \
             --output-dir "images"
@@ -204,26 +209,21 @@ jobs:
             --images png \
             --allow-local-files
 
-          echo "✓ Presentation slides generated"
+          echo "✓ Presentation slides generated with Claude"
 
       - name: Commit slides
-        if: success() && (github.event_name == 'schedule' || github.event.inputs.generate_video == 'true' || github.event.inputs.generate_slides_only == 'true')
+        if: success() && (github.event.inputs.generate_video == 'true' || github.event.inputs.generate_slides_only == 'true')
         run: |
           git add presentations/${{ env.PRESENTATION_NAME }}/
-          git diff --staged --quiet || git commit -m "Add presentation slides for ${{ env.REPORT_DATE }}"
+          git diff --staged --quiet || git commit -m "Add presentation slides for ${{ env.REPORT_DATE }} (Claude)"
           git pull --rebase origin main || true
           git push origin main
 
-      # 動画生成（自動実行時またはgenerate_video=true時、generate_slides_only=false時）
-      - name: Prepare slide images for video
-        if: success() && (github.event_name == 'schedule' || github.event.inputs.generate_video == 'true') && github.event.inputs.generate_slides_only != 'true'
-        run: |
-          python3 scripts/prepare_slides_for_video.py "presentations/${{ env.PRESENTATION_NAME }}"
-
-      - name: Generate script from slides
-        if: success() && (github.event_name == 'schedule' || github.event.inputs.generate_video == 'true') && github.event.inputs.generate_slides_only != 'true'
+      # ===== 脚本生成（Claude使用） =====
+      - name: Generate script from slides with Claude
+        if: success() && github.event.inputs.generate_video == 'true' && github.event.inputs.generate_slides_only != 'true'
         env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: |
           PRESENTATION_DIR="presentations/${{ env.PRESENTATION_NAME }}"
           SLIDE_FILE="$PRESENTATION_DIR/${{ env.PRESENTATION_NAME }}_slide_with_images.md"
@@ -238,18 +238,24 @@ jobs:
             python3 scripts/generate_script.py "$SLIDE_FILE"
           fi
 
+      # ===== 動画生成（Edge TTS + Remotion） =====
+      - name: Prepare slide images for video
+        if: success() && github.event.inputs.generate_video == 'true' && github.event.inputs.generate_slides_only != 'true'
+        run: |
+          python3 scripts/prepare_slides_for_video.py "presentations/${{ env.PRESENTATION_NAME }}"
+
       - name: Generate audio
-        if: success() && (github.event_name == 'schedule' || github.event.inputs.generate_video == 'true') && github.event.inputs.generate_slides_only != 'true'
+        if: success() && github.event.inputs.generate_video == 'true' && github.event.inputs.generate_slides_only != 'true'
         run: |
           python3 scripts/generate_audio.py "$SCRIPT_FILE"
 
       - name: Generate timings
-        if: success() && (github.event_name == 'schedule' || github.event.inputs.generate_video == 'true') && github.event.inputs.generate_slides_only != 'true'
+        if: success() && github.event.inputs.generate_video == 'true' && github.event.inputs.generate_slides_only != 'true'
         run: |
           python3 scripts/generate_timings.py "$AUDIO_METADATA"
 
       - name: Prepare Remotion project
-        if: success() && (github.event_name == 'schedule' || github.event.inputs.generate_video == 'true') && github.event.inputs.generate_slides_only != 'true'
+        if: success() && github.event.inputs.generate_video == 'true' && github.event.inputs.generate_slides_only != 'true'
         run: |
           cp $AUDIO_DIR/video_timings.json remotion-project/timings.json
           mkdir -p remotion-project/public/presentations/audio_output
@@ -259,54 +265,31 @@ jobs:
           cp slide_images/slides_metadata.json remotion-project/
 
       - name: Render video
-        if: success() && (github.event_name == 'schedule' || github.event.inputs.generate_video == 'true') && github.event.inputs.generate_slides_only != 'true'
+        if: success() && github.event.inputs.generate_video == 'true' && github.event.inputs.generate_slides_only != 'true'
         run: |
           cd remotion-project && npm run build
           echo "✓ Video generated"
 
       - name: Save Video Output
-        if: success() && (github.event_name == 'schedule' || github.event.inputs.generate_video == 'true') && github.event.inputs.generate_slides_only != 'true'
+        if: success() && github.event.inputs.generate_video == 'true' && github.event.inputs.generate_slides_only != 'true'
         run: |
           mkdir -p videos/${{ env.PRESENTATION_NAME }}
           cp remotion-project/out/video.mp4 videos/${{ env.PRESENTATION_NAME }}/
           cp $AUDIO_DIR/video_timings.json videos/${{ env.PRESENTATION_NAME }}/
-          cp -r presentations/scripts_output videos/${{ env.PRESENTATION_NAME }}/scripts_output || true
-          cp -r $AUDIO_DIR videos/${{ env.PRESENTATION_NAME }}/audio_output || true
 
       - name: Commit video files
-        if: success() && (github.event_name == 'schedule' || github.event.inputs.generate_video == 'true') && github.event.inputs.generate_slides_only != 'true'
+        if: success() && github.event.inputs.generate_video == 'true' && github.event.inputs.generate_slides_only != 'true'
         run: |
           git add videos/${{ env.PRESENTATION_NAME }}/
-          git add presentations/scripts_output/ || true
-          git add presentations/audio_output/ || true
-          git diff --staged --quiet || git commit -m "feat: Add video - ${{ env.PRESENTATION_NAME }}"
+          git diff --staged --quiet || git commit -m "feat: Add video - ${{ env.PRESENTATION_NAME }} (Claude)"
           git pull --rebase origin main || true
           git push origin main
-
-      - name: Upload video to YouTube
-        if: success() && (github.event_name == 'schedule' || github.event.inputs.generate_video == 'true') && github.event.inputs.generate_slides_only != 'true'
-        env:
-          YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
-          YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
-          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
-        run: |
-          # YouTubeの認証情報が設定されている場合のみアップロード
-          if [ -n "$YOUTUBE_CLIENT_ID" ] && [ -n "$YOUTUBE_CLIENT_SECRET" ] && [ -n "$YOUTUBE_REFRESH_TOKEN" ]; then
-            python3 scripts/upload_to_youtube.py \
-              "videos/${{ env.PRESENTATION_NAME }}/video.mp4" \
-              --title "AI/IT株式日次レポート ${{ env.REPORT_DATE }}" \
-              --description "本日のAI/IT市場の動向分析レポートです。詳細なレポートはDiscordで配信中。#AI #IT #株式投資" \
-              --tags AI IT 株式投資 市場分析 日次レポート NVIDIA AMD Broadcom
-            echo "✓ YouTube upload completed"
-          else
-            echo "YouTube credentials not configured, skipping upload"
-          fi
 
       - name: Upload reports as artifact
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: daily-reports-${{ env.REPORT_DATE }}
+          name: daily-reports-claude-${{ env.REPORT_DATE }}
           path: |
             output/articles.json
             output/stock_prices.json
@@ -319,12 +302,27 @@ jobs:
           retention-days: 30
 
       - name: Upload video as artifact
-        if: success() && (github.event_name == 'schedule' || github.event.inputs.generate_video == 'true') && github.event.inputs.generate_slides_only != 'true'
+        if: success() && github.event.inputs.generate_video == 'true' && github.event.inputs.generate_slides_only != 'true'
         uses: actions/upload-artifact@v4
         with:
-          name: video-${{ env.REPORT_DATE }}
+          name: video-claude-${{ env.REPORT_DATE }}
           path: videos/${{ env.PRESENTATION_NAME }}/video.mp4
           retention-days: 30
+
+      - name: Summary
+        run: |
+          echo "## Daily Report Generated with Claude! 🤖" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**AI Engine Configuration:**" >> $GITHUB_STEP_SUMMARY
+          echo "| Task | AI Engine |" >> $GITHUB_STEP_SUMMARY
+          echo "|------|-----------|" >> $GITHUB_STEP_SUMMARY
+          echo "| News Collection | RSS/Web |" >> $GITHUB_STEP_SUMMARY
+          echo "| Market Analysis | **Claude** |" >> $GITHUB_STEP_SUMMARY
+          echo "| Portfolio Impact | **Claude** |" >> $GITHUB_STEP_SUMMARY
+          echo "| Slide Creation | **Claude** |" >> $GITHUB_STEP_SUMMARY
+          echo "| Image Generation | Gemini |" >> $GITHUB_STEP_SUMMARY
+          echo "| Script Writing | **Claude** |" >> $GITHUB_STEP_SUMMARY
+          echo "| Video Rendering | Edge TTS + Remotion |" >> $GITHUB_STEP_SUMMARY
 
       - name: Notify on failure
         if: failure()
@@ -334,8 +332,8 @@ jobs:
           from datetime import datetime
           requests.post('${{ secrets.DISCORD_WEBHOOK_URL }}', json={
             'embeds': [{
-              'title': '⚠️ 日次レポート生成エラー',
-              'description': '日次レポートの生成中にエラーが発生しました。GitHub Actionsのログを確認してください。',
+              'title': '⚠️ 日次レポート生成エラー (Claude)',
+              'description': 'Claude APIを使用した日次レポートの生成中にエラーが発生しました。',
               'color': 15158332,
               'timestamp': datetime.utcnow().isoformat()
             }]
