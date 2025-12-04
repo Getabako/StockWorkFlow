@@ -1,0 +1,59 @@
+{
+  "audio_files": [
+    {
+      "index": 1,
+      "title": "AI/IT株式ニュース",
+      "audio_file": "presentations/audio_output/slide_01.mp3",
+      "script": "うぃっすー！if塾AIニュースのお時間です。2025/12/04のAI・IT株式ニュースをお届けします。"
+    },
+    {
+      "index": 2,
+      "title": "本日のサマリー",
+      "audio_file": "presentations/audio_output/slide_02.mp3",
+      "script": "今日のAI/IT市場は、大手テック企業の競争激化と戦略転換が顕著でした。Googleは「Gemini 3 Deep Think」を発表し、自社AIチップの潜在的価値が浮上、OpenAIに対する競争圧力を強めています。一方でMetaはメタバース事業からAIへのリソースシフトを加速。AIの爆発的成長に伴い、データセンター建設と電力インフラへの巨額投資が進む一方、そのエネルギー消費と収益化の課題も浮彫りになっています。また、中国は国内AIチップメーカーの育成を国家戦略として推進し、サプライチェーンの多様化と地政学的な競争が加速しています。"
+    },
+    {
+      "index": 3,
+      "title": "戦略的提携・パートナーシップ",
+      "audio_file": "presentations/audio_output/slide_03.mp3",
+      "script": "ArmとAWS Graviton5。ArmはAWS Graviton5を通じ、ArmベースのAIデータセンターにおけるコンピューティングを再定義し、AIインフラにおける存在感を強化しています。(記事4)"
+    },
+    {
+      "index": 4,
+      "title": "戦略的提携・パートナーシップ",
+      "audio_file": "presentations/audio_output/slide_04.mp3",
+      "script": "VolkswagenのAI/チップ技術ハブ化。Volkswagenはドレスデン工場をAIおよびチップ技術のイノベーションハブに転換する計画を発表し、自動車産業におけるAIとカスタムチップ開発への投資を加速させています。(記事21)"
+    },
+    {
+      "index": 5,
+      "title": "大型契約・受注",
+      "audio_file": "presentations/audio_output/slide_05.mp3",
+      "script": "データセンター建設の活発化。ブラジルでは500億ドル規模のAIデータセンタープロジェクトが進行中で、電力供給オプションを模索。メキシコでもデータセンターの急増がパイプライン事業の需要を牽引しており、AI需要がインフラ投資を刺激しています。(記事11, 12)"
+    },
+    {
+      "index": 6,
+      "title": "大型契約・受注",
+      "audio_file": "presentations/audio_output/slide_06.mp3",
+      "script": "中国Cambriconの生産強化。中国のCambricon Technologiesは、NVIDIAの市場空白を埋めるべく、2026年にAIチップ生産を3倍以上に増やす計画を発表しました。これは中国政府による国内AIチップメーカー支援策の一環です。(記事8, 23, 33)"
+    },
+    {
+      "index": 7,
+      "title": "新製品・新技術",
+      "audio_file": "presentations/audio_output/slide_07.mp3",
+      "script": "Google Gemini 3 Deep Think。Googleは「Gemini 3 Deep Think」モードをGeminiアプリで提供開始。推論能力が大幅に向上したとされ、OpenAIとのAIモデル性能競争を激化させています。(記事1)"
+    },
+    {
+      "index": 8,
+      "title": "まとめ",
+      "audio_file": "presentations/audio_output/slide_08.mp3",
+      "script": "本日のAI・IT株式ニュースは以上です。"
+    },
+    {
+      "index": 9,
+      "title": "塾頭高崎の完全自動化への挑戦",
+      "audio_file": "presentations/audio_output/slide_09.mp3",
+      "script": "ご視聴いただきありがとうございました。実はこのレポート、if塾の塾頭高崎による「完全自動化への挑戦」プロジェクトの一環として、AIが自動生成しています。将来的には塾頭が執筆しているような自然な記事になることを目指しており、現時点では事実と異なる内容が含まれる可能性もあります。この挑戦に共感していただけたら、ぜひチャンネル登録とグッドボタンをよろしくお願いします！また、無料のAI教育や導入コンサルも受け付けています。詳しくは概要欄のリンクからお問い合わせください。"
+    }
+  ],
+  "total_slides": 9
+}
