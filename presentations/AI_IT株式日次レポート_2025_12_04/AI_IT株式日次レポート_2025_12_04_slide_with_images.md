@@ -20,7 +20,7 @@ style: |
 
   section {
     font-family: 'Noto Sans JP', 'Hiragino Sans', 'BIZ UDPGothic', sans-serif;
-    background-image: url('images/slideBackground.png');
+    background-image: url('../images/slideBackground.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -134,7 +134,7 @@ style: |
   }
 ---
 
-![bg right:45%](images/001.png)
+![bg right:45%](../images/001.png)
 # AI/IT株式ニュース
 
 2025/12/04
@@ -146,46 +146,46 @@ style: |
 <!-- _class: summary -->
 # 本日のサマリー
 
-今日のAI/IT市場は、大手テクノロジー企業のAI戦略の多角化と、それに対する規制当局の監視強化が顕著です。OpenAIは技術基盤強化のための買収を発表する一方、Googleや中国のCambriconはNVIDIAに代わる自社AIチップ開発・生産を加速させ、競争が激化しています。また、AI関連コストへの懸念や、Metaのメタバース事業からのシフトなど、投資と事業モデルの再構築が進む一日となり...
+今日のAI/IT市場は、大手テック企業の競争激化と戦略転換が顕著でした。Googleは「Gemini 3 Deep Think」を発表し、自社AIチップの潜在的価値が浮上、OpenAIに対する競争圧力を強めています。一方でMetaはメタバース事業からAIへのリソースシフトを加速。
 
 ---
 
-![bg right:45%](images/002.png)
-# M&A・企業買収
-
-OpenAIがポーランドのスタートアップNeptuneを買収
-
----
-
-![bg right:45%](images/003.png)
-# M&A・企業買収
-
-MetaのAIパイオニアYann LeCunが退社し新AI企業を設立
-
----
-
-![bg right:45%](images/004.png)
+![bg right:45%](../images/002.png)
 # 戦略的提携・パートナーシップ
 
-CambriconがAIチップ生産を3倍に、Nvidiaの中国市場の空白を狙う
+ArmとAWS Graviton5
 
 ---
 
-![bg right:45%](images/005.png)
+![bg right:45%](../images/003.png)
 # 戦略的提携・パートナーシップ
 
-Armが次世代産業用AI向けアーキテクチャシフトを推進
+VolkswagenのAI/チップ技術ハブ化
 
 ---
 
-![bg right:45%](images/006.png)
+![bg right:45%](../images/004.png)
 # 大型契約・受注
 
-ソフトバンクグループ出資のDayOne Data Centersが20億ドル超の資金調達を検討
+データセンター建設の活発化
 
 ---
 
-![bg right:45%](images/007.png)
+![bg right:45%](../images/005.png)
+# 大型契約・受注
+
+中国Cambriconの生産強化
+
+---
+
+![bg right:45%](../images/006.png)
+# 新製品・新技術
+
+Google Gemini 3 Deep Think
+
+---
+
+![bg right:45%](../images/007.png)
 # まとめ
 
 本日のレポートは以上です
@@ -194,7 +194,7 @@ Armが次世代産業用AI向けアーキテクチャシフトを推進
 
 ---
 
-![bg right:45%](images/008.png)
+![bg right:45%](../images/008.png)
 # 塾頭高崎の完全自動化への挑戦
 
 ※このコンテンツはAIが自動生成しています
