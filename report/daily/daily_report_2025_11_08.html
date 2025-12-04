@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI/IT株式投資 日次レポート</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #0ea5e9;
+            --success-color: #10b981;
+            --danger-color: #ef4444;
+            --warning-color: #f59e0b;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-primary: #1e293b;
+            --text-secondary: #64748b;
+            --border-color: #e2e8f0;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        body {
+            font-family: 'Noto Sans JP', 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: var(--text-primary);
+            line-height: 1.7;
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            border-radius: 16px;
+            box-shadow: var(--shadow-lg);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            animation: pulse 15s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            50% { transform: translate(-10%, -10%) scale(1.1); }
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            font-weight: 700;
+            margin-bottom: 10px;
+            position: relative;
+            z-index: 1;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .header .subtitle {
+            font-size: 1.1em;
+            opacity: 0.95;
+            position: relative;
+            z-index: 1;
+            font-weight: 300;
+        }
+
+        .content {
+            padding: 50px;
+        }
+
+        h1 {
+            color: #1e3a8a;
+            font-size: 2.2em;
+            margin: 30px 0 20px 0;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #1e3a8a;
+            font-weight: 700;
+        }
+
+        h2 {
+            color: #0c4a6e;
+            font-size: 1.8em;
+            margin: 35px 0 20px 0;
+            padding-left: 15px;
+            border-left: 5px solid #0c4a6e;
+            font-weight: 600;
+        }
+
+        h3 {
+            color: var(--text-primary);
+            font-size: 1.4em;
+            margin: 25px 0 15px 0;
+            padding: 12px 20px;
+            background: linear-gradient(90deg, var(--bg-color) 0%, transparent 100%);
+            border-radius: 8px;
+            font-weight: 600;
+        }
+
+        h4 {
+            color: var(--text-secondary);
+            font-size: 1.1em;
+            margin: 20px 0 10px 0;
+            font-weight: 500;
+        }
+
+        p {
+            margin: 15px 0;
+            color: var(--text-primary);
+            font-size: 1.05em;
+        }
+
+        strong {
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        em {
+            font-style: italic;
+            color: var(--text-secondary);
+        }
+
+        ul, ol {
+            margin: 20px 0;
+            padding-left: 30px;
+        }
+
+        li {
+            margin: 12px 0;
+            line-height: 1.8;
+            color: var(--text-primary);
+        }
+
+        ul li {
+            list-style-type: none;
+            position: relative;
+            padding-left: 25px;
+        }
+
+        ul li::before {
+            content: '▸';
+            color: var(--primary-color);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+            font-size: 1.2em;
+        }
+
+        blockquote {
+            margin: 25px 0;
+            padding: 20px 25px;
+            background: var(--bg-color);
+            border-left: 5px solid var(--warning-color);
+            border-radius: 0 8px 8px 0;
+            font-style: italic;
+            color: var(--text-secondary);
+            box-shadow: var(--shadow);
+        }
+
+        hr {
+            border: none;
+            border-top: 2px solid var(--border-color);
+            margin: 40px 0;
+            opacity: 0.5;
+        }
+
+        code {
+            background: #f1f5f9;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            color: #dc2626;
+        }
+
+        pre {
+            background: #1e293b;
+            color: #e2e8f0;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 20px 0;
+            box-shadow: var(--shadow);
+        }
+
+        pre code {
+            background: none;
+            color: inherit;
+            padding: 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        th {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: white;
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        td {
+            padding: 15px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        tr:hover {
+            background: var(--bg-color);
+        }
+
+        .summary-box {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            border-left: 5px solid var(--warning-color);
+            padding: 25px;
+            margin: 25px 0;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+
+        .info-box {
+            background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+            border-left: 5px solid var(--primary-color);
+            padding: 25px;
+            margin: 25px 0;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+
+        .success-box {
+            background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+            border-left: 5px solid var(--success-color);
+            padding: 25px;
+            margin: 25px 0;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+
+        .footer {
+            background: var(--bg-color);
+            padding: 30px;
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 0.9em;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .footer p {
+            margin: 5px 0;
+            color: var(--text-secondary);
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 0.85em;
+            font-weight: 500;
+            margin: 0 5px;
+        }
+
+        .badge-primary {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        .badge-success {
+            background: var(--success-color);
+            color: white;
+        }
+
+        .badge-warning {
+            background: var(--warning-color);
+            color: white;
+        }
+
+        .badge-danger {
+            background: var(--danger-color);
+            color: white;
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+
+            .container {
+                box-shadow: none;
+                max-width: 100%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 20px 10px;
+            }
+
+            .header {
+                padding: 30px 20px;
+            }
+
+            .header h1 {
+                font-size: 1.8em;
+            }
+
+            .content {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            h3 {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>AI/IT株式投資 日次レポート</h1>
+            <div class="subtitle">AI/IT株式投資レポート - Powered by Gemini AI</div>
+        </div>
+
+        <div class="content">
+            <h1 id="aiit">AI/IT株式投資 日次レポート</h1>
+<p><strong>作成日時</strong>: 2025年11月08日 21:09</p>
+<h2 id="_1">エグゼクティブサマリー</h2>
+<p>本日のニュースでは、AI需要の堅調さがNVIDIAのチップ供給要請から確認され、同社の事業の強さが示唆されました。しかし、量子コンピューティングのような新興技術分野では、実用化前の投資過熱がみられ、業界全体のリスク概念である「クロスセル経済圏」や「黒字化困難」を想起させます。ポートフォリオは依然として大幅な含み損を抱えていますが、主要AI銘柄の需要の強さはポジティブな兆候と捉えられます。</p>
+<h2 id="_2">ポートフォリオ状況</h2>
+<h2 id="20251108">ポートフォリオ現在値（2025年11月08日時点）</h2>
+<p><strong>ポートフォリオサマリー</strong>:<br />
+- 総評価額: 375,233.42<br />
+- 総購入額: 573,020.94<br />
+- 総損益: -197,787.52 (-34.52%)</p>
+<p><strong>保有銘柄</strong>:</p>
+<ul>
+<li><strong>LITALICO Inc. (7366.T)</strong></li>
+<li>現在値: JPY 1,195.00 (+1.27%)</li>
+<li>保有株数: 300株</li>
+<li>評価額: JPY 358,500.00</li>
+<li>
+<p>損益: JPY +80,286.00 (+28.86%)</p>
+</li>
+<li>
+<p><strong>QUALCOMM Incorporated (QCOM)</strong></p>
+</li>
+<li>現在値: USD 170.89 (-1.33%)</li>
+<li>保有株数: 2株</li>
+<li>評価額: USD 341.78</li>
+<li>
+<p>損益: USD -46,633.22 (-99.27%)</p>
+</li>
+<li>
+<p><strong>Tesla, Inc. (TSLA)</strong></p>
+</li>
+<li>現在値: USD 429.52 (-3.68%)</li>
+<li>保有株数: 1株</li>
+<li>評価額: USD 429.52</li>
+<li>
+<p>損益: USD -37,841.48 (-98.88%)</p>
+</li>
+<li>
+<p><strong>NVIDIA Corporation (NVDA)</strong></p>
+</li>
+<li>現在値: USD 188.15 (+0.04%)</li>
+<li>保有株数: 82株</li>
+<li>評価額: USD 15,428.30</li>
+<li>
+<p>損益: USD -131,912.58 (-89.53%)</p>
+</li>
+<li>
+<p><strong>Intel Corporation (INTC)</strong></p>
+</li>
+<li>現在値: USD 38.13 (+2.39%)</li>
+<li>保有株数: 14株</li>
+<li>評価額: USD 533.82</li>
+<li>損益: USD -61,686.24 (-99.14%)</li>
+</ul>
+<h2 id="_3">重要ファクト</h2>
+<h3 id="_4">戦略的提携・パートナーシップ</h3>
+<ul>
+<li><strong>NVIDIA (NVDA) と TSMC</strong>: NVIDIAのCEO Jensen Huangが、強いAI需要に対応するため、主要な半導体サプライヤーであるTaiwan Semiconductor Manufacturing Co. (TSMC) に対し、追加のチップ供給を要請した。これは、NVIDIAとTSMC間の供給関係の重要性およびNVIDIAのAIチップ需要の堅調さを示している。</li>
+</ul>
+<h3 id="_5">新製品・新技術</h3>
+<ul>
+<li><strong>量子コンピューティング</strong>: Rigetti Computing Inc.やD-Wave Quantum Inc.といった量子コンピューティング企業は、現状では実世界での応用が少なく、数年間は大きな収益が見込めず多額の現金を消費しているにもかかわらず、投資家から高い関心を集め、株価が急騰するケースが見られる。</li>
+</ul>
+<h3 id="_6">業績・財務情報</h3>
+<ul>
+<li><strong>量子コンピューティング企業の収益性課題</strong>: 上記の量子コンピューティング企業は、将来的なポテンシャルがある一方で、短期的な黒字化や有意な収益を上げる見込みが低い状態にある。これは、AI業界の広範なリスク「多くのAIスタートアップは2030年まで黒字化困難」に合致する。</li>
+</ul>
+<h3 id="_7">その他の重要情報</h3>
+<ul>
+<li><strong>AI需要とエネルギー</strong>: Engie SAの会長は、米国におけるエネルギー政策の不確実性があるにもかかわらず、AIに関連する電力需要の急増が太陽光および風力発電施設の開発を今後も支えるとの見解を示した。これは、AIの成長が関連インフラ（電力）分野に与える影響の大きさを強調している。</li>
+<li><strong>暗号通貨市場の規制・信頼性</strong>: MIT卒業生兄弟による約2500万ドルの暗号通貨詐欺事件の裁判で評決不一致となった。これは、デジタル資産市場における規制・法の執行の難しさや、市場の信頼性に関わる潜在的なリスクを示唆する。</li>
+</ul>
+<h2 id="_8">投資への示唆</h2>
+<p>NVIDIAのAI需要の強さは、ポートフォリオ内のNVDAにとってポジティブな兆候であり、同社がAI経済圏の中心にいるという見方を補強します。一方で、量子コンピューティング分野に見られるような実用化前の過度な投資熱は、AI業界全体に存在するバブル的リスクへの警戒を促します。AIの成長が電力インフラにもたらす需要増は、関連分野への新たな投資機会を示唆しますが、ポートフォリオ全体の回復には、引き続き慎重な分析と長期的な視点が必要です。</p>
+<hr />
+<p><em>このレポートはAI（Gemini）により自動生成されています。投資判断は必ずご自身で行ってください。</em></p>
+        </div>
+
+        <div class="footer">
+            <p>このレポートはAI（Google Gemini）により自動生成されています。</p>
+            <p>投資判断は必ずご自身の責任で行ってください。</p>
+            <p>生成日時: 2025年11月08日 21:09:37</p>
+        </div>
+    </div>
+</body>
+</html>

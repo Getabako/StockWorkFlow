@@ -1,0 +1,59 @@
+{
+  "audio_files": [
+    {
+      "index": 1,
+      "title": "AI/IT株式ニュース",
+      "audio_file": "presentations/audio_output/slide_01.mp3",
+      "script": "うぃっすー！if塾AIニュースのお時間です。2025/12/02のAI・IT株式ニュースをお届けします。"
+    },
+    {
+      "index": 2,
+      "title": "本日のサマリー",
+      "audio_file": "presentations/audio_output/slide_02.mp3",
+      "script": "今日のAI/IT市場は、NVIDIAとOpenAIを中心としたエコシステムの拡大が加速しています。NVIDIAはSynopsysへの大型投資とFanucとの戦略的提携を通じて、AIハードウェアとソフトウェアの産業応用を推進。OpenAIもThrive Holdingsへの出資で投資戦略を強化し、市場への影響力を広げています。AIモデル開発ではGoogleがGemini 3 Proの展開を拡大し、中国DeepSeekも対抗モデルを発表するなど競争が激化。一方、AppleのAI部門トップ退任やNVIDIAを巡るAIバブルへの懸念など、成長の影となる課題も浮上しています。"
+    },
+    {
+      "index": 3,
+      "title": "M&A・企業買収",
+      "audio_file": "presentations/audio_output/slide_03.mp3",
+      "script": "NVIDIAがSynopsysに20億ドル投資。NVIDIAはチップ設計ソフトウェア大手Synopsysに20億ドルを投資し、エンジニアリングおよび設計における提携を強化。これにより、AIコンピューティング技術の多様な産業への浸透を目指します。（記事8, 12）"
+    },
+    {
+      "index": 4,
+      "title": "M&A・企業買収",
+      "audio_file": "presentations/audio_output/slide_04.mp3",
+      "script": "OpenAIがThrive Holdingsの株式を取得。OpenAIはThrive Capitalが設立した投資会社Thrive Holdingsの株式を取得しました。これは、ChatGPTメーカーとその支援者による「循環型取引」の一環であり、OpenAIの投資戦略と市場影響力の拡大を示します。（記事10）"
+    },
+    {
+      "index": 5,
+      "title": "戦略的提携・パートナーシップ",
+      "audio_file": "presentations/audio_output/slide_05.mp3",
+      "script": "FanucとNVIDIAがAI統合で提携。FanucはNVIDIAと提携し、実際の工場ラインや生産シミュレーションにAI技術を統合すると発表。これによりFanucの株価は急騰し、NVIDIAのAIソリューションが産業用ロボット分野に深く食い込む動きを示しています。（記事3）"
+    },
+    {
+      "index": 6,
+      "title": "戦略的提携・パートナーシップ",
+      "audio_file": "presentations/audio_output/slide_06.mp3",
+      "script": "NVIDIAとSynopsysのエンジニアリング・設計提携。NVIDIAはSynopsysへの20億ドル投資の一環として、両社間のエンジニアリングおよび設計における連携を強化します。（記事8, 12）"
+    },
+    {
+      "index": 7,
+      "title": "新製品・新技術",
+      "audio_file": "presentations/audio_output/slide_07.mp3",
+      "script": "GoogleがGemini 3 ProをGoogle検索に展開拡大。Googleは、同社の最もインテリジェントなモデルである「Gemini 3 Pro」をGoogle検索に統合し、より多くの国で展開すると発表しました。これは、AIモデルの商用利用と普及を加速させる動きです。（記事1）"
+    },
+    {
+      "index": 8,
+      "title": "まとめ",
+      "audio_file": "presentations/audio_output/slide_08.mp3",
+      "script": "本日のAI・IT株式ニュースは以上です。"
+    },
+    {
+      "index": 9,
+      "title": "塾頭高崎の完全自動化への挑戦",
+      "audio_file": "presentations/audio_output/slide_09.mp3",
+      "script": "ご視聴いただきありがとうございました。実はこのレポート、if塾の塾頭高崎による「完全自動化への挑戦」プロジェクトの一環として、AIが自動生成しています。将来的には塾頭が執筆しているような自然な記事になることを目指しており、現時点では事実と異なる内容が含まれる可能性もあります。この挑戦に共感していただけたら、ぜひチャンネル登録とグッドボタンをよろしくお願いします！また、無料のAI教育や導入コンサルも受け付けています。詳しくは概要欄のリンクからお問い合わせください。"
+    }
+  ],
+  "total_slides": 9
+}

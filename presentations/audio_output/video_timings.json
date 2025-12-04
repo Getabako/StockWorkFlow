@@ -1,0 +1,385 @@
+{
+  "fps": 30,
+  "totalDuration": 189.29999999999998,
+  "totalFrames": 5678,
+  "slides": [
+    {
+      "index": 1,
+      "title": "AI/IT株式ニュース",
+      "audioFile": "presentations/audio_output/slide_01.mp3",
+      "duration": 9.86,
+      "durationFrames": 295,
+      "startTime": 0,
+      "endTime": 9.86,
+      "startFrame": 0,
+      "endFrame": 295,
+      "subtitles": [
+        {
+          "text": "うぃっすー！",
+          "start": 0,
+          "end": 1.0684615384615386,
+          "startFrame": 0,
+          "endFrame": 32
+        },
+        {
+          "text": "if塾AIニュースのお時間です。",
+          "start": 1.3684615384615386,
+          "end": 4.217692307692308,
+          "startFrame": 41,
+          "endFrame": 126
+        },
+        {
+          "text": "2025/12/02のAI・IT株式ニュースをお届けします。",
+          "start": 4.5176923076923075,
+          "end": 9.86,
+          "startFrame": 135,
+          "endFrame": 295
+        }
+      ],
+      "fullScript": "うぃっすー！if塾AIニュースのお時間です。2025/12/02のAI・IT株式ニュースをお届けします。"
+    },
+    {
+      "index": 2,
+      "title": "本日のサマリー",
+      "audioFile": "presentations/audio_output/slide_02.mp3",
+      "duration": 48.54,
+      "durationFrames": 1456,
+      "startTime": 9.86,
+      "endTime": 58.4,
+      "startFrame": 295,
+      "endFrame": 1752,
+      "subtitles": [
+        {
+          "text": "本日のAI/IT市場は、AIインフラ競争の激化とそれに伴う大規\n模な投資が主要な焦点となりました。",
+          "start": 9.86,
+          "end": 18.34842105263158,
+          "startFrame": 295,
+          "endFrame": 550
+        },
+        {
+          "text": "OpenAIがChatGPTの改善に「コードレッド」を宣言し、\n競争環境の厳しさを浮き彫りにする一方で",
+          "start": 18.64842105263158,
+          "end": 27.490526315789474,
+          "startFrame": 559,
+          "endFrame": 824
+        },
+        {
+          "text": "AmazonはNVIDIAやGoogleに\n対抗する最新AIチップ「Trainium3」を市場投入。",
+          "start": 27.790526315789474,
+          "end": 36.45578947368421,
+          "startFrame": 833,
+          "endFrame": 1093
+        },
+        {
+          "text": "また、AMDはVultrとの戦略的提携により、\n10億ドル規模のAIプロセッサクラスターを構築し",
+          "start": 36.75578947368421,
+          "end": 45.067368421052635,
+          "startFrame": 1102,
+          "endFrame": 1352
+        },
+        {
+          "text": "NVIDIA依存脱却の動きが加速しています。",
+          "start": 45.36736842105263,
+          "end": 49.257894736842104,
+          "startFrame": 1361,
+          "endFrame": 1477
+        },
+        {
+          "text": "AIによる電力需要の増大も顕在化しており、\n業界全体でAIインフラへの投資と開発競争が激化しています。",
+          "start": 49.5578947368421,
+          "end": 58.39999999999999,
+          "startFrame": 1486,
+          "endFrame": 1751
+        }
+      ],
+      "fullScript": "本日のAI/IT市場は、AIインフラ競争の激化とそれに伴う大規模な投資が主要な焦点となりました。OpenAIがChatGPTの改善に「コードレッド」を宣言し、競争環境の厳しさを浮き彫りにする一方で、AmazonはNVIDIAやGoogleに対抗する最新AIチップ「Trainium3」を市場投入。また、AMDはVultrとの戦略的提携により、10億ドル規模のAIプロセッサクラスターを構築し、NVIDIA依存脱却の動きが加速しています。AIによる電力需要の増大も顕在化しており、業界全体でAIインフラへの投資と開発競争が激化しています。"
+    },
+    {
+      "index": 3,
+      "title": "M&A・企業買収",
+      "audioFile": "presentations/audio_output/slide_03.mp3",
+      "duration": 15.04,
+      "durationFrames": 451,
+      "startTime": 58.4,
+      "endTime": 73.44,
+      "startFrame": 1752,
+      "endFrame": 2203,
+      "subtitles": [
+        {
+          "text": "LogicMonitorがCatchpointを買収。",
+          "start": 58.4,
+          "end": 61.66307692307692,
+          "startFrame": 1752,
+          "endFrame": 1849
+        },
+        {
+          "text": "Vista Equity Partners傘下の\nインフラソフトウェア企業LogicMonitorが",
+          "start": 61.96307692307692,
+          "end": 67.88495726495727,
+          "startFrame": 1858,
+          "endFrame": 2036
+        },
+        {
+          "text": "監視スタートアップCatchpointを\n2.5億ドル超で買収しました。",
+          "start": 68.18495726495726,
+          "end": 72.41487179487179,
+          "startFrame": 2045,
+          "endFrame": 2172
+        },
+        {
+          "text": "(記事37)",
+          "start": 72.71487179487178,
+          "end": 73.43999999999998,
+          "startFrame": 2181,
+          "endFrame": 2203
+        }
+      ],
+      "fullScript": "LogicMonitorがCatchpointを買収。Vista Equity Partners傘下のインフラソフトウェア企業LogicMonitorが、監視スタートアップCatchpointを2.5億ドル超で買収しました。(記事37)"
+    },
+    {
+      "index": 4,
+      "title": "M&A・企業買収",
+      "audioFile": "presentations/audio_output/slide_04.mp3",
+      "duration": 17.66,
+      "durationFrames": 529,
+      "startTime": 73.44,
+      "endTime": 91.1,
+      "startFrame": 2203,
+      "endFrame": 2733,
+      "subtitles": [
+        {
+          "text": "SiTimeがRenesasのタイミング部門買収を協議。",
+          "start": 73.44,
+          "end": 77.48551724137931,
+          "startFrame": 2203,
+          "endFrame": 2324
+        },
+        {
+          "text": "データセンター向け同期チップを専門と\nするSiTime Corp.が",
+          "start": 77.78551724137931,
+          "end": 82.55344827586207,
+          "startFrame": 2333,
+          "endFrame": 2476
+        },
+        {
+          "text": "Renesas Electronics Corp.の\nタイミング部門の買収を協議中と報じられました。",
+          "start": 82.85344827586206,
+          "end": 89.93310344827586,
+          "startFrame": 2485,
+          "endFrame": 2697
+        },
+        {
+          "text": "(記事32)",
+          "start": 90.23310344827586,
+          "end": 91.1,
+          "startFrame": 2706,
+          "endFrame": 2733
+        }
+      ],
+      "fullScript": "SiTimeがRenesasのタイミング部門買収を協議。データセンター向け同期チップを専門とするSiTime Corp.が、Renesas Electronics Corp.のタイミング部門の買収を協議中と報じられました。(記事32)"
+    },
+    {
+      "index": 5,
+      "title": "M&A・企業買収",
+      "audioFile": "presentations/audio_output/slide_05.mp3",
+      "duration": 15.66,
+      "durationFrames": 469,
+      "startTime": 91.1,
+      "endTime": 106.75999999999999,
+      "startFrame": 2733,
+      "endFrame": 3202,
+      "subtitles": [
+        {
+          "text": "AsurionがD&Gを買収。",
+          "start": 91.1,
+          "end": 93.5876404494382,
+          "startFrame": 2733,
+          "endFrame": 2807
+        },
+        {
+          "text": "米国のAsurion LLCが英国の保証ビジネスDomesti\nc & General Group Ltd.を買収し",
+          "start": 93.8876404494382,
+          "end": 103.34067415730337,
+          "startFrame": 2816,
+          "endFrame": 3100
+        },
+        {
+          "text": "事業拡大を目指します。",
+          "start": 103.64067415730337,
+          "end": 105.46494382022472,
+          "startFrame": 3109,
+          "endFrame": 3163
+        },
+        {
+          "text": "(記事13)",
+          "start": 105.76494382022472,
+          "end": 106.75999999999999,
+          "startFrame": 3172,
+          "endFrame": 3202
+        }
+      ],
+      "fullScript": "AsurionがD&Gを買収。米国のAsurion LLCが英国の保証ビジネスDomestic & General Group Ltd.を買収し、事業拡大を目指します。(記事13)"
+    },
+    {
+      "index": 6,
+      "title": "戦略的提携・パートナーシップ",
+      "audioFile": "presentations/audio_output/slide_06.mp3",
+      "duration": 20.46,
+      "durationFrames": 613,
+      "startTime": 106.75999999999999,
+      "endTime": 127.22,
+      "startFrame": 3202,
+      "endFrame": 3816,
+      "subtitles": [
+        {
+          "text": "AWSとAnthropicの強力なパートナーシップ。",
+          "start": 106.75999999999999,
+          "end": 110.61272727272727,
+          "startFrame": 3202,
+          "endFrame": 3318
+        },
+        {
+          "text": "AWSのCEO Matt Garmanは、\nAnthropicとの関係が「非常に強力」であると述べ",
+          "start": 110.91272727272727,
+          "end": 118.02545454545454,
+          "startFrame": 3327,
+          "endFrame": 3540
+        },
+        {
+          "text": "Anthropicが多様なプロバイダーから\n大規模なコンピューティング能力を求めていることに言及しました。",
+          "start": 118.32545454545453,
+          "end": 126.03090909090908,
+          "startFrame": 3549,
+          "endFrame": 3780
+        },
+        {
+          "text": "(記事14)",
+          "start": 126.33090909090907,
+          "end": 127.21999999999998,
+          "startFrame": 3789,
+          "endFrame": 3816
+        }
+      ],
+      "fullScript": "AWSとAnthropicの強力なパートナーシップ。AWSのCEO Matt Garmanは、Anthropicとの関係が「非常に強力」であると述べ、Anthropicが多様なプロバイダーから大規模なコンピューティング能力を求めていることに言及しました。(記事14)"
+    },
+    {
+      "index": 7,
+      "title": "戦略的提携・パートナーシップ",
+      "audioFile": "presentations/audio_output/slide_07.mp3",
+      "duration": 17.92,
+      "durationFrames": 537,
+      "startTime": 127.22,
+      "endTime": 145.14,
+      "startFrame": 3816,
+      "endFrame": 4354,
+      "subtitles": [
+        {
+          "text": "Condé NastがAWSクラウドAIを利用。",
+          "start": 127.22,
+          "end": 131.475,
+          "startFrame": 3816,
+          "endFrame": 3944
+        },
+        {
+          "text": "Condé Nastがオンプレミスからクラウドへの移行を進め",
+          "start": 131.775,
+          "end": 137.09375,
+          "startFrame": 3953,
+          "endFrame": 4112
+        },
+        {
+          "text": "AWSの「out-of-the-box」AI機能の\n利用を検討しています。",
+          "start": 137.39375,
+          "end": 143.77625,
+          "startFrame": 4121,
+          "endFrame": 4313
+        },
+        {
+          "text": "(記事11)",
+          "start": 144.07625000000002,
+          "end": 145.14000000000001,
+          "startFrame": 4322,
+          "endFrame": 4354
+        }
+      ],
+      "fullScript": "Condé NastがAWSクラウドAIを利用。Condé Nastがオンプレミスからクラウドへの移行を進め、AWSの「out-of-the-box」AI機能の利用を検討しています。(記事11)"
+    },
+    {
+      "index": 8,
+      "title": "まとめ",
+      "audioFile": "presentations/audio_output/slide_08.mp3",
+      "duration": 3.88,
+      "durationFrames": 116,
+      "startTime": 145.14,
+      "endTime": 149.01999999999998,
+      "startFrame": 4354,
+      "endFrame": 4470,
+      "subtitles": [
+        {
+          "text": "本日のAI・IT株式ニュースは以上です。",
+          "start": 145.14,
+          "end": 149.01999999999998,
+          "startFrame": 4354,
+          "endFrame": 4470
+        }
+      ],
+      "fullScript": "本日のAI・IT株式ニュースは以上です。"
+    },
+    {
+      "index": 9,
+      "title": "塾頭高崎の完全自動化への挑戦",
+      "audioFile": "presentations/audio_output/slide_09.mp3",
+      "duration": 40.28,
+      "durationFrames": 1208,
+      "startTime": 149.01999999999998,
+      "endTime": 189.29999999999998,
+      "startFrame": 4470,
+      "endFrame": 5678,
+      "subtitles": [
+        {
+          "text": "ご視聴いただきありがとうございました。",
+          "start": 149.01999999999998,
+          "end": 152.1823175965665,
+          "startFrame": 4470,
+          "endFrame": 4565
+        },
+        {
+          "text": "実はこのレポート、if塾の塾頭高崎による「完全自動化への挑戦」\nプロジェクトの一環として、AIが自動生成しています。",
+          "start": 152.4823175965665,
+          "end": 161.9692703862661,
+          "startFrame": 4574,
+          "endFrame": 4859
+        },
+        {
+          "text": "将来的には塾頭が執筆しているような自然な記事になることを目指し\nており、現時点では事実と異なる内容が含まれる可能性もあります。",
+          "start": 162.2692703862661,
+          "end": 172.5884120171674,
+          "startFrame": 4868,
+          "endFrame": 5177
+        },
+        {
+          "text": "この挑戦に共感していただけたら、\nぜひチャンネル登録とグッドボタンをよろしくお願いします！",
+          "start": 172.8884120171674,
+          "end": 180.21167381974251,
+          "startFrame": 5186,
+          "endFrame": 5406
+        },
+        {
+          "text": "また、無料のAI教育や導入コンサルも受け付けています。",
+          "start": 180.51167381974253,
+          "end": 185.0054935622318,
+          "startFrame": 5415,
+          "endFrame": 5550
+        },
+        {
+          "text": "詳しくは概要欄のリンクからお問い合わせください。",
+          "start": 185.30549356223182,
+          "end": 189.30000000000007,
+          "startFrame": 5559,
+          "endFrame": 5679
+        }
+      ],
+      "fullScript": "ご視聴いただきありがとうございました。実はこのレポート、if塾の塾頭高崎による「完全自動化への挑戦」プロジェクトの一環として、AIが自動生成しています。将来的には塾頭が執筆しているような自然な記事になることを目指しており、現時点では事実と異なる内容が含まれる可能性もあります。この挑戦に共感していただけたら、ぜひチャンネル登録とグッドボタンをよろしくお願いします！また、無料のAI教育や導入コンサルも受け付けています。詳しくは概要欄のリンクからお問い合わせください。"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "audio_files": [
+    {
+      "index": 1,
+      "title": "AI/IT株式ニュース",
+      "audio_file": "presentations/audio_output/slide_01.mp3",
+      "script": "うぃっすー！if塾AIニュースのお時間です。2025/12/01のAI・IT株式ニュースをお届けします。"
+    },
+    {
+      "index": 2,
+      "title": "本日のサマリー",
+      "audio_file": "presentations/audio_output/slide_02.mp3",
+      "script": "本日のAI/IT市場は、主要プレイヤーによるエコシステム強化の動きが顕著でした。NVIDIAはチップ設計ソフトウェア企業Synopsysへの大型投資でハードウェア・ソフトウェア連携を深め、OpenAIは投資ビークルへの出資で「循環型経済圏」の拡大を図っています。AIモデル競争はGoogleのGemini展開拡大や中国DeepSeekの参入で激化。また、NVIDIAチップへの需要の高さが改めて示される一方で、AIバブルへの懸念とデータセンター需要の急増という、市場の二面性が浮き彫りになりました。"
+    },
+    {
+      "index": 3,
+      "title": "M&A・企業買収",
+      "audio_file": "presentations/audio_output/slide_03.mp3",
+      "script": "NVIDIAがSynopsys株を20億ドルで購入。NVIDIA Corp.は、チップ設計ソフトウェアメーカーSynopsys Inc.に20億ドルを投資し、株式を取得しました。これは、AIコンピューティング技術をより多くの産業に注入するための広範なエンジニアリングおよび設計協力の一環です。（記事6）"
+    },
+    {
+      "index": 4,
+      "title": "戦略的提携・パートナーシップ",
+      "audio_file": "presentations/audio_output/slide_04.mp3",
+      "script": "OpenAIがThrive Holdingsの株式を取得。OpenAIは、Thrive Capitalが今年設立した投資ビークルThrive Holdingsの株式を取得しました。これは、ChatGPTメーカーとその支援者を含む「循環型取引」の増加リストに追加されるものです。（記事2）"
+    },
+    {
+      "index": 5,
+      "title": "戦略的提携・パートナーシップ",
+      "audio_file": "presentations/audio_output/slide_05.mp3",
+      "script": "NVIDIAとSynopsysのエンジニアリング・設計協力。NVIDIAによるSynopsys株購入は、両社の広範なエンジニアリングおよび設計協力の一環とされています。（記事6）"
+    },
+    {
+      "index": 6,
+      "title": "戦略的提携・パートナーシップ",
+      "audio_file": "presentations/audio_output/slide_06.mp3",
+      "script": "SequoiaがAIスタートアップに投資。Sequoiaは、富裕層アドバイザーの煩雑な作業を軽減するAIスタートアップに投資を行いました。AIが特定のビジネス分野における生産性向上ツールとして注目されていることを示します。（記事10）"
+    },
+    {
+      "index": 7,
+      "title": "大型契約・受注",
+      "audio_file": "presentations/audio_output/slide_07.mp3",
+      "script": "NVIDIAチップ調達のための大型融資。米国を拠点とするAI企業が、中国のクライアント（Xiaohongshu）向けに日本で利用するNVIDIA Corp.の先進チップ購入資金として、約3億ドルの融資を求めています。これは、NVIDIAチップへの強い需要と、その資金調達の規模を示唆しています。（記事20）"
+    },
+    {
+      "index": 8,
+      "title": "まとめ",
+      "audio_file": "presentations/audio_output/slide_08.mp3",
+      "script": "本日のAI・IT株式ニュースは以上です。"
+    },
+    {
+      "index": 9,
+      "title": "塾頭高崎の完全自動化への挑戦",
+      "audio_file": "presentations/audio_output/slide_09.mp3",
+      "script": "ご視聴いただきありがとうございました。実はこのレポート、if塾の塾頭高崎による「完全自動化への挑戦」プロジェクトの一環として、AIが自動生成しています。将来的には塾頭が執筆しているような自然な記事になることを目指しており、現時点では事実と異なる内容が含まれる可能性もあります。この挑戦に共感していただけたら、ぜひチャンネル登録とグッドボタンをよろしくお願いします！また、無料のAI教育や導入コンサルも受け付けています。詳しくは概要欄のリンクからお問い合わせください。"
+    }
+  ],
+  "total_slides": 9
+}

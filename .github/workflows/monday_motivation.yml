@@ -1,0 +1,100 @@
+name: Monday Morning Investment Motivation
+
+on:
+  schedule:
+    # 毎週月曜日 JST 6:00 (UTC 21:00 on Sunday) に実行
+    - cron: '0 21 * * 0'
+  workflow_dispatch:  # 手動実行も可能
+
+permissions:
+  contents: read
+
+jobs:
+  send-motivation:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+
+      - name: Send motivation message to Discord
+        run: |
+          python -c "
+          import requests
+          import json
+          from datetime import datetime
+
+          webhook_url = '${{ secrets.DISCORD_WEBHOOK_URL }}'
+
+          description = (
+              '**おはようございます！新しい週のスタートです！**\n\n'
+              '今週は有望な銘柄を見つけて、ポートフォリオを構築していく週です。\n'
+              '午前中に以下のことをしましょう：\n\n'
+              '✅ **週次レポートを確認**\n'
+              '   - 推奨銘柄の選定ポイントを理解する\n'
+              '   - 各企業の懸念点をしっかり把握する\n'
+              '   - 推奨される買い方の理由を考える\n\n'
+              '✅ **市場の動向をチェック**\n'
+              '   - 先週末からの主要ニュースを確認\n'
+              '   - 注目している銘柄の値動きをチェック\n\n'
+              '✅ **自分なりの投資判断を**\n'
+              '   - レポートを参考に、自分で考えて判断する\n'
+              '   - なぜその銘柄を買うのか、理由を明確にする\n'
+              '   - 買い付けタイミングと金額を計画する\n\n'
+              '**💡 今週の投資格言**\n'
+              '「投資で一番大切なのは、自分で考えることだ」\n'
+              '— ウォーレン・バフェット（バークシャー・ハサウェイ会長兼CEO）\n\n'
+              '今週もレポートを活用しながら、投資スキルを磨いていきましょう！\n'
+              '頑張ってください！ 💪'
+          )
+
+          embed = {
+            'embeds': [{
+              'title': '📈 月曜日の朝です！今週も投資で成功を掴みましょう！',
+              'description': description,
+              'color': 3447003,
+              'thumbnail': {
+                'url': 'https://raw.githubusercontent.com/microsoft/fluentui-emoji/main/assets/Chart%20increasing/Color/chart_increasing_color.svg'
+              },
+              'footer': {
+                'text': '今週も賢い投資判断を！'
+              },
+              'timestamp': datetime.utcnow().isoformat()
+            }]
+          }
+
+          response = requests.post(webhook_url, json=embed)
+
+          if response.status_code == 204:
+            print('✓ モチベーションメッセージをDiscordに送信しました！')
+          else:
+            print(f'Error: {response.status_code}')
+            print(response.text)
+            exit(1)
+          "
+
+      - name: Notify on failure
+        if: failure()
+        run: |
+          python -c "
+          import requests, json
+          from datetime import datetime
+          requests.post('${{ secrets.DISCORD_WEBHOOK_URL }}', json={
+            'embeds': [{
+              'title': '⚠️ モチベーションメッセージ送信エラー',
+              'description': 'モチベーションメッセージの送信中にエラーが発生しました。GitHub Actionsのログを確認してください。',
+              'color': 15158332,
+              'timestamp': datetime.utcnow().isoformat()
+            }]
+          })
+          "

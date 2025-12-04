@@ -1,0 +1,399 @@
+{
+  "fps": 30,
+  "totalDuration": 202.61999999999998,
+  "totalFrames": 6078,
+  "slides": [
+    {
+      "index": 1,
+      "title": "AI/IT株式ニュース",
+      "audioFile": "presentations/audio_output/slide_01.mp3",
+      "duration": 10.04,
+      "durationFrames": 301,
+      "startTime": 0,
+      "endTime": 10.04,
+      "startFrame": 0,
+      "endFrame": 301,
+      "subtitles": [
+        {
+          "text": "うぃっすー！",
+          "start": 0,
+          "end": 1.0892307692307692,
+          "startFrame": 0,
+          "endFrame": 32
+        },
+        {
+          "text": "if塾AIニュースのお時間です。",
+          "start": 1.3892307692307693,
+          "end": 4.293846153846154,
+          "startFrame": 41,
+          "endFrame": 128
+        },
+        {
+          "text": "2025/12/01のAI・IT株式ニュースをお届けします。",
+          "start": 4.593846153846154,
+          "end": 10.04,
+          "startFrame": 137,
+          "endFrame": 301
+        }
+      ],
+      "fullScript": "うぃっすー！if塾AIニュースのお時間です。2025/12/01のAI・IT株式ニュースをお届けします。"
+    },
+    {
+      "index": 2,
+      "title": "本日のサマリー",
+      "audioFile": "presentations/audio_output/slide_02.mp3",
+      "duration": 42.26,
+      "durationFrames": 1267,
+      "startTime": 10.04,
+      "endTime": 52.3,
+      "startFrame": 301,
+      "endFrame": 1569,
+      "subtitles": [
+        {
+          "text": "本日のAI/IT市場は、\n主要プレイヤーによるエコシステム強化の動きが顕著でした。",
+          "start": 10.04,
+          "end": 16.64080971659919,
+          "startFrame": 301,
+          "endFrame": 499
+        },
+        {
+          "text": "NVIDIAはチップ設計ソフトウェア企業Synopsysへ\nの大型投資でハードウェア・ソフトウェア連携を深め",
+          "start": 16.94080971659919,
+          "end": 25.686882591093116,
+          "startFrame": 508,
+          "endFrame": 770
+        },
+        {
+          "text": "OpenAIは投資ビークルへの出資で\n「循環型経済圏」の拡大を図っています。",
+          "start": 25.986882591093117,
+          "end": 32.09263157894737,
+          "startFrame": 779,
+          "endFrame": 962
+        },
+        {
+          "text": "AIモデル競争はGoogleの\nGemini展開拡大や中国DeepSeekの参入で激化。",
+          "start": 32.392631578947366,
+          "end": 39.48850202429149,
+          "startFrame": 971,
+          "endFrame": 1184
+        },
+        {
+          "text": "また、NVIDIAチップへの需要の高さが改めて示される一方で、\nAIバブルへの懸念とデータセンター需要の急増という",
+          "start": 39.78850202429149,
+          "end": 49.029635627530354,
+          "startFrame": 1193,
+          "endFrame": 1470
+        },
+        {
+          "text": "市場の二面性が浮き彫りになりました。",
+          "start": 49.32963562753035,
+          "end": 52.29999999999998,
+          "startFrame": 1479,
+          "endFrame": 1568
+        }
+      ],
+      "fullScript": "本日のAI/IT市場は、主要プレイヤーによるエコシステム強化の動きが顕著でした。NVIDIAはチップ設計ソフトウェア企業Synopsysへの大型投資でハードウェア・ソフトウェア連携を深め、OpenAIは投資ビークルへの出資で「循環型経済圏」の拡大を図っています。AIモデル競争はGoogleのGemini展開拡大や中国DeepSeekの参入で激化。また、NVIDIAチップへの需要の高さが改めて示される一方で、AIバブルへの懸念とデータセンター需要の急増という、市場の二面性が浮き彫りになりました。"
+    },
+    {
+      "index": 3,
+      "title": "M&A・企業買収",
+      "audioFile": "presentations/audio_output/slide_03.mp3",
+      "duration": 23.74,
+      "durationFrames": 712,
+      "startTime": 52.3,
+      "endTime": 76.03999999999999,
+      "startFrame": 1569,
+      "endFrame": 2281,
+      "subtitles": [
+        {
+          "text": "NVIDIAがSynopsys株を20億ドルで購入。",
+          "start": 52.3,
+          "end": 56.20693333333333,
+          "startFrame": 1569,
+          "endFrame": 1686
+        },
+        {
+          "text": "NVIDIA Corp.は、チップ設計ソフトウェアメーカーSy\nnopsys Inc.に20億ドルを投資し",
+          "start": 56.50693333333333,
+          "end": 64.32079999999999,
+          "startFrame": 1695,
+          "endFrame": 1929
+        },
+        {
+          "text": "株式を取得しました。",
+          "start": 64.62079999999999,
+          "end": 66.12346666666666,
+          "startFrame": 1938,
+          "endFrame": 1983
+        },
+        {
+          "text": "これは、AIコンピューティング技術をより多くの産業に注入するた\nめの広範なエンジニアリングおよび設計協力の一環です。",
+          "start": 66.42346666666666,
+          "end": 74.98866666666666,
+          "startFrame": 1992,
+          "endFrame": 2249
+        },
+        {
+          "text": "（記事6）",
+          "start": 75.28866666666666,
+          "end": 76.03999999999999,
+          "startFrame": 2258,
+          "endFrame": 2281
+        }
+      ],
+      "fullScript": "NVIDIAがSynopsys株を20億ドルで購入。NVIDIA Corp.は、チップ設計ソフトウェアメーカーSynopsys Inc.に20億ドルを投資し、株式を取得しました。これは、AIコンピューティング技術をより多くの産業に注入するための広範なエンジニアリングおよび設計協力の一環です。（記事6）"
+    },
+    {
+      "index": 4,
+      "title": "戦略的提携・パートナーシップ",
+      "audioFile": "presentations/audio_output/slide_04.mp3",
+      "duration": 22.02,
+      "durationFrames": 660,
+      "startTime": 76.03999999999999,
+      "endTime": 98.05999999999999,
+      "startFrame": 2281,
+      "endFrame": 2941,
+      "subtitles": [
+        {
+          "text": "OpenAIがThrive Holdingsの株式を取得。",
+          "start": 76.03999999999999,
+          "end": 80.32307692307691,
+          "startFrame": 2281,
+          "endFrame": 2409
+        },
+        {
+          "text": "OpenAIは、Thrive Capitalが今年設立した投資\nビークルThrive Holdingsの株式を取得しました。",
+          "start": 80.62307692307691,
+          "end": 89.63230769230768,
+          "startFrame": 2418,
+          "endFrame": 2688
+        },
+        {
+          "text": "これは、ChatGPTメーカーとその支援者を含む「循環型取引」\nの増加リストに追加されるものです。",
+          "start": 89.93230769230767,
+          "end": 97.02153846153844,
+          "startFrame": 2697,
+          "endFrame": 2910
+        },
+        {
+          "text": "（記事2）",
+          "start": 97.32153846153844,
+          "end": 98.05999999999997,
+          "startFrame": 2919,
+          "endFrame": 2941
+        }
+      ],
+      "fullScript": "OpenAIがThrive Holdingsの株式を取得。OpenAIは、Thrive Capitalが今年設立した投資ビークルThrive Holdingsの株式を取得しました。これは、ChatGPTメーカーとその支援者を含む「循環型取引」の増加リストに追加されるものです。（記事2）"
+    },
+    {
+      "index": 5,
+      "title": "戦略的提携・パートナーシップ",
+      "audioFile": "presentations/audio_output/slide_05.mp3",
+      "duration": 14.54,
+      "durationFrames": 436,
+      "startTime": 98.05999999999999,
+      "endTime": 112.6,
+      "startFrame": 2941,
+      "endFrame": 3378,
+      "subtitles": [
+        {
+          "text": "NVIDIAとSynopsysのエンジニアリング・設計協力。",
+          "start": 98.05999999999999,
+          "end": 102.75887640449437,
+          "startFrame": 2941,
+          "endFrame": 3082
+        },
+        {
+          "text": "NVIDIAによるSynopsys株購入は、両社の広範なエンジ\nニアリングおよび設計協力の一環とされています。",
+          "start": 103.05887640449437,
+          "end": 111.51685393258425,
+          "startFrame": 3091,
+          "endFrame": 3345
+        },
+        {
+          "text": "（記事6）",
+          "start": 111.81685393258425,
+          "end": 112.59999999999998,
+          "startFrame": 3354,
+          "endFrame": 3377
+        }
+      ],
+      "fullScript": "NVIDIAとSynopsysのエンジニアリング・設計協力。NVIDIAによるSynopsys株購入は、両社の広範なエンジニアリングおよび設計協力の一環とされています。（記事6）"
+    },
+    {
+      "index": 6,
+      "title": "戦略的提携・パートナーシップ",
+      "audioFile": "presentations/audio_output/slide_06.mp3",
+      "duration": 19.22,
+      "durationFrames": 576,
+      "startTime": 112.6,
+      "endTime": 131.82,
+      "startFrame": 3378,
+      "endFrame": 3954,
+      "subtitles": [
+        {
+          "text": "SequoiaがAIスタートアップに投資。",
+          "start": 112.6,
+          "end": 115.88820512820513,
+          "startFrame": 3378,
+          "endFrame": 3476
+        },
+        {
+          "text": "Sequoiaは、富裕層アドバイザーの煩雑な作業を軽減するAI\nスタートアップに投資を行いました。",
+          "start": 116.18820512820513,
+          "end": 123.70410256410256,
+          "startFrame": 3485,
+          "endFrame": 3711
+        },
+        {
+          "text": "AIが特定のビジネス分野に\nおける生産性向上ツールとして注目されていることを示します。",
+          "start": 124.00410256410255,
+          "end": 130.5805128205128,
+          "startFrame": 3720,
+          "endFrame": 3917
+        },
+        {
+          "text": "（記事10）",
+          "start": 130.88051282051282,
+          "end": 131.82,
+          "startFrame": 3926,
+          "endFrame": 3954
+        }
+      ],
+      "fullScript": "SequoiaがAIスタートアップに投資。Sequoiaは、富裕層アドバイザーの煩雑な作業を軽減するAIスタートアップに投資を行いました。AIが特定のビジネス分野における生産性向上ツールとして注目されていることを示します。（記事10）"
+    },
+    {
+      "index": 7,
+      "title": "大型契約・受注",
+      "audioFile": "presentations/audio_output/slide_07.mp3",
+      "duration": 26.66,
+      "durationFrames": 799,
+      "startTime": 131.82,
+      "endTime": 158.48,
+      "startFrame": 3954,
+      "endFrame": 4754,
+      "subtitles": [
+        {
+          "text": "NVIDIAチップ調達のための大型融資。",
+          "start": 131.82,
+          "end": 135.15245033112583,
+          "startFrame": 3954,
+          "endFrame": 4054
+        },
+        {
+          "text": "米国を拠点とするAI企業が",
+          "start": 135.45245033112585,
+          "end": 137.61854304635764,
+          "startFrame": 4063,
+          "endFrame": 4128
+        },
+        {
+          "text": "中国のクライアント（Xiaohongshu）向けに日本で利用す\nるNVIDIA Corp.の先進チップ購入資金として",
+          "start": 137.91854304635766,
+          "end": 147.41602649006626,
+          "startFrame": 4137,
+          "endFrame": 4422
+        },
+        {
+          "text": "約3億ドルの融資を求めています。",
+          "start": 147.71602649006627,
+          "end": 150.38198675496693,
+          "startFrame": 4431,
+          "endFrame": 4511
+        },
+        {
+          "text": "これは、NVIDIAチップへの強い需要と、\nその資金調達の規模を示唆しています。",
+          "start": 150.68198675496694,
+          "end": 157.1802649006623,
+          "startFrame": 4520,
+          "endFrame": 4715
+        },
+        {
+          "text": "（記事20）",
+          "start": 157.48026490066232,
+          "end": 158.48000000000008,
+          "startFrame": 4724,
+          "endFrame": 4754
+        }
+      ],
+      "fullScript": "NVIDIAチップ調達のための大型融資。米国を拠点とするAI企業が、中国のクライアント（Xiaohongshu）向けに日本で利用するNVIDIA Corp.の先進チップ購入資金として、約3億ドルの融資を求めています。これは、NVIDIAチップへの強い需要と、その資金調達の規模を示唆しています。（記事20）"
+    },
+    {
+      "index": 8,
+      "title": "まとめ",
+      "audioFile": "presentations/audio_output/slide_08.mp3",
+      "duration": 3.88,
+      "durationFrames": 116,
+      "startTime": 158.48,
+      "endTime": 162.35999999999999,
+      "startFrame": 4754,
+      "endFrame": 4870,
+      "subtitles": [
+        {
+          "text": "本日のAI・IT株式ニュースは以上です。",
+          "start": 158.48,
+          "end": 162.35999999999999,
+          "startFrame": 4754,
+          "endFrame": 4870
+        }
+      ],
+      "fullScript": "本日のAI・IT株式ニュースは以上です。"
+    },
+    {
+      "index": 9,
+      "title": "塾頭高崎の完全自動化への挑戦",
+      "audioFile": "presentations/audio_output/slide_09.mp3",
+      "duration": 40.26,
+      "durationFrames": 1207,
+      "startTime": 162.35999999999999,
+      "endTime": 202.61999999999998,
+      "startFrame": 4870,
+      "endFrame": 6078,
+      "subtitles": [
+        {
+          "text": "ご視聴いただきありがとうございました。",
+          "start": 162.35999999999999,
+          "end": 165.52068669527895,
+          "startFrame": 4870,
+          "endFrame": 4965
+        },
+        {
+          "text": "実はこのレポート、if塾の塾頭高崎による「完全自動化への挑戦」\nプロジェクトの一環として、AIが自動生成しています。",
+          "start": 165.82068669527897,
+          "end": 175.30274678111587,
+          "startFrame": 4974,
+          "endFrame": 5259
+        },
+        {
+          "text": "将来的には塾頭が執筆しているような自然な記事になることを目指し\nており、現時点では事実と異なる内容が含まれる可能性もあります。",
+          "start": 175.60274678111588,
+          "end": 185.91656652360516,
+          "startFrame": 5268,
+          "endFrame": 5577
+        },
+        {
+          "text": "この挑戦に共感していただけたら、\nぜひチャンネル登録とグッドボタンをよろしくお願いします！",
+          "start": 186.21656652360517,
+          "end": 193.53605150214594,
+          "startFrame": 5586,
+          "endFrame": 5806
+        },
+        {
+          "text": "また、無料のAI教育や導入コンサルも受け付けています。",
+          "start": 193.83605150214595,
+          "end": 198.3275536480687,
+          "startFrame": 5815,
+          "endFrame": 5949
+        },
+        {
+          "text": "詳しくは概要欄のリンクからお問い合わせください。",
+          "start": 198.6275536480687,
+          "end": 202.62000000000003,
+          "startFrame": 5958,
+          "endFrame": 6078
+        }
+      ],
+      "fullScript": "ご視聴いただきありがとうございました。実はこのレポート、if塾の塾頭高崎による「完全自動化への挑戦」プロジェクトの一環として、AIが自動生成しています。将来的には塾頭が執筆しているような自然な記事になることを目指しており、現時点では事実と異なる内容が含まれる可能性もあります。この挑戦に共感していただけたら、ぜひチャンネル登録とグッドボタンをよろしくお願いします！また、無料のAI教育や導入コンサルも受け付けています。詳しくは概要欄のリンクからお問い合わせください。"
+    }
+  ]
+}
