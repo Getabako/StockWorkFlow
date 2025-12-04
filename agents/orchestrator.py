@@ -10,6 +10,7 @@ from .base_agent import BaseAgent
 from .researcher import ResearcherAgent
 from .summarizer import SummarizerAgent
 from .slide_creator import SlideCreatorAgent
+from .image_generator import ImageGeneratorAgent
 from .script_writer import ScriptWriterAgent
 from .video_editor import VideoEditorAgent
 
@@ -30,6 +31,7 @@ class WorkflowOrchestrator(BaseAgent):
             "researcher": ResearcherAgent(),
             "summarizer": SummarizerAgent(),
             "slide_creator": SlideCreatorAgent(background_image=background_image),
+            "image_generator": ImageGeneratorAgent(),
             "script_writer": ScriptWriterAgent(),
             "video_editor": VideoEditorAgent(),
         }
@@ -39,6 +41,7 @@ class WorkflowOrchestrator(BaseAgent):
             {"agent": "researcher", "name": "情報収集", "required_context": []},
             {"agent": "summarizer", "name": "レポート作成", "required_context": ["articles"]},
             {"agent": "slide_creator", "name": "スライド作成", "required_context": ["report"]},
+            {"agent": "image_generator", "name": "画像生成", "required_context": ["slides_data"]},
             {"agent": "script_writer", "name": "脚本作成", "required_context": ["slide_file"]},
             {"agent": "video_editor", "name": "動画編集", "required_context": ["scripts", "slides_data"]},
         ]

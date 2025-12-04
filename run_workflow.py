@@ -49,25 +49,26 @@ def main():
     python run_workflow.py --status
 
 エージェント一覧:
-    researcher     - 日々の情勢調べ役（RSSフィードから情報収集）
-    summarizer     - まとめ役（収集した情報をレポートに）
-    slide_creator  - スライド作成役（レポートからMarpスライドを生成）
-    script_writer  - 脚本家（スライドから動画用の脚本を作成）
-    video_editor   - 動画編集者（スライド+音声+キャラで動画を作成）
+    researcher       - 日々の情勢調べ役（RSSフィードから情報収集）
+    summarizer       - まとめ役（収集した情報をレポートに）
+    slide_creator    - スライド作成役（レポートからMarpスライドを生成）
+    image_generator  - 画像生成役（スライドに挿入する画像を生成）
+    script_writer    - 脚本家（スライドから動画用の脚本を作成）
+    video_editor     - 動画編集者（スライド+音声+キャラで動画を作成）
 """
     )
 
     parser.add_argument(
         '--agent', '-a',
         type=str,
-        choices=['researcher', 'summarizer', 'slide_creator', 'script_writer', 'video_editor'],
+        choices=['researcher', 'summarizer', 'slide_creator', 'image_generator', 'script_writer', 'video_editor'],
         help='特定のエージェントのみを実行'
     )
 
     parser.add_argument(
         '--start-from', '-s',
         type=str,
-        choices=['researcher', 'summarizer', 'slide_creator', 'script_writer', 'video_editor'],
+        choices=['researcher', 'summarizer', 'slide_creator', 'image_generator', 'script_writer', 'video_editor'],
         help='指定したエージェントからワークフローを開始'
     )
 
