@@ -4,43 +4,43 @@
       "index": 1,
       "title": "AI/IT株式ニュース",
       "audio_file": "presentations/audio_output/slide_01.mp3",
-      "script": "うぃっすー！if塾AIニュースのお時間です。2025/12/02のAI・IT株式ニュースをお届けします。"
+      "script": "うぃっすー！if塾AIニュースのお時間です。2025/12/04のAI・IT株式ニュースをお届けします。"
     },
     {
       "index": 2,
       "title": "本日のサマリー",
       "audio_file": "presentations/audio_output/slide_02.mp3",
-      "script": "本日のAI/IT市場は、AIインフラ競争の激化とそれに伴う大規模な投資が主要な焦点となりました。OpenAIがChatGPTの改善に「コードレッド」を宣言し、競争環境の厳しさを浮き彫りにする一方で、AmazonはNVIDIAやGoogleに対抗する最新AIチップ「Trainium3」を市場投入。また、AMDはVultrとの戦略的提携により、10億ドル規模のAIプロセッサクラスターを構築し、NVIDIA依存脱却の動きが加速しています。AIによる電力需要の増大も顕在化しており、業界全体でAIインフラへの投資と開発競争が激化しています。"
+      "script": "今日のAI/IT市場は、大手テクノロジー企業のAI戦略の多角化と、それに対する規制当局の監視強化が顕著です。OpenAIは技術基盤強化のための買収を発表する一方、Googleや中国のCambriconはNVIDIAに代わる自社AIチップ開発・生産を加速させ、競争が激化しています。また、AI関連コストへの懸念や、Metaのメタバース事業からのシフトなど、投資と事業モデルの再構築が進む一日となりました。"
     },
     {
       "index": 3,
       "title": "M&A・企業買収",
       "audio_file": "presentations/audio_output/slide_03.mp3",
-      "script": "LogicMonitorがCatchpointを買収。Vista Equity Partners傘下のインフラソフトウェア企業LogicMonitorが、監視スタートアップCatchpointを2.5億ドル超で買収しました。(記事37)"
+      "script": "OpenAIがポーランドのスタートアップNeptuneを買収。AIモデルトレーニングの分析ツールを提供するNeptuneを買収し、AIモデリング能力の向上を図ります。これはOpenAIの技術強化戦略の一環と見られます。(記事20)"
     },
     {
       "index": 4,
       "title": "M&A・企業買収",
       "audio_file": "presentations/audio_output/slide_04.mp3",
-      "script": "SiTimeがRenesasのタイミング部門買収を協議。データセンター向け同期チップを専門とするSiTime Corp.が、Renesas Electronics Corp.のタイミング部門の買収を協議中と報じられました。(記事32)"
+      "script": "MetaのAIパイオニアYann LeCunが退社し新AI企業を設立。Metaは同氏の新企業に資金提供しない見込みです。これはAI研究分野における新たな競争と人材流動を示唆します。(記事10)"
     },
     {
       "index": 5,
-      "title": "M&A・企業買収",
+      "title": "戦略的提携・パートナーシップ",
       "audio_file": "presentations/audio_output/slide_05.mp3",
-      "script": "AsurionがD&Gを買収。米国のAsurion LLCが英国の保証ビジネスDomestic & General Group Ltd.を買収し、事業拡大を目指します。(記事13)"
+      "script": "CambriconがAIチップ生産を3倍に、Nvidiaの中国市場の空白を狙う。中国のCambricon Technologiesは2026年にAIチップ生産を大幅に増加させ、中国市場でNVIDIAの撤退によって生じた空白を埋め、Huawei Technologiesと競争する計画です。これはNVIDIA依存脱却とカスタムチップ競争の文脈に合致します。(記事7)"
     },
     {
       "index": 6,
       "title": "戦略的提携・パートナーシップ",
       "audio_file": "presentations/audio_output/slide_06.mp3",
-      "script": "AWSとAnthropicの強力なパートナーシップ。AWSのCEO Matt Garmanは、Anthropicとの関係が「非常に強力」であると述べ、Anthropicが多様なプロバイダーから大規模なコンピューティング能力を求めていることに言及しました。(記事14)"
+      "script": "Armが次世代産業用AI向けアーキテクチャシフトを推進。Armは、産業用エッジにおけるAI対応でエネルギー効率の高いコンピューティングを可能にするアーキテクチャの進化を推進していると発表しました。これはソフトバンクグループ傘下のArmがAI×ロボット戦略において不可欠な役割を担うことを裏付けます。(記事4)"
     },
     {
       "index": 7,
-      "title": "戦略的提携・パートナーシップ",
+      "title": "大型契約・受注",
       "audio_file": "presentations/audio_output/slide_07.mp3",
-      "script": "Condé NastがAWSクラウドAIを利用。Condé Nastがオンプレミスからクラウドへの移行を進め、AWSの「out-of-the-box」AI機能の利用を検討しています。(記事11)"
+      "script": "ソフトバンクグループ出資のDayOne Data Centersが20億ドル超の資金調達を検討。DayOne Data Centersは、国際市場での事業拡大を支援するため、20億ドルを超えるシリーズC資金調達を計画していると報じられました。これはデータセンター需要の拡大とソフトバンクグループのAI関連インフラ投資戦略を示唆します。(記事18)"
     },
     {
       "index": 8,

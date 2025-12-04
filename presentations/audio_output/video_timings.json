@@ -1,7 +1,7 @@
 {
   "fps": 30,
-  "totalDuration": 189.29999999999998,
-  "totalFrames": 5678,
+  "totalDuration": 207.44,
+  "totalFrames": 6223,
   "slides": [
     {
       "index": 1,
@@ -29,280 +29,287 @@
           "endFrame": 126
         },
         {
-          "text": "2025/12/02のAI・IT株式ニュースをお届けします。",
+          "text": "2025/12/04のAI・IT株式ニュースをお届けします。",
           "start": 4.5176923076923075,
           "end": 9.86,
           "startFrame": 135,
           "endFrame": 295
         }
       ],
-      "fullScript": "うぃっすー！if塾AIニュースのお時間です。2025/12/02のAI・IT株式ニュースをお届けします。"
+      "fullScript": "うぃっすー！if塾AIニュースのお時間です。2025/12/04のAI・IT株式ニュースをお届けします。"
     },
     {
       "index": 2,
       "title": "本日のサマリー",
       "audioFile": "presentations/audio_output/slide_02.mp3",
-      "duration": 48.54,
-      "durationFrames": 1456,
+      "duration": 36.32,
+      "durationFrames": 1089,
       "startTime": 9.86,
-      "endTime": 58.4,
+      "endTime": 46.18,
       "startFrame": 295,
-      "endFrame": 1752,
+      "endFrame": 1385,
       "subtitles": [
         {
-          "text": "本日のAI/IT市場は、AIインフラ競争の激化とそれに伴う大規\n模な投資が主要な焦点となりました。",
+          "text": "今日のAI/IT市場は、大手テクノロジー企業のAI戦略の多角化\nと、それに対する規制当局の監視強化が顕著です。",
           "start": 9.86,
-          "end": 18.34842105263158,
+          "end": 19.4234,
           "startFrame": 295,
-          "endFrame": 550
+          "endFrame": 582
         },
         {
-          "text": "OpenAIがChatGPTの改善に「コードレッド」を宣言し、\n競争環境の厳しさを浮き彫りにする一方で",
-          "start": 18.64842105263158,
-          "end": 27.490526315789474,
-          "startFrame": 559,
-          "endFrame": 824
+          "text": "OpenAIは技術基盤強化のための買収を発表する一方",
+          "start": 19.7234,
+          "end": 24.328000000000003,
+          "startFrame": 591,
+          "endFrame": 729
         },
         {
-          "text": "AmazonはNVIDIAやGoogleに\n対抗する最新AIチップ「Trainium3」を市場投入。",
-          "start": 27.790526315789474,
-          "end": 36.45578947368421,
-          "startFrame": 833,
-          "endFrame": 1093
+          "text": "Googleや中国のCambriconはNVIDIAに代わる自\n社AIチップ開発・生産を加速させ、競争が激化しています。",
+          "start": 24.628000000000004,
+          "end": 35.0769,
+          "startFrame": 738,
+          "endFrame": 1052
         },
         {
-          "text": "また、AMDはVultrとの戦略的提携により、\n10億ドル規模のAIプロセッサクラスターを構築し",
-          "start": 36.75578947368421,
-          "end": 45.067368421052635,
-          "startFrame": 1102,
-          "endFrame": 1352
-        },
-        {
-          "text": "NVIDIA依存脱却の動きが加速しています。",
-          "start": 45.36736842105263,
-          "end": 49.257894736842104,
-          "startFrame": 1361,
-          "endFrame": 1477
-        },
-        {
-          "text": "AIによる電力需要の増大も顕在化しており、\n業界全体でAIインフラへの投資と開発競争が激化しています。",
-          "start": 49.5578947368421,
-          "end": 58.39999999999999,
-          "startFrame": 1486,
-          "endFrame": 1751
+          "text": "また、AI関連コストへの懸念や、Metaのメタバース事業からの\nシフトなど、投資と事業モデルの再構築が進む一日となりました。",
+          "start": 35.3769,
+          "end": 46.18,
+          "startFrame": 1061,
+          "endFrame": 1385
         }
       ],
-      "fullScript": "本日のAI/IT市場は、AIインフラ競争の激化とそれに伴う大規模な投資が主要な焦点となりました。OpenAIがChatGPTの改善に「コードレッド」を宣言し、競争環境の厳しさを浮き彫りにする一方で、AmazonはNVIDIAやGoogleに対抗する最新AIチップ「Trainium3」を市場投入。また、AMDはVultrとの戦略的提携により、10億ドル規模のAIプロセッサクラスターを構築し、NVIDIA依存脱却の動きが加速しています。AIによる電力需要の増大も顕在化しており、業界全体でAIインフラへの投資と開発競争が激化しています。"
+      "fullScript": "今日のAI/IT市場は、大手テクノロジー企業のAI戦略の多角化と、それに対する規制当局の監視強化が顕著です。OpenAIは技術基盤強化のための買収を発表する一方、Googleや中国のCambriconはNVIDIAに代わる自社AIチップ開発・生産を加速させ、競争が激化しています。また、AI関連コストへの懸念や、Metaのメタバース事業からのシフトなど、投資と事業モデルの再構築が進む一日となりました。"
     },
     {
       "index": 3,
       "title": "M&A・企業買収",
       "audioFile": "presentations/audio_output/slide_03.mp3",
-      "duration": 15.04,
-      "durationFrames": 451,
-      "startTime": 58.4,
-      "endTime": 73.44,
-      "startFrame": 1752,
-      "endFrame": 2203,
+      "duration": 19.08,
+      "durationFrames": 572,
+      "startTime": 46.18,
+      "endTime": 65.25999999999999,
+      "startFrame": 1385,
+      "endFrame": 1957,
       "subtitles": [
         {
-          "text": "LogicMonitorがCatchpointを買収。",
-          "start": 58.4,
-          "end": 61.66307692307692,
-          "startFrame": 1752,
-          "endFrame": 1849
+          "text": "OpenAIがポーランドのスタートアップNeptuneを買収。",
+          "start": 46.18,
+          "end": 51.080695652173915,
+          "startFrame": 1385,
+          "endFrame": 1532
         },
         {
-          "text": "Vista Equity Partners傘下の\nインフラソフトウェア企業LogicMonitorが",
-          "start": 61.96307692307692,
-          "end": 67.88495726495727,
-          "startFrame": 1858,
-          "endFrame": 2036
+          "text": "AIモデルトレーニングの分析ツールを提供するNeptuneを買\n収し、AIモデリング能力の向上を図ります。",
+          "start": 51.38069565217391,
+          "end": 59.601217391304345,
+          "startFrame": 1541,
+          "endFrame": 1788
         },
         {
-          "text": "監視スタートアップCatchpointを\n2.5億ドル超で買収しました。",
-          "start": 68.18495726495726,
-          "end": 72.41487179487179,
-          "startFrame": 2045,
-          "endFrame": 2172
+          "text": "これはOpenAIの技術強化戦略の一環と見られます。",
+          "start": 59.90121739130434,
+          "end": 64.01147826086957,
+          "startFrame": 1797,
+          "endFrame": 1920
         },
         {
-          "text": "(記事37)",
-          "start": 72.71487179487178,
-          "end": 73.43999999999998,
-          "startFrame": 2181,
-          "endFrame": 2203
+          "text": "(記事20)",
+          "start": 64.31147826086956,
+          "end": 65.26,
+          "startFrame": 1929,
+          "endFrame": 1957
         }
       ],
-      "fullScript": "LogicMonitorがCatchpointを買収。Vista Equity Partners傘下のインフラソフトウェア企業LogicMonitorが、監視スタートアップCatchpointを2.5億ドル超で買収しました。(記事37)"
+      "fullScript": "OpenAIがポーランドのスタートアップNeptuneを買収。AIモデルトレーニングの分析ツールを提供するNeptuneを買収し、AIモデリング能力の向上を図ります。これはOpenAIの技術強化戦略の一環と見られます。(記事20)"
     },
     {
       "index": 4,
       "title": "M&A・企業買収",
       "audioFile": "presentations/audio_output/slide_04.mp3",
-      "duration": 17.66,
-      "durationFrames": 529,
-      "startTime": 73.44,
-      "endTime": 91.1,
-      "startFrame": 2203,
-      "endFrame": 2733,
+      "duration": 17.16,
+      "durationFrames": 514,
+      "startTime": 65.25999999999999,
+      "endTime": 82.41999999999999,
+      "startFrame": 1957,
+      "endFrame": 2472,
       "subtitles": [
         {
-          "text": "SiTimeがRenesasのタイミング部門買収を協議。",
-          "start": 73.44,
-          "end": 77.48551724137931,
-          "startFrame": 2203,
-          "endFrame": 2324
+          "text": "MetaのAIパイオニアYann LeCunが\n退社し新AI企業を設立。",
+          "start": 65.25999999999999,
+          "end": 71.18812499999999,
+          "startFrame": 1957,
+          "endFrame": 2135
         },
         {
-          "text": "データセンター向け同期チップを専門と\nするSiTime Corp.が",
-          "start": 77.78551724137931,
-          "end": 82.55344827586207,
-          "startFrame": 2333,
-          "endFrame": 2476
+          "text": "Metaは同氏の新企業に資金提供しない見込みです。",
+          "start": 71.48812499999998,
+          "end": 75.72249999999998,
+          "startFrame": 2144,
+          "endFrame": 2271
         },
         {
-          "text": "Renesas Electronics Corp.の\nタイミング部門の買収を協議中と報じられました。",
-          "start": 82.85344827586206,
-          "end": 89.93310344827586,
-          "startFrame": 2485,
-          "endFrame": 2697
+          "text": "これはAI研究分野における新たな競争と人材流動を示唆します。",
+          "start": 76.02249999999998,
+          "end": 81.10374999999998,
+          "startFrame": 2280,
+          "endFrame": 2433
         },
         {
-          "text": "(記事32)",
-          "start": 90.23310344827586,
-          "end": 91.1,
-          "startFrame": 2706,
-          "endFrame": 2733
+          "text": "(記事10)",
+          "start": 81.40374999999997,
+          "end": 82.41999999999997,
+          "startFrame": 2442,
+          "endFrame": 2472
         }
       ],
-      "fullScript": "SiTimeがRenesasのタイミング部門買収を協議。データセンター向け同期チップを専門とするSiTime Corp.が、Renesas Electronics Corp.のタイミング部門の買収を協議中と報じられました。(記事32)"
+      "fullScript": "MetaのAIパイオニアYann LeCunが退社し新AI企業を設立。Metaは同氏の新企業に資金提供しない見込みです。これはAI研究分野における新たな競争と人材流動を示唆します。(記事10)"
     },
     {
       "index": 5,
-      "title": "M&A・企業買収",
+      "title": "戦略的提携・パートナーシップ",
       "audioFile": "presentations/audio_output/slide_05.mp3",
-      "duration": 15.66,
-      "durationFrames": 469,
-      "startTime": 91.1,
-      "endTime": 106.75999999999999,
-      "startFrame": 2733,
-      "endFrame": 3202,
+      "duration": 28.72,
+      "durationFrames": 861,
+      "startTime": 82.41999999999999,
+      "endTime": 111.13999999999999,
+      "startFrame": 2472,
+      "endFrame": 3334,
       "subtitles": [
         {
-          "text": "AsurionがD&Gを買収。",
-          "start": 91.1,
-          "end": 93.5876404494382,
-          "startFrame": 2733,
-          "endFrame": 2807
+          "text": "CambriconがAIチップ生産を3倍に、\nNvidiaの中国市場の空白を狙う。",
+          "start": 82.41999999999999,
+          "end": 88.50176795580109,
+          "startFrame": 2472,
+          "endFrame": 2655
         },
         {
-          "text": "米国のAsurion LLCが英国の保証ビジネスDomesti\nc & General Group Ltd.を買収し",
-          "start": 93.8876404494382,
-          "end": 103.34067415730337,
-          "startFrame": 2816,
-          "endFrame": 3100
+          "text": "中国のCambricon Technologiesは\n2026年にAIチップ生産を大幅に増加させ",
+          "start": 88.80176795580108,
+          "end": 95.94784530386738,
+          "startFrame": 2664,
+          "endFrame": 2878
         },
         {
-          "text": "事業拡大を目指します。",
-          "start": 103.64067415730337,
-          "end": 105.46494382022472,
-          "startFrame": 3109,
-          "endFrame": 3163
+          "text": "中国市場でNVIDIAの撤退によって生じた空白を埋め、\nHuawei Technologiesと競争する計画です。",
+          "start": 96.24784530386738,
+          "end": 104.76232044198892,
+          "startFrame": 2887,
+          "endFrame": 3142
         },
         {
-          "text": "(記事13)",
-          "start": 105.76494382022472,
-          "end": 106.75999999999999,
-          "startFrame": 3172,
-          "endFrame": 3202
+          "text": "これはNVIDIA依存脱却と\nカスタムチップ競争の文脈に合致します。",
+          "start": 105.06232044198892,
+          "end": 110.07977900552483,
+          "startFrame": 3151,
+          "endFrame": 3302
+        },
+        {
+          "text": "(記事7)",
+          "start": 110.37977900552482,
+          "end": 111.13999999999996,
+          "startFrame": 3311,
+          "endFrame": 3334
         }
       ],
-      "fullScript": "AsurionがD&Gを買収。米国のAsurion LLCが英国の保証ビジネスDomestic & General Group Ltd.を買収し、事業拡大を目指します。(記事13)"
+      "fullScript": "CambriconがAIチップ生産を3倍に、Nvidiaの中国市場の空白を狙う。中国のCambricon Technologiesは2026年にAIチップ生産を大幅に増加させ、中国市場でNVIDIAの撤退によって生じた空白を埋め、Huawei Technologiesと競争する計画です。これはNVIDIA依存脱却とカスタムチップ競争の文脈に合致します。(記事7)"
     },
     {
       "index": 6,
       "title": "戦略的提携・パートナーシップ",
       "audioFile": "presentations/audio_output/slide_06.mp3",
-      "duration": 20.46,
-      "durationFrames": 613,
-      "startTime": 106.75999999999999,
-      "endTime": 127.22,
-      "startFrame": 3202,
-      "endFrame": 3816,
+      "duration": 24.8,
+      "durationFrames": 744,
+      "startTime": 111.13999999999999,
+      "endTime": 135.94,
+      "startFrame": 3334,
+      "endFrame": 4078,
       "subtitles": [
         {
-          "text": "AWSとAnthropicの強力なパートナーシップ。",
-          "start": 106.75999999999999,
-          "end": 110.61272727272727,
-          "startFrame": 3202,
-          "endFrame": 3318
+          "text": "Armが次世代産業用AI向けアーキテクチャシフトを推進。",
+          "start": 111.13999999999999,
+          "end": 115.458954248366,
+          "startFrame": 3334,
+          "endFrame": 3463
         },
         {
-          "text": "AWSのCEO Matt Garmanは、\nAnthropicとの関係が「非常に強力」であると述べ",
-          "start": 110.91272727272727,
-          "end": 118.02545454545454,
-          "startFrame": 3327,
-          "endFrame": 3540
+          "text": "Armは",
+          "start": 115.758954248366,
+          "end": 116.37594771241828,
+          "startFrame": 3472,
+          "endFrame": 3491
         },
         {
-          "text": "Anthropicが多様なプロバイダーから\n大規模なコンピューティング能力を求めていることに言及しました。",
-          "start": 118.32545454545453,
-          "end": 126.03090909090908,
-          "startFrame": 3549,
-          "endFrame": 3780
+          "text": "産業用エッジにおけるAI対応でエネルギー効率の高いコンピューティングを可能にするアーキテクチャの進化を推進していると発表しました。",
+          "start": 116.67594771241828,
+          "end": 126.70209150326795,
+          "startFrame": 3500,
+          "endFrame": 3801
         },
         {
-          "text": "(記事14)",
-          "start": 126.33090909090907,
-          "end": 127.21999999999998,
-          "startFrame": 3789,
-          "endFrame": 3816
+          "text": "これはソフトバンクグループ傘下のArmが\nAI×ロボット戦略において不可欠な役割を担うことを裏付けます。",
+          "start": 127.00209150326795,
+          "end": 134.8687581699346,
+          "startFrame": 3810,
+          "endFrame": 4046
+        },
+        {
+          "text": "(記事4)",
+          "start": 135.16875816993462,
+          "end": 135.93999999999997,
+          "startFrame": 4055,
+          "endFrame": 4078
         }
       ],
-      "fullScript": "AWSとAnthropicの強力なパートナーシップ。AWSのCEO Matt Garmanは、Anthropicとの関係が「非常に強力」であると述べ、Anthropicが多様なプロバイダーから大規模なコンピューティング能力を求めていることに言及しました。(記事14)"
+      "fullScript": "Armが次世代産業用AI向けアーキテクチャシフトを推進。Armは、産業用エッジにおけるAI対応でエネルギー効率の高いコンピューティングを可能にするアーキテクチャの進化を推進していると発表しました。これはソフトバンクグループ傘下のArmがAI×ロボット戦略において不可欠な役割を担うことを裏付けます。(記事4)"
     },
     {
       "index": 7,
-      "title": "戦略的提携・パートナーシップ",
+      "title": "大型契約・受注",
       "audioFile": "presentations/audio_output/slide_07.mp3",
-      "duration": 17.92,
-      "durationFrames": 537,
-      "startTime": 127.22,
-      "endTime": 145.14,
-      "startFrame": 3816,
-      "endFrame": 4354,
+      "duration": 27.36,
+      "durationFrames": 820,
+      "startTime": 135.94,
+      "endTime": 163.3,
+      "startFrame": 4078,
+      "endFrame": 4899,
       "subtitles": [
         {
-          "text": "Condé NastがAWSクラウドAIを利用。",
-          "start": 127.22,
-          "end": 131.475,
-          "startFrame": 3816,
-          "endFrame": 3944
+          "text": "ソフトバンクグループ出資のDayOne Data\nCentersが20億ドル超の資金調達を検討",
+          "start": 135.94,
+          "end": 143.01858823529412,
+          "startFrame": 4078,
+          "endFrame": 4290
         },
         {
-          "text": "Condé Nastがオンプレミスからクラウドへの移行を進め",
-          "start": 131.775,
-          "end": 137.09375,
-          "startFrame": 3953,
-          "endFrame": 4112
+          "text": "DayOne Data Centersは、\n国際市場での事業拡大を支援するため",
+          "start": 143.31858823529413,
+          "end": 149.16611764705883,
+          "startFrame": 4299,
+          "endFrame": 4474
         },
         {
-          "text": "AWSの「out-of-the-box」AI機能の\n利用を検討しています。",
-          "start": 137.39375,
-          "end": 143.77625,
-          "startFrame": 4121,
-          "endFrame": 4313
+          "text": "20億ドルを超えるシリーズC資金調達を\n計画していると報じられました。",
+          "start": 149.46611764705884,
+          "end": 154.69811764705884,
+          "startFrame": 4483,
+          "endFrame": 4640
         },
         {
-          "text": "(記事11)",
-          "start": 144.07625000000002,
-          "end": 145.14000000000001,
-          "startFrame": 4322,
-          "endFrame": 4354
+          "text": "これはデータセンター需要の拡大と\nソフトバンクグループのAI関連インフラ投資戦略を示唆します。",
+          "start": 154.99811764705885,
+          "end": 162.07670588235297,
+          "startFrame": 4649,
+          "endFrame": 4862
+        },
+        {
+          "text": "(記事18)",
+          "start": 162.37670588235298,
+          "end": 163.30000000000004,
+          "startFrame": 4871,
+          "endFrame": 4899
         }
       ],
-      "fullScript": "Condé NastがAWSクラウドAIを利用。Condé Nastがオンプレミスからクラウドへの移行を進め、AWSの「out-of-the-box」AI機能の利用を検討しています。(記事11)"
+      "fullScript": "ソフトバンクグループ出資のDayOne Data Centersが20億ドル超の資金調達を検討。DayOne Data Centersは、国際市場での事業拡大を支援するため、20億ドルを超えるシリーズC資金調達を計画していると報じられました。これはデータセンター需要の拡大とソフトバンクグループのAI関連インフラ投資戦略を示唆します。(記事18)"
     },
     {
       "index": 8,
@@ -310,17 +317,17 @@
       "audioFile": "presentations/audio_output/slide_08.mp3",
       "duration": 3.88,
       "durationFrames": 116,
-      "startTime": 145.14,
-      "endTime": 149.01999999999998,
-      "startFrame": 4354,
-      "endFrame": 4470,
+      "startTime": 163.3,
+      "endTime": 167.18,
+      "startFrame": 4899,
+      "endFrame": 5015,
       "subtitles": [
         {
           "text": "本日のAI・IT株式ニュースは以上です。",
-          "start": 145.14,
-          "end": 149.01999999999998,
-          "startFrame": 4354,
-          "endFrame": 4470
+          "start": 163.3,
+          "end": 167.18,
+          "startFrame": 4899,
+          "endFrame": 5015
         }
       ],
       "fullScript": "本日のAI・IT株式ニュースは以上です。"
@@ -329,54 +336,54 @@
       "index": 9,
       "title": "塾頭高崎の完全自動化への挑戦",
       "audioFile": "presentations/audio_output/slide_09.mp3",
-      "duration": 40.28,
-      "durationFrames": 1208,
-      "startTime": 149.01999999999998,
-      "endTime": 189.29999999999998,
-      "startFrame": 4470,
-      "endFrame": 5678,
+      "duration": 40.26,
+      "durationFrames": 1207,
+      "startTime": 167.18,
+      "endTime": 207.44,
+      "startFrame": 5015,
+      "endFrame": 6223,
       "subtitles": [
         {
           "text": "ご視聴いただきありがとうございました。",
-          "start": 149.01999999999998,
-          "end": 152.1823175965665,
-          "startFrame": 4470,
-          "endFrame": 4565
+          "start": 167.18,
+          "end": 170.34068669527898,
+          "startFrame": 5015,
+          "endFrame": 5110
         },
         {
           "text": "実はこのレポート、if塾の塾頭高崎による「完全自動化への挑戦」\nプロジェクトの一環として、AIが自動生成しています。",
-          "start": 152.4823175965665,
-          "end": 161.9692703862661,
-          "startFrame": 4574,
-          "endFrame": 4859
+          "start": 170.640686695279,
+          "end": 180.1227467811159,
+          "startFrame": 5119,
+          "endFrame": 5403
         },
         {
           "text": "将来的には塾頭が執筆しているような自然な記事になることを目指し\nており、現時点では事実と異なる内容が含まれる可能性もあります。",
-          "start": 162.2692703862661,
-          "end": 172.5884120171674,
-          "startFrame": 4868,
-          "endFrame": 5177
+          "start": 180.4227467811159,
+          "end": 190.73656652360518,
+          "startFrame": 5412,
+          "endFrame": 5722
         },
         {
           "text": "この挑戦に共感していただけたら、\nぜひチャンネル登録とグッドボタンをよろしくお願いします！",
-          "start": 172.8884120171674,
-          "end": 180.21167381974251,
-          "startFrame": 5186,
-          "endFrame": 5406
+          "start": 191.0365665236052,
+          "end": 198.35605150214596,
+          "startFrame": 5731,
+          "endFrame": 5950
         },
         {
           "text": "また、無料のAI教育や導入コンサルも受け付けています。",
-          "start": 180.51167381974253,
-          "end": 185.0054935622318,
-          "startFrame": 5415,
-          "endFrame": 5550
+          "start": 198.65605150214597,
+          "end": 203.1475536480687,
+          "startFrame": 5959,
+          "endFrame": 6094
         },
         {
           "text": "詳しくは概要欄のリンクからお問い合わせください。",
-          "start": 185.30549356223182,
-          "end": 189.30000000000007,
-          "startFrame": 5559,
-          "endFrame": 5679
+          "start": 203.44755364806872,
+          "end": 207.44000000000005,
+          "startFrame": 6103,
+          "endFrame": 6223
         }
       ],
       "fullScript": "ご視聴いただきありがとうございました。実はこのレポート、if塾の塾頭高崎による「完全自動化への挑戦」プロジェクトの一環として、AIが自動生成しています。将来的には塾頭が執筆しているような自然な記事になることを目指しており、現時点では事実と異なる内容が含まれる可能性もあります。この挑戦に共感していただけたら、ぜひチャンネル登録とグッドボタンをよろしくお願いします！また、無料のAI教育や導入コンサルも受け付けています。詳しくは概要欄のリンクからお問い合わせください。"
