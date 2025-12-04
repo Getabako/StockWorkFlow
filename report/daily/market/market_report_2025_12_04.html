@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI/IT市場 日次情勢レポート</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #0ea5e9;
+            --success-color: #10b981;
+            --danger-color: #ef4444;
+            --warning-color: #f59e0b;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-primary: #1e293b;
+            --text-secondary: #64748b;
+            --border-color: #e2e8f0;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        body {
+            font-family: 'Noto Sans JP', 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: var(--text-primary);
+            line-height: 1.7;
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            border-radius: 16px;
+            box-shadow: var(--shadow-lg);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            animation: pulse 15s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            50% { transform: translate(-10%, -10%) scale(1.1); }
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            font-weight: 700;
+            margin-bottom: 10px;
+            position: relative;
+            z-index: 1;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .header .subtitle {
+            font-size: 1.1em;
+            opacity: 0.95;
+            position: relative;
+            z-index: 1;
+            font-weight: 300;
+        }
+
+        .content {
+            padding: 50px;
+        }
+
+        h1 {
+            color: #1e3a8a;
+            font-size: 2.2em;
+            margin: 30px 0 20px 0;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #1e3a8a;
+            font-weight: 700;
+        }
+
+        h2 {
+            color: #0c4a6e;
+            font-size: 1.8em;
+            margin: 35px 0 20px 0;
+            padding-left: 15px;
+            border-left: 5px solid #0c4a6e;
+            font-weight: 600;
+        }
+
+        h3 {
+            color: var(--text-primary);
+            font-size: 1.4em;
+            margin: 25px 0 15px 0;
+            padding: 12px 20px;
+            background: linear-gradient(90deg, var(--bg-color) 0%, transparent 100%);
+            border-radius: 8px;
+            font-weight: 600;
+        }
+
+        h4 {
+            color: var(--text-secondary);
+            font-size: 1.1em;
+            margin: 20px 0 10px 0;
+            font-weight: 500;
+        }
+
+        p {
+            margin: 15px 0;
+            color: var(--text-primary);
+            font-size: 1.05em;
+        }
+
+        strong {
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        em {
+            font-style: italic;
+            color: var(--text-secondary);
+        }
+
+        ul, ol {
+            margin: 20px 0;
+            padding-left: 30px;
+        }
+
+        li {
+            margin: 12px 0;
+            line-height: 1.8;
+            color: var(--text-primary);
+        }
+
+        ul li {
+            list-style-type: none;
+            position: relative;
+            padding-left: 25px;
+        }
+
+        ul li::before {
+            content: '▸';
+            color: var(--primary-color);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+            font-size: 1.2em;
+        }
+
+        blockquote {
+            margin: 25px 0;
+            padding: 20px 25px;
+            background: var(--bg-color);
+            border-left: 5px solid var(--warning-color);
+            border-radius: 0 8px 8px 0;
+            font-style: italic;
+            color: var(--text-secondary);
+            box-shadow: var(--shadow);
+        }
+
+        hr {
+            border: none;
+            border-top: 2px solid var(--border-color);
+            margin: 40px 0;
+            opacity: 0.5;
+        }
+
+        code {
+            background: #f1f5f9;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            color: #dc2626;
+        }
+
+        pre {
+            background: #1e293b;
+            color: #e2e8f0;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 20px 0;
+            box-shadow: var(--shadow);
+        }
+
+        pre code {
+            background: none;
+            color: inherit;
+            padding: 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        th {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: white;
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        td {
+            padding: 15px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        tr:hover {
+            background: var(--bg-color);
+        }
+
+        .summary-box {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            border-left: 5px solid var(--warning-color);
+            padding: 25px;
+            margin: 25px 0;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+
+        .info-box {
+            background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+            border-left: 5px solid var(--primary-color);
+            padding: 25px;
+            margin: 25px 0;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+
+        .success-box {
+            background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+            border-left: 5px solid var(--success-color);
+            padding: 25px;
+            margin: 25px 0;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+
+        .footer {
+            background: var(--bg-color);
+            padding: 30px;
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 0.9em;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .footer p {
+            margin: 5px 0;
+            color: var(--text-secondary);
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 0.85em;
+            font-weight: 500;
+            margin: 0 5px;
+        }
+
+        .badge-primary {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        .badge-success {
+            background: var(--success-color);
+            color: white;
+        }
+
+        .badge-warning {
+            background: var(--warning-color);
+            color: white;
+        }
+
+        .badge-danger {
+            background: var(--danger-color);
+            color: white;
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+
+            .container {
+                box-shadow: none;
+                max-width: 100%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 20px 10px;
+            }
+
+            .header {
+                padding: 30px 20px;
+            }
+
+            .header h1 {
+                font-size: 1.8em;
+            }
+
+            .content {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            h3 {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>AI/IT市場 日次情勢レポート</h1>
+            <div class="subtitle">AI/IT株式投資レポート - Powered by Gemini AI</div>
+        </div>
+
+        <div class="content">
+            <h1 id="aiit">AI/IT市場 日次情勢レポート</h1>
+<p><strong>作成日時</strong>: 2025年12月04日 14:47</p>
+<h2 id="_1">エグゼクティブサマリー</h2>
+<p>今日のAI/IT市場は、大手テクノロジー企業のAI戦略の多角化と、それに対する規制当局の監視強化が顕著です。OpenAIは技術基盤強化のための買収を発表する一方、Googleや中国のCambriconはNVIDIAに代わる自社AIチップ開発・生産を加速させ、競争が激化しています。また、AI関連コストへの懸念や、Metaのメタバース事業からのシフトなど、投資と事業モデルの再構築が進む一日となりました。</p>
+<h2 id="_2">重要ファクト</h2>
+<h3 id="ma">M&amp;A・企業買収</h3>
+<ul>
+<li><strong>OpenAIがポーランドのスタートアップNeptuneを買収</strong>: AIモデルトレーニングの分析ツールを提供するNeptuneを買収し、AIモデリング能力の向上を図ります。これはOpenAIの技術強化戦略の一環と見られます。(記事20)</li>
+<li><strong>MetaのAIパイオニアYann LeCunが退社し新AI企業を設立</strong>: Metaは同氏の新企業に資金提供しない見込みです。これはAI研究分野における新たな競争と人材流動を示唆します。(記事10)</li>
+</ul>
+<h3 id="_3">戦略的提携・パートナーシップ</h3>
+<ul>
+<li><strong>CambriconがAIチップ生産を3倍に、Nvidiaの中国市場の空白を狙う</strong>: 中国のCambricon Technologiesは2026年にAIチップ生産を大幅に増加させ、中国市場でNVIDIAの撤退によって生じた空白を埋め、Huawei Technologiesと競争する計画です。これはNVIDIA依存脱却とカスタムチップ競争の文脈に合致します。(記事7)</li>
+<li><strong>Armが次世代産業用AI向けアーキテクチャシフトを推進</strong>: Armは、産業用エッジにおけるAI対応でエネルギー効率の高いコンピューティングを可能にするアーキテクチャの進化を推進していると発表しました。これはソフトバンクグループ傘下のArmがAI×ロボット戦略において不可欠な役割を担うことを裏付けます。(記事4)</li>
+</ul>
+<h3 id="_4">大型契約・受注</h3>
+<ul>
+<li><strong>ソフトバンクグループ出資のDayOne Data Centersが20億ドル超の資金調達を検討</strong>: DayOne Data Centersは、国際市場での事業拡大を支援するため、20億ドルを超えるシリーズC資金調達を計画していると報じられました。これはデータセンター需要の拡大とソフトバンクグループのAI関連インフラ投資戦略を示唆します。(記事18)</li>
+<li><strong>TikTokがラテンアメリカで初のデータセンターを建設</strong>: TikTokはブラジルに初のラテンアメリカデータセンターを建設するため、370億ドル以上の投資を計画しています。これはグローバルなデータインフラ整備競争と地域市場拡大の動きを示します。(記事32)</li>
+</ul>
+<h3 id="_5">新製品・新技術</h3>
+<ul>
+<li><strong>Alphabet（Google）のAIチップが9,000億ドルの収益源となる可能性</strong>: AlphabetのAIチップが、Googleの将来的な主要な収益ドライバーとなる可能性があり、投資家からの期待が高まっています。これはNVIDIA依存脱却とカスタムチップ競争におけるGoogleの存在感を示します。(記事16)</li>
+<li><strong>YouTubeクリエイターがAI動画を使い、子供向けコンテンツを制作</strong>: 2歳未満の子供を対象としたAI生成動画がYouTubeで増加していると報じられました。AIのコンテンツ生成分野における普及と倫理的課題を示唆します。(記事12)</li>
+</ul>
+<h3 id="_6">業績・財務情報</h3>
+<ul>
+<li><strong>Salesforceが好調な収益見通しを発表、AIツールの採用が貢献</strong>: Salesforceは、アナリスト予想を上回る当期の収益見通しを発表し、AIツールの顧客採用が貢献していると強調しました。SaaS分野でのAIの収益貢献が明確になっています。(記事30)</li>
+<li><strong>Snowflakeが低い営業利益率見通しを発表、AIコストへの懸念</strong>: Snowflakeは、アナリスト予想を下回る営業利益率の見通しを発表し、新たなAIベースツールの収益性に対する投資家の懸念を煽りました。AI技術の活用に伴うコスト課題が浮き彫りになっています。(記事33)</li>
+<li><strong>ソフトバンクグループがInMobiの持ち株の一部を2.5億ドルで売却</strong>: ソフトバンクグループはモバイル広告企業InMobiの持ち株の一部を約2.5億ドルで売却することに合意しました。これはソフトバンクグループの投資ポートフォリオにおける調整の動きを示します。(記事25)</li>
+</ul>
+<h3 id="_7">その他の重要情報</h3>
+<ul>
+<li><strong>Metaがメタバース事業への大規模なリソース削減を計画</strong>: Meta Platformsのマーク・ザッカーバーグCEOは、かつて会社の未来と位置づけたメタバース事業へのリソースを大幅に削減する意向です。これはテクノロジー業界全体の投資戦略のシフトを示します。(記事5)</li>
+<li><strong>EUがMetaのWhatsApp AI計画に一時的禁止のリスクで調査</strong>: 欧州連合（EU）は、WhatsAppのAI機能展開における新ポリシーについて調査を開始し、一時的な禁止の可能性を警告しています。AI技術の導入におけるプライバシーと規制の間の緊張が続いています。(記事6)</li>
+<li><strong>ドイツの金融監視当局がAI業界の企業集中リスクについて銀行に警告</strong>: ドイツの金融監視当局は、AIブームを牽引する企業間の不透明な関係がもたらすリスクについて、国内の銀行に警告を発しました。これはNVIDIAやOpenAIを中心とした循環型経済圏の集中に対する懸念と一致します。(記事19)</li>
+<li><strong>NvidiaのCEO、中国がH200チップを受け入れるか不確実と発言</strong>: Nvidiaのジェンセン・フアンCEOは、米国が半導体販売規制を緩和した場合でも、中国が同社のH200 AIチップを受け入れるかどうか不確実であるとの見解を示しました。米中間のテクノロジー規制がNVIDIAの中国市場戦略に引き続き影響を与えています。(記事29)</li>
+</ul>
+<h2 id="_8">今日の注目ポイント</h2>
+<p>AI業界では、OpenAIが技術力強化のためM&amp;Aを実施する一方で、GoogleやCambriconが自社チップ開発を加速させ、NVIDIAへの依存脱却と市場競争が激化しています。同時に、EUを中心にAI技術の利用やデータ管理に関する規制が強化されており、企業は技術革新と法的・倫理的遵守の両立が求められる局面を迎えています。</p>
+<hr />
+<p><em>このレポートはAI（Gemini）により自動生成されています。</em></p>
+        </div>
+
+        <div class="footer">
+            <p>このレポートはAI（Google Gemini）により自動生成されています。</p>
+            <p>投資判断は必ずご自身の責任で行ってください。</p>
+            <p>生成日時: 2025年12月04日 14:48:19</p>
+        </div>
+    </div>
+</body>
+</html>
