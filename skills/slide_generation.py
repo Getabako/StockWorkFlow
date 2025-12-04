@@ -91,7 +91,7 @@ style: |
     font-weight: 900;
     font-size: 2.2em;
     color: var(--text-white);
-    text-shadow: 0 0 10px var(--glow-cyan), 0 0 20px var(--glow-cyan);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9), 4px 4px 8px rgba(0, 0, 0, 0.7), 0 0 10px var(--glow-cyan), 0 0 20px var(--glow-cyan);
     border-bottom: 2px solid var(--primary-cyan);
     padding-bottom: 15px;
     margin-bottom: 30px;
