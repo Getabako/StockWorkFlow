@@ -184,6 +184,7 @@ jobs:
           git config --local user.name "github-actions[bot]"
           git add data/portfolio.csv portfolio/history.csv portfolio/account.json
           git diff --staged --quiet || git commit -m "Update portfolio data (manual update)"
+          git pull --rebase origin main || true
           git push origin main
 
       - name: Summary

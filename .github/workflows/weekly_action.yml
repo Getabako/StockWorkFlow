@@ -69,6 +69,7 @@ jobs:
           git config --local user.name "github-actions[bot]"
           git add report/weekly/weekly_action_report_${{ env.REPORT_DATE }}.html
           git diff --staged --quiet || git commit -m "Add weekly action report HTML for ${{ env.REPORT_DATE }} (automated)"
+          git pull --rebase origin main
           git push origin main
 
       - name: Send action report to Discord
