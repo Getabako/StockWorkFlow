@@ -4,43 +4,43 @@
       "index": 1,
       "title": "AI/IT株式ニュース",
       "audio_file": "presentations/audio_output/slide_01.mp3",
-      "script": "うぃっすー！if塾AIニュースのお時間です。2025/12/05のAI・IT株式ニュースをお届けします。"
+      "script": "うぃっすー！if塾AIニュースのお時間です。2025/12/08のAI・IT株式ニュースをお届けします。"
     },
     {
       "index": 2,
       "title": "本日のサマリー",
       "audio_file": "presentations/audio_output/slide_02.mp3",
-      "script": "本日のAI/IT市場は、Googleが次世代AIモデル「Gemini 3」とそのビジョンAI能力を強化した「Gemini 3 Pro」を発表し、エージェント開発プラットフォーム「Antigravity」への需要急増を明らかにするなど、大手企業のAI技術進化が目立ちました。一方で、ウォールストリートではAI企業への大規模融資におけるリスクとバブルの可能性が警戒され、資金調達の過熱感が示唆されています。また、EUによるテック企業への規制強化と生成AIを巡る著作権訴訟が顕在化し、市場の成長とガバナンスのバランスが引き続き焦点となっています。"
+      "script": "本日のAI/IT市場は、米国でのAI規制に関する新たな動きとNVIDIAの中国市場での復権の可能性が注目されます。GoogleはAIスマートグラスやXRデバイスなど、AIを活用したハードウェアとサービスの展開を加速。企業ソフトウェア分野ではIBMが大型買収を行い、AIスタートアップの評価額も高騰するなど、広範なAI領域への投資が継続しています。しかし、一部の主要ハイテク株に対するバリュエーションの警戒感も示されています。"
     },
     {
       "index": 3,
       "title": "M&A・企業買収",
       "audio_file": "presentations/audio_output/slide_03.mp3",
-      "script": "ソフトバンクグループのデータセンター投資企業買収交渉。ソフトバンクグループが、AIブームを背景としたデジタルインフラの活用を見据え、データセンター投資企業DigitalBridge Group Inc.の買収交渉を進めていることが報じられました。(Bloomberg Technology, 記事24)"
+      "script": "IBMがConfluentを93億ドルで買収。IBMはリアルタイムデータストリーミングプラットフォームのConfluentを約93億ドルで買収することを発表。AIサービスの拡張とリアルタイムエンタープライズソフトウェア分野への大規模な投資と位置付けられています。"
     },
     {
       "index": 4,
       "title": "M&A・企業買収",
       "audio_file": "presentations/audio_output/slide_04.mp3",
-      "script": "NetflixによるWarner Bros. Discovery買収合意。Netflix Inc.がWarner Bros. Discovery Inc.を720億ドルの現金と株式で買収することに合意しました。この大規模なM&Aは、ストリーミング市場におけるNetflixの支配力を強化する可能性があります。(Bloomberg Technology, 記事12, 14, 17)"
+      "script": "Warner Bros. Discovery買収競争の激化。Netflixが827億ドルでWarner Bros. Discoveryのストリーミングおよびスタジオ資産の買収に合意した直後、Paramount Skydanceが敵対的買収提案を公表しました。Paramountは買収のために最大540億ドルの融資を確保しており、Comcastは競争から撤退。トランプ大統領は、Netflixによる買収について独占禁止法上の懸念を表明しています。"
     },
     {
       "index": 5,
       "title": "戦略的提携・パートナーシップ",
       "audio_file": "presentations/audio_output/slide_05.mp3",
-      "script": "クリスティアーノ・ロナウドのPerplexity AIへの投資。サッカー選手のクリスティアーノ・ロナウド氏がAI検索スタートアップのPerplexity AI Inc.に投資し、パートナーシップを締結しました。これは著名人がAIエコシステムに参入する高プロファイルな事例となります。(Bloomberg Technology, 記事31)"
+      "script": "GoogleのAI教育パートナーシップ。Googleは北欧地域で責任あるAIの活用を推進するため、教育機関とのパートナーシップを発表しました。"
     },
     {
       "index": 6,
-      "title": "新製品・新技術",
+      "title": "戦略的提携・パートナーシップ",
       "audio_file": "presentations/audio_output/slide_06.mp3",
-      "script": "Google Gemini 3およびGemini 3 Proの発表。Google/Alphabetは、新しいAIモデル「Gemini 3」および「Gemini 3 Pro」を発表しました。「Gemini 3 Pro」は特に「ビジョンAIのフロンティア」と位置づけられ、具体的なデモを通じてその多様な能力が示されています。(Google/Alphabet, 記事1, 5, 8)"
+      "script": "Tetherが人型ロボットスタートアップに出資。ステーブルコイン大手Tetherが、イタリアの人型ロボットスタートアップGenerative Bionicsへの7,000万ユーロの資金調達ラウンドに参加しました。これはAI×ロボット分野への投資が活発化していることを示します。"
     },
     {
       "index": 7,
-      "title": "新製品・新技術",
+      "title": "大型契約・受注",
       "audio_file": "presentations/audio_output/slide_07.mp3",
-      "script": "Google Antigravityの需要急増とレートリミット向上。Googleの新しいエージェント開発プラットフォーム「Google Antigravity」に対する需要が非常に高く、Google AI ProおよびUltraサブスクライバー向けにレートリミットが引き上げられました。これはAIエージェントの概念が市場で急速に受け入れられていることを示します。(Google/Alphabet, 記事6)"
+      "script": "NVIDIAの中国向けH200 AIチップ輸出承認見込み。トランプ政権がNVIDIAのH200 AIチップの中国への輸出を承認する見込みとなり、NVIDIAにとっては数十億ドル規模のビジネス回復の機会となる可能性があります。"
     },
     {
       "index": 8,

@@ -1,343 +1,280 @@
 {
   "fps": 30,
-  "totalDuration": 229.57999999999998,
-  "totalFrames": 6887,
+  "totalDuration": 198.4,
+  "totalFrames": 5952,
   "slides": [
     {
       "index": 1,
       "title": "AI/IT株式ニュース",
       "audioFile": "presentations/audio_output/slide_01.mp3",
-      "duration": 9.88,
-      "durationFrames": 296,
+      "duration": 9.92,
+      "durationFrames": 297,
       "startTime": 0,
-      "endTime": 9.88,
+      "endTime": 9.92,
       "startFrame": 0,
-      "endFrame": 296,
+      "endFrame": 297,
       "subtitles": [
         {
           "text": "うぃっすー！",
           "start": 0,
-          "end": 1.070769230769231,
+          "end": 1.0753846153846154,
           "startFrame": 0,
           "endFrame": 32
         },
         {
           "text": "if塾AIニュースのお時間です。",
-          "start": 1.370769230769231,
-          "end": 4.2261538461538475,
+          "start": 1.3753846153846154,
+          "end": 4.243076923076924,
           "startFrame": 41,
-          "endFrame": 126
+          "endFrame": 127
         },
         {
-          "text": "2025/12/05のAI・IT株式ニュースをお届けします。",
-          "start": 4.526153846153847,
-          "end": 9.880000000000003,
-          "startFrame": 135,
-          "endFrame": 296
+          "text": "2025/12/08のAI・IT株式ニュースをお届けします。",
+          "start": 4.5430769230769235,
+          "end": 9.92,
+          "startFrame": 136,
+          "endFrame": 297
         }
       ],
-      "fullScript": "うぃっすー！if塾AIニュースのお時間です。2025/12/05のAI・IT株式ニュースをお届けします。"
+      "fullScript": "うぃっすー！if塾AIニュースのお時間です。2025/12/08のAI・IT株式ニュースをお届けします。"
     },
     {
       "index": 2,
       "title": "本日のサマリー",
       "audioFile": "presentations/audio_output/slide_02.mp3",
-      "duration": 46.16,
-      "durationFrames": 1384,
-      "startTime": 9.88,
-      "endTime": 56.04,
-      "startFrame": 296,
-      "endFrame": 1681,
+      "duration": 38.74,
+      "durationFrames": 1162,
+      "startTime": 9.92,
+      "endTime": 48.660000000000004,
+      "startFrame": 297,
+      "endFrame": 1459,
       "subtitles": [
         {
-          "text": "本日のAI/IT市場は",
-          "start": 9.88,
-          "end": 11.70890566037736,
-          "startFrame": 296,
-          "endFrame": 351
+          "text": "本日のAI/IT市場は、米国でのAI規制に関する新たな動きとN\nVIDIAの中国市場での復権の可能性が注目されます。",
+          "start": 9.92,
+          "end": 20.061137440758294,
+          "startFrame": 297,
+          "endFrame": 601
         },
         {
-          "text": "Googleが次世代AIモデル「Gemini 3」とそのビジョ\nンAI能力を強化した「Gemini 3 Pro」を発表し",
-          "start": 12.00890566037736,
-          "end": 21.818490566037738,
-          "startFrame": 360,
-          "endFrame": 654
-        },
-        {
-          "text": "エージェント開発プラットフォーム「Antigravity」へ\nの需要急増を明らかにするなど",
-          "start": 22.11849056603774,
-          "end": 29.43411320754717,
-          "startFrame": 663,
+          "text": "GoogleはAIスマートグラスやXRデバイスなど、\nAIを活用したハードウェアとサービスの展開を加速。",
+          "start": 20.361137440758295,
+          "end": 29.43478672985782,
+          "startFrame": 610,
           "endFrame": 883
         },
         {
-          "text": "大手企業のAI技術進化が目立ちました。",
-          "start": 29.73411320754717,
-          "end": 32.8931320754717,
+          "text": "企業ソフトウェア分野ではIBMが大型買収を行い、\nAIスタートアップの評価額も高騰するなど",
+          "start": 29.73478672985782,
+          "end": 37.56303317535545,
           "startFrame": 892,
-          "endFrame": 986
+          "endFrame": 1126
         },
         {
-          "text": "一方で、ウォールストリートではAI企業への大規模融資におけるリ\nスクとバブルの可能性が警戒され",
-          "start": 33.193132075471695,
-          "end": 40.84128301886792,
-          "startFrame": 995,
-          "endFrame": 1225
+          "text": "広範なAI領域への投資が継続しています。",
+          "start": 37.86303317535545,
+          "end": 41.42132701421801,
+          "startFrame": 1135,
+          "endFrame": 1242
         },
         {
-          "text": "資金調達の過熱感が示唆されています。",
-          "start": 41.14128301886792,
-          "end": 44.13403773584905,
-          "startFrame": 1234,
-          "endFrame": 1324
-        },
-        {
-          "text": "また、EUによるテック企業への規制強化と生成AIを巡る著作権訴\n訟が顕在化し",
-          "start": 44.434037735849046,
-          "end": 50.58581132075471,
-          "startFrame": 1333,
-          "endFrame": 1517
-        },
-        {
-          "text": "市場の成長とガバナンスのバランスが引き続き焦点となっています。",
-          "start": 50.885811320754705,
-          "end": 56.039999999999985,
-          "startFrame": 1526,
-          "endFrame": 1681
+          "text": "しかし、一部の主要ハイテク株に対するバリュエーションの警戒感も\n示されています。",
+          "start": 41.721327014218005,
+          "end": 48.66,
+          "startFrame": 1251,
+          "endFrame": 1459
         }
       ],
-      "fullScript": "本日のAI/IT市場は、Googleが次世代AIモデル「Gemini 3」とそのビジョンAI能力を強化した「Gemini 3 Pro」を発表し、エージェント開発プラットフォーム「Antigravity」への需要急増を明らかにするなど、大手企業のAI技術進化が目立ちました。一方で、ウォールストリートではAI企業への大規模融資におけるリスクとバブルの可能性が警戒され、資金調達の過熱感が示唆されています。また、EUによるテック企業への規制強化と生成AIを巡る著作権訴訟が顕在化し、市場の成長とガバナンスのバランスが引き続き焦点となっています。"
+      "fullScript": "本日のAI/IT市場は、米国でのAI規制に関する新たな動きとNVIDIAの中国市場での復権の可能性が注目されます。GoogleはAIスマートグラスやXRデバイスなど、AIを活用したハードウェアとサービスの展開を加速。企業ソフトウェア分野ではIBMが大型買収を行い、AIスタートアップの評価額も高騰するなど、広範なAI領域への投資が継続しています。しかし、一部の主要ハイテク株に対するバリュエーションの警戒感も示されています。"
     },
     {
       "index": 3,
       "title": "M&A・企業買収",
       "audioFile": "presentations/audio_output/slide_03.mp3",
-      "duration": 22.32,
-      "durationFrames": 669,
-      "startTime": 56.04,
-      "endTime": 78.36,
-      "startFrame": 1681,
-      "endFrame": 2350,
+      "duration": 20.64,
+      "durationFrames": 619,
+      "startTime": 48.660000000000004,
+      "endTime": 69.30000000000001,
+      "startFrame": 1459,
+      "endFrame": 2079,
       "subtitles": [
         {
-          "text": "ソフトバンクグループのデータセンター投資企業買収交渉。",
-          "start": 56.04,
-          "end": 59.9477027027027,
-          "startFrame": 1681,
-          "endFrame": 1798
+          "text": "IBMがConfluentを93億ドルで買収。",
+          "start": 48.660000000000004,
+          "end": 52.17847328244275,
+          "startFrame": 1459,
+          "endFrame": 1565
         },
         {
-          "text": "ソフトバンクグループが、\nAIブームを背景としたデジタルインフラの活用を見据え",
-          "start": 60.247702702702696,
-          "end": 65.74743243243243,
-          "startFrame": 1807,
-          "endFrame": 1972
+          "text": "IBMはリアルタイムデータストリーミングプラットフォームの\nConfluentを約93億ドルで買収することを発表。",
+          "start": 52.47847328244275,
+          "end": 61.045190839694655,
+          "startFrame": 1574,
+          "endFrame": 1831
         },
         {
-          "text": "データセンター投資企業DigitalBridge Group\nInc.の買収交渉を進めていることが報じられました",
-          "start": 66.04743243243243,
-          "end": 74.00756756756756,
-          "startFrame": 1981,
-          "endFrame": 2220
-        },
-        {
-          "text": "(Bloomberg Technology, 記事24)",
-          "start": 74.30756756756756,
-          "end": 78.35999999999999,
-          "startFrame": 2229,
-          "endFrame": 2350
+          "text": "AIサービスの拡張とリアルタイムエンタープライズソフトウェア分\n野への大規模な投資と位置付けられています。",
+          "start": 61.34519083969465,
+          "end": 69.3,
+          "startFrame": 1840,
+          "endFrame": 2079
         }
       ],
-      "fullScript": "ソフトバンクグループのデータセンター投資企業買収交渉。ソフトバンクグループが、AIブームを背景としたデジタルインフラの活用を見据え、データセンター投資企業DigitalBridge Group Inc.の買収交渉を進めていることが報じられました。(Bloomberg Technology, 記事24)"
+      "fullScript": "IBMがConfluentを93億ドルで買収。IBMはリアルタイムデータストリーミングプラットフォームのConfluentを約93億ドルで買収することを発表。AIサービスの拡張とリアルタイムエンタープライズソフトウェア分野への大規模な投資と位置付けられています。"
     },
     {
       "index": 4,
       "title": "M&A・企業買収",
       "audioFile": "presentations/audio_output/slide_04.mp3",
-      "duration": 27.88,
-      "durationFrames": 836,
-      "startTime": 78.36,
-      "endTime": 106.24,
-      "startFrame": 2350,
-      "endFrame": 3187,
+      "duration": 34.94,
+      "durationFrames": 1048,
+      "startTime": 69.30000000000001,
+      "endTime": 104.24000000000001,
+      "startFrame": 2079,
+      "endFrame": 3127,
       "subtitles": [
         {
-          "text": "Netflixに\nよるWarner Bros. Discovery買収合意。",
-          "start": 78.36,
-          "end": 83.64179894179894,
-          "startFrame": 2350,
-          "endFrame": 2509
+          "text": "Warner Bros. Discovery買収競争の激化。",
+          "start": 69.30000000000001,
+          "end": 73.88009049773757,
+          "startFrame": 2079,
+          "endFrame": 2216
         },
         {
-          "text": "Netflix Inc.がWarner Bros. Discovery Inc.を720億ドルの現金と株式で買収することに合意しました。",
-          "start": 83.94179894179894,
-          "end": 93.64888888888888,
-          "startFrame": 2518,
-          "endFrame": 2809
+          "text": "Netflixが827億ドルでWarner Bros. Discoveryのストリーミングおよびスタジオ資産の買収に合意した直後",
+          "start": 74.18009049773757,
+          "end": 83.95095022624436,
+          "startFrame": 2225,
+          "endFrame": 2518
         },
         {
-          "text": "この大規模なM&Aは、ストリーミング市場におけるNetflix\nの支配力を強化する可能性があります。",
-          "start": 93.94888888888887,
-          "end": 100.94370370370369,
-          "startFrame": 2818,
-          "endFrame": 3028
+          "text": "Paramount Skydanceが\n敵対的買収提案を公表しました。",
+          "start": 84.25095022624436,
+          "end": 89.44171945701359,
+          "startFrame": 2527,
+          "endFrame": 2683
         },
         {
-          "text": "(Bloomberg Technology, 記事12,\n14, 17)",
-          "start": 101.24370370370369,
-          "end": 106.23999999999998,
-          "startFrame": 3037,
-          "endFrame": 3187
+          "text": "Paramountは買収のために最大540億ドルの融資を確保し\nており、Comcastは競争から撤退。",
+          "start": 89.74171945701359,
+          "end": 97.37520361990951,
+          "startFrame": 2692,
+          "endFrame": 2921
+        },
+        {
+          "text": "トランプ大統領は、Netflixによる買収について独占禁止法上\nの懸念を表明しています。",
+          "start": 97.67520361990951,
+          "end": 104.24000000000001,
+          "startFrame": 2930,
+          "endFrame": 3127
         }
       ],
-      "fullScript": "NetflixによるWarner Bros. Discovery買収合意。Netflix Inc.がWarner Bros. Discovery Inc.を720億ドルの現金と株式で買収することに合意しました。この大規模なM&Aは、ストリーミング市場におけるNetflixの支配力を強化する可能性があります。(Bloomberg Technology, 記事12, 14, 17)"
+      "fullScript": "Warner Bros. Discovery買収競争の激化。Netflixが827億ドルでWarner Bros. Discoveryのストリーミングおよびスタジオ資産の買収に合意した直後、Paramount Skydanceが敵対的買収提案を公表しました。Paramountは買収のために最大540億ドルの融資を確保しており、Comcastは競争から撤退。トランプ大統領は、Netflixによる買収について独占禁止法上の懸念を表明しています。"
     },
     {
       "index": 5,
       "title": "戦略的提携・パートナーシップ",
       "audioFile": "presentations/audio_output/slide_05.mp3",
-      "duration": 24.02,
-      "durationFrames": 720,
-      "startTime": 106.24,
-      "endTime": 130.26,
-      "startFrame": 3187,
-      "endFrame": 3907,
+      "duration": 12.16,
+      "durationFrames": 364,
+      "startTime": 104.24000000000001,
+      "endTime": 116.4,
+      "startFrame": 3127,
+      "endFrame": 3492,
       "subtitles": [
         {
-          "text": "クリスティアーノ・ロナウドの\nPerplexity AIへの投資。",
-          "start": 106.24,
-          "end": 110.58666666666666,
-          "startFrame": 3187,
-          "endFrame": 3317
+          "text": "GoogleのAI教育パートナーシップ。",
+          "start": 104.24000000000001,
+          "end": 107.58084507042254,
+          "startFrame": 3127,
+          "endFrame": 3227
         },
         {
-          "text": "サッカー選手のクリスティアーノ・ロナウド氏がAI検索スタートア\nップのPerplexity AI Inc.に投資し",
-          "start": 110.88666666666666,
-          "end": 118.49333333333333,
-          "startFrame": 3326,
-          "endFrame": 3554
-        },
-        {
-          "text": "パートナーシップを締結しました。",
-          "start": 118.79333333333332,
-          "end": 120.96666666666665,
-          "startFrame": 3563,
-          "endFrame": 3628
-        },
-        {
-          "text": "これは著名人がAIエコシステムに\n参入する高プロファイルな事例となります。",
-          "start": 121.26666666666665,
-          "end": 126.15666666666665,
-          "startFrame": 3637,
-          "endFrame": 3784
-        },
-        {
-          "text": "(Bloomberg Technology, 記事31)",
-          "start": 126.45666666666665,
-          "end": 130.26,
-          "startFrame": 3793,
-          "endFrame": 3907
+          "text": "Googleは北欧地域で責任あるAIの活用を推進するため、\n教育機関とのパートナーシップを発表しました。",
+          "start": 107.88084507042254,
+          "end": 116.4,
+          "startFrame": 3236,
+          "endFrame": 3492
         }
       ],
-      "fullScript": "クリスティアーノ・ロナウドのPerplexity AIへの投資。サッカー選手のクリスティアーノ・ロナウド氏がAI検索スタートアップのPerplexity AI Inc.に投資し、パートナーシップを締結しました。これは著名人がAIエコシステムに参入する高プロファイルな事例となります。(Bloomberg Technology, 記事31)"
+      "fullScript": "GoogleのAI教育パートナーシップ。Googleは北欧地域で責任あるAIの活用を推進するため、教育機関とのパートナーシップを発表しました。"
     },
     {
       "index": 6,
-      "title": "新製品・新技術",
+      "title": "戦略的提携・パートナーシップ",
       "audioFile": "presentations/audio_output/slide_06.mp3",
-      "duration": 27.82,
-      "durationFrames": 834,
-      "startTime": 130.26,
-      "endTime": 158.07999999999998,
-      "startFrame": 3907,
-      "endFrame": 4742,
+      "duration": 19.4,
+      "durationFrames": 582,
+      "startTime": 116.4,
+      "endTime": 135.8,
+      "startFrame": 3492,
+      "endFrame": 4074,
       "subtitles": [
         {
-          "text": "Google Gemini 3およびGemini 3 Proの\n発表。",
-          "start": 130.26,
-          "end": 135.1,
-          "startFrame": 3907,
-          "endFrame": 4053
+          "text": "Tetherが人型ロボットスタートアップに出資。",
+          "start": 116.4,
+          "end": 119.64087591240876,
+          "startFrame": 3492,
+          "endFrame": 3589
         },
         {
-          "text": "Google/Alphabetは、新しいAIモデル「Gemin\ni 3」および「Gemini 3 Pro」を発表しました。",
-          "start": 135.4,
-          "end": 143.94117647058823,
-          "startFrame": 4062,
-          "endFrame": 4318
+          "text": "ステーブルコイン大手Tetherが",
+          "start": 119.94087591240876,
+          "end": 122.23649635036496,
+          "startFrame": 3598,
+          "endFrame": 3667
         },
         {
-          "text": "「Gemini 3 Pro」は特に\n「ビジョンAIのフロンティア」と位置づけられ",
-          "start": 144.24117647058824,
-          "end": 149.7929411764706,
-          "startFrame": 4327,
-          "endFrame": 4493
+          "text": "イタリアの人型ロボットスタートアップGenerative Bionicsへの7,000万ユーロの資金調達ラウンドに参加しました。",
+          "start": 122.53649635036496,
+          "end": 131.17883211678833,
+          "startFrame": 3676,
+          "endFrame": 3935
         },
         {
-          "text": "具体的なデモを通じてその多様な能力が示されています。",
-          "start": 150.09294117647062,
-          "end": 153.79411764705884,
-          "startFrame": 4502,
-          "endFrame": 4613
-        },
-        {
-          "text": "(Google/Alphabet, 記事1, 5, 8)",
-          "start": 154.09411764705885,
-          "end": 158.08000000000004,
-          "startFrame": 4622,
-          "endFrame": 4742
+          "text": "これはAI×ロボット分野への投資が\n活発化していることを示します。",
+          "start": 131.47883211678834,
+          "end": 135.8,
+          "startFrame": 3944,
+          "endFrame": 4074
         }
       ],
-      "fullScript": "Google Gemini 3およびGemini 3 Proの発表。Google/Alphabetは、新しいAIモデル「Gemini 3」および「Gemini 3 Pro」を発表しました。「Gemini 3 Pro」は特に「ビジョンAIのフロンティア」と位置づけられ、具体的なデモを通じてその多様な能力が示されています。(Google/Alphabet, 記事1, 5, 8)"
+      "fullScript": "Tetherが人型ロボットスタートアップに出資。ステーブルコイン大手Tetherが、イタリアの人型ロボットスタートアップGenerative Bionicsへの7,000万ユーロの資金調達ラウンドに参加しました。これはAI×ロボット分野への投資が活発化していることを示します。"
     },
     {
       "index": 7,
-      "title": "新製品・新技術",
+      "title": "大型契約・受注",
       "audioFile": "presentations/audio_output/slide_07.mp3",
-      "duration": 27.36,
-      "durationFrames": 820,
-      "startTime": 158.07999999999998,
-      "endTime": 185.44,
-      "startFrame": 4742,
-      "endFrame": 5563,
+      "duration": 18.46,
+      "durationFrames": 553,
+      "startTime": 135.8,
+      "endTime": 154.26000000000002,
+      "startFrame": 4074,
+      "endFrame": 4627,
       "subtitles": [
         {
-          "text": "Google Antigravityの\n需要急増とレートリミット向上。",
-          "start": 158.07999999999998,
-          "end": 162.48316831683167,
-          "startFrame": 4742,
-          "endFrame": 4874
+          "text": "NVIDIAの中国向けH200 AIチップ輸出承認見込み。",
+          "start": 135.8,
+          "end": 140.46612612612614,
+          "startFrame": 4074,
+          "endFrame": 4213
         },
         {
-          "text": "Googleの新しいエージェント開発プラットフォーム「Goog\nle Antigravity」に対する需要が非常に高く",
-          "start": 162.78316831683168,
-          "end": 170.29445544554454,
-          "startFrame": 4883,
-          "endFrame": 5108
+          "text": "トランプ政権がNVIDIAの\nH200 AIチップの中国への輸出を承認する見込みとなり",
+          "start": 140.76612612612615,
+          "end": 147.52396396396398,
+          "startFrame": 4222,
+          "endFrame": 4425
         },
         {
-          "text": "Google AI ProおよびUltraサブスクライバー向け\nにレートリミットが引き上げられました。",
-          "start": 170.59445544554455,
-          "end": 177.06970297029702,
-          "startFrame": 5117,
-          "endFrame": 5312
-        },
-        {
-          "text": "これはAIエージェントの概念が市場で\n急速に受け入れられていることを示します。",
-          "start": 177.36970297029703,
-          "end": 182.2908910891089,
-          "startFrame": 5321,
-          "endFrame": 5468
-        },
-        {
-          "text": "(Google/Alphabet, 記事6)",
-          "start": 182.5908910891089,
-          "end": 185.44,
-          "startFrame": 5477,
-          "endFrame": 5563
+          "text": "NVIDIAにとっては数十億ドル規模の\nビジネス回復の機会となる可能性があります。",
+          "start": 147.823963963964,
+          "end": 154.26000000000002,
+          "startFrame": 4434,
+          "endFrame": 4627
         }
       ],
-      "fullScript": "Google Antigravityの需要急増とレートリミット向上。Googleの新しいエージェント開発プラットフォーム「Google Antigravity」に対する需要が非常に高く、Google AI ProおよびUltraサブスクライバー向けにレートリミットが引き上げられました。これはAIエージェントの概念が市場で急速に受け入れられていることを示します。(Google/Alphabet, 記事6)"
+      "fullScript": "NVIDIAの中国向けH200 AIチップ輸出承認見込み。トランプ政権がNVIDIAのH200 AIチップの中国への輸出を承認する見込みとなり、NVIDIAにとっては数十億ドル規模のビジネス回復の機会となる可能性があります。"
     },
     {
       "index": 8,
@@ -345,17 +282,17 @@
       "audioFile": "presentations/audio_output/slide_08.mp3",
       "duration": 3.88,
       "durationFrames": 116,
-      "startTime": 185.44,
-      "endTime": 189.32,
-      "startFrame": 5563,
-      "endFrame": 5679,
+      "startTime": 154.26000000000002,
+      "endTime": 158.14000000000001,
+      "startFrame": 4627,
+      "endFrame": 4744,
       "subtitles": [
         {
           "text": "本日のAI・IT株式ニュースは以上です。",
-          "start": 185.44,
-          "end": 189.32,
-          "startFrame": 5563,
-          "endFrame": 5679
+          "start": 154.26000000000002,
+          "end": 158.14000000000001,
+          "startFrame": 4627,
+          "endFrame": 4744
         }
       ],
       "fullScript": "本日のAI・IT株式ニュースは以上です。"
@@ -366,52 +303,52 @@
       "audioFile": "presentations/audio_output/slide_09.mp3",
       "duration": 40.26,
       "durationFrames": 1207,
-      "startTime": 189.32,
-      "endTime": 229.57999999999998,
-      "startFrame": 5679,
-      "endFrame": 6887,
+      "startTime": 158.14000000000001,
+      "endTime": 198.4,
+      "startFrame": 4744,
+      "endFrame": 5952,
       "subtitles": [
         {
           "text": "ご視聴いただきありがとうございました。",
-          "start": 189.32,
-          "end": 192.48068669527896,
-          "startFrame": 5679,
-          "endFrame": 5774
+          "start": 158.14000000000001,
+          "end": 161.30068669527898,
+          "startFrame": 4744,
+          "endFrame": 4839
         },
         {
           "text": "実はこのレポート、if塾の塾頭高崎による「完全自動化への挑戦」\nプロジェクトの一環として、AIが自動生成しています。",
-          "start": 192.78068669527897,
-          "end": 202.26274678111588,
-          "startFrame": 5783,
-          "endFrame": 6067
+          "start": 161.600686695279,
+          "end": 171.0827467811159,
+          "startFrame": 4848,
+          "endFrame": 5132
         },
         {
           "text": "将来的には塾頭が執筆しているような自然な記事になることを目指し\nており、現時点では事実と異なる内容が含まれる可能性もあります。",
-          "start": 202.5627467811159,
-          "end": 212.87656652360516,
-          "startFrame": 6076,
-          "endFrame": 6386
+          "start": 171.3827467811159,
+          "end": 181.69656652360518,
+          "startFrame": 5141,
+          "endFrame": 5450
         },
         {
           "text": "この挑戦に共感していただけたら、\nぜひチャンネル登録とグッドボタンをよろしくお願いします！",
-          "start": 213.17656652360517,
-          "end": 220.49605150214595,
-          "startFrame": 6395,
-          "endFrame": 6614
+          "start": 181.9965665236052,
+          "end": 189.31605150214597,
+          "startFrame": 5459,
+          "endFrame": 5679
         },
         {
           "text": "また、無料のAI教育や導入コンサルも受け付けています。",
-          "start": 220.79605150214596,
-          "end": 225.2875536480687,
-          "startFrame": 6623,
-          "endFrame": 6758
+          "start": 189.61605150214598,
+          "end": 194.10755364806872,
+          "startFrame": 5688,
+          "endFrame": 5823
         },
         {
           "text": "詳しくは概要欄のリンクからお問い合わせください。",
-          "start": 225.5875536480687,
-          "end": 229.58000000000004,
-          "startFrame": 6767,
-          "endFrame": 6887
+          "start": 194.40755364806873,
+          "end": 198.40000000000006,
+          "startFrame": 5832,
+          "endFrame": 5952
         }
       ],
       "fullScript": "ご視聴いただきありがとうございました。実はこのレポート、if塾の塾頭高崎による「完全自動化への挑戦」プロジェクトの一環として、AIが自動生成しています。将来的には塾頭が執筆しているような自然な記事になることを目指しており、現時点では事実と異なる内容が含まれる可能性もあります。この挑戦に共感していただけたら、ぜひチャンネル登録とグッドボタンをよろしくお願いします！また、無料のAI教育や導入コンサルも受け付けています。詳しくは概要欄のリンクからお問い合わせください。"
