@@ -4,43 +4,43 @@
       "index": 1,
       "title": "AI/IT株式ニュース",
       "audio_file": "presentations/audio_output/slide_01.mp3",
-      "script": "うぃっすー！if塾AIニュースのお時間です。2025/12/09のAI・IT株式ニュースをお届けします。"
+      "script": "うぃっすー！if塾AIニュースのお時間です。2025/12/10のAI・IT株式ニュースをお届けします。"
     },
     {
       "index": 2,
       "title": "本日のサマリー",
       "audio_file": "presentations/audio_output/slide_02.mp3",
-      "script": "本日のAI/IT市場では、NVIDIAのH200 AIチップの対中輸出が許可されたことが大きな注目を集めました。これは地政学的要因とHuaweiの技術進展が絡む動きであり、AI半導体市場の競争構造に影響を与えそうです。また、OpenAIがSlackの元CEOをCROとして採用し、ビジネス展開を加速する姿勢を明確にしました。Googleはエンドユーザー向けからB2Bまで幅広いAI活用新機能を発表し、Microsoftはインドで大規模なAIクラウド投資を表明するなど、AIの社会実装とインフラ構築が加速しています。"
+      "script": "本日のAI/IT市場は、AI投資の収益化と地政学的リスクの顕在化が主要なテーマとなりました。OracleやAdobeの業績からは、AIインフラへの先行投資が直ちに収益に繋がらない実態が示され、企業がAIの価値をどのように収益化していくかという課題が浮き彫りになっています。一方、Ciscoの株価上昇は、AI支出が広範なITインフラ市場に波及し、ネットワーク機器などへの投資が活発であることを示唆しています。また、中国企業によるNVIDIAの禁止チップ利用疑惑や、Intel/AMDのチップがロシア製ミサイルに転用された疑惑は、米中技術覇権争いとサプライチェーンの複雑化、そして規制遵守の難しさを再認識させました。AIの電力需要増大も新たな課題として浮上しています。"
     },
     {
       "index": 3,
-      "title": "戦略的提携・パートナーシップ",
+      "title": "大型契約・受注",
       "audio_file": "presentations/audio_output/slide_03.mp3",
-      "script": "BMWとNVIDIAの工場計画における協力。BMWは2021年からNVIDIAの技術を活用して工場計画を仮想的に行うことでリードを得ており、産業界におけるNVIDIAのAI技術の浸透を示しています。(Bloomberg Technology, 記事28)"
+      "script": "Cisco Systemsの株価上昇とAI支出ブーム。Cisco Systemsの株価が25年以上ぶりにドットコムバブル期の記録を更新。これはAI支出ブームが要因の一つとされており、AIインフラ、特にネットワーク機器における大規模な受注や投資の活発化を示唆しています。（記事19）"
     },
     {
       "index": 4,
-      "title": "大型契約・受注",
+      "title": "新製品・新技術の発表",
       "audio_file": "presentations/audio_output/slide_04.mp3",
-      "script": "SLBによるデータセンター製造拡張への投資。SLBはデジタルおよびデータセンター機器の製造拠点拡大のため、ルイジアナ州シュリーブポートに3,000万ドルを投資すると発表しました。これはAIワークロードを支えるインフラ需要の高まりを反映しています。(Bloomberg Technology, 記事27)"
+      "script": "Google AIエコシステムの進化。"
     },
     {
       "index": 5,
-      "title": "大型契約・受注",
+      "title": "新製品・新技術の発表",
       "audio_file": "presentations/audio_output/slide_05.mp3",
-      "script": "MicrosoftによるインドへのAIクラウド投資。MicrosoftはインドのAIおよびクラウドコンピューティングサービスに4年間で175億ドルを投資すると発表しました。これは、世界最大の人口を抱えるインド市場でのAIインフラ構築と成長加速を狙った大規模な戦略的投資です。(Bloomberg Technology, 記事34)"
+      "script": "SpotifyのAIパーソナライゼーション。ユーザーがアルゴリズムを「制御」し、カスタマイズされたプレイリストを生成できるテストを開始しました。AIによるパーソナライゼーションの新たな方向性を示します。（記事21）"
     },
     {
       "index": 6,
-      "title": "新製品・新技術",
+      "title": "新製品・新技術の発表",
       "audio_file": "presentations/audio_output/slide_06.mp3",
-      "script": "Google Photosの新ビデオ編集ツール。GoogleはGoogle PhotosにAIを活用した5つの新しいビデオ編集ツールを導入しました。これにより、一般ユーザーのAI活用がさらに進むことが期待されます。(Google/Alphabet, 記事1)"
+      "script": "AmazonのKindleにAI機能搭載。AmazonがカラーディスプレイとAI機能を搭載した最上位モデルのKindleを発売しました。デバイスにおけるAI活用の拡大を示します。（記事37）"
     },
     {
       "index": 7,
-      "title": "新製品・新技術",
+      "title": "新製品・新技術の発表",
       "audio_file": "presentations/audio_output/slide_07.mp3",
-      "script": "Pixel Watch向けAI搭載ジェスチャーとSmart Reply。GoogleはPixel Watch向けに、AIを活用したジェスチャー機能とSmart Replyのアップデートを発表しました。ウェアラブルデバイスにおけるAIの利便性向上を推進しています。(Google/Alphabet, 記事3)"
+      "script": "MetaのAI収益化モデルへのピボット。MetaのCEOマーク・ザッカーバーグ氏が、収益化に繋がるAIモデルへの事業シフトを指示しました。AI投資を具体的な収益に結びつけるための戦略的転換を図ります。（記事36）"
     },
     {
       "index": 8,
