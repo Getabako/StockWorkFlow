@@ -1,0 +1,350 @@
+{
+  "fps": 30,
+  "totalDuration": 205.92,
+  "totalFrames": 6177,
+  "slides": [
+    {
+      "index": 1,
+      "title": "AI/IT株式ニュース",
+      "audioFile": "presentations/audio_output/slide_01.mp3",
+      "duration": 10.3,
+      "durationFrames": 309,
+      "startTime": 0,
+      "endTime": 10.3,
+      "startFrame": 0,
+      "endFrame": 309,
+      "subtitles": [
+        {
+          "text": "うぃっすー！",
+          "start": 0,
+          "end": 1.1192307692307695,
+          "startFrame": 0,
+          "endFrame": 33
+        },
+        {
+          "text": "if塾AIニュースのお時間です。",
+          "start": 1.4192307692307695,
+          "end": 4.403846153846155,
+          "startFrame": 42,
+          "endFrame": 132
+        },
+        {
+          "text": "2025/12/11のAI・IT株式ニュースをお届けします。",
+          "start": 4.703846153846155,
+          "end": 10.3,
+          "startFrame": 141,
+          "endFrame": 309
+        }
+      ],
+      "fullScript": "うぃっすー！if塾AIニュースのお時間です。2025/12/11のAI・IT株式ニュースをお届けします。"
+    },
+    {
+      "index": 2,
+      "title": "本日のサマリー",
+      "audioFile": "presentations/audio_output/slide_02.mp3",
+      "duration": 42.72,
+      "durationFrames": 1281,
+      "startTime": 10.3,
+      "endTime": 53.019999999999996,
+      "startFrame": 309,
+      "endFrame": 1590,
+      "subtitles": [
+        {
+          "text": "今日のAI/IT市場は、OpenAIがDisneyからの10億\nドル投資とIPライセンス契約を獲得し",
+          "start": 10.3,
+          "end": 18.503548387096775,
+          "startFrame": 309,
+          "endFrame": 555
+        },
+        {
+          "text": "エンターテイメント領域でのAI活用を加速させました。",
+          "start": 18.803548387096775,
+          "end": 23.156451612903226,
+          "startFrame": 564,
+          "endFrame": 694
+        },
+        {
+          "text": "GoogleもGemini 3を基盤とした新機能や開発者ツール\nを多数発表し、OpenAIとの競争が激化しています。",
+          "start": 23.456451612903226,
+          "end": 32.99935483870968,
+          "startFrame": 703,
+          "endFrame": 989
+        },
+        {
+          "text": "AIインフラ面では、RivianがNVIDIAから脱却し自社A\nIチップを開発するなど、カスタムチップ戦略が加速。",
+          "start": 33.299354838709675,
+          "end": 42.67483870967742,
+          "startFrame": 998,
+          "endFrame": 1280
+        },
+        {
+          "text": "一方でOracleはAI投資の増大が先行し株価を大きく下げるな\nど、AI投資の収益化には依然課題があることが示されました。",
+          "start": 42.974838709677414,
+          "end": 53.019999999999996,
+          "startFrame": 1289,
+          "endFrame": 1590
+        }
+      ],
+      "fullScript": "今日のAI/IT市場は、OpenAIがDisneyからの10億ドル投資とIPライセンス契約を獲得し、エンターテイメント領域でのAI活用を加速させました。GoogleもGemini 3を基盤とした新機能や開発者ツールを多数発表し、OpenAIとの競争が激化しています。AIインフラ面では、RivianがNVIDIAから脱却し自社AIチップを開発するなど、カスタムチップ戦略が加速。一方でOracleはAI投資の増大が先行し株価を大きく下げるなど、AI投資の収益化には依然課題があることが示されました。"
+    },
+    {
+      "index": 3,
+      "title": "M&A・企業買収",
+      "audioFile": "presentations/audio_output/slide_03.mp3",
+      "duration": 17.12,
+      "durationFrames": 513,
+      "startTime": 53.019999999999996,
+      "endTime": 70.14,
+      "startFrame": 1590,
+      "endFrame": 2104,
+      "subtitles": [
+        {
+          "text": "DisneyがOpenAIに\n10億ドル投資 (記事11, 15, 20, 33)。",
+          "start": 53.019999999999996,
+          "end": 59.78098039215686,
+          "startFrame": 1590,
+          "endFrame": 1793
+        },
+        {
+          "text": "Walt Disney Co.がOpenAIに10億ドルを投資\nし、その評価額と市場への影響力をさらに高める形となりました。",
+          "start": 60.08098039215686,
+          "end": 70.14,
+          "startFrame": 1802,
+          "endFrame": 2104
+        }
+      ],
+      "fullScript": "DisneyがOpenAIに10億ドル投資 (記事11, 15, 20, 33)。Walt Disney Co.がOpenAIに10億ドルを投資し、その評価額と市場への影響力をさらに高める形となりました。"
+    },
+    {
+      "index": 4,
+      "title": "戦略的提携・パートナーシップ",
+      "audioFile": "presentations/audio_output/slide_04.mp3",
+      "duration": 27.2,
+      "durationFrames": 816,
+      "startTime": 70.14,
+      "endTime": 97.34,
+      "startFrame": 2104,
+      "endFrame": 2920,
+      "subtitles": [
+        {
+          "text": "DisneyがOpenAIとキャラクターライセンス契約\n(記事11, 15, 20, 33)",
+          "start": 70.14,
+          "end": 77.35646341463415,
+          "startFrame": 2104,
+          "endFrame": 2320
+        },
+        {
+          "text": "Disneyは象徴的なキャラクター（ミッキーマウス",
+          "start": 77.65646341463415,
+          "end": 81.66560975609757,
+          "startFrame": 2329,
+          "endFrame": 2449
+        },
+        {
+          "text": "シンデレラなど）をOpenAIのAI動画プラットフォーム「So\nra」での使用を許可する契約を締結しました。",
+          "start": 81.96560975609756,
+          "end": 90.465,
+          "startFrame": 2458,
+          "endFrame": 2713
+        },
+        {
+          "text": "これにより、AIがエンターテイメントコンテンツ制作に深く関与す\nる動きが加速します。",
+          "start": 90.765,
+          "end": 97.34,
+          "startFrame": 2722,
+          "endFrame": 2920
+        }
+      ],
+      "fullScript": "DisneyがOpenAIとキャラクターライセンス契約 (記事11, 15, 20, 33)。Disneyは象徴的なキャラクター（ミッキーマウス、シンデレラなど）をOpenAIのAI動画プラットフォーム「Sora」での使用を許可する契約を締結しました。これにより、AIがエンターテイメントコンテンツ制作に深く関与する動きが加速します。"
+    },
+    {
+      "index": 5,
+      "title": "戦略的提携・パートナーシップ",
+      "audioFile": "presentations/audio_output/slide_05.mp3",
+      "duration": 17.36,
+      "durationFrames": 520,
+      "startTime": 97.34,
+      "endTime": 114.7,
+      "startFrame": 2920,
+      "endFrame": 3441,
+      "subtitles": [
+        {
+          "text": "MattelとOpenAIがコラボレーション (記事37)。",
+          "start": 97.34,
+          "end": 102.03906542056075,
+          "startFrame": 2920,
+          "endFrame": 3061
+        },
+        {
+          "text": "Mattelの会長兼CEOは、\nOpenAIとの新しいコラボレーションを立ち上げると語り",
+          "start": 102.33906542056074,
+          "end": 109.07439252336448,
+          "startFrame": 3070,
+          "endFrame": 3272
+        },
+        {
+          "text": "IPを活用したエンターテイメント分野で\nのAIの可能性を示唆しました。",
+          "start": 109.37439252336448,
+          "end": 114.69999999999999,
+          "startFrame": 3281,
+          "endFrame": 3440
+        }
+      ],
+      "fullScript": "MattelとOpenAIがコラボレーション (記事37)。Mattelの会長兼CEOは、OpenAIとの新しいコラボレーションを立ち上げると語り、IPを活用したエンターテイメント分野でのAIの可能性を示唆しました。"
+    },
+    {
+      "index": 6,
+      "title": "戦略的提携・パートナーシップ",
+      "audioFile": "presentations/audio_output/slide_06.mp3",
+      "duration": 23.58,
+      "durationFrames": 707,
+      "startTime": 114.7,
+      "endTime": 138.28,
+      "startFrame": 3441,
+      "endFrame": 4148,
+      "subtitles": [
+        {
+          "text": "RivianがNVIDIAからの脱却を\n発表 (記事18, 22)。",
+          "start": 114.7,
+          "end": 119.65655629139073,
+          "startFrame": 3441,
+          "endFrame": 3589
+        },
+        {
+          "text": "Rivian Automotive Inc.は、\n将来の車両における自動運転機能強化のため",
+          "start": 119.95655629139073,
+          "end": 126.56529801324503,
+          "startFrame": 3598,
+          "endFrame": 3796
+        },
+        {
+          "text": "NVIDIAの技術に代わる自社製AIチップを発表しました。",
+          "start": 126.86529801324502,
+          "end": 131.221059602649,
+          "startFrame": 3805,
+          "endFrame": 3936
+        },
+        {
+          "text": "これはカスタムチップによるコスト削減と\nサプライチェーンの多様化を狙うトレンドに合致します。",
+          "start": 131.52105960264902,
+          "end": 138.28,
+          "startFrame": 3945,
+          "endFrame": 4148
+        }
+      ],
+      "fullScript": "RivianがNVIDIAからの脱却を発表 (記事18, 22)。Rivian Automotive Inc.は、将来の車両における自動運転機能強化のため、NVIDIAの技術に代わる自社製AIチップを発表しました。これはカスタムチップによるコスト削減とサプライチェーンの多様化を狙うトレンドに合致します。"
+    },
+    {
+      "index": 7,
+      "title": "戦略的提携・パートナーシップ",
+      "audioFile": "presentations/audio_output/slide_07.mp3",
+      "duration": 23.5,
+      "durationFrames": 705,
+      "startTime": 138.28,
+      "endTime": 161.78,
+      "startFrame": 4148,
+      "endFrame": 4853,
+      "subtitles": [
+        {
+          "text": "EQTが投資先ロボットスタートアップ1xから\nヒューマノイドロボットを導入 (記事36)。",
+          "start": 138.28,
+          "end": 145.9716030534351,
+          "startFrame": 4148,
+          "endFrame": 4379
+        },
+        {
+          "text": "プライベートエクイティ企業EQT ABは、投資先企業に10,0\n00体のヒューマノイドロボットを展開する計画を発表。",
+          "start": 146.27160305343511,
+          "end": 156.2357251908397,
+          "startFrame": 4388,
+          "endFrame": 4687
+        },
+        {
+          "text": "AI×ロボット戦略の具体的な大型導入事例として注目されます。",
+          "start": 156.5357251908397,
+          "end": 161.78000000000003,
+          "startFrame": 4696,
+          "endFrame": 4853
+        }
+      ],
+      "fullScript": "EQTが投資先ロボットスタートアップ1xからヒューマノイドロボットを導入 (記事36)。プライベートエクイティ企業EQT ABは、投資先企業に10,000体のヒューマノイドロボットを展開する計画を発表。AI×ロボット戦略の具体的な大型導入事例として注目されます。"
+    },
+    {
+      "index": 8,
+      "title": "まとめ",
+      "audioFile": "presentations/audio_output/slide_08.mp3",
+      "duration": 3.88,
+      "durationFrames": 116,
+      "startTime": 161.78,
+      "endTime": 165.66,
+      "startFrame": 4853,
+      "endFrame": 4969,
+      "subtitles": [
+        {
+          "text": "本日のAI・IT株式ニュースは以上です。",
+          "start": 161.78,
+          "end": 165.66,
+          "startFrame": 4853,
+          "endFrame": 4969
+        }
+      ],
+      "fullScript": "本日のAI・IT株式ニュースは以上です。"
+    },
+    {
+      "index": 9,
+      "title": "塾頭高崎の完全自動化への挑戦",
+      "audioFile": "presentations/audio_output/slide_09.mp3",
+      "duration": 40.26,
+      "durationFrames": 1207,
+      "startTime": 165.66,
+      "endTime": 205.92,
+      "startFrame": 4969,
+      "endFrame": 6177,
+      "subtitles": [
+        {
+          "text": "ご視聴いただきありがとうございました。",
+          "start": 165.66,
+          "end": 168.82068669527897,
+          "startFrame": 4969,
+          "endFrame": 5064
+        },
+        {
+          "text": "実はこのレポート、if塾の塾頭高崎による「完全自動化への挑戦」\nプロジェクトの一環として、AIが自動生成しています。",
+          "start": 169.12068669527898,
+          "end": 178.60274678111588,
+          "startFrame": 5073,
+          "endFrame": 5358
+        },
+        {
+          "text": "将来的には塾頭が執筆しているような自然な記事になることを目指し\nており、現時点では事実と異なる内容が含まれる可能性もあります。",
+          "start": 178.9027467811159,
+          "end": 189.21656652360517,
+          "startFrame": 5367,
+          "endFrame": 5676
+        },
+        {
+          "text": "この挑戦に共感していただけたら、\nぜひチャンネル登録とグッドボタンをよろしくお願いします！",
+          "start": 189.51656652360518,
+          "end": 196.83605150214595,
+          "startFrame": 5685,
+          "endFrame": 5905
+        },
+        {
+          "text": "また、無料のAI教育や導入コンサルも受け付けています。",
+          "start": 197.13605150214596,
+          "end": 201.6275536480687,
+          "startFrame": 5914,
+          "endFrame": 6048
+        },
+        {
+          "text": "詳しくは概要欄のリンクからお問い合わせください。",
+          "start": 201.9275536480687,
+          "end": 205.92000000000004,
+          "startFrame": 6057,
+          "endFrame": 6177
+        }
+      ],
+      "fullScript": "ご視聴いただきありがとうございました。実はこのレポート、if塾の塾頭高崎による「完全自動化への挑戦」プロジェクトの一環として、AIが自動生成しています。将来的には塾頭が執筆しているような自然な記事になることを目指しており、現時点では事実と異なる内容が含まれる可能性もあります。この挑戦に共感していただけたら、ぜひチャンネル登録とグッドボタンをよろしくお願いします！また、無料のAI教育や導入コンサルも受け付けています。詳しくは概要欄のリンクからお問い合わせください。"
+    }
+  ]
+}

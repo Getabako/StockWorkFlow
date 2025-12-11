@@ -4,43 +4,43 @@
       "index": 1,
       "title": "AI/IT株式ニュース",
       "audio_file": "presentations/audio_output/slide_01.mp3",
-      "script": "うぃっすー！if塾AIニュースのお時間です。2025/12/10のAI・IT株式ニュースをお届けします。"
+      "script": "うぃっすー！if塾AIニュースのお時間です。2025/12/11のAI・IT株式ニュースをお届けします。"
     },
     {
       "index": 2,
       "title": "本日のサマリー",
       "audio_file": "presentations/audio_output/slide_02.mp3",
-      "script": "本日のAI/IT市場は、AI投資の収益化と地政学的リスクの顕在化が主要なテーマとなりました。OracleやAdobeの業績からは、AIインフラへの先行投資が直ちに収益に繋がらない実態が示され、企業がAIの価値をどのように収益化していくかという課題が浮き彫りになっています。一方、Ciscoの株価上昇は、AI支出が広範なITインフラ市場に波及し、ネットワーク機器などへの投資が活発であることを示唆しています。また、中国企業によるNVIDIAの禁止チップ利用疑惑や、Intel/AMDのチップがロシア製ミサイルに転用された疑惑は、米中技術覇権争いとサプライチェーンの複雑化、そして規制遵守の難しさを再認識させました。AIの電力需要増大も新たな課題として浮上しています。"
+      "script": "今日のAI/IT市場は、OpenAIがDisneyからの10億ドル投資とIPライセンス契約を獲得し、エンターテイメント領域でのAI活用を加速させました。GoogleもGemini 3を基盤とした新機能や開発者ツールを多数発表し、OpenAIとの競争が激化しています。AIインフラ面では、RivianがNVIDIAから脱却し自社AIチップを開発するなど、カスタムチップ戦略が加速。一方でOracleはAI投資の増大が先行し株価を大きく下げるなど、AI投資の収益化には依然課題があることが示されました。"
     },
     {
       "index": 3,
-      "title": "大型契約・受注",
+      "title": "M&A・企業買収",
       "audio_file": "presentations/audio_output/slide_03.mp3",
-      "script": "Cisco Systemsの株価上昇とAI支出ブーム。Cisco Systemsの株価が25年以上ぶりにドットコムバブル期の記録を更新。これはAI支出ブームが要因の一つとされており、AIインフラ、特にネットワーク機器における大規模な受注や投資の活発化を示唆しています。（記事19）"
+      "script": "DisneyがOpenAIに10億ドル投資 (記事11, 15, 20, 33)。Walt Disney Co.がOpenAIに10億ドルを投資し、その評価額と市場への影響力をさらに高める形となりました。"
     },
     {
       "index": 4,
-      "title": "新製品・新技術の発表",
+      "title": "戦略的提携・パートナーシップ",
       "audio_file": "presentations/audio_output/slide_04.mp3",
-      "script": "Google AIエコシステムの進化。"
+      "script": "DisneyがOpenAIとキャラクターライセンス契約 (記事11, 15, 20, 33)。Disneyは象徴的なキャラクター（ミッキーマウス、シンデレラなど）をOpenAIのAI動画プラットフォーム「Sora」での使用を許可する契約を締結しました。これにより、AIがエンターテイメントコンテンツ制作に深く関与する動きが加速します。"
     },
     {
       "index": 5,
-      "title": "新製品・新技術の発表",
+      "title": "戦略的提携・パートナーシップ",
       "audio_file": "presentations/audio_output/slide_05.mp3",
-      "script": "SpotifyのAIパーソナライゼーション。ユーザーがアルゴリズムを「制御」し、カスタマイズされたプレイリストを生成できるテストを開始しました。AIによるパーソナライゼーションの新たな方向性を示します。（記事21）"
+      "script": "MattelとOpenAIがコラボレーション (記事37)。Mattelの会長兼CEOは、OpenAIとの新しいコラボレーションを立ち上げると語り、IPを活用したエンターテイメント分野でのAIの可能性を示唆しました。"
     },
     {
       "index": 6,
-      "title": "新製品・新技術の発表",
+      "title": "戦略的提携・パートナーシップ",
       "audio_file": "presentations/audio_output/slide_06.mp3",
-      "script": "AmazonのKindleにAI機能搭載。AmazonがカラーディスプレイとAI機能を搭載した最上位モデルのKindleを発売しました。デバイスにおけるAI活用の拡大を示します。（記事37）"
+      "script": "RivianがNVIDIAからの脱却を発表 (記事18, 22)。Rivian Automotive Inc.は、将来の車両における自動運転機能強化のため、NVIDIAの技術に代わる自社製AIチップを発表しました。これはカスタムチップによるコスト削減とサプライチェーンの多様化を狙うトレンドに合致します。"
     },
     {
       "index": 7,
-      "title": "新製品・新技術の発表",
+      "title": "戦略的提携・パートナーシップ",
       "audio_file": "presentations/audio_output/slide_07.mp3",
-      "script": "MetaのAI収益化モデルへのピボット。MetaのCEOマーク・ザッカーバーグ氏が、収益化に繋がるAIモデルへの事業シフトを指示しました。AI投資を具体的な収益に結びつけるための戦略的転換を図ります。（記事36）"
+      "script": "EQTが投資先ロボットスタートアップ1xからヒューマノイドロボットを導入 (記事36)。プライベートエクイティ企業EQT ABは、投資先企業に10,000体のヒューマノイドロボットを展開する計画を発表。AI×ロボット戦略の具体的な大型導入事例として注目されます。"
     },
     {
       "index": 8,
