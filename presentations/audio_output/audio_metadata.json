@@ -4,43 +4,43 @@
       "index": 1,
       "title": "AI/IT株式ニュース",
       "audio_file": "presentations/audio_output/slide_01.mp3",
-      "script": "うぃっすー！if塾AIニュースのお時間です。2025/12/11のAI・IT株式ニュースをお届けします。"
+      "script": "うぃっすー！if塾AIニュースのお時間です。2025/12/12のAI・IT株式ニュースをお届けします。"
     },
     {
       "index": 2,
       "title": "本日のサマリー",
       "audio_file": "presentations/audio_output/slide_02.mp3",
-      "script": "今日のAI/IT市場は、OpenAIがDisneyからの10億ドル投資とIPライセンス契約を獲得し、エンターテイメント領域でのAI活用を加速させました。GoogleもGemini 3を基盤とした新機能や開発者ツールを多数発表し、OpenAIとの競争が激化しています。AIインフラ面では、RivianがNVIDIAから脱却し自社AIチップを開発するなど、カスタムチップ戦略が加速。一方でOracleはAI投資の増大が先行し株価を大きく下げるなど、AI投資の収益化には依然課題があることが示されました。"
+      "script": "今日のAI/IT市場は、大規模なAIインフラ投資に対する期待と現実とのギャップが顕在化し、調整局面を迎えました。Broadcomの業績見通しとOracleのOpenAI向けデータセンター建設の遅延が報じられ、AI関連株全体に売り圧力がかかりました。一方で、GoogleはGeminiモデルを核とした製品強化を継続し、AI技術の応用を広げています。ソフトバンクグループはAI関連のデータセンター買収を検討するなど、戦略的な動きも見られます。"
     },
     {
       "index": 3,
       "title": "M&A・企業買収",
       "audio_file": "presentations/audio_output/slide_03.mp3",
-      "script": "DisneyがOpenAIに10億ドル投資 (記事11, 15, 20, 33)。Walt Disney Co.がOpenAIに10億ドルを投資し、その評価額と市場への影響力をさらに高める形となりました。"
+      "script": "ソフトバンクグループのデータセンター買収検討。ソフトバンクグループは、AIの拡大を見据え、データセンター運営企業Switch Inc.などの買収を検討している模様です。デジタルインフラへの積極投資の姿勢がうかがえます。(記事34)"
     },
     {
       "index": 4,
-      "title": "戦略的提携・パートナーシップ",
+      "title": "M&A・企業買収",
       "audio_file": "presentations/audio_output/slide_04.mp3",
-      "script": "DisneyがOpenAIとキャラクターライセンス契約 (記事11, 15, 20, 33)。Disneyは象徴的なキャラクター（ミッキーマウス、シンデレラなど）をOpenAIのAI動画プラットフォーム「Sora」での使用を許可する契約を締結しました。これにより、AIがエンターテイメントコンテンツ制作に深く関与する動きが加速します。"
+      "script": "データセンターの株式売却入札。Macquarie Capitalが保有するオランダのハイパースケールデータセンターの過半数株式売却において、Igneo Infrastructure Partnersと日本のOrix Corp.が次の入札ラウンドに進んでいます。データセンター市場の投資熱の高まりを示しています。(記事29)"
     },
     {
       "index": 5,
       "title": "戦略的提携・パートナーシップ",
       "audio_file": "presentations/audio_output/slide_05.mp3",
-      "script": "MattelとOpenAIがコラボレーション (記事37)。Mattelの会長兼CEOは、OpenAIとの新しいコラボレーションを立ち上げると語り、IPを活用したエンターテイメント分野でのAIの可能性を示唆しました。"
+      "script": "Googleと英国NQCCの量子コンピューティング提携。Googleは、英国国立量子コンピューティングセンター（NQCC）を通じて、GoogleのWillow量子プロセッサを英国の最先端研究に活用するための提携を発表しました。未来の計算基盤技術における協業を強化しています。(記事4)"
     },
     {
       "index": 6,
-      "title": "戦略的提携・パートナーシップ",
+      "title": "大型契約・受注",
       "audio_file": "presentations/audio_output/slide_06.mp3",
-      "script": "RivianがNVIDIAからの脱却を発表 (記事18, 22)。Rivian Automotive Inc.は、将来の車両における自動運転機能強化のため、NVIDIAの技術に代わる自社製AIチップを発表しました。これはカスタムチップによるコスト削減とサプライチェーンの多様化を狙うトレンドに合致します。"
+      "script": "OracleのOpenAI向けデータセンター建設遅延。Oracle Corp.は、AIモデル開発企業OpenAI向けに開発中のデータセンターの一部完成時期を、2027年から2028年に延期しました。この遅延はOpenAIのインフラ展開計画に影響を与える可能性があり、市場の懸念材料となっています。(記事12, 10, 14, 20)"
     },
     {
       "index": 7,
-      "title": "戦略的提携・パートナーシップ",
+      "title": "大型契約・受注",
       "audio_file": "presentations/audio_output/slide_07.mp3",
-      "script": "EQTが投資先ロボットスタートアップ1xからヒューマノイドロボットを導入 (記事36)。プライベートエクイティ企業EQT ABは、投資先企業に10,000体のヒューマノイドロボットを展開する計画を発表。AI×ロボット戦略の具体的な大型導入事例として注目されます。"
+      "script": "AIキャンパス契約の終了。AIキャンパス開発企業Fermi Inc.は、ウェストテキサスにおけるAIキャンパスに関する1億5000万ドルの契約がテナントによって終了されたことを発表し、株価が急落しました。(記事17)"
     },
     {
       "index": 8,
