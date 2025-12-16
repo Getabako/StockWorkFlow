@@ -1,0 +1,399 @@
+{
+  "fps": 30,
+  "totalDuration": 186.56,
+  "totalFrames": 5596,
+  "slides": [
+    {
+      "index": 1,
+      "title": "AI/IT株式ニュース",
+      "audioFile": "presentations/audio_output/slide_01.mp3",
+      "duration": 10.24,
+      "durationFrames": 307,
+      "startTime": 0,
+      "endTime": 10.24,
+      "startFrame": 0,
+      "endFrame": 307,
+      "subtitles": [
+        {
+          "text": "うぃっすー！",
+          "start": 0,
+          "end": 1.1123076923076924,
+          "startFrame": 0,
+          "endFrame": 33
+        },
+        {
+          "text": "if塾AIニュースのお時間です。",
+          "start": 1.4123076923076925,
+          "end": 4.378461538461539,
+          "startFrame": 42,
+          "endFrame": 131
+        },
+        {
+          "text": "2025/12/16のAI・IT株式ニュースをお届けします。",
+          "start": 4.678461538461539,
+          "end": 10.24,
+          "startFrame": 140,
+          "endFrame": 307
+        }
+      ],
+      "fullScript": "うぃっすー！if塾AIニュースのお時間です。2025/12/16のAI・IT株式ニュースをお届けします。"
+    },
+    {
+      "index": 2,
+      "title": "本日のサマリー",
+      "audioFile": "presentations/audio_output/slide_02.mp3",
+      "duration": 45.14,
+      "durationFrames": 1354,
+      "startTime": 10.24,
+      "endTime": 55.38,
+      "startFrame": 307,
+      "endFrame": 1661,
+      "subtitles": [
+        {
+          "text": "今日のAI/IT市場は、OpenAIが元英国財務大臣をグローバ\nルAIインフラ推進に招き入れるなど",
+          "start": 10.24,
+          "end": 19.230214592274677,
+          "startFrame": 307,
+          "endFrame": 576
+        },
+        {
+          "text": "戦略的な組織強化と製品改善（ChatGPT画像生成の\n高速化）を進める一方",
+          "start": 19.530214592274678,
+          "end": 26.272875536480687,
+          "startFrame": 585,
+          "endFrame": 788
+        },
+        {
+          "text": "Googleも新たなAI生産性エージェント「CC」を発表し、\n競争が激化しています。",
+          "start": 26.572875536480687,
+          "end": 34.25201716738198,
+          "startFrame": 797,
+          "endFrame": 1027
+        },
+        {
+          "text": "データ分析大手Databricksが\n大型資金調達で高評価を維持し",
+          "start": 34.552017167381976,
+          "end": 40.54549356223176,
+          "startFrame": 1036,
+          "endFrame": 1216
+        },
+        {
+          "text": "AIインフラとしての電力供給確保や\n重要鉱物サプライチェーンの安定化に向けた動きも加速しており",
+          "start": 40.84549356223176,
+          "end": 49.46111587982833,
+          "startFrame": 1225,
+          "endFrame": 1483
+        },
+        {
+          "text": "AI経済圏の拡大と基盤整備が市場の主要な焦点となっています。",
+          "start": 49.761115879828324,
+          "end": 55.379999999999995,
+          "startFrame": 1492,
+          "endFrame": 1661
+        }
+      ],
+      "fullScript": "今日のAI/IT市場は、OpenAIが元英国財務大臣をグローバルAIインフラ推進に招き入れるなど、戦略的な組織強化と製品改善（ChatGPT画像生成の高速化）を進める一方、Googleも新たなAI生産性エージェント「CC」を発表し、競争が激化しています。データ分析大手Databricksが大型資金調達で高評価を維持し、AIインフラとしての電力供給確保や重要鉱物サプライチェーンの安定化に向けた動きも加速しており、AI経済圏の拡大と基盤整備が市場の主要な焦点となっています。"
+    },
+    {
+      "index": 3,
+      "title": "M&A・企業買収",
+      "audioFile": "presentations/audio_output/slide_03.mp3",
+      "duration": 15.84,
+      "durationFrames": 475,
+      "startTime": 55.38,
+      "endTime": 71.22,
+      "startFrame": 1661,
+      "endFrame": 2136,
+      "subtitles": [
+        {
+          "text": "テックM&Aブームの予測。",
+          "start": 55.38,
+          "end": 57.3222,
+          "startFrame": 1661,
+          "endFrame": 1719
+        },
+        {
+          "text": "Morgan Stanleyの幹部が、\nテック業界が記録的なM&A活動期間に入り",
+          "start": 57.6222,
+          "end": 63.4488,
+          "startFrame": 1728,
+          "endFrame": 1903
+        },
+        {
+          "text": "「マルチイヤーのM&Aブーム」が始まっていると指摘。",
+          "start": 63.748799999999996,
+          "end": 67.6332,
+          "startFrame": 1912,
+          "endFrame": 2028
+        },
+        {
+          "text": "（Bloomberg Technology）",
+          "start": 67.9332,
+          "end": 71.22,
+          "startFrame": 2037,
+          "endFrame": 2136
+        }
+      ],
+      "fullScript": "テックM&Aブームの予測。Morgan Stanleyの幹部が、テック業界が記録的なM&A活動期間に入り、「マルチイヤーのM&Aブーム」が始まっていると指摘。（Bloomberg Technology）"
+    },
+    {
+      "index": 4,
+      "title": "M&A・企業買収",
+      "audioFile": "presentations/audio_output/slide_04.mp3",
+      "duration": 15.58,
+      "durationFrames": 467,
+      "startTime": 71.22,
+      "endTime": 86.8,
+      "startFrame": 2136,
+      "endFrame": 2604,
+      "subtitles": [
+        {
+          "text": "Twenty One Capitalの合併。",
+          "start": 71.22,
+          "end": 73.74312499999999,
+          "startFrame": 2136,
+          "endFrame": 2212
+        },
+        {
+          "text": "ソフトバンクグループも\n関与するビットコイン企業Twenty One Capitalが",
+          "start": 74.04312499999999,
+          "end": 78.85999999999999,
+          "startFrame": 2221,
+          "endFrame": 2365
+        },
+        {
+          "text": "Cantor Equity Partnersと\nの合併により公開企業となることを発表。",
+          "start": 79.15999999999998,
+          "end": 83.97687499999998,
+          "startFrame": 2374,
+          "endFrame": 2519
+        },
+        {
+          "text": "（Bloomberg Technology）",
+          "start": 84.27687499999998,
+          "end": 86.79999999999997,
+          "startFrame": 2528,
+          "endFrame": 2603
+        }
+      ],
+      "fullScript": "Twenty One Capitalの合併。ソフトバンクグループも関与するビットコイン企業Twenty One Capitalが、Cantor Equity Partnersとの合併により公開企業となることを発表。（Bloomberg Technology）"
+    },
+    {
+      "index": 5,
+      "title": "戦略的提携・パートナーシップ",
+      "audioFile": "presentations/audio_output/slide_05.mp3",
+      "duration": 20.82,
+      "durationFrames": 624,
+      "startTime": 86.8,
+      "endTime": 107.62,
+      "startFrame": 2604,
+      "endFrame": 3228,
+      "subtitles": [
+        {
+          "text": "AIサプライチェーンの確保。",
+          "start": 86.8,
+          "end": 89.0700826446281,
+          "startFrame": 2604,
+          "endFrame": 2672
+        },
+        {
+          "text": "米国務省は、Pax Silicaサミットを通じて、\n同盟国と連携し重要鉱物、半導体",
+          "start": 89.3700826446281,
+          "end": 95.85603305785123,
+          "startFrame": 2681,
+          "endFrame": 2875
+        },
+        {
+          "text": "AIインフラへのアクセスを確保する戦略を進めていることを発表。",
+          "start": 96.15603305785123,
+          "end": 101.18264462809917,
+          "startFrame": 2884,
+          "endFrame": 3035
+        },
+        {
+          "text": "中国への依存度を減らす狙い。",
+          "start": 101.48264462809917,
+          "end": 103.75272727272727,
+          "startFrame": 3044,
+          "endFrame": 3112
+        },
+        {
+          "text": "（Bloomberg Technology）",
+          "start": 104.05272727272727,
+          "end": 107.61999999999999,
+          "startFrame": 3121,
+          "endFrame": 3228
+        }
+      ],
+      "fullScript": "AIサプライチェーンの確保。米国務省は、Pax Silicaサミットを通じて、同盟国と連携し重要鉱物、半導体、AIインフラへのアクセスを確保する戦略を進めていることを発表。中国への依存度を減らす狙い。（Bloomberg Technology）"
+    },
+    {
+      "index": 6,
+      "title": "戦略的提携・パートナーシップ",
+      "audioFile": "presentations/audio_output/slide_06.mp3",
+      "duration": 18.2,
+      "durationFrames": 546,
+      "startTime": 107.62,
+      "endTime": 125.82000000000001,
+      "startFrame": 3228,
+      "endFrame": 3774,
+      "subtitles": [
+        {
+          "text": "AmazonとJPMorgan支援スタートアップの提携。",
+          "start": 107.62,
+          "end": 111.368031496063,
+          "startFrame": 3228,
+          "endFrame": 3341
+        },
+        {
+          "text": "Amazon.comがJPMorgan Chase &\nCo.支援のスタートアップと提携し",
+          "start": 111.668031496063,
+          "end": 117.55779527559055,
+          "startFrame": 3350,
+          "endFrame": 3526
+        },
+        {
+          "text": "オンライン販売者向けに融資を提供。",
+          "start": 117.85779527559055,
+          "end": 120.13338582677164,
+          "startFrame": 3535,
+          "endFrame": 3604
+        },
+        {
+          "text": "テクノロジーと金融の連携が加速。",
+          "start": 120.43338582677164,
+          "end": 122.5751181102362,
+          "startFrame": 3613,
+          "endFrame": 3677
+        },
+        {
+          "text": "（Bloomberg Technology）",
+          "start": 122.8751181102362,
+          "end": 125.81999999999998,
+          "startFrame": 3686,
+          "endFrame": 3774
+        }
+      ],
+      "fullScript": "AmazonとJPMorgan支援スタートアップの提携。Amazon.comがJPMorgan Chase & Co.支援のスタートアップと提携し、オンライン販売者向けに融資を提供。テクノロジーと金融の連携が加速。（Bloomberg Technology）"
+    },
+    {
+      "index": 7,
+      "title": "新製品・新技術",
+      "audioFile": "presentations/audio_output/slide_07.mp3",
+      "duration": 16.6,
+      "durationFrames": 498,
+      "startTime": 125.82000000000001,
+      "endTime": 142.42000000000002,
+      "startFrame": 3774,
+      "endFrame": 4272,
+      "subtitles": [
+        {
+          "text": "GoogleのAI生産性エージェント「CC」。",
+          "start": 125.82000000000001,
+          "end": 129.3601960784314,
+          "startFrame": 3774,
+          "endFrame": 3880
+        },
+        {
+          "text": "Google Labsが、Geminiをベースとした実験的なA\nI生産性エージェント「CC」を発表。",
+          "start": 129.6601960784314,
+          "end": 137.20235294117649,
+          "startFrame": 3889,
+          "endFrame": 4116
+        },
+        {
+          "text": "組織化とタスク遂行を支援。",
+          "start": 137.5023529411765,
+          "end": 139.50333333333336,
+          "startFrame": 4125,
+          "endFrame": 4185
+        },
+        {
+          "text": "（Google/Alphabet）",
+          "start": 139.80333333333337,
+          "end": 142.42000000000004,
+          "startFrame": 4194,
+          "endFrame": 4272
+        }
+      ],
+      "fullScript": "GoogleのAI生産性エージェント「CC」。Google Labsが、Geminiをベースとした実験的なAI生産性エージェント「CC」を発表。組織化とタスク遂行を支援。（Google/Alphabet）"
+    },
+    {
+      "index": 8,
+      "title": "まとめ",
+      "audioFile": "presentations/audio_output/slide_08.mp3",
+      "duration": 3.88,
+      "durationFrames": 116,
+      "startTime": 142.42000000000002,
+      "endTime": 146.3,
+      "startFrame": 4272,
+      "endFrame": 4389,
+      "subtitles": [
+        {
+          "text": "本日のAI・IT株式ニュースは以上です。",
+          "start": 142.42000000000002,
+          "end": 146.3,
+          "startFrame": 4272,
+          "endFrame": 4389
+        }
+      ],
+      "fullScript": "本日のAI・IT株式ニュースは以上です。"
+    },
+    {
+      "index": 9,
+      "title": "塾頭高崎の完全自動化への挑戦",
+      "audioFile": "presentations/audio_output/slide_09.mp3",
+      "duration": 40.26,
+      "durationFrames": 1207,
+      "startTime": 146.3,
+      "endTime": 186.56,
+      "startFrame": 4389,
+      "endFrame": 5596,
+      "subtitles": [
+        {
+          "text": "ご視聴いただきありがとうございました。",
+          "start": 146.3,
+          "end": 149.46068669527898,
+          "startFrame": 4389,
+          "endFrame": 4483
+        },
+        {
+          "text": "実はこのレポート、if塾の塾頭高崎による「完全自動化への挑戦」\nプロジェクトの一環として、AIが自動生成しています。",
+          "start": 149.760686695279,
+          "end": 159.2427467811159,
+          "startFrame": 4492,
+          "endFrame": 4777
+        },
+        {
+          "text": "将来的には塾頭が執筆しているような自然な記事になることを目指し\nており、現時点では事実と異なる内容が含まれる可能性もあります。",
+          "start": 159.5427467811159,
+          "end": 169.85656652360518,
+          "startFrame": 4786,
+          "endFrame": 5095
+        },
+        {
+          "text": "この挑戦に共感していただけたら、\nぜひチャンネル登録とグッドボタンをよろしくお願いします！",
+          "start": 170.1565665236052,
+          "end": 177.47605150214596,
+          "startFrame": 5104,
+          "endFrame": 5324
+        },
+        {
+          "text": "また、無料のAI教育や導入コンサルも受け付けています。",
+          "start": 177.77605150214598,
+          "end": 182.2675536480687,
+          "startFrame": 5333,
+          "endFrame": 5468
+        },
+        {
+          "text": "詳しくは概要欄のリンクからお問い合わせください。",
+          "start": 182.56755364806872,
+          "end": 186.56000000000006,
+          "startFrame": 5477,
+          "endFrame": 5596
+        }
+      ],
+      "fullScript": "ご視聴いただきありがとうございました。実はこのレポート、if塾の塾頭高崎による「完全自動化への挑戦」プロジェクトの一環として、AIが自動生成しています。将来的には塾頭が執筆しているような自然な記事になることを目指しており、現時点では事実と異なる内容が含まれる可能性もあります。この挑戦に共感していただけたら、ぜひチャンネル登録とグッドボタンをよろしくお願いします！また、無料のAI教育や導入コンサルも受け付けています。詳しくは概要欄のリンクからお問い合わせください。"
+    }
+  ]
+}
