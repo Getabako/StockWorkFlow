@@ -4,43 +4,43 @@
       "index": 1,
       "title": "AI/IT株式ニュース",
       "audio_file": "presentations/audio_output/slide_01.mp3",
-      "script": "うぃっすー！if塾AIニュースのお時間です。2025/12/16のAI・IT株式ニュースをお届けします。"
+      "script": "うぃっすー！if塾AIニュースのお時間です。2025/12/17のAI・IT株式ニュースをお届けします。"
     },
     {
       "index": 2,
       "title": "本日のサマリー",
       "audio_file": "presentations/audio_output/slide_02.mp3",
-      "script": "今日のAI/IT市場は、OpenAIが元英国財務大臣をグローバルAIインフラ推進に招き入れるなど、戦略的な組織強化と製品改善（ChatGPT画像生成の高速化）を進める一方、Googleも新たなAI生産性エージェント「CC」を発表し、競争が激化しています。データ分析大手Databricksが大型資金調達で高評価を維持し、AIインフラとしての電力供給確保や重要鉱物サプライチェーンの安定化に向けた動きも加速しており、AI経済圏の拡大と基盤整備が市場の主要な焦点となっています。"
+      "script": "本日のAI/IT市場は、OpenAIとAmazonの戦略的な大型投資・提携の可能性が最大の注目点となりました。これはOpenAIのNVIDIA依存脱却の動きを加速させるとともに、AmazonのAIチップ市場への本格参入を示唆します。また、Googleが高速AIモデル「Gemini 3 Flash」を製品群に広範に展開し、AIモデル競争が激化しています。AIブームを背景としたデータセンターへの記録的な投資も続き、インフラ面での巨大な需要が顕在化しています。"
     },
     {
       "index": 3,
-      "title": "M&A・企業買収",
+      "title": "戦略的提携・パートナーシップ",
       "audio_file": "presentations/audio_output/slide_03.mp3",
-      "script": "テックM&Aブームの予測。Morgan Stanleyの幹部が、テック業界が記録的なM&A活動期間に入り、「マルチイヤーのM&Aブーム」が始まっていると指摘。（Bloomberg Technology）"
+      "script": "OpenAIとAmazonの大型提携の可能性。OpenAIはAmazon.com Inc.から少なくとも100億ドルの投資を募り、同時にAmazonの独自チップの利用を検討していると報じられています。これは、OpenAIがNVIDIAへの依存を脱却し、サプライチェーンを多様化する戦略の一環であり、AmazonにとってはAI業界での存在感を高め、NVIDIAに対抗する機会となります。(記事18, 23, 32)"
     },
     {
       "index": 4,
-      "title": "M&A・企業買収",
+      "title": "戦略的提携・パートナーシップ",
       "audio_file": "presentations/audio_output/slide_04.mp3",
-      "script": "Twenty One Capitalの合併。ソフトバンクグループも関与するビットコイン企業Twenty One Capitalが、Cantor Equity Partnersとの合併により公開企業となることを発表。（Bloomberg Technology）"
+      "script": "Oracleのデータセンター投資に関する明確化。Oracle Corp.は、ミシガン州のデータセンタープロジェクトにおける株式取引の最終交渉が「予定通り」進行しており、Blue Owl Capital社は関与していないと発表しました。これにより、同社のAIインフラ投資に対する市場の懸念の一部が払拭されました。(記事15, 37)"
     },
     {
       "index": 5,
-      "title": "戦略的提携・パートナーシップ",
+      "title": "大型契約・受注",
       "audio_file": "presentations/audio_output/slide_05.mp3",
-      "script": "AIサプライチェーンの確保。米国務省は、Pax Silicaサミットを通じて、同盟国と連携し重要鉱物、半導体、AIインフラへのアクセスを確保する戦略を進めていることを発表。中国への依存度を減らす狙い。（Bloomberg Technology）"
+      "script": "データセンターへの記録的投資。Oracle Corp.、Microsoft Corp.、Meta Platforms Inc.といったクラウドコンピューティング企業が、今後数年間で合計5,000億ドルをデータセンターリースにコミットすると報じられました。これは、人工知能の急速な発展に伴う計算資源需要の爆発的な増加を明確に示しています。(記事29)"
     },
     {
       "index": 6,
-      "title": "戦略的提携・パートナーシップ",
+      "title": "新製品・新技術",
       "audio_file": "presentations/audio_output/slide_06.mp3",
-      "script": "AmazonとJPMorgan支援スタートアップの提携。Amazon.comがJPMorgan Chase & Co.支援のスタートアップと提携し、オンライン販売者向けに融資を提供。テクノロジーと金融の連携が加速。（Bloomberg Technology）"
+      "script": "Google Gemini 3 Flashの広範な展開。Googleは、より効率的で高速な新しいAIモデル「Gemini 3 Flash」を、Geminiアプリ、Google検索、そして開発者向けにグローバルで展開を開始しました。これは、AIモデルのパフォーマンスとコスト効率の改善競争が激化していることを示します。(記事3, 4, 5, 6, 30)"
     },
     {
       "index": 7,
       "title": "新製品・新技術",
       "audio_file": "presentations/audio_output/slide_07.mp3",
-      "script": "GoogleのAI生産性エージェント「CC」。Google Labsが、Geminiをベースとした実験的なAI生産性エージェント「CC」を発表。組織化とタスク遂行を支援。（Google/Alphabet）"
+      "script": "Geminiアプリ内でのAIミニアプリ開発ツール「Opal」の提供。Googleは、AIを活用したインタラクティブなミニアプリをGeminiアプリ内で構築できるツール「Opal」の提供を開始しました。これにより、AIの利用がさらに多様化し、開発者エコシステムが拡大することが期待されます。(記事7)"
     },
     {
       "index": 8,
