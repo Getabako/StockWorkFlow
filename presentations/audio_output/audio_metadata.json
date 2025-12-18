@@ -4,56 +4,26 @@
       "index": 1,
       "title": "AI/IT株式ニュース",
       "audio_file": "presentations/audio_output/slide_01.mp3",
-      "script": "うぃっすー！if塾AIニュースのお時間です。2025/12/17のAI・IT株式ニュースをお届けします。"
+      "script": "うぃっすー！if塾AIニュースのお時間です。2025/12/18のAI・IT株式ニュースをお届けします。"
     },
     {
       "index": 2,
       "title": "本日のサマリー",
       "audio_file": "presentations/audio_output/slide_02.mp3",
-      "script": "本日のAI/IT市場は、OpenAIとAmazonの戦略的な大型投資・提携の可能性が最大の注目点となりました。これはOpenAIのNVIDIA依存脱却の動きを加速させるとともに、AmazonのAIチップ市場への本格参入を示唆します。また、Googleが高速AIモデル「Gemini 3 Flash」を製品群に広範に展開し、AIモデル競争が激化しています。AIブームを背景としたデータセンターへの記録的な投資も続き、インフラ面での巨大な需要が顕在化しています。"
+      "script": "今日のAI/IT市場は、GoogleがT5Gemma 2やFunctionGemmaといった先進AIモデル、およびAI生成コンテンツの透明性向上ツールを立て続けに発表し、技術進化を牽引しています。一方、OpenAIは大学向けChatGPTライセンスの提供拡大で教育市場に深く食い込み、Oracleとのデータセンター建設でインフラ投資を加速。AIインフラへの大規模投資が活発化する中で、AIバブルの可能性や消費者からの反発、規制強化の動きも顕在化し、業界は多角的な発展と新たな課題に直面しています。"
     },
     {
       "index": 3,
-      "title": "戦略的提携・パートナーシップ",
-      "audio_file": "presentations/audio_output/slide_03.mp3",
-      "script": "OpenAIとAmazonの大型提携の可能性。OpenAIはAmazon.com Inc.から少なくとも100億ドルの投資を募り、同時にAmazonの独自チップの利用を検討していると報じられています。これは、OpenAIがNVIDIAへの依存を脱却し、サプライチェーンを多様化する戦略の一環であり、AmazonにとってはAI業界での存在感を高め、NVIDIAに対抗する機会となります。(記事18, 23, 32)"
-    },
-    {
-      "index": 4,
-      "title": "戦略的提携・パートナーシップ",
-      "audio_file": "presentations/audio_output/slide_04.mp3",
-      "script": "Oracleのデータセンター投資に関する明確化。Oracle Corp.は、ミシガン州のデータセンタープロジェクトにおける株式取引の最終交渉が「予定通り」進行しており、Blue Owl Capital社は関与していないと発表しました。これにより、同社のAIインフラ投資に対する市場の懸念の一部が払拭されました。(記事15, 37)"
-    },
-    {
-      "index": 5,
-      "title": "大型契約・受注",
-      "audio_file": "presentations/audio_output/slide_05.mp3",
-      "script": "データセンターへの記録的投資。Oracle Corp.、Microsoft Corp.、Meta Platforms Inc.といったクラウドコンピューティング企業が、今後数年間で合計5,000億ドルをデータセンターリースにコミットすると報じられました。これは、人工知能の急速な発展に伴う計算資源需要の爆発的な増加を明確に示しています。(記事29)"
-    },
-    {
-      "index": 6,
-      "title": "新製品・新技術",
-      "audio_file": "presentations/audio_output/slide_06.mp3",
-      "script": "Google Gemini 3 Flashの広範な展開。Googleは、より効率的で高速な新しいAIモデル「Gemini 3 Flash」を、Geminiアプリ、Google検索、そして開発者向けにグローバルで展開を開始しました。これは、AIモデルのパフォーマンスとコスト効率の改善競争が激化していることを示します。(記事3, 4, 5, 6, 30)"
-    },
-    {
-      "index": 7,
-      "title": "新製品・新技術",
-      "audio_file": "presentations/audio_output/slide_07.mp3",
-      "script": "Geminiアプリ内でのAIミニアプリ開発ツール「Opal」の提供。Googleは、AIを活用したインタラクティブなミニアプリをGeminiアプリ内で構築できるツール「Opal」の提供を開始しました。これにより、AIの利用がさらに多様化し、開発者エコシステムが拡大することが期待されます。(記事7)"
-    },
-    {
-      "index": 8,
       "title": "まとめ",
-      "audio_file": "presentations/audio_output/slide_08.mp3",
+      "audio_file": "presentations/audio_output/slide_03.mp3",
       "script": "本日のAI・IT株式ニュースは以上です。"
     },
     {
-      "index": 9,
+      "index": 4,
       "title": "塾頭高崎の完全自動化への挑戦",
-      "audio_file": "presentations/audio_output/slide_09.mp3",
+      "audio_file": "presentations/audio_output/slide_04.mp3",
       "script": "ご視聴いただきありがとうございました。実はこのレポート、if塾の塾頭高崎による「完全自動化への挑戦」プロジェクトの一環として、AIが自動生成しています。将来的には塾頭が執筆しているような自然な記事になることを目指しており、現時点では事実と異なる内容が含まれる可能性もあります。この挑戦に共感していただけたら、ぜひチャンネル登録とグッドボタンをよろしくお願いします！また、無料のAI教育や導入コンサルも受け付けています。詳しくは概要欄のリンクからお問い合わせください。"
     }
   ],
-  "total_slides": 9
+  "total_slides": 4
 }
