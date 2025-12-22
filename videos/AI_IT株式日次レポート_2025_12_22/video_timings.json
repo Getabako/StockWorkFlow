@@ -1,0 +1,406 @@
+{
+  "fps": 30,
+  "totalDuration": 208.81999999999996,
+  "totalFrames": 6264,
+  "slides": [
+    {
+      "index": 1,
+      "title": "AI/IT株式ニュース",
+      "audioFile": "presentations/audio_output/slide_01.mp3",
+      "duration": 10.22,
+      "durationFrames": 306,
+      "startTime": 0,
+      "endTime": 10.22,
+      "startFrame": 0,
+      "endFrame": 306,
+      "subtitles": [
+        {
+          "text": "うぃっすー！",
+          "start": 0,
+          "end": 1.11,
+          "startFrame": 0,
+          "endFrame": 33
+        },
+        {
+          "text": "if塾AIニュースのお時間です。",
+          "start": 1.4100000000000001,
+          "end": 4.370000000000001,
+          "startFrame": 42,
+          "endFrame": 131
+        },
+        {
+          "text": "2025/12/22のAI・IT株式ニュースをお届けします。",
+          "start": 4.670000000000001,
+          "end": 10.22,
+          "startFrame": 140,
+          "endFrame": 306
+        }
+      ],
+      "fullScript": "うぃっすー！if塾AIニュースのお時間です。2025/12/22のAI・IT株式ニュースをお届けします。"
+    },
+    {
+      "index": 2,
+      "title": "本日のサマリー",
+      "audioFile": "presentations/audio_output/slide_02.mp3",
+      "duration": 37.82,
+      "durationFrames": 1134,
+      "startTime": 10.22,
+      "endTime": 48.04,
+      "startFrame": 306,
+      "endFrame": 1441,
+      "subtitles": [
+        {
+          "text": "本日のAI/IT市場は、AIワークロードの爆発的な増加に対応す\nるためのインフラ投資が加速していることが明らかになりました。",
+          "start": 10.22,
+          "end": 20.42009132420091,
+          "startFrame": 306,
+          "endFrame": 612
+        },
+        {
+          "text": "Alphabetによるデータセンター関連企業の\n大型買収はその象徴です。",
+          "start": 20.72009132420091,
+          "end": 26.572602739726026,
+          "startFrame": 621,
+          "endFrame": 797
+        },
+        {
+          "text": "また、\nAIチップのサプライチェーンにおいては地政学的リスクが顕在化し",
+          "start": 26.872602739726027,
+          "end": 32.557899543378994,
+          "startFrame": 806,
+          "endFrame": 976
+        },
+        {
+          "text": "中国企業が技術的自立を目指してIPOを活発化させるなど、\nグローバルな競争が激化しています。",
+          "start": 32.85789954337899,
+          "end": 40.38255707762556,
+          "startFrame": 985,
+          "endFrame": 1211
+        },
+        {
+          "text": "大手テクノロジー企業は引き続きAI分野で\nの投資とイノベーションを積極的に推進しています。",
+          "start": 40.68255707762556,
+          "end": 48.03999999999999,
+          "startFrame": 1220,
+          "endFrame": 1441
+        }
+      ],
+      "fullScript": "本日のAI/IT市場は、AIワークロードの爆発的な増加に対応するためのインフラ投資が加速していることが明らかになりました。Alphabetによるデータセンター関連企業の大型買収はその象徴です。また、AIチップのサプライチェーンにおいては地政学的リスクが顕在化し、中国企業が技術的自立を目指してIPOを活発化させるなど、グローバルな競争が激化しています。大手テクノロジー企業は引き続きAI分野での投資とイノベーションを積極的に推進しています。"
+    },
+    {
+      "index": 3,
+      "title": "M&A・企業買収",
+      "audioFile": "presentations/audio_output/slide_03.mp3",
+      "duration": 33.22,
+      "durationFrames": 996,
+      "startTime": 48.04,
+      "endTime": 81.25999999999999,
+      "startFrame": 1441,
+      "endFrame": 2437,
+      "subtitles": [
+        {
+          "text": "AlphabetがIntersectを47.5億ドルで買収。",
+          "start": 48.04,
+          "end": 52.774328358208955,
+          "startFrame": 1441,
+          "endFrame": 1583
+        },
+        {
+          "text": "Googleの親会社Alphabetは",
+          "start": 53.07432835820895,
+          "end": 56.072736318407955,
+          "startFrame": 1592,
+          "endFrame": 1682
+        },
+        {
+          "text": "データセンターおよびエネルギーインフラソリューションを提供するIntersectを47.5億ドル（現金と既存債務含む）で買収すると発表しました。",
+          "start": 56.37273631840795,
+          "end": 67.73512437810945,
+          "startFrame": 1691,
+          "endFrame": 2032
+        },
+        {
+          "text": "これは、AI向けデータセンターフットプリントを劇的に拡大するた\nめの大規模な取り組みであり",
+          "start": 68.03512437810944,
+          "end": 74.97880597014924,
+          "startFrame": 2041,
+          "endFrame": 2249
+        },
+        {
+          "text": "AIワークロード増大への対応を強化する動きと見られます。",
+          "start": 75.27880597014924,
+          "end": 79.69751243781093,
+          "startFrame": 2258,
+          "endFrame": 2390
+        },
+        {
+          "text": "(記事4, 9)",
+          "start": 79.99751243781093,
+          "end": 81.25999999999998,
+          "startFrame": 2399,
+          "endFrame": 2437
+        }
+      ],
+      "fullScript": "AlphabetがIntersectを47.5億ドルで買収。Googleの親会社Alphabetは、データセンターおよびエネルギーインフラソリューションを提供するIntersectを47.5億ドル（現金と既存債務含む）で買収すると発表しました。これは、AI向けデータセンターフットプリントを劇的に拡大するための大規模な取り組みであり、AIワークロード増大への対応を強化する動きと見られます。(記事4, 9)"
+    },
+    {
+      "index": 4,
+      "title": "戦略的提携・パートナーシップ",
+      "audioFile": "presentations/audio_output/slide_04.mp3",
+      "duration": 23.1,
+      "durationFrames": 693,
+      "startTime": 81.25999999999999,
+      "endTime": 104.35999999999999,
+      "startFrame": 2437,
+      "endFrame": 3130,
+      "subtitles": [
+        {
+          "text": "Deutsche Telekomが\nドイツのドローンスタートアップに投資。",
+          "start": 81.25999999999999,
+          "end": 86.37948051948051,
+          "startFrame": 2437,
+          "endFrame": 2591
+        },
+        {
+          "text": "Deutsche Telekom AGは",
+          "start": 86.6794805194805,
+          "end": 89.52363636363636,
+          "startFrame": 2600,
+          "endFrame": 2685
+        },
+        {
+          "text": "ウクライナで活動するドイツのドローン開発企業Quantum\nSystemsに戦略的投資を行いました",
+          "start": 89.82363636363635,
+          "end": 96.64961038961039,
+          "startFrame": 2694,
+          "endFrame": 2899
+        },
+        {
+          "text": "これは、欧州最大の通信事業者による防衛・AI関連技術分野への重\n要な参入を示唆しています。",
+          "start": 96.94961038961038,
+          "end": 103.20675324675324,
+          "startFrame": 2908,
+          "endFrame": 3096
+        },
+        {
+          "text": "(記事22)",
+          "start": 103.50675324675323,
+          "end": 104.35999999999999,
+          "startFrame": 3105,
+          "endFrame": 3130
+        }
+      ],
+      "fullScript": "Deutsche Telekomがドイツのドローンスタートアップに投資。Deutsche Telekom AGは、ウクライナで活動するドイツのドローン開発企業Quantum Systemsに戦略的投資を行いました。これは、欧州最大の通信事業者による防衛・AI関連技術分野への重要な参入を示唆しています。(記事22)"
+    },
+    {
+      "index": 5,
+      "title": "新製品・新技術",
+      "audioFile": "presentations/audio_output/slide_05.mp3",
+      "duration": 17.9,
+      "durationFrames": 537,
+      "startTime": 104.35999999999999,
+      "endTime": 122.25999999999999,
+      "startFrame": 3130,
+      "endFrame": 3667,
+      "subtitles": [
+        {
+          "text": "Googleの2025年AI発表総括。",
+          "start": 104.35999999999999,
+          "end": 107.68989690721648,
+          "startFrame": 3130,
+          "endFrame": 3230
+        },
+        {
+          "text": "Googleは2025年に60件もの\n主要なAI発表を行ったことを振り返り",
+          "start": 107.98989690721648,
+          "end": 114.29917525773195,
+          "startFrame": 3239,
+          "endFrame": 3428
+        },
+        {
+          "text": "AI分野における継続的な大規模投資と\nイノベーションのペースを強調しました。",
+          "start": 114.59917525773194,
+          "end": 121.08371134020616,
+          "startFrame": 3437,
+          "endFrame": 3632
+        },
+        {
+          "text": "(記事2)",
+          "start": 121.38371134020616,
+          "end": 122.25999999999998,
+          "startFrame": 3641,
+          "endFrame": 3667
+        }
+      ],
+      "fullScript": "Googleの2025年AI発表総括。Googleは2025年に60件もの主要なAI発表を行ったことを振り返り、AI分野における継続的な大規模投資とイノベーションのペースを強調しました。(記事2)"
+    },
+    {
+      "index": 6,
+      "title": "新製品・新技術",
+      "audioFile": "presentations/audio_output/slide_06.mp3",
+      "duration": 21.6,
+      "durationFrames": 648,
+      "startTime": 122.25999999999999,
+      "endTime": 143.85999999999999,
+      "startFrame": 3667,
+      "endFrame": 4315,
+      "subtitles": [
+        {
+          "text": "Armの「AI everywhere」戦略。",
+          "start": 122.25999999999999,
+          "end": 125.55999999999999,
+          "startFrame": 3667,
+          "endFrame": 3766
+        },
+        {
+          "text": "Armは2025年がAI搭載スーパーコンピューターから\nよりスマートなエッジデバイスまで",
+          "start": 125.85999999999999,
+          "end": 132.30999999999997,
+          "startFrame": 3775,
+          "endFrame": 3969
+        },
+        {
+          "text": "Armベースのイノベーションが計算技術の\nあらゆる層でブレークスルーを達成した年であったと報告。",
+          "start": 132.60999999999999,
+          "end": 139.66,
+          "startFrame": 3978,
+          "endFrame": 4189
+        },
+        {
+          "text": "AI処理の広範な普及を示唆しています。",
+          "start": 139.96,
+          "end": 142.81,
+          "startFrame": 4198,
+          "endFrame": 4284
+        },
+        {
+          "text": "(記事5)",
+          "start": 143.11,
+          "end": 143.86,
+          "startFrame": 4293,
+          "endFrame": 4315
+        }
+      ],
+      "fullScript": "Armの「AI everywhere」戦略。Armは2025年がAI搭載スーパーコンピューターからよりスマートなエッジデバイスまで、Armベースのイノベーションが計算技術のあらゆる層でブレークスルーを達成した年であったと報告。AI処理の広範な普及を示唆しています。(記事5)"
+    },
+    {
+      "index": 7,
+      "title": "新製品・新技術",
+      "audioFile": "presentations/audio_output/slide_07.mp3",
+      "duration": 20.82,
+      "durationFrames": 624,
+      "startTime": 143.85999999999999,
+      "endTime": 164.67999999999998,
+      "startFrame": 4315,
+      "endFrame": 4940,
+      "subtitles": [
+        {
+          "text": "中国のOpenAI競合が販売詳細を公開。",
+          "start": 143.85999999999999,
+          "end": 147.48181818181817,
+          "startFrame": 4315,
+          "endFrame": 4424
+        },
+        {
+          "text": "中国のAI企業であるMiniMaxとZhipu AIが、\n上場を前に事業モデルと収益予測の詳細を公開しました。",
+          "start": 147.78181818181818,
+          "end": 157.56072727272726,
+          "startFrame": 4433,
+          "endFrame": 4726
+        },
+        {
+          "text": "これは、グローバルなAIモデル開発競争の激化を示しています。",
+          "start": 157.86072727272727,
+          "end": 163.29345454545455,
+          "startFrame": 4735,
+          "endFrame": 4898
+        },
+        {
+          "text": "(記事29)",
+          "start": 163.59345454545456,
+          "end": 164.68,
+          "startFrame": 4907,
+          "endFrame": 4940
+        }
+      ],
+      "fullScript": "中国のOpenAI競合が販売詳細を公開。中国のAI企業であるMiniMaxとZhipu AIが、上場を前に事業モデルと収益予測の詳細を公開しました。これは、グローバルなAIモデル開発競争の激化を示しています。(記事29)"
+    },
+    {
+      "index": 8,
+      "title": "まとめ",
+      "audioFile": "presentations/audio_output/slide_08.mp3",
+      "duration": 3.88,
+      "durationFrames": 116,
+      "startTime": 164.67999999999998,
+      "endTime": 168.55999999999997,
+      "startFrame": 4940,
+      "endFrame": 5056,
+      "subtitles": [
+        {
+          "text": "本日のAI・IT株式ニュースは以上です。",
+          "start": 164.67999999999998,
+          "end": 168.55999999999997,
+          "startFrame": 4940,
+          "endFrame": 5056
+        }
+      ],
+      "fullScript": "本日のAI・IT株式ニュースは以上です。"
+    },
+    {
+      "index": 9,
+      "title": "塾頭高崎の完全自動化への挑戦",
+      "audioFile": "presentations/audio_output/slide_09.mp3",
+      "duration": 40.26,
+      "durationFrames": 1207,
+      "startTime": 168.55999999999997,
+      "endTime": 208.81999999999996,
+      "startFrame": 5056,
+      "endFrame": 6264,
+      "subtitles": [
+        {
+          "text": "ご視聴いただきありがとうございました。",
+          "start": 168.55999999999997,
+          "end": 171.72068669527894,
+          "startFrame": 5056,
+          "endFrame": 5151
+        },
+        {
+          "text": "実はこのレポート、if塾の塾頭高崎による「完全自動化への挑戦」\nプロジェクトの一環として、AIが自動生成しています。",
+          "start": 172.02068669527895,
+          "end": 181.50274678111586,
+          "startFrame": 5160,
+          "endFrame": 5445
+        },
+        {
+          "text": "将来的には塾頭が執筆しているような自然な記事になることを目指し\nており、現時点では事実と異なる内容が含まれる可能性もあります。",
+          "start": 181.80274678111587,
+          "end": 192.11656652360514,
+          "startFrame": 5454,
+          "endFrame": 5763
+        },
+        {
+          "text": "この挑戦に共感していただけたら、\nぜひチャンネル登録とグッドボタンをよろしくお願いします！",
+          "start": 192.41656652360516,
+          "end": 199.73605150214593,
+          "startFrame": 5772,
+          "endFrame": 5992
+        },
+        {
+          "text": "また、無料のAI教育や導入コンサルも受け付けています。",
+          "start": 200.03605150214594,
+          "end": 204.52755364806868,
+          "startFrame": 6001,
+          "endFrame": 6135
+        },
+        {
+          "text": "詳しくは概要欄のリンクからお問い合わせください。",
+          "start": 204.8275536480687,
+          "end": 208.82000000000002,
+          "startFrame": 6144,
+          "endFrame": 6264
+        }
+      ],
+      "fullScript": "ご視聴いただきありがとうございました。実はこのレポート、if塾の塾頭高崎による「完全自動化への挑戦」プロジェクトの一環として、AIが自動生成しています。将来的には塾頭が執筆しているような自然な記事になることを目指しており、現時点では事実と異なる内容が含まれる可能性もあります。この挑戦に共感していただけたら、ぜひチャンネル登録とグッドボタンをよろしくお願いします！また、無料のAI教育や導入コンサルも受け付けています。詳しくは概要欄のリンクからお問い合わせください。"
+    }
+  ]
+}
