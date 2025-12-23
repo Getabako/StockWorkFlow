@@ -4,43 +4,43 @@
       "index": 1,
       "title": "AI/IT株式ニュース",
       "audio_file": "presentations/audio_output/slide_01.mp3",
-      "script": "うぃっすー！if塾AIニュースのお時間です。2025/12/22のAI・IT株式ニュースをお届けします。"
+      "script": "うぃっすー！if塾AIニュースのお時間です。2025/12/23のAI・IT株式ニュースをお届けします。"
     },
     {
       "index": 2,
       "title": "本日のサマリー",
       "audio_file": "presentations/audio_output/slide_02.mp3",
-      "script": "本日のAI/IT市場は、AIワークロードの爆発的な増加に対応するためのインフラ投資が加速していることが明らかになりました。Alphabetによるデータセンター関連企業の大型買収はその象徴です。また、AIチップのサプライチェーンにおいては地政学的リスクが顕在化し、中国企業が技術的自立を目指してIPOを活発化させるなど、グローバルな競争が激化しています。大手テクノロジー企業は引き続きAI分野での投資とイノベーションを積極的に推進しています。"
+      "script": "AI/IT市場は、AIエコシステムの拡大を背景にインフラ投資が加速しています。特にデータセンターと電力供給への大規模投資が顕著です。大手テック企業はAIモデル開発競争を継続し、Googleは新たなAIモデルの展開と研究成果を発表しました。一方で、AIチップのサプライチェーンには地政学的なリスクが影を落とし、NVIDIA関連企業への密輸調査や米中間の半導体貿易政策の動向が注目されます。AI技術の進化に伴うM&Aも活発化し、規制の動きも具体化しています。"
     },
     {
       "index": 3,
       "title": "M&A・企業買収",
       "audio_file": "presentations/audio_output/slide_03.mp3",
-      "script": "AlphabetがIntersectを47.5億ドルで買収。Googleの親会社Alphabetは、データセンターおよびエネルギーインフラソリューションを提供するIntersectを47.5億ドル（現金と既存債務含む）で買収すると発表しました。これは、AI向けデータセンターフットプリントを劇的に拡大するための大規模な取り組みであり、AIワークロード増大への対応を強化する動きと見られます。(記事4, 9)"
+      "script": "ServiceNowによるArmis買収。ITサービス大手ServiceNowは、サイバーセキュリティスタートアップのArmisを77.5億ドルで買収することで合意しました。これはServiceNowにとって過去最大の買収案件となります。（記事7, 16）"
     },
     {
       "index": 4,
-      "title": "戦略的提携・パートナーシップ",
+      "title": "M&A・企業買収",
       "audio_file": "presentations/audio_output/slide_04.mp3",
-      "script": "Deutsche Telekomがドイツのドローンスタートアップに投資。Deutsche Telekom AGは、ウクライナで活動するドイツのドローン開発企業Quantum Systemsに戦略的投資を行いました。これは、欧州最大の通信事業者による防衛・AI関連技術分野への重要な参入を示唆しています。(記事22)"
+      "script": "Samsung HarmanによるZF Group事業買収。Samsung Electronics傘下のHarman Internationalは、ドイツのZF Groupのドライバーアシスタンス事業を15億ユーロで買収します。これは自動運転技術への投資であり、広義のAI関連市場へのSamsungの注力を示唆します。（記事20）"
     },
     {
       "index": 5,
-      "title": "新製品・新技術",
+      "title": "M&A・企業買収",
       "audio_file": "presentations/audio_output/slide_05.mp3",
-      "script": "Googleの2025年AI発表総括。Googleは2025年に60件もの主要なAI発表を行ったことを振り返り、AI分野における継続的な大規模投資とイノベーションのペースを強調しました。(記事2)"
+      "script": "GoogleによるIntersect Power買収。Googleは、電力会社Intersect Powerを47.5億ドルで買収することに合意しました。これはデータセンターの拡張と安定的な電力供給確保を目的としており、AI駆動型インフラへの大規模投資の一環と見られます。（記事28）"
     },
     {
       "index": 6,
-      "title": "新製品・新技術",
+      "title": "戦略的提携・パートナーシップ",
       "audio_file": "presentations/audio_output/slide_06.mp3",
-      "script": "Armの「AI everywhere」戦略。Armは2025年がAI搭載スーパーコンピューターからよりスマートなエッジデバイスまで、Armベースのイノベーションが計算技術のあらゆる層でブレークスルーを達成した年であったと報告。AI処理の広範な普及を示唆しています。(記事5)"
+      "script": "Googleとナイジェリアの海底ケーブル協議。ナイジェリアは、デジタルインフラ強化のため、Alphabet Inc.傘下のGoogleと新たな海底ケーブル敷設について協議を進めています。これはグローバルなクラウド・AIインフラの拡大に向けた動きです。（記事22）"
     },
     {
       "index": 7,
-      "title": "新製品・新技術",
+      "title": "大型契約・受注",
       "audio_file": "presentations/audio_output/slide_07.mp3",
-      "script": "中国のOpenAI競合が販売詳細を公開。中国のAI企業であるMiniMaxとZhipu AIが、上場を前に事業モデルと収益予測の詳細を公開しました。これは、グローバルなAIモデル開発競争の激化を示しています。(記事29)"
+      "script": "欧州データセンターへの26億ドル投資。カナダ年金投資委員会（CPP Investments）とGoodman Groupは、欧州のデータセンター事業に26億ドルを投資する合意に至りました。これはAIの台頭によるデータセンター需要の急増に対応するものです。（記事29）"
     },
     {
       "index": 8,

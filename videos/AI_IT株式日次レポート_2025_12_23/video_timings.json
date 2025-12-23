@@ -1,0 +1,413 @@
+{
+  "fps": 30,
+  "totalDuration": 206.95999999999998,
+  "totalFrames": 6208,
+  "slides": [
+    {
+      "index": 1,
+      "title": "AI/IT株式ニュース",
+      "audioFile": "presentations/audio_output/slide_01.mp3",
+      "duration": 10.42,
+      "durationFrames": 312,
+      "startTime": 0,
+      "endTime": 10.42,
+      "startFrame": 0,
+      "endFrame": 312,
+      "subtitles": [
+        {
+          "text": "うぃっすー！",
+          "start": 0,
+          "end": 1.133076923076923,
+          "startFrame": 0,
+          "endFrame": 33
+        },
+        {
+          "text": "if塾AIニュースのお時間です。",
+          "start": 1.4330769230769231,
+          "end": 4.454615384615385,
+          "startFrame": 42,
+          "endFrame": 133
+        },
+        {
+          "text": "2025/12/23のAI・IT株式ニュースをお届けします。",
+          "start": 4.754615384615385,
+          "end": 10.42,
+          "startFrame": 142,
+          "endFrame": 312
+        }
+      ],
+      "fullScript": "うぃっすー！if塾AIニュースのお時間です。2025/12/23のAI・IT株式ニュースをお届けします。"
+    },
+    {
+      "index": 2,
+      "title": "本日のサマリー",
+      "audioFile": "presentations/audio_output/slide_02.mp3",
+      "duration": 43.26,
+      "durationFrames": 1297,
+      "startTime": 10.42,
+      "endTime": 53.68,
+      "startFrame": 312,
+      "endFrame": 1610,
+      "subtitles": [
+        {
+          "text": "AI/IT市場は、\nAIエコシステムの拡大を背景にインフラ投資が加速しています。",
+          "start": 10.42,
+          "end": 17.62637168141593,
+          "startFrame": 312,
+          "endFrame": 528
+        },
+        {
+          "text": "特にデータセンターと電力供給への大規模投資が顕著です。",
+          "start": 17.92637168141593,
+          "end": 22.915398230088496,
+          "startFrame": 537,
+          "endFrame": 687
+        },
+        {
+          "text": "大手テック企業はAIモデル開発競争を継続し、\nGoogleは新たなAIモデルの展開と研究成果を発表しました。",
+          "start": 23.215398230088496,
+          "end": 33.00867256637168,
+          "startFrame": 696,
+          "endFrame": 990
+        },
+        {
+          "text": "一方で、\nAIチップのサプライチェーンには地政学的なリスクが影を落とし",
+          "start": 33.308672566371676,
+          "end": 39.59115044247787,
+          "startFrame": 999,
+          "endFrame": 1187
+        },
+        {
+          "text": "NVIDIA関連企業への密輸調査や\n米中間の半導体貿易政策の動向が注目されます。",
+          "start": 39.891150442477866,
+          "end": 47.097522123893796,
+          "startFrame": 1196,
+          "endFrame": 1412
+        },
+        {
+          "text": "AI技術の進化に伴うM&Aも活発化し、\n規制の動きも具体化しています。",
+          "start": 47.39752212389379,
+          "end": 53.679999999999986,
+          "startFrame": 1421,
+          "endFrame": 1610
+        }
+      ],
+      "fullScript": "AI/IT市場は、AIエコシステムの拡大を背景にインフラ投資が加速しています。特にデータセンターと電力供給への大規模投資が顕著です。大手テック企業はAIモデル開発競争を継続し、Googleは新たなAIモデルの展開と研究成果を発表しました。一方で、AIチップのサプライチェーンには地政学的なリスクが影を落とし、NVIDIA関連企業への密輸調査や米中間の半導体貿易政策の動向が注目されます。AI技術の進化に伴うM&Aも活発化し、規制の動きも具体化しています。"
+    },
+    {
+      "index": 3,
+      "title": "M&A・企業買収",
+      "audioFile": "presentations/audio_output/slide_03.mp3",
+      "duration": 19.16,
+      "durationFrames": 574,
+      "startTime": 53.68,
+      "endTime": 72.84,
+      "startFrame": 1610,
+      "endFrame": 2185,
+      "subtitles": [
+        {
+          "text": "ServiceNowによるArmis買収。",
+          "start": 53.68,
+          "end": 56.64976377952756,
+          "startFrame": 1610,
+          "endFrame": 1699
+        },
+        {
+          "text": "ITサービス大手ServiceNowは",
+          "start": 56.94976377952756,
+          "end": 59.63669291338583,
+          "startFrame": 1708,
+          "endFrame": 1789
+        },
+        {
+          "text": "サイバーセキュリティスタートアップの\nArmisを77.5億ドルで買収することで合意しました。",
+          "start": 59.936692913385826,
+          "end": 66.44188976377953,
+          "startFrame": 1798,
+          "endFrame": 1993
+        },
+        {
+          "text": "これはServiceNowにとって\n過去最大の買収案件となります。",
+          "start": 66.74188976377953,
+          "end": 71.26724409448819,
+          "startFrame": 2002,
+          "endFrame": 2138
+        },
+        {
+          "text": "（記事7, 16）",
+          "start": 71.56724409448819,
+          "end": 72.84,
+          "startFrame": 2147,
+          "endFrame": 2185
+        }
+      ],
+      "fullScript": "ServiceNowによるArmis買収。ITサービス大手ServiceNowは、サイバーセキュリティスタートアップのArmisを77.5億ドルで買収することで合意しました。これはServiceNowにとって過去最大の買収案件となります。（記事7, 16）"
+    },
+    {
+      "index": 4,
+      "title": "M&A・企業買収",
+      "audioFile": "presentations/audio_output/slide_04.mp3",
+      "duration": 23.24,
+      "durationFrames": 697,
+      "startTime": 72.84,
+      "endTime": 96.08,
+      "startFrame": 2185,
+      "endFrame": 2882,
+      "subtitles": [
+        {
+          "text": "Samsung HarmanによるZF Group事業買収。",
+          "start": 72.84,
+          "end": 76.87170731707317,
+          "startFrame": 2185,
+          "endFrame": 2306
+        },
+        {
+          "text": "Samsung Electronics傘下の\nHarman Internationalは",
+          "start": 77.17170731707317,
+          "end": 82.95048780487805,
+          "startFrame": 2315,
+          "endFrame": 2488
+        },
+        {
+          "text": "ドイツのZF Groupの\nドライバーアシスタンス事業を15億ユーロで買収します。",
+          "start": 83.25048780487805,
+          "end": 88.62609756097561,
+          "startFrame": 2497,
+          "endFrame": 2658
+        },
+        {
+          "text": "これは自動運転技術への投資であり、\n広義のAI関連市場へのSamsungの注力を示唆します。",
+          "start": 88.9260975609756,
+          "end": 94.97365853658536,
+          "startFrame": 2667,
+          "endFrame": 2849
+        },
+        {
+          "text": "（記事20）",
+          "start": 95.27365853658536,
+          "end": 96.08,
+          "startFrame": 2858,
+          "endFrame": 2882
+        }
+      ],
+      "fullScript": "Samsung HarmanによるZF Group事業買収。Samsung Electronics傘下のHarman Internationalは、ドイツのZF Groupのドライバーアシスタンス事業を15億ユーロで買収します。これは自動運転技術への投資であり、広義のAI関連市場へのSamsungの注力を示唆します。（記事20）"
+    },
+    {
+      "index": 5,
+      "title": "M&A・企業買収",
+      "audioFile": "presentations/audio_output/slide_05.mp3",
+      "duration": 23.12,
+      "durationFrames": 693,
+      "startTime": 96.08,
+      "endTime": 119.2,
+      "startFrame": 2882,
+      "endFrame": 3576,
+      "subtitles": [
+        {
+          "text": "GoogleによるIntersect Power買収。",
+          "start": 96.08,
+          "end": 100.36528571428572,
+          "startFrame": 2882,
+          "endFrame": 3010
+        },
+        {
+          "text": "Googleは、電力会社Intersect\nPowerを47.5億ドルで買収することに合意しました",
+          "start": 100.66528571428572,
+          "end": 108.28357142857143,
+          "startFrame": 3019,
+          "endFrame": 3248
+        },
+        {
+          "text": "これはデータセンターの拡張と安定的な電力供給確保を目的としてお\nり、AI駆動型インフラへの大規模投資の一環と見られます。",
+          "start": 108.58357142857143,
+          "end": 117.94771428571428,
+          "startFrame": 3257,
+          "endFrame": 3538
+        },
+        {
+          "text": "（記事28）",
+          "start": 118.24771428571428,
+          "end": 119.19999999999999,
+          "startFrame": 3547,
+          "endFrame": 3575
+        }
+      ],
+      "fullScript": "GoogleによるIntersect Power買収。Googleは、電力会社Intersect Powerを47.5億ドルで買収することに合意しました。これはデータセンターの拡張と安定的な電力供給確保を目的としており、AI駆動型インフラへの大規模投資の一環と見られます。（記事28）"
+    },
+    {
+      "index": 6,
+      "title": "戦略的提携・パートナーシップ",
+      "audioFile": "presentations/audio_output/slide_06.mp3",
+      "duration": 20.34,
+      "durationFrames": 610,
+      "startTime": 119.2,
+      "endTime": 139.54,
+      "startFrame": 3576,
+      "endFrame": 4186,
+      "subtitles": [
+        {
+          "text": "Googleとナイジェリアの海底ケーブル協議。",
+          "start": 119.2,
+          "end": 122.5863076923077,
+          "startFrame": 3576,
+          "endFrame": 3677
+        },
+        {
+          "text": "ナイジェリアは、デジタルインフラ強化のため",
+          "start": 122.8863076923077,
+          "end": 125.97815384615384,
+          "startFrame": 3686,
+          "endFrame": 3779
+        },
+        {
+          "text": "Alphabet Inc.傘下のGoogleと新たな海底ケーブ\nル敷設について協議を進めています。",
+          "start": 126.27815384615384,
+          "end": 133.34523076923077,
+          "startFrame": 3788,
+          "endFrame": 4000
+        },
+        {
+          "text": "これはグローバルなクラウド・AIインフラの\n拡大に向けた動きです。",
+          "start": 133.64523076923078,
+          "end": 138.3566153846154,
+          "startFrame": 4009,
+          "endFrame": 4150
+        },
+        {
+          "text": "（記事22）",
+          "start": 138.6566153846154,
+          "end": 139.54000000000002,
+          "startFrame": 4159,
+          "endFrame": 4186
+        }
+      ],
+      "fullScript": "Googleとナイジェリアの海底ケーブル協議。ナイジェリアは、デジタルインフラ強化のため、Alphabet Inc.傘下のGoogleと新たな海底ケーブル敷設について協議を進めています。これはグローバルなクラウド・AIインフラの拡大に向けた動きです。（記事22）"
+    },
+    {
+      "index": 7,
+      "title": "大型契約・受注",
+      "audioFile": "presentations/audio_output/slide_07.mp3",
+      "duration": 23.28,
+      "durationFrames": 698,
+      "startTime": 139.54,
+      "endTime": 162.82,
+      "startFrame": 4186,
+      "endFrame": 4884,
+      "subtitles": [
+        {
+          "text": "欧州データセンターへの26億ドル投資。",
+          "start": 139.54,
+          "end": 142.71818181818182,
+          "startFrame": 4186,
+          "endFrame": 4281
+        },
+        {
+          "text": "カナダ年金投資委員会（CPP Investments）と\nGoodman Groupは",
+          "start": 143.01818181818183,
+          "end": 150.04363636363638,
+          "startFrame": 4290,
+          "endFrame": 4501
+        },
+        {
+          "text": "欧州のデータセンター事業に26億ドルを\n投資する合意に至りました。",
+          "start": 150.3436363636364,
+          "end": 155.69636363636366,
+          "startFrame": 4510,
+          "endFrame": 4670
+        },
+        {
+          "text": "これはAIの台頭によるデータセンター需要の\n急増に対応するものです。",
+          "start": 155.99636363636367,
+          "end": 161.51636363636368,
+          "startFrame": 4679,
+          "endFrame": 4845
+        },
+        {
+          "text": "（記事29）",
+          "start": 161.8163636363637,
+          "end": 162.82000000000005,
+          "startFrame": 4854,
+          "endFrame": 4884
+        }
+      ],
+      "fullScript": "欧州データセンターへの26億ドル投資。カナダ年金投資委員会（CPP Investments）とGoodman Groupは、欧州のデータセンター事業に26億ドルを投資する合意に至りました。これはAIの台頭によるデータセンター需要の急増に対応するものです。（記事29）"
+    },
+    {
+      "index": 8,
+      "title": "まとめ",
+      "audioFile": "presentations/audio_output/slide_08.mp3",
+      "duration": 3.88,
+      "durationFrames": 116,
+      "startTime": 162.82,
+      "endTime": 166.7,
+      "startFrame": 4884,
+      "endFrame": 5001,
+      "subtitles": [
+        {
+          "text": "本日のAI・IT株式ニュースは以上です。",
+          "start": 162.82,
+          "end": 166.7,
+          "startFrame": 4884,
+          "endFrame": 5001
+        }
+      ],
+      "fullScript": "本日のAI・IT株式ニュースは以上です。"
+    },
+    {
+      "index": 9,
+      "title": "塾頭高崎の完全自動化への挑戦",
+      "audioFile": "presentations/audio_output/slide_09.mp3",
+      "duration": 40.26,
+      "durationFrames": 1207,
+      "startTime": 166.7,
+      "endTime": 206.95999999999998,
+      "startFrame": 5001,
+      "endFrame": 6208,
+      "subtitles": [
+        {
+          "text": "ご視聴いただきありがとうございました。",
+          "start": 166.7,
+          "end": 169.86068669527896,
+          "startFrame": 5001,
+          "endFrame": 5095
+        },
+        {
+          "text": "実はこのレポート、if塾の塾頭高崎による「完全自動化への挑戦」\nプロジェクトの一環として、AIが自動生成しています。",
+          "start": 170.16068669527897,
+          "end": 179.64274678111587,
+          "startFrame": 5104,
+          "endFrame": 5389
+        },
+        {
+          "text": "将来的には塾頭が執筆しているような自然な記事になることを目指し\nており、現時点では事実と異なる内容が含まれる可能性もあります。",
+          "start": 179.9427467811159,
+          "end": 190.25656652360516,
+          "startFrame": 5398,
+          "endFrame": 5707
+        },
+        {
+          "text": "この挑戦に共感していただけたら、\nぜひチャンネル登録とグッドボタンをよろしくお願いします！",
+          "start": 190.55656652360517,
+          "end": 197.87605150214594,
+          "startFrame": 5716,
+          "endFrame": 5936
+        },
+        {
+          "text": "また、無料のAI教育や導入コンサルも受け付けています。",
+          "start": 198.17605150214595,
+          "end": 202.6675536480687,
+          "startFrame": 5945,
+          "endFrame": 6080
+        },
+        {
+          "text": "詳しくは概要欄のリンクからお問い合わせください。",
+          "start": 202.9675536480687,
+          "end": 206.96000000000004,
+          "startFrame": 6089,
+          "endFrame": 6208
+        }
+      ],
+      "fullScript": "ご視聴いただきありがとうございました。実はこのレポート、if塾の塾頭高崎による「完全自動化への挑戦」プロジェクトの一環として、AIが自動生成しています。将来的には塾頭が執筆しているような自然な記事になることを目指しており、現時点では事実と異なる内容が含まれる可能性もあります。この挑戦に共感していただけたら、ぜひチャンネル登録とグッドボタンをよろしくお願いします！また、無料のAI教育や導入コンサルも受け付けています。詳しくは概要欄のリンクからお問い合わせください。"
+    }
+  ]
+}
