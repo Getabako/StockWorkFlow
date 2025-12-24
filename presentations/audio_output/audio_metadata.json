@@ -4,43 +4,43 @@
       "index": 1,
       "title": "AI/IT株式ニュース",
       "audio_file": "presentations/audio_output/slide_01.mp3",
-      "script": "うぃっすー！if塾AIニュースのお時間です。2025/12/23のAI・IT株式ニュースをお届けします。"
+      "script": "うぃっすー！if塾AIニュースのお時間です。2025/12/24のAI・IT株式ニュースをお届けします。"
     },
     {
       "index": 2,
       "title": "本日のサマリー",
       "audio_file": "presentations/audio_output/slide_02.mp3",
-      "script": "AI/IT市場は、AIエコシステムの拡大を背景にインフラ投資が加速しています。特にデータセンターと電力供給への大規模投資が顕著です。大手テック企業はAIモデル開発競争を継続し、Googleは新たなAIモデルの展開と研究成果を発表しました。一方で、AIチップのサプライチェーンには地政学的なリスクが影を落とし、NVIDIA関連企業への密輸調査や米中間の半導体貿易政策の動向が注目されます。AI技術の進化に伴うM&Aも活発化し、規制の動きも具体化しています。"
+      "script": "本日のAI/IT市場は、主要チップメーカー間のサプライチェーン戦略の変化、特にNVIDIAによるIntelのチップ製造プロセス利用テスト中止の報道が大きな注目を集めました。AIインフラ需要の加速に伴うデータセンターへの大規模投資計画が浮上する一方、ServiceNowによるサイバーセキュリティ企業の買収も発表され、関連ソリューションへの需要の高まりを示しています。また、AIの倫理的利用に対する社会的な関心と規制の動きが強まっており、InstacartのAI価格設定実験撤回はその象徴的な事例となりました。"
     },
     {
       "index": 3,
       "title": "M&A・企業買収",
       "audio_file": "presentations/audio_output/slide_03.mp3",
-      "script": "ServiceNowによるArmis買収。ITサービス大手ServiceNowは、サイバーセキュリティスタートアップのArmisを77.5億ドルで買収することで合意しました。これはServiceNowにとって過去最大の買収案件となります。（記事7, 16）"
+      "script": "ServiceNowがサイバーセキュリティスタートアップArmisを77.5億ドルで買収。ServiceNowは、サイバーセキュリティのスタートアップであるArmisを77.5億ドルで買収することに合意しました。これは、エンタープライズSaaSにおけるセキュリティソリューション強化の動きを加速させるものです。（記事20）"
     },
     {
       "index": 4,
-      "title": "M&A・企業買収",
+      "title": "戦略的提携・パートナーシップ",
       "audio_file": "presentations/audio_output/slide_04.mp3",
-      "script": "Samsung HarmanによるZF Group事業買収。Samsung Electronics傘下のHarman Internationalは、ドイツのZF Groupのドライバーアシスタンス事業を15億ユーロで買収します。これは自動運転技術への投資であり、広義のAI関連市場へのSamsungの注力を示唆します。（記事20）"
+      "script": "NVIDIAがIntelのチップ製造プロセス利用テストを中止。NVIDIAがIntelの先端チップ製造プロセスを利用するテストを中止したとの報道が複数報じられ、Intelの株価が下落しました。これは、AIチップ市場におけるNVIDIAのサプライチェーン戦略の変更、または特定の生産プロセスの評価結果に起因する可能性があります。（記事2, 8, 10）"
     },
     {
       "index": 5,
-      "title": "M&A・企業買収",
+      "title": "大型契約・受注",
       "audio_file": "presentations/audio_output/slide_05.mp3",
-      "script": "GoogleによるIntersect Power買収。Googleは、電力会社Intersect Powerを47.5億ドルで買収することに合意しました。これはデータセンターの拡張と安定的な電力供給確保を目的としており、AI駆動型インフラへの大規模投資の一環と見られます。（記事28）"
+      "script": "保険会社と年金基金がデータセンターへの大規模投資を検討。AI需要の高まりにより、データセンターの建設が急増する中、保険会社や年金基金がデータセンターへの大規模な資金提供を検討していることが明らかになりました。これはAIインフラ市場の拡大を強く裏付ける動きです。（記事12）"
     },
     {
       "index": 6,
-      "title": "戦略的提携・パートナーシップ",
+      "title": "大型契約・受注",
       "audio_file": "presentations/audio_output/slide_06.mp3",
-      "script": "Googleとナイジェリアの海底ケーブル協議。ナイジェリアは、デジタルインフラ強化のため、Alphabet Inc.傘下のGoogleと新たな海底ケーブル敷設について協議を進めています。これはグローバルなクラウド・AIインフラの拡大に向けた動きです。（記事22）"
+      "script": "Tesla、Amazon、Oracleがボリビアへの投資を発表。ボリビアの新大統領が、Tesla、Amazon、Oracleといった主要な米国テクノロジー企業が同国へ投資する意向を近く発表すると述べました。（記事18）"
     },
     {
       "index": 7,
-      "title": "大型契約・受注",
+      "title": "新製品・新技術",
       "audio_file": "presentations/audio_output/slide_07.mp3",
-      "script": "欧州データセンターへの26億ドル投資。カナダ年金投資委員会（CPP Investments）とGoodman Groupは、欧州のデータセンター事業に26億ドルを投資する合意に至りました。これはAIの台頭によるデータセンター需要の急増に対応するものです。（記事29）"
+      "script": "Waymoが自動運転ソフトウェアをアップデート。Alphabet傘下のWaymoは、サンフランシスコでの大規模停電時に自動運転タクシーが停止し交通渋滞を引き起こしたことを受け、電力障害への対応を強化するためフリート全体の自動運転ソフトウェアをアップデートすると発表しました。（記事15）"
     },
     {
       "index": 8,

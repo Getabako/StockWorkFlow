@@ -1,0 +1,413 @@
+{
+  "fps": 30,
+  "totalDuration": 213.93999999999997,
+  "totalFrames": 6418,
+  "slides": [
+    {
+      "index": 1,
+      "title": "AI/IT株式ニュース",
+      "audioFile": "presentations/audio_output/slide_01.mp3",
+      "duration": 10.16,
+      "durationFrames": 304,
+      "startTime": 0,
+      "endTime": 10.16,
+      "startFrame": 0,
+      "endFrame": 304,
+      "subtitles": [
+        {
+          "text": "うぃっすー！",
+          "start": 0,
+          "end": 1.1030769230769233,
+          "startFrame": 0,
+          "endFrame": 33
+        },
+        {
+          "text": "if塾AIニュースのお時間です。",
+          "start": 1.4030769230769233,
+          "end": 4.344615384615385,
+          "startFrame": 42,
+          "endFrame": 130
+        },
+        {
+          "text": "2025/12/24のAI・IT株式ニュースをお届けします。",
+          "start": 4.644615384615385,
+          "end": 10.16,
+          "startFrame": 139,
+          "endFrame": 304
+        }
+      ],
+      "fullScript": "うぃっすー！if塾AIニュースのお時間です。2025/12/24のAI・IT株式ニュースをお届けします。"
+    },
+    {
+      "index": 2,
+      "title": "本日のサマリー",
+      "audioFile": "presentations/audio_output/slide_02.mp3",
+      "duration": 43.68,
+      "durationFrames": 1310,
+      "startTime": 10.16,
+      "endTime": 53.84,
+      "startFrame": 304,
+      "endFrame": 1615,
+      "subtitles": [
+        {
+          "text": "本日のAI/IT市場は、\n主要チップメーカー間のサプライチェーン戦略の変化",
+          "start": 10.16,
+          "end": 16.20972111553785,
+          "startFrame": 304,
+          "endFrame": 486
+        },
+        {
+          "text": "特にNVIDIAによるIntelのチップ製造プロセス利用テスト\n中止の報道が大きな注目を集めました。",
+          "start": 16.50972111553785,
+          "end": 24.744063745019922,
+          "startFrame": 495,
+          "endFrame": 742
+        },
+        {
+          "text": "AIインフラ需要の加速に伴うデータセンターへ\nの大規模投資計画が浮上する一方",
+          "start": 25.044063745019923,
+          "end": 31.26183266932271,
+          "startFrame": 751,
+          "endFrame": 937
+        },
+        {
+          "text": "ServiceNowによるサイバーセキュリティ企業の買収も発表\nされ、関連ソリューションへの需要の高まりを示しています。",
+          "start": 31.561832669322712,
+          "end": 41.47665338645419,
+          "startFrame": 946,
+          "endFrame": 1244
+        },
+        {
+          "text": "また、\nAIの倫理的利用に対する社会的な関心と規制の動きが強まっており",
+          "start": 41.776653386454186,
+          "end": 47.49027888446216,
+          "startFrame": 1253,
+          "endFrame": 1424
+        },
+        {
+          "text": "InstacartのAI価格設定実験撤回は\nその象徴的な事例となりました。",
+          "start": 47.790278884462154,
+          "end": 53.84,
+          "startFrame": 1433,
+          "endFrame": 1615
+        }
+      ],
+      "fullScript": "本日のAI/IT市場は、主要チップメーカー間のサプライチェーン戦略の変化、特にNVIDIAによるIntelのチップ製造プロセス利用テスト中止の報道が大きな注目を集めました。AIインフラ需要の加速に伴うデータセンターへの大規模投資計画が浮上する一方、ServiceNowによるサイバーセキュリティ企業の買収も発表され、関連ソリューションへの需要の高まりを示しています。また、AIの倫理的利用に対する社会的な関心と規制の動きが強まっており、InstacartのAI価格設定実験撤回はその象徴的な事例となりました。"
+    },
+    {
+      "index": 3,
+      "title": "M&A・企業買収",
+      "audioFile": "presentations/audio_output/slide_03.mp3",
+      "duration": 23.1,
+      "durationFrames": 693,
+      "startTime": 53.84,
+      "endTime": 76.94,
+      "startFrame": 1615,
+      "endFrame": 2308,
+      "subtitles": [
+        {
+          "text": "ServiceNowがサイバーセキュリティスタートアップArm\nisを77.5億ドルで買収。",
+          "start": 53.84,
+          "end": 60.04496894409938,
+          "startFrame": 1615,
+          "endFrame": 1801
+        },
+        {
+          "text": "ServiceNowは、サイバーセキュリティのスタートアップで\nあるArmisを77.5億ドルで買収することに合意しました。",
+          "start": 60.34496894409938,
+          "end": 68.75614906832298,
+          "startFrame": 1810,
+          "endFrame": 2062
+        },
+        {
+          "text": "これは、エンタープライズSaaSにおけるセキュリティソリューシ\nョン強化の動きを加速させるものです。",
+          "start": 69.05614906832298,
+          "end": 75.81267080745342,
+          "startFrame": 2071,
+          "endFrame": 2274
+        },
+        {
+          "text": "（記事20）",
+          "start": 76.11267080745341,
+          "end": 76.94,
+          "startFrame": 2283,
+          "endFrame": 2308
+        }
+      ],
+      "fullScript": "ServiceNowがサイバーセキュリティスタートアップArmisを77.5億ドルで買収。ServiceNowは、サイバーセキュリティのスタートアップであるArmisを77.5億ドルで買収することに合意しました。これは、エンタープライズSaaSにおけるセキュリティソリューション強化の動きを加速させるものです。（記事20）"
+    },
+    {
+      "index": 4,
+      "title": "戦略的提携・パートナーシップ",
+      "audioFile": "presentations/audio_output/slide_04.mp3",
+      "duration": 28.38,
+      "durationFrames": 851,
+      "startTime": 76.94,
+      "endTime": 105.32,
+      "startFrame": 2308,
+      "endFrame": 3159,
+      "subtitles": [
+        {
+          "text": "NVIDIAがIntelのチップ製造プロセス利用テストを中止。",
+          "start": 76.94,
+          "end": 81.75664739884392,
+          "startFrame": 2308,
+          "endFrame": 2452
+        },
+        {
+          "text": "NVIDIAがIntelの先端チップ製造プロセスを利用するテス\nトを中止したとの報道が複数報じられ",
+          "start": 82.05664739884392,
+          "end": 89.51468208092484,
+          "startFrame": 2461,
+          "endFrame": 2685
+        },
+        {
+          "text": "Intelの株価が下落しました。",
+          "start": 89.81468208092484,
+          "end": 92.30069364161848,
+          "startFrame": 2694,
+          "endFrame": 2769
+        },
+        {
+          "text": "これは、\nAIチップ市場におけるNVIDIAのサプライチェーン戦略の変更",
+          "start": 92.60069364161848,
+          "end": 98.03884393063582,
+          "startFrame": 2778,
+          "endFrame": 2941
+        },
+        {
+          "text": "または特定の生産プロセスの評価結果に起因する可能性があります。",
+          "start": 98.33884393063582,
+          "end": 103.15549132947974,
+          "startFrame": 2950,
+          "endFrame": 3094
+        },
+        {
+          "text": "（記事2, 8, 10）",
+          "start": 103.45549132947974,
+          "end": 105.31999999999998,
+          "startFrame": 3103,
+          "endFrame": 3159
+        }
+      ],
+      "fullScript": "NVIDIAがIntelのチップ製造プロセス利用テストを中止。NVIDIAがIntelの先端チップ製造プロセスを利用するテストを中止したとの報道が複数報じられ、Intelの株価が下落しました。これは、AIチップ市場におけるNVIDIAのサプライチェーン戦略の変更、または特定の生産プロセスの評価結果に起因する可能性があります。（記事2, 8, 10）"
+    },
+    {
+      "index": 5,
+      "title": "大型契約・受注",
+      "audioFile": "presentations/audio_output/slide_05.mp3",
+      "duration": 24.82,
+      "durationFrames": 744,
+      "startTime": 105.32,
+      "endTime": 130.14,
+      "startFrame": 3159,
+      "endFrame": 3904,
+      "subtitles": [
+        {
+          "text": "保険会社と年金基金がデータセンターへの大規模投資を検討。",
+          "start": 105.32,
+          "end": 110.21896296296296,
+          "startFrame": 3159,
+          "endFrame": 3306
+        },
+        {
+          "text": "AI需要の高まりにより、データセンターの建設が急増する中",
+          "start": 110.51896296296296,
+          "end": 115.41792592592593,
+          "startFrame": 3315,
+          "endFrame": 3462
+        },
+        {
+          "text": "保険会社や年金基金がデータセンターへの\n大規模な資金提供を検討していることが明らかになりました。",
+          "start": 115.71792592592593,
+          "end": 123.94118518518519,
+          "startFrame": 3471,
+          "endFrame": 3718
+        },
+        {
+          "text": "これはAIインフラ市場の拡大を強く裏付ける動きです。",
+          "start": 124.24118518518519,
+          "end": 128.7902222222222,
+          "startFrame": 3727,
+          "endFrame": 3863
+        },
+        {
+          "text": "（記事12）",
+          "start": 129.09022222222222,
+          "end": 130.14000000000001,
+          "startFrame": 3872,
+          "endFrame": 3904
+        }
+      ],
+      "fullScript": "保険会社と年金基金がデータセンターへの大規模投資を検討。AI需要の高まりにより、データセンターの建設が急増する中、保険会社や年金基金がデータセンターへの大規模な資金提供を検討していることが明らかになりました。これはAIインフラ市場の拡大を強く裏付ける動きです。（記事12）"
+    },
+    {
+      "index": 6,
+      "title": "大型契約・受注",
+      "audioFile": "presentations/audio_output/slide_06.mp3",
+      "duration": 17.16,
+      "durationFrames": 514,
+      "startTime": 130.14,
+      "endTime": 147.29999999999998,
+      "startFrame": 3904,
+      "endFrame": 4418,
+      "subtitles": [
+        {
+          "text": "Tesla、Amazon、\nOracleがボリビアへの投資を発表。",
+          "start": 130.14,
+          "end": 134.95777777777778,
+          "startFrame": 3904,
+          "endFrame": 4048
+        },
+        {
+          "text": "ボリビアの新大統領が、Tesla、Amazon",
+          "start": 135.2577777777778,
+          "end": 138.72055555555556,
+          "startFrame": 4057,
+          "endFrame": 4161
+        },
+        {
+          "text": "Oracleといった主要な米国テクノロジー企業が\n同国へ投資する意向を近く発表すると述べました。",
+          "start": 139.02055555555557,
+          "end": 146.0966666666667,
+          "startFrame": 4170,
+          "endFrame": 4382
+        },
+        {
+          "text": "（記事18）",
+          "start": 146.3966666666667,
+          "end": 147.30000000000004,
+          "startFrame": 4391,
+          "endFrame": 4419
+        }
+      ],
+      "fullScript": "Tesla、Amazon、Oracleがボリビアへの投資を発表。ボリビアの新大統領が、Tesla、Amazon、Oracleといった主要な米国テクノロジー企業が同国へ投資する意向を近く発表すると述べました。（記事18）"
+    },
+    {
+      "index": 7,
+      "title": "新製品・新技術",
+      "audioFile": "presentations/audio_output/slide_07.mp3",
+      "duration": 22.5,
+      "durationFrames": 675,
+      "startTime": 147.29999999999998,
+      "endTime": 169.79999999999998,
+      "startFrame": 4418,
+      "endFrame": 5093,
+      "subtitles": [
+        {
+          "text": "Waymoが自動運転ソフトウェアをアップデート。",
+          "start": 147.29999999999998,
+          "end": 150.9255319148936,
+          "startFrame": 4418,
+          "endFrame": 4527
+        },
+        {
+          "text": "Alphabet傘下のWaymoは",
+          "start": 151.22553191489362,
+          "end": 153.7936170212766,
+          "startFrame": 4536,
+          "endFrame": 4613
+        },
+        {
+          "text": "サンフランシスコでの大規模停電時に\n自動運転タクシーが停止し交通渋滞を引き起こしたことを受け",
+          "start": 154.0936170212766,
+          "end": 160.89148936170213,
+          "startFrame": 4622,
+          "endFrame": 4826
+        },
+        {
+          "text": "電力障害への対応を強化するためフリート全体の\n自動運転ソフトウェアをアップデートすると発表しました。",
+          "start": 161.19148936170214,
+          "end": 168.5936170212766,
+          "startFrame": 4835,
+          "endFrame": 5057
+        },
+        {
+          "text": "（記事15）",
+          "start": 168.8936170212766,
+          "end": 169.8,
+          "startFrame": 5066,
+          "endFrame": 5094
+        }
+      ],
+      "fullScript": "Waymoが自動運転ソフトウェアをアップデート。Alphabet傘下のWaymoは、サンフランシスコでの大規模停電時に自動運転タクシーが停止し交通渋滞を引き起こしたことを受け、電力障害への対応を強化するためフリート全体の自動運転ソフトウェアをアップデートすると発表しました。（記事15）"
+    },
+    {
+      "index": 8,
+      "title": "まとめ",
+      "audioFile": "presentations/audio_output/slide_08.mp3",
+      "duration": 3.88,
+      "durationFrames": 116,
+      "startTime": 169.79999999999998,
+      "endTime": 173.67999999999998,
+      "startFrame": 5093,
+      "endFrame": 5210,
+      "subtitles": [
+        {
+          "text": "本日のAI・IT株式ニュースは以上です。",
+          "start": 169.79999999999998,
+          "end": 173.67999999999998,
+          "startFrame": 5093,
+          "endFrame": 5210
+        }
+      ],
+      "fullScript": "本日のAI・IT株式ニュースは以上です。"
+    },
+    {
+      "index": 9,
+      "title": "塾頭高崎の完全自動化への挑戦",
+      "audioFile": "presentations/audio_output/slide_09.mp3",
+      "duration": 40.26,
+      "durationFrames": 1207,
+      "startTime": 173.67999999999998,
+      "endTime": 213.93999999999997,
+      "startFrame": 5210,
+      "endFrame": 6418,
+      "subtitles": [
+        {
+          "text": "ご視聴いただきありがとうございました。",
+          "start": 173.67999999999998,
+          "end": 176.84068669527895,
+          "startFrame": 5210,
+          "endFrame": 5305
+        },
+        {
+          "text": "実はこのレポート、if塾の塾頭高崎による「完全自動化への挑戦」\nプロジェクトの一環として、AIが自動生成しています。",
+          "start": 177.14068669527896,
+          "end": 186.62274678111586,
+          "startFrame": 5314,
+          "endFrame": 5598
+        },
+        {
+          "text": "将来的には塾頭が執筆しているような自然な記事になることを目指し\nており、現時点では事実と異なる内容が含まれる可能性もあります。",
+          "start": 186.92274678111588,
+          "end": 197.23656652360515,
+          "startFrame": 5607,
+          "endFrame": 5917
+        },
+        {
+          "text": "この挑戦に共感していただけたら、\nぜひチャンネル登録とグッドボタンをよろしくお願いします！",
+          "start": 197.53656652360516,
+          "end": 204.85605150214593,
+          "startFrame": 5926,
+          "endFrame": 6145
+        },
+        {
+          "text": "また、無料のAI教育や導入コンサルも受け付けています。",
+          "start": 205.15605150214594,
+          "end": 209.64755364806868,
+          "startFrame": 6154,
+          "endFrame": 6289
+        },
+        {
+          "text": "詳しくは概要欄のリンクからお問い合わせください。",
+          "start": 209.9475536480687,
+          "end": 213.94000000000003,
+          "startFrame": 6298,
+          "endFrame": 6418
+        }
+      ],
+      "fullScript": "ご視聴いただきありがとうございました。実はこのレポート、if塾の塾頭高崎による「完全自動化への挑戦」プロジェクトの一環として、AIが自動生成しています。将来的には塾頭が執筆しているような自然な記事になることを目指しており、現時点では事実と異なる内容が含まれる可能性もあります。この挑戦に共感していただけたら、ぜひチャンネル登録とグッドボタンをよろしくお願いします！また、無料のAI教育や導入コンサルも受け付けています。詳しくは概要欄のリンクからお問い合わせください。"
+    }
+  ]
+}
