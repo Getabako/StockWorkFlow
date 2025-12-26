@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ポートフォリオ影響分析レポート</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #0ea5e9;
+            --success-color: #10b981;
+            --danger-color: #ef4444;
+            --warning-color: #f59e0b;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-primary: #1e293b;
+            --text-secondary: #64748b;
+            --border-color: #e2e8f0;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        body {
+            font-family: 'Noto Sans JP', 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: var(--text-primary);
+            line-height: 1.7;
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            border-radius: 16px;
+            box-shadow: var(--shadow-lg);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            animation: pulse 15s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            50% { transform: translate(-10%, -10%) scale(1.1); }
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            font-weight: 700;
+            margin-bottom: 10px;
+            position: relative;
+            z-index: 1;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .header .subtitle {
+            font-size: 1.1em;
+            opacity: 0.95;
+            position: relative;
+            z-index: 1;
+            font-weight: 300;
+        }
+
+        .content {
+            padding: 50px;
+        }
+
+        h1 {
+            color: #1e3a8a;
+            font-size: 2.2em;
+            margin: 30px 0 20px 0;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #1e3a8a;
+            font-weight: 700;
+        }
+
+        h2 {
+            color: #0c4a6e;
+            font-size: 1.8em;
+            margin: 35px 0 20px 0;
+            padding-left: 15px;
+            border-left: 5px solid #0c4a6e;
+            font-weight: 600;
+        }
+
+        h3 {
+            color: var(--text-primary);
+            font-size: 1.4em;
+            margin: 25px 0 15px 0;
+            padding: 12px 20px;
+            background: linear-gradient(90deg, var(--bg-color) 0%, transparent 100%);
+            border-radius: 8px;
+            font-weight: 600;
+        }
+
+        h4 {
+            color: var(--text-secondary);
+            font-size: 1.1em;
+            margin: 20px 0 10px 0;
+            font-weight: 500;
+        }
+
+        p {
+            margin: 15px 0;
+            color: var(--text-primary);
+            font-size: 1.05em;
+        }
+
+        strong {
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        em {
+            font-style: italic;
+            color: var(--text-secondary);
+        }
+
+        ul, ol {
+            margin: 20px 0;
+            padding-left: 30px;
+        }
+
+        li {
+            margin: 12px 0;
+            line-height: 1.8;
+            color: var(--text-primary);
+        }
+
+        ul li {
+            list-style-type: none;
+            position: relative;
+            padding-left: 25px;
+        }
+
+        ul li::before {
+            content: '▸';
+            color: var(--primary-color);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+            font-size: 1.2em;
+        }
+
+        blockquote {
+            margin: 25px 0;
+            padding: 20px 25px;
+            background: var(--bg-color);
+            border-left: 5px solid var(--warning-color);
+            border-radius: 0 8px 8px 0;
+            font-style: italic;
+            color: var(--text-secondary);
+            box-shadow: var(--shadow);
+        }
+
+        hr {
+            border: none;
+            border-top: 2px solid var(--border-color);
+            margin: 40px 0;
+            opacity: 0.5;
+        }
+
+        code {
+            background: #f1f5f9;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            color: #dc2626;
+        }
+
+        pre {
+            background: #1e293b;
+            color: #e2e8f0;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 20px 0;
+            box-shadow: var(--shadow);
+        }
+
+        pre code {
+            background: none;
+            color: inherit;
+            padding: 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        th {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: white;
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        td {
+            padding: 15px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        tr:hover {
+            background: var(--bg-color);
+        }
+
+        .summary-box {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            border-left: 5px solid var(--warning-color);
+            padding: 25px;
+            margin: 25px 0;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+
+        .info-box {
+            background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+            border-left: 5px solid var(--primary-color);
+            padding: 25px;
+            margin: 25px 0;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+
+        .success-box {
+            background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+            border-left: 5px solid var(--success-color);
+            padding: 25px;
+            margin: 25px 0;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+
+        .footer {
+            background: var(--bg-color);
+            padding: 30px;
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 0.9em;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .footer p {
+            margin: 5px 0;
+            color: var(--text-secondary);
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 0.85em;
+            font-weight: 500;
+            margin: 0 5px;
+        }
+
+        .badge-primary {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        .badge-success {
+            background: var(--success-color);
+            color: white;
+        }
+
+        .badge-warning {
+            background: var(--warning-color);
+            color: white;
+        }
+
+        .badge-danger {
+            background: var(--danger-color);
+            color: white;
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+
+            .container {
+                box-shadow: none;
+                max-width: 100%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 20px 10px;
+            }
+
+            .header {
+                padding: 30px 20px;
+            }
+
+            .header h1 {
+                font-size: 1.8em;
+            }
+
+            .content {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            h3 {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>ポートフォリオ影響分析レポート</h1>
+            <div class="subtitle">AI/IT株式投資レポート - Powered by Gemini AI</div>
+        </div>
+
+        <div class="content">
+            <h1 id="_1">ポートフォリオ影響分析レポート</h1>
+<p><strong>作成日時</strong>: 2025年12月26日 21:12</p>
+<h2 id="_2">サマリー</h2>
+<p>今日の市場情勢は、AI/IT分野におけるM&amp;Aの活発化、NVIDIAのAIエコシステムでの影響力拡大、中国のテックスタートアップ支援強化といった動向を示しています。これにより、AI関連技術を持つ企業への投資意欲は引き続き旺盛と判断できます。お客様のポートフォリオは全体として大幅な含み益を享受しており、特にNVIDIAの驚異的なパフォーマンスが牽引しています。これらの市場動向を踏まえ、リスク管理と成長機会の追求を両立させるための具体的なアクションを提案します。</p>
+<h2 id="_3">ポートフォリオ現況</h2>
+<p><strong>ポートフォリオサマリー</strong>:<br />
+- 総評価額: ¥419,004<br />
+- 総購入額: ¥294,829<br />
+- 総損益: ¥+124,175 (+42.12%)<br />
+<em>注：ポートフォリオサマリーの総評価額は、特に米国株の評価額（USD建て）が円換算されていないか、反映されていない可能性があります。個別銘柄の評価額と損益率を重視し、アドバイスを提供します。</em></p>
+<p><strong>保有銘柄</strong>:</p>
+<ul>
+<li><strong>LITALICO Inc. (7366.T)</strong></li>
+<li>現在値: JPY 1,292.00 (+0.78%)</li>
+<li>平均取得単価: JPY 927.38</li>
+<li>保有株数: 300株</li>
+<li>取得金額: JPY 278,214.00</li>
+<li>評価額: JPY 387,600.00</li>
+<li>
+<p>損益: JPY +109,386.00 (+39.32%)</p>
+</li>
+<li>
+<p><strong>NVIDIA Corporation (NVDA)</strong></p>
+</li>
+<li>現在値: USD 190.53 (+1.02%)</li>
+<li>平均取得単価: USD 16.01</li>
+<li>保有株数: 82株</li>
+<li>取得金額: USD 1,312.82</li>
+<li>評価額: USD 15,623.46</li>
+<li>
+<p>損益: USD +14,310.64 (+1090.07%)</p>
+</li>
+<li>
+<p><strong>Broadcom Inc. (AVGO)</strong></p>
+</li>
+<li>現在値: USD 352.13 (+0.55%)</li>
+<li>平均取得単価: USD 344.35</li>
+<li>保有株数: 5株</li>
+<li>取得金額: USD 1,721.75</li>
+<li>評価額: USD 1,760.65</li>
+<li>
+<p>損益: USD +38.90 (+2.26%)</p>
+</li>
+<li>
+<p><strong>Alphabet Inc. (GOOG)</strong></p>
+</li>
+<li>現在値: USD 314.96 (-0.22%)</li>
+<li>平均取得単価: USD 291.87</li>
+<li>保有株数: 28株</li>
+<li>取得金額: USD 8,172.36</li>
+<li>評価額: USD 8,818.88</li>
+<li>
+<p>損益: USD +646.52 (+7.91%)</p>
+</li>
+<li>
+<p><strong>Tesla, Inc. (TSLA)</strong></p>
+</li>
+<li>現在値: USD 475.19 (-2.10%)</li>
+<li>平均取得単価: USD 264.97</li>
+<li>保有株数: 1株</li>
+<li>取得金額: USD 264.97</li>
+<li>評価額: USD 475.19</li>
+<li>
+<p>損益: USD +210.22 (+79.34%)</p>
+</li>
+<li>
+<p><strong>Intel Corporation (INTC)</strong></p>
+</li>
+<li>現在値: USD 36.20 (+0.11%)</li>
+<li>平均取得単価: USD 28.16</li>
+<li>保有株数: 14株</li>
+<li>取得金額: USD 394.24</li>
+<li>評価額: USD 506.80</li>
+<li>
+<p>損益: USD +112.56 (+28.55%)</p>
+</li>
+<li>
+<p><strong>QUALCOMM Incorporated (QCOM)</strong></p>
+</li>
+<li>現在値: USD 174.81 (+0.02%)</li>
+<li>平均取得単価: USD 163.84</li>
+<li>保有株数: 2株</li>
+<li>取得金額: USD 327.68</li>
+<li>評価額: USD 349.62</li>
+<li>
+<p>損益: USD +21.94 (+6.70%)</p>
+</li>
+<li>
+<p><strong>Advanced Micro Devices, Inc. (AMD)</strong></p>
+</li>
+<li>現在値: USD 214.99 (-0.02%)</li>
+<li>平均取得単価: USD 245.64</li>
+<li>保有株数: 18株</li>
+<li>取得金額: USD 4,421.52</li>
+<li>評価額: USD 3,869.82</li>
+<li>損益: USD -551.70 (-12.48%)</li>
+</ul>
+<h2 id="_4">保有銘柄への影響分析</h2>
+<ul>
+<li><strong>LITALICO Inc. (7366.T)</strong>: 今日の市場ニュースとの直接的な関連は薄いですが、AI/IT市場全体の活況は投資家のリスクオン心理を支え、中長期的な成長を後押しする可能性があります。教育・福祉分野でのテクノロジー活用への期待は持続するでしょう。</li>
+<li><strong>NVIDIA Corporation (NVDA)</strong>: 「Nvidia Up on AI Licensing Deal」とのニュースは、AIハードウェア/IPにおけるNVIDIAの支配的な地位をさらに強化するものです。AIエコシステムにおけるNVIDIAの重要性は今後も増大し続けると予想され、極めて強いプラス材料です。</li>
+<li><strong>Broadcom Inc. (AVGO)</strong>: 半導体業界のM&amp;Aが活発化している背景はAVGOにも追い風となる可能性があります。直近で買い増しされており、今後のM&amp;A戦略や半導体需要の動向に注目です。</li>
+<li><strong>Alphabet Inc. (GOOG)</strong>: Google傘下のWaymoがロボタクシーサービスの拡大を目指しているとのニュースは、AI×ロボット分野でのGOOGの競争優位性を示すもので、プラス材料です。AI技術全般への積極的な投資が評価されるでしょう。</li>
+<li><strong>Tesla, Inc. (TSLA)</strong>: ロボタクシー関連のニュースでWaymoが取り上げられましたが、TSLAへの直接的な影響は言及されていません。自動運転技術におけるAIの重要性は高いものの、競争激化の可能性も示唆されます。</li>
+<li><strong>Intel Corporation (INTC)</strong>: 半導体市場のAIシフトが加速する中、NVIDIAやAMDとの競争は一層厳しくなりますが、IntelもAI向けチップ開発に注力しており、今後の動向が注目されます。</li>
+<li><strong>QUALCOMM Incorporated (QCOM)</strong>: モバイルAIやエッジAIの需要拡大はQCOMにとって中長期的な追い風ですが、今日のニュースに直接的な影響は見られません。</li>
+<li><strong>Advanced Micro Devices, Inc. (AMD)</strong>: NVIDIAのライセンス契約のニュースは、AI半導体分野での競争相手としてAMDに間接的なプレッシャーを与える可能性があります。現在含み損ですが、AI向け製品の強化で巻き返しを図っています。</li>
+</ul>
+<h2 id="_5">買い増し検討銘柄</h2>
+<ul>
+<li><strong>Alphabet Inc. (GOOG)</strong>: Waymoのロボタクシー拡大は長期的な成長ドライバーであり、AI技術のリーディングカンパニーとしての地位を確立しています。ポートフォリオのAI中核銘柄としての比重を強化する機会です。</li>
+</ul>
+<h2 id="_6">利益確定検討銘柄</h2>
+<ul>
+<li><strong>NVIDIA Corporation (NVDA)</strong>: 驚異的な+1090.07%の含み益を達成しており、一部を利益確定することで、ポートフォリオのリスクを低減し、キャッシュポジションを強化することが賢明です。</li>
+</ul>
+<h2 id="_7">ホールド推奨銘柄</h2>
+<ul>
+<li><strong>LITALICO Inc. (7366.T)</strong>: 堅調な利益と国内市場での安定した成長が見込まれるため。</li>
+<li><strong>Broadcom Inc. (AVGO)</strong>: 直近購入であり、M&amp;Aを通じた成長戦略に期待が持てるため。</li>
+<li><strong>Tesla, Inc. (TSLA)</strong>: 高い含み益があり、EV市場と自動運転技術の進化に期待が持てるため。</li>
+<li><strong>Intel Corporation (INTC)</strong>: 利益が出ており、今後のAI半導体市場での競争力向上に期待するため。</li>
+<li><strong>QUALCOMM Incorporated (QCOM)</strong>: 利益が出ており、モバイルAIなどの成長分野での役割に期待するため。</li>
+<li><strong>Advanced Micro Devices, Inc. (AMD)</strong>: 現在は含み損ですが、AI半導体市場での競争力強化に向けた取り組みが進んでおり、今後の回復が期待されるため。</li>
+</ul>
+<h2 id="_8">新規購入候補</h2>
+<ul>
+<li>買付余力: ¥1,492,111</li>
+<li><strong>ServiceNow Inc. (NOW)</strong>: 今日のニュースでServiceNowが積極的なM&amp;A戦略を展開し、SaaS分野におけるAI活用で成長していることが報じられています。買付余力を活用し、ポートフォリオの分散と新たな成長機会の捕捉のため、調査の上、新規購入を検討する価値があります。AIを活用したエンタープライズソリューションは今後の需要拡大が期待されます。</li>
+</ul>
+<h2 id="_9">売却検討銘柄</h2>
+<ul>
+<li>特になし。現在含み損のあるAMDも、AI半導体としての将来性があるため、現時点での損切りは推奨しません。</li>
+</ul>
+<h2 id="_10">本日のアクション提案</h2>
+<ol>
+<li>
+<p><strong>[優先度: 高]</strong> <strong>NVIDIAの一部利益確定</strong></p>
+<ul>
+<li>銘柄: NVIDIA Corporation (NVDA)</li>
+<li>株数: 20-30株</li>
+<li>理由: 1000%を超える驚異的な含み益を一部確定し、ポートフォリオのリスクを管理します。得られた資金は、ポートフォリオの多様化や新たな成長分野への投資に充てることが可能です。</li>
+</ul>
+</li>
+<li>
+<p><strong>[優先度: 中]</strong> <strong>Alphabetの買い増し検討</strong></p>
+<ul>
+<li>銘柄: Alphabet Inc. (GOOG)</li>
+<li>株数: 5-10株</li>
+<li>理由: Waymoのロボタクシー事業拡大のニュースはポジティブであり、AI技術のリーディングカンパニーとして長期的な成長が期待できます。ポートフォリオのAI中核銘柄としての比重を強化します。</li>
+</ul>
+</li>
+<li>
+<p><strong>[優先度: 中]</strong> <strong>ServiceNow (NOW) の調査・新規購入検討</strong></p>
+<ul>
+<li>銘柄: ServiceNow Inc. (NOW)</li>
+<li>株数: ポートフォリオバランスと買付余力に応じて</li>
+<li>理由: M&amp;Aが活発なSaaS分野で、AIを活用したエンタープライズソリューションを提供するServiceNowは、今後の成長が期待できます。買付余力を活用し、ポートフォリオの分散と新たな成長機会の捕捉のため、詳細な調査の上、新規購入を検討します。</li>
+</ul>
+</li>
+<li>
+<p><strong>[優先度: 低]</strong> <strong>AMDは継続ホールド</strong></p>
+<ul>
+<li>銘柄: Advanced Micro Devices, Inc. (AMD)</li>
+<li>株数: 継続保有</li>
+<li>理由: 現在は含み損ですが、AI半導体市場での競争力強化に向けた取り組みが進んでおり、今後の回復が期待されます。直近購入したばかりでもあるため、ここで売却するよりも、長期的な視点でホールドを推奨します。</li>
+</ul>
+</li>
+<li>
+<p><strong>[優先度: 低]</strong> <strong>LITALICOは継続ホールド</strong></p>
+<ul>
+<li>銘柄: LITALICO Inc. (7366.T)</li>
+<li>株数: 継続保有</li>
+<li>理由: 国内市場における堅実な成長と社会的意義のある事業を展開しており、安定した利益貢献が見込まれるため。</li>
+</ul>
+</li>
+</ol>
+<h2 id="_11">明日以降の注目点</h2>
+<ul>
+<li>AI関連技術を持つ企業のM&amp;A動向の継続的な監視。</li>
+<li>NVIDIAのAIエコシステムにおける技術ライセンス供与戦略の進展。</li>
+<li>中国の国家支援ベンチャーファンドによるテックスタートアップへの投資動向とその国際的な影響。</li>
+<li>Waymoを含むロボタクシーや自動運転技術の実用化に向けた進捗。</li>
+<li>主要中央銀行の金融政策会合とそれによる市場金利、為替レートへの影響。</li>
+</ul>
+<hr />
+<p><em>このレポートはAI（Gemini）により自動生成されています。投資判断は必ずご自身で行ってください。</em></p>
+        </div>
+
+        <div class="footer">
+            <p>このレポートはAI（Google Gemini）により自動生成されています。</p>
+            <p>投資判断は必ずご自身の責任で行ってください。</p>
+            <p>生成日時: 2025年12月26日 21:13:19</p>
+        </div>
+    </div>
+</body>
+</html>
