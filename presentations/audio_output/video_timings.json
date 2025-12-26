@@ -1,263 +1,396 @@
 {
   "fps": 30,
-  "totalDuration": 150.04,
-  "totalFrames": 4501,
+  "totalDuration": 201.45999999999998,
+  "totalFrames": 6043,
   "slides": [
     {
       "index": 1,
       "title": "AI/IT株式ニュース",
       "audioFile": "presentations/audio_output/slide_01.mp3",
-      "duration": 10.26,
-      "durationFrames": 307,
+      "duration": 10.38,
+      "durationFrames": 311,
       "startTime": 0,
-      "endTime": 10.26,
+      "endTime": 10.38,
       "startFrame": 0,
-      "endFrame": 307,
+      "endFrame": 311,
       "subtitles": [
         {
           "text": "うぃっすー！",
           "start": 0,
-          "end": 1.1146153846153848,
+          "end": 1.1284615384615386,
           "startFrame": 0,
           "endFrame": 33
         },
         {
           "text": "if塾AIニュースのお時間です。",
-          "start": 1.4146153846153848,
-          "end": 4.386923076923077,
+          "start": 1.4284615384615387,
+          "end": 4.437692307692308,
           "startFrame": 42,
-          "endFrame": 131
+          "endFrame": 133
         },
         {
-          "text": "2025/12/25のAI・IT株式ニュースをお届けします。",
-          "start": 4.686923076923077,
-          "end": 10.26,
-          "startFrame": 140,
-          "endFrame": 307
+          "text": "2025/12/26のAI・IT株式ニュースをお届けします。",
+          "start": 4.737692307692308,
+          "end": 10.38,
+          "startFrame": 142,
+          "endFrame": 311
         }
       ],
-      "fullScript": "うぃっすー！if塾AIニュースのお時間です。2025/12/25のAI・IT株式ニュースをお届けします。"
+      "fullScript": "うぃっすー！if塾AIニュースのお時間です。2025/12/26のAI・IT株式ニュースをお届けします。"
     },
     {
       "index": 2,
       "title": "本日のサマリー",
       "audioFile": "presentations/audio_output/slide_02.mp3",
-      "duration": 39.0,
-      "durationFrames": 1170,
-      "startTime": 10.26,
-      "endTime": 49.26,
-      "startFrame": 307,
-      "endFrame": 1477,
+      "duration": 44.36,
+      "durationFrames": 1330,
+      "startTime": 10.38,
+      "endTime": 54.74,
+      "startFrame": 311,
+      "endFrame": 1642,
       "subtitles": [
         {
-          "text": "本日のAI/IT市場では、AI経済圏の中心であるNVIDIAが",
-          "start": 10.26,
-          "end": 15.473004484304933,
-          "startFrame": 307,
-          "endFrame": 464
+          "text": "AI/IT業界では、AI専門知識を持つ企業の獲得を目的としたM\n&Aが引き続き活発です。",
+          "start": 10.38,
+          "end": 17.811370967741937,
+          "startFrame": 311,
+          "endFrame": 534
         },
         {
-          "text": "AIスタートアップのGroqと\n技術ライセンス契約を締結したことが報じられました。",
-          "start": 15.773004484304934,
-          "end": 22.499461883408074,
-          "startFrame": 473,
-          "endFrame": 674
+          "text": "NVIDIAはAIスタートアップとのライセンス契約を通じてエコ\nシステム内での影響力を維持・拡大しており",
+          "start": 18.111370967741937,
+          "end": 26.925322580645165,
+          "startFrame": 543,
+          "endFrame": 807
         },
         {
-          "text": "これはNVIDIAがAIブーム関連企業への投資を継続し、\n自社製品に新たな技術を取り込むことで",
-          "start": 22.799461883408075,
-          "end": 30.534887892376684,
-          "startFrame": 683,
-          "endFrame": 916
+          "text": "AIハードウェア/IPの支配者としての地位を強化しています。",
+          "start": 27.225322580645166,
+          "end": 32.410000000000004,
+          "startFrame": 816,
+          "endFrame": 972
         },
         {
-          "text": "AIハードウェア市場における支配力を\nさらに強固にしようとする戦略の一環と見られます。",
-          "start": 30.834887892376685,
-          "end": 37.89766816143498,
-          "startFrame": 925,
-          "endFrame": 1136
+          "text": "また、中国は国家レベルでテックスタートアップ支援のための大型フ\nァンドを立ち上げ",
+          "start": 32.71,
+          "end": 39.45008064516129,
+          "startFrame": 981,
+          "endFrame": 1183
         },
         {
-          "text": "OpenAIなどの主要プレイヤーが\nNVIDIA依存からの脱却を図る中で",
-          "start": 38.197668161434976,
-          "end": 44.08331838565022,
-          "startFrame": 1145,
-          "endFrame": 1322
+          "text": "AI/IT分野における地政学的競争の激化を示唆しています。",
+          "start": 39.75008064516129,
+          "end": 44.76193548387097,
+          "startFrame": 1192,
+          "endFrame": 1342
         },
         {
-          "text": "NVIDIAの技術ポートフォリオ強化の動きは注目されます。",
-          "start": 44.38331838565022,
-          "end": 49.26,
-          "startFrame": 1331,
-          "endFrame": 1477
+          "text": "AI×ロボット分野では、Waymoがロボタクシーサービスの拡大\nを目指し、実用化に向けた重要な局面を迎えています。",
+          "start": 45.06193548387097,
+          "end": 54.74,
+          "startFrame": 1351,
+          "endFrame": 1642
         }
       ],
-      "fullScript": "本日のAI/IT市場では、AI経済圏の中心であるNVIDIAが、AIスタートアップのGroqと技術ライセンス契約を締結したことが報じられました。これはNVIDIAがAIブーム関連企業への投資を継続し、自社製品に新たな技術を取り込むことで、AIハードウェア市場における支配力をさらに強固にしようとする戦略の一環と見られます。OpenAIなどの主要プレイヤーがNVIDIA依存からの脱却を図る中で、NVIDIAの技術ポートフォリオ強化の動きは注目されます。"
+      "fullScript": "AI/IT業界では、AI専門知識を持つ企業の獲得を目的としたM&Aが引き続き活発です。NVIDIAはAIスタートアップとのライセンス契約を通じてエコシステム内での影響力を維持・拡大しており、AIハードウェア/IPの支配者としての地位を強化しています。また、中国は国家レベルでテックスタートアップ支援のための大型ファンドを立ち上げ、AI/IT分野における地政学的競争の激化を示唆しています。AI×ロボット分野では、Waymoがロボタクシーサービスの拡大を目指し、実用化に向けた重要な局面を迎えています。"
     },
     {
       "index": 3,
-      "title": "戦略的提携・パートナーシップ",
+      "title": "M&A・企業買収",
       "audioFile": "presentations/audio_output/slide_03.mp3",
-      "duration": 27.52,
-      "durationFrames": 825,
-      "startTime": 49.26,
-      "endTime": 76.78,
-      "startFrame": 1477,
-      "endFrame": 2303,
+      "duration": 21.62,
+      "durationFrames": 648,
+      "startTime": 54.74,
+      "endTime": 76.36,
+      "startFrame": 1642,
+      "endFrame": 2290,
       "subtitles": [
         {
-          "text": "NVIDIAとGroqの技術ライセンス契約。",
-          "start": 49.26,
-          "end": 53.24394557823129,
-          "startFrame": 1477,
-          "endFrame": 1597
+          "text": "Coforge Ltd.がEncoraを買収。",
+          "start": 54.74,
+          "end": 58.43426356589148,
+          "startFrame": 1642,
+          "endFrame": 1753
         },
         {
-          "text": "NVIDIA Corp.は、AIスタートアップのGroqとの間\nで技術ライセンス契約を締結しました。",
-          "start": 53.54394557823129,
-          "end": 62.41727891156462,
-          "startFrame": 1606,
-          "endFrame": 1872
+          "text": "インドのテクノロジーサービスプロバイダーCoforge\nLtd.は、AI、データ",
+          "start": 58.734263565891474,
+          "end": 64.9984496124031,
+          "startFrame": 1762,
+          "endFrame": 1949
         },
         {
-          "text": "これによりNVIDIAは、Groqが開発した「新しいタイプの技\n術」を自社製品に追加する権利を獲得し",
-          "start": 62.71727891156462,
-          "end": 71.59061224489795,
-          "startFrame": 1881,
-          "endFrame": 2147
+          "text": "製品エンジニアリングの専門知識を持つEncoraを23.5億ド\nルの企業価値（全株式交換）で買収することに合意しました。",
+          "start": 65.2984496124031,
+          "end": 74.77503875968992,
+          "startFrame": 1958,
+          "endFrame": 2243
         },
         {
-          "text": "AI関連企業への投資をさらに推進する意向を示しました。",
-          "start": 71.89061224489795,
-          "end": 76.77999999999999,
-          "startFrame": 2156,
-          "endFrame": 2303
+          "text": "（記事2, 4）",
+          "start": 75.07503875968992,
+          "end": 76.36,
+          "startFrame": 2252,
+          "endFrame": 2290
         }
       ],
-      "fullScript": "NVIDIAとGroqの技術ライセンス契約。NVIDIA Corp.は、AIスタートアップのGroqとの間で技術ライセンス契約を締結しました。これによりNVIDIAは、Groqが開発した「新しいタイプの技術」を自社製品に追加する権利を獲得し、AI関連企業への投資をさらに推進する意向を示しました。"
+      "fullScript": "Coforge Ltd.がEncoraを買収。インドのテクノロジーサービスプロバイダーCoforge Ltd.は、AI、データ、製品エンジニアリングの専門知識を持つEncoraを23.5億ドルの企業価値（全株式交換）で買収することに合意しました。（記事2, 4）"
     },
     {
       "index": 4,
-      "title": "新製品・新技術",
+      "title": "M&A・企業買収",
       "audioFile": "presentations/audio_output/slide_04.mp3",
-      "duration": 29.12,
-      "durationFrames": 873,
-      "startTime": 76.78,
-      "endTime": 105.9,
-      "startFrame": 2303,
-      "endFrame": 3177,
+      "duration": 18.64,
+      "durationFrames": 559,
+      "startTime": 76.36,
+      "endTime": 95.0,
+      "startFrame": 2290,
+      "endFrame": 2850,
       "subtitles": [
         {
-          "text": "NVIDIAによる新技術統合の可能性。",
-          "start": 76.78,
-          "end": 80.03447852760736,
-          "startFrame": 2303,
+          "text": "ServiceNowの積極的なM&A戦略。",
+          "start": 76.36,
+          "end": 80.04851485148515,
+          "startFrame": 2290,
           "endFrame": 2401
         },
         {
-          "text": "NVIDIAがGroqの技術をライセンス供与したことで",
-          "start": 80.33447852760736,
-          "end": 84.95926380368098,
+          "text": "ServiceNow Inc.は今年、\n買収や戦略的投資に少なくとも120億ドルを費やしており",
+          "start": 80.34851485148515,
+          "end": 88.42811881188119,
           "startFrame": 2410,
-          "endFrame": 2548
+          "endFrame": 2652
         },
         {
-          "text": "将来的にNVIDIA製品にGroqの\n革新的なAIアクセラレータ技術が組み込まれる可能性があります。",
-          "start": 85.25926380368098,
-          "end": 93.65239263803682,
-          "startFrame": 2557,
-          "endFrame": 2809
+          "text": "SaaS分野における積極的な統合・成長戦略を示しています。",
+          "start": 88.72811881188119,
+          "end": 93.82178217821782,
+          "startFrame": 2661,
+          "endFrame": 2814
         },
         {
-          "text": "これは特に、高速な推論処理に特化したGroqの技術が",
-          "start": 93.95239263803681,
-          "end": 98.40588957055215,
-          "startFrame": 2818,
-          "endFrame": 2952
-        },
-        {
-          "text": "NVIDIAのAIチップロードマップに\n新たな方向性をもたらす可能性を示唆しています。",
-          "start": 98.70588957055215,
-          "end": 105.9,
-          "startFrame": 2961,
-          "endFrame": 3177
+          "text": "（記事3）",
+          "start": 94.12178217821781,
+          "end": 94.99999999999999,
+          "startFrame": 2823,
+          "endFrame": 2849
         }
       ],
-      "fullScript": "NVIDIAによる新技術統合の可能性。NVIDIAがGroqの技術をライセンス供与したことで、将来的にNVIDIA製品にGroqの革新的なAIアクセラレータ技術が組み込まれる可能性があります。これは特に、高速な推論処理に特化したGroqの技術が、NVIDIAのAIチップロードマップに新たな方向性をもたらす可能性を示唆しています。"
+      "fullScript": "ServiceNowの積極的なM&A戦略。ServiceNow Inc.は今年、買収や戦略的投資に少なくとも120億ドルを費やしており、SaaS分野における積極的な統合・成長戦略を示しています。（記事3）"
     },
     {
       "index": 5,
-      "title": "まとめ",
+      "title": "戦略的提携・パートナーシップ",
       "audioFile": "presentations/audio_output/slide_05.mp3",
+      "duration": 21.14,
+      "durationFrames": 634,
+      "startTime": 95.0,
+      "endTime": 116.14,
+      "startFrame": 2850,
+      "endFrame": 3484,
+      "subtitles": [
+        {
+          "text": "NVIDIAとGroqのAIライセンス契約。",
+          "start": 95.0,
+          "end": 98.47875,
+          "startFrame": 2850,
+          "endFrame": 2954
+        },
+        {
+          "text": "NVIDIAはAIスタートアップGroqと\nライセンス契約を締結し、NVIDIAの株価を押し上げました。",
+          "start": 98.77875,
+          "end": 106.843125,
+          "startFrame": 2963,
+          "endFrame": 3205
+        },
+        {
+          "text": "これは、NVIDIAがAIエコシステム内での技術ライセンス供与\nにも積極的であることを示唆しています。",
+          "start": 107.143125,
+          "end": 115.049375,
+          "startFrame": 3214,
+          "endFrame": 3451
+        },
+        {
+          "text": "（記事2）",
+          "start": 115.349375,
+          "end": 116.14,
+          "startFrame": 3460,
+          "endFrame": 3484
+        }
+      ],
+      "fullScript": "NVIDIAとGroqのAIライセンス契約。NVIDIAはAIスタートアップGroqとライセンス契約を締結し、NVIDIAの株価を押し上げました。これは、NVIDIAがAIエコシステム内での技術ライセンス供与にも積極的であることを示唆しています。（記事2）"
+    },
+    {
+      "index": 6,
+      "title": "新製品・新技術",
+      "audioFile": "presentations/audio_output/slide_06.mp3",
+      "duration": 19.4,
+      "durationFrames": 582,
+      "startTime": 116.14,
+      "endTime": 135.54,
+      "startFrame": 3484,
+      "endFrame": 4066,
+      "subtitles": [
+        {
+          "text": "Waymoのロボタクシー拡大。",
+          "start": 116.14,
+          "end": 118.51391304347825,
+          "startFrame": 3484,
+          "endFrame": 3555
+        },
+        {
+          "text": "Google傘下のWaymoは\nロボタクシーサービスの拡大を目指しており",
+          "start": 118.81391304347825,
+          "end": 124.35304347826086,
+          "startFrame": 3564,
+          "endFrame": 3730
+        },
+        {
+          "text": "2026年が商用化に向けた重要な年になると報じられています。",
+          "start": 124.65304347826086,
+          "end": 129.40086956521736,
+          "startFrame": 3739,
+          "endFrame": 3882
+        },
+        {
+          "text": "これはAI×ロボット戦略による新市場創出の動きと一致します。",
+          "start": 129.70086956521737,
+          "end": 134.4486956521739,
+          "startFrame": 3891,
+          "endFrame": 4033
+        },
+        {
+          "text": "（記事5）",
+          "start": 134.74869565217392,
+          "end": 135.54000000000002,
+          "startFrame": 4042,
+          "endFrame": 4066
+        }
+      ],
+      "fullScript": "Waymoのロボタクシー拡大。Google傘下のWaymoはロボタクシーサービスの拡大を目指しており、2026年が商用化に向けた重要な年になると報じられています。これはAI×ロボット戦略による新市場創出の動きと一致します。（記事5）"
+    },
+    {
+      "index": 7,
+      "title": "規制・政策変更",
+      "audioFile": "presentations/audio_output/slide_07.mp3",
+      "duration": 21.78,
+      "durationFrames": 653,
+      "startTime": 135.54,
+      "endTime": 157.32,
+      "startFrame": 4066,
+      "endFrame": 4719,
+      "subtitles": [
+        {
+          "text": "中国の国家支援ベンチャーファンド設立。",
+          "start": 135.54,
+          "end": 138.82588235294116,
+          "startFrame": 4066,
+          "endFrame": 4164
+        },
+        {
+          "text": "中国は、自国のテック企業育成と投資効率向上のため",
+          "start": 139.12588235294118,
+          "end": 143.2764705882353,
+          "startFrame": 4173,
+          "endFrame": 4298
+        },
+        {
+          "text": "数十億ドル規模の国家支援ベンチャーファンドおよび地域ファンドを\n正式に立ち上げました。",
+          "start": 143.5764705882353,
+          "end": 150.84,
+          "startFrame": 4307,
+          "endFrame": 4525
+        },
+        {
+          "text": "これはAI/IT分野における国家戦略の強化を示すものです。",
+          "start": 151.14000000000001,
+          "end": 156.1552941176471,
+          "startFrame": 4534,
+          "endFrame": 4684
+        },
+        {
+          "text": "（記事8）",
+          "start": 156.4552941176471,
+          "end": 157.32000000000005,
+          "startFrame": 4693,
+          "endFrame": 4719
+        }
+      ],
+      "fullScript": "中国の国家支援ベンチャーファンド設立。中国は、自国のテック企業育成と投資効率向上のため、数十億ドル規模の国家支援ベンチャーファンドおよび地域ファンドを正式に立ち上げました。これはAI/IT分野における国家戦略の強化を示すものです。（記事8）"
+    },
+    {
+      "index": 8,
+      "title": "まとめ",
+      "audioFile": "presentations/audio_output/slide_08.mp3",
       "duration": 3.88,
       "durationFrames": 116,
-      "startTime": 105.9,
-      "endTime": 109.78,
-      "startFrame": 3177,
-      "endFrame": 3293,
+      "startTime": 157.32,
+      "endTime": 161.2,
+      "startFrame": 4719,
+      "endFrame": 4836,
       "subtitles": [
         {
           "text": "本日のAI・IT株式ニュースは以上です。",
-          "start": 105.9,
-          "end": 109.78,
-          "startFrame": 3177,
-          "endFrame": 3293
+          "start": 157.32,
+          "end": 161.2,
+          "startFrame": 4719,
+          "endFrame": 4836
         }
       ],
       "fullScript": "本日のAI・IT株式ニュースは以上です。"
     },
     {
-      "index": 6,
+      "index": 9,
       "title": "塾頭高崎の完全自動化への挑戦",
-      "audioFile": "presentations/audio_output/slide_06.mp3",
+      "audioFile": "presentations/audio_output/slide_09.mp3",
       "duration": 40.26,
       "durationFrames": 1207,
-      "startTime": 109.78,
-      "endTime": 150.04,
-      "startFrame": 3293,
-      "endFrame": 4501,
+      "startTime": 161.2,
+      "endTime": 201.45999999999998,
+      "startFrame": 4836,
+      "endFrame": 6043,
       "subtitles": [
         {
           "text": "ご視聴いただきありがとうございました。",
-          "start": 109.78,
-          "end": 112.94068669527897,
-          "startFrame": 3293,
-          "endFrame": 3388
+          "start": 161.2,
+          "end": 164.36068669527896,
+          "startFrame": 4836,
+          "endFrame": 4930
         },
         {
           "text": "実はこのレポート、if塾の塾頭高崎による「完全自動化への挑戦」\nプロジェクトの一環として、AIが自動生成しています。",
-          "start": 113.24068669527897,
-          "end": 122.72274678111587,
-          "startFrame": 3397,
-          "endFrame": 3681
+          "start": 164.66068669527897,
+          "end": 174.14274678111587,
+          "startFrame": 4939,
+          "endFrame": 5224
         },
         {
           "text": "将来的には塾頭が執筆しているような自然な記事になることを目指し\nており、現時点では事実と異なる内容が含まれる可能性もあります。",
-          "start": 123.02274678111587,
-          "end": 133.33656652360514,
-          "startFrame": 3690,
-          "endFrame": 4000
+          "start": 174.4427467811159,
+          "end": 184.75656652360516,
+          "startFrame": 5233,
+          "endFrame": 5542
         },
         {
           "text": "この挑戦に共感していただけたら、\nぜひチャンネル登録とグッドボタンをよろしくお願いします！",
-          "start": 133.63656652360515,
-          "end": 140.95605150214593,
-          "startFrame": 4009,
-          "endFrame": 4228
+          "start": 185.05656652360517,
+          "end": 192.37605150214594,
+          "startFrame": 5551,
+          "endFrame": 5771
         },
         {
           "text": "また、無料のAI教育や導入コンサルも受け付けています。",
-          "start": 141.25605150214594,
-          "end": 145.74755364806867,
-          "startFrame": 4237,
-          "endFrame": 4372
+          "start": 192.67605150214595,
+          "end": 197.1675536480687,
+          "startFrame": 5780,
+          "endFrame": 5915
         },
         {
           "text": "詳しくは概要欄のリンクからお問い合わせください。",
-          "start": 146.04755364806869,
-          "end": 150.04000000000002,
-          "startFrame": 4381,
-          "endFrame": 4501
+          "start": 197.4675536480687,
+          "end": 201.46000000000004,
+          "startFrame": 5924,
+          "endFrame": 6043
         }
       ],
       "fullScript": "ご視聴いただきありがとうございました。実はこのレポート、if塾の塾頭高崎による「完全自動化への挑戦」プロジェクトの一環として、AIが自動生成しています。将来的には塾頭が執筆しているような自然な記事になることを目指しており、現時点では事実と異なる内容が含まれる可能性もあります。この挑戦に共感していただけたら、ぜひチャンネル登録とグッドボタンをよろしくお願いします！また、無料のAI教育や導入コンサルも受け付けています。詳しくは概要欄のリンクからお問い合わせください。"
