@@ -12,7 +12,7 @@ import sys
 import argparse
 from pathlib import Path
 from typing import List, Dict
-import google.generativeai as genai
+from google import genai
 
 
 class CharacterManager:
@@ -69,9 +69,8 @@ class SlideAnalyzer:
         self.api_key = api_key
         self.character_manager = character_manager
 
-        # Gemini設定
-        genai.configure(api_key=self.api_key)
-        self.model = genai.GenerativeModel('gemini-2.0-flash-exp')
+        # 新しいGoogle GenAI SDKのクライアントを作成
+        self.client = genai.Client(api_key=self.api_key)
 
     def parse_slides(self) -> List[Dict[str, str]]:
         """マークダウンファイルからスライドを解析"""
@@ -140,7 +139,10 @@ class SlideAnalyzer:
 """
 
         try:
-            response = self.model.generate_content(prompt)
+            response = self.client.models.generate_content(
+                model='gemini-2.0-flash-exp',
+                contents=prompt,
+            )
             result = response.text.strip()
 
             # プロンプト部分と登場人物部分を分離

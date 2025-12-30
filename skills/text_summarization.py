@@ -5,7 +5,7 @@ TextSummarizationSkill
 
 import os
 from typing import Dict, Any
-import google.generativeai as genai
+from google import genai
 from .base_skill import BaseSkill
 
 
@@ -25,15 +25,14 @@ class TextSummarizationSkill(BaseSkill):
         api_key = os.getenv("GEMINI_API_KEY")
         if not api_key:
             raise ValueError("GEMINI_API_KEY environment variable is not set")
-        genai.configure(api_key=api_key)
-        self._model = genai.GenerativeModel(self.model_name)
+        self._client = genai.Client(api_key=api_key)
 
     @property
-    def model(self):
-        """遅延初期化されたモデルを返す"""
+    def client(self):
+        """遅延初期化されたクライアントを返す"""
         if self._model is None:
             self._init_model()
-        return self._model
+        return self._client
 
     def summarize(self, text: str, max_length: int = 500, style: str = "formal") -> str:
         """
@@ -65,7 +64,10 @@ class TextSummarizationSkill(BaseSkill):
 要約:
 """
 
-        response = self.model.generate_content(prompt)
+        response = self.client.models.generate_content(
+            model=self.model_name,
+            contents=prompt,
+        )
         return response.text.strip()
 
     def execute(self, params: Dict[str, Any]) -> Dict[str, Any]:

@@ -7,14 +7,15 @@ Gemini APIを使用してニュース記事を分析し、重要なファクト�
 import json
 import os
 from datetime import datetime
-import google.generativeai as genai
+from google import genai
 
 # Gemini APIの設定
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 if not GEMINI_API_KEY:
     raise ValueError("GEMINI_API_KEY environment variable is not set")
 
-genai.configure(api_key=GEMINI_API_KEY)
+# 新しいGoogle GenAI SDKのクライアントを作成
+client = genai.Client(api_key=GEMINI_API_KEY)
 
 
 def load_articles(input_file: str = "output/articles.json") -> dict:
@@ -226,9 +227,10 @@ def analyze_with_gemini(prompt: str, model_name: str = "gemini-2.5-flash") -> st
     """
     try:
         print(f"Analyzing with {model_name}...")
-        model = genai.GenerativeModel(model_name)
-
-        response = model.generate_content(prompt)
+        response = client.models.generate_content(
+            model=model_name,
+            contents=prompt,
+        )
 
         if not response.text:
             raise ValueError("Empty response from Gemini API")

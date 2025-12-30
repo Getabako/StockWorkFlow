@@ -15,7 +15,7 @@ import time
 import yaml
 import argparse
 from pathlib import Path
-import google.generativeai as genai
+from google import genai
 from google.api_core import exceptions as google_exceptions
 
 
@@ -148,12 +148,12 @@ def clean_declarative_phrases(script):
 
     return cleaned
 
-def generate_script_for_slide(model, slide, total_slides, max_retries=3):
+def generate_script_for_slide(client, slide, total_slides, max_retries=3):
     """
     1枚のスライドに対する原稿を生成（リトライ機能付き）
 
     Args:
-        model: Gemini モデル
+        client: Google GenAI クライアント
         slide: スライド情報（辞書）
         total_slides: 総スライド数
         max_retries: 最大リトライ回数
@@ -183,7 +183,10 @@ def generate_script_for_slide(model, slide, total_slides, max_retries=3):
 
     for attempt in range(max_retries):
         try:
-            response = model.generate_content(prompt)
+            response = client.models.generate_content(
+                model='gemini-2.0-flash-exp',
+                contents=prompt,
+            )
             script = response.text.strip()
 
             # 不要な宣言的フレーズを削除
@@ -236,9 +239,8 @@ def generate_full_script(slide_file, output_file, yaml_file=None):
         if not api_key:
             raise ValueError("GEMINI_API_KEY環境変数が設定されていません")
 
-        # Gemini APIの初期化
-        genai.configure(api_key=api_key)
-        model = genai.GenerativeModel('gemini-2.0-flash-exp')
+        # 新しいGoogle GenAI SDKのクライアントを作成
+        client = genai.Client(api_key=api_key)
 
         # スライドを解析
         print(f"スライドを解析中: {slide_file}")
@@ -249,7 +251,7 @@ def generate_full_script(slide_file, output_file, yaml_file=None):
         scripts = []
         for i, slide in enumerate(slides):
             print(f"原稿生成中: スライド {slide['index']} - {slide['title']}")
-            script = generate_script_for_slide(model, slide, len(slides))
+            script = generate_script_for_slide(client, slide, len(slides))
 
             scripts.append({
                 'index': slide['index'],

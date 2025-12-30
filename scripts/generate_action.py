@@ -8,14 +8,15 @@ import pandas as pd
 import os
 import json
 from datetime import datetime
-import google.generativeai as genai
+from google import genai
 
 # Gemini APIの設定
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 if not GEMINI_API_KEY:
     raise ValueError("GEMINI_API_KEY environment variable is not set")
 
-genai.configure(api_key=GEMINI_API_KEY)
+# 新しいGoogle GenAI SDKのクライアントを作成
+client = genai.Client(api_key=GEMINI_API_KEY)
 
 # 投資方針設定（カスタマイズ可能）
 INVESTMENT_BUDGET_JPY = 3000000  # 追加投資予算: 300万円
@@ -321,9 +322,10 @@ def generate_action_with_gemini(prompt: str, model_name: str = "gemini-2.5-pro")
     """
     try:
         print(f"Generating action plan with {model_name}...")
-        model = genai.GenerativeModel(model_name)
-
-        response = model.generate_content(prompt)
+        response = client.models.generate_content(
+            model=model_name,
+            contents=prompt,
+        )
 
         if not response.text:
             raise ValueError("Empty response from Gemini API")

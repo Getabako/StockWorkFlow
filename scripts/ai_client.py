@@ -20,12 +20,11 @@ class AIClient:
 
     def _init_gemini(self):
         """Geminiクライアントを初期化"""
-        import google.generativeai as genai
+        from google import genai
         api_key = os.getenv("GEMINI_API_KEY")
         if not api_key:
             raise ValueError("GEMINI_API_KEY environment variable is not set")
-        genai.configure(api_key=api_key)
-        return genai.GenerativeModel("gemini-2.5-flash")
+        return genai.Client(api_key=api_key)
 
     def _init_claude(self):
         """Claudeクライアントを初期化"""
@@ -56,8 +55,11 @@ class AIClient:
         if self.provider == "claude":
             return self.client.generate(prompt, max_tokens)
         else:
-            # Gemini
-            response = self.client.generate_content(prompt)
+            # Gemini (新しいgoogle-genai SDK)
+            response = self.client.models.generate_content(
+                model="gemini-2.5-flash",
+                contents=prompt,
+            )
             if not response.text:
                 raise ValueError("Empty response from Gemini")
             return response.text

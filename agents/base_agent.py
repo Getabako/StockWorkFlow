@@ -9,7 +9,7 @@ from abc import ABC, abstractmethod
 from datetime import datetime
 from pathlib import Path
 from typing import Dict, Any, Optional, List
-import google.generativeai as genai
+from google import genai
 
 
 class BaseAgent(ABC):
@@ -38,15 +38,14 @@ class BaseAgent(ABC):
         api_key = os.getenv("GEMINI_API_KEY")
         if not api_key:
             raise ValueError("GEMINI_API_KEY environment variable is not set")
-        genai.configure(api_key=api_key)
-        self._model = genai.GenerativeModel(self.model_name)
+        self._client = genai.Client(api_key=api_key)
 
     @property
-    def model(self):
-        """遅延初期化されたモデルを返す"""
+    def client(self):
+        """遅延初期化されたクライアントを返す"""
         if self._model is None:
             self._init_model()
-        return self._model
+        return self._client
 
     def generate(self, prompt: str) -> str:
         """
@@ -58,7 +57,10 @@ class BaseAgent(ABC):
         Returns:
             生成されたテキスト
         """
-        response = self.model.generate_content(prompt)
+        response = self.client.models.generate_content(
+            model=self.model_name,
+            contents=prompt,
+        )
         if not response.text:
             raise ValueError("Empty response from AI model")
         return response.text
