@@ -10,37 +10,37 @@
       "index": 2,
       "title": "本日のサマリー",
       "audio_file": "presentations/audio_output/slide_02.mp3",
-      "script": "本日のAI/IT市場は、AIインフラへの大規模投資とM&Aの活発化が顕著です。MetaによるAIエージェント企業の買収やソフトバンクグループによるデータセンター企業の買収は、AIブームがインフラ層にまで浸透していることを示します。また、GoogleによるAIアプリケーションの継続的な進化やCESでのAIガジェット展示の予告は、AIの日常への浸透が加速していることを示唆しています。AI関連株は韓国や中国市場の好調を牽引し、特にメモリチップメーカーはAI需要の恩恵を大きく受けています。"
+      "script": "AI/IT業界では、AIインフラへの投資が加速し、「ピック・アンド・シャベル」銘柄への注目が高まっています。MetaはAIスタートアップを買収し、xAIは大規模なデータセンター拡張計画を発表。中国や韓国市場ではAI関連株が経済回復を牽引し、特にメモリチップメーカーKioxiaはAIのデータストレージ需要により記録的な成長を遂げています。フィンテックやエッジAIといった応用分野のトレンドも鮮明になりつつあります。"
     },
     {
       "index": 3,
       "title": "M&A・企業買収",
       "audio_file": "presentations/audio_output/slide_03.mp3",
-      "script": "MetaがAIエージェントスタートアップManusを20億ドルで買収。Meta Platforms Inc.は、AIビジネス強化のため、シンガポール拠点のAIエージェント企業Manusを約20億ドルで買収することに合意しました。（記事4）"
+      "script": "Meta Platforms Inc.がManusを買収。Metaは、シンガポール拠点のAIスタートアップManusの買収に合意しました。これにより、MetaはAIビジネスの強化を図ります。(記事8)"
     },
     {
       "index": 4,
       "title": "M&A・企業買収",
       "audio_file": "presentations/audio_output/slide_04.mp3",
-      "script": "ソフトバンクグループがDigitalBridgeを30億ドルで買収。ソフトバンクグループは、AIブームを支えるデータセンターやデジタルインフラへの投資を強化するため、プライベートエクイティ企業のDigitalBridge Group Inc.を約30億ドルで買収することに合意しました。（記事8）"
+      "script": "アジア地域のM&A活発化。中国市場の回復を背景に、アジア地域でのM&Aが2026年に向けて活発化する見込みです。(記事21)"
     },
     {
       "index": 5,
-      "title": "M&A・企業買収",
+      "title": "大型契約・受注",
       "audio_file": "presentations/audio_output/slide_05.mp3",
-      "script": "AIがデータセンターM&Aを加速。2025年、AIブームを背景にデータセンター関連のM&A協議は700億ドル規模に達しており、AIがインフラ投資を強力に推進していることが示されています。（記事13）"
+      "script": "xAIが大規模データセンターを拡張。イーロン・マスク率いるxAIは、メンフィスにある大規模データセンター複合施設の拡張を計画しており、ミシシッピ州サウスヘブンに隣接施設を建設するために大規模倉庫を購入しました。これは、AI開発に必要な膨大な計算資源への先行投資を示唆しています。(記事2)"
     },
     {
       "index": 6,
-      "title": "戦略的提携・パートナーシップ",
+      "title": "新製品・新技術",
       "audio_file": "presentations/audio_output/slide_06.mp3",
-      "script": "OcadoがKrogerとの独占契約を終了。Ocado Group Plcは、米国Kroger Co.との提携における課題を受け、ロボット倉庫技術の独占提供契約を終了しました。これにより、Ocadoは新たなパートナーシップを模索する可能性があります。（記事3）"
+      "script": "ArmのCES 2026トレンド予測。Armは、CES 2026で物理AI（Physical AI）とエッジAIの形成が主要なトレンドになると予測しています。(記事1)"
     },
     {
       "index": 7,
-      "title": "戦略的提携・パートナーシップ",
+      "title": "新製品・新技術",
       "audio_file": "presentations/audio_output/slide_07.mp3",
-      "script": "CESで主要企業がAIガジェットを展示。Nvidia、AMD、Samsung、Lenovoといった大手テック企業が次週開催されるCESでAI搭載ガジェットを発表し、消費者市場におけるAI需要を測る予定です。これはコンシューマー向けAIの普及に向けた動きを示します。（記事14）"
+      "script": "FintechにおけるAI/ボットの支配。2026年には、フィンテック分野でAI搭載のボットがバンキングシステムの中核を担うと予測されています。(記事10)"
     },
     {
       "index": 8,

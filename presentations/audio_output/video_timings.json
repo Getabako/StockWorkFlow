@@ -1,7 +1,7 @@
 {
   "fps": 30,
-  "totalDuration": 203.29999999999998,
-  "totalFrames": 6098,
+  "totalDuration": 176.07999999999998,
+  "totalFrames": 5282,
   "slides": [
     {
       "index": 1,
@@ -42,281 +42,246 @@
       "index": 2,
       "title": "本日のサマリー",
       "audioFile": "presentations/audio_output/slide_02.mp3",
-      "duration": 43.44,
-      "durationFrames": 1303,
+      "duration": 36.64,
+      "durationFrames": 1099,
       "startTime": 10.28,
-      "endTime": 53.72,
+      "endTime": 46.92,
       "startFrame": 308,
-      "endFrame": 1611,
+      "endFrame": 1407,
       "subtitles": [
         {
-          "text": "本日のAI/IT市場は、\nAIインフラへの大規模投資とM&Aの活発化が顕著です。",
+          "text": "AI/IT業界では、AIインフラへの投資が加速し、\n「ピック・アンド・シャベル」銘柄への注目が高まっています。",
           "start": 10.28,
-          "end": 17.066970954356847,
+          "end": 19.57009708737864,
           "startFrame": 308,
-          "endFrame": 512
+          "endFrame": 587
         },
         {
-          "text": "MetaによるAIエージェント企業の\n買収やソフトバンクグループによるデータセンター企業の買収は",
-          "start": 17.366970954356848,
-          "end": 25.546141078838176,
-          "startFrame": 521,
-          "endFrame": 766
+          "text": "MetaはAIスタートアップを買収し、\nxAIは大規模なデータセンター拡張計画を発表。",
+          "start": 19.870097087378642,
+          "end": 27.095728155339806,
+          "startFrame": 596,
+          "endFrame": 812
         },
         {
-          "text": "AIブームがインフラ層にまで浸透していることを示します。",
-          "start": 25.846141078838176,
-          "end": 30.718838174273863,
-          "startFrame": 775,
-          "endFrame": 921
+          "text": "中国や韓国市場ではAI関連株が経済回復を牽引し",
+          "start": 27.395728155339807,
+          "end": 31.352621359223303,
+          "startFrame": 821,
+          "endFrame": 940
         },
         {
-          "text": "また、GoogleによるAIアプリケーションの継続的な進化やC\nESでのAIガジェット展示の予告は",
-          "start": 31.018838174273863,
-          "end": 39.37203319502075,
-          "startFrame": 930,
-          "endFrame": 1181
+          "text": "特にメモリチップメーカーKioxiaは\nAIのデータストレージ需要により記録的な成長を遂げています。",
+          "start": 31.652621359223303,
+          "end": 40.08252427184466,
+          "startFrame": 949,
+          "endFrame": 1202
         },
         {
-          "text": "AIの日常への浸透が加速していることを示唆しています。",
-          "start": 39.672033195020745,
-          "end": 44.37070539419087,
-          "startFrame": 1190,
-          "endFrame": 1331
-        },
-        {
-          "text": "AI関連株は韓国や中国市場の好調を牽引し、\n特にメモリチップメーカーはAI需要の恩恵を大きく受けています。",
-          "start": 44.67070539419087,
-          "end": 53.72,
-          "startFrame": 1340,
-          "endFrame": 1611
+          "text": "フィンテックやエッジAIといった応用分野の\nトレンドも鮮明になりつつあります。",
+          "start": 40.38252427184466,
+          "end": 46.92,
+          "startFrame": 1211,
+          "endFrame": 1407
         }
       ],
-      "fullScript": "本日のAI/IT市場は、AIインフラへの大規模投資とM&Aの活発化が顕著です。MetaによるAIエージェント企業の買収やソフトバンクグループによるデータセンター企業の買収は、AIブームがインフラ層にまで浸透していることを示します。また、GoogleによるAIアプリケーションの継続的な進化やCESでのAIガジェット展示の予告は、AIの日常への浸透が加速していることを示唆しています。AI関連株は韓国や中国市場の好調を牽引し、特にメモリチップメーカーはAI需要の恩恵を大きく受けています。"
+      "fullScript": "AI/IT業界では、AIインフラへの投資が加速し、「ピック・アンド・シャベル」銘柄への注目が高まっています。MetaはAIスタートアップを買収し、xAIは大規模なデータセンター拡張計画を発表。中国や韓国市場ではAI関連株が経済回復を牽引し、特にメモリチップメーカーKioxiaはAIのデータストレージ需要により記録的な成長を遂げています。フィンテックやエッジAIといった応用分野のトレンドも鮮明になりつつあります。"
     },
     {
       "index": 3,
       "title": "M&A・企業買収",
       "audioFile": "presentations/audio_output/slide_03.mp3",
-      "duration": 18.0,
-      "durationFrames": 540,
-      "startTime": 53.72,
-      "endTime": 71.72,
-      "startFrame": 1611,
-      "endFrame": 2151,
+      "duration": 15.42,
+      "durationFrames": 462,
+      "startTime": 46.92,
+      "endTime": 62.34,
+      "startFrame": 1407,
+      "endFrame": 1870,
       "subtitles": [
         {
-          "text": "MetaがAIエージェントスタートアップManusを\n20億ドルで買収。",
-          "start": 53.72,
-          "end": 58.792033898305085,
-          "startFrame": 1611,
-          "endFrame": 1763
+          "text": "Meta Platforms Inc.がManusを買収。",
+          "start": 46.92,
+          "end": 51.1308,
+          "startFrame": 1407,
+          "endFrame": 1533
         },
         {
-          "text": "Meta Platforms Inc.は、\nAIビジネス強化のため",
-          "start": 59.09203389830508,
-          "end": 63.729322033898306,
-          "startFrame": 1772,
-          "endFrame": 1911
+          "text": "Metaは、シンガポール拠点のAIスタートアップManusの買\n収に合意しました。",
+          "start": 51.4308,
+          "end": 57.2388,
+          "startFrame": 1542,
+          "endFrame": 1717
         },
         {
-          "text": "シンガポール拠点のAIエージェント企業Manusを\n約20億ドルで買収することに合意しました。",
-          "start": 64.02932203389831,
-          "end": 70.69542372881357,
-          "startFrame": 1920,
-          "endFrame": 2120
+          "text": "これにより、MetaはAIビジネスの強化を図ります。",
+          "start": 57.538799999999995,
+          "end": 61.31399999999999,
+          "startFrame": 1726,
+          "endFrame": 1839
         },
         {
-          "text": "（記事4）",
-          "start": 70.99542372881356,
-          "end": 71.72,
-          "startFrame": 2129,
-          "endFrame": 2151
+          "text": "(記事8)",
+          "start": 61.61399999999999,
+          "end": 62.33999999999999,
+          "startFrame": 1848,
+          "endFrame": 1870
         }
       ],
-      "fullScript": "MetaがAIエージェントスタートアップManusを20億ドルで買収。Meta Platforms Inc.は、AIビジネス強化のため、シンガポール拠点のAIエージェント企業Manusを約20億ドルで買収することに合意しました。（記事4）"
+      "fullScript": "Meta Platforms Inc.がManusを買収。Metaは、シンガポール拠点のAIスタートアップManusの買収に合意しました。これにより、MetaはAIビジネスの強化を図ります。(記事8)"
     },
     {
       "index": 4,
       "title": "M&A・企業買収",
       "audioFile": "presentations/audio_output/slide_04.mp3",
-      "duration": 21.98,
-      "durationFrames": 659,
-      "startTime": 71.72,
-      "endTime": 93.7,
-      "startFrame": 2151,
-      "endFrame": 2811,
+      "duration": 13.62,
+      "durationFrames": 408,
+      "startTime": 62.34,
+      "endTime": 75.96000000000001,
+      "startFrame": 1870,
+      "endFrame": 2278,
       "subtitles": [
         {
-          "text": "ソフトバンクグループがDigitalBridgeを\n30億ドルで買収。",
-          "start": 71.72,
-          "end": 76.5956462585034,
-          "startFrame": 2151,
-          "endFrame": 2297
+          "text": "アジア地域のM&A活発化。",
+          "start": 62.34,
+          "end": 65.07000000000001,
+          "startFrame": 1870,
+          "endFrame": 1952
         },
         {
-          "text": "ソフトバンクグループは、AIブームを支えるデータセンターやデジ\nタルインフラへの投資を強化するため",
-          "start": 76.89564625850339,
-          "end": 83.77891156462584,
-          "startFrame": 2306,
-          "endFrame": 2513
+          "text": "中国市場の回復を背景に、\nアジア地域でのM&Aが2026年に向けて活発化する見込みです。",
+          "start": 65.37,
+          "end": 74.4,
+          "startFrame": 1961,
+          "endFrame": 2232
         },
         {
-          "text": "プライベートエクイティ企業のDigitalBridge Gro\nup Inc.を約30億ドルで買収することに合意しました。",
-          "start": 84.07891156462584,
-          "end": 92.6829931972789,
-          "startFrame": 2522,
-          "endFrame": 2780
-        },
-        {
-          "text": "（記事8）",
-          "start": 92.9829931972789,
-          "end": 93.69999999999999,
-          "startFrame": 2789,
-          "endFrame": 2810
+          "text": "(記事21)",
+          "start": 74.7,
+          "end": 75.96000000000001,
+          "startFrame": 2241,
+          "endFrame": 2278
         }
       ],
-      "fullScript": "ソフトバンクグループがDigitalBridgeを30億ドルで買収。ソフトバンクグループは、AIブームを支えるデータセンターやデジタルインフラへの投資を強化するため、プライベートエクイティ企業のDigitalBridge Group Inc.を約30億ドルで買収することに合意しました。（記事8）"
+      "fullScript": "アジア地域のM&A活発化。中国市場の回復を背景に、アジア地域でのM&Aが2026年に向けて活発化する見込みです。(記事21)"
     },
     {
       "index": 5,
-      "title": "M&A・企業買収",
+      "title": "大型契約・受注",
       "audioFile": "presentations/audio_output/slide_05.mp3",
-      "duration": 19.4,
-      "durationFrames": 582,
-      "startTime": 93.7,
-      "endTime": 113.1,
-      "startFrame": 2811,
-      "endFrame": 3393,
+      "duration": 26.22,
+      "durationFrames": 786,
+      "startTime": 75.96000000000001,
+      "endTime": 102.18,
+      "startFrame": 2278,
+      "endFrame": 3065,
       "subtitles": [
         {
-          "text": "AIがデータセンターM&Aを加速。",
-          "start": 93.7,
-          "end": 96.90918367346939,
-          "startFrame": 2811,
-          "endFrame": 2907
+          "text": "xAIが大規模データセンターを拡張。",
+          "start": 75.96000000000001,
+          "end": 79.10937062937063,
+          "startFrame": 2278,
+          "endFrame": 2373
         },
         {
-          "text": "2025年、AIブームを背景にデータセンター関連のM&A協議は\n700億ドル規模に達しており",
-          "start": 97.20918367346938,
-          "end": 105.70408163265306,
-          "startFrame": 2916,
-          "endFrame": 3171
+          "text": "イーロン・マスク率いるxAIは、メンフィスにある大規模データセ\nンター複合施設の拡張を計画しており",
+          "start": 79.40937062937063,
+          "end": 87.8076923076923,
+          "startFrame": 2382,
+          "endFrame": 2634
         },
         {
-          "text": "AIがインフラ投資を強力に推進していることが示されています。",
-          "start": 106.00408163265305,
-          "end": 111.66734693877551,
-          "startFrame": 3180,
-          "endFrame": 3350
+          "text": "ミシシッピ州サウスヘブンに隣接施設を\n建設するために大規模倉庫を購入しました。",
+          "start": 88.1076923076923,
+          "end": 94.75636363636363,
+          "startFrame": 2643,
+          "endFrame": 2842
         },
         {
-          "text": "（記事13）",
-          "start": 111.9673469387755,
-          "end": 113.1,
-          "startFrame": 3359,
-          "endFrame": 3393
+          "text": "これは、\nAI開発に必要な膨大な計算資源への先行投資を示唆しています。",
+          "start": 95.05636363636363,
+          "end": 101.00517482517482,
+          "startFrame": 2851,
+          "endFrame": 3030
+        },
+        {
+          "text": "(記事2)",
+          "start": 101.30517482517482,
+          "end": 102.17999999999999,
+          "startFrame": 3039,
+          "endFrame": 3065
         }
       ],
-      "fullScript": "AIがデータセンターM&Aを加速。2025年、AIブームを背景にデータセンター関連のM&A協議は700億ドル規模に達しており、AIがインフラ投資を強力に推進していることが示されています。（記事13）"
+      "fullScript": "xAIが大規模データセンターを拡張。イーロン・マスク率いるxAIは、メンフィスにある大規模データセンター複合施設の拡張を計画しており、ミシシッピ州サウスヘブンに隣接施設を建設するために大規模倉庫を購入しました。これは、AI開発に必要な膨大な計算資源への先行投資を示唆しています。(記事2)"
     },
     {
       "index": 6,
-      "title": "戦略的提携・パートナーシップ",
+      "title": "新製品・新技術",
       "audioFile": "presentations/audio_output/slide_06.mp3",
-      "duration": 21.72,
-      "durationFrames": 651,
-      "startTime": 113.1,
-      "endTime": 134.82,
-      "startFrame": 3393,
-      "endFrame": 4044,
+      "duration": 15.6,
+      "durationFrames": 468,
+      "startTime": 102.18,
+      "endTime": 117.78,
+      "startFrame": 3065,
+      "endFrame": 3533,
       "subtitles": [
         {
-          "text": "OcadoがKrogerとの独占契約を終了。",
-          "start": 113.1,
-          "end": 116.59953488372092,
-          "startFrame": 3393,
+          "text": "ArmのCES 2026トレンド予測。",
+          "start": 102.18,
+          "end": 105.57285714285715,
+          "startFrame": 3065,
+          "endFrame": 3167
+        },
+        {
+          "text": "Armは、CES 2026で物理AI（Physical AI）\nとエッジAIの形成が主要なトレンドになると予測しています。",
+          "start": 105.87285714285714,
+          "end": 116.58714285714285,
+          "startFrame": 3176,
           "endFrame": 3497
         },
         {
-          "text": "Ocado Group Plcは、\n米国Kroger Co.との提携における課題を受け",
-          "start": 116.89953488372092,
-          "end": 123.58046511627906,
+          "text": "(記事1)",
+          "start": 116.88714285714285,
+          "end": 117.77999999999999,
           "startFrame": 3506,
-          "endFrame": 3707
-        },
-        {
-          "text": "ロボット倉庫技術の独占提供契約を終了しました。",
-          "start": 123.88046511627905,
-          "end": 127.53906976744184,
-          "startFrame": 3716,
-          "endFrame": 3826
-        },
-        {
-          "text": "これにより、\nOcadoは新たなパートナーシップを模索する可能性があります。",
-          "start": 127.83906976744184,
-          "end": 133.72465116279068,
-          "startFrame": 3835,
-          "endFrame": 4011
-        },
-        {
-          "text": "（記事3）",
-          "start": 134.0246511627907,
-          "end": 134.82,
-          "startFrame": 4020,
-          "endFrame": 4044
+          "endFrame": 3533
         }
       ],
-      "fullScript": "OcadoがKrogerとの独占契約を終了。Ocado Group Plcは、米国Kroger Co.との提携における課題を受け、ロボット倉庫技術の独占提供契約を終了しました。これにより、Ocadoは新たなパートナーシップを模索する可能性があります。（記事3）"
+      "fullScript": "ArmのCES 2026トレンド予測。Armは、CES 2026で物理AI（Physical AI）とエッジAIの形成が主要なトレンドになると予測しています。(記事1)"
     },
     {
       "index": 7,
-      "title": "戦略的提携・パートナーシップ",
+      "title": "新製品・新技術",
       "audioFile": "presentations/audio_output/slide_07.mp3",
-      "duration": 24.34,
-      "durationFrames": 730,
-      "startTime": 134.82,
-      "endTime": 159.16,
-      "startFrame": 4044,
-      "endFrame": 4774,
+      "duration": 14.16,
+      "durationFrames": 424,
+      "startTime": 117.78,
+      "endTime": 131.94,
+      "startFrame": 3533,
+      "endFrame": 3958,
       "subtitles": [
         {
-          "text": "CESで主要企業がAIガジェットを展示。",
-          "start": 134.82,
-          "end": 138.19810218978103,
-          "startFrame": 4044,
-          "endFrame": 4145
+          "text": "FintechにおけるAI/ボットの支配。",
+          "start": 117.78,
+          "end": 121.43076923076923,
+          "startFrame": 3533,
+          "endFrame": 3642
         },
         {
-          "text": "Nvidia、AMD、Samsung、Lenovoといった大手\nテック企業が次週開催されるCESでAI搭載ガジェットを発表し",
-          "start": 138.49810218978104,
-          "end": 148.80131386861316,
-          "startFrame": 4154,
-          "endFrame": 4464
+          "text": "2026年には、フィンテック分野でAI搭載のボットがバンキング\nシステムの中核を担うと予測されています。",
+          "start": 121.73076923076923,
+          "end": 130.59692307692308,
+          "startFrame": 3651,
+          "endFrame": 3917
         },
         {
-          "text": "消費者市場におけるAI需要を測る予定です。",
-          "start": 149.10131386861318,
-          "end": 152.64832116788324,
-          "startFrame": 4473,
-          "endFrame": 4579
-        },
-        {
-          "text": "これはコンシューマー向けAIの普及に向けた動きを示します。",
-          "start": 152.94832116788325,
-          "end": 157.84656934306574,
-          "startFrame": 4588,
-          "endFrame": 4735
-        },
-        {
-          "text": "（記事14）",
-          "start": 158.14656934306575,
-          "end": 159.16000000000005,
-          "startFrame": 4744,
-          "endFrame": 4774
+          "text": "(記事10)",
+          "start": 130.8969230769231,
+          "end": 131.94,
+          "startFrame": 3926,
+          "endFrame": 3958
         }
       ],
-      "fullScript": "CESで主要企業がAIガジェットを展示。Nvidia、AMD、Samsung、Lenovoといった大手テック企業が次週開催されるCESでAI搭載ガジェットを発表し、消費者市場におけるAI需要を測る予定です。これはコンシューマー向けAIの普及に向けた動きを示します。（記事14）"
+      "fullScript": "FintechにおけるAI/ボットの支配。2026年には、フィンテック分野でAI搭載のボットがバンキングシステムの中核を担うと予測されています。(記事10)"
     },
     {
       "index": 8,
@@ -324,17 +289,17 @@
       "audioFile": "presentations/audio_output/slide_08.mp3",
       "duration": 3.88,
       "durationFrames": 116,
-      "startTime": 159.16,
-      "endTime": 163.04,
-      "startFrame": 4774,
-      "endFrame": 4891,
+      "startTime": 131.94,
+      "endTime": 135.82,
+      "startFrame": 3958,
+      "endFrame": 4074,
       "subtitles": [
         {
           "text": "本日のAI・IT株式ニュースは以上です。",
-          "start": 159.16,
-          "end": 163.04,
-          "startFrame": 4774,
-          "endFrame": 4891
+          "start": 131.94,
+          "end": 135.82,
+          "startFrame": 3958,
+          "endFrame": 4074
         }
       ],
       "fullScript": "本日のAI・IT株式ニュースは以上です。"
@@ -345,52 +310,52 @@
       "audioFile": "presentations/audio_output/slide_09.mp3",
       "duration": 40.26,
       "durationFrames": 1207,
-      "startTime": 163.04,
-      "endTime": 203.29999999999998,
-      "startFrame": 4891,
-      "endFrame": 6098,
+      "startTime": 135.82,
+      "endTime": 176.07999999999998,
+      "startFrame": 4074,
+      "endFrame": 5282,
       "subtitles": [
         {
           "text": "ご視聴いただきありがとうございました。",
-          "start": 163.04,
-          "end": 166.20068669527896,
-          "startFrame": 4891,
-          "endFrame": 4986
+          "start": 135.82,
+          "end": 138.98068669527896,
+          "startFrame": 4074,
+          "endFrame": 4169
         },
         {
           "text": "実はこのレポート、if塾の塾頭高崎による「完全自動化への挑戦」\nプロジェクトの一環として、AIが自動生成しています。",
-          "start": 166.50068669527897,
-          "end": 175.98274678111588,
-          "startFrame": 4995,
-          "endFrame": 5279
+          "start": 139.28068669527897,
+          "end": 148.76274678111588,
+          "startFrame": 4178,
+          "endFrame": 4462
         },
         {
           "text": "将来的には塾頭が執筆しているような自然な記事になることを目指し\nており、現時点では事実と異なる内容が含まれる可能性もあります。",
-          "start": 176.2827467811159,
-          "end": 186.59656652360516,
-          "startFrame": 5288,
-          "endFrame": 5597
+          "start": 149.0627467811159,
+          "end": 159.37656652360516,
+          "startFrame": 4471,
+          "endFrame": 4781
         },
         {
           "text": "この挑戦に共感していただけたら、\nぜひチャンネル登録とグッドボタンをよろしくお願いします！",
-          "start": 186.89656652360517,
-          "end": 194.21605150214594,
-          "startFrame": 5606,
-          "endFrame": 5826
+          "start": 159.67656652360517,
+          "end": 166.99605150214595,
+          "startFrame": 4790,
+          "endFrame": 5009
         },
         {
           "text": "また、無料のAI教育や導入コンサルも受け付けています。",
-          "start": 194.51605150214596,
-          "end": 199.0075536480687,
-          "startFrame": 5835,
-          "endFrame": 5970
+          "start": 167.29605150214596,
+          "end": 171.7875536480687,
+          "startFrame": 5018,
+          "endFrame": 5153
         },
         {
           "text": "詳しくは概要欄のリンクからお問い合わせください。",
-          "start": 199.3075536480687,
-          "end": 203.30000000000004,
-          "startFrame": 5979,
-          "endFrame": 6099
+          "start": 172.0875536480687,
+          "end": 176.08000000000004,
+          "startFrame": 5162,
+          "endFrame": 5282
         }
       ],
       "fullScript": "ご視聴いただきありがとうございました。実はこのレポート、if塾の塾頭高崎による「完全自動化への挑戦」プロジェクトの一環として、AIが自動生成しています。将来的には塾頭が執筆しているような自然な記事になることを目指しており、現時点では事実と異なる内容が含まれる可能性もあります。この挑戦に共感していただけたら、ぜひチャンネル登録とグッドボタンをよろしくお願いします！また、無料のAI教育や導入コンサルも受け付けています。詳しくは概要欄のリンクからお問い合わせください。"
