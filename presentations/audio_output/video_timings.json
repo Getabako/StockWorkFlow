@@ -1,361 +1,333 @@
 {
   "fps": 30,
-  "totalDuration": 176.07999999999998,
-  "totalFrames": 5282,
+  "totalDuration": 175.89999999999998,
+  "totalFrames": 5276,
   "slides": [
     {
       "index": 1,
       "title": "AI/IT株式ニュース",
       "audioFile": "presentations/audio_output/slide_01.mp3",
-      "duration": 10.28,
-      "durationFrames": 308,
+      "duration": 10.54,
+      "durationFrames": 316,
       "startTime": 0,
-      "endTime": 10.28,
+      "endTime": 10.54,
       "startFrame": 0,
-      "endFrame": 308,
+      "endFrame": 316,
       "subtitles": [
         {
           "text": "うぃっすー！",
           "start": 0,
-          "end": 1.116923076923077,
+          "end": 1.146923076923077,
           "startFrame": 0,
-          "endFrame": 33
+          "endFrame": 34
         },
         {
           "text": "if塾AIニュースのお時間です。",
-          "start": 1.416923076923077,
-          "end": 4.395384615384616,
-          "startFrame": 42,
-          "endFrame": 131
+          "start": 1.446923076923077,
+          "end": 4.5053846153846155,
+          "startFrame": 43,
+          "endFrame": 135
         },
         {
-          "text": "2025/12/30のAI・IT株式ニュースをお届けします。",
-          "start": 4.695384615384616,
-          "end": 10.280000000000001,
-          "startFrame": 140,
-          "endFrame": 308
+          "text": "2025/12/31のAI・IT株式ニュースをお届けします。",
+          "start": 4.805384615384615,
+          "end": 10.54,
+          "startFrame": 144,
+          "endFrame": 316
         }
       ],
-      "fullScript": "うぃっすー！if塾AIニュースのお時間です。2025/12/30のAI・IT株式ニュースをお届けします。"
+      "fullScript": "うぃっすー！if塾AIニュースのお時間です。2025/12/31のAI・IT株式ニュースをお届けします。"
     },
     {
       "index": 2,
       "title": "本日のサマリー",
       "audioFile": "presentations/audio_output/slide_02.mp3",
-      "duration": 36.64,
-      "durationFrames": 1099,
-      "startTime": 10.28,
-      "endTime": 46.92,
-      "startFrame": 308,
-      "endFrame": 1407,
+      "duration": 37.08,
+      "durationFrames": 1112,
+      "startTime": 10.54,
+      "endTime": 47.62,
+      "startFrame": 316,
+      "endFrame": 1428,
       "subtitles": [
         {
-          "text": "AI/IT業界では、AIインフラへの投資が加速し、\n「ピック・アンド・シャベル」銘柄への注目が高まっています。",
-          "start": 10.28,
-          "end": 19.57009708737864,
-          "startFrame": 308,
-          "endFrame": 587
+          "text": "本日のAI/IT市場は、中国のAIおよびチップ産業の国家戦略的\n進展と、グローバルテック企業による中国企業の買収という形で",
+          "start": 10.54,
+          "end": 21.339999999999996,
+          "startFrame": 316,
+          "endFrame": 640
         },
         {
-          "text": "MetaはAIスタートアップを買収し、\nxAIは大規模なデータセンター拡張計画を発表。",
-          "start": 19.870097087378642,
-          "end": 27.095728155339806,
-          "startFrame": 596,
-          "endFrame": 812
+          "text": "中国のイノベーションが国際的に評価されて\nいる点が注目されました。",
+          "start": 21.639999999999997,
+          "end": 27.4,
+          "startFrame": 649,
+          "endFrame": 822
         },
         {
-          "text": "中国や韓国市場ではAI関連株が経済回復を牽引し",
-          "start": 27.395728155339807,
-          "end": 31.352621359223303,
-          "startFrame": 821,
-          "endFrame": 940
+          "text": "サイバーセキュリティ面では、欧州宇宙機関への攻撃の可能性と\n米国によるスパイウェア関連の制裁解除が報じられています",
+          "start": 27.7,
+          "end": 37.78,
+          "startFrame": 831,
+          "endFrame": 1133
         },
         {
-          "text": "特にメモリチップメーカーKioxiaは\nAIのデータストレージ需要により記録的な成長を遂げています。",
-          "start": 31.652621359223303,
-          "end": 40.08252427184466,
-          "startFrame": 949,
-          "endFrame": 1202
-        },
-        {
-          "text": "フィンテックやエッジAIといった応用分野の\nトレンドも鮮明になりつつあります。",
-          "start": 40.38252427184466,
-          "end": 46.92,
-          "startFrame": 1211,
-          "endFrame": 1407
+          "text": "これらはAI/ITインフラのセキュリティと国家間の技術競争が今\n後も重要なテーマであることを示唆しています。",
+          "start": 38.08,
+          "end": 47.62,
+          "startFrame": 1142,
+          "endFrame": 1428
         }
       ],
-      "fullScript": "AI/IT業界では、AIインフラへの投資が加速し、「ピック・アンド・シャベル」銘柄への注目が高まっています。MetaはAIスタートアップを買収し、xAIは大規模なデータセンター拡張計画を発表。中国や韓国市場ではAI関連株が経済回復を牽引し、特にメモリチップメーカーKioxiaはAIのデータストレージ需要により記録的な成長を遂げています。フィンテックやエッジAIといった応用分野のトレンドも鮮明になりつつあります。"
+      "fullScript": "本日のAI/IT市場は、中国のAIおよびチップ産業の国家戦略的進展と、グローバルテック企業による中国企業の買収という形で、中国のイノベーションが国際的に評価されている点が注目されました。サイバーセキュリティ面では、欧州宇宙機関への攻撃の可能性と、米国によるスパイウェア関連の制裁解除が報じられています。これらはAI/ITインフラのセキュリティと国家間の技術競争が今後も重要なテーマであることを示唆しています。"
     },
     {
       "index": 3,
       "title": "M&A・企業買収",
       "audioFile": "presentations/audio_output/slide_03.mp3",
-      "duration": 15.42,
-      "durationFrames": 462,
-      "startTime": 46.92,
-      "endTime": 62.34,
-      "startFrame": 1407,
-      "endFrame": 1870,
+      "duration": 19.06,
+      "durationFrames": 571,
+      "startTime": 47.62,
+      "endTime": 66.67999999999999,
+      "startFrame": 1428,
+      "endFrame": 2000,
       "subtitles": [
         {
-          "text": "Meta Platforms Inc.がManusを買収。",
-          "start": 46.92,
-          "end": 51.1308,
-          "startFrame": 1407,
-          "endFrame": 1533
+          "text": "MetaによるManus買収。",
+          "start": 47.62,
+          "end": 49.7992,
+          "startFrame": 1428,
+          "endFrame": 1493
         },
         {
-          "text": "Metaは、シンガポール拠点のAIスタートアップManusの買\n収に合意しました。",
-          "start": 51.4308,
-          "end": 57.2388,
-          "startFrame": 1542,
-          "endFrame": 1717
+          "text": "MetaがManusを買収したことで、\n中国のイノベーションに対する信頼が改めて示されました。",
+          "start": 50.099199999999996,
+          "end": 56.78207999999999,
+          "startFrame": 1502,
+          "endFrame": 1703
         },
         {
-          "text": "これにより、MetaはAIビジネスの強化を図ります。",
-          "start": 57.538799999999995,
-          "end": 61.31399999999999,
-          "startFrame": 1726,
-          "endFrame": 1839
+          "text": "これは中国のスタートアップや技術開発がグローバルテック企業にと\nって魅力的なターゲットとなっていることを裏付けています。",
+          "start": 57.08207999999999,
+          "end": 65.65359999999998,
+          "startFrame": 1712,
+          "endFrame": 1969
         },
         {
-          "text": "(記事8)",
-          "start": 61.61399999999999,
-          "end": 62.33999999999999,
-          "startFrame": 1848,
-          "endFrame": 1870
+          "text": "(記事6)",
+          "start": 65.95359999999998,
+          "end": 66.67999999999998,
+          "startFrame": 1978,
+          "endFrame": 2000
         }
       ],
-      "fullScript": "Meta Platforms Inc.がManusを買収。Metaは、シンガポール拠点のAIスタートアップManusの買収に合意しました。これにより、MetaはAIビジネスの強化を図ります。(記事8)"
+      "fullScript": "MetaによるManus買収。MetaがManusを買収したことで、中国のイノベーションに対する信頼が改めて示されました。これは中国のスタートアップや技術開発がグローバルテック企業にとって魅力的なターゲットとなっていることを裏付けています。(記事6)"
     },
     {
       "index": 4,
-      "title": "M&A・企業買収",
+      "title": "新製品・新技術",
       "audioFile": "presentations/audio_output/slide_04.mp3",
-      "duration": 13.62,
-      "durationFrames": 408,
-      "startTime": 62.34,
-      "endTime": 75.96000000000001,
-      "startFrame": 1870,
-      "endFrame": 2278,
+      "duration": 26.86,
+      "durationFrames": 805,
+      "startTime": 66.67999999999999,
+      "endTime": 93.53999999999999,
+      "startFrame": 2000,
+      "endFrame": 2806,
       "subtitles": [
         {
-          "text": "アジア地域のM&A活発化。",
-          "start": 62.34,
-          "end": 65.07000000000001,
-          "startFrame": 1870,
-          "endFrame": 1952
+          "text": "中国のAIおよびチップ産業の成果。",
+          "start": 66.67999999999999,
+          "end": 69.7304895104895,
+          "startFrame": 2000,
+          "endFrame": 2091
         },
         {
-          "text": "中国市場の回復を背景に、\nアジア地域でのM&Aが2026年に向けて活発化する見込みです。",
-          "start": 65.37,
-          "end": 74.4,
-          "startFrame": 1961,
-          "endFrame": 2232
+          "text": "習近平国家主席が新年の演説で、\n中国がAIおよびチップ産業で達成した成果を強調しました。",
+          "start": 70.0304895104895,
+          "end": 77.74643356643355,
+          "startFrame": 2100,
+          "endFrame": 2332
         },
         {
-          "text": "(記事21)",
-          "start": 74.7,
-          "end": 75.96000000000001,
-          "startFrame": 2241,
-          "endFrame": 2278
+          "text": "これは国家レベルでの技術自給自足と\n先進技術開発への強いコミットメントを示すもので",
+          "start": 78.04643356643355,
+          "end": 85.22405594405593,
+          "startFrame": 2341,
+          "endFrame": 2556
+        },
+        {
+          "text": "今後のグローバルなサプライチェーンや\n競争環境に影響を与える可能性があります。",
+          "start": 85.52405594405593,
+          "end": 92.34279720279719,
+          "startFrame": 2565,
+          "endFrame": 2770
+        },
+        {
+          "text": "(記事5)",
+          "start": 92.64279720279718,
+          "end": 93.53999999999998,
+          "startFrame": 2779,
+          "endFrame": 2806
         }
       ],
-      "fullScript": "アジア地域のM&A活発化。中国市場の回復を背景に、アジア地域でのM&Aが2026年に向けて活発化する見込みです。(記事21)"
+      "fullScript": "中国のAIおよびチップ産業の成果。習近平国家主席が新年の演説で、中国がAIおよびチップ産業で達成した成果を強調しました。これは国家レベルでの技術自給自足と先進技術開発への強いコミットメントを示すもので、今後のグローバルなサプライチェーンや競争環境に影響を与える可能性があります。(記事5)"
     },
     {
       "index": 5,
-      "title": "大型契約・受注",
+      "title": "その他の重要情報",
       "audioFile": "presentations/audio_output/slide_05.mp3",
-      "duration": 26.22,
-      "durationFrames": 786,
-      "startTime": 75.96000000000001,
-      "endTime": 102.18,
-      "startFrame": 2278,
-      "endFrame": 3065,
+      "duration": 17.48,
+      "durationFrames": 524,
+      "startTime": 93.53999999999999,
+      "endTime": 111.02,
+      "startFrame": 2806,
+      "endFrame": 3330,
       "subtitles": [
         {
-          "text": "xAIが大規模データセンターを拡張。",
-          "start": 75.96000000000001,
-          "end": 79.10937062937063,
-          "startFrame": 2278,
-          "endFrame": 2373
+          "text": "欧州宇宙機関へのサイバーインシデント。",
+          "start": 93.53999999999999,
+          "end": 96.43009174311926,
+          "startFrame": 2806,
+          "endFrame": 2892
         },
         {
-          "text": "イーロン・マスク率いるxAIは、メンフィスにある大規模データセ\nンター複合施設の拡張を計画しており",
-          "start": 79.40937062937063,
-          "end": 87.8076923076923,
-          "startFrame": 2382,
-          "endFrame": 2634
+          "text": "欧州宇宙機関がサイバーセキュリティの問題により一部の外部サーバ\nーが影響を受けた可能性を発表しました。",
+          "start": 96.73009174311926,
+          "end": 104.33559633027522,
+          "startFrame": 2901,
+          "endFrame": 3130
         },
         {
-          "text": "ミシシッピ州サウスヘブンに隣接施設を\n建設するために大規模倉庫を購入しました。",
-          "start": 88.1076923076923,
-          "end": 94.75636363636363,
-          "startFrame": 2643,
-          "endFrame": 2842
-        },
-        {
-          "text": "これは、\nAI開発に必要な膨大な計算資源への先行投資を示唆しています。",
-          "start": 95.05636363636363,
-          "end": 101.00517482517482,
-          "startFrame": 2851,
-          "endFrame": 3030
-        },
-        {
-          "text": "(記事2)",
-          "start": 101.30517482517482,
-          "end": 102.17999999999999,
-          "startFrame": 3039,
-          "endFrame": 3065
-        }
-      ],
-      "fullScript": "xAIが大規模データセンターを拡張。イーロン・マスク率いるxAIは、メンフィスにある大規模データセンター複合施設の拡張を計画しており、ミシシッピ州サウスヘブンに隣接施設を建設するために大規模倉庫を購入しました。これは、AI開発に必要な膨大な計算資源への先行投資を示唆しています。(記事2)"
-    },
-    {
-      "index": 6,
-      "title": "新製品・新技術",
-      "audioFile": "presentations/audio_output/slide_06.mp3",
-      "duration": 15.6,
-      "durationFrames": 468,
-      "startTime": 102.18,
-      "endTime": 117.78,
-      "startFrame": 3065,
-      "endFrame": 3533,
-      "subtitles": [
-        {
-          "text": "ArmのCES 2026トレンド予測。",
-          "start": 102.18,
-          "end": 105.57285714285715,
-          "startFrame": 3065,
-          "endFrame": 3167
-        },
-        {
-          "text": "Armは、CES 2026で物理AI（Physical AI）\nとエッジAIの形成が主要なトレンドになると予測しています。",
-          "start": 105.87285714285714,
-          "end": 116.58714285714285,
-          "startFrame": 3176,
-          "endFrame": 3497
+          "text": "重要インフラにおけるサイバーセキュリティリスクの\n高まりを示しています。",
+          "start": 104.63559633027522,
+          "end": 109.9594495412844,
+          "startFrame": 3139,
+          "endFrame": 3298
         },
         {
           "text": "(記事1)",
-          "start": 116.88714285714285,
-          "end": 117.77999999999999,
-          "startFrame": 3506,
-          "endFrame": 3533
+          "start": 110.2594495412844,
+          "end": 111.02,
+          "startFrame": 3307,
+          "endFrame": 3330
         }
       ],
-      "fullScript": "ArmのCES 2026トレンド予測。Armは、CES 2026で物理AI（Physical AI）とエッジAIの形成が主要なトレンドになると予測しています。(記事1)"
+      "fullScript": "欧州宇宙機関へのサイバーインシデント。欧州宇宙機関がサイバーセキュリティの問題により一部の外部サーバーが影響を受けた可能性を発表しました。重要インフラにおけるサイバーセキュリティリスクの高まりを示しています。(記事1)"
     },
     {
-      "index": 7,
-      "title": "新製品・新技術",
-      "audioFile": "presentations/audio_output/slide_07.mp3",
-      "duration": 14.16,
-      "durationFrames": 424,
-      "startTime": 117.78,
-      "endTime": 131.94,
-      "startFrame": 3533,
-      "endFrame": 3958,
+      "index": 6,
+      "title": "その他の重要情報",
+      "audioFile": "presentations/audio_output/slide_06.mp3",
+      "duration": 20.74,
+      "durationFrames": 622,
+      "startTime": 111.02,
+      "endTime": 131.76,
+      "startFrame": 3330,
+      "endFrame": 3952,
       "subtitles": [
         {
-          "text": "FintechにおけるAI/ボットの支配。",
-          "start": 117.78,
-          "end": 121.43076923076923,
-          "startFrame": 3533,
-          "endFrame": 3642
+          "text": "米国がスパイウェア開発者への制裁解除。",
+          "start": 111.02,
+          "end": 114.35592920353982,
+          "startFrame": 3330,
+          "endFrame": 3430
         },
         {
-          "text": "2026年には、フィンテック分野でAI搭載のボットがバンキング\nシステムの中核を担うと予測されています。",
-          "start": 121.73076923076923,
-          "end": 130.59692307692308,
-          "startFrame": 3651,
+          "text": "米国政府が、以前「Predator」スパイウェアの拡散を支援し\nたとして告発された3人に対する制裁を解除しました。",
+          "start": 114.65592920353981,
+          "end": 124.48814159292034,
+          "startFrame": 3439,
+          "endFrame": 3734
+        },
+        {
+          "text": "監視技術とその規制、\n国際的な外交関係における変化を示唆しています。",
+          "start": 124.78814159292034,
+          "end": 130.5821238938053,
+          "startFrame": 3743,
           "endFrame": 3917
         },
         {
-          "text": "(記事10)",
-          "start": 130.8969230769231,
-          "end": 131.94,
+          "text": "(記事2)",
+          "start": 130.8821238938053,
+          "end": 131.76,
           "startFrame": 3926,
-          "endFrame": 3958
+          "endFrame": 3952
         }
       ],
-      "fullScript": "FintechにおけるAI/ボットの支配。2026年には、フィンテック分野でAI搭載のボットがバンキングシステムの中核を担うと予測されています。(記事10)"
+      "fullScript": "米国がスパイウェア開発者への制裁解除。米国政府が、以前「Predator」スパイウェアの拡散を支援したとして告発された3人に対する制裁を解除しました。監視技術とその規制、国際的な外交関係における変化を示唆しています。(記事2)"
     },
     {
-      "index": 8,
+      "index": 7,
       "title": "まとめ",
-      "audioFile": "presentations/audio_output/slide_08.mp3",
+      "audioFile": "presentations/audio_output/slide_07.mp3",
       "duration": 3.88,
       "durationFrames": 116,
-      "startTime": 131.94,
-      "endTime": 135.82,
-      "startFrame": 3958,
-      "endFrame": 4074,
+      "startTime": 131.76,
+      "endTime": 135.64,
+      "startFrame": 3952,
+      "endFrame": 4069,
       "subtitles": [
         {
           "text": "本日のAI・IT株式ニュースは以上です。",
-          "start": 131.94,
-          "end": 135.82,
-          "startFrame": 3958,
-          "endFrame": 4074
+          "start": 131.76,
+          "end": 135.64,
+          "startFrame": 3952,
+          "endFrame": 4069
         }
       ],
       "fullScript": "本日のAI・IT株式ニュースは以上です。"
     },
     {
-      "index": 9,
+      "index": 8,
       "title": "塾頭高崎の完全自動化への挑戦",
-      "audioFile": "presentations/audio_output/slide_09.mp3",
+      "audioFile": "presentations/audio_output/slide_08.mp3",
       "duration": 40.26,
       "durationFrames": 1207,
-      "startTime": 135.82,
-      "endTime": 176.07999999999998,
-      "startFrame": 4074,
-      "endFrame": 5282,
+      "startTime": 135.64,
+      "endTime": 175.89999999999998,
+      "startFrame": 4069,
+      "endFrame": 5276,
       "subtitles": [
         {
           "text": "ご視聴いただきありがとうございました。",
-          "start": 135.82,
-          "end": 138.98068669527896,
-          "startFrame": 4074,
-          "endFrame": 4169
+          "start": 135.64,
+          "end": 138.80068669527896,
+          "startFrame": 4069,
+          "endFrame": 4164
         },
         {
           "text": "実はこのレポート、if塾の塾頭高崎による「完全自動化への挑戦」\nプロジェクトの一環として、AIが自動生成しています。",
-          "start": 139.28068669527897,
-          "end": 148.76274678111588,
-          "startFrame": 4178,
-          "endFrame": 4462
+          "start": 139.10068669527897,
+          "end": 148.58274678111587,
+          "startFrame": 4173,
+          "endFrame": 4457
         },
         {
           "text": "将来的には塾頭が執筆しているような自然な記事になることを目指し\nており、現時点では事実と異なる内容が含まれる可能性もあります。",
-          "start": 149.0627467811159,
-          "end": 159.37656652360516,
-          "startFrame": 4471,
-          "endFrame": 4781
+          "start": 148.88274678111588,
+          "end": 159.19656652360516,
+          "startFrame": 4466,
+          "endFrame": 4775
         },
         {
           "text": "この挑戦に共感していただけたら、\nぜひチャンネル登録とグッドボタンをよろしくお願いします！",
-          "start": 159.67656652360517,
-          "end": 166.99605150214595,
-          "startFrame": 4790,
-          "endFrame": 5009
+          "start": 159.49656652360517,
+          "end": 166.81605150214594,
+          "startFrame": 4784,
+          "endFrame": 5004
         },
         {
           "text": "また、無料のAI教育や導入コンサルも受け付けています。",
-          "start": 167.29605150214596,
-          "end": 171.7875536480687,
-          "startFrame": 5018,
-          "endFrame": 5153
+          "start": 167.11605150214595,
+          "end": 171.6075536480687,
+          "startFrame": 5013,
+          "endFrame": 5148
         },
         {
           "text": "詳しくは概要欄のリンクからお問い合わせください。",
-          "start": 172.0875536480687,
-          "end": 176.08000000000004,
-          "startFrame": 5162,
-          "endFrame": 5282
+          "start": 171.9075536480687,
+          "end": 175.90000000000003,
+          "startFrame": 5157,
+          "endFrame": 5277
         }
       ],
       "fullScript": "ご視聴いただきありがとうございました。実はこのレポート、if塾の塾頭高崎による「完全自動化への挑戦」プロジェクトの一環として、AIが自動生成しています。将来的には塾頭が執筆しているような自然な記事になることを目指しており、現時点では事実と異なる内容が含まれる可能性もあります。この挑戦に共感していただけたら、ぜひチャンネル登録とグッドボタンをよろしくお願いします！また、無料のAI教育や導入コンサルも受け付けています。詳しくは概要欄のリンクからお問い合わせください。"
