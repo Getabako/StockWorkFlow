@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-11-14",
+  "last_updated": "2026-01-01",
   "industry_overview": {
     "market_status": "AI業界は決勝リーグ段階に突入。NVIDIAとOpenAIを中心とした循環型経済圏が1兆ドル（約140兆円）規模に成長。OpenAI単体で評価額5,000億ドル（わずか1年で10倍）に達し、その動向が市場全体を左右する「OpenAI指標（OpenAI Index）」が誕生",
     "key_risks": [
@@ -96,13 +96,15 @@
       {
         "symbol": "9984.T",
         "name": "ソフトバンクグループ",
-        "role": "AI×ロボットの統合戦略",
+        "role": "AI×ロボットの統合戦略、OpenAI主要株主",
         "key_points": [
+          "OpenAIに225億ドル追加出資、持株比率11%",
+          "ARM保有によるAI半導体設計の恩恵",
           "ABBロボット部門買収（54億ドル）",
           "AI 20%成長×ロボット8%成長の相乗効果",
-          "日本最大企業になる可能性"
+          "2026年1月1日に1:4株式分割実施"
         ],
-        "portfolio_status": "未保有"
+        "portfolio_status": "購入検討中"
       },
       {
         "symbol": "ARM",
@@ -161,6 +163,54 @@
           "AI経済圏内の循環関係構成"
         ],
         "portfolio_status": "非上場"
+      }
+    ],
+    "robotics_sector": [
+      {
+        "symbol": "ISRG",
+        "name": "Intuitive Surgical",
+        "role": "手術支援ロボットのグローバルリーダー",
+        "key_points": [
+          "ダヴィンチ手術システムで医療ロボット市場を支配",
+          "累計設置台数9,000台以上、年間施術数200万件超",
+          "消耗品・サービス収益による安定したビジネスモデル",
+          "AI統合による次世代手術支援システムの開発"
+        ],
+        "portfolio_status": "未保有（優先検討銘柄）"
+      },
+      {
+        "symbol": "6954.T",
+        "name": "ファナック",
+        "role": "産業用ロボット世界最大手",
+        "key_points": [
+          "工作機械用CNC、産業用ロボットで世界トップシェア",
+          "自動車・電機産業向けファクトリーオートメーション",
+          "AI・IoT技術との統合によるスマートファクトリー推進",
+          "高い利益率と財務健全性"
+        ],
+        "portfolio_status": "未保有"
+      },
+      {
+        "symbol": "ROK",
+        "name": "Rockwell Automation",
+        "role": "産業オートメーション大手",
+        "key_points": [
+          "北米市場で圧倒的シェア",
+          "PLCやHMIなどの制御機器で強み",
+          "デジタルツイン、AIを活用したスマート製造"
+        ],
+        "portfolio_status": "未保有"
+      },
+      {
+        "symbol": "ABB",
+        "name": "ABB Ltd",
+        "role": "産業用ロボット世界トップクラス",
+        "key_points": [
+          "協働ロボット（コボット）で急成長",
+          "電力・オートメーション技術の統合",
+          "ソフトバンクとの関係（ABBロボット部門）"
+        ],
+        "portfolio_status": "未保有"
       }
     ],
     "major_tech_companies": [
