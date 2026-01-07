@@ -4,43 +4,43 @@
       "index": 1,
       "title": "AI/IT株式ニュース",
       "audio_file": "presentations/audio_output/slide_01.mp3",
-      "script": "うぃっすー！if塾AIニュースのお時間です。2026/01/06のAI・IT株式ニュースをお届けします。"
+      "script": "うぃっすー！if塾AIニュースのお時間です。2026/01/07のAI・IT株式ニュースをお届けします。"
     },
     {
       "index": 2,
       "title": "本日のサマリー",
       "audio_file": "presentations/audio_output/slide_02.mp3",
-      "script": "AI/IT業界は、AI半導体企業のNvidiaとAMDがコンピューティング需要の急増を強調し、Nvidiaは収益予測を上方修正。また、AIの次なる波としてロボティクス分野へのM&Aや戦略的提携が活発化しており、AIがクラウドからエッジ、物理世界へと展開する兆候が鮮明です。一方で、AIデータセンターの電力消費増大は深刻な課題として認識され、電力インフラへの懸念が浮上しています。"
+      "script": "本日のAI/IT市場は、主要AIスタートアップの急成長とOpenAIの新たな市場開拓が際立つ一日となりました。Anthropicが3,500億ドルの評価額で100億ドルの資金調達を進める一方、OpenAIはChatGPT Healthを発表しヘルスケア分野に本格参入。また、AIとロボットの統合戦略はM&Aを通じて加速するも、製品化の難しさも露呈しています。半導体市場はAI需要に牽引され好調ですが、地政学的な規制リスクが顕在化し、AIの倫理的課題も浮上しています。"
     },
     {
       "index": 3,
       "title": "M&A・企業買収",
       "audio_file": "presentations/audio_output/slide_03.mp3",
-      "script": "Mobileye。自動運転システム企業Mobileye Global Inc.は、ヒューマノイドロボットメーカーのイスラエルスタートアップMentee Roboticsを9億ドルの現金と株式の取引で買収すると発表しました（記事4）。"
+      "script": "Mobileye、Mentee Roboticsを9億ドルで買収。自動運転技術のMobileyeがロボットスタートアップMentee Roboticsを9億ドルで買収し、ヒューマノイドロボット開発を強化する方針を示しました。(記事12)"
     },
     {
       "index": 4,
       "title": "M&A・企業買収",
       "audio_file": "presentations/audio_output/slide_04.mp3",
-      "script": "Siemens。Siemens AGのCEO Roland Busch氏は、人工知能、ライフサイエンス、および工場を動かすオペレーションソフトウェアの分野での潜在的なM&Aを検討していることを明らかにしました（記事9）。"
+      "script": "中国、MetaによるAIスタートアップ買収を審査。中国当局がMeta Platforms Inc.によるAIスタートアップManusの20億ドル買収を、国家安全保障および技術輸出規制違反の観点から審査を開始しました。(記事21)"
     },
     {
       "index": 5,
       "title": "M&A・企業買収",
       "audio_file": "presentations/audio_output/slide_05.mp3",
-      "script": "Hg。バイアウトファームのHgは、金融ソフトウェアメーカーのOneStream Inc.を約64億ドルの株式価値で買収し、非公開化することに合意しました（記事24）。"
+      "script": "Warner Bros.、Paramount買収提案を拒否。Warner Bros. DiscoveryがParamountの買収提案を拒否し、Netflixとの契約を推奨しました。(記事5)"
     },
     {
       "index": 6,
-      "title": "戦略的提携・パートナーシップ",
+      "title": "M&A・企業買収",
       "audio_file": "presentations/audio_output/slide_06.mp3",
-      "script": "Nvidia & Siemens。NvidiaとSiemensは、産業用AIオペレーティングシステムを共同で構築する計画を発表しました。両社のCEOがこの提携について言及しています（記事10）。"
+      "script": "Revolut、トルコのデジタル銀行買収を交渉。Revolut Ltd.がトルコのデジタル銀行FUPSの買収交渉を進め、トルコ市場への参入を目指しています。(記事25)"
     },
     {
       "index": 7,
       "title": "戦略的提携・パートナーシップ",
       "audio_file": "presentations/audio_output/slide_07.mp3",
-      "script": "Lucid & Uber & Nuro。Teslaの競合であるLucidは、UberおよびNuroとの提携を通じて、生産準備が整ったロボットタクシーを投入することを発表しました（記事31）。"
+      "script": "NVIDIAとSiemens、AIを活用した産業システム変革で提携強化。NVIDIAとSiemensがAIを用いて産業システムを変革するためのパートナーシップを拡大しました。(記事26)"
     },
     {
       "index": 8,
