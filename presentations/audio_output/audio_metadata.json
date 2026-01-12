@@ -4,43 +4,43 @@
       "index": 1,
       "title": "AI/IT株式ニュース",
       "audio_file": "presentations/audio_output/slide_01.mp3",
-      "script": "うぃっすー！if塾AIニュースのお時間です。2026/01/09のAI・IT株式ニュースをお届けします。"
+      "script": "うぃっすー！if塾AIニュースのお時間です。2026/01/12のAI・IT株式ニュースをお届けします。"
     },
     {
       "index": 2,
       "title": "本日のサマリー",
       "audio_file": "presentations/audio_output/slide_02.mp3",
-      "script": "本日のAI/IT市場は、AIの指数関数的な成長に伴うインフラ投資の加速と、AIの多様な応用分野への展開が顕著となりました。OpenAIとソフトバンクグループがAIデータセンターの電力供給網を強化するためSB Energyに大規模投資を行い、Metaも同様にAIデータセンター向けに原子力発電契約を締結。TSMCの好調な業績はAI半導体需要の継続を示し、主要VCによるAI投資も活発です。一方で、xAIの画像生成AIの不適切コンテンツ問題は、AI倫理と規制の重要性を浮き彫りにしています。"
+      "script": "本日のAI/IT市場は、大手テック企業間の戦略的提携と、AIインフラへの大規模投資計画が活発化していることが示された。特に、GoogleとAppleのAI分野での複数年提携が最大の注目点であり、AIモデルの主要プロバイダーとしてのGoogleの地位を強化している。NVIDIAはAI創薬分野への巨額投資で新たな応用市場を創出し、AI技術の産業横断的な浸透が加速。一方で、AIインフラ構築に伴う電力需要の増加や、AI生成コンテンツに対する規制・倫理的懸念も顕在化している。"
     },
     {
       "index": 3,
       "title": "M&A・企業買収",
       "audio_file": "presentations/audio_output/slide_03.mp3",
-      "script": "Amazon。AIハードウェアスタートアップBeeを買収後、50ドルのウェアラブルAIデバイスを強化する計画を発表 (記事3)。"
+      "script": "Dassault Aviationが仏ドローン企業Harmattan AIに投資。フランスのDassault Aviation SAがドローン企業Harmattan AIに2億ドルを投資。Harmattan AIは企業価値14億ドルのユニコーン企業となる。（記事31）"
     },
     {
       "index": 4,
-      "title": "M&A・企業買収",
+      "title": "戦略的提携・パートナーシップ",
       "audio_file": "presentations/audio_output/slide_04.mp3",
-      "script": "Snowflake。AI搭載のアプリ監視スタートアップObserveを買収する計画を発表。IT運用管理ソフトウェア市場への拡大を狙う (記事9)。"
+      "script": "GoogleとAppleがAIで複数年提携。Appleの次世代Foundation ModelsがGoogleのGeminiモデルとクラウドをベースに構築されることが発表された。SiriにもGeminiが採用される。（記事4, 12, 14）"
     },
     {
       "index": 5,
       "title": "戦略的提携・パートナーシップ",
       "audio_file": "presentations/audio_output/slide_05.mp3",
-      "script": "OpenAI & ソフトバンクグループ。AIデータセンター向けの米国での大規模建設を手掛けるインフラ企業SB Energyに10億ドルを共同投資 (記事7)。"
+      "script": "NVIDIAがEli LillyとAI創薬ラボに10億ドル投資。NVIDIAは製薬大手のEli Lilly & Co.と共同で、AIを活用した創薬を加速させるためのラボに5年間で10億ドルを投資する計画を発表。（記事5, 17, 21）"
     },
     {
       "index": 6,
       "title": "戦略的提携・パートナーシップ",
       "audio_file": "presentations/audio_output/slide_06.mp3",
-      "script": "Meta Platforms。AIデータセンターの電力供給確保のため、Oklo Inc.やVistra Corp.などの企業とマルチギガワット規模の原子力発電契約を締結（合計6ギガワット以上） (記事6, 15, 18, 20)。"
+      "script": "MedtronicがNeuralinkの競合Precision Neuroscienceと提携。医療機器大手Medtronic Plcが脳インプラント企業Precision Neuroscience Corp.と提携し、新製品開発のための神経データにアクセスする。（記事7）"
     },
     {
       "index": 7,
-      "title": "大型契約・受注",
+      "title": "戦略的提携・パートナーシップ",
       "audio_file": "presentations/audio_output/slide_07.mp3",
-      "script": "OpenAI & ソフトバンクグループ。AIデータセンター関連でSB Energyに10億ドルの共同投資を実施 (記事7)。"
+      "script": "Societe GeneraleがMicrosoft Copilotを採用。大手金融機関Societe Generale SAは、自社開発のAIツールを廃止し、Microsoft Corp.のCopilotソリューションを採用することを決定。AIツールの自社開発の難しさを示唆。（記事20）"
     },
     {
       "index": 8,

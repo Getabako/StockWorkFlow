@@ -1,0 +1,385 @@
+{
+  "fps": 30,
+  "totalDuration": 191.99999999999997,
+  "totalFrames": 5759,
+  "slides": [
+    {
+      "index": 1,
+      "title": "AI/IT株式ニュース",
+      "audioFile": "presentations/audio_output/slide_01.mp3",
+      "duration": 10.12,
+      "durationFrames": 303,
+      "startTime": 0,
+      "endTime": 10.12,
+      "startFrame": 0,
+      "endFrame": 303,
+      "subtitles": [
+        {
+          "text": "うぃっすー！",
+          "start": 0,
+          "end": 1.0984615384615384,
+          "startFrame": 0,
+          "endFrame": 32
+        },
+        {
+          "text": "if塾AIニュースのお時間です。",
+          "start": 1.3984615384615384,
+          "end": 4.327692307692308,
+          "startFrame": 41,
+          "endFrame": 129
+        },
+        {
+          "text": "2026/01/12のAI・IT株式ニュースをお届けします。",
+          "start": 4.627692307692308,
+          "end": 10.12,
+          "startFrame": 138,
+          "endFrame": 303
+        }
+      ],
+      "fullScript": "うぃっすー！if塾AIニュースのお時間です。2026/01/12のAI・IT株式ニュースをお届けします。"
+    },
+    {
+      "index": 2,
+      "title": "本日のサマリー",
+      "audioFile": "presentations/audio_output/slide_02.mp3",
+      "duration": 44.82,
+      "durationFrames": 1344,
+      "startTime": 10.12,
+      "endTime": 54.94,
+      "startFrame": 303,
+      "endFrame": 1648,
+      "subtitles": [
+        {
+          "text": "本日のAI/IT市場は、大手テック企業間の戦略的提携と、AIイ\nンフラへの大規模投資計画が活発化していることが示された。",
+          "start": 10.12,
+          "end": 21.118205128205126,
+          "startFrame": 303,
+          "endFrame": 633
+        },
+        {
+          "text": "特に、GoogleとAppleのAI分野での複数年提携が最大の\n注目点であり",
+          "start": 21.418205128205127,
+          "end": 28.315384615384612,
+          "startFrame": 642,
+          "endFrame": 849
+        },
+        {
+          "text": "AIモデルの主要プロバイダーとしての\nGoogleの地位を強化している。",
+          "start": 28.615384615384613,
+          "end": 35.13974358974359,
+          "startFrame": 858,
+          "endFrame": 1054
+        },
+        {
+          "text": "NVIDIAはAI創薬分野への巨額投資で\n新たな応用市場を創出し、AI技術の産業横断的な浸透が加速。",
+          "start": 35.439743589743586,
+          "end": 44.57384615384615,
+          "startFrame": 1063,
+          "endFrame": 1337
+        },
+        {
+          "text": "一方で、AIインフラ構築に伴う電力需要の増加や、\nAI生成コンテンツに対する規制・倫理的懸念も顕在化している。",
+          "start": 44.873846153846145,
+          "end": 54.93999999999999,
+          "startFrame": 1346,
+          "endFrame": 1648
+        }
+      ],
+      "fullScript": "本日のAI/IT市場は、大手テック企業間の戦略的提携と、AIインフラへの大規模投資計画が活発化していることが示された。特に、GoogleとAppleのAI分野での複数年提携が最大の注目点であり、AIモデルの主要プロバイダーとしてのGoogleの地位を強化している。NVIDIAはAI創薬分野への巨額投資で新たな応用市場を創出し、AI技術の産業横断的な浸透が加速。一方で、AIインフラ構築に伴う電力需要の増加や、AI生成コンテンツに対する規制・倫理的懸念も顕在化している。"
+    },
+    {
+      "index": 3,
+      "title": "M&A・企業買収",
+      "audioFile": "presentations/audio_output/slide_03.mp3",
+      "duration": 17.68,
+      "durationFrames": 530,
+      "startTime": 54.94,
+      "endTime": 72.62,
+      "startFrame": 1648,
+      "endFrame": 2178,
+      "subtitles": [
+        {
+          "text": "Dassault Aviationが\n仏ドローン企業Harmattan AIに投資。",
+          "start": 54.94,
+          "end": 60.07417910447761,
+          "startFrame": 1648,
+          "endFrame": 1802
+        },
+        {
+          "text": "フランスのDassault Aviation SAが\nドローン企業Harmattan AIに2億ドルを投資。",
+          "start": 60.374179104477605,
+          "end": 67.01104477611939,
+          "startFrame": 1811,
+          "endFrame": 2010
+        },
+        {
+          "text": "Harmattan AIは企業価値14億ドルの\nユニコーン企業となる。",
+          "start": 67.31104477611939,
+          "end": 71.56865671641789,
+          "startFrame": 2019,
+          "endFrame": 2147
+        },
+        {
+          "text": "（記事31）",
+          "start": 71.86865671641789,
+          "end": 72.61999999999998,
+          "startFrame": 2156,
+          "endFrame": 2178
+        }
+      ],
+      "fullScript": "Dassault Aviationが仏ドローン企業Harmattan AIに投資。フランスのDassault Aviation SAがドローン企業Harmattan AIに2億ドルを投資。Harmattan AIは企業価値14億ドルのユニコーン企業となる。（記事31）"
+    },
+    {
+      "index": 4,
+      "title": "戦略的提携・パートナーシップ",
+      "audioFile": "presentations/audio_output/slide_04.mp3",
+      "duration": 16.1,
+      "durationFrames": 483,
+      "startTime": 72.62,
+      "endTime": 88.72,
+      "startFrame": 2178,
+      "endFrame": 2661,
+      "subtitles": [
+        {
+          "text": "GoogleとAppleがAIで複数年提携。",
+          "start": 72.62,
+          "end": 75.38363636363637,
+          "startFrame": 2178,
+          "endFrame": 2261
+        },
+        {
+          "text": "Appleの次世代Foundation ModelsがGoogleのGeminiモデルとクラウドをベースに構築されることが発表された。",
+          "start": 75.68363636363637,
+          "end": 84.10016528925621,
+          "startFrame": 2270,
+          "endFrame": 2523
+        },
+        {
+          "text": "SiriにもGeminiが採用される。",
+          "start": 84.40016528925621,
+          "end": 86.78694214876035,
+          "startFrame": 2532,
+          "endFrame": 2603
+        },
+        {
+          "text": "（記事4, 12, 14）",
+          "start": 87.08694214876034,
+          "end": 88.72000000000001,
+          "startFrame": 2612,
+          "endFrame": 2661
+        }
+      ],
+      "fullScript": "GoogleとAppleがAIで複数年提携。Appleの次世代Foundation ModelsがGoogleのGeminiモデルとクラウドをベースに構築されることが発表された。SiriにもGeminiが採用される。（記事4, 12, 14）"
+    },
+    {
+      "index": 5,
+      "title": "戦略的提携・パートナーシップ",
+      "audioFile": "presentations/audio_output/slide_05.mp3",
+      "duration": 20.44,
+      "durationFrames": 613,
+      "startTime": 88.72,
+      "endTime": 109.16,
+      "startFrame": 2661,
+      "endFrame": 3274,
+      "subtitles": [
+        {
+          "text": "NVIDIAがEli Lillyと\nAI創薬ラボに10億ドル投資。",
+          "start": 88.72,
+          "end": 94.0642735042735,
+          "startFrame": 2661,
+          "endFrame": 2821
+        },
+        {
+          "text": "NVIDIAは製薬大手のEli Lilly & Co.と共同で",
+          "start": 94.3642735042735,
+          "end": 99.54153846153845,
+          "startFrame": 2830,
+          "endFrame": 2986
+        },
+        {
+          "text": "AIを活用した創薬を加速させるための\nラボに5年間で10億ドルを投資する計画を発表。",
+          "start": 99.84153846153845,
+          "end": 106.68888888888887,
+          "startFrame": 2995,
+          "endFrame": 3200
+        },
+        {
+          "text": "（記事5, 17, 21）",
+          "start": 106.98888888888887,
+          "end": 109.15999999999998,
+          "startFrame": 3209,
+          "endFrame": 3274
+        }
+      ],
+      "fullScript": "NVIDIAがEli LillyとAI創薬ラボに10億ドル投資。NVIDIAは製薬大手のEli Lilly & Co.と共同で、AIを活用した創薬を加速させるためのラボに5年間で10億ドルを投資する計画を発表。（記事5, 17, 21）"
+    },
+    {
+      "index": 6,
+      "title": "戦略的提携・パートナーシップ",
+      "audioFile": "presentations/audio_output/slide_06.mp3",
+      "duration": 18.04,
+      "durationFrames": 541,
+      "startTime": 109.16,
+      "endTime": 127.19999999999999,
+      "startFrame": 3274,
+      "endFrame": 3815,
+      "subtitles": [
+        {
+          "text": "MedtronicがNeuralinkの\n競合Precision Neuroscienceと提携。",
+          "start": 109.16,
+          "end": 115.20941176470588,
+          "startFrame": 3274,
+          "endFrame": 3456
+        },
+        {
+          "text": "医療機器大手Medtronic Plcが脳インプラント企業Pr\necision Neuroscience Corp.と提携し",
+          "start": 115.50941176470587,
+          "end": 123.19720588235293,
+          "startFrame": 3465,
+          "endFrame": 3695
+        },
+        {
+          "text": "新製品開発のための神経データにアクセスする。",
+          "start": 123.49720588235293,
+          "end": 126.26985294117645,
+          "startFrame": 3704,
+          "endFrame": 3788
+        },
+        {
+          "text": "（記事7）",
+          "start": 126.56985294117645,
+          "end": 127.19999999999997,
+          "startFrame": 3797,
+          "endFrame": 3815
+        }
+      ],
+      "fullScript": "MedtronicがNeuralinkの競合Precision Neuroscienceと提携。医療機器大手Medtronic Plcが脳インプラント企業Precision Neuroscience Corp.と提携し、新製品開発のための神経データにアクセスする。（記事7）"
+    },
+    {
+      "index": 7,
+      "title": "戦略的提携・パートナーシップ",
+      "audioFile": "presentations/audio_output/slide_07.mp3",
+      "duration": 20.66,
+      "durationFrames": 619,
+      "startTime": 127.19999999999999,
+      "endTime": 147.85999999999999,
+      "startFrame": 3815,
+      "endFrame": 4435,
+      "subtitles": [
+        {
+          "text": "Societe Generaleが\nMicrosoft Copilotを採用。",
+          "start": 127.19999999999999,
+          "end": 132.33527777777778,
+          "startFrame": 3815,
+          "endFrame": 3970
+        },
+        {
+          "text": "大手金融機関Societe Generale SAは、\n自社開発のAIツールを廃止し",
+          "start": 132.6352777777778,
+          "end": 138.17597222222224,
+          "startFrame": 3979,
+          "endFrame": 4145
+        },
+        {
+          "text": "Microsoft Corp.の\nCopilotソリューションを採用することを決定。",
+          "start": 138.47597222222225,
+          "end": 144.0166666666667,
+          "startFrame": 4154,
+          "endFrame": 4320
+        },
+        {
+          "text": "AIツールの自社開発の難しさを示唆。",
+          "start": 144.31666666666672,
+          "end": 146.74916666666672,
+          "startFrame": 4329,
+          "endFrame": 4402
+        },
+        {
+          "text": "（記事20）",
+          "start": 147.04916666666674,
+          "end": 147.86000000000007,
+          "startFrame": 4411,
+          "endFrame": 4435
+        }
+      ],
+      "fullScript": "Societe GeneraleがMicrosoft Copilotを採用。大手金融機関Societe Generale SAは、自社開発のAIツールを廃止し、Microsoft Corp.のCopilotソリューションを採用することを決定。AIツールの自社開発の難しさを示唆。（記事20）"
+    },
+    {
+      "index": 8,
+      "title": "まとめ",
+      "audioFile": "presentations/audio_output/slide_08.mp3",
+      "duration": 3.88,
+      "durationFrames": 116,
+      "startTime": 147.85999999999999,
+      "endTime": 151.73999999999998,
+      "startFrame": 4435,
+      "endFrame": 4552,
+      "subtitles": [
+        {
+          "text": "本日のAI・IT株式ニュースは以上です。",
+          "start": 147.85999999999999,
+          "end": 151.73999999999998,
+          "startFrame": 4435,
+          "endFrame": 4552
+        }
+      ],
+      "fullScript": "本日のAI・IT株式ニュースは以上です。"
+    },
+    {
+      "index": 9,
+      "title": "塾頭高崎の完全自動化への挑戦",
+      "audioFile": "presentations/audio_output/slide_09.mp3",
+      "duration": 40.26,
+      "durationFrames": 1207,
+      "startTime": 151.73999999999998,
+      "endTime": 191.99999999999997,
+      "startFrame": 4552,
+      "endFrame": 5759,
+      "subtitles": [
+        {
+          "text": "ご視聴いただきありがとうございました。",
+          "start": 151.73999999999998,
+          "end": 154.90068669527895,
+          "startFrame": 4552,
+          "endFrame": 4647
+        },
+        {
+          "text": "実はこのレポート、if塾の塾頭高崎による「完全自動化への挑戦」\nプロジェクトの一環として、AIが自動生成しています。",
+          "start": 155.20068669527896,
+          "end": 164.68274678111587,
+          "startFrame": 4656,
+          "endFrame": 4940
+        },
+        {
+          "text": "将来的には塾頭が執筆しているような自然な記事になることを目指し\nており、現時点では事実と異なる内容が含まれる可能性もあります。",
+          "start": 164.98274678111588,
+          "end": 175.29656652360515,
+          "startFrame": 4949,
+          "endFrame": 5258
+        },
+        {
+          "text": "この挑戦に共感していただけたら、\nぜひチャンネル登録とグッドボタンをよろしくお願いします！",
+          "start": 175.59656652360516,
+          "end": 182.91605150214593,
+          "startFrame": 5267,
+          "endFrame": 5487
+        },
+        {
+          "text": "また、無料のAI教育や導入コンサルも受け付けています。",
+          "start": 183.21605150214594,
+          "end": 187.70755364806868,
+          "startFrame": 5496,
+          "endFrame": 5631
+        },
+        {
+          "text": "詳しくは概要欄のリンクからお問い合わせください。",
+          "start": 188.0075536480687,
+          "end": 192.00000000000003,
+          "startFrame": 5640,
+          "endFrame": 5760
+        }
+      ],
+      "fullScript": "ご視聴いただきありがとうございました。実はこのレポート、if塾の塾頭高崎による「完全自動化への挑戦」プロジェクトの一環として、AIが自動生成しています。将来的には塾頭が執筆しているような自然な記事になることを目指しており、現時点では事実と異なる内容が含まれる可能性もあります。この挑戦に共感していただけたら、ぜひチャンネル登録とグッドボタンをよろしくお願いします！また、無料のAI教育や導入コンサルも受け付けています。詳しくは概要欄のリンクからお問い合わせください。"
+    }
+  ]
+}
