@@ -1,0 +1,58 @@
+topic: AI_IT株式日次レポート_2026_01_12
+slides:
+- title: AI/IT株式ニュース
+  content: '2026/01/12
+
+
+    本日の注目トピック'
+- title: 本日のサマリー
+  content: 本日のAI/IT市場は、大手テック企業間の戦略的提携と、AIインフラへの大規模投資計画が活発化していることが示された。特に、GoogleとAppleのAI分野での複数年提携が最大の注目点であり、AIモデルの主要プロバイダーとしてのGoogleの地位を強化している。NVIDIAはAI創薬分野への巨額投資で新たな応用市場を創出し、AI技術の産業横断的な浸透が加速。
+- title: M&A・企業買収
+  content: Dassault Aviationが仏ドローン企業Harmattan AIに投資
+- title: 戦略的提携・パートナーシップ
+  content: GoogleとAppleがAIで複数年提携
+- title: 戦略的提携・パートナーシップ
+  content: NVIDIAがEli LillyとAI創薬ラボに10億ドル投資
+- title: 戦略的提携・パートナーシップ
+  content: MedtronicがNeuralinkの競合Precision Neuroscienceと提携
+- title: 戦略的提携・パートナーシップ
+  content: Societe GeneraleがMicrosoft Copilotを採用
+- title: まとめ
+  content: '本日のレポートは以上です
+
+
+    ご視聴ありがとうございました'
+- title: 塾頭高崎の完全自動化への挑戦
+  content: '※このコンテンツはAIが自動生成しています
+
+
+    AI技術の限界に挑戦中！
+
+    共感いただけたらチャンネル登録・グッドボタンを
+
+    よろしくお願いします！'
+script_notes:
+- slide: 1
+  script: うぃっすー！if塾AIニュースのお時間です。2026/01/12のAI・IT株式ニュースをお届けします。
+- slide: 2
+  script: 本日のAI/IT市場は、大手テック企業間の戦略的提携と、AIインフラへの大規模投資計画が活発化していることが示された。特に、GoogleとAppleのAI分野での複数年提携が最大の注目点であり、AIモデルの主要プロバイダーとしてのGoogleの地位を強化している。NVIDIAはAI創薬分野への巨額投資で新たな応用市場を創出し、AI技術の産業横断的な浸透が加速。一方で、AIインフラ構築に伴う電力需要の増加や、AI生成コンテンツに対する規制・倫理的懸念も顕在化している。
+- slide: 3
+  script: Dassault Aviationが仏ドローン企業Harmattan AIに投資。フランスのDassault Aviation SAがドローン企業Harmattan
+    AIに2億ドルを投資。Harmattan AIは企業価値14億ドルのユニコーン企業となる。（記事31）
+- slide: 4
+  script: GoogleとAppleがAIで複数年提携。Appleの次世代Foundation ModelsがGoogleのGeminiモデルとクラウドをベースに構築されることが発表された。SiriにもGeminiが採用される。（記事4,
+    12, 14）
+- slide: 5
+  script: NVIDIAがEli LillyとAI創薬ラボに10億ドル投資。NVIDIAは製薬大手のEli Lilly & Co.と共同で、AIを活用した創薬を加速させるためのラボに5年間で10億ドルを投資する計画を発表。（記事5,
+    17, 21）
+- slide: 6
+  script: MedtronicがNeuralinkの競合Precision Neuroscienceと提携。医療機器大手Medtronic Plcが脳インプラント企業Precision
+    Neuroscience Corp.と提携し、新製品開発のための神経データにアクセスする。（記事7）
+- slide: 7
+  script: Societe GeneraleがMicrosoft Copilotを採用。大手金融機関Societe Generale SAは、自社開発のAIツールを廃止し、Microsoft
+    Corp.のCopilotソリューションを採用することを決定。AIツールの自社開発の難しさを示唆。（記事20）
+- slide: 8
+  script: 本日のAI・IT株式ニュースは以上です。
+- slide: 9
+  script: ご視聴いただきありがとうございました。実はこのレポート、if塾の塾頭高崎による「完全自動化への挑戦」プロジェクトの一環として、AIが自動生成しています。将来的には塾頭が執筆しているような自然な記事になることを目指しており、現時点では事実と異なる内容が含まれる可能性もあります。この挑戦に共感していただけたら、ぜひチャンネル登録とグッドボタンをよろしくお願いします！また、無料のAI教育や導入コンサルも受け付けています。詳しくは概要欄のリンクからお問い合わせください。
+disclaimer: このレポートはAI（Gemini）により自動生成されています。投資判断は必ずご自身で行ってください。
