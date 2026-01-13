@@ -4,43 +4,43 @@
       "index": 1,
       "title": "AI/IT株式ニュース",
       "audio_file": "presentations/audio_output/slide_01.mp3",
-      "script": "うぃっすー！if塾AIニュースのお時間です。2026/01/12のAI・IT株式ニュースをお届けします。"
+      "script": "うぃっすー！if塾AIニュースのお時間です。2026/01/13のAI・IT株式ニュースをお届けします。"
     },
     {
       "index": 2,
       "title": "本日のサマリー",
       "audio_file": "presentations/audio_output/slide_02.mp3",
-      "script": "本日のAI/IT市場は、大手テック企業間の戦略的提携と、AIインフラへの大規模投資計画が活発化していることが示された。特に、GoogleとAppleのAI分野での複数年提携が最大の注目点であり、AIモデルの主要プロバイダーとしてのGoogleの地位を強化している。NVIDIAはAI創薬分野への巨額投資で新たな応用市場を創出し、AI技術の産業横断的な浸透が加速。一方で、AIインフラ構築に伴う電力需要の増加や、AI生成コンテンツに対する規制・倫理的懸念も顕在化している。"
+      "script": "本日のAI/IT市場は、主要テック企業によるAI戦略の加速と市場再編の動きが顕著でした。GoogleはGemini AIの機能を強化し、Appleとの大型提携も発表。MetaはメタバースからAIデバイスへと明確に舵を切り、大規模な人員削減とAIウェアラブルの生産強化を進めています。AIチップ市場ではNVIDIAに対抗するスタートアップが大型資金を調達する一方、NVIDIA自体もエコシステム投資を活発化。AIの経済全体への影響は引き続き大きく、新たなビジネスチャンスと同時に既存産業への脅威、そして市場の変動性も示されています。"
     },
     {
       "index": 3,
       "title": "M&A・企業買収",
       "audio_file": "presentations/audio_output/slide_03.mp3",
-      "script": "Dassault Aviationが仏ドローン企業Harmattan AIに投資。フランスのDassault Aviation SAがドローン企業Harmattan AIに2億ドルを投資。Harmattan AIは企業価値14億ドルのユニコーン企業となる。（記事31）"
+      "script": "Extreme NetworksがRuckus Networksの買収を検討。ネットワークインフラ企業のExtreme Networksが、CommScope Holding Co.傘下のRuckus Networksの買収を検討している模様です。(記事30)"
     },
     {
       "index": 4,
       "title": "戦略的提携・パートナーシップ",
       "audio_file": "presentations/audio_output/slide_04.mp3",
-      "script": "GoogleとAppleがAIで複数年提携。Appleの次世代Foundation ModelsがGoogleのGeminiモデルとクラウドをベースに構築されることが発表された。SiriにもGeminiが採用される。（記事4, 12, 14）"
+      "script": "AppleがGoogle Gemini AIを採用。Appleは、GoogleのGemini AIを自社のAI機能に採用する複数年契約を締結しました。これは、GoogleのAI能力とTensor Processing Unit（TPU）チップのコスト優位性を強調するもので、AIアシスタント分野におけるGoogleの存在感を高めます。(記事6)"
     },
     {
       "index": 5,
       "title": "戦略的提携・パートナーシップ",
       "audio_file": "presentations/audio_output/slide_05.mp3",
-      "script": "NVIDIAがEli LillyとAI創薬ラボに10億ドル投資。NVIDIAは製薬大手のEli Lilly & Co.と共同で、AIを活用した創薬を加速させるためのラボに5年間で10億ドルを投資する計画を発表。（記事5, 17, 21）"
+      "script": "LenovoがArm基盤でL4自動運転ロボタクシーをスケール。LenovoはArmのコンピューティング基盤を活用し、レベル4の自動運転ロボタクシーの展開を拡大しています。これは、AIとロボット技術の統合による新市場創出のトレンドを具体的に示すものです。(記事3)"
     },
     {
       "index": 6,
       "title": "戦略的提携・パートナーシップ",
       "audio_file": "presentations/audio_output/slide_06.mp3",
-      "script": "MedtronicがNeuralinkの競合Precision Neuroscienceと提携。医療機器大手Medtronic Plcが脳インプラント企業Precision Neuroscience Corp.と提携し、新製品開発のための神経データにアクセスする。（記事7）"
+      "script": "LufthansaとStarlinkが提携。Deutsche Lufthansa AGは、800機以上の航空機にSpaceXのStarlinkサービスを導入し、機内インターネットアクセスを強化します。(記事28)"
     },
     {
       "index": 7,
       "title": "戦略的提携・パートナーシップ",
       "audio_file": "presentations/audio_output/slide_07.mp3",
-      "script": "Societe GeneraleがMicrosoft Copilotを採用。大手金融機関Societe Generale SAは、自社開発のAIツールを廃止し、Microsoft Corp.のCopilotソリューションを採用することを決定。AIツールの自社開発の難しさを示唆。（記事20）"
+      "script": "ProximaがNVIDIAなどから資金調達。AI創薬スタートアップのProximaは、DCVCとNVIDIAから8000万ドルのシード資金を調達しました。これは、NVIDIAがAIエコシステムへのVCとしての機能を果たしている典型例であり、AIがバイオテクノロジー分野で具体的な応用が進んでいることを示します。(記事24)"
     },
     {
       "index": 8,
