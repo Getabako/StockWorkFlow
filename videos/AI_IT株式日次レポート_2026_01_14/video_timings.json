@@ -1,0 +1,385 @@
+{
+  "fps": 30,
+  "totalDuration": 177.32,
+  "totalFrames": 5319,
+  "slides": [
+    {
+      "index": 1,
+      "title": "AI/IT株式ニュース",
+      "audioFile": "presentations/audio_output/slide_01.mp3",
+      "duration": 10.06,
+      "durationFrames": 301,
+      "startTime": 0,
+      "endTime": 10.06,
+      "startFrame": 0,
+      "endFrame": 301,
+      "subtitles": [
+        {
+          "text": "うぃっすー！",
+          "start": 0,
+          "end": 1.0915384615384618,
+          "startFrame": 0,
+          "endFrame": 32
+        },
+        {
+          "text": "if塾AIニュースのお時間です。",
+          "start": 1.3915384615384618,
+          "end": 4.302307692307693,
+          "startFrame": 41,
+          "endFrame": 129
+        },
+        {
+          "text": "2026/01/14のAI・IT株式ニュースをお届けします。",
+          "start": 4.602307692307693,
+          "end": 10.06,
+          "startFrame": 138,
+          "endFrame": 301
+        }
+      ],
+      "fullScript": "うぃっすー！if塾AIニュースのお時間です。2026/01/14のAI・IT株式ニュースをお届けします。"
+    },
+    {
+      "index": 2,
+      "title": "本日のサマリー",
+      "audioFile": "presentations/audio_output/slide_02.mp3",
+      "duration": 42.26,
+      "durationFrames": 1267,
+      "startTime": 10.06,
+      "endTime": 52.32,
+      "startFrame": 301,
+      "endFrame": 1569,
+      "subtitles": [
+        {
+          "text": "今日のAI/IT市場は、OpenAIによる大規模なAIコンピュ\nーティングハードウェアの戦略的調達",
+          "start": 10.06,
+          "end": 17.949032258064516,
+          "startFrame": 301,
+          "endFrame": 538
+        },
+        {
+          "text": "GoogleのGeminiに\nよるコンシューマー向けAI機能の広範な統合",
+          "start": 18.249032258064517,
+          "end": 24.001451612903228,
+          "startFrame": 547,
+          "endFrame": 720
+        },
+        {
+          "text": "そしてAIセキュリティおよびAI×ロボット分野へ\nの投資加速によって特徴づけられます。",
+          "start": 24.30145161290323,
+          "end": 31.20435483870968,
+          "startFrame": 729,
+          "endFrame": 936
+        },
+        {
+          "text": "特に、OpenAIがCerebrasと100億ドルの大型契約を\n結んだことは",
+          "start": 31.50435483870968,
+          "end": 37.58548387096774,
+          "startFrame": 945,
+          "endFrame": 1127
+        },
+        {
+          "text": "AIインフラの多様化とNVIDIA依存脱却の\n動きを明確にする重要な動きです。",
+          "start": 37.88548387096774,
+          "end": 44.13096774193548,
+          "startFrame": 1136,
+          "endFrame": 1323
+        },
+        {
+          "text": "同時に、AIの倫理的利用や地政学的な関税・サイバー規制が引き続\nき業界の課題として浮上しています。",
+          "start": 44.430967741935476,
+          "end": 52.31999999999999,
+          "startFrame": 1332,
+          "endFrame": 1569
+        }
+      ],
+      "fullScript": "今日のAI/IT市場は、OpenAIによる大規模なAIコンピューティングハードウェアの戦略的調達、GoogleのGeminiによるコンシューマー向けAI機能の広範な統合、そしてAIセキュリティおよびAI×ロボット分野への投資加速によって特徴づけられます。特に、OpenAIがCerebrasと100億ドルの大型契約を結んだことは、AIインフラの多様化とNVIDIA依存脱却の動きを明確にする重要な動きです。同時に、AIの倫理的利用や地政学的な関税・サイバー規制が引き続き業界の課題として浮上しています。"
+    },
+    {
+      "index": 3,
+      "title": "戦略的提携・パートナーシップ",
+      "audioFile": "presentations/audio_output/slide_03.mp3",
+      "duration": 20.8,
+      "durationFrames": 624,
+      "startTime": 52.32,
+      "endTime": 73.12,
+      "startFrame": 1569,
+      "endFrame": 2193,
+      "subtitles": [
+        {
+          "text": "OpenAI。",
+          "start": 52.32,
+          "end": 53.42645161290323,
+          "startFrame": 1569,
+          "endFrame": 1602
+        },
+        {
+          "text": "は、AIインフラの構築を加速しNVIDIA依存脱却を図るため",
+          "start": 53.726451612903226,
+          "end": 58.468387096774194,
+          "startFrame": 1611,
+          "endFrame": 1754
+        },
+        {
+          "text": "Cerebras Systems Inc.と\n100億ドル規模の複数年契約を締結しました。",
+          "start": 58.76838709677419,
+          "end": 65.72322580645161,
+          "startFrame": 1763,
+          "endFrame": 1971
+        },
+        {
+          "text": "これにより、750メガワット相当のAIコンピューティングパワー\nを確保します。",
+          "start": 66.0232258064516,
+          "end": 72.02967741935483,
+          "startFrame": 1980,
+          "endFrame": 2160
+        },
+        {
+          "text": "（記事7）",
+          "start": 72.32967741935482,
+          "end": 73.11999999999999,
+          "startFrame": 2169,
+          "endFrame": 2193
+        }
+      ],
+      "fullScript": "OpenAI。は、AIインフラの構築を加速しNVIDIA依存脱却を図るため、Cerebras Systems Inc.と100億ドル規模の複数年契約を締結しました。これにより、750メガワット相当のAIコンピューティングパワーを確保します。（記事7）"
+    },
+    {
+      "index": 4,
+      "title": "戦略的提携・パートナーシップ",
+      "audioFile": "presentations/audio_output/slide_04.mp3",
+      "duration": 14.44,
+      "durationFrames": 433,
+      "startTime": 73.12,
+      "endTime": 87.56,
+      "startFrame": 2193,
+      "endFrame": 2626,
+      "subtitles": [
+        {
+          "text": "Slack。",
+          "start": 73.12,
+          "end": 74.0646511627907,
+          "startFrame": 2193,
+          "endFrame": 2221
+        },
+        {
+          "text": "Salesforce傘下のは、\nビジネス向けSaaSにおけるAI統合を進めるため",
+          "start": 74.3646511627907,
+          "end": 80.50488372093022,
+          "startFrame": 2230,
+          "endFrame": 2415
+        },
+        {
+          "text": "のClaudeモデルを利用してAI機能を\n大幅に強化すると発表しました。",
+          "start": 80.80488372093022,
+          "end": 86.31534883720929,
+          "startFrame": 2424,
+          "endFrame": 2589
+        },
+        {
+          "text": "（記事11）",
+          "start": 86.61534883720928,
+          "end": 87.55999999999997,
+          "startFrame": 2598,
+          "endFrame": 2626
+        }
+      ],
+      "fullScript": "Slack。Salesforce傘下のは、ビジネス向けSaaSにおけるAI統合を進めるため、のClaudeモデルを利用してAI機能を大幅に強化すると発表しました。（記事11）"
+    },
+    {
+      "index": 5,
+      "title": "大型契約・受注",
+      "audioFile": "presentations/audio_output/slide_05.mp3",
+      "duration": 16.5,
+      "durationFrames": 495,
+      "startTime": 87.56,
+      "endTime": 104.06,
+      "startFrame": 2626,
+      "endFrame": 3121,
+      "subtitles": [
+        {
+          "text": "OpenAI。",
+          "start": 87.56,
+          "end": 88.7341935483871,
+          "startFrame": 2626,
+          "endFrame": 2662
+        },
+        {
+          "text": "がAIコンピューティングパワーを確保するため、\nと100億ドルに上る大規模な複数年契約を締結しました。",
+          "start": 89.0341935483871,
+          "end": 97.42129032258065,
+          "startFrame": 2671,
+          "endFrame": 2922
+        },
+        {
+          "text": "これはOpenAIのインフラ戦略における重要な一歩となります。",
+          "start": 97.72129032258064,
+          "end": 102.92129032258065,
+          "startFrame": 2931,
+          "endFrame": 3087
+        },
+        {
+          "text": "（記事7）",
+          "start": 103.22129032258064,
+          "end": 104.06,
+          "startFrame": 3096,
+          "endFrame": 3121
+        }
+      ],
+      "fullScript": "OpenAI。がAIコンピューティングパワーを確保するため、と100億ドルに上る大規模な複数年契約を締結しました。これはOpenAIのインフラ戦略における重要な一歩となります。（記事7）"
+    },
+    {
+      "index": 6,
+      "title": "新製品・新技術",
+      "audioFile": "presentations/audio_output/slide_06.mp3",
+      "duration": 18.88,
+      "durationFrames": 566,
+      "startTime": 104.06,
+      "endTime": 122.94,
+      "startFrame": 3121,
+      "endFrame": 3688,
+      "subtitles": [
+        {
+          "text": "Google。",
+          "start": 104.06,
+          "end": 105.04328125,
+          "startFrame": 3121,
+          "endFrame": 3151
+        },
+        {
+          "text": "は、AIアシスタントに「Personal Intelligen\nce」機能を導入し、ユーザーのGmail、Search",
+          "start": 105.34328125,
+          "end": 113.49046875,
+          "startFrame": 3160,
+          "endFrame": 3404
+        },
+        {
+          "text": "Photos、YouTubeデータにプロアクティブにアクセスし\nて、よりパーソナライズされた体験を提供します。",
+          "start": 113.79046875,
+          "end": 121.37578125,
+          "startFrame": 3413,
+          "endFrame": 3641
+        },
+        {
+          "text": "（記事4, 22）",
+          "start": 121.67578125,
+          "end": 122.94,
+          "startFrame": 3650,
+          "endFrame": 3688
+        }
+      ],
+      "fullScript": "Google。は、AIアシスタントに「Personal Intelligence」機能を導入し、ユーザーのGmail、Search、Photos、YouTubeデータにプロアクティブにアクセスして、よりパーソナライズされた体験を提供します。（記事4, 22）"
+    },
+    {
+      "index": 7,
+      "title": "新製品・新技術",
+      "audioFile": "presentations/audio_output/slide_07.mp3",
+      "duration": 10.24,
+      "durationFrames": 307,
+      "startTime": 122.94,
+      "endTime": 133.18,
+      "startFrame": 3688,
+      "endFrame": 3995,
+      "subtitles": [
+        {
+          "text": "Google。",
+          "start": 122.94,
+          "end": 123.99437499999999,
+          "startFrame": 3688,
+          "endFrame": 3719
+        },
+        {
+          "text": "はまた、Search trendsにGeminiを統合し、\nトレンド探索を容易にする新機能を発表しました。",
+          "start": 124.29437499999999,
+          "end": 132.12687499999998,
+          "startFrame": 3728,
+          "endFrame": 3963
+        },
+        {
+          "text": "（記事3）",
+          "start": 132.426875,
+          "end": 133.18,
+          "startFrame": 3972,
+          "endFrame": 3995
+        }
+      ],
+      "fullScript": "Google。はまた、Search trendsにGeminiを統合し、トレンド探索を容易にする新機能を発表しました。（記事3）"
+    },
+    {
+      "index": 8,
+      "title": "まとめ",
+      "audioFile": "presentations/audio_output/slide_08.mp3",
+      "duration": 3.88,
+      "durationFrames": 116,
+      "startTime": 133.18,
+      "endTime": 137.06,
+      "startFrame": 3995,
+      "endFrame": 4111,
+      "subtitles": [
+        {
+          "text": "本日のAI・IT株式ニュースは以上です。",
+          "start": 133.18,
+          "end": 137.06,
+          "startFrame": 3995,
+          "endFrame": 4111
+        }
+      ],
+      "fullScript": "本日のAI・IT株式ニュースは以上です。"
+    },
+    {
+      "index": 9,
+      "title": "塾頭高崎の完全自動化への挑戦",
+      "audioFile": "presentations/audio_output/slide_09.mp3",
+      "duration": 40.26,
+      "durationFrames": 1207,
+      "startTime": 137.06,
+      "endTime": 177.32,
+      "startFrame": 4111,
+      "endFrame": 5319,
+      "subtitles": [
+        {
+          "text": "ご視聴いただきありがとうございました。",
+          "start": 137.06,
+          "end": 140.22068669527897,
+          "startFrame": 4111,
+          "endFrame": 4206
+        },
+        {
+          "text": "実はこのレポート、if塾の塾頭高崎による「完全自動化への挑戦」\nプロジェクトの一環として、AIが自動生成しています。",
+          "start": 140.52068669527898,
+          "end": 150.0027467811159,
+          "startFrame": 4215,
+          "endFrame": 4500
+        },
+        {
+          "text": "将来的には塾頭が執筆しているような自然な記事になることを目指し\nており、現時点では事実と異なる内容が含まれる可能性もあります。",
+          "start": 150.3027467811159,
+          "end": 160.61656652360517,
+          "startFrame": 4509,
+          "endFrame": 4818
+        },
+        {
+          "text": "この挑戦に共感していただけたら、\nぜひチャンネル登録とグッドボタンをよろしくお願いします！",
+          "start": 160.91656652360518,
+          "end": 168.23605150214595,
+          "startFrame": 4827,
+          "endFrame": 5047
+        },
+        {
+          "text": "また、無料のAI教育や導入コンサルも受け付けています。",
+          "start": 168.53605150214597,
+          "end": 173.0275536480687,
+          "startFrame": 5056,
+          "endFrame": 5190
+        },
+        {
+          "text": "詳しくは概要欄のリンクからお問い合わせください。",
+          "start": 173.32755364806872,
+          "end": 177.32000000000005,
+          "startFrame": 5199,
+          "endFrame": 5319
+        }
+      ],
+      "fullScript": "ご視聴いただきありがとうございました。実はこのレポート、if塾の塾頭高崎による「完全自動化への挑戦」プロジェクトの一環として、AIが自動生成しています。将来的には塾頭が執筆しているような自然な記事になることを目指しており、現時点では事実と異なる内容が含まれる可能性もあります。この挑戦に共感していただけたら、ぜひチャンネル登録とグッドボタンをよろしくお願いします！また、無料のAI教育や導入コンサルも受け付けています。詳しくは概要欄のリンクからお問い合わせください。"
+    }
+  ]
+}

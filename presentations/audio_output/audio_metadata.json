@@ -4,43 +4,43 @@
       "index": 1,
       "title": "AI/IT株式ニュース",
       "audio_file": "presentations/audio_output/slide_01.mp3",
-      "script": "うぃっすー！if塾AIニュースのお時間です。2026/01/13のAI・IT株式ニュースをお届けします。"
+      "script": "うぃっすー！if塾AIニュースのお時間です。2026/01/14のAI・IT株式ニュースをお届けします。"
     },
     {
       "index": 2,
       "title": "本日のサマリー",
       "audio_file": "presentations/audio_output/slide_02.mp3",
-      "script": "本日のAI/IT市場は、主要テック企業によるAI戦略の加速と市場再編の動きが顕著でした。GoogleはGemini AIの機能を強化し、Appleとの大型提携も発表。MetaはメタバースからAIデバイスへと明確に舵を切り、大規模な人員削減とAIウェアラブルの生産強化を進めています。AIチップ市場ではNVIDIAに対抗するスタートアップが大型資金を調達する一方、NVIDIA自体もエコシステム投資を活発化。AIの経済全体への影響は引き続き大きく、新たなビジネスチャンスと同時に既存産業への脅威、そして市場の変動性も示されています。"
+      "script": "今日のAI/IT市場は、OpenAIによる大規模なAIコンピューティングハードウェアの戦略的調達、GoogleのGeminiによるコンシューマー向けAI機能の広範な統合、そしてAIセキュリティおよびAI×ロボット分野への投資加速によって特徴づけられます。特に、OpenAIがCerebrasと100億ドルの大型契約を結んだことは、AIインフラの多様化とNVIDIA依存脱却の動きを明確にする重要な動きです。同時に、AIの倫理的利用や地政学的な関税・サイバー規制が引き続き業界の課題として浮上しています。"
     },
     {
       "index": 3,
-      "title": "M&A・企業買収",
+      "title": "戦略的提携・パートナーシップ",
       "audio_file": "presentations/audio_output/slide_03.mp3",
-      "script": "Extreme NetworksがRuckus Networksの買収を検討。ネットワークインフラ企業のExtreme Networksが、CommScope Holding Co.傘下のRuckus Networksの買収を検討している模様です。(記事30)"
+      "script": "OpenAI。は、AIインフラの構築を加速しNVIDIA依存脱却を図るため、Cerebras Systems Inc.と100億ドル規模の複数年契約を締結しました。これにより、750メガワット相当のAIコンピューティングパワーを確保します。（記事7）"
     },
     {
       "index": 4,
       "title": "戦略的提携・パートナーシップ",
       "audio_file": "presentations/audio_output/slide_04.mp3",
-      "script": "AppleがGoogle Gemini AIを採用。Appleは、GoogleのGemini AIを自社のAI機能に採用する複数年契約を締結しました。これは、GoogleのAI能力とTensor Processing Unit（TPU）チップのコスト優位性を強調するもので、AIアシスタント分野におけるGoogleの存在感を高めます。(記事6)"
+      "script": "Slack。Salesforce傘下のは、ビジネス向けSaaSにおけるAI統合を進めるため、のClaudeモデルを利用してAI機能を大幅に強化すると発表しました。（記事11）"
     },
     {
       "index": 5,
-      "title": "戦略的提携・パートナーシップ",
+      "title": "大型契約・受注",
       "audio_file": "presentations/audio_output/slide_05.mp3",
-      "script": "LenovoがArm基盤でL4自動運転ロボタクシーをスケール。LenovoはArmのコンピューティング基盤を活用し、レベル4の自動運転ロボタクシーの展開を拡大しています。これは、AIとロボット技術の統合による新市場創出のトレンドを具体的に示すものです。(記事3)"
+      "script": "OpenAI。がAIコンピューティングパワーを確保するため、と100億ドルに上る大規模な複数年契約を締結しました。これはOpenAIのインフラ戦略における重要な一歩となります。（記事7）"
     },
     {
       "index": 6,
-      "title": "戦略的提携・パートナーシップ",
+      "title": "新製品・新技術",
       "audio_file": "presentations/audio_output/slide_06.mp3",
-      "script": "LufthansaとStarlinkが提携。Deutsche Lufthansa AGは、800機以上の航空機にSpaceXのStarlinkサービスを導入し、機内インターネットアクセスを強化します。(記事28)"
+      "script": "Google。は、AIアシスタントに「Personal Intelligence」機能を導入し、ユーザーのGmail、Search、Photos、YouTubeデータにプロアクティブにアクセスして、よりパーソナライズされた体験を提供します。（記事4, 22）"
     },
     {
       "index": 7,
-      "title": "戦略的提携・パートナーシップ",
+      "title": "新製品・新技術",
       "audio_file": "presentations/audio_output/slide_07.mp3",
-      "script": "ProximaがNVIDIAなどから資金調達。AI創薬スタートアップのProximaは、DCVCとNVIDIAから8000万ドルのシード資金を調達しました。これは、NVIDIAがAIエコシステムへのVCとしての機能を果たしている典型例であり、AIがバイオテクノロジー分野で具体的な応用が進んでいることを示します。(記事24)"
+      "script": "Google。はまた、Search trendsにGeminiを統合し、トレンド探索を容易にする新機能を発表しました。（記事3）"
     },
     {
       "index": 8,
