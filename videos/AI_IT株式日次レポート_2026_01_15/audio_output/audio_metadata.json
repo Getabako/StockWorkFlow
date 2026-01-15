@@ -1,0 +1,59 @@
+{
+  "audio_files": [
+    {
+      "index": 1,
+      "title": "AI/IT株式ニュース",
+      "audio_file": "presentations/audio_output/slide_01.mp3",
+      "script": "うぃっすー！if塾AIニュースのお時間です。2026/01/15のAI・IT株式ニュースをお届けします。"
+    },
+    {
+      "index": 2,
+      "title": "本日のサマリー",
+      "audio_file": "presentations/audio_output/slide_02.mp3",
+      "script": "今日のAI/IT市場は、OpenAIがロボティクス・AIデバイス分野への進出を計画し、自社経済圏を拡大する動きが最も注目されます。同時に、TSMCの巨額設備投資計画やBlackRock・MicrosoftによるAIデータセンターへの大規模資金調達は、AIブームを支えるインフラ需要の強さを裏付けました。しかし、メモリ価格の高騰やNVIDIAの中国向けAIチップ輸出規制といったサプライチェーン上の課題も顕在化しています。AI技術の開発と応用への投資は引き続き活発です。"
+    },
+    {
+      "index": 3,
+      "title": "戦略的提携・パートナーシップ",
+      "audio_file": "presentations/audio_output/slide_03.mp3",
+      "script": "OpenAI。ロボティクスおよびAIデバイス分野への進出を計画し、米国を拠点とするサプライヤーからの提案を募集しています。これは、AI×ロボット戦略を具体化し、自社ハードウェアエコシステムの構築を通じてNVIDIAへの依存脱却を図る意図と見られます。（記事24）"
+    },
+    {
+      "index": 4,
+      "title": "戦略的提携・パートナーシップ",
+      "audio_file": "presentations/audio_output/slide_04.mp3",
+      "script": "BlackRock & Microsoft。AIデータセンターおよびエネルギーインフラへの投資を目的として、125億ドルの資金を調達するパートナーシップを締結しました。これは、AIブームを支える基盤インフラへの大規模投資トレンドを示します。（記事32）"
+    },
+    {
+      "index": 5,
+      "title": "戦略的提携・パートナーシップ",
+      "audio_file": "presentations/audio_output/slide_05.mp3",
+      "script": "Amazon Web Services (AWS) & Rio Tinto。AWSのデータセンターで利用するため、Rio TintoのArizona鉱山で生産される銅の購入契約を締結しました。これは、データセンターのサプライチェーンにおける持続可能性への配慮と見られます。（記事31）"
+    },
+    {
+      "index": 6,
+      "title": "戦略的提携・パートナーシップ",
+      "audio_file": "presentations/audio_output/slide_06.mp3",
+      "script": "Tesla & xAI。イーロン・マスク氏が率いる両社の連携が強化される見込みです。「Muskonomy」と呼ばれるエコシステムの構築が注目されます。（記事34）"
+    },
+    {
+      "index": 7,
+      "title": "大型契約・受注",
+      "audio_file": "presentations/audio_output/slide_07.mp3",
+      "script": "TSMC。2026年に最大560億ドルの設備投資を計画していると発表しました。これは、AI半導体需要の継続的な強さに対する同社の強い自信を示しており、AI産業全体の成長を後押しするでしょう。（記事20, 28）"
+    },
+    {
+      "index": 8,
+      "title": "まとめ",
+      "audio_file": "presentations/audio_output/slide_08.mp3",
+      "script": "本日のAI・IT株式ニュースは以上です。"
+    },
+    {
+      "index": 9,
+      "title": "塾頭高崎の完全自動化への挑戦",
+      "audio_file": "presentations/audio_output/slide_09.mp3",
+      "script": "ご視聴いただきありがとうございました。実はこのレポート、if塾の塾頭高崎による「完全自動化への挑戦」プロジェクトの一環として、AIが自動生成しています。将来的には塾頭が執筆しているような自然な記事になることを目指しており、現時点では事実と異なる内容が含まれる可能性もあります。この挑戦に共感していただけたら、ぜひチャンネル登録とグッドボタンをよろしくお願いします！また、無料のAI教育や導入コンサルも受け付けています。詳しくは概要欄のリンクからお問い合わせください。"
+    }
+  ],
+  "total_slides": 9
+}

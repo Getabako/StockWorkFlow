@@ -4,43 +4,43 @@
       "index": 1,
       "title": "AI/IT株式ニュース",
       "audio_file": "presentations/audio_output/slide_01.mp3",
-      "script": "うぃっすー！if塾AIニュースのお時間です。2026/01/14のAI・IT株式ニュースをお届けします。"
+      "script": "うぃっすー！if塾AIニュースのお時間です。2026/01/15のAI・IT株式ニュースをお届けします。"
     },
     {
       "index": 2,
       "title": "本日のサマリー",
       "audio_file": "presentations/audio_output/slide_02.mp3",
-      "script": "今日のAI/IT市場は、OpenAIによる大規模なAIコンピューティングハードウェアの戦略的調達、GoogleのGeminiによるコンシューマー向けAI機能の広範な統合、そしてAIセキュリティおよびAI×ロボット分野への投資加速によって特徴づけられます。特に、OpenAIがCerebrasと100億ドルの大型契約を結んだことは、AIインフラの多様化とNVIDIA依存脱却の動きを明確にする重要な動きです。同時に、AIの倫理的利用や地政学的な関税・サイバー規制が引き続き業界の課題として浮上しています。"
+      "script": "今日のAI/IT市場は、OpenAIがロボティクス・AIデバイス分野への進出を計画し、自社経済圏を拡大する動きが最も注目されます。同時に、TSMCの巨額設備投資計画やBlackRock・MicrosoftによるAIデータセンターへの大規模資金調達は、AIブームを支えるインフラ需要の強さを裏付けました。しかし、メモリ価格の高騰やNVIDIAの中国向けAIチップ輸出規制といったサプライチェーン上の課題も顕在化しています。AI技術の開発と応用への投資は引き続き活発です。"
     },
     {
       "index": 3,
       "title": "戦略的提携・パートナーシップ",
       "audio_file": "presentations/audio_output/slide_03.mp3",
-      "script": "OpenAI。は、AIインフラの構築を加速しNVIDIA依存脱却を図るため、Cerebras Systems Inc.と100億ドル規模の複数年契約を締結しました。これにより、750メガワット相当のAIコンピューティングパワーを確保します。（記事7）"
+      "script": "OpenAI。ロボティクスおよびAIデバイス分野への進出を計画し、米国を拠点とするサプライヤーからの提案を募集しています。これは、AI×ロボット戦略を具体化し、自社ハードウェアエコシステムの構築を通じてNVIDIAへの依存脱却を図る意図と見られます。（記事24）"
     },
     {
       "index": 4,
       "title": "戦略的提携・パートナーシップ",
       "audio_file": "presentations/audio_output/slide_04.mp3",
-      "script": "Slack。Salesforce傘下のは、ビジネス向けSaaSにおけるAI統合を進めるため、のClaudeモデルを利用してAI機能を大幅に強化すると発表しました。（記事11）"
+      "script": "BlackRock & Microsoft。AIデータセンターおよびエネルギーインフラへの投資を目的として、125億ドルの資金を調達するパートナーシップを締結しました。これは、AIブームを支える基盤インフラへの大規模投資トレンドを示します。（記事32）"
     },
     {
       "index": 5,
-      "title": "大型契約・受注",
+      "title": "戦略的提携・パートナーシップ",
       "audio_file": "presentations/audio_output/slide_05.mp3",
-      "script": "OpenAI。がAIコンピューティングパワーを確保するため、と100億ドルに上る大規模な複数年契約を締結しました。これはOpenAIのインフラ戦略における重要な一歩となります。（記事7）"
+      "script": "Amazon Web Services (AWS) & Rio Tinto。AWSのデータセンターで利用するため、Rio TintoのArizona鉱山で生産される銅の購入契約を締結しました。これは、データセンターのサプライチェーンにおける持続可能性への配慮と見られます。（記事31）"
     },
     {
       "index": 6,
-      "title": "新製品・新技術",
+      "title": "戦略的提携・パートナーシップ",
       "audio_file": "presentations/audio_output/slide_06.mp3",
-      "script": "Google。は、AIアシスタントに「Personal Intelligence」機能を導入し、ユーザーのGmail、Search、Photos、YouTubeデータにプロアクティブにアクセスして、よりパーソナライズされた体験を提供します。（記事4, 22）"
+      "script": "Tesla & xAI。イーロン・マスク氏が率いる両社の連携が強化される見込みです。「Muskonomy」と呼ばれるエコシステムの構築が注目されます。（記事34）"
     },
     {
       "index": 7,
-      "title": "新製品・新技術",
+      "title": "大型契約・受注",
       "audio_file": "presentations/audio_output/slide_07.mp3",
-      "script": "Google。はまた、Search trendsにGeminiを統合し、トレンド探索を容易にする新機能を発表しました。（記事3）"
+      "script": "TSMC。2026年に最大560億ドルの設備投資を計画していると発表しました。これは、AI半導体需要の継続的な強さに対する同社の強い自信を示しており、AI産業全体の成長を後押しするでしょう。（記事20, 28）"
     },
     {
       "index": 8,
