@@ -4,43 +4,43 @@
       "index": 1,
       "title": "AI/IT株式ニュース",
       "audio_file": "presentations/audio_output/slide_01.mp3",
-      "script": "うぃっすー！if塾AIニュースのお時間です。2026/01/15のAI・IT株式ニュースをお届けします。"
+      "script": "うぃっすー！if塾AIニュースのお時間です。2026/01/16のAI・IT株式ニュースをお届けします。"
     },
     {
       "index": 2,
       "title": "本日のサマリー",
       "audio_file": "presentations/audio_output/slide_02.mp3",
-      "script": "今日のAI/IT市場は、OpenAIがロボティクス・AIデバイス分野への進出を計画し、自社経済圏を拡大する動きが最も注目されます。同時に、TSMCの巨額設備投資計画やBlackRock・MicrosoftによるAIデータセンターへの大規模資金調達は、AIブームを支えるインフラ需要の強さを裏付けました。しかし、メモリ価格の高騰やNVIDIAの中国向けAIチップ輸出規制といったサプライチェーン上の課題も顕在化しています。AI技術の開発と応用への投資は引き続き活発です。"
+      "script": "本日のAI/IT市場では、OpenAIがChatGPTでのターゲット広告テストを開始し、収益化への本格的なシフトを示しました。これは「OpenAI指標」が市場を左右する中で、ビジネスモデルの進化として注目されます。また、AI需要増大に対応するためのインフラ投資が加速する一方で、メモリチップ価格の高騰やデータセンターの電力コスト問題、そしてBig Techに対する反トラスト規制の強化といった、成長の裏側にある課題も浮き彫りになっています。AIデータベース分野での大型資金調達やヒューマノイドロボット市場の成長予測など、AI関連の市場は引き続き活況を呈しています。"
     },
     {
       "index": 3,
-      "title": "戦略的提携・パートナーシップ",
+      "title": "M&A・企業買収",
       "audio_file": "presentations/audio_output/slide_03.mp3",
-      "script": "OpenAI。ロボティクスおよびAIデバイス分野への進出を計画し、米国を拠点とするサプライヤーからの提案を募集しています。これは、AI×ロボット戦略を具体化し、自社ハードウェアエコシステムの構築を通じてNVIDIAへの依存脱却を図る意図と見られます。（記事24）"
+      "script": "AlantraなどがSalto Systemsの株式売却を検討 (記事31)。電子ロックメーカーのSalto Systemsの株主が、保有株式の売却を検討している模様。直接的なAI/IT分野のM&Aではないが、テクノロジー企業のM&A動向として注視される。"
     },
     {
       "index": 4,
-      "title": "戦略的提携・パートナーシップ",
+      "title": "M&A・企業買収",
       "audio_file": "presentations/audio_output/slide_04.mp3",
-      "script": "BlackRock & Microsoft。AIデータセンターおよびエネルギーインフラへの投資を目的として、125億ドルの資金を調達するパートナーシップを締結しました。これは、AIブームを支える基盤インフラへの大規模投資トレンドを示します。（記事32）"
+      "script": "FTC、Big Techの「Acquihires」を厳しく監視 (記事7, 8, 15)。米連邦取引委員会(FTC)の議長は、大手テック企業による「acquihires」（企業買収ではなく、スタートアップの人材のみを獲得する行為）が反トラスト法の抜け道として利用されることを認めず、厳しく審査する方針を表明しました。これはM&A戦略や人材獲得戦略に大きな影響を与える可能性があります。"
     },
     {
       "index": 5,
       "title": "戦略的提携・パートナーシップ",
       "audio_file": "presentations/audio_output/slide_05.mp3",
-      "script": "Amazon Web Services (AWS) & Rio Tinto。AWSのデータセンターで利用するため、Rio TintoのArizona鉱山で生産される銅の購入契約を締結しました。これは、データセンターのサプライチェーンにおける持続可能性への配慮と見られます。（記事31）"
+      "script": "Google、StonepeakのRadiateと光ファイバー資産の合弁事業を協議 (記事4)。Alphabet傘下のGoogleは、Stonepeak Partnersが支援するブロードバンド事業者Radiateと、光ファイバー資産を保有する合弁事業の設立を協議しています。AIおよびその他のデータ集約型アプリケーションの需要急増に対応するため、高速接続インフラの強化を図る動きと見られます。"
     },
     {
       "index": 6,
       "title": "戦略的提携・パートナーシップ",
       "audio_file": "presentations/audio_output/slide_06.mp3",
-      "script": "Tesla & xAI。イーロン・マスク氏が率いる両社の連携が強化される見込みです。「Muskonomy」と呼ばれるエコシステムの構築が注目されます。（記事34）"
+      "script": "TSMC、米国と台湾のチップ製造技術ギャップ縮小を目指す (記事24, 25)。Taiwan Semiconductor Manufacturing Co. (TSMC)は、将来的に米国への先進チップ製造技術の移転を加速する意向を表明しました。これはAI半導体を含むグローバルなサプライチェーンのレジリエンス強化と、地域間の技術格差是正に向けた戦略的提携の一環と捉えられます。"
     },
     {
       "index": 7,
-      "title": "大型契約・受注",
+      "title": "新製品・新技術",
       "audio_file": "presentations/audio_output/slide_07.mp3",
-      "script": "TSMC。2026年に最大560億ドルの設備投資を計画していると発表しました。これは、AI半導体需要の継続的な強さに対する同社の強い自信を示しており、AI産業全体の成長を後押しするでしょう。（記事20, 28）"
+      "script": "OpenAI、ChatGPTでターゲット広告をテスト開始 (記事12, 13)。OpenAIは、人気チャットボットChatGPTアプリで米国ユーザー向けにターゲット広告のテストを開始します。これは、急成長を続けるOpenAIが収益源を多様化し、サービスを収益化するための大きな一歩となります。"
     },
     {
       "index": 8,
