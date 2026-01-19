@@ -4,43 +4,43 @@
       "index": 1,
       "title": "AI/IT株式ニュース",
       "audio_file": "presentations/audio_output/slide_01.mp3",
-      "script": "うぃっすー！if塾AIニュースのお時間です。2026/01/16のAI・IT株式ニュースをお届けします。"
+      "script": "うぃっすー！if塾AIニュースのお時間です。2026/01/19のAI・IT株式ニュースをお届けします。"
     },
     {
       "index": 2,
       "title": "本日のサマリー",
       "audio_file": "presentations/audio_output/slide_02.mp3",
-      "script": "本日のAI/IT市場では、OpenAIがChatGPTでのターゲット広告テストを開始し、収益化への本格的なシフトを示しました。これは「OpenAI指標」が市場を左右する中で、ビジネスモデルの進化として注目されます。また、AI需要増大に対応するためのインフラ投資が加速する一方で、メモリチップ価格の高騰やデータセンターの電力コスト問題、そしてBig Techに対する反トラスト規制の強化といった、成長の裏側にある課題も浮き彫りになっています。AIデータベース分野での大型資金調達やヒューマノイドロボット市場の成長予測など、AI関連の市場は引き続き活況を呈しています。"
+      "script": "本日のAI/IT市場は、AIインフラへの旺盛な投資とサプライチェーンのボトルネック、そしてAIの産業応用への進展が主要な動向となりました。特に、AI駆動の高性能メモリチップ不足が「前例のない」水準に達し、データセンターの需要も加速。ヒューマノイドロボット分野では大型契約が成立し、AI×ロボット戦略が具体化しています。各国政府やVCはAI開発・インフラへの積極投資を続ける一方で、AIバブルへの懸念も示されています。"
     },
     {
       "index": 3,
-      "title": "M&A・企業買収",
+      "title": "戦略的提携・パートナーシップ",
       "audio_file": "presentations/audio_output/slide_03.mp3",
-      "script": "AlantraなどがSalto Systemsの株式売却を検討 (記事31)。電子ロックメーカーのSalto Systemsの株主が、保有株式の売却を検討している模様。直接的なAI/IT分野のM&Aではないが、テクノロジー企業のM&A動向として注視される。"
+      "script": "AppleとGoogleのAI技術提携。Appleが自社AI「Apple Intelligence」の基盤にGoogle Geminiを採用する方針を示しました。これは、AI開発競争が激化する中で、企業が自社開発だけでなく、他社の強力なAIモデルとの連携を戦略的に選択していることを示唆します。（記事13）"
     },
     {
       "index": 4,
-      "title": "M&A・企業買収",
+      "title": "大型契約・受注",
       "audio_file": "presentations/audio_output/slide_04.mp3",
-      "script": "FTC、Big Techの「Acquihires」を厳しく監視 (記事7, 8, 15)。米連邦取引委員会(FTC)の議長は、大手テック企業による「acquihires」（企業買収ではなく、スタートアップの人材のみを獲得する行為）が反トラスト法の抜け道として利用されることを認めず、厳しく審査する方針を表明しました。これはM&A戦略や人材獲得戦略に大きな影響を与える可能性があります。"
+      "script": "AirbusとUBTech Roboticsの契約。中国のヒューマノイドロボットメーカーUBTech RoboticsがAirbus SEから受注を受け、同社の株価が急騰しました。これは、製造業におけるAI搭載ロボットの導入が本格化していることを示し、「AI×ロボット戦略」が新市場を創出している強力な証拠となります。（記事23）"
     },
     {
       "index": 5,
-      "title": "戦略的提携・パートナーシップ",
+      "title": "大型契約・受注",
       "audio_file": "presentations/audio_output/slide_05.mp3",
-      "script": "Google、StonepeakのRadiateと光ファイバー資産の合弁事業を協議 (記事4)。Alphabet傘下のGoogleは、Stonepeak Partnersが支援するブロードバンド事業者Radiateと、光ファイバー資産を保有する合弁事業の設立を協議しています。AIおよびその他のデータ集約型アプリケーションの需要急増に対応するため、高速接続インフラの強化を図る動きと見られます。"
+      "script": "ASM InternationalのAI関連受注好調。半導体製造装置メーカーASM Internationalは、中国からの受注回復と「AI関連セグメントからの強い需要」により、第4四半期の受注が予想を上回りました。AI経済圏の拡大が、サプライチェーン上流のハードウェア投資を加速させていることを明確に示しています。（記事19）"
     },
     {
       "index": 6,
-      "title": "戦略的提携・パートナーシップ",
+      "title": "新製品・新技術の発表",
       "audio_file": "presentations/audio_output/slide_06.mp3",
-      "script": "TSMC、米国と台湾のチップ製造技術ギャップ縮小を目指す (記事24, 25)。Taiwan Semiconductor Manufacturing Co. (TSMC)は、将来的に米国への先進チップ製造技術の移転を加速する意向を表明しました。これはAI半導体を含むグローバルなサプライチェーンのレジリエンス強化と、地域間の技術格差是正に向けた戦略的提携の一環と捉えられます。"
+      "script": "AnthropicのClaude Codeが注目。AI業界では、Anthropicの「Claude Code」がコーディング分野で大きな話題となっています。これは、特定のドメインにおけるAIモデルの進化と、その分野での競争が激化していることを示します。Anthropicは元OpenAIメンバーが創業し、B2B市場で実績を上げている企業として注目されています。（記事7）"
     },
     {
       "index": 7,
-      "title": "新製品・新技術",
+      "title": "新製品・新技術の発表",
       "audio_file": "presentations/audio_output/slide_07.mp3",
-      "script": "OpenAI、ChatGPTでターゲット広告をテスト開始 (記事12, 13)。OpenAIは、人気チャットボットChatGPTアプリで米国ユーザー向けにターゲット広告のテストを開始します。これは、急成長を続けるOpenAIが収益源を多様化し、サービスを収益化するための大きな一歩となります。"
+      "script": "韓国政府のAIモデル開発競争。韓国政府は、米中との競争に打ち勝つため、国産AIモデル開発を奨励する国家主導の「AI Squid Game」を開始しました。これは、国家レベルでのAI技術覇権争いが激化している現状を反映しています。（記事1）"
     },
     {
       "index": 8,

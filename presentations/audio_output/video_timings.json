@@ -1,308 +1,336 @@
 {
   "fps": 30,
-  "totalDuration": 250.65999999999997,
-  "totalFrames": 7519,
+  "totalDuration": 225.31999999999996,
+  "totalFrames": 6759,
   "slides": [
     {
       "index": 1,
       "title": "AI/IT株式ニュース",
       "audioFile": "presentations/audio_output/slide_01.mp3",
-      "duration": 10.22,
-      "durationFrames": 306,
+      "duration": 10.12,
+      "durationFrames": 303,
       "startTime": 0,
-      "endTime": 10.22,
+      "endTime": 10.12,
       "startFrame": 0,
-      "endFrame": 306,
+      "endFrame": 303,
       "subtitles": [
         {
           "text": "うぃっすー！",
           "start": 0,
-          "end": 1.11,
+          "end": 1.0984615384615384,
           "startFrame": 0,
-          "endFrame": 33
+          "endFrame": 32
         },
         {
           "text": "if塾AIニュースのお時間です。",
-          "start": 1.4100000000000001,
-          "end": 4.370000000000001,
-          "startFrame": 42,
-          "endFrame": 131
+          "start": 1.3984615384615384,
+          "end": 4.327692307692308,
+          "startFrame": 41,
+          "endFrame": 129
         },
         {
-          "text": "2026/01/16のAI・IT株式ニュースをお届けします。",
-          "start": 4.670000000000001,
-          "end": 10.22,
-          "startFrame": 140,
-          "endFrame": 306
+          "text": "2026/01/19のAI・IT株式ニュースをお届けします。",
+          "start": 4.627692307692308,
+          "end": 10.12,
+          "startFrame": 138,
+          "endFrame": 303
         }
       ],
-      "fullScript": "うぃっすー！if塾AIニュースのお時間です。2026/01/16のAI・IT株式ニュースをお届けします。"
+      "fullScript": "うぃっすー！if塾AIニュースのお時間です。2026/01/19のAI・IT株式ニュースをお届けします。"
     },
     {
       "index": 2,
       "title": "本日のサマリー",
       "audioFile": "presentations/audio_output/slide_02.mp3",
-      "duration": 51.42,
-      "durationFrames": 1542,
-      "startTime": 10.22,
-      "endTime": 61.64,
-      "startFrame": 306,
-      "endFrame": 1849,
+      "duration": 39.98,
+      "durationFrames": 1199,
+      "startTime": 10.12,
+      "endTime": 50.099999999999994,
+      "startFrame": 303,
+      "endFrame": 1502,
       "subtitles": [
         {
-          "text": "本日のAI/IT市場では、\nOpenAIがChatGPTでのターゲット広告テストを開始し",
-          "start": 10.22,
-          "end": 17.913763440860215,
-          "startFrame": 306,
-          "endFrame": 537
+          "text": "本日のAI/IT市場は、\nAIインフラへの旺盛な投資とサプライチェーンのボトルネック",
+          "start": 10.12,
+          "end": 17.801062801932364,
+          "startFrame": 303,
+          "endFrame": 534
         },
         {
-          "text": "収益化への本格的なシフトを示しました。",
-          "start": 18.213763440860216,
-          "end": 21.613333333333333,
-          "startFrame": 546,
-          "endFrame": 648
+          "text": "そしてAIの産業応用への進展が主要な動向となりました。",
+          "start": 18.101062801932365,
+          "end": 23.15932367149758,
+          "startFrame": 543,
+          "endFrame": 694
         },
         {
-          "text": "これは「OpenAI指標」が市場を左右する中で、\nビジネスモデルの進化として注目されます。",
-          "start": 21.913333333333334,
-          "end": 29.786021505376343,
-          "startFrame": 657,
-          "endFrame": 893
+          "text": "特に、AI駆動の高性能メモリチップ不足が「前例のない」水準に達\nし、データセンターの需要も加速。",
+          "start": 23.459323671497582,
+          "end": 32.26444444444444,
+          "startFrame": 703,
+          "endFrame": 967
         },
         {
-          "text": "また、AI需要増大に対応するためのインフラ投資が加速する一方で\nメモリチップ価格の高騰やデータセンターの電力コスト問題",
-          "start": 30.086021505376344,
-          "end": 40.46365591397849,
-          "startFrame": 902,
-          "endFrame": 1213
+          "text": "ヒューマノイドロボット分野では大型契約が成立し、\nAI×ロボット戦略が具体化しています。",
+          "start": 32.56444444444444,
+          "end": 40.62019323671497,
+          "startFrame": 976,
+          "endFrame": 1218
         },
         {
-          "text": "そしてBig Techに対する反トラスト規制の強化といった、\n成長の裏側にある課題も浮き彫りになっています。",
-          "start": 40.76365591397849,
-          "end": 50.24666666666666,
-          "startFrame": 1222,
-          "endFrame": 1507
-        },
-        {
-          "text": "AIデータベース分野での大型資金調達やヒューマノイドロボット市\n場の成長予測など、AI関連の市場は引き続き活況を呈しています。",
-          "start": 50.54666666666666,
-          "end": 61.63999999999999,
-          "startFrame": 1516,
-          "endFrame": 1849
+          "text": "各国政府やVCはAI開発・インフラへの積極投資を続ける一方で、\nAIバブルへの懸念も示されています。",
+          "start": 40.920193236714965,
+          "end": 50.09999999999999,
+          "startFrame": 1227,
+          "endFrame": 1502
         }
       ],
-      "fullScript": "本日のAI/IT市場では、OpenAIがChatGPTでのターゲット広告テストを開始し、収益化への本格的なシフトを示しました。これは「OpenAI指標」が市場を左右する中で、ビジネスモデルの進化として注目されます。また、AI需要増大に対応するためのインフラ投資が加速する一方で、メモリチップ価格の高騰やデータセンターの電力コスト問題、そしてBig Techに対する反トラスト規制の強化といった、成長の裏側にある課題も浮き彫りになっています。AIデータベース分野での大型資金調達やヒューマノイドロボット市場の成長予測など、AI関連の市場は引き続き活況を呈しています。"
+      "fullScript": "本日のAI/IT市場は、AIインフラへの旺盛な投資とサプライチェーンのボトルネック、そしてAIの産業応用への進展が主要な動向となりました。特に、AI駆動の高性能メモリチップ不足が「前例のない」水準に達し、データセンターの需要も加速。ヒューマノイドロボット分野では大型契約が成立し、AI×ロボット戦略が具体化しています。各国政府やVCはAI開発・インフラへの積極投資を続ける一方で、AIバブルへの懸念も示されています。"
     },
     {
       "index": 3,
-      "title": "M&A・企業買収",
+      "title": "戦略的提携・パートナーシップ",
       "audioFile": "presentations/audio_output/slide_03.mp3",
-      "duration": 21.9,
-      "durationFrames": 657,
-      "startTime": 61.64,
-      "endTime": 83.53999999999999,
-      "startFrame": 1849,
-      "endFrame": 2506,
+      "duration": 24.44,
+      "durationFrames": 733,
+      "startTime": 50.099999999999994,
+      "endTime": 74.53999999999999,
+      "startFrame": 1502,
+      "endFrame": 2236,
       "subtitles": [
         {
-          "text": "AlantraなどがSalto Systemsの\n株式売却を検討 (記事31)。",
-          "start": 61.64,
-          "end": 68.12984375,
-          "startFrame": 1849,
-          "endFrame": 2043
+          "text": "AppleとGoogleのAI技術提携。",
+          "start": 50.099999999999994,
+          "end": 53.1578947368421,
+          "startFrame": 1502,
+          "endFrame": 1594
         },
         {
-          "text": "電子ロックメーカーのSalto Systemsの株主が、\n保有株式の売却を検討している模様。",
-          "start": 68.42984375,
-          "end": 75.918125,
-          "startFrame": 2052,
-          "endFrame": 2277
+          "text": "Appleが自社AI「Apple Intelligence」の\n基盤にGoogle Geminiを採用する方針を示しました。",
+          "start": 53.4578947368421,
+          "end": 62.784473684210525,
+          "startFrame": 1603,
+          "endFrame": 1883
         },
         {
-          "text": "直接的なAI/IT分野のM&Aではないが、\nテクノロジー企業のM&A動向として注視される。",
-          "start": 76.218125,
-          "end": 83.53999999999999,
-          "startFrame": 2286,
-          "endFrame": 2506
+          "text": "これは、AI開発競争が激化する中で、企業が自社開発だけでなく",
+          "start": 63.08447368421052,
+          "end": 67.67131578947368,
+          "startFrame": 1892,
+          "endFrame": 2030
+        },
+        {
+          "text": "他社の強力なAIモデルとの連携を戦略的に\n選択していることを示唆します。",
+          "start": 67.97131578947368,
+          "end": 73.32263157894737,
+          "startFrame": 2039,
+          "endFrame": 2199
+        },
+        {
+          "text": "（記事13）",
+          "start": 73.62263157894736,
+          "end": 74.53999999999999,
+          "startFrame": 2208,
+          "endFrame": 2236
         }
       ],
-      "fullScript": "AlantraなどがSalto Systemsの株式売却を検討 (記事31)。電子ロックメーカーのSalto Systemsの株主が、保有株式の売却を検討している模様。直接的なAI/IT分野のM&Aではないが、テクノロジー企業のM&A動向として注視される。"
+      "fullScript": "AppleとGoogleのAI技術提携。Appleが自社AI「Apple Intelligence」の基盤にGoogle Geminiを採用する方針を示しました。これは、AI開発競争が激化する中で、企業が自社開発だけでなく、他社の強力なAIモデルとの連携を戦略的に選択していることを示唆します。（記事13）"
     },
     {
       "index": 4,
-      "title": "M&A・企業買収",
+      "title": "大型契約・受注",
       "audioFile": "presentations/audio_output/slide_04.mp3",
-      "duration": 35.48,
-      "durationFrames": 1064,
-      "startTime": 83.53999999999999,
-      "endTime": 119.01999999999998,
-      "startFrame": 2506,
-      "endFrame": 3570,
+      "duration": 26.74,
+      "durationFrames": 802,
+      "startTime": 74.53999999999999,
+      "endTime": 101.27999999999999,
+      "startFrame": 2236,
+      "endFrame": 3038,
       "subtitles": [
         {
-          "text": "FTC、Big Techの「Acquihires」を厳しく監視\n(記事7, 8, 15)",
-          "start": 83.53999999999999,
-          "end": 91.38063829787234,
-          "startFrame": 2506,
-          "endFrame": 2741
+          "text": "AirbusとUBTech Roboticsの契約。",
+          "start": 74.53999999999999,
+          "end": 78.59086419753086,
+          "startFrame": 2236,
+          "endFrame": 2357
         },
         {
-          "text": "米連邦取引委員会(FTC)の議長は、\n大手テック企業による「acquihires」（企業買収ではなく",
-          "start": 91.68063829787233,
-          "end": 100.61531914893617,
-          "startFrame": 2750,
-          "endFrame": 3018
+          "text": "中国のヒューマノイドロボットメーカーUBTech\nRoboticsがAirbus SEから受注を受け",
+          "start": 78.89086419753086,
+          "end": 86.52518518518518,
+          "startFrame": 2366,
+          "endFrame": 2595
         },
         {
-          "text": "スタートアップの人材のみを獲得する行為）が\n反トラスト法の抜け道として利用されることを認めず",
-          "start": 100.91531914893616,
-          "end": 109.12063829787233,
-          "startFrame": 3027,
-          "endFrame": 3273
+          "text": "同社の株価が急騰しました。",
+          "start": 86.82518518518518,
+          "end": 88.85061728395061,
+          "startFrame": 2604,
+          "endFrame": 2665
         },
         {
-          "text": "厳しく審査する方針を表明しました。",
-          "start": 109.42063829787233,
-          "end": 112.52042553191488,
-          "startFrame": 3282,
-          "endFrame": 3375
+          "text": "これは、\n製造業におけるAI搭載ロボットの導入が本格化していることを示し",
+          "start": 89.15061728395061,
+          "end": 94.6037037037037,
+          "startFrame": 2674,
+          "endFrame": 2838
         },
         {
-          "text": "これはM&A戦略や人材獲得戦略に\n大きな影響を与える可能性があります。",
-          "start": 112.82042553191488,
-          "end": 119.01999999999998,
-          "startFrame": 3384,
-          "endFrame": 3570
+          "text": "「AI×ロボット戦略」が新市場を創出し\nている強力な証拠となります。",
+          "start": 94.9037037037037,
+          "end": 100.04518518518518,
+          "startFrame": 2847,
+          "endFrame": 3001
+        },
+        {
+          "text": "（記事23）",
+          "start": 100.34518518518517,
+          "end": 101.27999999999999,
+          "startFrame": 3010,
+          "endFrame": 3038
         }
       ],
-      "fullScript": "FTC、Big Techの「Acquihires」を厳しく監視 (記事7, 8, 15)。米連邦取引委員会(FTC)の議長は、大手テック企業による「acquihires」（企業買収ではなく、スタートアップの人材のみを獲得する行為）が反トラスト法の抜け道として利用されることを認めず、厳しく審査する方針を表明しました。これはM&A戦略や人材獲得戦略に大きな影響を与える可能性があります。"
+      "fullScript": "AirbusとUBTech Roboticsの契約。中国のヒューマノイドロボットメーカーUBTech RoboticsがAirbus SEから受注を受け、同社の株価が急騰しました。これは、製造業におけるAI搭載ロボットの導入が本格化していることを示し、「AI×ロボット戦略」が新市場を創出している強力な証拠となります。（記事23）"
     },
     {
       "index": 5,
-      "title": "戦略的提携・パートナーシップ",
+      "title": "大型契約・受注",
       "audioFile": "presentations/audio_output/slide_05.mp3",
-      "duration": 30.46,
-      "durationFrames": 913,
-      "startTime": 119.01999999999998,
-      "endTime": 149.48,
-      "startFrame": 3570,
-      "endFrame": 4484,
+      "duration": 28.74,
+      "durationFrames": 862,
+      "startTime": 101.27999999999999,
+      "endTime": 130.01999999999998,
+      "startFrame": 3038,
+      "endFrame": 3900,
       "subtitles": [
         {
-          "text": "Google、StonepeakのRadiateと光ファイバー\n資産の合弁事業を協議 (記事4)。",
-          "start": 119.01999999999998,
-          "end": 126.25918367346937,
-          "startFrame": 3570,
-          "endFrame": 3787
+          "text": "ASM InternationalのAI関連受注好調。",
+          "start": 101.27999999999999,
+          "end": 105.84184049079754,
+          "startFrame": 3038,
+          "endFrame": 3175
         },
         {
-          "text": "Alphabet傘下のGoogleは、Stonepeak Pa\nrtnersが支援するブロードバンド事業者Radiateと",
-          "start": 126.55918367346936,
-          "end": 135.6081632653061,
-          "startFrame": 3796,
-          "endFrame": 4068
+          "text": "半導体製造装置メーカーASM Internationalは、\n中国からの受注回復と「AI関連セグメントからの強い需要」により",
+          "start": 106.14184049079753,
+          "end": 116.4482208588957,
+          "startFrame": 3184,
+          "endFrame": 3493
         },
         {
-          "text": "光ファイバー資産を保有する合弁事業の設立を協議しています。",
-          "start": 135.90816326530611,
-          "end": 140.28183673469388,
-          "startFrame": 4077,
-          "endFrame": 4208
+          "text": "第4四半期の受注が予想を上回りました。",
+          "start": 116.74822085889569,
+          "end": 119.95840490797545,
+          "startFrame": 3502,
+          "endFrame": 3598
         },
         {
-          "text": "AIおよびその他のデータ集約型アプリケーションの需要急増に対応\nするため、高速接続インフラの強化を図る動きと見られます。",
-          "start": 140.5818367346939,
-          "end": 149.48000000000002,
-          "startFrame": 4217,
-          "endFrame": 4484
+          "text": "AI経済圏の拡大が、サプライチェーン上流のハードウェア投資を加\n速させていることを明確に示しています。",
+          "start": 120.25840490797545,
+          "end": 128.70625766871166,
+          "startFrame": 3607,
+          "endFrame": 3861
+        },
+        {
+          "text": "（記事19）",
+          "start": 129.00625766871167,
+          "end": 130.02,
+          "startFrame": 3870,
+          "endFrame": 3900
         }
       ],
-      "fullScript": "Google、StonepeakのRadiateと光ファイバー資産の合弁事業を協議 (記事4)。Alphabet傘下のGoogleは、Stonepeak Partnersが支援するブロードバンド事業者Radiateと、光ファイバー資産を保有する合弁事業の設立を協議しています。AIおよびその他のデータ集約型アプリケーションの需要急増に対応するため、高速接続インフラの強化を図る動きと見られます。"
+      "fullScript": "ASM InternationalのAI関連受注好調。半導体製造装置メーカーASM Internationalは、中国からの受注回復と「AI関連セグメントからの強い需要」により、第4四半期の受注が予想を上回りました。AI経済圏の拡大が、サプライチェーン上流のハードウェア投資を加速させていることを明確に示しています。（記事19）"
     },
     {
       "index": 6,
-      "title": "戦略的提携・パートナーシップ",
+      "title": "新製品・新技術の発表",
       "audioFile": "presentations/audio_output/slide_06.mp3",
-      "duration": 31.6,
-      "durationFrames": 948,
-      "startTime": 149.48,
-      "endTime": 181.07999999999998,
-      "startFrame": 4484,
-      "endFrame": 5432,
+      "duration": 29.22,
+      "durationFrames": 876,
+      "startTime": 130.01999999999998,
+      "endTime": 159.23999999999998,
+      "startFrame": 3900,
+      "endFrame": 4777,
       "subtitles": [
         {
-          "text": "TSMC、米国と台湾のチップ製造技術ギャップ縮小を目指す\n(記事24, 25)",
-          "start": 149.48,
-          "end": 155.7925683060109,
-          "startFrame": 4484,
-          "endFrame": 4673
+          "text": "AnthropicのClaude Codeが注目。",
+          "start": 130.01999999999998,
+          "end": 133.847868852459,
+          "startFrame": 3900,
+          "endFrame": 4015
         },
         {
-          "text": "Taiwan Semiconductor\nManufacturing Co. (TSMC)は",
-          "start": 156.09256830601092,
-          "end": 163.5679781420765,
-          "startFrame": 4682,
-          "endFrame": 4907
+          "text": "AI業界では、Anthropicの「Claude\nCode」がコーディング分野で大きな話題となっています",
+          "start": 134.147868852459,
+          "end": 141.9567213114754,
+          "startFrame": 4024,
+          "endFrame": 4258
         },
         {
-          "text": "将来的に米国への先進チップ製造技術の\n移転を加速する意向を表明しました。",
-          "start": 163.8679781420765,
-          "end": 169.68218579234974,
-          "startFrame": 4916,
-          "endFrame": 5090
+          "text": "これは、特定のドメインにおけるAIモデルの進化と、\nその分野での競争が激化していることを示します。",
+          "start": 142.25672131147542,
+          "end": 149.60622950819672,
+          "startFrame": 4267,
+          "endFrame": 4488
         },
         {
-          "text": "これはAI半導体を含むグローバルなサプライチェーンの\nレジリエンス強化と",
-          "start": 169.98218579234975,
-          "end": 175.79639344262299,
-          "startFrame": 5099,
-          "endFrame": 5273
+          "text": "Anthropicは元OpenAIメンバーが創業し、\nB2B市場で実績を上げている企業として注目されています。",
+          "start": 149.90622950819673,
+          "end": 158.1744262295082,
+          "startFrame": 4497,
+          "endFrame": 4745
         },
         {
-          "text": "地域間の技術格差是正に向けた戦略的提携の一環と捉えられます。",
-          "start": 176.096393442623,
-          "end": 181.08000000000004,
-          "startFrame": 5282,
-          "endFrame": 5432
+          "text": "（記事7）",
+          "start": 158.47442622950823,
+          "end": 159.24000000000004,
+          "startFrame": 4754,
+          "endFrame": 4777
         }
       ],
-      "fullScript": "TSMC、米国と台湾のチップ製造技術ギャップ縮小を目指す (記事24, 25)。Taiwan Semiconductor Manufacturing Co. (TSMC)は、将来的に米国への先進チップ製造技術の移転を加速する意向を表明しました。これはAI半導体を含むグローバルなサプライチェーンのレジリエンス強化と、地域間の技術格差是正に向けた戦略的提携の一環と捉えられます。"
+      "fullScript": "AnthropicのClaude Codeが注目。AI業界では、Anthropicの「Claude Code」がコーディング分野で大きな話題となっています。これは、特定のドメインにおけるAIモデルの進化と、その分野での競争が激化していることを示します。Anthropicは元OpenAIメンバーが創業し、B2B市場で実績を上げている企業として注目されています。（記事7）"
     },
     {
       "index": 7,
-      "title": "新製品・新技術",
+      "title": "新製品・新技術の発表",
       "audioFile": "presentations/audio_output/slide_07.mp3",
-      "duration": 25.44,
-      "durationFrames": 763,
-      "startTime": 181.07999999999998,
-      "endTime": 206.51999999999998,
-      "startFrame": 5432,
-      "endFrame": 6195,
+      "duration": 21.94,
+      "durationFrames": 658,
+      "startTime": 159.23999999999998,
+      "endTime": 181.17999999999998,
+      "startFrame": 4777,
+      "endFrame": 5435,
       "subtitles": [
         {
-          "text": "OpenAI、ChatGPTでターゲット広告をテスト開始\n(記事12, 13)",
-          "start": 181.07999999999998,
-          "end": 187.635,
-          "startFrame": 5432,
-          "endFrame": 5629
+          "text": "韓国政府のAIモデル開発競争。",
+          "start": 159.23999999999998,
+          "end": 161.89210084033613,
+          "startFrame": 4777,
+          "endFrame": 4856
         },
         {
-          "text": "OpenAIは、人気チャットボットChatGPTアプリで米国ユ\nーザー向けにターゲット広告のテストを開始します。",
-          "start": 187.935,
-          "end": 197.4225,
-          "startFrame": 5638,
-          "endFrame": 5922
+          "text": "韓国政府は、米中との競争に打ち勝つため、国産AIモデル開発を奨\n励する国家主導の「AI Squid Game」を開始しました。",
+          "start": 162.19210084033614,
+          "end": 173.15411764705883,
+          "startFrame": 4865,
+          "endFrame": 5194
         },
         {
-          "text": "これは、急成長を続けるOpenAIが収益源を多様化し、\nサービスを収益化するための大きな一歩となります。",
-          "start": 197.72250000000003,
-          "end": 206.52000000000004,
-          "startFrame": 5931,
-          "endFrame": 6195
+          "text": "これは、国家レベルでのAI技術覇権争いが激化している現状を反映\nしています。",
+          "start": 173.45411764705884,
+          "end": 179.99596638655464,
+          "startFrame": 5203,
+          "endFrame": 5399
+        },
+        {
+          "text": "（記事1）",
+          "start": 180.29596638655465,
+          "end": 181.18000000000004,
+          "startFrame": 5408,
+          "endFrame": 5435
         }
       ],
-      "fullScript": "OpenAI、ChatGPTでターゲット広告をテスト開始 (記事12, 13)。OpenAIは、人気チャットボットChatGPTアプリで米国ユーザー向けにターゲット広告のテストを開始します。これは、急成長を続けるOpenAIが収益源を多様化し、サービスを収益化するための大きな一歩となります。"
+      "fullScript": "韓国政府のAIモデル開発競争。韓国政府は、米中との競争に打ち勝つため、国産AIモデル開発を奨励する国家主導の「AI Squid Game」を開始しました。これは、国家レベルでのAI技術覇権争いが激化している現状を反映しています。（記事1）"
     },
     {
       "index": 8,
@@ -310,17 +338,17 @@
       "audioFile": "presentations/audio_output/slide_08.mp3",
       "duration": 3.88,
       "durationFrames": 116,
-      "startTime": 206.51999999999998,
-      "endTime": 210.39999999999998,
-      "startFrame": 6195,
-      "endFrame": 6311,
+      "startTime": 181.17999999999998,
+      "endTime": 185.05999999999997,
+      "startFrame": 5435,
+      "endFrame": 5551,
       "subtitles": [
         {
           "text": "本日のAI・IT株式ニュースは以上です。",
-          "start": 206.51999999999998,
-          "end": 210.39999999999998,
-          "startFrame": 6195,
-          "endFrame": 6311
+          "start": 181.17999999999998,
+          "end": 185.05999999999997,
+          "startFrame": 5435,
+          "endFrame": 5551
         }
       ],
       "fullScript": "本日のAI・IT株式ニュースは以上です。"
@@ -331,52 +359,52 @@
       "audioFile": "presentations/audio_output/slide_09.mp3",
       "duration": 40.26,
       "durationFrames": 1207,
-      "startTime": 210.39999999999998,
-      "endTime": 250.65999999999997,
-      "startFrame": 6311,
-      "endFrame": 7519,
+      "startTime": 185.05999999999997,
+      "endTime": 225.31999999999996,
+      "startFrame": 5551,
+      "endFrame": 6759,
       "subtitles": [
         {
           "text": "ご視聴いただきありがとうございました。",
-          "start": 210.39999999999998,
-          "end": 213.56068669527895,
-          "startFrame": 6311,
-          "endFrame": 6406
+          "start": 185.05999999999997,
+          "end": 188.22068669527894,
+          "startFrame": 5551,
+          "endFrame": 5646
         },
         {
           "text": "実はこのレポート、if塾の塾頭高崎による「完全自動化への挑戦」\nプロジェクトの一環として、AIが自動生成しています。",
-          "start": 213.86068669527896,
-          "end": 223.34274678111586,
-          "startFrame": 6415,
-          "endFrame": 6700
+          "start": 188.52068669527895,
+          "end": 198.00274678111586,
+          "startFrame": 5655,
+          "endFrame": 5940
         },
         {
           "text": "将来的には塾頭が執筆しているような自然な記事になることを目指し\nており、現時点では事実と異なる内容が含まれる可能性もあります。",
-          "start": 223.64274678111587,
-          "end": 233.95656652360515,
-          "startFrame": 6709,
-          "endFrame": 7018
+          "start": 198.30274678111587,
+          "end": 208.61656652360514,
+          "startFrame": 5949,
+          "endFrame": 6258
         },
         {
           "text": "この挑戦に共感していただけたら、\nぜひチャンネル登録とグッドボタンをよろしくお願いします！",
-          "start": 234.25656652360516,
-          "end": 241.57605150214593,
-          "startFrame": 7027,
-          "endFrame": 7247
+          "start": 208.91656652360516,
+          "end": 216.23605150214593,
+          "startFrame": 6267,
+          "endFrame": 6487
         },
         {
           "text": "また、無料のAI教育や導入コンサルも受け付けています。",
-          "start": 241.87605150214594,
-          "end": 246.36755364806868,
-          "startFrame": 7256,
-          "endFrame": 7391
+          "start": 216.53605150214594,
+          "end": 221.02755364806868,
+          "startFrame": 6496,
+          "endFrame": 6630
         },
         {
           "text": "詳しくは概要欄のリンクからお問い合わせください。",
-          "start": 246.6675536480687,
-          "end": 250.66000000000003,
-          "startFrame": 7400,
-          "endFrame": 7519
+          "start": 221.3275536480687,
+          "end": 225.32000000000002,
+          "startFrame": 6639,
+          "endFrame": 6759
         }
       ],
       "fullScript": "ご視聴いただきありがとうございました。実はこのレポート、if塾の塾頭高崎による「完全自動化への挑戦」プロジェクトの一環として、AIが自動生成しています。将来的には塾頭が執筆しているような自然な記事になることを目指しており、現時点では事実と異なる内容が含まれる可能性もあります。この挑戦に共感していただけたら、ぜひチャンネル登録とグッドボタンをよろしくお願いします！また、無料のAI教育や導入コンサルも受け付けています。詳しくは概要欄のリンクからお問い合わせください。"
