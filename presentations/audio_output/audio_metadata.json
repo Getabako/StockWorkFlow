@@ -4,43 +4,43 @@
       "index": 1,
       "title": "AI/IT株式ニュース",
       "audio_file": "presentations/audio_output/slide_01.mp3",
-      "script": "うぃっすー！if塾AIニュースのお時間です。2026/01/19のAI・IT株式ニュースをお届けします。"
+      "script": "うぃっすー！if塾AIニュースのお時間です。2026/01/20のAI・IT株式ニュースをお届けします。"
     },
     {
       "index": 2,
       "title": "本日のサマリー",
       "audio_file": "presentations/audio_output/slide_02.mp3",
-      "script": "本日のAI/IT市場は、AIインフラへの旺盛な投資とサプライチェーンのボトルネック、そしてAIの産業応用への進展が主要な動向となりました。特に、AI駆動の高性能メモリチップ不足が「前例のない」水準に達し、データセンターの需要も加速。ヒューマノイドロボット分野では大型契約が成立し、AI×ロボット戦略が具体化しています。各国政府やVCはAI開発・インフラへの積極投資を続ける一方で、AIバブルへの懸念も示されています。"
+      "script": "本日のAI/IT市場は、AI技術の地政学的・戦略的重要性が改めて浮き彫りになる一日となりました。特にAIチップの対中輸出規制を巡る議論や、欧米と中国のAI技術格差に関するトップ経営者の発言が注目されます。NVIDIAは新たなフロンティアAIラボへの大型投資を通じてエコシステム拡大を継続する一方、Google DeepMindは「AI×ロボット」分野での物理的AIブレイクスルーへの期待を示しました。また、AIエージェントのセキュリティリスクや、AIのエネルギー需要といった社会実装における課題も議論されました。"
     },
     {
       "index": 3,
       "title": "戦略的提携・パートナーシップ",
       "audio_file": "presentations/audio_output/slide_03.mp3",
-      "script": "AppleとGoogleのAI技術提携。Appleが自社AI「Apple Intelligence」の基盤にGoogle Geminiを採用する方針を示しました。これは、AI開発競争が激化する中で、企業が自社開発だけでなく、他社の強力なAIモデルとの連携を戦略的に選択していることを示唆します。（記事13）"
+      "script": "Google/Alphabet。Sundance Instituteと提携し、映画業界におけるAI教育コミュニティの構築を推進することを発表しました。これはAIの応用分野の拡大とクリエイティブ産業における人材育成への貢献を示します。（記事1）"
     },
     {
       "index": 4,
-      "title": "大型契約・受注",
+      "title": "戦略的提携・パートナーシップ",
       "audio_file": "presentations/audio_output/slide_04.mp3",
-      "script": "AirbusとUBTech Roboticsの契約。中国のヒューマノイドロボットメーカーUBTech RoboticsがAirbus SEから受注を受け、同社の株価が急騰しました。これは、製造業におけるAI搭載ロボットの導入が本格化していることを示し、「AI×ロボット戦略」が新市場を創出している強力な証拠となります。（記事23）"
+      "script": "Google。Commerce Media SuiteにBest BuyとShiptが新たに参画し、小売業界における広告プラットフォームの強化を進めています。（記事2）"
     },
     {
       "index": 5,
-      "title": "大型契約・受注",
+      "title": "戦略的提携・パートナーシップ",
       "audio_file": "presentations/audio_output/slide_05.mp3",
-      "script": "ASM InternationalのAI関連受注好調。半導体製造装置メーカーASM Internationalは、中国からの受注回復と「AI関連セグメントからの強い需要」により、第4四半期の受注が予想を上回りました。AI経済圏の拡大が、サプライチェーン上流のハードウェア投資を加速させていることを明確に示しています。（記事19）"
+      "script": "Lumen Technologies。Palantirとのパートナーシップを通じてAI活用を深化させる意向を示しました。（記事13）"
     },
     {
       "index": 6,
-      "title": "新製品・新技術の発表",
+      "title": "大型契約・受注",
       "audio_file": "presentations/audio_output/slide_06.mp3",
-      "script": "AnthropicのClaude Codeが注目。AI業界では、Anthropicの「Claude Code」がコーディング分野で大きな話題となっています。これは、特定のドメインにおけるAIモデルの進化と、その分野での競争が激化していることを示します。Anthropicは元OpenAIメンバーが創業し、B2B市場で実績を上げている企業として注目されています。（記事7）"
+      "script": "UAEのAI企業G42。世界で最も先進的なAIチップが数ヶ月以内に同国に到着する見込みであり、AI主要プレイヤーとしての地位を確立する動きを加速させています。これは、AIチップのグローバルサプライチェーンにおける重要な動きと言えます。（記事15）"
     },
     {
       "index": 7,
-      "title": "新製品・新技術の発表",
+      "title": "新製品・新技術",
       "audio_file": "presentations/audio_output/slide_07.mp3",
-      "script": "韓国政府のAIモデル開発競争。韓国政府は、米中との競争に打ち勝つため、国産AIモデル開発を奨励する国家主導の「AI Squid Game」を開始しました。これは、国家レベルでのAI技術覇権争いが激化している現状を反映しています。（記事1）"
+      "script": "Google DeepMind。CEOのデミス・ハサビス氏は、ロボット工学が「物理的知能」におけるブレイクスルーの寸前にあると述べ、AIとロボットの統合戦略による新市場創出への期待を高めています。（記事12）"
     },
     {
       "index": 8,
