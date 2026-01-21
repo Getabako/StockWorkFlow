@@ -1,0 +1,59 @@
+{
+  "audio_files": [
+    {
+      "index": 1,
+      "title": "AI/IT株式ニュース",
+      "audio_file": "presentations/audio_output/slide_01.mp3",
+      "script": "うぃっすー！if塾AIニュースのお時間です。2026/01/21のAI・IT株式ニュースをお届けします。"
+    },
+    {
+      "index": 2,
+      "title": "本日のサマリー",
+      "audio_file": "presentations/audio_output/slide_02.mp3",
+      "script": "今日のAI/IT市場は、大手テック企業によるAI競争の激化と、AI関連スタートアップへの投資熱の高まりが顕著です。AppleがSiriを生成AIチャットボット化し、Googleは教育分野でのAI活用を加速させる提携と新機能を発表。OpenAIの強力な競合であるAnthropicは目覚ましい成長を遂げ、高評価額で資金調達を進めています。NVIDIA CEOはAIインフラに数兆ドルの追加投資が必要だと示唆し、市場の拡大基調は続く見込みですが、AIチップ輸出規制の動きやAIコンテンツの品質管理など、ガバナンスと規制に関する課題も浮上しています。"
+    },
+    {
+      "index": 3,
+      "title": "新製品・新技術",
+      "audio_file": "presentations/audio_output/slide_03.mp3",
+      "script": "Google。教育機関向けにGemini AIのプレミアム機能、Google Classroomとの連携強化、SAT対策ツールなど、AIを活用した教育ソリューションの多数のアップデートを発表しました。また、AIを搭載した動画作成アプリ「Google Vids」の提供やChromeOS、Google Workspace for EducationにおけるAIセキュリティ・検出機能の強化も進めています。"
+    },
+    {
+      "index": 4,
+      "title": "新製品・新技術",
+      "audio_file": "presentations/audio_output/slide_04.mp3",
+      "script": "Apple。今年末までにSiriを生成AIチャットボットとして刷新し、OpenAIやGoogleが先行する生成AI競争に本格参入する計画が報じられました。これはデバイスレベルでのAI競争激化を意味します。"
+    },
+    {
+      "index": 5,
+      "title": "新製品・新技術",
+      "audio_file": "presentations/audio_output/slide_05.mp3",
+      "script": "Blue Origin。データセンターの旺盛な需要に対応するため、衛星通信ネットワークサービスを発表しました。AIによる計算需要の増大がインフラへの新たな投資を促していることを示唆します。"
+    },
+    {
+      "index": 6,
+      "title": "新製品・新技術",
+      "audio_file": "presentations/audio_output/slide_06.mp3",
+      "script": "OpenAI。CFOがChatGPTへの広告導入を「強力なビジネスモデル」として擁護。今後の収益化戦略の方向性を示唆しました。"
+    },
+    {
+      "index": 7,
+      "title": "新製品・新技術",
+      "audio_file": "presentations/audio_output/slide_07.mp3",
+      "script": "Zhipu (中国)。中国のAI企業Zhipuは、コーディングアシスタントに対する需要が殺到し、コンピューティングリソースの逼迫によりアクセスを制限していると発表。中国市場におけるAIツールの需要の高さと、コンピューティングリソース不足の課題を浮き彫りにしました。"
+    },
+    {
+      "index": 8,
+      "title": "まとめ",
+      "audio_file": "presentations/audio_output/slide_08.mp3",
+      "script": "本日のAI・IT株式ニュースは以上です。"
+    },
+    {
+      "index": 9,
+      "title": "塾頭高崎の完全自動化への挑戦",
+      "audio_file": "presentations/audio_output/slide_09.mp3",
+      "script": "ご視聴いただきありがとうございました。実はこのレポート、if塾の塾頭高崎による「完全自動化への挑戦」プロジェクトの一環として、AIが自動生成しています。将来的には塾頭が執筆しているような自然な記事になることを目指しており、現時点では事実と異なる内容が含まれる可能性もあります。この挑戦に共感していただけたら、ぜひチャンネル登録とグッドボタンをよろしくお願いします！また、無料のAI教育や導入コンサルも受け付けています。詳しくは概要欄のリンクからお問い合わせください。"
+    }
+  ],
+  "total_slides": 9
+}

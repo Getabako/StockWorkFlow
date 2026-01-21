@@ -4,43 +4,43 @@
       "index": 1,
       "title": "AI/IT株式ニュース",
       "audio_file": "presentations/audio_output/slide_01.mp3",
-      "script": "うぃっすー！if塾AIニュースのお時間です。2026/01/20のAI・IT株式ニュースをお届けします。"
+      "script": "うぃっすー！if塾AIニュースのお時間です。2026/01/21のAI・IT株式ニュースをお届けします。"
     },
     {
       "index": 2,
       "title": "本日のサマリー",
       "audio_file": "presentations/audio_output/slide_02.mp3",
-      "script": "本日のAI/IT市場は、AI技術の地政学的・戦略的重要性が改めて浮き彫りになる一日となりました。特にAIチップの対中輸出規制を巡る議論や、欧米と中国のAI技術格差に関するトップ経営者の発言が注目されます。NVIDIAは新たなフロンティアAIラボへの大型投資を通じてエコシステム拡大を継続する一方、Google DeepMindは「AI×ロボット」分野での物理的AIブレイクスルーへの期待を示しました。また、AIエージェントのセキュリティリスクや、AIのエネルギー需要といった社会実装における課題も議論されました。"
+      "script": "今日のAI/IT市場は、大手テック企業によるAI競争の激化と、AI関連スタートアップへの投資熱の高まりが顕著です。AppleがSiriを生成AIチャットボット化し、Googleは教育分野でのAI活用を加速させる提携と新機能を発表。OpenAIの強力な競合であるAnthropicは目覚ましい成長を遂げ、高評価額で資金調達を進めています。NVIDIA CEOはAIインフラに数兆ドルの追加投資が必要だと示唆し、市場の拡大基調は続く見込みですが、AIチップ輸出規制の動きやAIコンテンツの品質管理など、ガバナンスと規制に関する課題も浮上しています。"
     },
     {
       "index": 3,
-      "title": "戦略的提携・パートナーシップ",
+      "title": "新製品・新技術",
       "audio_file": "presentations/audio_output/slide_03.mp3",
-      "script": "Google/Alphabet。Sundance Instituteと提携し、映画業界におけるAI教育コミュニティの構築を推進することを発表しました。これはAIの応用分野の拡大とクリエイティブ産業における人材育成への貢献を示します。（記事1）"
+      "script": "Google。教育機関向けにGemini AIのプレミアム機能、Google Classroomとの連携強化、SAT対策ツールなど、AIを活用した教育ソリューションの多数のアップデートを発表しました。また、AIを搭載した動画作成アプリ「Google Vids」の提供やChromeOS、Google Workspace for EducationにおけるAIセキュリティ・検出機能の強化も進めています。"
     },
     {
       "index": 4,
-      "title": "戦略的提携・パートナーシップ",
+      "title": "新製品・新技術",
       "audio_file": "presentations/audio_output/slide_04.mp3",
-      "script": "Google。Commerce Media SuiteにBest BuyとShiptが新たに参画し、小売業界における広告プラットフォームの強化を進めています。（記事2）"
+      "script": "Apple。今年末までにSiriを生成AIチャットボットとして刷新し、OpenAIやGoogleが先行する生成AI競争に本格参入する計画が報じられました。これはデバイスレベルでのAI競争激化を意味します。"
     },
     {
       "index": 5,
-      "title": "戦略的提携・パートナーシップ",
+      "title": "新製品・新技術",
       "audio_file": "presentations/audio_output/slide_05.mp3",
-      "script": "Lumen Technologies。Palantirとのパートナーシップを通じてAI活用を深化させる意向を示しました。（記事13）"
+      "script": "Blue Origin。データセンターの旺盛な需要に対応するため、衛星通信ネットワークサービスを発表しました。AIによる計算需要の増大がインフラへの新たな投資を促していることを示唆します。"
     },
     {
       "index": 6,
-      "title": "大型契約・受注",
+      "title": "新製品・新技術",
       "audio_file": "presentations/audio_output/slide_06.mp3",
-      "script": "UAEのAI企業G42。世界で最も先進的なAIチップが数ヶ月以内に同国に到着する見込みであり、AI主要プレイヤーとしての地位を確立する動きを加速させています。これは、AIチップのグローバルサプライチェーンにおける重要な動きと言えます。（記事15）"
+      "script": "OpenAI。CFOがChatGPTへの広告導入を「強力なビジネスモデル」として擁護。今後の収益化戦略の方向性を示唆しました。"
     },
     {
       "index": 7,
       "title": "新製品・新技術",
       "audio_file": "presentations/audio_output/slide_07.mp3",
-      "script": "Google DeepMind。CEOのデミス・ハサビス氏は、ロボット工学が「物理的知能」におけるブレイクスルーの寸前にあると述べ、AIとロボットの統合戦略による新市場創出への期待を高めています。（記事12）"
+      "script": "Zhipu (中国)。中国のAI企業Zhipuは、コーディングアシスタントに対する需要が殺到し、コンピューティングリソースの逼迫によりアクセスを制限していると発表。中国市場におけるAIツールの需要の高さと、コンピューティングリソース不足の課題を浮き彫りにしました。"
     },
     {
       "index": 8,
