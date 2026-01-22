@@ -4,43 +4,43 @@
       "index": 1,
       "title": "AI/IT株式ニュース",
       "audio_file": "presentations/audio_output/slide_01.mp3",
-      "script": "うぃっすー！if塾AIニュースのお時間です。2026/01/21のAI・IT株式ニュースをお届けします。"
+      "script": "うぃっすー！if塾AIニュースのお時間です。2026/01/22のAI・IT株式ニュースをお届けします。"
     },
     {
       "index": 2,
       "title": "本日のサマリー",
       "audio_file": "presentations/audio_output/slide_02.mp3",
-      "script": "今日のAI/IT市場は、大手テック企業によるAI競争の激化と、AI関連スタートアップへの投資熱の高まりが顕著です。AppleがSiriを生成AIチャットボット化し、Googleは教育分野でのAI活用を加速させる提携と新機能を発表。OpenAIの強力な競合であるAnthropicは目覚ましい成長を遂げ、高評価額で資金調達を進めています。NVIDIA CEOはAIインフラに数兆ドルの追加投資が必要だと示唆し、市場の拡大基調は続く見込みですが、AIチップ輸出規制の動きやAIコンテンツの品質管理など、ガバナンスと規制に関する課題も浮上しています。"
+      "script": "本日のAI/IT市場は、大規模なAI投資が続く中で、具体的なリターンと収益化が焦点に移りつつあることがダボス会議で示されました。大手テック企業（Google、Apple）はOpenAIに対抗する形でAI機能強化を加速。AIチップ市場では、Intelの業績低迷が報じられる一方、AlibabaのAIチップ部門IPO計画や新興チップ企業への大型投資がNVIDIA独占への挑戦を鮮明にしています。"
     },
     {
       "index": 3,
-      "title": "新製品・新技術",
+      "title": "M&A・企業買収",
       "audio_file": "presentations/audio_output/slide_03.mp3",
-      "script": "Google。教育機関向けにGemini AIのプレミアム機能、Google Classroomとの連携強化、SAT対策ツールなど、AIを活用した教育ソリューションの多数のアップデートを発表しました。また、AIを搭載した動画作成アプリ「Google Vids」の提供やChromeOS、Google Workspace for EducationにおけるAIセキュリティ・検出機能の強化も進めています。"
+      "script": "AlibabaがAIチップ製造部門T-HeadのIPOを計画。NVIDIAに対抗するAIアクセラレータ企業への投資家の強い関心を背景に、上場を準備していることが報じられました。これにより、AIチップ市場の競争はさらに激化する見込みです。(Bloomberg Technology, 記事23)"
     },
     {
       "index": 4,
-      "title": "新製品・新技術",
+      "title": "戦略的提携・パートナーシップ",
       "audio_file": "presentations/audio_output/slide_04.mp3",
-      "script": "Apple。今年末までにSiriを生成AIチャットボットとして刷新し、OpenAIやGoogleが先行する生成AI競争に本格参入する計画が報じられました。これはデバイスレベルでのAI競争激化を意味します。"
+      "script": "OpenAI向け音声ツールLiveKitが1億ドル調達。OpenAIに音声ツールを提供するLiveKitが評価額10億ドルで1億ドルの資金調達を完了しました。OpenAIのエコシステム内で関連技術を提供する企業への投資が活発化していることを示します。(Bloomberg Technology, 記事26)"
     },
     {
       "index": 5,
-      "title": "新製品・新技術",
+      "title": "戦略的提携・パートナーシップ",
       "audio_file": "presentations/audio_output/slide_05.mp3",
-      "script": "Blue Origin。データセンターの旺盛な需要に対応するため、衛星通信ネットワークサービスを発表しました。AIによる計算需要の増大がインフラへの新たな投資を促していることを示唆します。"
+      "script": "Neurophos Inc.が1.1億ドルを調達。ビル・ゲイツのVCファンド、Microsoftの投資部門、サウジアラビアのAramco Venturesが、AIモデル実行用の次世代アクセラレータ開発を目指すチップ企業Neurophos Inc.に1.1億ドルを投資しました。これはNVIDIA依存脱却に向けたカスタムチップ開発競争の一環として注目されます。(Bloomberg Technology, 記事19)"
     },
     {
       "index": 6,
       "title": "新製品・新技術",
       "audio_file": "presentations/audio_output/slide_06.mp3",
-      "script": "OpenAI。CFOがChatGPTへの広告導入を「強力なビジネスモデル」として擁護。今後の収益化戦略の方向性を示唆しました。"
+      "script": "GoogleがAI検索機能を強化。ユーザーの過去データ（写真、メールなど）を活用し、検索結果をパーソナライズする「AIモード」の新機能を展開。OpenAIとの競争に対抗する動きを強めています。(Google/Alphabet, 記事2, 27)"
     },
     {
       "index": 7,
       "title": "新製品・新技術",
       "audio_file": "presentations/audio_output/slide_07.mp3",
-      "script": "Zhipu (中国)。中国のAI企業Zhipuは、コーディングアシスタントに対する需要が殺到し、コンピューティングリソースの逼迫によりアクセスを制限していると発表。中国市場におけるAIツールの需要の高さと、コンピューティングリソース不足の課題を浮き彫りにしました。"
+      "script": "AppleがSiriをAIチャットボットに刷新計画。Appleは今年後半にSiriをAIチャットボットに刷新し、OpenAIやGoogleに対抗する方針を明らかにしました。(Bloomberg Technology, 記事10)"
     },
     {
       "index": 8,

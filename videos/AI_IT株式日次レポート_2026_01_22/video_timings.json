@@ -1,0 +1,378 @@
+{
+  "fps": 30,
+  "totalDuration": 206.99999999999997,
+  "totalFrames": 6209,
+  "slides": [
+    {
+      "index": 1,
+      "title": "AI/IT株式ニュース",
+      "audioFile": "presentations/audio_output/slide_01.mp3",
+      "duration": 10.24,
+      "durationFrames": 307,
+      "startTime": 0,
+      "endTime": 10.24,
+      "startFrame": 0,
+      "endFrame": 307,
+      "subtitles": [
+        {
+          "text": "うぃっすー！",
+          "start": 0,
+          "end": 1.1123076923076924,
+          "startFrame": 0,
+          "endFrame": 33
+        },
+        {
+          "text": "if塾AIニュースのお時間です。",
+          "start": 1.4123076923076925,
+          "end": 4.378461538461539,
+          "startFrame": 42,
+          "endFrame": 131
+        },
+        {
+          "text": "2026/01/22のAI・IT株式ニュースをお届けします。",
+          "start": 4.678461538461539,
+          "end": 10.24,
+          "startFrame": 140,
+          "endFrame": 307
+        }
+      ],
+      "fullScript": "うぃっすー！if塾AIニュースのお時間です。2026/01/22のAI・IT株式ニュースをお届けします。"
+    },
+    {
+      "index": 2,
+      "title": "本日のサマリー",
+      "audioFile": "presentations/audio_output/slide_02.mp3",
+      "duration": 35.22,
+      "durationFrames": 1056,
+      "startTime": 10.24,
+      "endTime": 45.46,
+      "startFrame": 307,
+      "endFrame": 1363,
+      "subtitles": [
+        {
+          "text": "本日のAI/IT市場は、大規模なAI投資が続く中で",
+          "start": 10.24,
+          "end": 14.646735751295335,
+          "startFrame": 307,
+          "endFrame": 439
+        },
+        {
+          "text": "具体的なリターンと収益化が焦点に\n移りつつあることがダボス会議で示されました。",
+          "start": 14.946735751295336,
+          "end": 21.644974093264246,
+          "startFrame": 448,
+          "endFrame": 649
+        },
+        {
+          "text": "大手テック企業（Google、\nApple）はOpenAIに対抗する形でAI機能強化を加速。",
+          "start": 21.944974093264246,
+          "end": 29.877098445595852,
+          "startFrame": 658,
+          "endFrame": 896
+        },
+        {
+          "text": "AIチップ市場では、Intelの業績低迷が報じられる一方",
+          "start": 30.177098445595853,
+          "end": 35.11264248704663,
+          "startFrame": 905,
+          "endFrame": 1053
+        },
+        {
+          "text": "AlibabaのAIチップ部門IPO計画や新興チップ企業への大\n型投資がNVIDIA独占への挑戦を鮮明にしています。",
+          "start": 35.412642487046625,
+          "end": 45.459999999999994,
+          "startFrame": 1062,
+          "endFrame": 1363
+        }
+      ],
+      "fullScript": "本日のAI/IT市場は、大規模なAI投資が続く中で、具体的なリターンと収益化が焦点に移りつつあることがダボス会議で示されました。大手テック企業（Google、Apple）はOpenAIに対抗する形でAI機能強化を加速。AIチップ市場では、Intelの業績低迷が報じられる一方、AlibabaのAIチップ部門IPO計画や新興チップ企業への大型投資がNVIDIA独占への挑戦を鮮明にしています。"
+    },
+    {
+      "index": 3,
+      "title": "M&A・企業買収",
+      "audioFile": "presentations/audio_output/slide_03.mp3",
+      "duration": 23.94,
+      "durationFrames": 718,
+      "startTime": 45.46,
+      "endTime": 69.4,
+      "startFrame": 1363,
+      "endFrame": 2082,
+      "subtitles": [
+        {
+          "text": "AlibabaがAIチップ製造部門T-HeadのIPOを計画。",
+          "start": 45.46,
+          "end": 50.35205479452055,
+          "startFrame": 1363,
+          "endFrame": 1510
+        },
+        {
+          "text": "NVIDIAに対抗するAIアクセラレータ企業への投資家の強い関\n心を背景に、上場を準備していることが報じられました。",
+          "start": 50.652054794520545,
+          "end": 59.647123287671235,
+          "startFrame": 1519,
+          "endFrame": 1789
+        },
+        {
+          "text": "これにより、AIチップ市場の競争はさらに激化する見込みです。",
+          "start": 59.94712328767123,
+          "end": 64.6813698630137,
+          "startFrame": 1798,
+          "endFrame": 1940
+        },
+        {
+          "text": "(Bloomberg Technology, 記事23)",
+          "start": 64.9813698630137,
+          "end": 69.4,
+          "startFrame": 1949,
+          "endFrame": 2082
+        }
+      ],
+      "fullScript": "AlibabaがAIチップ製造部門T-HeadのIPOを計画。NVIDIAに対抗するAIアクセラレータ企業への投資家の強い関心を背景に、上場を準備していることが報じられました。これにより、AIチップ市場の競争はさらに激化する見込みです。(Bloomberg Technology, 記事23)"
+    },
+    {
+      "index": 4,
+      "title": "戦略的提携・パートナーシップ",
+      "audioFile": "presentations/audio_output/slide_04.mp3",
+      "duration": 24.28,
+      "durationFrames": 728,
+      "startTime": 69.4,
+      "endTime": 93.68,
+      "startFrame": 2082,
+      "endFrame": 2810,
+      "subtitles": [
+        {
+          "text": "OpenAI向け音声ツールLiveKitが1億ドル調達。",
+          "start": 69.4,
+          "end": 73.67869281045752,
+          "startFrame": 2082,
+          "endFrame": 2210
+        },
+        {
+          "text": "OpenAIに音声ツールを提供するLiveKitが評価額10億\nドルで1億ドルの資金調達を完了しました。",
+          "start": 73.97869281045752,
+          "end": 81.77202614379085,
+          "startFrame": 2219,
+          "endFrame": 2453
+        },
+        {
+          "text": "OpenAIのエコシステム内で関連技術を\n提供する企業への投資が活発化していることを示します。",
+          "start": 82.07202614379085,
+          "end": 89.10130718954248,
+          "startFrame": 2462,
+          "endFrame": 2673
+        },
+        {
+          "text": "(Bloomberg Technology, 記事26)",
+          "start": 89.40130718954248,
+          "end": 93.67999999999999,
+          "startFrame": 2682,
+          "endFrame": 2810
+        }
+      ],
+      "fullScript": "OpenAI向け音声ツールLiveKitが1億ドル調達。OpenAIに音声ツールを提供するLiveKitが評価額10億ドルで1億ドルの資金調達を完了しました。OpenAIのエコシステム内で関連技術を提供する企業への投資が活発化していることを示します。(Bloomberg Technology, 記事26)"
+    },
+    {
+      "index": 5,
+      "title": "戦略的提携・パートナーシップ",
+      "audioFile": "presentations/audio_output/slide_05.mp3",
+      "duration": 30.64,
+      "durationFrames": 919,
+      "startTime": 93.68,
+      "endTime": 124.32000000000001,
+      "startFrame": 2810,
+      "endFrame": 3729,
+      "subtitles": [
+        {
+          "text": "Neurophos Inc.が1.1億ドルを調達。",
+          "start": 93.68,
+          "end": 97.27024390243903,
+          "startFrame": 2810,
+          "endFrame": 2918
+        },
+        {
+          "text": "ビル・ゲイツのVCファンド、Microsoftの投資部門\nサウジアラビアのAramco Venturesが",
+          "start": 97.57024390243903,
+          "end": 105.03795121951221,
+          "startFrame": 2927,
+          "endFrame": 3151
+        },
+        {
+          "text": "AIモデル実行用の次世代アクセラレータ開発を目指すチップ企業N\neurophos Inc.に1.1億ドルを投資しました。",
+          "start": 105.3379512195122,
+          "end": 113.81092682926831,
+          "startFrame": 3160,
+          "endFrame": 3414
+        },
+        {
+          "text": "これはNVIDIA依存脱却に\n向けたカスタムチップ開発競争の一環として注目されます。",
+          "start": 114.11092682926831,
+          "end": 119.99892682926831,
+          "startFrame": 3423,
+          "endFrame": 3599
+        },
+        {
+          "text": "(Bloomberg Technology, 記事19)",
+          "start": 120.29892682926831,
+          "end": 124.32000000000002,
+          "startFrame": 3608,
+          "endFrame": 3729
+        }
+      ],
+      "fullScript": "Neurophos Inc.が1.1億ドルを調達。ビル・ゲイツのVCファンド、Microsoftの投資部門、サウジアラビアのAramco Venturesが、AIモデル実行用の次世代アクセラレータ開発を目指すチップ企業Neurophos Inc.に1.1億ドルを投資しました。これはNVIDIA依存脱却に向けたカスタムチップ開発競争の一環として注目されます。(Bloomberg Technology, 記事19)"
+    },
+    {
+      "index": 6,
+      "title": "新製品・新技術",
+      "audioFile": "presentations/audio_output/slide_06.mp3",
+      "duration": 22.0,
+      "durationFrames": 660,
+      "startTime": 124.32000000000001,
+      "endTime": 146.32,
+      "startFrame": 3729,
+      "endFrame": 4389,
+      "subtitles": [
+        {
+          "text": "GoogleがAI検索機能を強化。",
+          "start": 124.32000000000001,
+          "end": 127.30916666666667,
+          "startFrame": 3729,
+          "endFrame": 3819
+        },
+        {
+          "text": "ユーザーの過去データ（写真、メールなど）を活用し\n検索結果をパーソナライズする「AIモード」の新機能を展開",
+          "start": 127.60916666666667,
+          "end": 136.7525,
+          "startFrame": 3828,
+          "endFrame": 4102
+        },
+        {
+          "text": "OpenAIとの競争に対抗する動きを強めています。",
+          "start": 137.0525,
+          "end": 141.44833333333335,
+          "startFrame": 4111,
+          "endFrame": 4243
+        },
+        {
+          "text": "(Google/Alphabet, 記事2, 27)",
+          "start": 141.74833333333336,
+          "end": 146.32000000000002,
+          "startFrame": 4252,
+          "endFrame": 4389
+        }
+      ],
+      "fullScript": "GoogleがAI検索機能を強化。ユーザーの過去データ（写真、メールなど）を活用し、検索結果をパーソナライズする「AIモード」の新機能を展開。OpenAIとの競争に対抗する動きを強めています。(Google/Alphabet, 記事2, 27)"
+    },
+    {
+      "index": 7,
+      "title": "新製品・新技術",
+      "audioFile": "presentations/audio_output/slide_07.mp3",
+      "duration": 16.54,
+      "durationFrames": 496,
+      "startTime": 146.32,
+      "endTime": 162.85999999999999,
+      "startFrame": 4389,
+      "endFrame": 4885,
+      "subtitles": [
+        {
+          "text": "AppleがSiriをAIチャットボットに刷新計画。",
+          "start": 146.32,
+          "end": 149.95543859649123,
+          "startFrame": 4389,
+          "endFrame": 4498
+        },
+        {
+          "text": "Appleは今年後半にSiriをAIチャットボットに刷新し、\nOpenAIやGoogleに対抗する方針を明らかにしました。",
+          "start": 150.25543859649125,
+          "end": 158.64491228070176,
+          "startFrame": 4507,
+          "endFrame": 4759
+        },
+        {
+          "text": "(Bloomberg Technology, 記事10)",
+          "start": 158.94491228070177,
+          "end": 162.86,
+          "startFrame": 4768,
+          "endFrame": 4885
+        }
+      ],
+      "fullScript": "AppleがSiriをAIチャットボットに刷新計画。Appleは今年後半にSiriをAIチャットボットに刷新し、OpenAIやGoogleに対抗する方針を明らかにしました。(Bloomberg Technology, 記事10)"
+    },
+    {
+      "index": 8,
+      "title": "まとめ",
+      "audioFile": "presentations/audio_output/slide_08.mp3",
+      "duration": 3.88,
+      "durationFrames": 116,
+      "startTime": 162.85999999999999,
+      "endTime": 166.73999999999998,
+      "startFrame": 4885,
+      "endFrame": 5002,
+      "subtitles": [
+        {
+          "text": "本日のAI・IT株式ニュースは以上です。",
+          "start": 162.85999999999999,
+          "end": 166.73999999999998,
+          "startFrame": 4885,
+          "endFrame": 5002
+        }
+      ],
+      "fullScript": "本日のAI・IT株式ニュースは以上です。"
+    },
+    {
+      "index": 9,
+      "title": "塾頭高崎の完全自動化への挑戦",
+      "audioFile": "presentations/audio_output/slide_09.mp3",
+      "duration": 40.26,
+      "durationFrames": 1207,
+      "startTime": 166.73999999999998,
+      "endTime": 206.99999999999997,
+      "startFrame": 5002,
+      "endFrame": 6209,
+      "subtitles": [
+        {
+          "text": "ご視聴いただきありがとうございました。",
+          "start": 166.73999999999998,
+          "end": 169.90068669527895,
+          "startFrame": 5002,
+          "endFrame": 5097
+        },
+        {
+          "text": "実はこのレポート、if塾の塾頭高崎による「完全自動化への挑戦」\nプロジェクトの一環として、AIが自動生成しています。",
+          "start": 170.20068669527896,
+          "end": 179.68274678111587,
+          "startFrame": 5106,
+          "endFrame": 5390
+        },
+        {
+          "text": "将来的には塾頭が執筆しているような自然な記事になることを目指し\nており、現時点では事実と異なる内容が含まれる可能性もあります。",
+          "start": 179.98274678111588,
+          "end": 190.29656652360515,
+          "startFrame": 5399,
+          "endFrame": 5708
+        },
+        {
+          "text": "この挑戦に共感していただけたら、\nぜひチャンネル登録とグッドボタンをよろしくお願いします！",
+          "start": 190.59656652360516,
+          "end": 197.91605150214593,
+          "startFrame": 5717,
+          "endFrame": 5937
+        },
+        {
+          "text": "また、無料のAI教育や導入コンサルも受け付けています。",
+          "start": 198.21605150214594,
+          "end": 202.70755364806868,
+          "startFrame": 5946,
+          "endFrame": 6081
+        },
+        {
+          "text": "詳しくは概要欄のリンクからお問い合わせください。",
+          "start": 203.0075536480687,
+          "end": 207.00000000000003,
+          "startFrame": 6090,
+          "endFrame": 6210
+        }
+      ],
+      "fullScript": "ご視聴いただきありがとうございました。実はこのレポート、if塾の塾頭高崎による「完全自動化への挑戦」プロジェクトの一環として、AIが自動生成しています。将来的には塾頭が執筆しているような自然な記事になることを目指しており、現時点では事実と異なる内容が含まれる可能性もあります。この挑戦に共感していただけたら、ぜひチャンネル登録とグッドボタンをよろしくお願いします！また、無料のAI教育や導入コンサルも受け付けています。詳しくは概要欄のリンクからお問い合わせください。"
+    }
+  ]
+}

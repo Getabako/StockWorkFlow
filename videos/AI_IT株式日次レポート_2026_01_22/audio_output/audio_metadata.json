@@ -1,0 +1,59 @@
+{
+  "audio_files": [
+    {
+      "index": 1,
+      "title": "AI/IT株式ニュース",
+      "audio_file": "presentations/audio_output/slide_01.mp3",
+      "script": "うぃっすー！if塾AIニュースのお時間です。2026/01/22のAI・IT株式ニュースをお届けします。"
+    },
+    {
+      "index": 2,
+      "title": "本日のサマリー",
+      "audio_file": "presentations/audio_output/slide_02.mp3",
+      "script": "本日のAI/IT市場は、大規模なAI投資が続く中で、具体的なリターンと収益化が焦点に移りつつあることがダボス会議で示されました。大手テック企業（Google、Apple）はOpenAIに対抗する形でAI機能強化を加速。AIチップ市場では、Intelの業績低迷が報じられる一方、AlibabaのAIチップ部門IPO計画や新興チップ企業への大型投資がNVIDIA独占への挑戦を鮮明にしています。"
+    },
+    {
+      "index": 3,
+      "title": "M&A・企業買収",
+      "audio_file": "presentations/audio_output/slide_03.mp3",
+      "script": "AlibabaがAIチップ製造部門T-HeadのIPOを計画。NVIDIAに対抗するAIアクセラレータ企業への投資家の強い関心を背景に、上場を準備していることが報じられました。これにより、AIチップ市場の競争はさらに激化する見込みです。(Bloomberg Technology, 記事23)"
+    },
+    {
+      "index": 4,
+      "title": "戦略的提携・パートナーシップ",
+      "audio_file": "presentations/audio_output/slide_04.mp3",
+      "script": "OpenAI向け音声ツールLiveKitが1億ドル調達。OpenAIに音声ツールを提供するLiveKitが評価額10億ドルで1億ドルの資金調達を完了しました。OpenAIのエコシステム内で関連技術を提供する企業への投資が活発化していることを示します。(Bloomberg Technology, 記事26)"
+    },
+    {
+      "index": 5,
+      "title": "戦略的提携・パートナーシップ",
+      "audio_file": "presentations/audio_output/slide_05.mp3",
+      "script": "Neurophos Inc.が1.1億ドルを調達。ビル・ゲイツのVCファンド、Microsoftの投資部門、サウジアラビアのAramco Venturesが、AIモデル実行用の次世代アクセラレータ開発を目指すチップ企業Neurophos Inc.に1.1億ドルを投資しました。これはNVIDIA依存脱却に向けたカスタムチップ開発競争の一環として注目されます。(Bloomberg Technology, 記事19)"
+    },
+    {
+      "index": 6,
+      "title": "新製品・新技術",
+      "audio_file": "presentations/audio_output/slide_06.mp3",
+      "script": "GoogleがAI検索機能を強化。ユーザーの過去データ（写真、メールなど）を活用し、検索結果をパーソナライズする「AIモード」の新機能を展開。OpenAIとの競争に対抗する動きを強めています。(Google/Alphabet, 記事2, 27)"
+    },
+    {
+      "index": 7,
+      "title": "新製品・新技術",
+      "audio_file": "presentations/audio_output/slide_07.mp3",
+      "script": "AppleがSiriをAIチャットボットに刷新計画。Appleは今年後半にSiriをAIチャットボットに刷新し、OpenAIやGoogleに対抗する方針を明らかにしました。(Bloomberg Technology, 記事10)"
+    },
+    {
+      "index": 8,
+      "title": "まとめ",
+      "audio_file": "presentations/audio_output/slide_08.mp3",
+      "script": "本日のAI・IT株式ニュースは以上です。"
+    },
+    {
+      "index": 9,
+      "title": "塾頭高崎の完全自動化への挑戦",
+      "audio_file": "presentations/audio_output/slide_09.mp3",
+      "script": "ご視聴いただきありがとうございました。実はこのレポート、if塾の塾頭高崎による「完全自動化への挑戦」プロジェクトの一環として、AIが自動生成しています。将来的には塾頭が執筆しているような自然な記事になることを目指しており、現時点では事実と異なる内容が含まれる可能性もあります。この挑戦に共感していただけたら、ぜひチャンネル登録とグッドボタンをよろしくお願いします！また、無料のAI教育や導入コンサルも受け付けています。詳しくは概要欄のリンクからお問い合わせください。"
+    }
+  ],
+  "total_slides": 9
+}
