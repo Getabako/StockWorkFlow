@@ -4,43 +4,43 @@
       "index": 1,
       "title": "AI/IT株式ニュース",
       "audio_file": "presentations/audio_output/slide_01.mp3",
-      "script": "うぃっすー！if塾AIニュースのお時間です。2026/01/22のAI・IT株式ニュースをお届けします。"
+      "script": "うぃっすー！if塾AIニュースのお時間です。2026/01/23のAI・IT株式ニュースをお届けします。"
     },
     {
       "index": 2,
       "title": "本日のサマリー",
       "audio_file": "presentations/audio_output/slide_02.mp3",
-      "script": "本日のAI/IT市場は、大規模なAI投資が続く中で、具体的なリターンと収益化が焦点に移りつつあることがダボス会議で示されました。大手テック企業（Google、Apple）はOpenAIに対抗する形でAI機能強化を加速。AIチップ市場では、Intelの業績低迷が報じられる一方、AlibabaのAIチップ部門IPO計画や新興チップ企業への大型投資がNVIDIA独占への挑戦を鮮明にしています。"
+      "script": "今日のAI/IT市場は、AI技術の戦略的投資とグローバルなサプライチェーン動向、そして規制環境の変化が注目されました。特に、中国政府によるNVIDIA H200 AIチップの注文準備指示はAIインフラ需要の継続的な高さを裏付け、欧米大手テック企業はAI関連のM&Aや提携を通じて競争優位を確立しようとしています。また、AIスタートアップへの資金流入は活発であり、新しいAIシステム開発への期待が高まっています。"
     },
     {
       "index": 3,
       "title": "M&A・企業買収",
       "audio_file": "presentations/audio_output/slide_03.mp3",
-      "script": "AlibabaがAIチップ製造部門T-HeadのIPOを計画。NVIDIAに対抗するAIアクセラレータ企業への投資家の強い関心を背景に、上場を準備していることが報じられました。これにより、AIチップ市場の競争はさらに激化する見込みです。(Bloomberg Technology, 記事23)"
+      "script": "AIコンサルティング企業Xebiaの売却検討。AIコンサルティング企業Xebiaの所有者（プライベートエクイティ）が、同社の売却を検討していることが報じられました。評価額は10億ユーロ（約1400億円）以上に達する可能性があり、AI関連企業の高い市場評価を示唆しています。（記事 18）"
     },
     {
       "index": 4,
-      "title": "戦略的提携・パートナーシップ",
+      "title": "M&A・企業買収",
       "audio_file": "presentations/audio_output/slide_04.mp3",
-      "script": "OpenAI向け音声ツールLiveKitが1億ドル調達。OpenAIに音声ツールを提供するLiveKitが評価額10億ドルで1億ドルの資金調達を完了しました。OpenAIのエコシステム内で関連技術を提供する企業への投資が活発化していることを示します。(Bloomberg Technology, 記事26)"
+      "script": "中国当局によるMetaのAIスタートアップ買収審査深化。中国当局がMeta Platforms Inc.による中国系AIスタートアップManusの20億ドル買収に対する審査を深めています。これは、AI分野におけるM&Aに対する地政学的な規制介入のリスクを示しています。（記事 23）"
     },
     {
       "index": 5,
-      "title": "戦略的提携・パートナーシップ",
+      "title": "M&A・企業買収",
       "audio_file": "presentations/audio_output/slide_05.mp3",
-      "script": "Neurophos Inc.が1.1億ドルを調達。ビル・ゲイツのVCファンド、Microsoftの投資部門、サウジアラビアのAramco Venturesが、AIモデル実行用の次世代アクセラレータ開発を目指すチップ企業Neurophos Inc.に1.1億ドルを投資しました。これはNVIDIA依存脱却に向けたカスタムチップ開発競争の一環として注目されます。(Bloomberg Technology, 記事19)"
+      "script": "TikTok米国事業の買収完了。TikTokの米国事業がOracle Corp.主導のコンソーシアムによって買収が完了したと報じられました。長年の米中間の対立が解消され、大規模テック企業の事業継続性に関する規制環境の変化を示しています。（記事 24）"
     },
     {
       "index": 6,
-      "title": "新製品・新技術",
+      "title": "戦略的提携・パートナーシップ",
       "audio_file": "presentations/audio_output/slide_06.mp3",
-      "script": "GoogleがAI検索機能を強化。ユーザーの過去データ（写真、メールなど）を活用し、検索結果をパーソナライズする「AIモード」の新機能を展開。OpenAIとの競争に対抗する動きを強めています。(Google/Alphabet, 記事2, 27)"
+      "script": "Googleによる日本のSakana AIへの投資。Googleは、日本のAIスタートアップSakana AIへの投資を発表しました。これは、Googleのチャットボット「Gemini」の日本市場での存在感を高め、AI普及を加速させる狙いがあります。（記事 29）"
     },
     {
       "index": 7,
-      "title": "新製品・新技術",
+      "title": "戦略的提携・パートナーシップ",
       "audio_file": "presentations/audio_output/slide_07.mp3",
-      "script": "AppleがSiriをAIチャットボットに刷新計画。Appleは今年後半にSiriをAIチャットボットに刷新し、OpenAIやGoogleに対抗する方針を明らかにしました。(Bloomberg Technology, 記事10)"
+      "script": "ArmのAI次世代コンピューティング戦略。ArmのCEOであるRene Haasがダボス会議で、次世代AIはクラウド、エッジ、物理AIシステムにわたる「よりスマートで分散されたコンピューティング」にかかっていると語りました。これは、ArmがAIエコシステム、特にAI×ロボット戦略やエッジAI分野での重要性を増すことを示唆しています。（記事 1）"
     },
     {
       "index": 8,
