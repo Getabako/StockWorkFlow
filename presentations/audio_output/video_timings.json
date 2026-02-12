@@ -1,382 +1,179 @@
 {
   "fps": 30,
-  "totalDuration": 182.68,
-  "totalFrames": 5480,
+  "totalDuration": 104.1,
+  "totalFrames": 3123,
   "slides": [
     {
       "index": 1,
       "title": "AI/IT株式ニュース",
       "audioFile": "presentations/audio_output/slide_01.mp3",
-      "duration": 10.16,
-      "durationFrames": 304,
+      "duration": 10.02,
+      "durationFrames": 300,
       "startTime": 0,
-      "endTime": 10.16,
+      "endTime": 10.02,
       "startFrame": 0,
-      "endFrame": 304,
+      "endFrame": 300,
       "subtitles": [
         {
           "text": "うぃっすー！",
           "start": 0,
-          "end": 1.1030769230769233,
+          "end": 1.0869230769230769,
           "startFrame": 0,
-          "endFrame": 33
+          "endFrame": 32
         },
         {
           "text": "if塾AIニュースのお時間です。",
-          "start": 1.4030769230769233,
-          "end": 4.344615384615385,
-          "startFrame": 42,
-          "endFrame": 130
+          "start": 1.386923076923077,
+          "end": 4.285384615384616,
+          "startFrame": 41,
+          "endFrame": 128
         },
         {
-          "text": "2026/02/11のAI・IT株式ニュースをお届けします。",
-          "start": 4.644615384615385,
-          "end": 10.16,
-          "startFrame": 139,
-          "endFrame": 304
+          "text": "2026/02/12のAI・IT株式ニュースをお届けします。",
+          "start": 4.585384615384616,
+          "end": 10.02,
+          "startFrame": 137,
+          "endFrame": 300
         }
       ],
-      "fullScript": "うぃっすー！if塾AIニュースのお時間です。2026/02/11のAI・IT株式ニュースをお届けします。"
+      "fullScript": "うぃっすー！if塾AIニュースのお時間です。2026/02/12のAI・IT株式ニュースをお届けします。"
     },
     {
       "index": 2,
       "title": "本日のサマリー",
       "audioFile": "presentations/audio_output/slide_02.mp3",
-      "duration": 45.3,
-      "durationFrames": 1359,
-      "startTime": 10.16,
-      "endTime": 55.459999999999994,
-      "startFrame": 304,
-      "endFrame": 1663,
+      "duration": 49.94,
+      "durationFrames": 1498,
+      "startTime": 10.02,
+      "endTime": 59.959999999999994,
+      "startFrame": 300,
+      "endFrame": 1798,
       "subtitles": [
         {
-          "text": "本日のAI/IT市場は",
-          "start": 10.16,
-          "end": 12.007490347490348,
-          "startFrame": 304,
-          "endFrame": 360
+          "text": "AI業界は、OpenAIと競合のAnthropicによる大規模\nな資金調達と技術提携の動きが加速しています。",
+          "start": 10.02,
+          "end": 18.668881355932204,
+          "startFrame": 300,
+          "endFrame": 560
         },
         {
-          "text": "Anthropicへの巨額資金調達（200億ドル規模）とMet\naの100億ドル超のAIデータセンター建設に見られるように",
-          "start": 12.307490347490349,
-          "end": 22.384710424710427,
-          "startFrame": 369,
-          "endFrame": 671
+          "text": "特にOpenAIは",
+          "start": 18.968881355932204,
+          "end": 20.4375593220339,
+          "startFrame": 569,
+          "endFrame": 613
         },
         {
-          "text": "AIスタートアップへの投資とAIインフラ構築が\n引き続き活発です。",
-          "start": 22.684710424710428,
-          "end": 28.059227799227802,
-          "startFrame": 680,
-          "endFrame": 841
+          "text": "NVIDIA依存脱却の一環としてCerebras\nSystems Inc.のチップを用いたモデルを発表し",
+          "start": 20.7375593220339,
+          "end": 29.06006779661017,
+          "startFrame": 622,
+          "endFrame": 871
         },
         {
-          "text": "しかし、「AIスケアトレード」が市場を席巻し",
-          "start": 28.359227799227803,
-          "end": 32.054208494208495,
-          "startFrame": 850,
-          "endFrame": 961
+          "text": "サプライチェーンの多角化を明確に示しました。",
+          "start": 29.36006779661017,
+          "end": 32.95016949152542,
+          "startFrame": 880,
+          "endFrame": 988
         },
         {
-          "text": "AIによるビジネスモデル破壊の懸念から\n特定の企業（Dassault Systemes",
-          "start": 32.35420849420849,
-          "end": 39.40826254826255,
-          "startFrame": 970,
-          "endFrame": 1182
+          "text": "一方で、AIの急速な普及は半導体製造装置の需要を押し上げるもの\nの、広範な産業における「AI Scare Trade」として",
+          "start": 33.25016949152542,
+          "end": 43.20454237288135,
+          "startFrame": 997,
+          "endFrame": 1296
         },
         {
-          "text": "不動産サービスなど）の株価が急落する二極化が鮮明になりました。",
-          "start": 39.708262548262546,
-          "end": 44.91482625482625,
-          "startFrame": 1191,
-          "endFrame": 1347
+          "text": "AIによる既存ビジネスのディスラプション懸念が\n株価に複雑な影響を与えています。",
+          "start": 43.504542372881346,
+          "end": 49.86881355932202,
+          "startFrame": 1305,
+          "endFrame": 1496
         },
         {
-          "text": "一方で、GoogleはAIを活用した新機能で収益化を加速し、\nCiscoのようなインフラ企業はAI需要の恩恵を受けています。",
-          "start": 45.21482625482625,
-          "end": 55.459999999999994,
-          "startFrame": 1356,
-          "endFrame": 1663
+          "text": "GoogleはAIモデル「Gemini」の強化と多様な応用を進\nめる一方、EUの独禁法調査といった課題にも直面しています。",
+          "start": 50.16881355932202,
+          "end": 59.95999999999999,
+          "startFrame": 1505,
+          "endFrame": 1798
         }
       ],
-      "fullScript": "本日のAI/IT市場は、Anthropicへの巨額資金調達（200億ドル規模）とMetaの100億ドル超のAIデータセンター建設に見られるように、AIスタートアップへの投資とAIインフラ構築が引き続き活発です。しかし、「AIスケアトレード」が市場を席巻し、AIによるビジネスモデル破壊の懸念から特定の企業（Dassault Systemes、不動産サービスなど）の株価が急落する二極化が鮮明になりました。一方で、GoogleはAIを活用した新機能で収益化を加速し、Ciscoのようなインフラ企業はAI需要の恩恵を受けています。"
+      "fullScript": "AI業界は、OpenAIと競合のAnthropicによる大規模な資金調達と技術提携の動きが加速しています。特にOpenAIは、NVIDIA依存脱却の一環としてCerebras Systems Inc.のチップを用いたモデルを発表し、サプライチェーンの多角化を明確に示しました。一方で、AIの急速な普及は半導体製造装置の需要を押し上げるものの、広範な産業における「AI Scare Trade」として、AIによる既存ビジネスのディスラプション懸念が株価に複雑な影響を与えています。GoogleはAIモデル「Gemini」の強化と多様な応用を進める一方、EUの独禁法調査といった課題にも直面しています。"
     },
     {
       "index": 3,
-      "title": "M&A・企業買収",
-      "audioFile": "presentations/audio_output/slide_03.mp3",
-      "duration": 11.82,
-      "durationFrames": 354,
-      "startTime": 55.459999999999994,
-      "endTime": 67.28,
-      "startFrame": 1663,
-      "endFrame": 2018,
-      "subtitles": [
-        {
-          "text": "Meta Platformsへの新規投資。",
-          "start": 55.459999999999994,
-          "end": 58.107415730337074,
-          "startFrame": 1663,
-          "endFrame": 1743
-        },
-        {
-          "text": "Bill Ackman率いるPershing SquareがM\neta Platforms Inc.の株式を新規取得しました。",
-          "start": 58.40741573033707,
-          "end": 66.22359550561796,
-          "startFrame": 1752,
-          "endFrame": 1986
-        },
-        {
-          "text": "(記事19)",
-          "start": 66.52359550561796,
-          "end": 67.27999999999999,
-          "startFrame": 1995,
-          "endFrame": 2018
-        }
-      ],
-      "fullScript": "Meta Platformsへの新規投資。Bill Ackman率いるPershing SquareがMeta Platforms Inc.の株式を新規取得しました。(記事19)"
-    },
-    {
-      "index": 4,
-      "title": "戦略的提携・パートナーシップ",
-      "audioFile": "presentations/audio_output/slide_04.mp3",
-      "duration": 17.48,
-      "durationFrames": 524,
-      "startTime": 67.28,
-      "endTime": 84.76,
-      "startFrame": 2018,
-      "endFrame": 2542,
-      "subtitles": [
-        {
-          "text": "BNP ParibasとMistral AIの提携延長。",
-          "start": 67.28,
-          "end": 71.425,
-          "startFrame": 2018,
-          "endFrame": 2142
-        },
-        {
-          "text": "BNP Paribas SAがAIスタートアップのMistra\nl AIとのパートナーシップを3年間延長し",
-          "start": 71.725,
-          "end": 79.42285714285714,
-          "startFrame": 2151,
-          "endFrame": 2382
-        },
-        {
-          "text": "エンタープライズ分野でのAI活用を深化させています。",
-          "start": 79.72285714285714,
-          "end": 83.57178571428571,
-          "startFrame": 2391,
-          "endFrame": 2507
-        },
-        {
-          "text": "(記事22)",
-          "start": 83.8717857142857,
-          "end": 84.75999999999999,
-          "startFrame": 2516,
-          "endFrame": 2542
-        }
-      ],
-      "fullScript": "BNP ParibasとMistral AIの提携延長。BNP Paribas SAがAIスタートアップのMistral AIとのパートナーシップを3年間延長し、エンタープライズ分野でのAI活用を深化させています。(記事22)"
-    },
-    {
-      "index": 5,
-      "title": "大型契約・受注",
-      "audioFile": "presentations/audio_output/slide_05.mp3",
-      "duration": 19.78,
-      "durationFrames": 593,
-      "startTime": 84.76,
-      "endTime": 104.54,
-      "startFrame": 2542,
-      "endFrame": 3136,
-      "subtitles": [
-        {
-          "text": "Metaのデータセンター投資。",
-          "start": 84.76,
-          "end": 87.12,
-          "startFrame": 2542,
-          "endFrame": 2613
-        },
-        {
-          "text": "Meta Platforms Inc.がインディアナ州に100億ドル（約1.4兆円）を超える大規模データセンターを建設することを発表。",
-          "start": 87.42,
-          "end": 97.96133333333334,
-          "startFrame": 2622,
-          "endFrame": 2938
-        },
-        {
-          "text": "これは同社にとって過去最大級の\nAIインフラ投資の一つとなります。",
-          "start": 98.26133333333334,
-          "end": 103.296,
-          "startFrame": 2947,
-          "endFrame": 3098
-        },
-        {
-          "text": "(記事23)",
-          "start": 103.596,
-          "end": 104.54,
-          "startFrame": 3107,
-          "endFrame": 3136
-        }
-      ],
-      "fullScript": "Metaのデータセンター投資。Meta Platforms Inc.がインディアナ州に100億ドル（約1.4兆円）を超える大規模データセンターを建設することを発表。これは同社にとって過去最大級のAIインフラ投資の一つとなります。(記事23)"
-    },
-    {
-      "index": 6,
-      "title": "新製品・新技術",
-      "audioFile": "presentations/audio_output/slide_06.mp3",
-      "duration": 17.28,
-      "durationFrames": 518,
-      "startTime": 104.54,
-      "endTime": 121.82000000000001,
-      "startFrame": 3136,
-      "endFrame": 3654,
-      "subtitles": [
-        {
-          "text": "GoogleのAI広告最適化。",
-          "start": 104.54,
-          "end": 107.30067415730338,
-          "startFrame": 3136,
-          "endFrame": 3219
-        },
-        {
-          "text": "Google/Alphabetは、\nAIを活用した広告キャンペーン構造の最適化に関する知見を公開し",
-          "start": 107.60067415730337,
-          "end": 116.43483146067416,
-          "startFrame": 3228,
-          "endFrame": 3493
-        },
-        {
-          "text": "AI時代の広告戦略の重要性を強調しました。",
-          "start": 116.73483146067416,
-          "end": 120.59977528089888,
-          "startFrame": 3502,
-          "endFrame": 3617
-        },
-        {
-          "text": "(記事1)",
-          "start": 120.89977528089888,
-          "end": 121.82000000000001,
-          "startFrame": 3626,
-          "endFrame": 3654
-        }
-      ],
-      "fullScript": "GoogleのAI広告最適化。Google/Alphabetは、AIを活用した広告キャンペーン構造の最適化に関する知見を公開し、AI時代の広告戦略の重要性を強調しました。(記事1)"
-    },
-    {
-      "index": 7,
-      "title": "新製品・新技術",
-      "audioFile": "presentations/audio_output/slide_07.mp3",
-      "duration": 16.72,
-      "durationFrames": 501,
-      "startTime": 121.82000000000001,
-      "endTime": 138.54000000000002,
-      "startFrame": 3654,
-      "endFrame": 4156,
-      "subtitles": [
-        {
-          "text": "GoogleのAIショッピング機能。",
-          "start": 121.82000000000001,
-          "end": 124.84936170212767,
-          "startFrame": 3654,
-          "endFrame": 3745
-        },
-        {
-          "text": "Googleは、AI検索機能およびGeminiチャットボットに\nショッピング機能を追加。",
-          "start": 125.14936170212766,
-          "end": 132.38617021276596,
-          "startFrame": 3754,
-          "endFrame": 3971
-        },
-        {
-          "text": "AIツールからの直接的な収益化を狙う動きです。",
-          "start": 132.68617021276597,
-          "end": 136.55702127659575,
-          "startFrame": 3980,
-          "endFrame": 4096
-        },
-        {
-          "text": "(記事18, 30)",
-          "start": 136.85702127659576,
-          "end": 138.54000000000002,
-          "startFrame": 4105,
-          "endFrame": 4156
-        }
-      ],
-      "fullScript": "GoogleのAIショッピング機能。Googleは、AI検索機能およびGeminiチャットボットにショッピング機能を追加。AIツールからの直接的な収益化を狙う動きです。(記事18, 30)"
-    },
-    {
-      "index": 8,
       "title": "まとめ",
-      "audioFile": "presentations/audio_output/slide_08.mp3",
+      "audioFile": "presentations/audio_output/slide_03.mp3",
       "duration": 3.88,
       "durationFrames": 116,
-      "startTime": 138.54000000000002,
-      "endTime": 142.42000000000002,
-      "startFrame": 4156,
-      "endFrame": 4272,
+      "startTime": 59.959999999999994,
+      "endTime": 63.839999999999996,
+      "startFrame": 1798,
+      "endFrame": 1915,
       "subtitles": [
         {
           "text": "本日のAI・IT株式ニュースは以上です。",
-          "start": 138.54000000000002,
-          "end": 142.42000000000002,
-          "startFrame": 4156,
-          "endFrame": 4272
+          "start": 59.959999999999994,
+          "end": 63.839999999999996,
+          "startFrame": 1798,
+          "endFrame": 1915
         }
       ],
       "fullScript": "本日のAI・IT株式ニュースは以上です。"
     },
     {
-      "index": 9,
+      "index": 4,
       "title": "塾頭高崎の完全自動化への挑戦",
-      "audioFile": "presentations/audio_output/slide_09.mp3",
+      "audioFile": "presentations/audio_output/slide_04.mp3",
       "duration": 40.26,
       "durationFrames": 1207,
-      "startTime": 142.42000000000002,
-      "endTime": 182.68,
-      "startFrame": 4272,
-      "endFrame": 5480,
+      "startTime": 63.839999999999996,
+      "endTime": 104.1,
+      "startFrame": 1915,
+      "endFrame": 3123,
       "subtitles": [
         {
           "text": "ご視聴いただきありがとうございました。",
-          "start": 142.42000000000002,
-          "end": 145.58068669527898,
-          "startFrame": 4272,
-          "endFrame": 4367
+          "start": 63.839999999999996,
+          "end": 67.00068669527897,
+          "startFrame": 1915,
+          "endFrame": 2010
         },
         {
           "text": "実はこのレポート、if塾の塾頭高崎による「完全自動化への挑戦」\nプロジェクトの一環として、AIが自動生成しています。",
-          "start": 145.880686695279,
-          "end": 155.3627467811159,
-          "startFrame": 4376,
-          "endFrame": 4660
+          "start": 67.30068669527897,
+          "end": 76.78274678111588,
+          "startFrame": 2019,
+          "endFrame": 2303
         },
         {
           "text": "将来的には塾頭が執筆しているような自然な記事になることを目指し\nており、現時点では事実と異なる内容が含まれる可能性もあります。",
-          "start": 155.6627467811159,
-          "end": 165.9765665236052,
-          "startFrame": 4669,
-          "endFrame": 4979
+          "start": 77.08274678111587,
+          "end": 87.39656652360514,
+          "startFrame": 2312,
+          "endFrame": 2621
         },
         {
           "text": "この挑戦に共感していただけたら、\nぜひチャンネル登録とグッドボタンをよろしくお願いします！",
-          "start": 166.2765665236052,
-          "end": 173.59605150214597,
-          "startFrame": 4988,
-          "endFrame": 5207
+          "start": 87.69656652360514,
+          "end": 95.01605150214591,
+          "startFrame": 2630,
+          "endFrame": 2850
         },
         {
           "text": "また、無料のAI教育や導入コンサルも受け付けています。",
-          "start": 173.89605150214598,
-          "end": 178.38755364806872,
-          "startFrame": 5216,
-          "endFrame": 5351
+          "start": 95.31605150214591,
+          "end": 99.80755364806866,
+          "startFrame": 2859,
+          "endFrame": 2994
         },
         {
           "text": "詳しくは概要欄のリンクからお問い合わせください。",
-          "start": 178.68755364806873,
-          "end": 182.68000000000006,
-          "startFrame": 5360,
-          "endFrame": 5480
+          "start": 100.10755364806866,
+          "end": 104.1,
+          "startFrame": 3003,
+          "endFrame": 3123
         }
       ],
       "fullScript": "ご視聴いただきありがとうございました。実はこのレポート、if塾の塾頭高崎による「完全自動化への挑戦」プロジェクトの一環として、AIが自動生成しています。将来的には塾頭が執筆しているような自然な記事になることを目指しており、現時点では事実と異なる内容が含まれる可能性もあります。この挑戦に共感していただけたら、ぜひチャンネル登録とグッドボタンをよろしくお願いします！また、無料のAI教育や導入コンサルも受け付けています。詳しくは概要欄のリンクからお問い合わせください。"
