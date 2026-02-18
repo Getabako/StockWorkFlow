@@ -108,7 +108,7 @@ def parse_actions_from_report(report: str) -> list:
                     "date_proposed": today,
                     "action": current_action,
                     "symbol": current_symbol,
-                    "trigger_condition": current_trigger or "月曜の寄り付きで判断",
+                    "trigger_condition": current_trigger or "金曜の寄り付きで判断",
                     "reason": ' '.join(current_reason)[:200] if current_reason else "",
                     "status": "pending",
                     "user_response": None,
@@ -149,7 +149,7 @@ def parse_actions_from_report(report: str) -> list:
             "date_proposed": today,
             "action": current_action,
             "symbol": current_symbol,
-            "trigger_condition": current_trigger or "月曜の寄り付きで判断",
+            "trigger_condition": current_trigger or "金曜の寄り付きで判断",
             "reason": ' '.join(current_reason)[:200] if current_reason else "",
             "status": "pending",
             "user_response": None,
@@ -306,10 +306,10 @@ def create_action_prompt(portfolio_df: pd.DataFrame, ai_insights: dict = None, a
 
 ## ★ 週次レポートのルール ★
 - **売買提案は週次レポートのみで行います。このレポートは週次です。**
-- **月曜日に判断・実行する前提で提案してください。**
+- **金曜日に判断・実行する前提で提案してください。**
 - **同じ提案の繰り返しは禁止です。** 前回の未実行提案がある場合は、その有効性を確認する形にしてください。
 - **各アクション提案には必ず具体的なトリガー条件を記載してください:**
-  - 買い: 「$○○以下になったら」「月曜の寄り付きで」等、具体的な株価水準
+  - 買い: 「$○○以下になったら」「金曜の寄り付きで」等、具体的な株価水準
   - 売り: 「$○○以上になったら」「利益率○○%に達したら」等、具体的な数値
   - ホールド: 「○○の条件が変わるまで」等、具体的な状況
 
