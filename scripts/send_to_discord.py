@@ -109,6 +109,7 @@ def create_weekly_summary_embed(title: str, sections: dict, color: int) -> dict:
         # ポートフォリオ影響分析レポート用
         "サマリー",
         "本日のアクション提案",
+        "未実行提案の状況確認",
         "新規購入候補",
         "明日以降の注目点"
     ]
@@ -188,7 +189,9 @@ def create_discord_embed(title: str, sections: dict, color: int) -> dict:
         "定期買い付けリマインド",
         "ポートフォリオ最適化の提案",
         "来週の注意事項",
-        "📅 来週の注目イベント"
+        "📅 来週の注目イベント",
+        "未実行提案の状況確認",
+        "明日以降の注目点"
     ]
 
     # 順序に従ってセクションを追加

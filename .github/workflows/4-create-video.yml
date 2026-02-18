@@ -183,15 +183,29 @@ jobs:
           if [ -n "$YOUTUBE_CLIENT_ID" ] && [ -n "$YOUTUBE_CLIENT_SECRET" ] && [ -n "$YOUTUBE_REFRESH_TOKEN" ]; then
             # 日付を抽出してタイトルを生成
             DATE_STR=$(echo "${{ github.event.inputs.presentation_name }}" | grep -oE '[0-9]{4}_[0-9]{2}_[0-9]{2}' | sed 's/_/\//g')
+            DATE_UNDERSCORE=$(echo "${{ github.event.inputs.presentation_name }}" | grep -oE '[0-9]{4}_[0-9]{2}_[0-9]{2}')
             TITLE="【AI IT株式】日次レポート ${DATE_STR}"
 
+            # レポートファイルを探す
+            REPORT_FILE=""
+            if [ -f "output/market_report.md" ]; then
+              REPORT_FILE="output/market_report.md"
+            fi
+
             # YouTubeにアップロード
-            python3 scripts/upload_to_youtube.py \
-              "videos/${{ github.event.inputs.presentation_name }}/video.mp4" \
-              --title "$TITLE" \
-              --description "AI・IT関連株式の日次市場分析レポートです。本動画はAIによって自動生成されています。#AI株 #IT株 #株式投資" \
-              --tags "AI" "IT" "株式投資" "市場分析" "日次レポート" "自動生成" \
+            UPLOAD_ARGS=(
+              "videos/${{ github.event.inputs.presentation_name }}/video.mp4"
+              --title "$TITLE"
+              --description "AI・IT関連株式の日次市場分析レポートです。本動画はAIによって自動生成されています。"
+              --tags "AI" "IT" "株式投資" "市場分析" "日次レポート" "自動生成" "AI活用"
               --privacy public
+              --playlist "デイリー株式投資分析"
+            )
+            if [ -n "$REPORT_FILE" ]; then
+              UPLOAD_ARGS+=(--report-file "$REPORT_FILE")
+            fi
+
+            python3 scripts/upload_to_youtube.py "${UPLOAD_ARGS[@]}"
             echo "✓ YouTube upload completed"
           else
             echo "YouTube credentials not configured, skipping upload"

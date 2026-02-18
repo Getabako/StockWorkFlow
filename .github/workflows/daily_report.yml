@@ -295,8 +295,10 @@ jobs:
             python3 scripts/upload_to_youtube.py \
               "videos/${{ env.PRESENTATION_NAME }}/video.mp4" \
               --title "AI/IT株式日次レポート ${{ env.REPORT_DATE }}" \
-              --description "本日のAI/IT市場の動向分析レポートです。詳細なレポートはDiscordで配信中。#AI #IT #株式投資" \
-              --tags AI IT 株式投資 市場分析 日次レポート NVIDIA AMD Broadcom
+              --description "本日のAI/IT市場の動向分析レポートです。詳細なレポートはDiscordで配信中。" \
+              --tags AI IT 株式投資 市場分析 日次レポート 自動生成 AI活用 \
+              --playlist "デイリー株式投資分析" \
+              --report-file "output/market_report.md"
             echo "✓ YouTube upload completed"
           else
             echo "YouTube credentials not configured, skipping upload"

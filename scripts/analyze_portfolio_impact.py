@@ -10,6 +10,26 @@ import csv
 from datetime import datetime
 from google import genai
 
+
+def load_action_log(file_path: str = "data/action_log.json") -> dict:
+    """
+    アクション追跡ログを読み込みます。存在しない場合は空で初期化します。
+    """
+    default_log = {
+        "pending_actions": [],
+        "completed_actions": [],
+        "last_updated": None
+    }
+
+    if not os.path.exists(file_path):
+        return default_log
+
+    try:
+        with open(file_path, 'r', encoding='utf-8') as f:
+            return json.load(f)
+    except (json.JSONDecodeError, KeyError):
+        return default_log
+
 # Gemini APIの設定
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 if not GEMINI_API_KEY:
@@ -78,7 +98,8 @@ def create_portfolio_impact_prompt(
     stock_prices: dict,
     account_info: dict,
     transactions: list,
-    market_report: str
+    market_report: str,
+    action_log: dict = None
 ) -> str:
     """ポートフォリオ影響分析用のプロンプトを生成します。"""
 
@@ -129,8 +150,34 @@ def create_portfolio_impact_prompt(
     for idx, article in enumerate(articles[:10], 1):
         articles_summary += f"- {article['title']} ({article['source']})\n"
 
+    # 未実行アクションの状況確認セクション
+    pending_actions_text = ""
+    if action_log and action_log.get("pending_actions"):
+        pending_list = ""
+        for a in action_log["pending_actions"]:
+            pending_list += f"- {a['symbol']}: {a['action']} / トリガー条件: {a.get('trigger_condition', 'N/A')} / 理由: {a.get('reason', 'N/A')} (提案日: {a['date_proposed']})\n"
+        pending_actions_text = f"""
+## 未実行アクションの状況確認
+前回の週次レポートで以下の提案がありましたが、まだ実行されていません:
+{pending_list}
+現在の市場状況を踏まえて、各提案がまだ有効かどうか確認してください。
+特にトリガー条件に接近している提案があれば強調してください。
+実行していない場合は、次の月曜日に改めて検討しましょう。
+"""
+    else:
+        pending_actions_text = """
+## 未実行アクションの状況確認
+現在、未実行の提案はありません。次回の週次レポートで新たな提案が出されます。
+"""
+
     prompt = f"""
-あなたはAI/IT関連の株式投資アドバイザーです。今日の市場情勢分析と現在のポートフォリオ状況を基に、具体的な売買示唆を提供してください。
+あなたはAI/IT関連の株式投資アドバイザーです。今日の市場情勢分析と現在のポートフォリオ状況を基に、日次の影響分析を提供してください。
+
+## ★ 日次レポートのルール ★
+- **日次レポートでは新たな売買アクション提案は出さないでください。**
+- **売買提案は週次レポートのみで行います。**
+- **日次では「市場ニュース要約」「保有銘柄への影響分析」「トリガー条件への接近状況」のみ出力してください。**
+- **同じ提案の繰り返しは禁止です。**
 
 {portfolio_text}
 {account_text}
@@ -142,10 +189,12 @@ def create_portfolio_impact_prompt(
 ## 今日の市場情勢分析
 {market_report}
 
+{pending_actions_text}
+
 ## 出力フォーマット
 以下のMarkdown形式でレポートを作成してください：
 
-# ポートフォリオ影響分析レポート
+# ポートフォリオ影響分析レポート（日次）
 **作成日時**: {datetime.now().strftime('%Y年%m月%d日 %H:%M')}
 
 ## サマリー
@@ -155,37 +204,19 @@ def create_portfolio_impact_prompt(
 {portfolio_text if portfolio_text else "（ポートフォリオ情報が利用できません）"}
 
 ## 保有銘柄への影響分析
-（各保有銘柄について、今日のニュースがどのような影響を与えるか分析）
+（各保有銘柄について、今日のニュースがどのような影響を与えるか分析。売買提案はしないこと）
 
-### 買い増し検討銘柄
-（保有銘柄の中で、今日のニュースを受けて買い増しを検討すべきもの）
-
-### 利益確定検討銘柄
-（保有銘柄の中で、利益確定を検討すべきもの）
-
-### ホールド推奨銘柄
-（現状維持が適切な銘柄）
-
-## 新規購入候補
-（ポートフォリオにない銘柄で、今日のニュースを受けて購入を検討すべきもの）
-- 買付余力: ¥{account_info.get('buying_power', 0):,}を考慮
-
-## 売却検討銘柄
-（保有銘柄の中で、売却を検討すべきもの）
-
-## 本日のアクション提案
-（具体的な行動提案を優先度順に3-5個）
-
-1. **[優先度: 高/中/低]** アクション内容
-   - 銘柄:
-   - 株数:
-   - 理由:
+## 未実行提案の状況確認
+（週次レポートで出された未実行提案について、トリガー条件への接近状況を確認。新たな売買提案は出さないこと）
+- 各提案のトリガー条件と現在の株価の距離
+- 条件に近づいている場合はアラート
 
 ## 明日以降の注目点
 （今後注視すべきポイント）
 
 ---
 *このレポートはAI（Gemini）により自動生成されています。投資判断は必ずご自身で行ってください。*
+*売買アクション提案は週次レポートでのみ行われます。*
 """
 
     return prompt
@@ -276,10 +307,16 @@ def main():
 """
         save_report(empty_report)
     else:
+        # アクションログを読み込む
+        print("\nLoading action log...")
+        action_log = load_action_log()
+        pending_count = len(action_log.get("pending_actions", []))
+        print(f"✓ Loaded action log ({pending_count} pending actions)")
+
         # プロンプトを生成
         print("\nCreating portfolio impact analysis prompt...")
         prompt = create_portfolio_impact_prompt(
-            articles, stock_prices, account_info, transactions, market_report
+            articles, stock_prices, account_info, transactions, market_report, action_log
         )
 
         # Gemini APIで分析

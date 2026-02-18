@@ -7,6 +7,7 @@ Gemini APIを使用してポートフォリオを分析し、週次の売買ア�
 import pandas as pd
 import os
 import json
+import re
 from datetime import datetime
 from google import genai
 
@@ -23,6 +24,139 @@ INVESTMENT_BUDGET_JPY = 3000000  # 追加投資予算: 300万円
 INVESTMENT_BUDGET_USD = 20000  # 追加投資予算（USD換算、1ドル=150円想定）
 FOCUS_ON_BUYING = True  # 買い推奨をメインにする
 MIN_PROFIT_THRESHOLD_PCT = 10.0  # 売却候補の最低利益率: 10%
+
+
+def load_action_log(file_path: str = "data/action_log.json") -> dict:
+    """
+    アクション追跡ログを読み込みます。存在しない場合は空で初期化します。
+
+    Args:
+        file_path: アクションログファイルのパス
+
+    Returns:
+        アクションログの辞書
+    """
+    default_log = {
+        "pending_actions": [],
+        "completed_actions": [],
+        "last_updated": None
+    }
+
+    if not os.path.exists(file_path):
+        os.makedirs(os.path.dirname(file_path), exist_ok=True)
+        with open(file_path, 'w', encoding='utf-8') as f:
+            json.dump(default_log, f, ensure_ascii=False, indent=2)
+        print(f"  Created new action log: {file_path}")
+        return default_log
+
+    try:
+        with open(file_path, 'r', encoding='utf-8') as f:
+            return json.load(f)
+    except (json.JSONDecodeError, KeyError):
+        print(f"  Invalid action log, reinitializing: {file_path}")
+        with open(file_path, 'w', encoding='utf-8') as f:
+            json.dump(default_log, f, ensure_ascii=False, indent=2)
+        return default_log
+
+
+def save_action_log(action_log: dict, file_path: str = "data/action_log.json"):
+    """
+    アクション追跡ログを保存します。
+
+    Args:
+        action_log: アクションログの辞書
+        file_path: アクションログファイルのパス
+    """
+    action_log["last_updated"] = datetime.now().isoformat()
+    os.makedirs(os.path.dirname(file_path), exist_ok=True)
+    with open(file_path, 'w', encoding='utf-8') as f:
+        json.dump(action_log, f, ensure_ascii=False, indent=2)
+    print(f"✓ Action log saved to {file_path}")
+
+
+def parse_actions_from_report(report: str) -> list:
+    """
+    生成されたレポートからアクション提案を抽出してaction_log形式に変換します。
+
+    Args:
+        report: 生成されたレポートのMarkdown文字列
+
+    Returns:
+        アクション提案のリスト
+    """
+    actions = []
+    today = datetime.now().strftime('%Y-%m-%d')
+    action_id_counter = 1
+
+    # レポート内の推奨銘柄セクションやアクション提案部分を解析
+    lines = report.split('\n')
+    current_symbol = None
+    current_action = None
+    current_reason = []
+    current_trigger = None
+
+    for line in lines:
+        stripped = line.strip()
+
+        # 銘柄名とシンボルを検出（例: "#### 1. NVIDIA (NVDA)" や "### NVDA"）
+        symbol_match = re.search(r'\(([A-Z]{1,5})\)', stripped)
+        if symbol_match and ('####' in line or '###' in line):
+            # 前の銘柄を保存
+            if current_symbol and current_action:
+                actions.append({
+                    "id": f"{today}-{action_id_counter:03d}",
+                    "date_proposed": today,
+                    "action": current_action,
+                    "symbol": current_symbol,
+                    "trigger_condition": current_trigger or "月曜の寄り付きで判断",
+                    "reason": ' '.join(current_reason)[:200] if current_reason else "",
+                    "status": "pending",
+                    "user_response": None,
+                    "executed_date": None
+                })
+                action_id_counter += 1
+
+            current_symbol = symbol_match.group(1)
+            current_action = None
+            current_reason = []
+            current_trigger = None
+
+        # アクション種別を検出
+        if current_symbol:
+            lower = stripped.lower()
+            if '買い増し' in stripped or '購入' in stripped or '買い' in stripped or 'buy' in lower:
+                if '利確' not in stripped and '売' not in stripped:
+                    current_action = current_action or 'buy'
+            if '売却' in stripped or '利確' in stripped or '利益確定' in stripped or 'sell' in lower:
+                current_action = current_action or 'sell'
+            if 'ホールド' in stripped or 'hold' in lower:
+                current_action = current_action or 'hold'
+
+            # トリガー条件を検出（$XXX以下、$XXX以上、○○%など）
+            trigger_match = re.search(r'(\$[\d,.]+以[下上]|[\d,.]+ドル以[下上]|利益率[\d.]+%|エントリーポイント.{0,50})', stripped)
+            if trigger_match and not current_trigger:
+                current_trigger = trigger_match.group(1)
+
+            # 理由を収集
+            if stripped.startswith('- ') or stripped.startswith('* '):
+                if '理由' in stripped or '選定ポイント' in stripped or 'ポイント' in stripped:
+                    current_reason.append(stripped[2:])
+
+    # 最後の銘柄を保存
+    if current_symbol and current_action:
+        actions.append({
+            "id": f"{today}-{action_id_counter:03d}",
+            "date_proposed": today,
+            "action": current_action,
+            "symbol": current_symbol,
+            "trigger_condition": current_trigger or "月曜の寄り付きで判断",
+            "reason": ' '.join(current_reason)[:200] if current_reason else "",
+            "status": "pending",
+            "user_response": None,
+            "executed_date": None
+        })
+
+    return actions
 
 
 def load_portfolio_summary(file_path: str = "output/portfolio_summary.csv") -> pd.DataFrame:
@@ -61,7 +195,7 @@ def load_ai_insights(input_file: str = "data/ai_industry_insights.json") -> dict
         return json.load(f)
 
 
-def create_action_prompt(portfolio_df: pd.DataFrame, ai_insights: dict = None) -> str:
+def create_action_prompt(portfolio_df: pd.DataFrame, ai_insights: dict = None, action_log: dict = None) -> str:
     """
     Gemini APIに送信するプロンプトを生成します。
 
@@ -152,8 +286,34 @@ def create_action_prompt(portfolio_df: pd.DataFrame, ai_insights: dict = None) -
                         for point in company.get('key_points', [])[:2]:
                             ai_insights_text += f"  - {point}\n"
 
+    # 前回の未実行提案セクション
+    pending_actions_text = ""
+    if action_log and action_log.get("pending_actions"):
+        pending_list = ""
+        for a in action_log["pending_actions"]:
+            pending_list += f"- {a['symbol']}: {a['action']} / トリガー条件: {a.get('trigger_condition', 'N/A')} / 理由: {a.get('reason', 'N/A')} (提案日: {a['date_proposed']})\n"
+        pending_actions_text = f"""
+## 前回の未実行提案
+以下の提案がまだ実行されていません。同じ提案を繰り返すのではなく、
+「前回○○を提案しましたが、実行されましたか？まだの場合、状況が変わっていないか確認しましょう」
+という形で確認してください。新たに同じ内容を提案するのではなく、前回の提案が現在も有効かどうかを判断してください。
+
+{pending_list}
+"""
+
     prompt = f"""
 あなたはAI/IT株式投資の教育的アドバイザーです。投資初心者が自分で考えて判断できるよう、詳細な分析と理由を提供してください。
+
+## ★ 週次レポートのルール ★
+- **売買提案は週次レポートのみで行います。このレポートは週次です。**
+- **月曜日に判断・実行する前提で提案してください。**
+- **同じ提案の繰り返しは禁止です。** 前回の未実行提案がある場合は、その有効性を確認する形にしてください。
+- **各アクション提案には必ず具体的なトリガー条件を記載してください:**
+  - 買い: 「$○○以下になったら」「月曜の寄り付きで」等、具体的な株価水準
+  - 売り: 「$○○以上になったら」「利益率○○%に達したら」等、具体的な数値
+  - ホールド: 「○○の条件が変わるまで」等、具体的な状況
+
+{pending_actions_text}
 
 ## ★★★ 最重要事項（必ず遵守）★★★
 
@@ -372,15 +532,31 @@ def main():
     else:
         print("  (AI industry insights not available)")
 
+    # アクションログを読み込む
+    print("\nLoading action log...")
+    action_log = load_action_log()
+    pending_count = len(action_log.get("pending_actions", []))
+    print(f"✓ Loaded action log ({pending_count} pending actions)")
+
     # プロンプトを生成
     print("\nCreating action prompt...")
-    prompt = create_action_prompt(portfolio_df, ai_insights)
+    prompt = create_action_prompt(portfolio_df, ai_insights, action_log)
 
     # Gemini APIでアクション提案を生成
     report = generate_action_with_gemini(prompt)
 
     # レポートを保存
     save_action_report(report)
+
+    # レポートからアクション提案を抽出してaction_logに保存
+    print("\nExtracting actions from report...")
+    new_actions = parse_actions_from_report(report)
+    if new_actions:
+        action_log["pending_actions"].extend(new_actions)
+        print(f"✓ Extracted {len(new_actions)} new action proposals")
+    else:
+        print("  No new actions extracted from report")
+    save_action_log(action_log)
 
     print("\n" + "=" * 60)
     print("Action plan generation completed!")
