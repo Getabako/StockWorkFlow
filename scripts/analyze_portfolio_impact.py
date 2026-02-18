@@ -152,32 +152,32 @@ def create_portfolio_impact_prompt(
 
     # 未実行アクションの状況確認セクション
     pending_actions_text = ""
-    if action_log and action_log.get("pending_actions"):
+    # 日次では月曜・金曜のみ確認セクションを表示
+    from datetime import datetime as dt_check
+    today_weekday = dt_check.now().weekday()  # 0=月, 4=金
+    
+    if today_weekday in (0, 4) and action_log and action_log.get("pending_actions"):
         pending_list = ""
         for a in action_log["pending_actions"]:
             pending_list += f"- {a['symbol']}: {a['action']} / トリガー条件: {a.get('trigger_condition', 'N/A')} / 理由: {a.get('reason', 'N/A')} (提案日: {a['date_proposed']})\n"
+        day_label = "売り判断の日" if today_weekday == 0 else "買い実行の日"
         pending_actions_text = f"""
-## 未実行アクションの状況確認
-前回の週次レポートで以下の提案がありましたが、まだ実行されていません:
+## 本日は{day_label}です - アクション確認
+以下の未実行提案があります。実行しましたか？
 {pending_list}
-現在の市場状況を踏まえて、各提案がまだ有効かどうか確認してください。
-特にトリガー条件に接近している提案があれば強調してください。
-実行していない場合は、次の金曜日に改めて検討しましょう。
 """
     else:
-        pending_actions_text = """
-## 未実行アクションの状況確認
-現在、未実行の提案はありません。次回の週次レポートで新たな提案が出されます。
-"""
+        pending_actions_text = ""
 
     prompt = f"""
 あなたはAI/IT関連の株式投資アドバイザーです。今日の市場情勢分析と現在のポートフォリオ状況を基に、日次の影響分析を提供してください。
 
 ## ★ 日次レポートのルール ★
-- **日次レポートでは新たな売買アクション提案は出さないでください。**
-- **売買提案は週次レポートのみで行います。**
-- **日次では「市場ニュース要約」「保有銘柄への影響分析」「トリガー条件への接近状況」のみ出力してください。**
-- **同じ提案の繰り返しは禁止です。**
+- **日次レポートでは売買アクション提案は一切出さないでください。**
+- **事実のみを事務的・簡潔に伝えてください。感想や提案は不要です。**
+- **出力内容: 「市場ニュース要約（事実のみ）」「保有銘柄への影響（数値変動のみ）」「トリガー条件への接近状況（該当あれば）」**
+- **確認は月曜（売り確認）と金曜（買い確認）のみ。火〜木は確認もしないこと。**
+- **「〜かもしれません」「〜を注視します」等の曖昧な表現は最小限に。事実と数値で語ること。**
 
 {portfolio_text}
 {account_text}
