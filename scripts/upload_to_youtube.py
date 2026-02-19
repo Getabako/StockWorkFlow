@@ -383,14 +383,19 @@ def main():
             company_names=company_names
         )
 
-        # 再生リストに追加
+        # 再生リストに追加（失敗してもアップロード成功は維持）
         if args.playlist:
-            print(f"再生リストを検索中: {args.playlist}")
-            playlist_id = find_playlist_by_name(youtube, args.playlist)
-            if playlist_id:
-                add_video_to_playlist(youtube, video_id, playlist_id)
-            else:
-                print(f"⚠ 再生リストが見つかりません: {args.playlist}")
+            try:
+                print(f"再生リストを検索中: {args.playlist}")
+                playlist_id = find_playlist_by_name(youtube, args.playlist)
+                if playlist_id:
+                    add_video_to_playlist(youtube, video_id, playlist_id)
+                else:
+                    print(f"⚠ 再生リストが見つかりません: {args.playlist}")
+            except HttpError as e:
+                print(f"⚠ 再生リストへの追加に失敗しました（動画アップロードは成功）: {e}")
+                print("  → OAuthトークンに youtube スコープが必要です。")
+                print("  → 現在のトークンは youtube.upload スコープのみの可能性があります。")
 
         # GitHub Actions用に出力
         if 'GITHUB_OUTPUT' in os.environ:
