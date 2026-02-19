@@ -17,7 +17,7 @@ import json
 from http.server import HTTPServer, BaseHTTPRequestHandler
 from urllib.parse import urlencode, urlparse, parse_qs
 import webbrowser
-import requests
+from urllib.request import urlopen, Request
 
 SCOPES = ["https://www.googleapis.com/auth/youtube"]
 REDIRECT_URI = "http://localhost:8090"
@@ -81,16 +81,16 @@ def get_auth_code(client_id):
 
 def exchange_code_for_tokens(client_id, client_secret, auth_code):
     """認証コードをリフレッシュトークンに交換"""
-    data = {
+    data = urlencode({
         "code": auth_code,
         "client_id": client_id,
         "client_secret": client_secret,
         "redirect_uri": REDIRECT_URI,
         "grant_type": "authorization_code",
-    }
-    response = requests.post(TOKEN_URL, data=data)
-    response.raise_for_status()
-    return response.json()
+    }).encode("utf-8")
+    req = Request(TOKEN_URL, data=data, method="POST")
+    with urlopen(req) as resp:
+        return json.loads(resp.read().decode("utf-8"))
 
 
 def main():
