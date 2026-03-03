@@ -1,0 +1,55 @@
+topic: AI_IT株式日次レポート_2026_03_03
+slides:
+- title: AI/IT株式ニュース
+  content: '2026/03/03
+
+
+    本日の注目トピック'
+- title: 本日のサマリー
+  content: 今日のAI/IT市場は、AIインフラの深化とAIモデルおよびサービスの進化に焦点が当てられました。NVIDIAはAIデータセンター向けの重要な光学部品企業に戦略的投資を行い、AI経済圏におけるハードウェア支配を強化。Googleは主力AIモデル「Gemini」の進化とAndroid/PixelデバイスへのAI機能統合を加速させました。
+- title: M&A・企業買収
+  content: NVIDIAのCoherentへの投資
+- title: 戦略的提携・パートナーシップ
+  content: NVIDIAとCoherentの連携
+- title: 戦略的提携・パートナーシップ
+  content: Mistral AIとCiti
+- title: 大型契約・受注
+  content: Applied DigitalのAIインフラ投資
+- title: 新製品・新技術
+  content: GoogleのAI・Android機能強化
+- title: まとめ
+  content: '本日のレポートは以上です
+
+
+    ご視聴ありがとうございました'
+- title: 塾頭高崎の完全自動化への挑戦
+  content: '※このコンテンツはAIが自動生成しています
+
+
+    AI技術の限界に挑戦中！
+
+    共感いただけたらチャンネル登録・グッドボタンを
+
+    よろしくお願いします！'
+script_notes:
+- slide: 1
+  script: うぃっすー！if塾AIニュースのお時間です。2026/03/03のAI・IT株式ニュースをお届けします。
+- slide: 2
+  script: 今日のAI/IT市場は、AIインフラの深化とAIモデルおよびサービスの進化に焦点が当てられました。NVIDIAはAIデータセンター向けの重要な光学部品企業に戦略的投資を行い、AI経済圏におけるハードウェア支配を強化。Googleは主力AIモデル「Gemini」の進化とAndroid/PixelデバイスへのAI機能統合を加速させました。また、AI投資による半導体製造装置メーカーの好調な業績予想や、Qualcomm
+    CEOによる「AIエージェントの年」予測が、市場全体の高揚感を裏付けています。
+- slide: 3
+  script: NVIDIAのCoherentへの投資。NVIDIAはAIリーダーとして、データセンター向け高度光学部品の需要継続を見込み、フォトニクス企業Coherentに20億ドルを投資しました。（記事14）
+- slide: 4
+  script: NVIDIAとCoherentの連携。NVIDIAによるCoherentへの投資は、AIデータセンターの性能向上とサプライチェーンの強化に向けた戦略的提携の一環と見られます。（記事14）
+- slide: 5
+  script: Mistral AIとCiti。Mistral AIの最高収益責任者とCitiのグローバルAI責任者が、金融サービスにおける高度AIモデルの適用について議論しました。これは金融業界におけるAI活用の可能性を示唆しています。（記事33）
+- slide: 6
+  script: Applied DigitalのAIインフラ投資。Applied Digital Corp.は、Oracle Corp.向けの追加コンピューティング能力を資金調達するため、21.5億ドルのジャンクボンド販売を目指しています。これはAIインフラ構築に向けた大規模な債務調達の動きを加速させるものです。（記事19）
+- slide: 7
+  script: GoogleのAI・Android機能強化。GoogleはAndroid向けに、紛失した荷物を探す「Find Hub」、Pixelデバイス向けの新パーソナライゼーションおよびAIツールを含む「March
+    Pixel Drop」、そしてカスタム通話カードやライブ位置情報共有といった新機能を発表しました。（記事1, 2, 3, 18）
+- slide: 8
+  script: 本日のAI・IT株式ニュースは以上です。
+- slide: 9
+  script: ご視聴いただきありがとうございました。実はこのレポート、if塾の塾頭高崎による「完全自動化への挑戦」プロジェクトの一環として、AIが自動生成しています。将来的には塾頭が執筆しているような自然な記事になることを目指しており、現時点では事実と異なる内容が含まれる可能性もあります。この挑戦に共感していただけたら、ぜひチャンネル登録とグッドボタンをよろしくお願いします！また、無料のAI教育や導入コンサルも受け付けています。詳しくは概要欄のリンクからお問い合わせください。
+disclaimer: このレポートはAI（Gemini）により自動生成されています。投資判断は必ずご自身で行ってください。
