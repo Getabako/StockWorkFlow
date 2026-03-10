@@ -104,14 +104,19 @@ def create_weekly_summary_embed(title: str, sections: dict, color: int) -> dict:
         "ポートフォリオサマリー",
         "🎯 今週の投資推奨銘柄",
         "今週の投資推奨銘柄",
+        "🌐 セクター分散候補（AI恩恵セクター）",
         "📅 来週の注目イベント",
         "来週の注目イベント",
         # ポートフォリオ影響分析レポート用
         "サマリー",
         "本日のアクション提案",
         "未実行提案の状況確認",
+        "注目セクター動向",
         "新規購入候補",
-        "明日以降の注目点"
+        "明日以降の注目点",
+        # 日次市場レポート用
+        "エグゼクティブサマリー",
+        "今日の注目ポイント"
     ]
 
     for section_name in key_sections:
@@ -180,8 +185,13 @@ def create_discord_embed(title: str, sections: dict, color: int) -> dict:
         "大型契約・受注",
         "新製品・新技術",
         "業績・財務情報",
+        "ロボティクス・医療テック",
+        "ロボティクス・自動化",
+        "医療・ヘルステック",
+        "宇宙・EV・新興テック",
         "その他の重要情報",
         "投資への示唆",
+        "今日の注目ポイント",
         "ポートフォリオサマリー",
         "📊 ポートフォリオサマリー",
         "今週の推奨アクション",
@@ -190,6 +200,7 @@ def create_discord_embed(title: str, sections: dict, color: int) -> dict:
         "ポートフォリオ最適化の提案",
         "来週の注意事項",
         "📅 来週の注目イベント",
+        "注目セクター動向",
         "未実行提案の状況確認",
         "明日以降の注目点"
     ]
@@ -347,6 +358,16 @@ def main():
         embed = create_weekly_summary_embed(title, sections, color)
     else:
         embed = create_discord_embed(title, sections, color)
+
+    # Embed合計文字数チェック（Discord制限: 6000文字）
+    total_chars = len(embed.get("title", "")) + len(embed.get("description", ""))
+    for field in embed.get("fields", []):
+        total_chars += len(field.get("name", "")) + len(field.get("value", ""))
+    print(f"  Embed total characters: {total_chars}")
+
+    if total_chars > 5800:
+        print("  Embed too large, switching to summary format...")
+        embed = create_weekly_summary_embed(title, sections, color)
 
     print(f"Sending to Discord...")
     send_to_discord(webhook_url, embed, attachment_file)
