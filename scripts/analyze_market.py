@@ -72,13 +72,13 @@ def create_market_analysis_prompt(articles: list, ai_insights: dict = None) -> s
             ai_insights_text += f"- {trend}\n"
 
         ai_insights_text += "\n**注目すべき企業**:\n"
-        for tier in ['tier_1_critical', 'tier_2_strategic']:
+        for tier in ['tier_1_critical', 'tier_2_strategic', 'medical_healthcare_sector', 'ev_autonomous_sector', 'space_technology_sector', 'manufacturing_industry40_sector']:
             if tier in watch_list:
                 for company in watch_list[tier]:
                     ai_insights_text += f"- **{company['name']}**: {company['role']}\n"
 
     prompt = f"""
-あなたはAI/IT業界の市場アナリストです。以下のニュース記事から、AI/IT業界の市場動向を分析してください。
+あなたはAI/ITおよび関連テクノロジーセクター（ロボティクス、医療テック、宇宙産業、EV/自動運転、製造業DX）の市場アナリストです。以下のニュース記事から、テクノロジーセクター全体の市場動向を分析してください。
 
 {ai_insights_text if ai_insights_text else ""}
 
@@ -90,6 +90,11 @@ def create_market_analysis_prompt(articles: list, ai_insights: dict = None) -> s
 5. **業績発表**: 四半期決算や業績予想の修正
 6. **規制・政策変更**: 業界に影響を与える法規制の変更
 7. **人事**: 重要なCレベルの人事異動
+8. **ロボティクス・自動化**: ロボット技術、自動化システムの進展
+9. **医療・ヘルステック**: 医療AI、デジタルヘルス、医療機器の動向
+10. **宇宙産業**: 商用宇宙、衛星、打ち上げ関連の動向
+11. **EV・自動運転**: 電気自動車、自動運転技術の進展
+12. **スマートファクトリー**: Industry 4.0、製造業DXの動向
 
 ## 入力記事（過去24時間）
 {articles_text}
@@ -97,7 +102,7 @@ def create_market_analysis_prompt(articles: list, ai_insights: dict = None) -> s
 ## 出力フォーマット
 以下のMarkdown形式でレポートを作成してください：
 
-# AI/IT市場 日次情勢レポート
+# AI/IT・テクノロジーセクター 日次情勢レポート
 **作成日時**: {datetime.now().strftime('%Y年%m月%d日 %H:%M')}
 
 ## エグゼクティブサマリー
@@ -117,6 +122,12 @@ def create_market_analysis_prompt(articles: list, ai_insights: dict = None) -> s
 （該当する情報がある場合のみ記載）
 
 ### 業績・財務情報
+（該当する情報がある場合のみ記載）
+
+### ロボティクス・医療テック
+（該当する情報がある場合のみ記載）
+
+### 宇宙・EV・新興テック
 （該当する情報がある場合のみ記載）
 
 ### その他の重要情報
@@ -165,7 +176,7 @@ def save_report(report: str, output_file: str = "output/market_report.md"):
 def main():
     """メイン処理"""
     print("=" * 60)
-    print("AI/IT Market Analysis - Daily Report Generator")
+    print("AI/IT & Tech Sector Market Analysis - Daily Report Generator")
     print("=" * 60)
 
     # 記事データを読み込む
@@ -184,7 +195,7 @@ def main():
 
     if len(articles) == 0:
         print("\nNo articles found. Creating empty report...")
-        empty_report = f"""# AI/IT市場 日次情勢レポート
+        empty_report = f"""# AI/IT・テクノロジーセクター 日次情勢レポート
 **作成日時**: {datetime.now().strftime('%Y年%m月%d日 %H:%M')}
 
 ## エグゼクティブサマリー

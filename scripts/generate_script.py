@@ -184,7 +184,7 @@ def generate_script_for_slide(client, slide, total_slides, max_retries=3):
     for attempt in range(max_retries):
         try:
             response = client.models.generate_content(
-                model='gemini-2.0-flash-exp',
+                model='gemini-2.5-flash',
                 contents=prompt,
             )
             script = response.text.strip()

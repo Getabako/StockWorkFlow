@@ -277,7 +277,7 @@ def create_action_prompt(portfolio_df: pd.DataFrame, ai_insights: dict = None, a
         # 現在保有している銘柄に関連する情報を抽出
         portfolio_symbols = portfolio_df['symbol'].tolist()
         ai_insights_text += "\n**保有銘柄に関する業界トレンド**:\n"
-        for tier in ['tier_1_critical', 'tier_2_strategic']:
+        for tier in ['tier_1_critical', 'tier_2_strategic', 'medical_healthcare_sector', 'ev_autonomous_sector', 'space_technology_sector', 'manufacturing_industry40_sector']:
             if tier in watch_list:
                 for company in watch_list[tier]:
                     symbol = company.get('symbol', '')
@@ -302,7 +302,7 @@ def create_action_prompt(portfolio_df: pd.DataFrame, ai_insights: dict = None, a
 """
 
     prompt = f"""
-あなたはAI/IT株式投資の教育的アドバイザーです。投資初心者が自分で考えて判断できるよう、詳細な分析と理由を提供してください。
+あなたはAI/ITおよび関連テクノロジーセクター（ロボティクス、医療テック、宇宙産業、EV/自動運転、製造業DX）の教育的投資アドバイザーです。投資初心者が自分で考えて判断できるよう、詳細な分析と理由を提供してください。
 
 ## ★ 週次レポートのルール ★
 - **売買提案は週次レポートのみで行います。このレポートは週次です。**
@@ -344,6 +344,7 @@ def create_action_prompt(portfolio_df: pd.DataFrame, ai_insights: dict = None, a
    - 圧倒的な含み益を活かしたポートフォリオの最適化
    - 利益確定のタイミングとリバランスの検討
    - さらなる成長を狙った戦略的な追加投資
+   - AI恩恵セクター（医療テック、宇宙、EV、製造業DX）へのセクター分散
 4. **基本方針**:
    - 含み益銘柄の一部利確によるリスク管理
    - 利益を活かした新規銘柄への分散投資
@@ -364,7 +365,7 @@ def create_action_prompt(portfolio_df: pd.DataFrame, ai_insights: dict = None, a
 ## 出力フォーマット
 以下のMarkdown形式で、**教育的で詳細な**週次アクションレポートを作成してください：
 
-# AI/IT株式投資 週次アクションレポート
+# AI/IT・テクノロジーセクター 週次アクションレポート
 **作成日時**: {datetime.now().strftime('%Y年%m月%d日 %H:%M')}
 
 ## 📊 ポートフォリオサマリー
@@ -427,6 +428,23 @@ def create_action_prompt(portfolio_df: pd.DataFrame, ai_insights: dict = None, a
 
 **注意**: NVIDIAは+1,000%超の含み益があるため「ナンピン買い」ではなく「利確」や「ホールド」を検討。
 AMDのみが含み損（-11%）なので、こちらについてのみ「買い増しで平均取得単価を下げる」選択肢を検討可能。
+
+---
+
+## 🌐 セクター分散候補（AI恩恵セクター）
+（AI半導体以外で、AIの発展に連動して成長するセクターの注目銘柄を提示）
+
+### 医療・ヘルステック
+（例: Intuitive Surgical (ISRG), DexCom (DXCM) — 該当する注目動向があれば記載）
+
+### 宇宙産業
+（例: Rocket Lab (RKLB) — 該当する注目動向があれば記載）
+
+### EV・自動運転
+（例: Tesla (TSLA - 保有中), Rivian (RIVN) — 該当する注目動向があれば記載）
+
+### 製造業DX・スマートファクトリー
+（例: キーエンス (6861.T), ファナック (6954.T), Rockwell (ROK) — 該当する注目動向があれば記載）
 
 ---
 
@@ -519,7 +537,7 @@ def save_action_report(report: str, output_file: str = "output/weekly_action_rep
 def main():
     """メイン処理"""
     print("=" * 60)
-    print("AI/IT Stock Investment - Action Plan Generator")
+    print("AI/IT & Tech Sector - Action Plan Generator")
     print("=" * 60)
 
     # ポートフォリオサマリーを読み込む

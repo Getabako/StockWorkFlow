@@ -89,6 +89,67 @@ RSS_FEEDS = {
             "category": "Tech News",
             "note": "RSSフィードが変更される可能性があります"
         }
+    ],
+    "ロボティクス・製造業": [
+        {
+            "name": "IEEE Spectrum Robotics",
+            "url": "https://spectrum.ieee.org/feeds/topic/robotics.rss",
+            "category": "Robotics/Automation"
+        },
+        {
+            "name": "The Robot Report",
+            "url": "https://www.therobotreport.com/feed/",
+            "category": "Robotics Industry"
+        },
+        {
+            "name": "Rockwell Automation",
+            "url": "https://www.rockwellautomation.com/en-us/company/news.rss",
+            "category": "Industrial Automation"
+        },
+        {
+            "name": "Intuitive Surgical",
+            "url": "https://isrg.gcs-web.com/rss/news-releases.xml",
+            "category": "Medical Robotics"
+        }
+    ],
+    "医療・ヘルステック": [
+        {
+            "name": "Fierce Biotech",
+            "url": "https://www.fiercebiotech.com/rss/xml",
+            "category": "MedTech/Healthcare AI"
+        },
+        {
+            "name": "MedTech Dive",
+            "url": "https://www.medtechdive.com/feeds/news/",
+            "category": "MedTech Industry"
+        }
+    ],
+    "宇宙・EV・新興テック": [
+        {
+            "name": "SpaceNews",
+            "url": "https://spacenews.com/feed/",
+            "category": "Space Technology"
+        },
+        {
+            "name": "Rocket Lab",
+            "url": "https://www.globenewswire.com/RssFeed/company/6960/feedTitle/Rocket-Lab-USA-Inc/feedType/press_release",
+            "category": "Space Launch"
+        },
+        {
+            "name": "Tesla",
+            "url": "https://ir.tesla.com/rss/news-releases.xml",
+            "category": "EV/Autonomous Driving"
+        },
+        {
+            "name": "NASA",
+            "url": "https://www.nasa.gov/rss/dyn/breaking_news.rss",
+            "category": "Space/Aerospace"
+        },
+        {
+            "name": "Electrek",
+            "url": "https://electrek.co/feed/",
+            "category": "EV/Clean Energy"
+        }
     ]
 }
 
@@ -212,7 +273,7 @@ def save_articles(articles: List[Dict], output_file: str = "output/articles.json
 def main():
     """メイン処理"""
     print("=" * 60)
-    print("AI/IT Stock Investment - News Fetcher")
+    print("AI/IT & テクノロジーセクター - News Fetcher")
     print("=" * 60)
 
     # 記事を取得（過去24時間）
