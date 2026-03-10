@@ -6,17 +6,17 @@ slides:
 
     本日の注目トピック'
 - title: 本日のサマリー
-  content: AIセクターはエンタープライズAI、エッジAI、セキュリティ分野で活況を呈していますが、OpenAIのデータセンター戦略変更や主要企業に対する政府規制、倫理問題が顕在化しています。AIハードウェアの需要は引き続き堅調。ロボティクス・自動運転分野では技術の進化と商用展開が加速する一方で、安全性への懸念や主要な人材の流出も確認されました。
+  content: 本日の市場では、GoogleによるGeminiの機能拡張とマルチモーダルAIの進化、および医療分野へのAI応用加速が顕著でした。AIインフラへの投資意欲は引き続き旺盛で、OracleやHPEの好調な業績予想が発表されています。ロボティクス分野ではAIとの融合が加速し、EV市場では固体電池技術のブレークスルーや新たなEVモデルの投入、電力グリッド効率化に向けた大手企業連合の動きが見られます。
 - title: M&A・企業買収
-  content: OpenAI、Promptfooを買収
+  content: MetaによるMoltbook買収
 - title: M&A・企業買収
-  content: Agilent、Biocare Medicalを9.5億ドルで買収
-- title: M&A・企業買収
-  content: アブダビのJudan、Alpha Waveの株式を取得
+  content: MedtronicによるScientia Vascular買収
 - title: 戦略的提携・パートナーシップ
-  content: OpenAIとOracleのデータセンター計画中止
+  content: Tesla, Google, Carrierによる電力グリッド最適化連合「Utilize」
 - title: 戦略的提携・パートナーシップ
-  content: ABB、NVIDIA Omniverseライブラリを活用
+  content: KrakenとNasdaqの提携
+- title: 大型契約・受注
+  content: Amazonによる約500億ドルの債券発行
 - title: まとめ
   content: '本日のレポートは以上です
 
@@ -35,23 +35,19 @@ script_notes:
 - slide: 1
   script: うぃっすー！if塾AIニュースのお時間です。2026/03/10のAI・IT株式ニュースをお届けします。
 - slide: 2
-  script: AIセクターはエンタープライズAI、エッジAI、セキュリティ分野で活況を呈していますが、OpenAIのデータセンター戦略変更や主要企業に対する政府規制、倫理問題が顕在化しています。AIハードウェアの需要は引き続き堅調。ロボティクス・自動運転分野では技術の進化と商用展開が加速する一方で、安全性への懸念や主要な人材の流出も確認されました。宇宙産業は民間投資と国家プロジェクトの両面で活動が活発です。
+  script: 本日の市場では、GoogleによるGeminiの機能拡張とマルチモーダルAIの進化、および医療分野へのAI応用加速が顕著でした。AIインフラへの投資意欲は引き続き旺盛で、OracleやHPEの好調な業績予想が発表されています。ロボティクス分野ではAIとの融合が加速し、EV市場では固体電池技術のブレークスルーや新たなEVモデルの投入、電力グリッド効率化に向けた大手企業連合の動きが見られます。宇宙産業でも民間企業の資金調達や技術開発が進んでおり、各セクターでイノベーションと大規模な資金移動が活発化しています。
 - slide: 3
-  script: OpenAI、Promptfooを買収。AIセキュリティスタートアップPromptfooを買収し、企業顧客向けのAIモデルのセキュリティ強化とリスク軽減を推進する方針。(記事
-    16)
+  script: MetaによるMoltbook買収。MetaはAIエージェント向けのソーシャルネットワーク「Moltbook」を買収することを発表しました。(記事33)
 - slide: 4
-  script: Agilent、Biocare Medicalを9.5億ドルで買収。診断分野を強化するため、免疫組織化学に強みを持つBiocare Medicalの買収を発表。(記事
-    34)
+  script: MedtronicによるScientia Vascular買収。Medtronicは脳卒中治療用血管アクセス製品メーカーであるScientia
+    Vascularを5億5000万ドルで買収すると発表しました。(記事41)
 - slide: 5
-  script: アブダビのJudan、Alpha Waveの株式を取得。Abu Dhabiの金融サービス持株会社Judanが、SpaceX、Anthropic、OpenAIといった主要AI企業に投資するオルタナティブ資産運用会社Alpha
-    Wave Globalの過半数株式を取得。(記事 21)
+  script: Tesla, Google, Carrierによる電力グリッド最適化連合「Utilize」。Tesla、Google、Carrierなどが共同で「Utilize」という新産業連合を立ち上げました。米国電力グリッドの未使用容量を解放することで、今後10年間で消費者向けに1,000億ドル以上のコスト削減を目指します。(記事66)
 - slide: 6
-  script: OpenAIとOracleのデータセンター計画中止。OpenAIとOracleが旗艦データセンタープロジェクトの拡張計画を中止。OpenAIのインフラ戦略における流動性を示唆。(記事
-    9)
+  script: KrakenとNasdaqの提携。グローバル仮想通貨プラットフォームKrakenの親会社Paywardは、Nasdaqと提携し、規制された市場とオンチェーン市場間でトークン化された株式を移動させるためのゲートウェイを設計する予定です。(記事19)
 - slide: 7
-  script: ABB、NVIDIA Omniverseライブラリを活用。ABBが産業用ロボットシミュレーションソフトウェアRobotStudioをNVIDIA
-    Omniverseライブラリで強化し、2026年後半に「RobotStudio HyperReality simulator」をリリース予定。産業用ロボットのデジタルツイン技術を推進。(記事
-    32)
+  script: Amazonによる約500億ドルの債券発行。Amazon.com Inc.は、米国債券市場で370億ドルを調達し、ユーロ建て債券と合わせると約500億ドルの資金調達を目指しています。これは米国企業債券発行で過去最大規模の一日となりました。(記事6,
+    10, 24)
 - slide: 8
   script: 本日のAI・IT株式ニュースは以上です。
 - slide: 9
