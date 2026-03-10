@@ -6,17 +6,17 @@ slides:
 
     本日の注目トピック'
 - title: 本日のサマリー
-  content: 本日のレポートでは、AIインフラへの旺盛な需要がHPEの業績予測を押し上げる一方で、OpenAIがデータセンター拡張計画を中止し、AIセキュリティスタートアップを買収するなど、戦略調整とエコシステム強化の動きが顕著になりました。また、AIエージェントの台頭と垂直分野への応用が進む中、軍事利用を巡るOpenAIの主要人事の辞任やTeslaの自動運転FSDにおける安全性問題など、AIの倫理・安全...
+  content: AIセクターはエンタープライズAI、エッジAI、セキュリティ分野で活況を呈していますが、OpenAIのデータセンター戦略変更や主要企業に対する政府規制、倫理問題が顕在化しています。AIハードウェアの需要は引き続き堅調。ロボティクス・自動運転分野では技術の進化と商用展開が加速する一方で、安全性への懸念や主要な人材の流出も確認されました。
 - title: M&A・企業買収
-  content: OpenAIがAIセキュリティスタートアップPromptfooを買収
+  content: OpenAI、Promptfooを買収
 - title: M&A・企業買収
-  content: AgilentがBiocare Medicalを9億5000万ドルで買収
+  content: Agilent、Biocare Medicalを9.5億ドルで買収
 - title: M&A・企業買収
-  content: アブダビのJudanがAlpha Wave Globalの過半数株式を取得
-- title: M&A・企業買収
-  content: Voyager TechnologiesがMax Spaceに投資
+  content: アブダビのJudan、Alpha Waveの株式を取得
 - title: 戦略的提携・パートナーシップ
-  content: OracleとOpenAIがデータセンター拡張計画を中止
+  content: OpenAIとOracleのデータセンター計画中止
+- title: 戦略的提携・パートナーシップ
+  content: ABB、NVIDIA Omniverseライブラリを活用
 - title: まとめ
   content: '本日のレポートは以上です
 
@@ -35,22 +35,23 @@ script_notes:
 - slide: 1
   script: うぃっすー！if塾AIニュースのお時間です。2026/03/10のAI・IT株式ニュースをお届けします。
 - slide: 2
-  script: 本日のレポートでは、AIインフラへの旺盛な需要がHPEの業績予測を押し上げる一方で、OpenAIがデータセンター拡張計画を中止し、AIセキュリティスタートアップを買収するなど、戦略調整とエコシステム強化の動きが顕著になりました。また、AIエージェントの台頭と垂直分野への応用が進む中、軍事利用を巡るOpenAIの主要人事の辞任やTeslaの自動運転FSDにおける安全性問題など、AIの倫理・安全性、および規制に関する課題が浮上しています。宇宙産業とEV/自動運転セクターでは、民間投資と実用化が加速していますが、技術開発の難しさや人材の流出といった課題も抱えています。
+  script: AIセクターはエンタープライズAI、エッジAI、セキュリティ分野で活況を呈していますが、OpenAIのデータセンター戦略変更や主要企業に対する政府規制、倫理問題が顕在化しています。AIハードウェアの需要は引き続き堅調。ロボティクス・自動運転分野では技術の進化と商用展開が加速する一方で、安全性への懸念や主要な人材の流出も確認されました。宇宙産業は民間投資と国家プロジェクトの両面で活動が活発です。
 - slide: 3
-  script: OpenAIがAIセキュリティスタートアップPromptfooを買収。AIモデルのセキュリティ問題を特定し修正するPromptfooを買収し、企業顧客向けAIソフトウェアのリスク低減を強化します。(記事
+  script: OpenAI、Promptfooを買収。AIセキュリティスタートアップPromptfooを買収し、企業顧客向けのAIモデルのセキュリティ強化とリスク軽減を推進する方針。(記事
     16)
 - slide: 4
-  script: AgilentがBiocare Medicalを9億5000万ドルで買収。診断技術企業Agilentが免疫組織化学分野で成長するBiocare
-    Medicalを買収し、新しい体外診断用抗体の開発能力を強化します。(記事 34)
+  script: Agilent、Biocare Medicalを9.5億ドルで買収。診断分野を強化するため、免疫組織化学に強みを持つBiocare Medicalの買収を発表。(記事
+    34)
 - slide: 5
-  script: アブダビのJudanがAlpha Wave Globalの過半数株式を取得。アブダビの金融サービス持ち株会社Judanが、SpaceX、Anthropic、OpenAIなど主要AI企業に投資するAlpha
-    Wave Globalの過半数株式を取得。AI・宇宙セクターへの大規模な投資流入を示唆します。(記事 21)
+  script: アブダビのJudan、Alpha Waveの株式を取得。Abu Dhabiの金融サービス持株会社Judanが、SpaceX、Anthropic、OpenAIといった主要AI企業に投資するオルタナティブ資産運用会社Alpha
+    Wave Globalの過半数株式を取得。(記事 21)
 - slide: 6
-  script: Voyager TechnologiesがMax Spaceに投資。Voyager TechnologiesがMax Spaceに投資し、月面居住地開発における両社のパートナーシップを加速させます。(記事
-    39)
-- slide: 7
-  script: OracleとOpenAIがデータセンター拡張計画を中止。OracleとOpenAIはテキサス州での主要データセンター拡張計画を中止しました。これはOpenAIのインフラ戦略における変更、あるいは地政学的・規制リスクの影響を示唆する可能性があります。(記事
+  script: OpenAIとOracleのデータセンター計画中止。OpenAIとOracleが旗艦データセンタープロジェクトの拡張計画を中止。OpenAIのインフラ戦略における流動性を示唆。(記事
     9)
+- slide: 7
+  script: ABB、NVIDIA Omniverseライブラリを活用。ABBが産業用ロボットシミュレーションソフトウェアRobotStudioをNVIDIA
+    Omniverseライブラリで強化し、2026年後半に「RobotStudio HyperReality simulator」をリリース予定。産業用ロボットのデジタルツイン技術を推進。(記事
+    32)
 - slide: 8
   script: 本日のAI・IT株式ニュースは以上です。
 - slide: 9
