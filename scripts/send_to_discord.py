@@ -286,44 +286,85 @@ def get_mime_type(file_path: str) -> str:
 
 def send_to_discord(webhook_url: str, embed: dict, file_path: str = None):
     """
-    Discordにメッセージを送信します。
+    Discordにメッセージを送信します。リトライとフォールバック付き。
 
     Args:
         webhook_url: Discord Webhook URL
         embed: Embed形式のデータ
         file_path: 添付するファイルのパス（オプション）
     """
+    import time
+
     payload = {
         "embeds": [embed]
     }
 
+    max_retries = 3
+
+    # 1. ファイル添付ありで送信を試行
     if file_path and os.path.exists(file_path):
-        # ファイル添付あり
         mime_type = get_mime_type(file_path)
         print(f"Attaching file: {os.path.basename(file_path)} ({mime_type})")
 
-        with open(file_path, 'rb') as f:
-            files = {
-                'file': (os.path.basename(file_path), f, mime_type)
-            }
-            data = {
-                'payload_json': json.dumps(payload)
-            }
-            response = requests.post(webhook_url, data=data, files=files)
-    else:
-        # ファイル添付なし
+        for attempt in range(1, max_retries + 1):
+            with open(file_path, 'rb') as f:
+                files = {
+                    'file': (os.path.basename(file_path), f, mime_type)
+                }
+                data = {
+                    'payload_json': json.dumps(payload)
+                }
+                response = requests.post(webhook_url, data=data, files=files)
+
+            if response.status_code in [200, 204]:
+                print("✓ Successfully sent to Discord (with attachment)")
+                return
+            elif response.status_code == 500 and attempt < max_retries:
+                wait = attempt * 3
+                print(f"  Discord 500 error, retrying in {wait}s... (attempt {attempt}/{max_retries})")
+                time.sleep(wait)
+            else:
+                print(f"  Failed with attachment (status {response.status_code}), trying without...")
+                break
+
+    # 2. ファイルなしで送信（フォールバック）
+    for attempt in range(1, max_retries + 1):
         response = requests.post(
             webhook_url,
             json=payload,
             headers={'Content-Type': 'application/json'}
         )
 
+        if response.status_code in [200, 204]:
+            print("✓ Successfully sent to Discord (without attachment)")
+            return
+        elif response.status_code == 500 and attempt < max_retries:
+            wait = attempt * 3
+            print(f"  Discord 500 error, retrying in {wait}s... (attempt {attempt}/{max_retries})")
+            time.sleep(wait)
+
+    # 3. 最終手段: 最小限のembedで送信
+    print("  Trying minimal embed as last resort...")
+    minimal_payload = {
+        "embeds": [{
+            "title": embed.get("title", "レポート"),
+            "description": embed.get("description", "")[:2000] if embed.get("description") else "レポートを生成しました。詳細はPDFをご確認ください。",
+            "color": embed.get("color", 3066993)
+        }]
+    }
+    response = requests.post(
+        webhook_url,
+        json=minimal_payload,
+        headers={'Content-Type': 'application/json'}
+    )
+
     if response.status_code in [200, 204]:
-        print("✓ Successfully sent to Discord")
+        print("✓ Successfully sent minimal embed to Discord")
     else:
-        print(f"✗ Failed to send to Discord: {response.status_code}")
+        print(f"✗ All Discord send attempts failed: {response.status_code}")
         print(f"  Response: {response.text}")
-        sys.exit(1)
+        print("  WARNING: Continuing without Discord notification")
+        # Discord失敗でもワークフロー全体は止めない
 
 
 def main():

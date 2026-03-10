@@ -135,21 +135,20 @@ jobs:
           git push origin main
 
       - name: Send Market Report to Discord
-        if: success()
+        continue-on-error: true
         run: |
           python scripts/send_to_discord.py \
             "${{ secrets.DISCORD_WEBHOOK_URL }}" \
-            "📊 AI/IT市場 日次情勢レポート (${{ env.REPORT_DATE }})" \
+            "📊 AI/IT・テクノロジーセクター 日次情勢レポート (${{ env.REPORT_DATE }})" \
             "output/market_report.md" \
             "3066993" \
             "output/market_report_${{ env.REPORT_DATE }}.pdf"
 
       - name: Wait before sending second report
-        if: success()
         run: sleep 5
 
       - name: Send Portfolio Impact Report to Discord
-        if: success()
+        continue-on-error: true
         run: |
           python scripts/send_to_discord.py \
             "${{ secrets.DISCORD_WEBHOOK_URL }}" \
