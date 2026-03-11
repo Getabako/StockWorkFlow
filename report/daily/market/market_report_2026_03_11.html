@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI/IT・テクノロジーセクター 日次情勢レポート</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #0ea5e9;
+            --success-color: #10b981;
+            --danger-color: #ef4444;
+            --warning-color: #f59e0b;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-primary: #1e293b;
+            --text-secondary: #64748b;
+            --border-color: #e2e8f0;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        body {
+            font-family: 'Noto Sans JP', 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: var(--text-primary);
+            line-height: 1.7;
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            border-radius: 16px;
+            box-shadow: var(--shadow-lg);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            animation: pulse 15s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            50% { transform: translate(-10%, -10%) scale(1.1); }
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            font-weight: 700;
+            margin-bottom: 10px;
+            position: relative;
+            z-index: 1;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .header .subtitle {
+            font-size: 1.1em;
+            opacity: 0.95;
+            position: relative;
+            z-index: 1;
+            font-weight: 300;
+        }
+
+        .content {
+            padding: 50px;
+        }
+
+        h1 {
+            color: #1e3a8a;
+            font-size: 2.2em;
+            margin: 30px 0 20px 0;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #1e3a8a;
+            font-weight: 700;
+        }
+
+        h2 {
+            color: #0c4a6e;
+            font-size: 1.8em;
+            margin: 35px 0 20px 0;
+            padding-left: 15px;
+            border-left: 5px solid #0c4a6e;
+            font-weight: 600;
+        }
+
+        h3 {
+            color: var(--text-primary);
+            font-size: 1.4em;
+            margin: 25px 0 15px 0;
+            padding: 12px 20px;
+            background: linear-gradient(90deg, var(--bg-color) 0%, transparent 100%);
+            border-radius: 8px;
+            font-weight: 600;
+        }
+
+        h4 {
+            color: var(--text-secondary);
+            font-size: 1.1em;
+            margin: 20px 0 10px 0;
+            font-weight: 500;
+        }
+
+        p {
+            margin: 15px 0;
+            color: var(--text-primary);
+            font-size: 1.05em;
+        }
+
+        strong {
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        em {
+            font-style: italic;
+            color: var(--text-secondary);
+        }
+
+        ul, ol {
+            margin: 20px 0;
+            padding-left: 30px;
+        }
+
+        li {
+            margin: 12px 0;
+            line-height: 1.8;
+            color: var(--text-primary);
+        }
+
+        ul li {
+            list-style-type: none;
+            position: relative;
+            padding-left: 25px;
+        }
+
+        ul li::before {
+            content: '▸';
+            color: var(--primary-color);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+            font-size: 1.2em;
+        }
+
+        blockquote {
+            margin: 25px 0;
+            padding: 20px 25px;
+            background: var(--bg-color);
+            border-left: 5px solid var(--warning-color);
+            border-radius: 0 8px 8px 0;
+            font-style: italic;
+            color: var(--text-secondary);
+            box-shadow: var(--shadow);
+        }
+
+        hr {
+            border: none;
+            border-top: 2px solid var(--border-color);
+            margin: 40px 0;
+            opacity: 0.5;
+        }
+
+        code {
+            background: #f1f5f9;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            color: #dc2626;
+        }
+
+        pre {
+            background: #1e293b;
+            color: #e2e8f0;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 20px 0;
+            box-shadow: var(--shadow);
+        }
+
+        pre code {
+            background: none;
+            color: inherit;
+            padding: 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        th {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: white;
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        td {
+            padding: 15px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        tr:hover {
+            background: var(--bg-color);
+        }
+
+        .summary-box {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            border-left: 5px solid var(--warning-color);
+            padding: 25px;
+            margin: 25px 0;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+
+        .info-box {
+            background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+            border-left: 5px solid var(--primary-color);
+            padding: 25px;
+            margin: 25px 0;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+
+        .success-box {
+            background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+            border-left: 5px solid var(--success-color);
+            padding: 25px;
+            margin: 25px 0;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+
+        .footer {
+            background: var(--bg-color);
+            padding: 30px;
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 0.9em;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .footer p {
+            margin: 5px 0;
+            color: var(--text-secondary);
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 0.85em;
+            font-weight: 500;
+            margin: 0 5px;
+        }
+
+        .badge-primary {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        .badge-success {
+            background: var(--success-color);
+            color: white;
+        }
+
+        .badge-warning {
+            background: var(--warning-color);
+            color: white;
+        }
+
+        .badge-danger {
+            background: var(--danger-color);
+            color: white;
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+
+            .container {
+                box-shadow: none;
+                max-width: 100%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 20px 10px;
+            }
+
+            .header {
+                padding: 30px 20px;
+            }
+
+            .header h1 {
+                font-size: 1.8em;
+            }
+
+            .content {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            h3 {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>AI/IT・テクノロジーセクター 日次情勢レポート</h1>
+            <div class="subtitle">AI/IT株式投資レポート - Powered by Gemini AI</div>
+        </div>
+
+        <div class="content">
+            <h1 id="aiit">AI/IT・テクノロジーセクター 日次情勢レポート</h1>
+<p><strong>作成日時</strong>: 2026年03月11日 21:26</p>
+<h2 id="_1">エグゼクティブサマリー</h2>
+<p>本日のテクノロジーセクターは、AI技術の広範な進化と実用化が加速しており、M&amp;Aや戦略的提携を通じて主要企業がAI能力を強化しています。EV・自動運転分野ではロボタクシーの提携や新型車の発表が続き、宇宙産業では商用化と政府契約の両面で動きが見られます。一方で、AI投資に対するROIへの懐疑論や、医療テック企業へのサイバー攻撃といった課題も浮上しており、成長とリスクが混在する一日となりました。</p>
+<h2 id="_2">重要ファクト</h2>
+<h3 id="ma">M&amp;A・企業買収</h3>
+<ul>
+<li><strong>Google/Alphabet</strong>はクラウドセキュリティ企業Wizの買収を完了しました。(記事3)</li>
+<li><strong>Netflix</strong>は、Ben Affleckが設立したAI映画制作会社InterPositiveを最大6億ドルで買収する予定です。(記事13)</li>
+<li><strong>Databricks</strong>は、AIアシスタントGenie Codeの発表と合わせて、Quotient AIの買収を発表しました。(記事22)</li>
+<li>防衛テクノロジー企業<strong>Anduril</strong>は、宇宙追跡企業ExoAnalytic Solutionsを買収し、宇宙事業を拡大しています。(記事49)</li>
+</ul>
+<h3 id="_3">戦略的提携・パートナーシップ</h3>
+<ul>
+<li><strong>Nvidia</strong>は、AIデータセンター開発のためNebius Group NVに20億ドルを投資し、戦略的パートナーシップを締結しました。(記事33)</li>
+<li><strong>Uber Technologies</strong>は、Amazon傘下の<strong>Zoox</strong>と提携し、今夏ラスベガスを皮切りにロボタクシーサービスを開始する予定です。(記事14, 32, 34, 63)</li>
+<li><strong>Elon Musk</strong>は、xAIとTeslaが共同でAIエージェント「Digital Optimus」（別名「Macrohard」）プロジェクトを進めると確認しました。これはxAIのGrok LLMを活用し、Teslaの20億ドル投資契約の一部となります。(記事67)</li>
+</ul>
+<h3 id="_4">大型契約・受注</h3>
+<ul>
+<li><strong>Amazon.com</strong>は、AIインフラ投資を目的として、ユーロ債市場で過去最大の145億ユーロ（約168億ドル）の債券を発行しました。(記事25)</li>
+<li><strong>Viasat</strong>は、海軍幹部航空機向けの機内衛星通信提供で1400万ドルの契約を獲得しました。(記事51)</li>
+</ul>
+<h3 id="_5">新製品・新技術の発表</h3>
+<ul>
+<li><strong>Google</strong>はChromeのAI機能をインド、ニュージーランド、カナダに拡大しました。(記事4)</li>
+<li>新しいAIエージェント「<strong>OpenClaw</strong>」が登場し、旅行予約やメール処理などの複雑なタスクを人間の代わりに実行しています。(記事6)</li>
+<li>出会い系アプリ<strong>Bumble</strong>はAIパワードアシスタントを発表しました。(記事7)</li>
+<li><strong>Apple</strong>の折りたたみ式iPhoneは、iPadのようなインターフェースとマルチタスク機能を搭載する予定です。(記事10)</li>
+<li><strong>Meta</strong>は、2027年末までに4世代の自社開発AIチップを導入し、AIワークロードに対応する計画を発表しました。(記事14, 28)</li>
+<li><strong>Databricks</strong>は技術者向けの自律型AIアシスタント「Genie Code」を発表しました。(記事22)</li>
+<li><strong>iRobot</strong>は、破産手続き後初の製品としてRoomba Miniを英国と欧州市場に投入しました。(記事35)</li>
+<li><strong>Hidonix</strong>は、空間知能とAI搭載ローバーを活用し、防衛テクノロジーに事業を転換しました。(記事36)</li>
+<li><strong>TRACO Power</strong>は、産業用途向けに小型で効率的なTMR 8WIコンバーターをリリースしました。(記事38)</li>
+<li><strong>Kia</strong>は、最も手頃な価格の新型EV「EV2」を欧州で発売予定です。(記事58)</li>
+<li><strong>Harbinger</strong>は、新型の低キャブフォワード電気ボックス型トラックを発表しました。(記事59)</li>
+<li>中西部の電力網で初のナトリウムイオン電池が導入される予定です。(記事61)</li>
+<li><strong>Volkswagen</strong>は、エントリーレベルEV「ID. Polo」のR-Lineモデルを発表予定です。(記事62)</li>
+<li><strong>CATL</strong>は、全固体EVバッテリーセルおよび電解質材料に関する国際特許を申請し、この新技術の市場投入に向けた野心的な計画を披露しました。(記事69)</li>
+</ul>
+<h3 id="_6">業績・財務情報</h3>
+<ul>
+<li><strong>OpenAI</strong>と<strong>SpaceX</strong>の潜在的なIPOが、未公開株市場での「不透明な取引」を誘引しています。(記事8)</li>
+<li><strong>Petco</strong>の年間利益見通しがアナリスト予想を上回り、株価が20%急騰しました。(記事9)</li>
+<li><strong>Xanadu Quantum Technologies</strong>は、量子データセンター建設のため政府から最大2億8700万ドルを受け取る予定です。(記事11)</li>
+<li><strong>Salesforce</strong>の250億ドルの債券発行は、AI投資と自社株買いへの懸念から需要が低調でした。(記事18)</li>
+<li><strong>Goldman Sachs</strong>は、投資家がAIへの多額の投資から得られるROI（投資収益率）について疑問を抱いていると指摘しました。(記事20)</li>
+<li><strong>Ripple</strong>は500億ドルの評価額で自社株買いを開始しました。(記事21)</li>
+<li><strong>SoftBank</strong>傘下の<strong>PayPay</strong>は、市場の混乱にもかかわらず、米国IPOを1株16ドルで実施予定です。(記事26)</li>
+<li>中国のレーザー衛星通信スタートアップ<strong>BlueStar Optical Domain</strong>が約7000万ドルの資金調達を完了し、中国の衛星インターネットコンステレーションからの需要増加を示唆しています。(記事48)</li>
+<li><strong>Starlab Space</strong>は、計画中の商業宇宙ステーションの商業ペイロードスペースを完売しました。(記事50)</li>
+<li>EV価格が再び下落し、ガソリン車との価格差が6,500ドルに縮小しました。(記事71)</li>
+</ul>
+<h3 id="_7">ロボティクス・医療テック</h3>
+<ul>
+<li><strong>Uber</strong>と<strong>Amazon</strong>の<strong>Zoox</strong>が提携し、ロボタクシーサービスをラスベガスで開始、来年にはロサンゼルスにも拡大します。(記事14, 32, 34, 63)</li>
+<li><strong>iRobot</strong>がRoomba Miniを英国と欧州市場に投入し、破産手続き後の初の製品展開となります。(記事35)</li>
+<li><strong>Hidonix</strong>が空間知能とAI搭載ローバーを活用し、防衛テクノロジーに事業を転換しました。(記事36)</li>
+<li><strong>Zoox</strong>は、フェニックスとダラスで専用設計のロボタクシーの試験運用を開始しました。これにより、試験運用地域は10市場に拡大します。(記事37)</li>
+<li><strong>Vitestro</strong>は7000万ドルを調達し、採血ロボットの米国市場投入を準備中です。(記事42)</li>
+<li>医療技術メーカー<strong>Stryker Corp.</strong>がサイバー攻撃を受け、世界的な業務に支障が出ており、親イラングループが犯行を主張しています。(記事15, 17, 39)</li>
+<li><strong>Medtronic</strong>はSean HaagをENT部門の社長に昇進させました。(記事40)</li>
+<li><strong>Coloplast</strong>は元J&amp;J幹部のGavin WoodをCEOに任命しました。(記事41)</li>
+</ul>
+<h3 id="ev">宇宙・EV・新興テック</h3>
+<ul>
+<li><strong>Arm</strong>テクノロジーが学生の宇宙探査とイノベーションを支援しています。(記事5)</li>
+<li><strong>SpaceX</strong>の潜在的IPOが未公開株市場を賑わせています。(記事8)</li>
+<li>イスラエルで衛星オペレーター<strong>SES</strong>のテレポート施設がミサイル攻撃を受けました。(記事43)</li>
+<li>NASAの<strong>Artemisプログラム</strong>で、ヘリウムシステムや水素漏れの問題によりArtemis 2ミッションが遅延。さらに、Space Forceは<strong>AeroVironment</strong>の衛星制御アンテナ契約を終了し、NASAはX線望遠鏡をミッション競争から失格させるなど、政府主導の宇宙開発に課題が浮上しています。(記事44, 45, 46)</li>
+<li><strong>Telesat</strong>はLightspeedブロードバンド衛星コンステレーション展開に向けて、カナダでの着陸局拠点を拡大しています。(記事47)</li>
+<li><strong>Anduril</strong>は宇宙追跡企業ExoAnalytic Solutionsを買収し、防衛テック企業の宇宙事業を拡大しています。(記事49)</li>
+<li><strong>Starlab Space</strong>は、計画中の商業宇宙ステーションの商業ペイロードスペースを完売しました。(記事50)</li>
+<li><strong>Uber</strong>と<strong>Amazon</strong>の<strong>Zoox</strong>が提携し、今夏ラスベガスでロボタクシーサービスを開始します。(記事14, 32, 34, 63)</li>
+<li><strong>Kia</strong>は最も手頃な価格の新型EV「EV2」を欧州で発売予定です。(記事58)</li>
+<li><strong>Rivian</strong>は、最も手頃なSUVであるR1S Dual Standardの段階的廃止を発表し、R2モデルへの道を開いています。(記事60)</li>
+<li>新型<strong>BMW iX3</strong>は、競合する高級EVよりも低価格で市場に投入される予定です。(記事66)</li>
+<li><strong>テスラ</strong> CybertruckオーナーがFSD（Full Self-Driving）の衝突事故でテスラを提訴。マスクCEOの「過失ある雇用」を主張しています。(記事68)</li>
+<li>EV価格が再び下落し、ガソリン車との価格差が6,500ドルに縮小。市場競争が激化しています。(記事71)</li>
+</ul>
+<h3 id="_8">その他の重要情報</h3>
+<ul>
+<li><strong>Google/Alphabet</strong>は、若年層向けの生成AIの安全性に関するロードマップを発表しました。(記事1)</li>
+<li>オーストラリアの16歳未満のソーシャルメディア利用制限が、VPNなどで回避されていることが判明しました。(記事24)</li>
+<li><strong>FCC</strong>は<strong>Amazon</strong>に対し、<strong>SpaceX</strong>への批判ではなく、自社の衛星ネットワーク構築に集中するよう忠告しました。(記事27)</li>
+<li><strong>Microsoft</strong>は、2027年に次世代Xboxの早期バージョンを開発者に提供開始予定です。(記事16)</li>
+<li>元Andreessen Horowitzのパートナーが、米国の産業基盤の課題解決に特化した早期スタートアップを対象とする新しいVCファームを設立しました。(記事23)</li>
+<li><strong>Fifth Third</strong>のCEOは、AIが銀行のコードの40%を記述しており、生産性向上と成長を加速していると発言しました。(記事31)</li>
+</ul>
+<h2 id="_9">今日の注目ポイント</h2>
+<p>本日は、GoogleによるWiz買収、NetflixによるAI映画制作会社買収、DatabricksによるQuotient AI買収など、AI企業のM&amp;Aが活発でした。また、UberとZoox、xAIとTeslaの提携発表は、自動運転およびAIロボティクス分野における大手企業間の協業と競争激化を示しています。一方で、AI投資のROIに対する懸念や、Strykerへのサイバー攻撃は、技術革新に伴う市場の成熟とリスク管理の重要性を浮き彫りにしています。</p>
+<hr />
+<p><em>このレポートはAI（Gemini）により自動生成されています。</em></p>
+        </div>
+
+        <div class="footer">
+            <p>このレポートはAI（Google Gemini）により自動生成されています。</p>
+            <p>投資判断は必ずご自身の責任で行ってください。</p>
+            <p>生成日時: 2026年03月11日 21:27:46</p>
+        </div>
+    </div>
+</body>
+</html>
