@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI/IT・テクノロジーセクター 週次アクションレポート</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #0ea5e9;
+            --success-color: #10b981;
+            --danger-color: #ef4444;
+            --warning-color: #f59e0b;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-primary: #1e293b;
+            --text-secondary: #64748b;
+            --border-color: #e2e8f0;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        body {
+            font-family: 'Noto Sans JP', 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: var(--text-primary);
+            line-height: 1.7;
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            border-radius: 16px;
+            box-shadow: var(--shadow-lg);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            animation: pulse 15s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            50% { transform: translate(-10%, -10%) scale(1.1); }
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            font-weight: 700;
+            margin-bottom: 10px;
+            position: relative;
+            z-index: 1;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .header .subtitle {
+            font-size: 1.1em;
+            opacity: 0.95;
+            position: relative;
+            z-index: 1;
+            font-weight: 300;
+        }
+
+        .content {
+            padding: 50px;
+        }
+
+        h1 {
+            color: #1e3a8a;
+            font-size: 2.2em;
+            margin: 30px 0 20px 0;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #1e3a8a;
+            font-weight: 700;
+        }
+
+        h2 {
+            color: #0c4a6e;
+            font-size: 1.8em;
+            margin: 35px 0 20px 0;
+            padding-left: 15px;
+            border-left: 5px solid #0c4a6e;
+            font-weight: 600;
+        }
+
+        h3 {
+            color: var(--text-primary);
+            font-size: 1.4em;
+            margin: 25px 0 15px 0;
+            padding: 12px 20px;
+            background: linear-gradient(90deg, var(--bg-color) 0%, transparent 100%);
+            border-radius: 8px;
+            font-weight: 600;
+        }
+
+        h4 {
+            color: var(--text-secondary);
+            font-size: 1.1em;
+            margin: 20px 0 10px 0;
+            font-weight: 500;
+        }
+
+        p {
+            margin: 15px 0;
+            color: var(--text-primary);
+            font-size: 1.05em;
+        }
+
+        strong {
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        em {
+            font-style: italic;
+            color: var(--text-secondary);
+        }
+
+        ul, ol {
+            margin: 20px 0;
+            padding-left: 30px;
+        }
+
+        li {
+            margin: 12px 0;
+            line-height: 1.8;
+            color: var(--text-primary);
+        }
+
+        ul li {
+            list-style-type: none;
+            position: relative;
+            padding-left: 25px;
+        }
+
+        ul li::before {
+            content: '▸';
+            color: var(--primary-color);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+            font-size: 1.2em;
+        }
+
+        blockquote {
+            margin: 25px 0;
+            padding: 20px 25px;
+            background: var(--bg-color);
+            border-left: 5px solid var(--warning-color);
+            border-radius: 0 8px 8px 0;
+            font-style: italic;
+            color: var(--text-secondary);
+            box-shadow: var(--shadow);
+        }
+
+        hr {
+            border: none;
+            border-top: 2px solid var(--border-color);
+            margin: 40px 0;
+            opacity: 0.5;
+        }
+
+        code {
+            background: #f1f5f9;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            color: #dc2626;
+        }
+
+        pre {
+            background: #1e293b;
+            color: #e2e8f0;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 20px 0;
+            box-shadow: var(--shadow);
+        }
+
+        pre code {
+            background: none;
+            color: inherit;
+            padding: 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        th {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: white;
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        td {
+            padding: 15px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        tr:hover {
+            background: var(--bg-color);
+        }
+
+        .summary-box {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            border-left: 5px solid var(--warning-color);
+            padding: 25px;
+            margin: 25px 0;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+
+        .info-box {
+            background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+            border-left: 5px solid var(--primary-color);
+            padding: 25px;
+            margin: 25px 0;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+
+        .success-box {
+            background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+            border-left: 5px solid var(--success-color);
+            padding: 25px;
+            margin: 25px 0;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+
+        .footer {
+            background: var(--bg-color);
+            padding: 30px;
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 0.9em;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .footer p {
+            margin: 5px 0;
+            color: var(--text-secondary);
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 0.85em;
+            font-weight: 500;
+            margin: 0 5px;
+        }
+
+        .badge-primary {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        .badge-success {
+            background: var(--success-color);
+            color: white;
+        }
+
+        .badge-warning {
+            background: var(--warning-color);
+            color: white;
+        }
+
+        .badge-danger {
+            background: var(--danger-color);
+            color: white;
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+
+            .container {
+                box-shadow: none;
+                max-width: 100%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 20px 10px;
+            }
+
+            .header {
+                padding: 30px 20px;
+            }
+
+            .header h1 {
+                font-size: 1.8em;
+            }
+
+            .content {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            h3 {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>AI/IT・テクノロジーセクター 週次アクションレポート</h1>
+            <div class="subtitle">AI/IT株式投資レポート - Powered by Gemini AI</div>
+        </div>
+
+        <div class="content">
+            <h1 id="aiit">AI/IT・テクノロジーセクター 週次アクションレポート</h1>
+<p><strong>作成日時</strong>: 2026年03月13日 21:42</p>
+<h2 id="_1">📊 ポートフォリオサマリー</h2>
+<p>今週もポートフォリオは素晴らしいパフォーマンスを維持しています。特に<strong>NVIDIA (NVDA)が+1025%という驚異的なリターン</strong>を記録しており、これがポートフォリオ全体を力強く牽引しています。この歴史的な成功により、一部の銘柄が含み損であっても、それを補って余りある<strong>「圧倒的な含み益状態」</strong>を確立できています。</p>
+<ul>
+<li><strong>米国株ポートフォリオ実績: +41.02%</strong> ($9,638.93の含み益)</li>
+<li><strong>牽引役: NVIDIA (NVDA) +1025.86%</strong></li>
+</ul>
+<p>この成功は、初期の慧眼がもたらした素晴らしい成果です。現在は、この莫大な含み益を元手に、さらなる高みを目指す<strong>「攻めの投資」</strong>に移行する絶好の機会と言えるでしょう。守りに入るのではなく、利益を戦略的に活用し、次の10倍株を探すためのリバランスと追加投資を検討していきましょう。</p>
+<hr />
+<h2 id="_2">💰 利益確定・リバランス検討</h2>
+<p>ポートフォリオの健全性を保ち、リスクを管理するために、突出したパフォーマンスを見せているNVIDIAの一部利益確定を検討します。これは「守り」ではなく、得た利益を次の成長エンジンに再投資するための<strong>戦略的なリバランス（攻めの資産再配分）</strong>です。</p>
+<h3 id="nvidia-nvda"><strong>NVIDIA (NVDA)</strong></h3>
+<ul>
+<li><strong>アクション</strong>: <strong>一部利益確定</strong></li>
+<li><strong>トリガー条件</strong>: <strong>$195以上で保有株数の15%（約10株）を売却</strong></li>
+<li><strong>根拠</strong>:<ol>
+<li><strong>利益の確保</strong>: +1000%を超える利益は、まず一部を確定させることで、将来の市場変動から守るべき資産です。</li>
+<li><strong>リスク分散</strong>: 現在、NVIDIAはポートフォリオ評価額の約36%を占めており、集中度が高まっています。一部を売却し、他の有望なセクターや銘柄に資金を振り分けることで、ポートフォリオ全体の安定性が向上します。</li>
+<li><strong>過熱感の警戒</strong>: 株価が52週高値圏にあり、RSI（相対力指数）が70を超えるような過熱感が見られる場合、短期的な調整が入る可能性があります。その前に利益を一部確定するのは賢明な戦略です。</li>
+<li><strong>再投資資金の創出</strong>: 売却で得た資金（約$1,950）は、後述する成長株への追加投資資金となり、ポートフォリオのさらなる成長を加速させます。</li>
+</ol>
+</li>
+</ul>
+<hr />
+<h2 id="_3">🎯 今週の投資推奨銘柄（追加投資候補）</h2>
+<p>追加投資予算約$20,000（約300万円）と、上記NVIDIAの売却益を元手に、ポートフォリオの次なる柱となる銘柄への投資を検討します。</p>
+<h3 id="a">推奨度 A（今週特に注目すべき銘柄）</h3>
+<h4 id="1-broadcom-avgo">1. Broadcom (AVGO)</h4>
+<p><strong>現在価格</strong>: $322.16<br />
+<strong>推奨投資額</strong>: $6,000 - $8,000<br />
+<strong>推奨株数</strong>: 18-25株</p>
+<p><strong>📈 選定ポイント（買うべき理由）</strong>:<br />
+1.  <strong>AIカスタムチップの主役</strong>: OpenAI、Google、Metaといった巨大テック企業が、NVIDIA製GPUからの依存脱却と電力効率化を目指し、独自のカスタムAIチップ（ASIC）開発を加速させています。Broadcomはこの分野の設計・製造で圧倒的なリーダーであり、この巨大な需要を直接取り込むことができます。<br />
+2.  <strong>OpenAI経済圏のキープレイヤー</strong>: OpenAIとのカスタムチップ共同開発は、同社がAIインフラの中核を担うことを示す象徴的な出来事です。NVIDIAの独占市場に風穴を開ける存在として、中長期的な成長ポテンシャルは計り知れません。<br />
+3.  <strong>事業の多角化と安定性</strong>: 半導体事業に加え、VMware買収により安定した収益が見込めるソフトウェア事業を強化。インフラソフトウェアの領域でも高いシェアを誇り、景気変動への耐性も高まっています。<br />
+4.  <strong>株主還元への積極性</strong>: 安定したキャッシュフローを背景に、増配を続ける高配当銘柄でもあり、インカムゲインも期待できます。（※現在保有分は含み損ですが、事業の将来性を鑑みれば絶好の買い増し機会と捉えられます）</p>
+<p><strong>⚠️ 懸念点（リスク）</strong>:<br />
+1.  <strong>半導体サイクルの影響</strong>: 半導体市場全体の景気循環の影響を受ける可能性があります。<br />
+2.  <strong>米中対立の地政学リスク</strong>: サプライチェーンへの影響が懸念されます。<br />
+3.  <strong>VMware統合の進捗</strong>: 巨大買収の統合プロセスが円滑に進むか注視が必要です。</p>
+<p><strong>💡 推奨される買い方</strong>:<br />
+- <strong>戦略</strong>: <strong>分割購入（ドルコスト平均法）</strong><br />
+- <strong>理由</strong>: 株価の短期的な変動リスクを平準化し、高値掴みを避けるため。長期的な成長を信じ、焦らずポジションを構築します。<br />
+- <strong>具体例</strong>: まず予算の半分（$4,000）で約12株購入し、残りは今後の株価動向を見ながら1〜2ヶ月かけて買い増していく。<br />
+- <strong>エントリーポイント</strong>: <strong>$315以下で購入を開始。</strong> テクニカル分析上、50日移動平均線がサポートラインとして機能する可能性があり、その付近までの押し目を狙います。</p>
+<hr />
+<h4 id="2-intuitive-surgical-isrg">2. Intuitive Surgical (ISRG)</h4>
+<p><strong>現在価格</strong>: $405.00（仮）<br />
+<strong>推奨投資額</strong>: $5,000 - $7,000<br />
+<strong>推奨株数</strong>: 12-17株</p>
+<p><strong>📈 選定ポイント（買うべき理由）</strong>:<br />
+1.  <strong>医療ロボット市場の独占的支配者</strong>: 手術支援ロボット「ダヴィンチ」で市場をほぼ独占。世界中の病院に導入されており、参入障壁が非常に高いビジネスモデルを構築しています。<br />
+2.  <strong>安定した継続収益モデル</strong>: 本体（ダヴィンチ）を販売した後も、手術ごとに消費される器具やメンテナンスで継続的に収益が上がる「カミソリと刃」モデル。景気変動に強く、安定したキャッシュフローを生み出します。<br />
+3.  <strong>AIによる進化</strong>: AI技術を活用して手術映像を解析し、執刀医を支援する機能を強化しています。これにより、手術の精度向上と標準化が進み、さらなる需要拡大が見込めます。AIの恩恵を直接受けるヘルスケア銘柄の筆頭です。<br />
+4.  <strong>高齢化社会の追い風</strong>: 世界的な高齢化に伴い、低侵襲（患者の負担が少ない）手術の需要は増加の一途を辿っており、長期的な成長トレンドに乗っています。</p>
+<p><strong>⚠️ 懸念点（リスク）</strong>:<br />
+1.  <strong>高PER</strong>: 成長期待が高く、株価は常に割高な水準で評価される傾向にあります。市場全体の調整局面では大きく下落する可能性があります。<br />
+2.  <strong>競合の台頭</strong>: Johnson &amp; JohnsonやMedtronicなどの巨大企業が同様の市場に参入しており、競争が激化する可能性があります。<br />
+3.  <strong>医療規制の変更</strong>: 各国の医療制度や承認プロセスの変更が事業に影響を与えるリスクがあります。</p>
+<p><strong>💡 推奨される買い方</strong>:<br />
+- <strong>戦略</strong>: <strong>長期保有を前提とした分割購入</strong><br />
+- <strong>理由</strong>: 景気サイクルよりも長期的な社会構造の変化（高齢化）に支えられた成長株であり、短期的な値動きに一喜一憂せず、着実に資産を築くのに適しています。<br />
+- <strong>具体例</strong>: 最初の$3,000で7株購入。その後、四半期ごとの決算内容を確認しながら$2,000ずつ買い増していく。<br />
+- <strong>エントリーポイント</strong>: <strong>$390台まで調整した局面で購入を検討。</strong> 心理的節目である$400を割り込み、過去のサポートラインが意識される価格帯が狙い目です。</p>
+<hr />
+<h3 id="b">推奨度 B（検討の価値がある銘柄）</h3>
+<h4 id="1-rocket-lab-rklb">1. Rocket Lab (RKLB)</h4>
+<p><strong>現在価格</strong>: $4.50（仮）<br />
+<strong>推奨投資額</strong>: $2,000 - $3,000<br />
+<strong>推奨株数</strong>: 440-660株<br />
+- <strong>選定ポイント</strong>: 小型衛星打ち上げ市場のリーダーであり、SpaceXの対抗馬として注目されています。再利用可能なロケット「ニュートロン」の開発も進めており、成功すればゲームチェンジャーとなり得ます。宇宙産業はAIと同様、次世代の巨大テーマであり、ポートフォリオに夢と爆発力を加える面白い存在です。<br />
+- <strong>懸念点</strong>: ベンチャー企業であり、打ち上げ失敗リスクや財務的な不安定さが伴います。ハイリスク・ハイリターンな投資と認識する必要があります。<br />
+- <strong>エントリーポイント</strong>: <strong>$4.20以下で購入。</strong> 過去に何度も反発している強力なサポートライン付近での買いを狙います。</p>
+<hr />
+<h2 id="_4">🔍 保有銘柄の状況分析</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">銘柄 (シンボル)</th>
+<th style="text-align: left;">保有株数</th>
+<th style="text-align: left;">平均取得単価</th>
+<th style="text-align: left;">現在価格</th>
+<th style="text-align: left;">損益率</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">LITALICO (7366.T)</td>
+<td style="text-align: left;">300</td>
+<td style="text-align: left;">¥927.38</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>NVIDIA (NVDA)</strong></td>
+<td style="text-align: left;">67</td>
+<td style="text-align: left;">$16.01</td>
+<td style="text-align: left;">$180.25</td>
+<td style="text-align: left;"><strong>+1025.86%</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">Broadcom (AVGO)</td>
+<td style="text-align: left;">15</td>
+<td style="text-align: left;">$374.94</td>
+<td style="text-align: left;">$322.16</td>
+<td style="text-align: left;">-14.08%</td>
+</tr>
+<tr>
+<td style="text-align: left;">Google (GOOG)</td>
+<td style="text-align: left;">38</td>
+<td style="text-align: left;">$299.82</td>
+<td style="text-align: left;">$301.46</td>
+<td style="text-align: left;">+0.55%</td>
+</tr>
+<tr>
+<td style="text-align: left;">Tesla (TSLA)</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">$264.97</td>
+<td style="text-align: left;">$391.20</td>
+<td style="text-align: left;">+47.64%</td>
+</tr>
+<tr>
+<td style="text-align: left;">Intel (INTC)</td>
+<td style="text-align: left;">14</td>
+<td style="text-align: left;">$28.16</td>
+<td style="text-align: left;">$45.77</td>
+<td style="text-align: left;">+62.54%</td>
+</tr>
+<tr>
+<td style="text-align: left;">Qualcomm (QCOM)</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">$163.84</td>
+<td style="text-align: left;">$129.82</td>
+<td style="text-align: left;">-20.76%</td>
+</tr>
+<tr>
+<td style="text-align: left;">AMD (AMD)</td>
+<td style="text-align: left;">18</td>
+<td style="text-align: left;">$245.64</td>
+<td style="text-align: left;">$193.39</td>
+<td style="text-align: left;">-21.27%</td>
+</tr>
+</tbody>
+</table>
+<p><em>LITALICOはデータが不完全なため分析対象外としますが、日本株として地理的分散に貢献しています。</em></p>
+<h3 id="nvidia-nvda_1"><strong>NVIDIA (NVDA)</strong></h3>
+<ul>
+<li><strong>今週のアクション</strong>: <strong>一部利益確定検討</strong></li>
+<li><strong>理由</strong>: 上記「利益確定・リバランス検討」セクションの通り。ポートフォリオのリスク管理と、新たな投資機会創出のための戦略的アクションです。</li>
+</ul>
+<h3 id="amd-amd"><strong>AMD (AMD)</strong></h3>
+<ul>
+<li><strong>今週のアクション</strong>: <strong>ホールド、または買い増し検討</strong></li>
+<li><strong>理由</strong>: OpenAIとの大型契約は、同社がNVIDIAの対抗馬として確固たる地位を築きつつある証拠です。現在の株価は平均取得単価を大きく下回っていますが、長期的なポテンシャルは依然として高いと判断します。</li>
+<li><strong>買い増しトリガー</strong>: <strong>$185（直近の安値圏で形成されたサポートライン）付近まで下落した場合、少額（2-3株）の買い増しを検討。</strong> 平均取得単価を戦略的に引き下げる良い機会です。</li>
+</ul>
+<h3 id="broadcom-avgo-qualcomm-qcom"><strong>Broadcom (AVGO)</strong> / <strong>Qualcomm (QCOM)</strong></h3>
+<ul>
+<li><strong>今週のアクション</strong>: <strong>ホールド</strong></li>
+<li><strong>理由</strong>: AVGOは推奨銘柄Aの通り、AIカスタムチップ需要を背景に長期的な成長が見込まれるため、現在の含み損は絶好の買い増し機会です。QCOMはスマホ市場の回復が鍵となりますが、5GやIoTでの強みは健在。市場の回復を待ち、ホールドを継続します。</li>
+</ul>
+<h3 id="google-goog-tesla-tsla-intel-intc"><strong>Google (GOOG)</strong> / <strong>Tesla (TSLA)</strong> / <strong>Intel (INTC)</strong></h3>
+<ul>
+<li><strong>今週のアクション</strong>: <strong>ホールド</strong></li>
+<li><strong>理由</strong>: 3銘柄ともそれぞれの分野で重要な役割を担っており、含み益も出ています。GOOGはAIでの巻き返し、TSLAはFSDとロボティクス、INTCはファウンドリ事業の復活と、いずれも長期的なカタリスト（株価上昇のきっかけ）を秘めているため、引き続きホールドし、動向を注視します。</li>
+</ul>
+<hr />
+<h2 id="ai">🌐 セクター分散候補（AI恩恵セクター）</h2>
+<p>AI半導体に集中している現在のポートフォリオから、AI技術の発展によって恩恵を受ける他セクターへ分散投資することで、より強固な資産形成を目指します。</p>
+<ul>
+<li><strong>医療・ヘルステック</strong>: <strong>Intuitive Surgical (ISRG)</strong>を推奨。AIによる画像診断や治療計画支援など、ヘルスケア分野はAIとの親和性が非常に高いです。</li>
+<li><strong>宇宙産業</strong>: <strong>Rocket Lab (RKLB)</strong>を推奨。衛星データの解析やロケットの自律制御など、宇宙開発はAI技術なくしては成り立ちません。</li>
+<li><strong>EV・自動運転</strong>: <strong>Tesla (TSLA)</strong>を保有中。FSD（完全自動運転）はAI技術の結晶です。競合の<strong>Rivian (RIVN)</strong>や伝統的自動車メーカーの動向も注視が必要です。</li>
+<li><strong>製造業DX・スマートファクトリー</strong>: AIによる予知保全や品質管理、ロボットによる自動化は製造業の生産性を劇的に向上させます。日本の<strong>キーエンス (6861.T)</strong>や米国の<strong>Rockwell Automation (ROK)</strong>などが注目されます。</li>
+</ul>
+<hr />
+<h2 id="_5">📚 今週の投資スキル向上ポイント</h2>
+<h3 id="_6">学習テーマ: ポートフォリオ・リバランスの重要性</h3>
+<p><strong>解説</strong>:<br />
+リバランスとは、資産配分が当初の計画からずれてきた時に、それを元の比率に戻す作業のことです。例えば、ある銘柄（今回のNVIDIA）が大きく値上がりすると、ポートフォリオに占めるその銘柄の割合が非常に高くなります。これは喜ばしいことですが、同時にその銘柄の値動き一つで資産全体が大きく変動するリスクも増大させます。リバランスは、値上がりした資産の一部を売り、その資金で他の有望な資産を買い増すことで、リスクを管理し、利益を安定的に成長させるためのプロの投資家が実践する重要なテクニックです。</p>
+<p><strong>今週のレポートへの適用</strong>:<br />
+今週提案した<strong>「NVIDIAの一部利益確定と、その資金でのBroadcomやIntuitive Surgicalへの再投資」</strong>は、まさにこのリバランスの実践です。絶好調の銘柄から利益を確定し、それを次の成長が見込める銘柄に振り分ける。このサイクルを繰り返すことで、"攻め"の姿勢を保ちながら、ポートフォリオを常に最適な状態に保つことができます。</p>
+<hr />
+<h2 id="_7">📅 来週の注目イベント</h2>
+<ul>
+<li><strong>米国 消費者物価指数（CPI）発表</strong>: インフレ動向と金融政策を占う上で最も重要な経済指標です。</li>
+<li><strong>GTC (GPU Technology Conference)</strong>: NVIDIAが主催するAIに関する世界最大級のイベント。新たな製品や技術発表が業界全体の株価を動かす可能性があります。</li>
+<li><strong>各社アナリストデイ</strong>: 主要企業が中期経営計画などを発表する可能性があり、注目です。</li>
+</ul>
+<hr />
+<h2 id="_8">💭 投資判断のためのチェックリスト</h2>
+<p>今週の推奨銘柄を検討する際、以下の点を自分で考えてみましょう：</p>
+<p>□ この銘柄の事業内容を理解できているか？<br />
+□ なぜ今この銘柄が成長すると考えるか？（OpenAI経済圏、高齢化など）<br />
+□ 懸念点（半導体サイクル、高PERなど）を受け入れられるか？<br />
+□ 自分のポートフォリオに、このセクター（医療、宇宙など）は必要か？<br />
+□ 投資額は自分のリスク許容度に合っているか？</p>
+<hr />
+<p><em>このレポートは教育目的で詳細な分析を提供していますが、最終的な投資判断は必ずご自身で行ってください。</em><br />
+<em>推奨内容を鵜呑みにせず、自分で考えて判断することが投資スキル向上への第一歩です。</em></p>
+        </div>
+
+        <div class="footer">
+            <p>このレポートはAI（Google Gemini）により自動生成されています。</p>
+            <p>投資判断は必ずご自身の責任で行ってください。</p>
+            <p>生成日時: 2026年03月13日 21:43:37</p>
+        </div>
+    </div>
+</body>
+</html>
