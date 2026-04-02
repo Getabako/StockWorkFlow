@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI/IT・テクノロジーセクター 日次情勢レポート</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #0ea5e9;
+            --success-color: #10b981;
+            --danger-color: #ef4444;
+            --warning-color: #f59e0b;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-primary: #1e293b;
+            --text-secondary: #64748b;
+            --border-color: #e2e8f0;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        body {
+            font-family: 'Noto Sans JP', 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: var(--text-primary);
+            line-height: 1.7;
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            border-radius: 16px;
+            box-shadow: var(--shadow-lg);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            animation: pulse 15s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            50% { transform: translate(-10%, -10%) scale(1.1); }
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            font-weight: 700;
+            margin-bottom: 10px;
+            position: relative;
+            z-index: 1;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .header .subtitle {
+            font-size: 1.1em;
+            opacity: 0.95;
+            position: relative;
+            z-index: 1;
+            font-weight: 300;
+        }
+
+        .content {
+            padding: 50px;
+        }
+
+        h1 {
+            color: #1e3a8a;
+            font-size: 2.2em;
+            margin: 30px 0 20px 0;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #1e3a8a;
+            font-weight: 700;
+        }
+
+        h2 {
+            color: #0c4a6e;
+            font-size: 1.8em;
+            margin: 35px 0 20px 0;
+            padding-left: 15px;
+            border-left: 5px solid #0c4a6e;
+            font-weight: 600;
+        }
+
+        h3 {
+            color: var(--text-primary);
+            font-size: 1.4em;
+            margin: 25px 0 15px 0;
+            padding: 12px 20px;
+            background: linear-gradient(90deg, var(--bg-color) 0%, transparent 100%);
+            border-radius: 8px;
+            font-weight: 600;
+        }
+
+        h4 {
+            color: var(--text-secondary);
+            font-size: 1.1em;
+            margin: 20px 0 10px 0;
+            font-weight: 500;
+        }
+
+        p {
+            margin: 15px 0;
+            color: var(--text-primary);
+            font-size: 1.05em;
+        }
+
+        strong {
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        em {
+            font-style: italic;
+            color: var(--text-secondary);
+        }
+
+        ul, ol {
+            margin: 20px 0;
+            padding-left: 30px;
+        }
+
+        li {
+            margin: 12px 0;
+            line-height: 1.8;
+            color: var(--text-primary);
+        }
+
+        ul li {
+            list-style-type: none;
+            position: relative;
+            padding-left: 25px;
+        }
+
+        ul li::before {
+            content: '▸';
+            color: var(--primary-color);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+            font-size: 1.2em;
+        }
+
+        blockquote {
+            margin: 25px 0;
+            padding: 20px 25px;
+            background: var(--bg-color);
+            border-left: 5px solid var(--warning-color);
+            border-radius: 0 8px 8px 0;
+            font-style: italic;
+            color: var(--text-secondary);
+            box-shadow: var(--shadow);
+        }
+
+        hr {
+            border: none;
+            border-top: 2px solid var(--border-color);
+            margin: 40px 0;
+            opacity: 0.5;
+        }
+
+        code {
+            background: #f1f5f9;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            color: #dc2626;
+        }
+
+        pre {
+            background: #1e293b;
+            color: #e2e8f0;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 20px 0;
+            box-shadow: var(--shadow);
+        }
+
+        pre code {
+            background: none;
+            color: inherit;
+            padding: 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        th {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: white;
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        td {
+            padding: 15px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        tr:hover {
+            background: var(--bg-color);
+        }
+
+        .summary-box {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            border-left: 5px solid var(--warning-color);
+            padding: 25px;
+            margin: 25px 0;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+
+        .info-box {
+            background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+            border-left: 5px solid var(--primary-color);
+            padding: 25px;
+            margin: 25px 0;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+
+        .success-box {
+            background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+            border-left: 5px solid var(--success-color);
+            padding: 25px;
+            margin: 25px 0;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+
+        .footer {
+            background: var(--bg-color);
+            padding: 30px;
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 0.9em;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .footer p {
+            margin: 5px 0;
+            color: var(--text-secondary);
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 0.85em;
+            font-weight: 500;
+            margin: 0 5px;
+        }
+
+        .badge-primary {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        .badge-success {
+            background: var(--success-color);
+            color: white;
+        }
+
+        .badge-warning {
+            background: var(--warning-color);
+            color: white;
+        }
+
+        .badge-danger {
+            background: var(--danger-color);
+            color: white;
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+
+            .container {
+                box-shadow: none;
+                max-width: 100%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 20px 10px;
+            }
+
+            .header {
+                padding: 30px 20px;
+            }
+
+            .header h1 {
+                font-size: 1.8em;
+            }
+
+            .content {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            h3 {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>AI/IT・テクノロジーセクター 日次情勢レポート</h1>
+            <div class="subtitle">AI/IT株式投資レポート - Powered by Gemini AI</div>
+        </div>
+
+        <div class="content">
+            <h1 id="aiit">AI/IT・テクノロジーセクター 日次情勢レポート</h1>
+<p><strong>作成日時</strong>: 2026年04月02日 21:30</p>
+<h2 id="_1">エグゼクティブサマリー</h2>
+<p>AI分野ではGoogleがオープンモデル「Gemma 4」やAI動画作成ツール「Google Vids」を発表し、OpenAIはメディア企業買収でAI議論を主導。Microsoftも独自AIモデル開発を加速させるなど、競争が激化しています。AI導入に伴いテクノロジー業界での雇用削減が顕著です。ロボティクス分野ではヒューマノイドや生体ロボット、特殊環境対応AI連携技術が進展。宇宙産業ではNASAの有人月面ミッション「Artemis II」が打ち上げられ、関連企業の技術貢献やIPO期待が高まっています。EV市場ではTeslaが販売目標未達で苦戦する一方、ToyotaがFordを上回るなど、競争環境に変化が見られます。</p>
+<h2 id="_2">重要ファクト</h2>
+<h3 id="ma">M&amp;A・企業買収</h3>
+<ul>
+<li><strong>OpenAIがTech Talk Show TBPNを買収</strong>: AI業界での議論を主導する目的で、メディア企業を買収するという異例の動きを見せた。（Bloomberg Technology, 記事15）</li>
+<li><strong>Merit MedicalがView Pointを1.4億ドルで買収</strong>: 医療機器メーカーのMerit Medicalが、腫瘍組織局在化デバイスを販売するView Pointを買収し、既存の事業を補完する。（MedTech Dive, 記事44）</li>
+<li><strong>Phantom SpaceがThermal Management Technologiesを買収</strong>: 宇宙ベンチャーのPhantom Spaceが、軌道上データセンター構想を強化するため、衛星の熱制御ハードウェアプロバイダーを買収した。（SpaceNews, 記事50）</li>
+<li><strong>SBA Communicationsが売却を検討</strong>: タワーオーナー・運営会社のSBA Communicationsが、買収提案を受け、売却を含む選択肢を検討している。（Bloomberg Technology, 記事9）</li>
+</ul>
+<h3 id="_3">戦略的提携・パートナーシップ</h3>
+<ul>
+<li><strong>ArmがGoogle Gemma 4をAndroidデバイス向けに最適化</strong>: ArmはGoogleの最新オープンAIモデル「Gemma 4」をAndroidデバイス向けに最適化し、クラウドに依存しない高速でプライバシー保護された省電力なオンデバイスAI体験を可能にする。（Arm, 記事7）</li>
+<li><strong>QualcommがMassRoboticsに参加しスタートアップを支援</strong>: QualcommはMassRoboticsのスポンサーとなり、「Dragonwing Robotics Hub」を通じてロボティクススタートアップを支援する。（The Robot Report, 記事41）</li>
+<li><strong>Stellantisが中国Leapmotor EVのカナダ工場での生産を検討</strong>: Stellantisは、中国パートナーのLeapmotorの電気自動車を、カナダの遊休工場で組み立てる初期交渉を進めている。（Electrek, 記事57）</li>
+</ul>
+<h3 id="_4">大型契約・受注</h3>
+<ul>
+<li><strong>ペンタゴンがRaytheonにGPS地上システムで4500万ドルを授与</strong>: 国防総省は、長らく遅延しているGPS地上システムを再評価する中で、衛星打ち上げをサポートするためにRaytheonに4500万ドルの契約を発注した。（SpaceNews, 記事47）</li>
+</ul>
+<h3 id="_5">新製品・新技術</h3>
+<ul>
+<li><strong>Googleがオープンモデル「Gemma 4」を発表</strong>: Googleは、バイト単位で最も高性能なオープンモデル「Gemma 4」をリリースした。（Google/Alphabet, 記事1）</li>
+<li><strong>Google Gemini APIにコストと信頼性のバランス機能を追加</strong>: 開発者向けにGemini APIのコストと信頼性を調整する新たな方法を導入。（Google/Alphabet, 記事2）</li>
+<li><strong>GoogleがAI活用動画作成ツール「Google Vids」を発表</strong>: AIを活用して動画の作成、編集、共有を無料で行える「Google Vids」を発表した。（Google/Alphabet, 記事3）</li>
+<li><strong>AIコワーカーが職場プロセス管理と従業員への働きかけ</strong>: あるスタートアップが、Zoom会議に参加し、仕事のプロセスを管理し、ギャップを特定して従業員に働きかけるAI同僚を開発。（Bloomberg Technology, 記事13）</li>
+<li><strong>KyndrylがAIエージェント管理サービスを立ち上げ</strong>: Kyndrylは、企業がAIエージェントを管理し、AI投資からより良いリターンを得るための新サービスを開始した。（Bloomberg Technology, 記事16）</li>
+<li><strong>Microsoftが2027年までに最先端AIモデル開発を目標</strong>: Microsoftは、OpenAIやAnthropicの最も強力なAIツールに代わる社内ソリューションを構築するため、来年までに大規模で最先端のAIモデルを開発することを目指している。（Bloomberg Technology, 記事28）</li>
+<li><strong>AI生成物検出ソフトウェアが登場</strong>: Pangram LabsのCEOは、コンテンツがAIによって生成されたものかを検出するソフトウェアについて議論し、AIライティングがインターネットの未来に与える影響について語った。（Bloomberg Technology, 記事32）</li>
+<li><strong>Gill Pratt氏がヒューマノイドロボットの時代到来を指摘</strong>: DARPA Robotics Challengeを提唱したGill Pratt氏が、ヒューマノイドロボットの時代がついに到来したと述べている。（IEEE Spectrum Robotics, 記事38）</li>
+<li><strong>原子力発電所内で動作可能なWi-Fi受信機を開発</strong>: 研究者たちが、原子力発電所内で動作可能なほど頑丈なWi-Fi受信機を開発。原子炉の廃止措置に用いられるロボットの無線通信システムへの応用が期待される。（IEEE Spectrum Robotics, 記事39）</li>
+<li><strong>神経系を持つ生体ロボットを開発</strong>: エンジニアが生命を模倣する研究の一環として、神経系を持つ生体ロボットを構築した。（IEEE Spectrum Robotics, 記事40）</li>
+<li><strong>Sanctuary AIがゼロショット操作可能なロボットハンドを実演</strong>: Sanctuary AIは、ロボットハンドとAIシステムが、キューブを落とさずに目標の向きに10回連続で操作する「ゼロショットin-handマニピュレーション」を実証した。（The Robot Report, 記事42）</li>
+<li><strong>PickNik RoboticsがMoveIt Pro 9.0で知覚-運動・テレポート機能を強化</strong>: PickNik Roboticsは、MoveIt Pro 9.0において、商業清掃、消毒、車両洗浄ロボットのワークフローを強化する知覚-運動、テレポート機能を強化した。（The Robot Report, 記事43）</li>
+<li><strong>Moog TechnologyがArtemis IIの精密運動制御に貢献</strong>: Moog Inc.は、Artemis IIミッションの重要な精密運動および流体制御システムを提供し、打ち上げ成功に貢献した。（SpaceNews, 記事48）</li>
+<li><strong>Kiaが「PV5 WAV」EVタクシーを発表</strong>: Kiaはニューヨーク・オートショーで、新しい電動タクシーおよびライドシェアコンセプト「PV5 WAV New York EV」を発表した。（Electrek, 記事59）</li>
+<li><strong>Mercedes-Benzが2026年型EQSに「Steer-by-Wire」技術を導入</strong>: Mercedes-Benzは、2026年に「Steer-by-Wire」技術を導入することを確定し、2026年型EQS電動セダンが初の搭載モデルとなる。（Electrek, 記事60）</li>
+<li><strong>Hyundaiが2つの新型IONIQ EVを予告</strong>: Hyundaiは、暗号的なティザー動画で「IONIQの新たな旅」として、2つの新型IONIQ EVを予告した。（Electrek, 記事62）</li>
+<li><strong>Candelaが新型P-12 Business電動フェリーを発表</strong>: スウェーデンの電動ボートメーカーCandelaは、目的地への水上移動を快適にする新型「P-12 Business」を発表した。（Electrek, 記事65）</li>
+<li><strong>OpenClawが中国AI企業の海外市場展開を支援</strong>: OpenClawは、安価な中国のAIサービスが世界中で利用されるのを支援している。（Bloomberg Technology, 記事36）</li>
+</ul>
+<h3 id="_6">業績・財務情報</h3>
+<ul>
+<li><strong>SpaceXの記録的IPO、OpenAIとAnthropicもIPO検討の可能性</strong>: SpaceXが記録的なIPOを控えており、OpenAIとAnthropicも株式公開を検討していると報じられている。（Bloomberg Technology, 記事10）</li>
+<li><strong>MicrosoftがCopilot販売戦略を転換</strong>: Microsoftは、ウォール街からのフィードバックに応え、AI販売戦略をCopilotを無料でバンドルするのではなく、販売することに焦点を当てるよう変更した。（Bloomberg Technology, 記事11）</li>
+<li><strong>インドAIスタートアップSarvam AIが15億ドル評価で資金調達</strong>: インドの国産AIスタートアップSarvam AIが、米国や中国のリーダーと競争するため、3億ドルから3億5000万ドルの資金調達をほぼ完了し、評価額は15億ドルに達した。（Bloomberg Technology, 記事23）</li>
+<li><strong>フランスのヘルスケアスタートアップDoctolibの評価額が38%下落</strong>: フランスのヘルスケアスタートアップDoctolibの従業員と初期投資家が約3億ユーロ（約3億4500万ドル）相当の株式を売却し、評価額が38%下落した。（Bloomberg Technology, 記事26）</li>
+<li><strong>TeslaのQ1販売台数が予想を下回り、5万台以上の過剰生産</strong>: Teslaの2026年第1四半期の納車台数は358,023台で、ウォール街のコンセンサス予想（365,645台）を約7,600台下回った。さらに、生産台数（408,386台）と納車台数との間に50,000台以上の乖離があった。（Bloomberg Technology, 記事17, 27 / Electrek, 記事63）</li>
+<li><strong>AIインフラ需要で光学部品メーカー株が上昇</strong>: 過去数年間、AIインフラの構築により、チップから電力会社まで様々な産業の株価が急騰しており、光学部品メーカーが投資家の新たな注目を集めている。（Bloomberg Technology, 記事30）</li>
+<li><strong>データセンター事業者AirTrunkがシンガポールでのREIT IPOを計画</strong>: Blackstone傘下のデータセンター運営会社AirTrunkが、シンガポールでの不動産投資信託（REIT）上場に向けて銀行を選定しており、約15億ドルの資金調達が見込まれる。（Bloomberg Technology, 記事31）</li>
+<li><strong>テクノロジー業界でAI導入に伴う雇用削減が継続</strong>: 3月のテクノロジー企業の解雇発表は18,720件に達し、前年同月比で24%以上増加。AIへの投資が人員削減を加速させている。（Bloomberg Technology, 記事33, 35）</li>
+<li><strong>ToyotaがQ1にFordを上回るEV販売台数を記録</strong>: EV計画を縮小したFordが米国内で苦戦する中、Toyotaは第1四半期に7,000台未満のEV販売で、FordのEVラインナップ合計を上回った。（Electrek, 記事61）</li>
+<li><strong>RivianがQ1の生産・納車台数を発表</strong>: Rivianは2026年第1四半期の生産・納車台数を発表し、近日中に完全な財務報告を行う予定。（Electrek, 記事64）</li>
+</ul>
+<h3 id="_7">規制・政策変更</h3>
+<ul>
+<li><strong>米国議員が中国への半導体製造ツール販売規制強化を提案</strong>: 米国議会は、中国の技術的野心をさらに抑制するため、特にオランダや日本などの同盟国からの半導体製造ツール輸出に対する規制を強化する法案を提出した。（Bloomberg Technology, 記事14）</li>
+<li><strong>DOJがAnthropic AIの政府利用禁止命令に対する控訴を検討</strong>: トランプ政権がAnthropic PBCのAI技術の政府利用を禁止する命令について、連邦裁判官がこれを阻止した命令に対し、司法省が控訴を検討している。（Bloomberg Technology, 記事29）</li>
+</ul>
+<h3 id="_8">人事</h3>
+<ul>
+<li><strong>IntelがAparna Bawa氏をChief Legal &amp; People Officerに任命</strong>: Intelは、Aparna Bawa氏を執行副社長兼最高法務責任者兼最高人事責任者に任命した。（Intel, 記事6）</li>
+<li><strong>BroadcomがGoogleの幹部を次期CFOに任命</strong>: 大手半導体企業Broadcomは、Alphabetの幹部であるAmie Thuener氏を次期CFOに任命した。（Bloomberg Technology, 記事8）</li>
+<li><strong>元Sierra Space CEO Tom Vice氏がAstrionを率いる</strong>: 元Sierra SpaceのCEOであるTom Vice氏が、システムエンジニアリングと統合、宇宙ミッション保証に特化した防衛請負業者Astrionのトップに就任した。（SpaceNews, 記事45）</li>
+<li><strong>FortastraがRelativity SpaceなどからC-suite幹部を招集</strong>: サンフランシスコのスタートアップFortastraは、軌道上セキュリティ向け機動宇宙船の設計・運用のため、Relativity Space、Hermeus、Astrion、Divergent Technologiesから経験豊富なC-suite幹部を迎え入れた。（SpaceNews, 記事51）</li>
+</ul>
+<h3 id="_9">ロボティクス・医療テック</h3>
+<ul>
+<li><strong>ロボティクス</strong>:<ul>
+<li>ヒューマノイドロボットの時代到来 (記事38)</li>
+<li>原子力発電所内で動作可能なWi-Fi受信機 (ロボット通信) (記事39)</li>
+<li>神経系を持つ生体ロボットを開発 (記事40)</li>
+<li>QualcommがMassRoboticsに参加し、ロボティクススタートアップを支援 (記事41)</li>
+<li>Sanctuary AIがゼロショット操作可能なロボットハンドを開発 (記事42)</li>
+<li>PickNik RoboticsがMoveIt Pro 9.0で知覚-運動・テレポート機能を強化 (記事43)</li>
+</ul>
+</li>
+<li><strong>医療・ヘルステック</strong>:<ul>
+<li>Merit MedicalがView Pointを1.4億ドルで買収 (腫瘍組織局在化デバイス) (記事44)</li>
+<li>フランスのヘルスケアスタートアップDoctolibの評価額が38%下落 (記事26)</li>
+<li>NBA選手Giannis AntetokounmpoがDavid Beckham共同創業の健康科学企業IM8に出資 (記事37)</li>
+</ul>
+</li>
+</ul>
+<h3 id="ev">宇宙・EV・新興テック</h3>
+<ul>
+<li><strong>宇宙産業</strong>:<ul>
+<li>SpaceXの記録的IPO、OpenAIとAnthropicもIPO検討 (記事10)</li>
+<li>NASAの有人月面ミッション「Artemis II」が打ち上げられ、月への飛行を開始 (記事12, 25, 52, 53, 55)</li>
+<li>元Sierra Space CEOがAstrionを率いる人事異動 (記事45)</li>
+<li>ペンタゴンにおける衛星コンステレーションの光通信端末がボトルネックに (記事46)</li>
+<li>PentagonがRaytheonにGPS地上システムで4500万ドルの契約 (記事47)</li>
+<li>Moog TechnologyがArtemis II打ち上げの精密運動制御に貢献 (記事48)</li>
+<li>Phantom SpaceがThermal Management Technologiesを買収し、軌道上データセンター構想を強化 (記事50)</li>
+<li>Fortastraがオン・オービット・セキュリティ向け宇宙船開発強化のためC-suite幹部を招集 (記事51)</li>
+</ul>
+</li>
+<li><strong>EV・自動運転</strong>:<ul>
+<li>TeslaのQ1販売台数が予想を下回り、5万台以上の過剰生産 (記事17, 27, 63)</li>
+<li>Stellantisが中国Leapmotor EVのカナダ工場での生産を検討 (記事57)</li>
+<li>Kiaが「PV5 WAV」EVタクシーを発表 (記事59)</li>
+<li>Mercedes-Benzが2026年型EQSに「Steer-by-Wire」技術を導入 (記事60)</li>
+<li>ToyotaがQ1にFordを上回るEV販売台数を記録 (記事61)</li>
+<li>Hyundaiが2つの新型IONIQ EVを予告 (記事62)</li>
+<li>RivianのQ1生産・納車台数発表 (記事64)</li>
+<li>Candelaが新型P-12 Business電動フェリーを発表 (記事65)</li>
+<li>UberがEVドライバーへのインセンティブプログラムを全国展開 (記事66)</li>
+<li>Qcellsが太陽光発電と蓄電システムの新築住宅への標準化を推進 (記事56)</li>
+</ul>
+</li>
+</ul>
+<h3 id="_10">その他の重要情報</h3>
+<ul>
+<li><strong>テクノロジー業界でAI導入に伴う雇用削減が継続</strong>: 3月のテクノロジー企業の解雇発表が前年比24%以上増加し、AI導入が人員削減を加速させていることが示された。（Bloomberg Technology, 記事33, 35）</li>
+<li><strong>FBIネットワークへの重大なサイバーセキュリティ侵害</strong>: FBIのネットワークが「重大なインシデント」として分類される侵害を受け、サイバーセキュリティの脆弱性が露呈した。（Bloomberg Technology, 記事22）</li>
+<li><strong>中国AI企業の海外市場展開を支援するOpenClaw</strong>: 中国のAIサービスがOpenClawの助けを借りて、手頃な価格で世界的に利用を拡大している。（Bloomberg Technology, 記事36）</li>
+</ul>
+<h2 id="_11">今日の注目ポイント</h2>
+<p>AI分野ではGoogleがオープンモデルやアプリケーションを強化し、Microsoftも独自開発を加速させる中、AIの競争激化が顕著です。同時に、AI導入がテクノロジー業界の雇用に影響を与えていることが複数のレポートで示されました。宇宙産業では、NASAのArtemis IIミッション打ち上げが大きな節目となり、関連技術や企業の動きが活発化しています。EV市場ではTeslaの販売不振が浮き彫りになる一方、他社が新たなEVや技術を投入しており、市場シェアの変動が注目されます。</p>
+<hr />
+<p><em>このレポートはAI（Gemini）により自動生成されています。</em></p>
+        </div>
+
+        <div class="footer">
+            <p>このレポートはAI（Google Gemini）により自動生成されています。</p>
+            <p>投資判断は必ずご自身の責任で行ってください。</p>
+            <p>生成日時: 2026年04月02日 21:31:44</p>
+        </div>
+    </div>
+</body>
+</html>

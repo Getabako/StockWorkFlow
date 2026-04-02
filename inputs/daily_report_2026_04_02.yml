@@ -1,0 +1,59 @@
+topic: AI_IT株式日次レポート_2026_04_02
+slides:
+- title: AI/IT株式ニュース
+  content: '2026/04/02
+
+
+    本日の注目トピック'
+- title: 本日のサマリー
+  content: AI分野ではGoogleがオープンモデル「Gemma 4」やAI動画作成ツール「Google Vids」を発表し、OpenAIはメディア企業買収でAI議論を主導。Microsoftも独自AIモデル開発を加速させるなど、競争が激化しています。AI導入に伴いテクノロジー業界での雇用削減が顕著です。
+- title: M&A・企業買収
+  content: OpenAIがTech Talk Show TBPNを買収
+- title: M&A・企業買収
+  content: Merit MedicalがView Pointを1.4億ドルで買収
+- title: M&A・企業買収
+  content: Phantom SpaceがThermal Management Technologiesを買収
+- title: M&A・企業買収
+  content: SBA Communicationsが売却を検討
+- title: 戦略的提携・パートナーシップ
+  content: ArmがGoogle Gemma 4をAndroidデバイス向けに最適化
+- title: まとめ
+  content: '本日のレポートは以上です
+
+
+    ご視聴ありがとうございました'
+- title: 塾頭高崎の完全自動化への挑戦
+  content: '※このコンテンツはAIが自動生成しています
+
+
+    AI技術の限界に挑戦中！
+
+    共感いただけたらチャンネル登録・グッドボタンを
+
+    よろしくお願いします！'
+script_notes:
+- slide: 1
+  script: うぃっすー！if塾AIニュースのお時間です。2026/04/02のAI・IT株式ニュースをお届けします。
+- slide: 2
+  script: AI分野ではGoogleがオープンモデル「Gemma 4」やAI動画作成ツール「Google Vids」を発表し、OpenAIはメディア企業買収でAI議論を主導。Microsoftも独自AIモデル開発を加速させるなど、競争が激化しています。AI導入に伴いテクノロジー業界での雇用削減が顕著です。ロボティクス分野ではヒューマノイドや生体ロボット、特殊環境対応AI連携技術が進展。宇宙産業ではNASAの有人月面ミッション「Artemis
+    II」が打ち上げられ、関連企業の技術貢献やIPO期待が高まっています。EV市場ではTeslaが販売目標未達で苦戦する一方、ToyotaがFordを上回るなど、競争環境に変化が見られます。
+- slide: 3
+  script: OpenAIがTech Talk Show TBPNを買収。AI業界での議論を主導する目的で、メディア企業を買収するという異例の動きを見せた。（Bloomberg
+    Technology, 記事15）
+- slide: 4
+  script: Merit MedicalがView Pointを1.4億ドルで買収。医療機器メーカーのMerit Medicalが、腫瘍組織局在化デバイスを販売するView
+    Pointを買収し、既存の事業を補完する。（MedTech Dive, 記事44）
+- slide: 5
+  script: Phantom SpaceがThermal Management Technologiesを買収。宇宙ベンチャーのPhantom Spaceが、軌道上データセンター構想を強化するため、衛星の熱制御ハードウェアプロバイダーを買収した。（SpaceNews,
+    記事50）
+- slide: 6
+  script: SBA Communicationsが売却を検討。タワーオーナー・運営会社のSBA Communicationsが、買収提案を受け、売却を含む選択肢を検討している。（Bloomberg
+    Technology, 記事9）
+- slide: 7
+  script: ArmがGoogle Gemma 4をAndroidデバイス向けに最適化。ArmはGoogleの最新オープンAIモデル「Gemma 4」をAndroidデバイス向けに最適化し、クラウドに依存しない高速でプライバシー保護された省電力なオンデバイスAI体験を可能にする。（Arm,
+    記事7）
+- slide: 8
+  script: 本日のAI・IT株式ニュースは以上です。
+- slide: 9
+  script: ご視聴いただきありがとうございました。実はこのレポート、if塾の塾頭高崎による「完全自動化への挑戦」プロジェクトの一環として、AIが自動生成しています。将来的には塾頭が執筆しているような自然な記事になることを目指しており、現時点では事実と異なる内容が含まれる可能性もあります。この挑戦に共感していただけたら、ぜひチャンネル登録とグッドボタンをよろしくお願いします！また、無料のAI教育や導入コンサルも受け付けています。詳しくは概要欄のリンクからお問い合わせください。
+disclaimer: このレポートはAI（Gemini）により自動生成されています。投資判断は必ずご自身で行ってください。
