@@ -2,8 +2,8 @@ name: Weekly Portfolio Action Plan
 
 on:
   schedule:
-    # 毎週土曜日 JST 6:00 (UTC 21:00 on Friday) に実行
-    - cron: '0 21 * * 5'
+    # 毎週土曜日 JST 8:00 (UTC 23:00 on Friday) に実行
+    - cron: '0 23 * * 5'
   workflow_dispatch:  # 手動実行も可能
 
 permissions:
