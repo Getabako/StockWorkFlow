@@ -1,0 +1,50 @@
+{
+  "slides": [
+    {
+      "index": 1,
+      "title": "AI/IT株式ニュース",
+      "script": "うぃっすー！if塾AIニュースのお時間です。2026/03/30のAI・IT株式ニュースをお届けします。"
+    },
+    {
+      "index": 2,
+      "title": "本日のサマリー",
+      "script": "本日のテクノロジーセクターは、AIインフラへの大規模投資が加速する一方で、AI技術に対する社会的な懸念が高まるという二面性が鮮明になった。EV市場では、Google Mapsの充電計画機能強化や、BYD、Kia、Toyotaからの低価格・高性能EVの発表が相次ぎ、競争と普及が加速。宇宙産業では、Rocket LabによるMynaric買収承認やSpaceXの打ち上げ成功、Starcloudの軌道上データセンター計画が注目され、商用化と新市場創出の動きが活発である。"
+    },
+    {
+      "index": 3,
+      "title": "M&A・企業買収",
+      "script": "Uber、高級送迎アプリBlacklaneを買収。Uber Technologiesが高級送迎予約アプリBlacklaneを買収することで合意。高所得者層の顧客獲得を狙う (記事10)。"
+    },
+    {
+      "index": 4,
+      "title": "M&A・企業買収",
+      "script": "Rocket Lab、Mynaric買収でドイツ承認。Rocket LabがMynaric買収に関してドイツ当局の承認を得た。宇宙技術の国内保持に関する厳しい審査を経ての決定であり、今後のM&Aにおける国家安全保障上の考慮事項の重要性を示す (記事38)。"
+    },
+    {
+      "index": 5,
+      "title": "戦略的提携・パートナーシップ",
+      "script": "HumanoidとSAP、倉庫ロボットでPoC成功。HumanoidとSAPが連携し、「エージェントAI」を統合したHMND 01 Alphaロボットを用いて倉庫物流タスクを自律的に実行する概念実証（PoC）に成功 (記事33)。"
+    },
+    {
+      "index": 6,
+      "title": "戦略的提携・パートナーシップ",
+      "script": "Icarus Robotics、VoyagerとISSでロボットテスト。Icarus RoboticsがVoyager Technologiesと提携し、国際宇宙ステーション（ISS）で自由飛行ロボット「Joyride」のテストを実施する計画を発表 (記事35, 45)。"
+    },
+    {
+      "index": 7,
+      "title": "戦略的提携・パートナーシップ",
+      "script": "Franklin TempletonとOndo Finance、ETFトークン化。Franklin TempletonがOndo Financeと提携し、トークン化されたETFをクリプトウォレット経由で24時間取引可能にするサービスを提供 (記事8)。"
+    },
+    {
+      "index": 8,
+      "title": "まとめ",
+      "script": "本日のAI・IT株式ニュースは以上です。"
+    },
+    {
+      "index": 9,
+      "title": "塾頭高崎の完全自動化への挑戦",
+      "script": "ご視聴いただきありがとうございました。実はこのレポート、if塾の塾頭高崎による「完全自動化への挑戦」プロジェクトの一環として、AIが自動生成しています。将来的には塾頭が執筆しているような自然な記事になることを目指しており、現時点では事実と異なる内容が含まれる可能性もあります。この挑戦に共感していただけたら、ぜひチャンネル登録とグッドボタンをよろしくお願いします！また、無料のAI教育や導入コンサルも受け付けています。詳しくは概要欄のリンクからお問い合わせください。"
+    }
+  ],
+  "total_slides": 9
+}
