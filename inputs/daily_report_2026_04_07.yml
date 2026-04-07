@@ -1,0 +1,55 @@
+topic: AI_IT株式日次レポート_2026_04_07
+slides:
+- title: AI/IT株式ニュース
+  content: '2026/04/07
+
+
+    本日の注目トピック'
+- title: 本日のサマリー
+  content: 本日のテクノロジーセクターは、AI競争の激化と基盤技術の内製化、そして各産業へのAIの浸透が主な動向となりました。特にIntelがElon Muskの「Terafab」プロジェクトに参加し、Tesla、SpaceX、xAI向けのカスタムチップ製造を支援する戦略的提携が発表され、半導体、AI、EV、宇宙産業に大きな影響を与えています。また、OpenAIの経営層に対する訴訟が報じられる一方、競合...
+- title: 戦略的提携・パートナーシップ
+  content: Intel、MuskのTerafabプロジェクトに参画
+- title: 戦略的提携・パートナーシップ
+  content: BroadcomとGoogle、Anthropicとの提携を拡大
+- title: 戦略的提携・パートナーシップ
+  content: Anthropic、AppleとAmazonに新AIモデル「Mythos」をテスト提供
+- title: 戦略的提携・パートナーシップ
+  content: ハンガリー、Northrop Grummanと静止通信衛星契約
+- title: 大型契約・受注
+  content: Pimco、Oracleデータセンターに140億ドル融資検討
+- title: まとめ
+  content: '本日のレポートは以上です
+
+
+    ご視聴ありがとうございました'
+- title: 塾頭高崎の完全自動化への挑戦
+  content: '※このコンテンツはAIが自動生成しています
+
+
+    AI技術の限界に挑戦中！
+
+    共感いただけたらチャンネル登録・グッドボタンを
+
+    よろしくお願いします！'
+script_notes:
+- slide: 1
+  script: うぃっすー！if塾AIニュースのお時間です。2026/04/07のAI・IT株式ニュースをお届けします。
+- slide: 2
+  script: 本日のテクノロジーセクターは、AI競争の激化と基盤技術の内製化、そして各産業へのAIの浸透が主な動向となりました。特にIntelがElon Muskの「Terafab」プロジェクトに参加し、Tesla、SpaceX、xAI向けのカスタムチップ製造を支援する戦略的提携が発表され、半導体、AI、EV、宇宙産業に大きな影響を与えています。また、OpenAIの経営層に対する訴訟が報じられる一方、競合のAnthropicは新AIモデルのテスト提供やインフラ強化を進めています。EV市場は新製品発表や充電インフラ拡充が続くものの、価格競争や自動運転の法的課題も浮上しています。
+- slide: 3
+  script: Intel、MuskのTerafabプロジェクトに参画。Intelは、Elon Muskが主導するTesla、SpaceX、xAI向けの半導体開発プロジェクト「Terafab」に参加することを発表しました。これは、AI、EV、宇宙産業におけるカスタムチップの内製化と垂直統合を加速させる動きであり、Intelのファウンドリ事業戦略における重要な一手となります。（記事11,
+    13, 24, 63）
+- slide: 4
+  script: BroadcomとGoogle、Anthropicとの提携を拡大。AIスタートアップのAnthropicは、BroadcomおよびGoogleとの提携を拡大し、AIチップとクラウドインフラの提供を受けることで、急成長するAIサービスの運用体制を強化します。（記事11）
+- slide: 5
+  script: Anthropic、AppleとAmazonに新AIモデル「Mythos」をテスト提供。Anthropicは、より強力な未公開AIモデル「Mythos」をAppleとAmazonなどの主要テック企業にテスト提供を開始しました。これは、AIモデルの進化と大手企業との協業を通じた実用化・市場投入に向けた戦略的な動きと見られます。（記事29）
+- slide: 6
+  script: ハンガリー、Northrop Grummanと静止通信衛星契約。ハンガリー政府は、Northrop Grummanと初の国家向け静止通信衛星の契約を締結しました。また、国防・宇宙技術企業の4iGは、L3HarrisおよびApexと国防システムと衛星製造に関する契約を発表しており、宇宙インフラにおける国際的な提携と商用化の拡大を示します。（記事42）
+- slide: 7
+  script: Pimco、Oracleデータセンターに140億ドル融資検討。Pacific Investment Management Co.（Pimco）は、Oracle
+    Corp.のミシガン州における大規模データセンター建設に対し、約140億ドルの債務融資を検討していると報じられました。これは、AI需要の急増に伴うデータセンターインフラへの大規模投資の動きを明確に示しています。（記事28）
+- slide: 8
+  script: 本日のAI・IT株式ニュースは以上です。
+- slide: 9
+  script: ご視聴いただきありがとうございました。実はこのレポート、if塾の塾頭高崎による「完全自動化への挑戦」プロジェクトの一環として、AIが自動生成しています。将来的には塾頭が執筆しているような自然な記事になることを目指しており、現時点では事実と異なる内容が含まれる可能性もあります。この挑戦に共感していただけたら、ぜひチャンネル登録とグッドボタンをよろしくお願いします！また、無料のAI教育や導入コンサルも受け付けています。詳しくは概要欄のリンクからお問い合わせください。
+disclaimer: このレポートはAI（Gemini）により自動生成されています。投資判断は必ずご自身で行ってください。
