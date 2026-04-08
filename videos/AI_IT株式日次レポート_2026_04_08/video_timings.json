@@ -1,7 +1,7 @@
 {
   "fps": 30,
-  "totalDuration": 230.3,
-  "totalFrames": 6909,
+  "totalDuration": 195.49999999999997,
+  "totalFrames": 5864,
   "slides": [
     {
       "index": 1,
@@ -42,267 +42,274 @@
       "index": 2,
       "title": "本日のサマリー",
       "audioFile": "presentations/audio_output/slide_02.mp3",
-      "duration": 48.88,
-      "durationFrames": 1466,
+      "duration": 34.42,
+      "durationFrames": 1032,
       "startTime": 9.76,
-      "endTime": 58.64,
+      "endTime": 44.18,
       "startFrame": 292,
-      "endFrame": 1759,
+      "endFrame": 1325,
       "subtitles": [
         {
-          "text": "今日のテクノロジー市場は、AI、EV、\nロボティクス、宇宙産業における活発な動きを見せています。",
+          "text": "本日のテクノロジーセクターは、\nAIインフラへの大規模投資の継続と",
           "start": 9.76,
-          "end": 18.280760456273764,
+          "end": 15.506162162162163,
           "startFrame": 292,
-          "endFrame": 548
+          "endFrame": 465
         },
         {
-          "text": "特に、IntelがElon Muskの「Terafab」プロジ\nェクトに参加し、カスタムチップ開発でTesla、SpaceX",
-          "start": 18.580760456273765,
-          "end": 29.639619771863117,
-          "startFrame": 557,
-          "endFrame": 889
+          "text": "大手テック企業による新たなAI製品・機能の発表が目立ちました。",
+          "start": 15.806162162162163,
+          "end": 21.372756756756758,
+          "startFrame": 474,
+          "endFrame": 641
         },
         {
-          "text": "xAIと連携することは、\nAI半導体競争と垂直統合の加速を象徴します。",
-          "start": 29.939619771863118,
-          "end": 36.10357414448669,
-          "startFrame": 898,
-          "endFrame": 1083
+          "text": "地政学的な緊張緩和により市場全体に楽観的な見方が広がる一方、\nAnthropicがサプライチェーンリスク指定されるなど",
+          "start": 21.67275675675676,
+          "end": 32.087675675675676,
+          "startFrame": 650,
+          "endFrame": 962
         },
         {
-          "text": "一方、OpenAIを巡るElon Muskの訴訟は、AI業界の\nリーダーシップと方向性に関する内部的な緊張を示しています。",
-          "start": 36.40357414448669,
-          "end": 47.281140684410644,
-          "startFrame": 1092,
-          "endFrame": 1418
+          "text": "AI業界を取り巻く規制環境は依然として複雑です。",
+          "start": 32.38767567567567,
+          "end": 36.6972972972973,
+          "startFrame": 971,
+          "endFrame": 1100
         },
         {
-          "text": "EV市場では新モデルの投入、充電インフラの拡充、そして販売促進\n策が活発化しており、バッテリー生産能力の拡大も進んでいます。",
-          "start": 47.58114068441064,
-          "end": 58.63999999999999,
-          "startFrame": 1427,
-          "endFrame": 1759
+          "text": "ロボティクス、宇宙、\nEV分野でも技術革新と市場拡大の動きが活発に進展しています。",
+          "start": 36.997297297297294,
+          "end": 44.18,
+          "startFrame": 1109,
+          "endFrame": 1325
         }
       ],
-      "fullScript": "今日のテクノロジー市場は、AI、EV、ロボティクス、宇宙産業における活発な動きを見せています。特に、IntelがElon Muskの「Terafab」プロジェクトに参加し、カスタムチップ開発でTesla、SpaceX、xAIと連携することは、AI半導体競争と垂直統合の加速を象徴します。一方、OpenAIを巡るElon Muskの訴訟は、AI業界のリーダーシップと方向性に関する内部的な緊張を示しています。EV市場では新モデルの投入、充電インフラの拡充、そして販売促進策が活発化しており、バッテリー生産能力の拡大も進んでいます。"
+      "fullScript": "本日のテクノロジーセクターは、AIインフラへの大規模投資の継続と、大手テック企業による新たなAI製品・機能の発表が目立ちました。地政学的な緊張緩和により市場全体に楽観的な見方が広がる一方、Anthropicがサプライチェーンリスク指定されるなど、AI業界を取り巻く規制環境は依然として複雑です。ロボティクス、宇宙、EV分野でも技術革新と市場拡大の動きが活発に進展しています。"
     },
     {
       "index": 3,
-      "title": "戦略的提携・パートナーシップ",
+      "title": "M&A・企業買収",
       "audioFile": "presentations/audio_output/slide_03.mp3",
-      "duration": 29.74,
-      "durationFrames": 892,
-      "startTime": 58.64,
-      "endTime": 88.38,
-      "startFrame": 1759,
-      "endFrame": 2651,
+      "duration": 20.12,
+      "durationFrames": 603,
+      "startTime": 44.18,
+      "endTime": 64.3,
+      "startFrame": 1325,
+      "endFrame": 1929,
       "subtitles": [
         {
-          "text": "Intel、\nElon Muskの「Terafab」プロジェクトに参加。",
-          "start": 58.64,
-          "end": 64.408,
-          "startFrame": 1759,
-          "endFrame": 1932
+          "text": "Hologic、非公開化取引完了に伴い新CEOを任命。",
+          "start": 44.18,
+          "end": 49.16980769230769,
+          "startFrame": 1325,
+          "endFrame": 1475
         },
         {
-          "text": "IntelはTesla、SpaceX、xAI向けにカスタム半導\n体を開発するMuskの「Terafab」プロジェクトに参画。",
-          "start": 64.708,
-          "end": 74.7608,
-          "startFrame": 1941,
-          "endFrame": 2242
+          "text": "医療技術企業のHologicは、\n183億ドル規模の非公開化取引完了に伴い",
+          "start": 49.46980769230769,
+          "end": 56.12288461538461,
+          "startFrame": 1484,
+          "endFrame": 1683
         },
         {
-          "text": "これはIntelのファウンドリ事業強化と、AI・EV・宇宙産業\nにおける垂直統合型のチップ開発を加速させる動きと見られます。",
-          "start": 75.0608,
-          "end": 85.1136,
-          "startFrame": 2251,
-          "endFrame": 2553
+          "text": "前Baxter幹部のJosé Almeida氏を\nCEOに任命しました。",
+          "start": 56.42288461538461,
+          "end": 62.89115384615384,
+          "startFrame": 1692,
+          "endFrame": 1886
         },
         {
-          "text": "(記事17, 19, 30, 57)",
-          "start": 85.4136,
-          "end": 88.38,
-          "startFrame": 2562,
-          "endFrame": 2651
+          "text": "（記事37）",
+          "start": 63.19115384615384,
+          "end": 64.3,
+          "startFrame": 1895,
+          "endFrame": 1929
         }
       ],
-      "fullScript": "Intel、Elon Muskの「Terafab」プロジェクトに参加。IntelはTesla、SpaceX、xAI向けにカスタム半導体を開発するMuskの「Terafab」プロジェクトに参画。これはIntelのファウンドリ事業強化と、AI・EV・宇宙産業における垂直統合型のチップ開発を加速させる動きと見られます。(記事17, 19, 30, 57)"
+      "fullScript": "Hologic、非公開化取引完了に伴い新CEOを任命。医療技術企業のHologicは、183億ドル規模の非公開化取引完了に伴い、前Baxter幹部のJosé Almeida氏をCEOに任命しました。（記事37）"
     },
     {
       "index": 4,
-      "title": "戦略的提携・パートナーシップ",
+      "title": "M&A・企業買収",
       "audioFile": "presentations/audio_output/slide_04.mp3",
-      "duration": 16.14,
-      "durationFrames": 484,
-      "startTime": 88.38,
-      "endTime": 104.52,
-      "startFrame": 2651,
-      "endFrame": 3135,
+      "duration": 20.64,
+      "durationFrames": 619,
+      "startTime": 64.3,
+      "endTime": 84.94,
+      "startFrame": 1929,
+      "endFrame": 2548,
       "subtitles": [
         {
-          "text": "BroadcomとGoogle、\nAnthropicとの協業を拡大。",
-          "start": 88.38,
-          "end": 93.56,
-          "startFrame": 2651,
-          "endFrame": 2806
+          "text": "Standard Chartered、\n暗号資産カストディアンZodiaの部門統合/一部買収を検討。",
+          "start": 64.3,
+          "end": 71.62772727272727,
+          "startFrame": 1929,
+          "endFrame": 2148
         },
         {
-          "text": "BroadcomとGoogleは、AIスタートアップAnthr\nopicとの協業を拡大し、同社の演算基盤強化を支援します。",
-          "start": 93.86,
-          "end": 103.27818181818182,
-          "startFrame": 2815,
-          "endFrame": 3098
+          "text": "Standard Charteredは、大半を保有する暗号資産\nカストディアンZodia Custody Ltd.の部門統合",
+          "start": 71.92772727272727,
+          "end": 81.05,
+          "startFrame": 2157,
+          "endFrame": 2431
         },
         {
-          "text": "(記事17)",
-          "start": 103.57818181818182,
-          "end": 104.52,
-          "startFrame": 3107,
-          "endFrame": 3135
+          "text": "または一部買収を検討しています。",
+          "start": 81.35,
+          "end": 83.74272727272727,
+          "startFrame": 2440,
+          "endFrame": 2512
+        },
+        {
+          "text": "（記事32）",
+          "start": 84.04272727272726,
+          "end": 84.93999999999998,
+          "startFrame": 2521,
+          "endFrame": 2548
         }
       ],
-      "fullScript": "BroadcomとGoogle、Anthropicとの協業を拡大。BroadcomとGoogleは、AIスタートアップAnthropicとの協業を拡大し、同社の演算基盤強化を支援します。(記事17)"
+      "fullScript": "Standard Chartered、暗号資産カストディアンZodiaの部門統合/一部買収を検討。Standard Charteredは、大半を保有する暗号資産カストディアンZodia Custody Ltd.の部門統合、または一部買収を検討しています。（記事32）"
     },
     {
       "index": 5,
-      "title": "戦略的提携・パートナーシップ",
+      "title": "大型契約・受注",
       "audioFile": "presentations/audio_output/slide_05.mp3",
-      "duration": 21.6,
-      "durationFrames": 648,
-      "startTime": 104.52,
-      "endTime": 126.12,
-      "startFrame": 3135,
-      "endFrame": 3783,
+      "duration": 19.34,
+      "durationFrames": 580,
+      "startTime": 84.94,
+      "endTime": 104.28,
+      "startFrame": 2548,
+      "endFrame": 3128,
       "subtitles": [
         {
-          "text": "ハンガリー、Northrop Grummanと通信衛星契約。",
-          "start": 104.52,
-          "end": 109.44857142857143,
-          "startFrame": 3135,
-          "endFrame": 3283
+          "text": "Oracleデータセンター向け140億ドルの融資。",
+          "start": 84.94,
+          "end": 88.43242424242425,
+          "startFrame": 2548,
+          "endFrame": 2652
         },
         {
-          "text": "ハンガリーの防衛・宇宙技術企業4iGが\nNorthrop Grummanと初の静止通信衛星契約を締結。",
-          "start": 109.74857142857142,
-          "end": 117.96285714285713,
-          "startFrame": 3292,
-          "endFrame": 3538
+          "text": "Pacific Investment Management\nCo.（Pimco）は",
+          "start": 88.73242424242424,
+          "end": 94.32030303030304,
+          "startFrame": 2661,
+          "endFrame": 2829
         },
         {
-          "text": "同時にL3HarrisおよびApexと\nも防衛システムと衛星製造で契約しています。",
-          "start": 118.26285714285713,
-          "end": 124.8342857142857,
-          "startFrame": 3547,
-          "endFrame": 3745
+          "text": "Oracle Corp.のミシガン州の巨大データセンター向けに\n提供する140億ドルの融資の一部売却を検討しています。",
+          "start": 94.62030303030303,
+          "end": 102.72272727272728,
+          "startFrame": 2838,
+          "endFrame": 3081
         },
         {
-          "text": "(記事42)",
-          "start": 125.1342857142857,
-          "end": 126.11999999999998,
-          "startFrame": 3754,
-          "endFrame": 3783
+          "text": "（記事6, 15）",
+          "start": 103.02272727272728,
+          "end": 104.28,
+          "startFrame": 3090,
+          "endFrame": 3128
         }
       ],
-      "fullScript": "ハンガリー、Northrop Grummanと通信衛星契約。ハンガリーの防衛・宇宙技術企業4iGがNorthrop Grummanと初の静止通信衛星契約を締結。同時にL3HarrisおよびApexとも防衛システムと衛星製造で契約しています。(記事42)"
+      "fullScript": "Oracleデータセンター向け140億ドルの融資。Pacific Investment Management Co.（Pimco）は、Oracle Corp.のミシガン州の巨大データセンター向けに提供する140億ドルの融資の一部売却を検討しています。（記事6, 15）"
     },
     {
       "index": 6,
       "title": "大型契約・受注",
       "audioFile": "presentations/audio_output/slide_06.mp3",
-      "duration": 31.3,
-      "durationFrames": 939,
-      "startTime": 126.12,
-      "endTime": 157.42000000000002,
-      "startFrame": 3783,
-      "endFrame": 4722,
+      "duration": 27.1,
+      "durationFrames": 813,
+      "startTime": 104.28,
+      "endTime": 131.38,
+      "startFrame": 3128,
+      "endFrame": 3941,
       "subtitles": [
         {
-          "text": "EVE Energy、\n大規模バッテリー工場建設に110億元投資。",
-          "start": 126.12,
-          "end": 131.95757575757577,
-          "startFrame": 3783,
-          "endFrame": 3958
+          "text": "Metaデータセンター向け30億ドルの融資。",
+          "start": 104.28,
+          "end": 107.3575956284153,
+          "startFrame": 3128,
+          "endFrame": 3220
         },
         {
-          "text": "中国の\n主要リチウムイオンバッテリーメーカーEVE Energyは",
-          "start": 132.25757575757578,
-          "end": 138.09515151515154,
-          "startFrame": 3967,
-          "endFrame": 4142
+          "text": "Natixis SA、Mitsubishi UFJ\nFinancial Group Inc.",
+          "start": 107.6575956284153,
+          "end": 113.95267759562842,
+          "startFrame": 3229,
+          "endFrame": 3418
         },
         {
-          "text": "総額110億元（約1.6億ドル）を投じて年間合計110ギガワット時（GWh）の生産能力を持つ2つの新工場を建設すると発表しました。",
-          "start": 138.39515151515155,
-          "end": 150.2527272727273,
-          "startFrame": 4151,
-          "endFrame": 4507
+          "text": "Societe Generale SAを含む銀行団は",
+          "start": 114.25267759562841,
+          "end": 117.88983606557377,
+          "startFrame": 3427,
+          "endFrame": 3536
         },
         {
-          "text": "これはEV市場のバッテリー需要の急速な拡大に対応する動きです。",
-          "start": 150.5527272727273,
-          "end": 156.20787878787883,
-          "startFrame": 4516,
-          "endFrame": 4686
+          "text": "Meta Platforms Inc.がオハイオ州に建設するデ\nータセンター向けに30億ドルの融資販売を開始しました。",
+          "start": 118.18983606557377,
+          "end": 126.30349726775957,
+          "startFrame": 3545,
+          "endFrame": 3789
         },
         {
-          "text": "(記事9)",
-          "start": 156.50787878787884,
-          "end": 157.42000000000004,
-          "startFrame": 4695,
-          "endFrame": 4722
+          "text": "これはAIインフラ構築を支援する最新の大型取引です。",
+          "start": 126.60349726775956,
+          "end": 130.2406557377049,
+          "startFrame": 3798,
+          "endFrame": 3907
+        },
+        {
+          "text": "（記事17）",
+          "start": 130.54065573770492,
+          "end": 131.38,
+          "startFrame": 3916,
+          "endFrame": 3941
         }
       ],
-      "fullScript": "EVE Energy、大規模バッテリー工場建設に110億元投資。中国の主要リチウムイオンバッテリーメーカーEVE Energyは、総額110億元（約1.6億ドル）を投じて年間合計110ギガワット時（GWh）の生産能力を持つ2つの新工場を建設すると発表しました。これはEV市場のバッテリー需要の急速な拡大に対応する動きです。(記事9)"
+      "fullScript": "Metaデータセンター向け30億ドルの融資。Natixis SA、Mitsubishi UFJ Financial Group Inc.、Societe Generale SAを含む銀行団は、Meta Platforms Inc.がオハイオ州に建設するデータセンター向けに30億ドルの融資販売を開始しました。これはAIインフラ構築を支援する最新の大型取引です。（記事17）"
     },
     {
       "index": 7,
       "title": "大型契約・受注",
       "audioFile": "presentations/audio_output/slide_07.mp3",
-      "duration": 28.74,
-      "durationFrames": 862,
-      "startTime": 157.42000000000002,
-      "endTime": 186.16000000000003,
-      "startFrame": 4722,
-      "endFrame": 5584,
+      "duration": 19.98,
+      "durationFrames": 599,
+      "startTime": 131.38,
+      "endTime": 151.35999999999999,
+      "startFrame": 3941,
+      "endFrame": 4540,
       "subtitles": [
         {
-          "text": "Pimco、\nOracleデータセンター建設に140億ドル融資検討。",
-          "start": 157.42000000000002,
-          "end": 162.28000000000003,
-          "startFrame": 4722,
-          "endFrame": 4868
+          "text": "Capella Space、\n軍事通信衛星デモで4900万ドルの契約獲得。",
+          "start": 131.38,
+          "end": 136.87503999999998,
+          "startFrame": 3941,
+          "endFrame": 4106
         },
         {
-          "text": "Pacific Investment Management C\no.（Pimco）がBank of Americaと協議し",
-          "start": 162.58000000000004,
-          "end": 171.41636363636368,
-          "startFrame": 4877,
-          "endFrame": 5142
+          "text": "Capella Spaceは",
+          "start": 137.17504,
+          "end": 139.31199999999998,
+          "startFrame": 4115,
+          "endFrame": 4179
         },
         {
-          "text": "Oracleのミシガン州データセンター建設のため約140億ドル\nの債務融資を提供する可能性が報じられました。",
-          "start": 171.7163636363637,
-          "end": 179.52181818181825,
-          "startFrame": 5151,
-          "endFrame": 5385
+          "text": "Space Development Agencyから2027年の軍事通信衛星デモンストレーション向けに4900万ドルの契約を獲得しました。",
+          "start": 139.612,
+          "end": 150.14416,
+          "startFrame": 4188,
+          "endFrame": 4504
         },
         {
-          "text": "これはAIの進化に伴うデータセンターインフラ需要の\n拡大を示すものです。",
-          "start": 179.82181818181826,
-          "end": 184.97636363636371,
-          "startFrame": 5394,
-          "endFrame": 5549
-        },
-        {
-          "text": "(記事34)",
-          "start": 185.27636363636373,
-          "end": 186.16000000000008,
-          "startFrame": 5558,
-          "endFrame": 5584
+          "text": "（記事48）",
+          "start": 150.44416,
+          "end": 151.36,
+          "startFrame": 4513,
+          "endFrame": 4540
         }
       ],
-      "fullScript": "Pimco、Oracleデータセンター建設に140億ドル融資検討。Pacific Investment Management Co.（Pimco）がBank of Americaと協議し、Oracleのミシガン州データセンター建設のため約140億ドルの債務融資を提供する可能性が報じられました。これはAIの進化に伴うデータセンターインフラ需要の拡大を示すものです。(記事34)"
+      "fullScript": "Capella Space、軍事通信衛星デモで4900万ドルの契約獲得。Capella Spaceは、Space Development Agencyから2027年の軍事通信衛星デモンストレーション向けに4900万ドルの契約を獲得しました。（記事48）"
     },
     {
       "index": 8,
@@ -310,17 +317,17 @@
       "audioFile": "presentations/audio_output/slide_08.mp3",
       "duration": 3.88,
       "durationFrames": 116,
-      "startTime": 186.16000000000003,
-      "endTime": 190.04000000000002,
-      "startFrame": 5584,
-      "endFrame": 5701,
+      "startTime": 151.35999999999999,
+      "endTime": 155.23999999999998,
+      "startFrame": 4540,
+      "endFrame": 4657,
       "subtitles": [
         {
           "text": "本日のAI・IT株式ニュースは以上です。",
-          "start": 186.16000000000003,
-          "end": 190.04000000000002,
-          "startFrame": 5584,
-          "endFrame": 5701
+          "start": 151.35999999999999,
+          "end": 155.23999999999998,
+          "startFrame": 4540,
+          "endFrame": 4657
         }
       ],
       "fullScript": "本日のAI・IT株式ニュースは以上です。"
@@ -331,52 +338,52 @@
       "audioFile": "presentations/audio_output/slide_09.mp3",
       "duration": 40.26,
       "durationFrames": 1207,
-      "startTime": 190.04000000000002,
-      "endTime": 230.3,
-      "startFrame": 5701,
-      "endFrame": 6909,
+      "startTime": 155.23999999999998,
+      "endTime": 195.49999999999997,
+      "startFrame": 4657,
+      "endFrame": 5864,
       "subtitles": [
         {
           "text": "ご視聴いただきありがとうございました。",
-          "start": 190.04000000000002,
-          "end": 193.200686695279,
-          "startFrame": 5701,
-          "endFrame": 5796
+          "start": 155.23999999999998,
+          "end": 158.40068669527895,
+          "startFrame": 4657,
+          "endFrame": 4752
         },
         {
           "text": "実はこのレポート、if塾の塾頭高崎による「完全自動化への挑戦」\nプロジェクトの一環として、AIが自動生成しています。",
-          "start": 193.500686695279,
-          "end": 202.9827467811159,
-          "startFrame": 5805,
-          "endFrame": 6089
+          "start": 158.70068669527896,
+          "end": 168.18274678111587,
+          "startFrame": 4761,
+          "endFrame": 5045
         },
         {
           "text": "将来的には塾頭が執筆しているような自然な記事になることを目指し\nており、現時点では事実と異なる内容が含まれる可能性もあります。",
-          "start": 203.28274678111592,
-          "end": 213.5965665236052,
-          "startFrame": 6098,
-          "endFrame": 6407
+          "start": 168.48274678111588,
+          "end": 178.79656652360515,
+          "startFrame": 5054,
+          "endFrame": 5363
         },
         {
           "text": "この挑戦に共感していただけたら、\nぜひチャンネル登録とグッドボタンをよろしくお願いします！",
-          "start": 213.8965665236052,
-          "end": 221.21605150214597,
-          "startFrame": 6416,
-          "endFrame": 6636
+          "start": 179.09656652360516,
+          "end": 186.41605150214593,
+          "startFrame": 5372,
+          "endFrame": 5592
         },
         {
           "text": "また、無料のAI教育や導入コンサルも受け付けています。",
-          "start": 221.51605150214598,
-          "end": 226.00755364806872,
-          "startFrame": 6645,
-          "endFrame": 6780
+          "start": 186.71605150214594,
+          "end": 191.20755364806868,
+          "startFrame": 5601,
+          "endFrame": 5736
         },
         {
           "text": "詳しくは概要欄のリンクからお問い合わせください。",
-          "start": 226.30755364806873,
-          "end": 230.30000000000007,
-          "startFrame": 6789,
-          "endFrame": 6909
+          "start": 191.5075536480687,
+          "end": 195.50000000000003,
+          "startFrame": 5745,
+          "endFrame": 5865
         }
       ],
       "fullScript": "ご視聴いただきありがとうございました。実はこのレポート、if塾の塾頭高崎による「完全自動化への挑戦」プロジェクトの一環として、AIが自動生成しています。将来的には塾頭が執筆しているような自然な記事になることを目指しており、現時点では事実と異なる内容が含まれる可能性もあります。この挑戦に共感していただけたら、ぜひチャンネル登録とグッドボタンをよろしくお願いします！また、無料のAI教育や導入コンサルも受け付けています。詳しくは概要欄のリンクからお問い合わせください。"
