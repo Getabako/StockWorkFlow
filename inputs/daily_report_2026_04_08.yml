@@ -6,18 +6,17 @@ slides:
 
     本日の注目トピック'
 - title: 本日のサマリー
-  content: 今日のテクノロジー市場は、AI、EV、ロボティクス、宇宙産業における活発な動きを見せています。特に、IntelがElon Muskの「Terafab」プロジェクトに参加し、カスタムチップ開発でTesla、SpaceX、xAIと連携することは、AI半導体競争と垂直統合の加速を象徴します。一方、OpenAIを巡るElon
-    Muskの訴訟は、AI業界のリーダーシップと方向性に関する内部的な緊張を示...
-- title: 戦略的提携・パートナーシップ
-  content: Intel、Elon Muskの「Terafab」プロジェクトに参加
-- title: 戦略的提携・パートナーシップ
-  content: BroadcomとGoogle、Anthropicとの協業を拡大
-- title: 戦略的提携・パートナーシップ
-  content: ハンガリー、Northrop Grummanと通信衛星契約
+  content: 本日のテクノロジーセクターは、AIインフラへの大規模投資の継続と、大手テック企業による新たなAI製品・機能の発表が目立ちました。地政学的な緊張緩和により市場全体に楽観的な見方が広がる一方、Anthropicがサプライチェーンリスク指定されるなど、AI業界を取り巻く規制環境は依然として複雑です。ロボティクス、宇宙、EV分野でも技術革新と市場拡大の動きが活発に進展しています。
+- title: M&A・企業買収
+  content: Hologic、非公開化取引完了に伴い新CEOを任命
+- title: M&A・企業買収
+  content: Standard Chartered、暗号資産カストディアンZodiaの部門統合/一部買収を検討
 - title: 大型契約・受注
-  content: EVE Energy、大規模バッテリー工場建設に110億元投資
+  content: Oracleデータセンター向け140億ドルの融資
 - title: 大型契約・受注
-  content: Pimco、Oracleデータセンター建設に140億ドル融資検討
+  content: Metaデータセンター向け30億ドルの融資
+- title: 大型契約・受注
+  content: Capella Space、軍事通信衛星デモで4900万ドルの契約獲得
 - title: まとめ
   content: '本日のレポートは以上です
 
@@ -36,20 +35,21 @@ script_notes:
 - slide: 1
   script: うぃっすー！if塾AIニュースのお時間です。2026/04/08のAI・IT株式ニュースをお届けします。
 - slide: 2
-  script: 今日のテクノロジー市場は、AI、EV、ロボティクス、宇宙産業における活発な動きを見せています。特に、IntelがElon Muskの「Terafab」プロジェクトに参加し、カスタムチップ開発でTesla、SpaceX、xAIと連携することは、AI半導体競争と垂直統合の加速を象徴します。一方、OpenAIを巡るElon
-    Muskの訴訟は、AI業界のリーダーシップと方向性に関する内部的な緊張を示しています。EV市場では新モデルの投入、充電インフラの拡充、そして販売促進策が活発化しており、バッテリー生産能力の拡大も進んでいます。
+  script: 本日のテクノロジーセクターは、AIインフラへの大規模投資の継続と、大手テック企業による新たなAI製品・機能の発表が目立ちました。地政学的な緊張緩和により市場全体に楽観的な見方が広がる一方、Anthropicがサプライチェーンリスク指定されるなど、AI業界を取り巻く規制環境は依然として複雑です。ロボティクス、宇宙、EV分野でも技術革新と市場拡大の動きが活発に進展しています。
 - slide: 3
-  script: Intel、Elon Muskの「Terafab」プロジェクトに参加。IntelはTesla、SpaceX、xAI向けにカスタム半導体を開発するMuskの「Terafab」プロジェクトに参画。これはIntelのファウンドリ事業強化と、AI・EV・宇宙産業における垂直統合型のチップ開発を加速させる動きと見られます。(記事17,
-    19, 30, 57)
+  script: Hologic、非公開化取引完了に伴い新CEOを任命。医療技術企業のHologicは、183億ドル規模の非公開化取引完了に伴い、前Baxter幹部のJosé
+    Almeida氏をCEOに任命しました。（記事37）
 - slide: 4
-  script: BroadcomとGoogle、Anthropicとの協業を拡大。BroadcomとGoogleは、AIスタートアップAnthropicとの協業を拡大し、同社の演算基盤強化を支援します。(記事17)
+  script: Standard Chartered、暗号資産カストディアンZodiaの部門統合/一部買収を検討。Standard Charteredは、大半を保有する暗号資産カストディアンZodia
+    Custody Ltd.の部門統合、または一部買収を検討しています。（記事32）
 - slide: 5
-  script: ハンガリー、Northrop Grummanと通信衛星契約。ハンガリーの防衛・宇宙技術企業4iGがNorthrop Grummanと初の静止通信衛星契約を締結。同時にL3HarrisおよびApexとも防衛システムと衛星製造で契約しています。(記事42)
+  script: Oracleデータセンター向け140億ドルの融資。Pacific Investment Management Co.（Pimco）は、Oracle
+    Corp.のミシガン州の巨大データセンター向けに提供する140億ドルの融資の一部売却を検討しています。（記事6, 15）
 - slide: 6
-  script: EVE Energy、大規模バッテリー工場建設に110億元投資。中国の主要リチウムイオンバッテリーメーカーEVE Energyは、総額110億元（約1.6億ドル）を投じて年間合計110ギガワット時（GWh）の生産能力を持つ2つの新工場を建設すると発表しました。これはEV市場のバッテリー需要の急速な拡大に対応する動きです。(記事9)
+  script: Metaデータセンター向け30億ドルの融資。Natixis SA、Mitsubishi UFJ Financial Group Inc.、Societe
+    Generale SAを含む銀行団は、Meta Platforms Inc.がオハイオ州に建設するデータセンター向けに30億ドルの融資販売を開始しました。これはAIインフラ構築を支援する最新の大型取引です。（記事17）
 - slide: 7
-  script: Pimco、Oracleデータセンター建設に140億ドル融資検討。Pacific Investment Management Co.（Pimco）がBank
-    of Americaと協議し、Oracleのミシガン州データセンター建設のため約140億ドルの債務融資を提供する可能性が報じられました。これはAIの進化に伴うデータセンターインフラ需要の拡大を示すものです。(記事34)
+  script: Capella Space、軍事通信衛星デモで4900万ドルの契約獲得。Capella Spaceは、Space Development Agencyから2027年の軍事通信衛星デモンストレーション向けに4900万ドルの契約を獲得しました。（記事48）
 - slide: 8
   script: 本日のAI・IT株式ニュースは以上です。
 - slide: 9
