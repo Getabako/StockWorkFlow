@@ -283,6 +283,7 @@ jobs:
           git push origin main
 
       - name: Upload video to YouTube
+        continue-on-error: true
         if: success() && (github.event_name == 'schedule' || github.event.inputs.generate_video == 'true') && github.event.inputs.generate_slides_only != 'true'
         env:
           YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
