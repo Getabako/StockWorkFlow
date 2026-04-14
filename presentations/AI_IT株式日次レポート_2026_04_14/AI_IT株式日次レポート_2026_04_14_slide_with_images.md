@@ -147,42 +147,42 @@ style: |
 <!-- _class: summary -->
 # 本日のサマリー
 
-AI業界は、インフラ面での投資（AIデータセンター向け大規模電力契約、カスタムチップ開発提携）と、多岐にわたる分野での応用（ロボティクス、医療、宇宙、EV・自動運転、製造業DX）の加速が顕著です。特に、生成AIの普及に伴うサイバーセキュリティリスクと規制の必要性が高まる一方で、宇宙産業では軌道上データセンターやLEO衛星通信といった新たな商業的フロンティアが急速に拡大しています。
+本日のテクノロジー市場は、AI、宇宙、EV・自動運転の各分野で目覚ましい動きを見せました。AI分野では、Google DeepMindによるロボットの推論能力強化や、AnthropicとOpenAIによるサイバーセキュリティ向けAIモデルの競争が活発化する一方で、AIのリスクに対する国際的な規制強化の議論が活発化しています。宇宙産業では、AmazonによるGlobalstarの116億ドル買...
 
 ---
 
 ![bg right:45%](../images/002.png)
 # M&A・企業買収
 
-NemetschekがHCSSを買収
+AmazonによるGlobalstar買収
 
 ---
 
 ![bg right:45%](../images/003.png)
-# M&A・企業買収
+# 戦略的提携・パートナーシップ
 
-HexagonがWaygate Technologiesを買収
+MetaとBroadcomのカスタムAIチップ開発深化
 
 ---
 
 ![bg right:45%](../images/004.png)
-# M&A・企業買収
+# 戦略的提携・パートナーシップ
 
-StrykerがAmplitude Vascular Systemsを買収
+Google DeepMindとBoston Dynamicsの協業
 
 ---
 
 ![bg right:45%](../images/005.png)
-# M&A・企業買収
+# 戦略的提携・パートナーシップ
 
-Nvidia買収報道を否定
+Google.orgとJohnson & Johnson Foundationの医療AI教育イニシアチブ
 
 ---
 
 ![bg right:45%](../images/006.png)
 # 戦略的提携・パートナーシップ
 
-Googleが製造業AIトレーニングを提供
+SESとBoeingの航空機向け衛星通信統合
 
 ---
 
