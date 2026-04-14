@@ -6,17 +6,17 @@ slides:
 
     本日の注目トピック'
 - title: 本日のサマリー
-  content: AI業界は、インフラ面での投資（AIデータセンター向け大規模電力契約、カスタムチップ開発提携）と、多岐にわたる分野での応用（ロボティクス、医療、宇宙、EV・自動運転、製造業DX）の加速が顕著です。特に、生成AIの普及に伴うサイバーセキュリティリスクと規制の必要性が高まる一方で、宇宙産業では軌道上データセンターやLEO衛星通信といった新たな商業的フロンティアが急速に拡大しています。
+  content: 本日のテクノロジー市場は、AI、宇宙、EV・自動運転の各分野で目覚ましい動きを見せました。AI分野では、Google DeepMindによるロボットの推論能力強化や、AnthropicとOpenAIによるサイバーセキュリティ向けAIモデルの競争が活発化する一方で、AIのリスクに対する国際的な規制強化の議論が活発化しています。宇宙産業では、AmazonによるGlobalstarの116億ドル買...
 - title: M&A・企業買収
-  content: NemetschekがHCSSを買収
-- title: M&A・企業買収
-  content: HexagonがWaygate Technologiesを買収
-- title: M&A・企業買収
-  content: StrykerがAmplitude Vascular Systemsを買収
-- title: M&A・企業買収
-  content: Nvidia買収報道を否定
+  content: AmazonによるGlobalstar買収
 - title: 戦略的提携・パートナーシップ
-  content: Googleが製造業AIトレーニングを提供
+  content: MetaとBroadcomのカスタムAIチップ開発深化
+- title: 戦略的提携・パートナーシップ
+  content: Google DeepMindとBoston Dynamicsの協業
+- title: 戦略的提携・パートナーシップ
+  content: Google.orgとJohnson & Johnson Foundationの医療AI教育イニシアチブ
+- title: 戦略的提携・パートナーシップ
+  content: SESとBoeingの航空機向け衛星通信統合
 - title: まとめ
   content: '本日のレポートは以上です
 
@@ -35,19 +35,21 @@ script_notes:
 - slide: 1
   script: うぃっすー！if塾AIニュースのお時間です。2026/04/14のAI・IT株式ニュースをお届けします。
 - slide: 2
-  script: AI業界は、インフラ面での投資（AIデータセンター向け大規模電力契約、カスタムチップ開発提携）と、多岐にわたる分野での応用（ロボティクス、医療、宇宙、EV・自動運転、製造業DX）の加速が顕著です。特に、生成AIの普及に伴うサイバーセキュリティリスクと規制の必要性が高まる一方で、宇宙産業では軌道上データセンターやLEO衛星通信といった新たな商業的フロンティアが急速に拡大しています。
+  script: 本日のテクノロジー市場は、AI、宇宙、EV・自動運転の各分野で目覚ましい動きを見せました。AI分野では、Google DeepMindによるロボットの推論能力強化や、AnthropicとOpenAIによるサイバーセキュリティ向けAIモデルの競争が活発化する一方で、AIのリスクに対する国際的な規制強化の議論が活発化しています。宇宙産業では、AmazonによるGlobalstarの116億ドル買収が発表され、衛星通信市場の競争激化と商用化の加速を強く印象付けました。EV市場では、世界販売台数の成長鈍化が見られるものの、充電インフラの拡充、バッテリー技術の革新、新型EVの投入、そして戦略的パートナーシップが引き続き市場を牽引しています。
 - slide: 3
-  script: NemetschekがHCSSを買収。建設管理ソフトウェアプロバイダーのHeavy Construction Systems SpecialistsをThoma
-    Bravoから買収することで合意。(記事3)
+  script: AmazonによるGlobalstar買収。Amazonが衛星通信事業者Globalstarを約116億ドルで買収することを発表。これにより、衛星直接通信サービス市場への本格参入を果たし、Elon
+    Musk氏のStarlinkとの競争が激化すると見られます。Appleの衛星事業にも間接的に影響を与える可能性があります。（記事13, 17, 19, 32,
+    35, 59）
 - slide: 4
-  script: HexagonがWaygate Technologiesを買収。スウェーデンのセンサー・測定技術企業Hexagon ABが、Baker Hughes
-    Co.からWaygate Technologiesを約14.5億ドルで買収することに合意。検査・計測技術の強化。(記事21)
+  script: MetaとBroadcomのカスタムAIチップ開発深化。Meta PlatformsはBroadcomとの提携を拡大し、同社のAIサービスを強化するためのカスタムチップの設計・製造を深化させると発表しました。（記事14）
 - slide: 5
-  script: StrykerがAmplitude Vascular Systemsを買収。医療機器大手StrykerがAmplitude Vascular Systemsを買収予定。血管内結石除去技術を強化。(記事33)
+  script: Google DeepMindとBoston Dynamicsの協業。Google DeepMindは、Gemini Robotics ER-1.6を活用してBoston
+    DynamicsのSpotロボットの推論能力と環境理解能力を向上させると発表。AIとロボットの統合による自律性の強化が加速しています。（記事3, 38, 39）
 - slide: 6
-  script: Nvidia買収報道を否定。Nvidia Corp.がPC業界を再編するような大型企業の買収を模索しているという噂を否定。(記事14)
+  script: Google.orgとJohnson & Johnson Foundationの医療AI教育イニシアチブ。Google.orgとJohnson
+    & Johnson Foundationは、米国の農村地域の医療従事者向けにAIトレーニングを提供するため、1,000万ドルのイニシアチブを立ち上げました。（記事7）
 - slide: 7
-  script: Googleが製造業AIトレーニングを提供。GoogleはManufacturing Instituteと提携し、40,000人の製造業従事者向けにAIトレーニングを開始。(記事1)
+  script: SESとBoeingの航空機向け衛星通信統合。SESとBoeingは、航空機生産プロセス中に多軌道型機内接続ハードウェアを工場で統合する契約を発表し、衛星通信の設置方法における重要な転換点を示しました。（記事45）
 - slide: 8
   script: 本日のAI・IT株式ニュースは以上です。
 - slide: 9
