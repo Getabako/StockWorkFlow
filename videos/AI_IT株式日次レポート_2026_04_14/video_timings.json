@@ -1,7 +1,7 @@
 {
   "fps": 30,
-  "totalDuration": 161.92,
-  "totalFrames": 4857,
+  "totalDuration": 228.20000000000002,
+  "totalFrames": 6846,
   "slides": [
     {
       "index": 1,
@@ -42,246 +42,302 @@
       "index": 2,
       "title": "本日のサマリー",
       "audioFile": "presentations/audio_output/slide_02.mp3",
-      "duration": 37.54,
-      "durationFrames": 1126,
+      "duration": 58.16,
+      "durationFrames": 1744,
       "startTime": 9.98,
-      "endTime": 47.519999999999996,
+      "endTime": 68.14,
       "startFrame": 299,
-      "endFrame": 1425,
+      "endFrame": 2044,
       "subtitles": [
         {
-          "text": "AI業界は、インフラ面での投資（AIデータセンター向け大規模電\n力契約、カスタムチップ開発提携）と",
+          "text": "本日のテクノロジー市場は、AI、宇宙、\nEV・自動運転の各分野で目覚ましい動きを見せました。",
           "start": 9.98,
-          "end": 19.285396825396823,
+          "end": 17.988571428571426,
           "startFrame": 299,
-          "endFrame": 578
+          "endFrame": 539
         },
         {
-          "text": "多岐にわたる分野での応用（ロボティクス、\n医療、宇宙、EV・自動運転、製造業DX）の加速が顕著です。",
-          "start": 19.585396825396824,
-          "end": 29.084656084656082,
-          "startFrame": 587,
-          "endFrame": 872
+          "text": "AI分野では、\nGoogle DeepMindによるロボットの推論能力強化や",
+          "start": 18.288571428571426,
+          "end": 24.873396825396824,
+          "startFrame": 548,
+          "endFrame": 746
         },
         {
-          "text": "特に、生成AIの普及に伴うサイバーセキュリティリスクと規制の必\n要性が高まる一方で",
-          "start": 29.384656084656083,
-          "end": 37.13915343915344,
-          "startFrame": 881,
-          "endFrame": 1114
+          "text": "AnthropicとOpenAIに\nよるサイバーセキュリティ向けAIモデルの競争が活発化する一方で",
+          "start": 25.173396825396825,
+          "end": 33.715873015873015,
+          "startFrame": 755,
+          "endFrame": 1011
         },
         {
-          "text": "宇宙産業では軌道上データセンターやLEO衛星通信といった新たな\n商業的フロンティアが急速に拡大しています。",
-          "start": 37.439153439153436,
-          "end": 47.519999999999996,
-          "startFrame": 1123,
-          "endFrame": 1425
+          "text": "AIのリスクに対する国際的な規制強化の議論が活発化しています。",
+          "start": 34.01587301587301,
+          "end": 39.532888888888884,
+          "startFrame": 1020,
+          "endFrame": 1185
+        },
+        {
+          "text": "宇宙産業では、AmazonによるGlobalstarの116億\nドル買収が発表され",
+          "start": 39.83288888888888,
+          "end": 46.95161904761904,
+          "startFrame": 1194,
+          "endFrame": 1408
+        },
+        {
+          "text": "衛星通信市場の競争激化と商用化の加速を強く印象付けました。",
+          "start": 47.25161904761904,
+          "end": 52.412698412698404,
+          "startFrame": 1417,
+          "endFrame": 1572
+        },
+        {
+          "text": "EV市場では、世界販売台数の成長鈍化が見られるものの、\n充電インフラの拡充、バッテリー技術の革新、新型EVの投入",
+          "start": 52.7126984126984,
+          "end": 62.50095238095237,
+          "startFrame": 1581,
+          "endFrame": 1875
+        },
+        {
+          "text": "そして戦略的パートナーシップが引き続き市場を牽引しています。",
+          "start": 62.80095238095237,
+          "end": 68.13999999999999,
+          "startFrame": 1884,
+          "endFrame": 2044
         }
       ],
-      "fullScript": "AI業界は、インフラ面での投資（AIデータセンター向け大規模電力契約、カスタムチップ開発提携）と、多岐にわたる分野での応用（ロボティクス、医療、宇宙、EV・自動運転、製造業DX）の加速が顕著です。特に、生成AIの普及に伴うサイバーセキュリティリスクと規制の必要性が高まる一方で、宇宙産業では軌道上データセンターやLEO衛星通信といった新たな商業的フロンティアが急速に拡大しています。"
+      "fullScript": "本日のテクノロジー市場は、AI、宇宙、EV・自動運転の各分野で目覚ましい動きを見せました。AI分野では、Google DeepMindによるロボットの推論能力強化や、AnthropicとOpenAIによるサイバーセキュリティ向けAIモデルの競争が活発化する一方で、AIのリスクに対する国際的な規制強化の議論が活発化しています。宇宙産業では、AmazonによるGlobalstarの116億ドル買収が発表され、衛星通信市場の競争激化と商用化の加速を強く印象付けました。EV市場では、世界販売台数の成長鈍化が見られるものの、充電インフラの拡充、バッテリー技術の革新、新型EVの投入、そして戦略的パートナーシップが引き続き市場を牽引しています。"
     },
     {
       "index": 3,
       "title": "M&A・企業買収",
       "audioFile": "presentations/audio_output/slide_03.mp3",
-      "duration": 12.44,
-      "durationFrames": 373,
-      "startTime": 47.519999999999996,
-      "endTime": 59.959999999999994,
-      "startFrame": 1425,
-      "endFrame": 1798,
+      "duration": 32.38,
+      "durationFrames": 971,
+      "startTime": 68.14,
+      "endTime": 100.52000000000001,
+      "startFrame": 2044,
+      "endFrame": 3015,
       "subtitles": [
         {
-          "text": "NemetschekがHCSSを買収。",
-          "start": 47.519999999999996,
-          "end": 49.70407766990291,
-          "startFrame": 1425,
-          "endFrame": 1491
+          "text": "AmazonによるGlobalstar買収。",
+          "start": 68.14,
+          "end": 71.81221621621621,
+          "startFrame": 2044,
+          "endFrame": 2154
         },
         {
-          "text": "建設管理ソフトウェアプロバイダーのHeavy Construction Systems SpecialistsをThoma Bravoから買収することで合意。",
-          "start": 50.004077669902905,
-          "end": 59.085242718446594,
-          "startFrame": 1500,
-          "endFrame": 1772
+          "text": "Amazonが衛星通信事業者Globalstarを\n約116億ドルで買収することを発表。",
+          "start": 72.11221621621621,
+          "end": 79.28972972972973,
+          "startFrame": 2163,
+          "endFrame": 2378
         },
         {
-          "text": "(記事3)",
-          "start": 59.38524271844659,
-          "end": 59.95999999999999,
-          "startFrame": 1781,
-          "endFrame": 1798
+          "text": "これにより、衛星直接通信サービス市場への本格参入を果たし",
+          "start": 79.58972972972973,
+          "end": 84.26345945945945,
+          "startFrame": 2387,
+          "endFrame": 2527
+        },
+        {
+          "text": "Elon Musk氏のStarlinkと\nの競争が激化すると見られます。",
+          "start": 84.56345945945945,
+          "end": 90.40562162162162,
+          "startFrame": 2536,
+          "endFrame": 2712
+        },
+        {
+          "text": "Appleの衛星事業にも間接的に影響を与える可能性があります。",
+          "start": 90.70562162162162,
+          "end": 95.8801081081081,
+          "startFrame": 2721,
+          "endFrame": 2876
+        },
+        {
+          "text": "（記事13, 17, 19, 32, 35, 59）",
+          "start": 96.1801081081081,
+          "end": 100.52,
+          "startFrame": 2885,
+          "endFrame": 3015
         }
       ],
-      "fullScript": "NemetschekがHCSSを買収。建設管理ソフトウェアプロバイダーのHeavy Construction Systems SpecialistsをThoma Bravoから買収することで合意。(記事3)"
+      "fullScript": "AmazonによるGlobalstar買収。Amazonが衛星通信事業者Globalstarを約116億ドルで買収することを発表。これにより、衛星直接通信サービス市場への本格参入を果たし、Elon Musk氏のStarlinkとの競争が激化すると見られます。Appleの衛星事業にも間接的に影響を与える可能性があります。（記事13, 17, 19, 32, 35, 59）"
     },
     {
       "index": 4,
-      "title": "M&A・企業買収",
+      "title": "戦略的提携・パートナーシップ",
       "audioFile": "presentations/audio_output/slide_04.mp3",
-      "duration": 18.74,
-      "durationFrames": 562,
-      "startTime": 59.959999999999994,
-      "endTime": 78.69999999999999,
-      "startFrame": 1798,
-      "endFrame": 2360,
+      "duration": 17.14,
+      "durationFrames": 514,
+      "startTime": 100.52000000000001,
+      "endTime": 117.66000000000001,
+      "startFrame": 3015,
+      "endFrame": 3529,
       "subtitles": [
         {
-          "text": "HexagonがWaygate Technologiesを\n買収。",
-          "start": 59.959999999999994,
-          "end": 64.0870588235294,
-          "startFrame": 1798,
-          "endFrame": 1922
+          "text": "MetaとBroadcomのカスタムAIチップ開発深化。",
+          "start": 100.52000000000001,
+          "end": 104.69174311926606,
+          "startFrame": 3015,
+          "endFrame": 3140
         },
         {
-          "text": "スウェーデンのセンサー・測定技術企業Hexagon ABが",
-          "start": 64.3870588235294,
-          "end": 68.12720588235292,
-          "startFrame": 1931,
-          "endFrame": 2043
+          "text": "Meta PlatformsはBroadcomとの提携を拡大し",
+          "start": 104.99174311926606,
+          "end": 109.61045871559634,
+          "startFrame": 3149,
+          "endFrame": 3288
         },
         {
-          "text": "Baker Hughes Co.からWaygate Techn\nologiesを約14.5億ドルで買収することに合意。",
-          "start": 68.42720588235292,
-          "end": 75.90749999999998,
-          "startFrame": 2052,
-          "endFrame": 2277
+          "text": "同社のAIサービスを強化するための\nカスタムチップの設計・製造を深化させると発表しました。",
+          "start": 109.91045871559633,
+          "end": 116.46605504587157,
+          "startFrame": 3297,
+          "endFrame": 3493
         },
         {
-          "text": "検査・計測技術の強化。",
-          "start": 76.20749999999998,
-          "end": 77.62617647058822,
-          "startFrame": 2286,
-          "endFrame": 2328
-        },
-        {
-          "text": "(記事21)",
-          "start": 77.92617647058822,
-          "end": 78.69999999999999,
-          "startFrame": 2337,
-          "endFrame": 2360
+          "text": "（記事14）",
+          "start": 116.76605504587157,
+          "end": 117.66000000000001,
+          "startFrame": 3502,
+          "endFrame": 3529
         }
       ],
-      "fullScript": "HexagonがWaygate Technologiesを買収。スウェーデンのセンサー・測定技術企業Hexagon ABが、Baker Hughes Co.からWaygate Technologiesを約14.5億ドルで買収することに合意。検査・計測技術の強化。(記事21)"
+      "fullScript": "MetaとBroadcomのカスタムAIチップ開発深化。Meta PlatformsはBroadcomとの提携を拡大し、同社のAIサービスを強化するためのカスタムチップの設計・製造を深化させると発表しました。（記事14）"
     },
     {
       "index": 5,
-      "title": "M&A・企業買収",
+      "title": "戦略的提携・パートナーシップ",
       "audioFile": "presentations/audio_output/slide_05.mp3",
-      "duration": 13.58,
-      "durationFrames": 407,
-      "startTime": 78.69999999999999,
-      "endTime": 92.27999999999999,
-      "startFrame": 2360,
-      "endFrame": 2768,
+      "duration": 24.6,
+      "durationFrames": 738,
+      "startTime": 117.66000000000001,
+      "endTime": 142.26000000000002,
+      "startFrame": 3529,
+      "endFrame": 4267,
       "subtitles": [
         {
-          "text": "Strykerが\nAmplitude Vascular Systemsを買収。",
-          "start": 78.69999999999999,
-          "end": 83.47069306930692,
-          "startFrame": 2360,
-          "endFrame": 2504
+          "text": "Google DeepMindと\nBoston Dynamicsの協業。",
+          "start": 117.66000000000001,
+          "end": 122.62363636363638,
+          "startFrame": 3529,
+          "endFrame": 3678
         },
         {
-          "text": "医療機器大手StrykerがAmplitude\nVascular Systemsを買収予定",
-          "start": 83.77069306930692,
-          "end": 89.29465346534651,
-          "startFrame": 2513,
-          "endFrame": 2678
+          "text": "Google DeepMindは",
+          "start": 122.92363636363638,
+          "end": 125.19272727272728,
+          "startFrame": 3687,
+          "endFrame": 3755
         },
         {
-          "text": "血管内結石除去技術を強化。",
-          "start": 89.59465346534651,
-          "end": 91.2267326732673,
-          "startFrame": 2687,
-          "endFrame": 2736
+          "text": "Gemini Robotics ER-1.6を活用してBoston DynamicsのSpotロボットの推論能力と環境理解能力を向上させると発表。",
+          "start": 125.49272727272728,
+          "end": 135.84545454545454,
+          "startFrame": 3764,
+          "endFrame": 4075
         },
         {
-          "text": "(記事33)",
-          "start": 91.5267326732673,
-          "end": 92.27999999999997,
-          "startFrame": 2745,
-          "endFrame": 2768
+          "text": "AIとロボットの統合による自律性の強化が加速しています。",
+          "start": 136.14545454545456,
+          "end": 140.11636363636364,
+          "startFrame": 4084,
+          "endFrame": 4203
+        },
+        {
+          "text": "（記事3, 38, 39）",
+          "start": 140.41636363636366,
+          "end": 142.26000000000002,
+          "startFrame": 4212,
+          "endFrame": 4267
         }
       ],
-      "fullScript": "StrykerがAmplitude Vascular Systemsを買収。医療機器大手StrykerがAmplitude Vascular Systemsを買収予定。血管内結石除去技術を強化。(記事33)"
+      "fullScript": "Google DeepMindとBoston Dynamicsの協業。Google DeepMindは、Gemini Robotics ER-1.6を活用してBoston DynamicsのSpotロボットの推論能力と環境理解能力を向上させると発表。AIとロボットの統合による自律性の強化が加速しています。（記事3, 38, 39）"
     },
     {
       "index": 6,
-      "title": "M&A・企業買収",
+      "title": "戦略的提携・パートナーシップ",
       "audioFile": "presentations/audio_output/slide_06.mp3",
-      "duration": 11.78,
-      "durationFrames": 353,
-      "startTime": 92.27999999999999,
-      "endTime": 104.05999999999999,
-      "startFrame": 2768,
-      "endFrame": 3121,
+      "duration": 20.14,
+      "durationFrames": 604,
+      "startTime": 142.26000000000002,
+      "endTime": 162.40000000000003,
+      "startFrame": 4267,
+      "endFrame": 4872,
       "subtitles": [
         {
-          "text": "Nvidia買収報道を否定。",
-          "start": 92.27999999999999,
-          "end": 94.61611940298506,
-          "startFrame": 2768,
-          "endFrame": 2838
+          "text": "Google.orgとJohnson & Johnson\nFoundationの医療AI教育イニシアチブ",
+          "start": 142.26000000000002,
+          "end": 148.8016,
+          "startFrame": 4267,
+          "endFrame": 4464
         },
         {
-          "text": "Nvidia Corp.がPC業界を\n再編するような大型企業の買収を模索しているという噂を否定。",
-          "start": 94.91611940298506,
-          "end": 102.75880597014924,
-          "startFrame": 2847,
-          "endFrame": 3082
+          "text": "Google.orgと\nJohnson & Johnson Foundationは",
+          "start": 149.10160000000002,
+          "end": 154.23226666666667,
+          "startFrame": 4473,
+          "endFrame": 4626
         },
         {
-          "text": "(記事14)",
-          "start": 103.05880597014924,
-          "end": 104.05999999999999,
-          "startFrame": 3091,
-          "endFrame": 3121
+          "text": "米国の農村地域の医療従事者向けにAIトレーニングを提供するため\n1,000万ドルのイニシアチブを立ち上げました",
+          "start": 154.5322666666667,
+          "end": 161.4586666666667,
+          "startFrame": 4635,
+          "endFrame": 4843
+        },
+        {
+          "text": "（記事7）",
+          "start": 161.7586666666667,
+          "end": 162.40000000000003,
+          "startFrame": 4852,
+          "endFrame": 4872
         }
       ],
-      "fullScript": "Nvidia買収報道を否定。Nvidia Corp.がPC業界を再編するような大型企業の買収を模索しているという噂を否定。(記事14)"
+      "fullScript": "Google.orgとJohnson & Johnson Foundationの医療AI教育イニシアチブ。Google.orgとJohnson & Johnson Foundationは、米国の農村地域の医療従事者向けにAIトレーニングを提供するため、1,000万ドルのイニシアチブを立ち上げました。（記事7）"
     },
     {
       "index": 7,
       "title": "戦略的提携・パートナーシップ",
       "audioFile": "presentations/audio_output/slide_07.mp3",
-      "duration": 13.72,
-      "durationFrames": 411,
-      "startTime": 104.05999999999999,
-      "endTime": 117.77999999999999,
-      "startFrame": 3121,
-      "endFrame": 3533,
+      "duration": 21.66,
+      "durationFrames": 649,
+      "startTime": 162.40000000000003,
+      "endTime": 184.06000000000003,
+      "startFrame": 4872,
+      "endFrame": 5521,
       "subtitles": [
         {
-          "text": "Googleが製造業AIトレーニングを提供。",
-          "start": 104.05999999999999,
-          "end": 107.19377777777777,
-          "startFrame": 3121,
-          "endFrame": 3215
+          "text": "SESとBoeingの航空機向け衛星通信統合。",
+          "start": 162.40000000000003,
+          "end": 166.9045283018868,
+          "startFrame": 4872,
+          "endFrame": 5007
         },
         {
-          "text": "Googleは\nManufacturing Instituteと提携し",
-          "start": 107.49377777777777,
-          "end": 112.33688888888888,
-          "startFrame": 3224,
-          "endFrame": 3370
+          "text": "SESとBoeingは、航空機生産プロセス中に多軌道型機内接続\nハードウェアを工場で統合する契約を発表し",
+          "start": 167.20452830188682,
+          "end": 177.19283018867927,
+          "startFrame": 5016,
+          "endFrame": 5315
         },
         {
-          "text": "40,000人の製造業従事者向けにAIトレーニングを開始。",
-          "start": 112.63688888888888,
-          "end": 116.76777777777777,
-          "startFrame": 3379,
-          "endFrame": 3503
+          "text": "衛星通信の設置方法における重要な転換点を示しました。",
+          "start": 177.49283018867928,
+          "end": 182.5849056603774,
+          "startFrame": 5324,
+          "endFrame": 5477
         },
         {
-          "text": "(記事1)",
-          "start": 117.06777777777776,
-          "end": 117.77999999999999,
-          "startFrame": 3512,
-          "endFrame": 3533
+          "text": "（記事45）",
+          "start": 182.8849056603774,
+          "end": 184.06000000000003,
+          "startFrame": 5486,
+          "endFrame": 5521
         }
       ],
-      "fullScript": "Googleが製造業AIトレーニングを提供。GoogleはManufacturing Instituteと提携し、40,000人の製造業従事者向けにAIトレーニングを開始。(記事1)"
+      "fullScript": "SESとBoeingの航空機向け衛星通信統合。SESとBoeingは、航空機生産プロセス中に多軌道型機内接続ハードウェアを工場で統合する契約を発表し、衛星通信の設置方法における重要な転換点を示しました。（記事45）"
     },
     {
       "index": 8,
@@ -289,17 +345,17 @@
       "audioFile": "presentations/audio_output/slide_08.mp3",
       "duration": 3.88,
       "durationFrames": 116,
-      "startTime": 117.77999999999999,
-      "endTime": 121.65999999999998,
-      "startFrame": 3533,
-      "endFrame": 3649,
+      "startTime": 184.06000000000003,
+      "endTime": 187.94000000000003,
+      "startFrame": 5521,
+      "endFrame": 5638,
       "subtitles": [
         {
           "text": "本日のAI・IT株式ニュースは以上です。",
-          "start": 117.77999999999999,
-          "end": 121.65999999999998,
-          "startFrame": 3533,
-          "endFrame": 3649
+          "start": 184.06000000000003,
+          "end": 187.94000000000003,
+          "startFrame": 5521,
+          "endFrame": 5638
         }
       ],
       "fullScript": "本日のAI・IT株式ニュースは以上です。"
@@ -310,52 +366,52 @@
       "audioFile": "presentations/audio_output/slide_09.mp3",
       "duration": 40.26,
       "durationFrames": 1207,
-      "startTime": 121.65999999999998,
-      "endTime": 161.92,
-      "startFrame": 3649,
-      "endFrame": 4857,
+      "startTime": 187.94000000000003,
+      "endTime": 228.20000000000002,
+      "startFrame": 5638,
+      "endFrame": 6846,
       "subtitles": [
         {
           "text": "ご視聴いただきありがとうございました。",
-          "start": 121.65999999999998,
-          "end": 124.82068669527895,
-          "startFrame": 3649,
-          "endFrame": 3744
+          "start": 187.94000000000003,
+          "end": 191.100686695279,
+          "startFrame": 5638,
+          "endFrame": 5733
         },
         {
           "text": "実はこのレポート、if塾の塾頭高崎による「完全自動化への挑戦」\nプロジェクトの一環として、AIが自動生成しています。",
-          "start": 125.12068669527895,
-          "end": 134.60274678111585,
-          "startFrame": 3753,
-          "endFrame": 4038
+          "start": 191.400686695279,
+          "end": 200.8827467811159,
+          "startFrame": 5742,
+          "endFrame": 6026
         },
         {
           "text": "将来的には塾頭が執筆しているような自然な記事になることを目指し\nており、現時点では事実と異なる内容が含まれる可能性もあります。",
-          "start": 134.90274678111587,
-          "end": 145.21656652360514,
-          "startFrame": 4047,
-          "endFrame": 4356
+          "start": 201.18274678111592,
+          "end": 211.4965665236052,
+          "startFrame": 6035,
+          "endFrame": 6344
         },
         {
           "text": "この挑戦に共感していただけたら、\nぜひチャンネル登録とグッドボタンをよろしくお願いします！",
-          "start": 145.51656652360515,
-          "end": 152.83605150214592,
-          "startFrame": 4365,
-          "endFrame": 4585
+          "start": 211.7965665236052,
+          "end": 219.11605150214598,
+          "startFrame": 6353,
+          "endFrame": 6573
         },
         {
           "text": "また、無料のAI教育や導入コンサルも受け付けています。",
-          "start": 153.13605150214593,
-          "end": 157.62755364806867,
-          "startFrame": 4594,
-          "endFrame": 4728
+          "start": 219.416051502146,
+          "end": 223.90755364806873,
+          "startFrame": 6582,
+          "endFrame": 6717
         },
         {
           "text": "詳しくは概要欄のリンクからお問い合わせください。",
-          "start": 157.92755364806868,
-          "end": 161.92000000000002,
-          "startFrame": 4737,
-          "endFrame": 4857
+          "start": 224.20755364806874,
+          "end": 228.20000000000007,
+          "startFrame": 6726,
+          "endFrame": 6846
         }
       ],
       "fullScript": "ご視聴いただきありがとうございました。実はこのレポート、if塾の塾頭高崎による「完全自動化への挑戦」プロジェクトの一環として、AIが自動生成しています。将来的には塾頭が執筆しているような自然な記事になることを目指しており、現時点では事実と異なる内容が含まれる可能性もあります。この挑戦に共感していただけたら、ぜひチャンネル登録とグッドボタンをよろしくお願いします！また、無料のAI教育や導入コンサルも受け付けています。詳しくは概要欄のリンクからお問い合わせください。"
