@@ -97,7 +97,7 @@ body {
 }
 
 /* --- Dashboard --- */
-#dashboard { display: none; }
+#dashboard { display: block; }
 
 .header {
   background: linear-gradient(135deg, var(--primary), var(--secondary));
@@ -385,20 +385,6 @@ td.num { text-align: right; font-family: 'Roboto', monospace; }
 </head>
 <body>
 
-<!-- Auth Gate -->
-<div id="auth-gate">
-  <div class="auth-card">
-    <h1>Portfolio Dashboard</h1>
-    <p>if(塾) 株式ポートフォリオ管理</p>
-    <form id="auth-form">
-      <input type="email" id="auth-email" placeholder="メールアドレス" required autocomplete="email">
-      <input type="password" id="auth-password" placeholder="パスワード" required autocomplete="current-password">
-      <button type="submit">ログイン</button>
-      <div class="auth-error" id="auth-error">認証に失敗しました。</div>
-    </form>
-  </div>
-</div>
-
 <!-- Dashboard -->
 <div id="dashboard">
   <div class="header">
@@ -544,53 +530,10 @@ td.num { text-align: right; font-family: 'Roboto', monospace; }
 </div>
 
 <script>
-// --- Auth ---
-// SHA-256 hash of credentials
-const AUTH_HASH = "a04b59829f06ec498ccbab5265050f30bae549402b5981dd7dcfb0364b44e048";
-
-async function sha256(message) {
-  const msgBuffer = new TextEncoder().encode(message);
-  const hashBuffer = await crypto.subtle.digest("SHA-256", msgBuffer);
-  const hashArray = Array.from(new Uint8Array(hashBuffer));
-  return hashArray.map(b => b.toString(16).padStart(2, "0")).join("");
-}
-
-async function authenticate(email, password) {
-  const hash = await sha256(email + ":" + password);
-  return hash === AUTH_HASH;
-}
-
-function checkSession() {
-  return sessionStorage.getItem("dashboard_auth") === "1";
-}
-
-function showDashboard() {
-  document.getElementById("auth-gate").style.display = "none";
-  document.getElementById("dashboard").style.display = "block";
-  loadDashboard();
-}
-
-document.getElementById("auth-form").addEventListener("submit", async function(e) {
-  e.preventDefault();
-  const email = document.getElementById("auth-email").value;
-  const password = document.getElementById("auth-password").value;
-  const errEl = document.getElementById("auth-error");
-
-  if (await authenticate(email, password)) {
-    sessionStorage.setItem("dashboard_auth", "1");
-    errEl.style.display = "none";
-    showDashboard();
-  } else {
-    errEl.style.display = "block";
-  }
-});
-
-// Auto-login if session exists
-if (checkSession()) {
-  showDashboard();
-}
-
 // --- Dashboard ---
+// 認証はCloudflare Accessが担う（ゲート認証は削除済み）
+loadDashboard();
+
 let dashboardData = null;
 let sortState = { col: null, asc: true };
 
