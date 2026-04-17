@@ -27,7 +27,7 @@ OUTPUT_FILE = os.path.join(BASE_DIR, "dashboard", "dashboard_data.json")
 # 固定為替レート (USD/JPY)
 USD_JPY_RATE = 150.0
 
-# セクター分類マッピング
+# セクター分類マッピング（portfolio.csvの sector 列が優先。ここはフォールバック）
 SECTOR_MAP = {
     "NVDA": "AI半導体",
     "AVGO": "AI半導体",
@@ -37,6 +37,10 @@ SECTOR_MAP = {
     "GOOG": "クラウド/広告",
     "TSLA": "EV/自動運転",
     "7366.T": "教育テック",
+    "6006821": "新興国株式投信",
+    "6006846": "米国成長株投信",
+    "6006884": "テーマ型投信",
+    "6016884": "テーマ型投信",
 }
 
 
@@ -100,28 +104,52 @@ def build_stocks_data(stock_prices, portfolio_csv):
                 "sector": sector,
             })
     elif portfolio_csv:
-        # フォールバック: portfolio.csv から基本情報のみ
+        # portfolio.csv から読み込み（スナップショット形式に対応）
+        # 新形式: purchase_value_jpy, current_value_jpy, sector, account, category を持つ
+        # 旧形式: purchase_price のみ（現在価格は不明）
         for row in portfolio_csv:
             symbol = row.get("symbol", "")
-            shares = float(row.get("shares", 0))
-            purchase_price = float(row.get("purchase_price", 0))
-            currency = row.get("currency", "USD")
-            sector = SECTOR_MAP.get(symbol, "その他")
-            purchase_value = shares * purchase_price
+            shares = float(row.get("shares", 0) or 0)
+            currency = row.get("currency", "JPY")
+            sector = row.get("sector") or SECTOR_MAP.get(symbol, "その他")
+            account = row.get("account", "")
+            category = row.get("category", "")
+
+            # 新形式（評価額が既知）
+            if row.get("current_value_jpy"):
+                purchase_value = float(row.get("purchase_value_jpy", 0) or 0)
+                current_value = float(row.get("current_value_jpy", 0) or 0)
+                purchase_price = purchase_value / shares if shares else 0
+                current_price = current_value / shares if shares else 0
+                gain_loss = current_value - purchase_value
+                gain_loss_percent = (
+                    (gain_loss / purchase_value * 100) if purchase_value else 0
+                )
+            else:
+                # 旧形式フォールバック
+                purchase_price = float(row.get("purchase_price", 0) or 0)
+                purchase_value = shares * purchase_price
+                current_price = purchase_price
+                current_value = purchase_value
+                gain_loss = 0
+                gain_loss_percent = 0
+
             stocks.append({
                 "symbol": symbol,
                 "name": row.get("name", ""),
                 "shares": int(shares),
-                "purchase_price": purchase_price,
-                "current_price": purchase_price,  # 現在価格不明
+                "purchase_price": round(purchase_price, 2),
+                "current_price": round(current_price, 2),
                 "currency": currency,
-                "current_value": purchase_value,
-                "purchase_value": purchase_value,
-                "gain_loss": 0,
-                "gain_loss_percent": 0,
+                "current_value": round(current_value, 2),
+                "purchase_value": round(purchase_value, 2),
+                "gain_loss": round(gain_loss),
+                "gain_loss_percent": round(gain_loss_percent, 2),
                 "change": 0,
                 "change_percent": 0,
                 "sector": sector,
+                "account": account,
+                "category": category,
             })
 
     return stocks
