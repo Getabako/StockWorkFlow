@@ -447,5 +447,31 @@
       "total_amount": 689058.0,
       "reason": "レポート推奨"
     }
+  ],
+  "portfolio_value_history": [
+    {"date": "2024-05-31", "total_purchase_jpy": 3043545, "total_value_jpy": 4226021, "total_gain_loss_jpy": 1182476, "total_gain_loss_pct": 38.85},
+    {"date": "2024-06-30", "total_purchase_jpy": 2898803, "total_value_jpy": 4407621, "total_gain_loss_jpy": 1508818, "total_gain_loss_pct": 52.04},
+    {"date": "2024-07-31", "total_purchase_jpy": 3100227, "total_value_jpy": 4005441, "total_gain_loss_jpy": 905214,  "total_gain_loss_pct": 29.19},
+    {"date": "2024-08-31", "total_purchase_jpy": 3100239, "total_value_jpy": 4064705, "total_gain_loss_jpy": 964466,  "total_gain_loss_pct": 31.10},
+    {"date": "2024-09-30", "total_purchase_jpy": 3400917, "total_value_jpy": 4451565, "total_gain_loss_jpy": 1050648, "total_gain_loss_pct": 30.89},
+    {"date": "2024-10-31", "total_purchase_jpy": 3401002, "total_value_jpy": 5066765, "total_gain_loss_jpy": 1665763, "total_gain_loss_pct": 48.97},
+    {"date": "2024-11-30", "total_purchase_jpy": 3401002, "total_value_jpy": 5071443, "total_gain_loss_jpy": 1670441, "total_gain_loss_pct": 49.11},
+    {"date": "2024-12-31", "total_purchase_jpy": 4408122, "total_value_jpy": 6294825, "total_gain_loss_jpy": 1886703, "total_gain_loss_pct": 42.80},
+    {"date": "2025-01-31", "total_purchase_jpy": 5108216, "total_value_jpy": 6880307, "total_gain_loss_jpy": 1772091, "total_gain_loss_pct": 34.69},
+    {"date": "2025-02-28", "total_purchase_jpy": 5578577, "total_value_jpy": 7029118, "total_gain_loss_jpy": 1450541, "total_gain_loss_pct": 26.00},
+    {"date": "2025-03-31", "total_purchase_jpy": 5428577, "total_value_jpy": 6510731, "total_gain_loss_jpy": 1082154, "total_gain_loss_pct": 19.93},
+    {"date": "2025-04-30", "total_purchase_jpy": 5428846, "total_value_jpy": 6367834, "total_gain_loss_jpy": 938988,  "total_gain_loss_pct": 17.29},
+    {"date": "2025-05-31", "total_purchase_jpy": 5928846, "total_value_jpy": 7548461, "total_gain_loss_jpy": 1619615, "total_gain_loss_pct": 27.31},
+    {"date": "2025-06-30", "total_purchase_jpy": 5930998, "total_value_jpy": 7980411, "total_gain_loss_jpy": 2049413, "total_gain_loss_pct": 34.55},
+    {"date": "2025-07-31", "total_purchase_jpy": 5931267, "total_value_jpy": 8454466, "total_gain_loss_jpy": 2523199, "total_gain_loss_pct": 42.54},
+    {"date": "2025-08-31", "total_purchase_jpy": 5783208, "total_value_jpy": 8276306, "total_gain_loss_jpy": 2493098, "total_gain_loss_pct": 43.10},
+    {"date": "2025-09-30", "total_purchase_jpy": 6783398, "total_value_jpy": 9578643, "total_gain_loss_jpy": 2795245, "total_gain_loss_pct": 41.20},
+    {"date": "2025-10-31", "total_purchase_jpy": 6699487, "total_value_jpy": 10104859, "total_gain_loss_jpy": 3405372, "total_gain_loss_pct": 50.83},
+    {"date": "2025-11-30", "total_purchase_jpy": 6899487, "total_value_jpy": 9984284, "total_gain_loss_jpy": 3084797, "total_gain_loss_pct": 44.71},
+    {"date": "2025-12-31", "total_purchase_jpy": 7688343, "total_value_jpy": 10453480, "total_gain_loss_jpy": 2765137, "total_gain_loss_pct": 35.96},
+    {"date": "2026-01-31", "total_purchase_jpy": 7689528, "total_value_jpy": 10742368, "total_gain_loss_jpy": 3052840, "total_gain_loss_pct": 39.70},
+    {"date": "2026-02-28", "total_purchase_jpy": 7691116, "total_value_jpy": 10612225, "total_gain_loss_jpy": 2921109, "total_gain_loss_pct": 37.98},
+    {"date": "2026-03-31", "total_purchase_jpy": 7692350, "total_value_jpy": 9806987,  "total_gain_loss_jpy": 2114637, "total_gain_loss_pct": 27.49},
+    {"date": "2026-04-17", "total_purchase_jpy": 7843680, "total_value_jpy": 11928849, "total_gain_loss_jpy": 4085169, "total_gain_loss_pct": 52.08}
   ]
 }
