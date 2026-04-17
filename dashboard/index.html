@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio Dashboard - if(塾) Stock Analysis</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<style>
+:root {
+  --primary: #2563eb;
+  --secondary: #0ea5e9;
+  --success: #10b981;
+  --danger: #ef4444;
+  --warning: #f59e0b;
+  --bg: #f8fafc;
+  --card-bg: #ffffff;
+  --text-primary: #1e293b;
+  --text-secondary: #64748b;
+  --border: #e2e8f0;
+  --shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
+  --radius: 12px;
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+
+body {
+  font-family: 'Noto Sans JP', 'Roboto', sans-serif;
+  background: var(--bg);
+  color: var(--text-primary);
+  line-height: 1.6;
+}
+
+/* --- Auth Gate --- */
+#auth-gate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+}
+
+.auth-card {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-lg);
+  padding: 2.5rem;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.auth-card h1 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.auth-card p { color: var(--text-secondary); margin-bottom: 1.5rem; font-size: 0.9rem; }
+
+.auth-card input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.auth-card input:focus { border-color: var(--primary); }
+
+.auth-card button {
+  width: 100%;
+  padding: 0.75rem;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.auth-card button:hover { opacity: 0.9; }
+
+.auth-error {
+  color: var(--danger);
+  font-size: 0.85rem;
+  margin-top: 0.75rem;
+  display: none;
+}
+
+/* --- Dashboard --- */
+#dashboard { display: none; }
+
+.header {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: #fff;
+  padding: 1.5rem 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.header::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.08) 0%, transparent 60%);
+  animation: pulse 8s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); opacity: 0.5; }
+  50% { transform: scale(1.1); opacity: 1; }
+}
+
+.header h1 { font-size: 1.6rem; position: relative; z-index: 1; }
+.header .subtitle { font-size: 0.85rem; opacity: 0.85; position: relative; z-index: 1; margin-top: 0.25rem; }
+
+.container { max-width: 1280px; margin: 0 auto; padding: 1.5rem; }
+
+.section-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--primary);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Summary Cards */
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.summary-card {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+
+.summary-card .label { font-size: 0.8rem; color: var(--text-secondary); margin-bottom: 0.25rem; }
+.summary-card .value { font-size: 1.5rem; font-weight: 700; font-family: 'Roboto', sans-serif; }
+.summary-card .sub { font-size: 0.8rem; margin-top: 0.25rem; }
+.positive { color: var(--success); }
+.negative { color: var(--danger); }
+
+/* Charts */
+.chart-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.chart-card {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  box-shadow: var(--shadow);
+}
+
+.chart-card h3 { font-size: 0.95rem; margin-bottom: 0.75rem; }
+
+/* Table */
+.table-card {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.table-card .table-header { padding: 1.25rem 1.25rem 0; }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+
+thead th {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: #fff;
+  padding: 0.65rem 0.75rem;
+  text-align: left;
+  font-weight: 500;
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+}
+
+thead th:hover { opacity: 0.9; }
+thead th .sort-arrow { margin-left: 0.3rem; font-size: 0.7rem; }
+
+tbody tr { border-bottom: 1px solid var(--border); }
+tbody tr:nth-child(even) { background: #f8fafc; }
+tbody tr:hover { background: #eff6ff; }
+
+td {
+  padding: 0.6rem 0.75rem;
+  white-space: nowrap;
+}
+
+td.num { text-align: right; font-family: 'Roboto', monospace; }
+
+/* Actions */
+.action-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.action-card {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  padding: 1rem 1.25rem;
+  box-shadow: var(--shadow);
+  border-left: 4px solid var(--text-secondary);
+}
+
+.action-card.buy { border-left-color: var(--success); }
+.action-card.sell { border-left-color: var(--danger); }
+.action-card.hold { border-left-color: var(--warning); }
+
+.action-badge {
+  display: inline-block;
+  padding: 0.15rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.action-badge.buy { background: var(--success); }
+.action-badge.sell { background: var(--danger); }
+.action-badge.hold { background: var(--warning); }
+
+.action-card .reason { font-size: 0.85rem; color: var(--text-primary); }
+.action-card .trigger { font-size: 0.78rem; color: var(--text-secondary); margin-top: 0.4rem; }
+
+/* Strategy Tabs */
+.strategy-section { margin-bottom: 2rem; }
+
+.strategy-overview {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  box-shadow: var(--shadow);
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  line-height: 1.8;
+}
+
+.tab-bar {
+  display: flex;
+  gap: 0;
+  margin-bottom: 0;
+}
+
+.tab-btn {
+  padding: 0.6rem 1.25rem;
+  border: 1px solid var(--border);
+  border-bottom: none;
+  background: #f1f5f9;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border-radius: 8px 8px 0 0;
+  color: var(--text-secondary);
+  transition: all 0.2s;
+}
+
+.tab-btn.active {
+  background: var(--card-bg);
+  color: var(--primary);
+  border-color: var(--border);
+  font-weight: 700;
+}
+
+.tab-content {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 0 var(--radius) var(--radius) var(--radius);
+  padding: 1.25rem;
+  box-shadow: var(--shadow);
+  display: none;
+}
+
+.tab-content.active { display: block; }
+
+.tab-content ul { padding-left: 1.25rem; }
+.tab-content li { margin-bottom: 0.4rem; font-size: 0.85rem; }
+
+/* Monitoring */
+.monitor-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.monitor-card {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  box-shadow: var(--shadow);
+}
+
+.monitor-card h3 {
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 2px solid var(--border);
+}
+
+.monitor-card.bubble h3 { border-bottom-color: var(--warning); }
+.monitor-card.positive-sig h3 { border-bottom-color: var(--success); }
+.monitor-card.risk-sig h3 { border-bottom-color: var(--danger); }
+
+.monitor-card ul { padding-left: 1.1rem; }
+.monitor-card li { font-size: 0.8rem; margin-bottom: 0.35rem; color: var(--text-primary); }
+
+/* History */
+.history-table { margin-bottom: 2rem; }
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  border-top: 1px solid var(--border);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .summary-grid { grid-template-columns: repeat(2, 1fr); }
+  .chart-grid { grid-template-columns: 1fr; }
+  .monitor-grid { grid-template-columns: 1fr; }
+  .action-grid { grid-template-columns: 1fr; }
+  .header h1 { font-size: 1.2rem; }
+  .summary-card .value { font-size: 1.2rem; }
+  table { font-size: 0.75rem; }
+  td, thead th { padding: 0.45rem 0.5rem; }
+}
+
+/* Loading */
+.loading {
+  text-align: center;
+  padding: 3rem;
+  color: var(--text-secondary);
+}
+
+.loading .spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid var(--border);
+  border-top-color: var(--primary);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  margin: 0 auto 1rem;
+}
+
+@keyframes spin { to { transform: rotate(360deg); } }
+</style>
+</head>
+<body>
+
+<!-- Auth Gate -->
+<div id="auth-gate">
+  <div class="auth-card">
+    <h1>Portfolio Dashboard</h1>
+    <p>if(塾) 株式ポートフォリオ管理</p>
+    <form id="auth-form">
+      <input type="email" id="auth-email" placeholder="メールアドレス" required autocomplete="email">
+      <input type="password" id="auth-password" placeholder="パスワード" required autocomplete="current-password">
+      <button type="submit">ログイン</button>
+      <div class="auth-error" id="auth-error">認証に失敗しました。</div>
+    </form>
+  </div>
+</div>
+
+<!-- Dashboard -->
+<div id="dashboard">
+  <div class="header">
+    <h1>Portfolio Dashboard</h1>
+    <div class="subtitle">最終更新: <span id="last-updated">--</span></div>
+  </div>
+
+  <div class="container">
+    <!-- Loading -->
+    <div class="loading" id="loading">
+      <div class="spinner"></div>
+      <div>データを読み込み中...</div>
+    </div>
+
+    <div id="content" style="display:none;">
+
+      <!-- Summary Cards -->
+      <div class="summary-grid">
+        <div class="summary-card">
+          <div class="label">総資産額</div>
+          <div class="value" id="total-value">--</div>
+          <div class="sub">JPY</div>
+        </div>
+        <div class="summary-card">
+          <div class="label">総損益</div>
+          <div class="value" id="total-pl">--</div>
+          <div class="sub" id="total-pl-pct">--</div>
+        </div>
+        <div class="summary-card">
+          <div class="label">買付余力</div>
+          <div class="value" id="buying-power">--</div>
+          <div class="sub">JPY</div>
+        </div>
+        <div class="summary-card">
+          <div class="label">保有銘柄数</div>
+          <div class="value" id="stock-count">--</div>
+          <div class="sub">銘柄</div>
+        </div>
+      </div>
+
+      <!-- Charts -->
+      <div class="chart-grid">
+        <div class="chart-card">
+          <h3>ポートフォリオ構成比</h3>
+          <canvas id="chart-allocation"></canvas>
+        </div>
+        <div class="chart-card">
+          <h3>銘柄別損益</h3>
+          <canvas id="chart-pl"></canvas>
+        </div>
+      </div>
+
+      <!-- Holdings Table -->
+      <div class="table-card">
+        <div class="table-header">
+          <div class="section-title">保有銘柄一覧</div>
+        </div>
+        <div style="overflow-x:auto;">
+          <table id="holdings-table">
+            <thead>
+              <tr>
+                <th data-col="symbol">銘柄 <span class="sort-arrow"></span></th>
+                <th data-col="shares">株数 <span class="sort-arrow"></span></th>
+                <th data-col="purchase_price">取得価格 <span class="sort-arrow"></span></th>
+                <th data-col="current_price">現在価格 <span class="sort-arrow"></span></th>
+                <th data-col="current_value">評価額 <span class="sort-arrow"></span></th>
+                <th data-col="gain_loss">損益 <span class="sort-arrow"></span></th>
+                <th data-col="gain_loss_percent">損益率 <span class="sort-arrow"></span></th>
+                <th data-col="change_percent">前日比 <span class="sort-arrow"></span></th>
+              </tr>
+            </thead>
+            <tbody id="holdings-body"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Action Recommendations -->
+      <div class="section-title">アクション推奨</div>
+      <div class="action-grid" id="action-grid"></div>
+
+      <!-- Strategy -->
+      <div class="strategy-section">
+        <div class="section-title">投資戦略</div>
+        <div class="strategy-overview" id="strategy-overview"></div>
+
+        <div class="tab-bar">
+          <div class="tab-btn active" data-tab="short">短期戦略</div>
+          <div class="tab-btn" data-tab="medium">中期戦略</div>
+          <div class="tab-btn" data-tab="long">長期戦略</div>
+        </div>
+        <div class="tab-content active" id="tab-short"></div>
+        <div class="tab-content" id="tab-medium"></div>
+        <div class="tab-content" id="tab-long"></div>
+      </div>
+
+      <!-- Monitoring -->
+      <div class="section-title">モニタリング指標</div>
+      <div class="monitor-grid">
+        <div class="monitor-card bubble">
+          <h3>バブル指標</h3>
+          <ul id="monitor-bubble"></ul>
+        </div>
+        <div class="monitor-card positive-sig">
+          <h3>ポジティブシグナル</h3>
+          <ul id="monitor-positive"></ul>
+        </div>
+        <div class="monitor-card risk-sig">
+          <h3>リスクシグナル</h3>
+          <ul id="monitor-risk"></ul>
+        </div>
+      </div>
+
+      <!-- Trade History -->
+      <div class="table-card history-table">
+        <div class="table-header">
+          <div class="section-title">取引履歴</div>
+        </div>
+        <div style="overflow-x:auto;">
+          <table>
+            <thead>
+              <tr>
+                <th>日付</th>
+                <th>種別</th>
+                <th>銘柄</th>
+                <th>株数</th>
+                <th>価格</th>
+                <th>合計額</th>
+                <th>理由</th>
+              </tr>
+            </thead>
+            <tbody id="history-body"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="footer">
+        <p>本ダッシュボードの情報は参考目的であり、投資助言ではありません。投資判断はご自身の責任で行ってください。</p>
+        <p>if(塾) Portfolio Dashboard &copy; 2025-2026</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// --- Auth ---
+// SHA-256 hash of credentials
+const AUTH_HASH = "a04b59829f06ec498ccbab5265050f30bae549402b5981dd7dcfb0364b44e048";
+
+async function sha256(message) {
+  const msgBuffer = new TextEncoder().encode(message);
+  const hashBuffer = await crypto.subtle.digest("SHA-256", msgBuffer);
+  const hashArray = Array.from(new Uint8Array(hashBuffer));
+  return hashArray.map(b => b.toString(16).padStart(2, "0")).join("");
+}
+
+async function authenticate(email, password) {
+  const hash = await sha256(email + ":" + password);
+  return hash === AUTH_HASH;
+}
+
+function checkSession() {
+  return sessionStorage.getItem("dashboard_auth") === "1";
+}
+
+function showDashboard() {
+  document.getElementById("auth-gate").style.display = "none";
+  document.getElementById("dashboard").style.display = "block";
+  loadDashboard();
+}
+
+document.getElementById("auth-form").addEventListener("submit", async function(e) {
+  e.preventDefault();
+  const email = document.getElementById("auth-email").value;
+  const password = document.getElementById("auth-password").value;
+  const errEl = document.getElementById("auth-error");
+
+  if (await authenticate(email, password)) {
+    sessionStorage.setItem("dashboard_auth", "1");
+    errEl.style.display = "none";
+    showDashboard();
+  } else {
+    errEl.style.display = "block";
+  }
+});
+
+// Auto-login if session exists
+if (checkSession()) {
+  showDashboard();
+}
+
+// --- Dashboard ---
+let dashboardData = null;
+let sortState = { col: null, asc: true };
+
+async function loadDashboard() {
+  try {
+    const res = await fetch("dashboard_data.json");
+    if (!res.ok) throw new Error("Data file not found");
+    dashboardData = await res.json();
+    renderDashboard();
+  } catch (err) {
+    document.getElementById("loading").innerHTML =
+      '<div style="color:var(--danger);">データの読み込みに失敗しました。<br><small>' + err.message + '</small></div>';
+  }
+}
+
+function fmt(n, decimals) {
+  if (n == null || isNaN(n)) return "--";
+  return Number(n).toLocaleString("ja-JP", { minimumFractionDigits: decimals || 0, maximumFractionDigits: decimals || 0 });
+}
+
+function fmtPct(n) {
+  if (n == null || isNaN(n)) return "--";
+  return (n >= 0 ? "+" : "") + n.toFixed(2) + "%";
+}
+
+function plClass(n) {
+  return n > 0 ? "positive" : n < 0 ? "negative" : "";
+}
+
+const CHART_COLORS = [
+  "#2563eb", "#0ea5e9", "#10b981", "#f59e0b", "#ef4444",
+  "#8b5cf6", "#ec4899", "#06b6d4", "#84cc16", "#f97316"
+];
+
+function renderDashboard() {
+  const d = dashboardData;
+  document.getElementById("loading").style.display = "none";
+  document.getElementById("content").style.display = "block";
+
+  // Last Updated
+  const updated = d.data_fetch_time || d.generated_at;
+  document.getElementById("last-updated").textContent = updated ? new Date(updated).toLocaleString("ja-JP") : "--";
+
+  // Summary
+  const s = d.summary;
+  document.getElementById("total-value").textContent = fmt(s.total_value_jpy);
+  const plEl = document.getElementById("total-pl");
+  plEl.textContent = (s.total_gain_loss_jpy >= 0 ? "+" : "") + fmt(s.total_gain_loss_jpy);
+  plEl.className = "value " + plClass(s.total_gain_loss_jpy);
+  const pctEl = document.getElementById("total-pl-pct");
+  pctEl.textContent = fmtPct(s.total_gain_loss_pct);
+  pctEl.className = "sub " + plClass(s.total_gain_loss_pct);
+  document.getElementById("buying-power").textContent = fmt(s.buying_power);
+  document.getElementById("stock-count").textContent = s.total_stocks;
+
+  // Charts
+  renderAllocationChart(d.sector_allocation);
+  renderPLChart(d.stocks);
+
+  // Table
+  renderHoldings(d.stocks);
+
+  // Actions
+  renderActions(d.actions);
+
+  // Strategy
+  renderStrategy(d.strategy);
+
+  // Monitoring
+  renderMonitoring(d.strategy);
+
+  // History
+  renderHistory(d.history);
+}
+
+function renderAllocationChart(sectors) {
+  const ctx = document.getElementById("chart-allocation").getContext("2d");
+  new Chart(ctx, {
+    type: "doughnut",
+    data: {
+      labels: sectors.map(s => s.sector),
+      datasets: [{
+        data: sectors.map(s => s.value_jpy),
+        backgroundColor: CHART_COLORS.slice(0, sectors.length),
+        borderWidth: 2,
+        borderColor: "#fff",
+      }]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        legend: { position: "bottom", labels: { font: { family: "'Noto Sans JP', sans-serif", size: 12 } } },
+        tooltip: {
+          callbacks: {
+            label: function(ctx) {
+              const v = ctx.raw;
+              const pct = sectors[ctx.dataIndex].percentage;
+              return ctx.label + ": " + fmt(v) + " JPY (" + pct + "%)";
+            }
+          }
+        }
+      }
+    }
+  });
+}
+
+function renderPLChart(stocks) {
+  const sorted = [...stocks].sort((a, b) => b.gain_loss - a.gain_loss);
+  const labels = sorted.map(s => s.symbol);
+  const values = sorted.map(s => {
+    let v = s.gain_loss;
+    if (s.currency !== "JPY") v *= dashboardData.summary.usd_jpy_rate;
+    return Math.round(v);
+  });
+  const colors = values.map(v => v >= 0 ? "rgba(16,185,129,0.7)" : "rgba(239,68,68,0.7)");
+  const borders = values.map(v => v >= 0 ? "#10b981" : "#ef4444");
+
+  const ctx = document.getElementById("chart-pl").getContext("2d");
+  new Chart(ctx, {
+    type: "bar",
+    data: {
+      labels: labels,
+      datasets: [{
+        label: "損益 (JPY)",
+        data: values,
+        backgroundColor: colors,
+        borderColor: borders,
+        borderWidth: 1,
+      }]
+    },
+    options: {
+      indexAxis: "y",
+      responsive: true,
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          callbacks: {
+            label: function(ctx) { return fmt(ctx.raw) + " JPY"; }
+          }
+        }
+      },
+      scales: {
+        x: {
+          ticks: { callback: function(v) { return fmt(v); } },
+          grid: { color: "rgba(0,0,0,0.05)" }
+        }
+      }
+    }
+  });
+}
+
+function renderHoldings(stocks) {
+  const tbody = document.getElementById("holdings-body");
+  tbody.innerHTML = stocks.map(s => {
+    const cur = s.currency === "JPY" ? "" : "$";
+    return `<tr>
+      <td><strong>${s.symbol}</strong><br><small style="color:var(--text-secondary)">${s.name}</small></td>
+      <td class="num">${fmt(s.shares)}</td>
+      <td class="num">${cur}${fmt(s.purchase_price, 2)}</td>
+      <td class="num">${cur}${fmt(s.current_price, 2)}</td>
+      <td class="num">${cur}${fmt(s.current_value, 2)}</td>
+      <td class="num ${plClass(s.gain_loss)}">${cur}${s.gain_loss >= 0 ? "+" : ""}${fmt(s.gain_loss, 2)}</td>
+      <td class="num ${plClass(s.gain_loss_percent)}">${fmtPct(s.gain_loss_percent)}</td>
+      <td class="num ${plClass(s.change_percent)}">${fmtPct(s.change_percent)}</td>
+    </tr>`;
+  }).join("");
+
+  // Sortable columns
+  document.querySelectorAll("#holdings-table thead th").forEach(th => {
+    th.addEventListener("click", function() {
+      const col = this.dataset.col;
+      if (sortState.col === col) {
+        sortState.asc = !sortState.asc;
+      } else {
+        sortState.col = col;
+        sortState.asc = true;
+      }
+      const sorted = [...dashboardData.stocks].sort((a, b) => {
+        let va = a[col], vb = b[col];
+        if (typeof va === "string") {
+          return sortState.asc ? va.localeCompare(vb) : vb.localeCompare(va);
+        }
+        return sortState.asc ? va - vb : vb - va;
+      });
+      renderHoldings(sorted);
+      // Update arrows
+      document.querySelectorAll("#holdings-table thead th .sort-arrow").forEach(a => a.textContent = "");
+      this.querySelector(".sort-arrow").textContent = sortState.asc ? " \u25B2" : " \u25BC";
+    });
+  });
+}
+
+function renderActions(actions) {
+  const grid = document.getElementById("action-grid");
+  if (!actions || actions.length === 0) {
+    grid.innerHTML = '<div style="color:var(--text-secondary);padding:1rem;">現在アクション推奨はありません。</div>';
+    return;
+  }
+  grid.innerHTML = actions.map(a => {
+    const t = (a.type || "HOLD").toUpperCase();
+    const cls = t === "BUY" ? "buy" : t === "SELL" ? "sell" : "hold";
+    return `<div class="action-card ${cls}">
+      <span class="action-badge ${cls}">${t}</span>
+      ${a.symbol ? `<strong>${a.symbol}</strong> ${a.name || ""}` : ""}
+      <div class="reason">${a.reason || ""}</div>
+      ${a.trigger ? `<div class="trigger">Trigger: ${a.trigger}</div>` : ""}
+    </div>`;
+  }).join("");
+}
+
+function renderStrategy(strategy) {
+  if (!strategy) return;
+
+  // Overview
+  const overviewEl = document.getElementById("strategy-overview");
+  let overviewHtml = "";
+  if (strategy.market_status) {
+    overviewHtml += `<strong>市場概況:</strong> ${strategy.market_status}`;
+  }
+  if (strategy.key_risks && strategy.key_risks.length) {
+    overviewHtml += `<br><br><strong>主要リスク:</strong><ul>${strategy.key_risks.map(r => `<li>${r}</li>`).join("")}</ul>`;
+  }
+  if (strategy.key_trends && strategy.key_trends.length) {
+    overviewHtml += `<strong>主要トレンド:</strong><ul>${strategy.key_trends.map(t => `<li>${t}</li>`).join("")}</ul>`;
+  }
+  overviewEl.innerHTML = overviewHtml;
+
+  // Tabs
+  renderTabContent("tab-short", strategy.short_term);
+  renderTabContent("tab-medium", strategy.medium_term);
+  renderTabContent("tab-long", strategy.long_term);
+
+  // Tab switching
+  document.querySelectorAll(".tab-btn").forEach(btn => {
+    btn.addEventListener("click", function() {
+      document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
+      document.querySelectorAll(".tab-content").forEach(c => c.classList.remove("active"));
+      this.classList.add("active");
+      document.getElementById("tab-" + this.dataset.tab).classList.add("active");
+    });
+  });
+}
+
+function renderTabContent(id, items) {
+  const el = document.getElementById(id);
+  if (!items || items.length === 0) {
+    el.innerHTML = '<p style="color:var(--text-secondary);">データなし</p>';
+    return;
+  }
+  el.innerHTML = `<ul>${items.map(i => `<li>${i}</li>`).join("")}</ul>`;
+}
+
+function renderMonitoring(strategy) {
+  if (!strategy) return;
+  renderMonitorList("monitor-bubble", strategy.bubble_indicators);
+  renderMonitorList("monitor-positive", strategy.positive_signals);
+  renderMonitorList("monitor-risk", strategy.risk_signals);
+}
+
+function renderMonitorList(id, items) {
+  const el = document.getElementById(id);
+  if (!items || items.length === 0) {
+    el.innerHTML = '<li style="color:var(--text-secondary);">データなし</li>';
+    return;
+  }
+  el.innerHTML = items.map(i => `<li>${i}</li>`).join("");
+}
+
+function renderHistory(history) {
+  const tbody = document.getElementById("history-body");
+  if (!history || history.length === 0) {
+    tbody.innerHTML = '<tr><td colspan="7" style="text-align:center;color:var(--text-secondary);padding:1.5rem;">取引履歴なし</td></tr>';
+    return;
+  }
+  tbody.innerHTML = history.map(h => {
+    const cls = h.action === "BUY" ? "positive" : h.action === "SELL" ? "negative" : "";
+    return `<tr>
+      <td>${h.date}</td>
+      <td><span class="action-badge ${h.action.toLowerCase()}" style="font-size:0.7rem;">${h.action}</span></td>
+      <td><strong>${h.symbol}</strong><br><small>${h.name}</small></td>
+      <td class="num">${fmt(h.shares)}</td>
+      <td class="num">${fmt(h.price_per_share)}</td>
+      <td class="num">${fmt(h.total_amount)}</td>
+      <td>${h.reason}</td>
+    </tr>`;
+  }).join("");
+}
+</script>
+</body>
+</html>
