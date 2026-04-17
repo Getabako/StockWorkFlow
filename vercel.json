@@ -1,0 +1,11 @@
+{
+  "buildCommand": null,
+  "outputDirectory": "dashboard",
+  "framework": null,
+  "installCommand": null,
+  "devCommand": null,
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/", "destination": "/index.html" }
+  ]
+}
