@@ -327,23 +327,27 @@ td.num { text-align: right; font-family: 'Roboto', monospace; }
 
 .tab-bar {
   display: flex;
-  gap: 0;
+  gap: 0.3rem;
   margin-bottom: 0;
+  flex-wrap: wrap;
 }
 
 .tab-btn {
-  padding: 0.85rem 1.5rem;
+  padding: 0.8rem 1.6rem;
   border: 1px solid var(--border);
   border-bottom: none;
   background: #f1f5f9;
   cursor: pointer;
   font-size: 1rem;
-  font-weight: 500;
-  border-radius: 8px 8px 0 0;
+  font-weight: 600;
+  border-radius: 10px 10px 0 0;
   color: var(--text-secondary);
   transition: all 0.2s;
   letter-spacing: 0.04em;
+  position: relative;
 }
+
+.tab-btn:hover { background: #e0e7ef; color: var(--text-primary); }
 
 .tab-btn.active {
   background: var(--card-bg);
@@ -351,20 +355,103 @@ td.num { text-align: right; font-family: 'Roboto', monospace; }
   border-color: var(--border);
   font-weight: 700;
 }
+.tab-btn.active::after {
+  content: "";
+  position: absolute;
+  left: 14%; right: 14%;
+  top: 0.45rem;
+  height: 3px;
+  border-radius: 2px;
+  background: var(--primary);
+}
+.tab-btn[data-tab="medium"].active { color: #7c3aed; }
+.tab-btn[data-tab="medium"].active::after { background: #7c3aed; }
+.tab-btn[data-tab="long"].active { color: var(--success); }
+.tab-btn[data-tab="long"].active::after { background: var(--success); }
 
 .tab-content {
   background: var(--card-bg);
   border: 1px solid var(--border);
   border-radius: 0 var(--radius) var(--radius) var(--radius);
-  padding: 1.75rem;
+  padding: 1.5rem;
   box-shadow: var(--shadow);
   display: none;
 }
 
 .tab-content.active { display: block; }
 
-.tab-content ul { padding-left: 1.5rem; }
-.tab-content li { margin-bottom: 0.65rem; font-size: 1rem; line-height: 1.9; }
+.tab-content .tab-intro {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  padding: 0.85rem 1.1rem;
+  margin-bottom: 1.1rem;
+  background: linear-gradient(90deg, #eff6ff 0%, var(--card-bg) 70%);
+  border-radius: 8px;
+  border-left: 4px solid var(--primary);
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+}
+#tab-medium .tab-intro { background: linear-gradient(90deg, #f5f3ff 0%, var(--card-bg) 70%); border-left-color: #7c3aed; }
+#tab-long   .tab-intro { background: linear-gradient(90deg, #ecfdf5 0%, var(--card-bg) 70%); border-left-color: var(--success); }
+
+.tab-intro .term-badge {
+  flex-shrink: 0;
+  padding: 0.25rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #fff;
+  background: var(--primary);
+}
+#tab-medium .term-badge { background: #7c3aed; }
+#tab-long   .term-badge { background: var(--success); }
+
+.strategy-items { display: grid; gap: 0.7rem; }
+
+.strategy-item {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  padding: 0.85rem 1.1rem;
+  background: #fafbfc;
+  border-left: 4px solid var(--primary);
+  border-radius: 6px;
+  transition: transform 0.15s, box-shadow 0.15s, background 0.15s;
+}
+.strategy-item:hover {
+  transform: translateX(3px);
+  box-shadow: var(--shadow);
+  background: var(--card-bg);
+}
+
+#tab-medium .strategy-item { border-left-color: #7c3aed; }
+#tab-long   .strategy-item { border-left-color: var(--success); }
+
+.strategy-item .num {
+  flex-shrink: 0;
+  width: 28px; height: 28px;
+  border-radius: 6px;
+  display: flex; align-items: center; justify-content: center;
+  background: var(--primary);
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.85rem;
+  font-family: 'Roboto', sans-serif;
+}
+#tab-medium .strategy-item .num { background: #7c3aed; }
+#tab-long   .strategy-item .num { background: var(--success); }
+
+.strategy-item .body { flex: 1; line-height: 1.75; font-size: 0.97rem; }
+.strategy-item .label {
+  display: inline-block;
+  font-weight: 700;
+  color: var(--primary);
+  margin-right: 0.4rem;
+}
+#tab-medium .strategy-item .label { color: #7c3aed; }
+#tab-long   .strategy-item .label { color: var(--success); }
 
 /* Monitoring */
 .monitor-grid {
@@ -515,6 +602,12 @@ td.num { text-align: right; font-family: 'Roboto', monospace; }
           <div class="value" id="stock-count">--</div>
           <div class="sub">銘柄</div>
         </div>
+      </div>
+
+      <!-- Asset Value Timeline -->
+      <div class="chart-card timeline-card" style="margin-bottom: 2.5rem;">
+        <h3>資産推移</h3>
+        <div class="chart-wrapper" id="chart-timeline-wrapper"><canvas id="chart-timeline"></canvas></div>
       </div>
 
       <!-- Charts -->
@@ -682,6 +775,7 @@ function renderDashboard() {
   document.getElementById("stock-count").textContent = s.total_stocks;
 
   // Charts
+  renderTimelineChart(d.portfolio_value_history);
   renderAllocationChart(d.sector_allocation);
   renderPLChart(d.stocks);
 
@@ -699,6 +793,83 @@ function renderDashboard() {
 
   // History
   renderHistory(d.history);
+}
+
+function renderTimelineChart(history) {
+  const wrapper = document.getElementById("chart-timeline-wrapper");
+  if (!history || history.length === 0) {
+    wrapper.innerHTML = '<div class="chart-empty">資産推移データがまだありません。<br>日次スナップショット (date / total_value_jpy / total_gain_loss_jpy) を<br><code>portfolio_value_history</code> に追加すると、ここに折れ線グラフが表示されます。</div>';
+    return;
+  }
+  const sorted = [...history].sort((a, b) => a.date.localeCompare(b.date));
+  const labels = sorted.map(p => p.date);
+  const values = sorted.map(p => p.total_value_jpy);
+  const gains = sorted.map(p => p.total_gain_loss_jpy ?? null);
+
+  const ctx = document.getElementById("chart-timeline").getContext("2d");
+  new Chart(ctx, {
+    type: "line",
+    data: {
+      labels: labels,
+      datasets: [
+        {
+          label: "評価額 (JPY)",
+          data: values,
+          borderColor: "#2563eb",
+          backgroundColor: "rgba(37,99,235,0.12)",
+          fill: true,
+          tension: 0.3,
+          pointRadius: 2.5,
+          pointHoverRadius: 5,
+          borderWidth: 2.5,
+          yAxisID: "yValue",
+        },
+        {
+          label: "評価損益 (JPY)",
+          data: gains,
+          borderColor: "#10b981",
+          backgroundColor: "transparent",
+          borderDash: [5, 4],
+          tension: 0.3,
+          pointRadius: 2,
+          pointHoverRadius: 5,
+          borderWidth: 2,
+          yAxisID: "yGain",
+        }
+      ]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      interaction: { mode: "index", intersect: false },
+      plugins: {
+        legend: { position: "top" },
+        tooltip: {
+          callbacks: {
+            label: (ctx) => {
+              const v = ctx.parsed.y;
+              if (v === null) return `${ctx.dataset.label}: -`;
+              return `${ctx.dataset.label}: ¥${Math.round(v).toLocaleString()}`;
+            }
+          }
+        }
+      },
+      scales: {
+        x: { grid: { display: false } },
+        yValue: {
+          position: "left",
+          title: { display: true, text: "評価額 (JPY)" },
+          ticks: { callback: (v) => "¥" + (v/10000).toFixed(0) + "万" }
+        },
+        yGain: {
+          position: "right",
+          title: { display: true, text: "損益 (JPY)" },
+          grid: { drawOnChartArea: false },
+          ticks: { callback: (v) => "¥" + (v/10000).toFixed(0) + "万" }
+        }
+      }
+    }
+  });
 }
 
 function renderAllocationChart(sectors) {
@@ -933,7 +1104,28 @@ function renderTabContent(id, items) {
     el.innerHTML = '<p style="color:var(--text-secondary);">データなし</p>';
     return;
   }
-  el.innerHTML = `<ul>${items.map(i => `<li>${i}</li>`).join("")}</ul>`;
+  const intros = {
+    "tab-short":  { term: "SHORT",  label: "短期戦略", desc: "数週間〜3ヶ月先のポジション指針" },
+    "tab-medium": { term: "MEDIUM", label: "中期戦略", desc: "3〜12ヶ月のトレンドに沿った方針" },
+    "tab-long":   { term: "LONG",   label: "長期戦略", desc: "1年以上のコア保有・構造変化への対応" },
+  };
+  const intro = intros[id];
+  const introHtml = intro
+    ? `<div class="tab-intro"><span class="term-badge">${intro.term}</span><span><strong>${intro.label}</strong> — ${intro.desc}</span></div>`
+    : "";
+  const itemsHtml = items.map((i, idx) => {
+    const sep = i.indexOf("：");
+    let bodyHtml;
+    if (sep > 0 && sep < 40) {
+      const label = i.substring(0, sep);
+      const detail = i.substring(sep + 1).trim();
+      bodyHtml = `<span class="label">${label}</span>${detail}`;
+    } else {
+      bodyHtml = i;
+    }
+    return `<div class="strategy-item"><div class="num">${idx + 1}</div><div class="body">${bodyHtml}</div></div>`;
+  }).join("");
+  el.innerHTML = introHtml + `<div class="strategy-items">${itemsHtml}</div>`;
 }
 
 function renderMonitoring(strategy) {
