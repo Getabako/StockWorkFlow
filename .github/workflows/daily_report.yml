@@ -136,6 +136,7 @@ jobs:
           git add report/daily/
           git add inputs/daily_report_${{ env.REPORT_DATE }}.yml
           git add dashboard/dashboard_data.json
+          git add data/portfolio_value_history.json
           git diff --staged --quiet || git commit -m "Add daily reports for ${{ env.REPORT_DATE }} (automated)"
           git pull --rebase origin main || true
           git push origin main

@@ -20,6 +20,7 @@ ACCOUNT_FILE = os.path.join(BASE_DIR, "portfolio", "account.json")
 ACTION_LOG_FILE = os.path.join(BASE_DIR, "data", "action_log.json")
 INSIGHTS_FILE = os.path.join(BASE_DIR, "data", "ai_industry_insights.json")
 HISTORY_CSV = os.path.join(BASE_DIR, "portfolio", "history.csv")
+VALUE_HISTORY_FILE = os.path.join(BASE_DIR, "data", "portfolio_value_history.json")
 
 # 出力ファイルパス
 OUTPUT_FILE = os.path.join(BASE_DIR, "dashboard", "dashboard_data.json")
@@ -306,6 +307,40 @@ def build_history(history_csv):
     return history
 
 
+def update_value_history(summary, today=None):
+    """日次スナップショットを永続履歴に追記/更新して返す。同日分があれば上書き。"""
+    today = today or datetime.now().strftime("%Y-%m-%d")
+    history = load_json(VALUE_HISTORY_FILE, [])
+    if not isinstance(history, list):
+        history = []
+
+    snapshot = {
+        "date": today,
+        "total_purchase_jpy": summary.get("total_purchase_jpy", 0),
+        "total_value_jpy": summary.get("total_value_jpy", 0),
+        "total_gain_loss_jpy": summary.get("total_gain_loss_jpy", 0),
+        "total_gain_loss_pct": summary.get("total_gain_loss_pct", 0),
+        "source": "daily_auto",
+    }
+
+    replaced = False
+    for i, e in enumerate(history):
+        if e.get("date") == today:
+            history[i] = snapshot
+            replaced = True
+            break
+    if not replaced:
+        history.append(snapshot)
+
+    history.sort(key=lambda x: x.get("date", ""))
+
+    os.makedirs(os.path.dirname(VALUE_HISTORY_FILE), exist_ok=True)
+    with open(VALUE_HISTORY_FILE, "w", encoding="utf-8") as f:
+        json.dump(history, f, ensure_ascii=False, indent=2)
+
+    return history
+
+
 def main():
     print("=" * 60)
     print("Dashboard Data Generator")
@@ -347,6 +382,11 @@ def main():
     print("Building trade history...")
     history = build_history(history_csv)
 
+    # 7.5 資産価値スナップショットの更新
+    print("Updating portfolio value history...")
+    value_history = update_value_history(summary)
+    print(f"  Value history: {len(value_history)} snapshots")
+
     # 8. fetch_time の取得
     fetch_time = stock_prices.get("fetch_time", "")
 
@@ -360,6 +400,7 @@ def main():
         "actions": actions,
         "strategy": strategy,
         "history": history,
+        "portfolio_value_history": value_history,
     }
 
     # 10. 出力
