@@ -1,321 +1,271 @@
 {
-  "generated_at": "2026-04-17T10:09:10.895280",
-  "data_fetch_time": "",
+  "generated_at": "2026-04-17T18:02:00",
+  "data_fetch_time": "2026-04-16",
+  "data_source": "大和証券 保有証券一覧 (2026/04/16現在)",
   "summary": {
-    "total_value_jpy": 3802965,
-    "total_purchase_jpy": 3802965,
-    "total_gain_loss_jpy": 0,
-    "total_gain_loss_pct": 0.0,
+    "total_value_jpy": 18025564,
+    "total_purchase_jpy": 13045410,
+    "total_gain_loss_jpy": 4980154,
+    "total_gain_loss_pct": 38.18,
     "buying_power": 1492111,
     "buying_power_currency": "JPY",
-    "total_stocks": 8,
+    "total_stocks": 12,
     "usd_jpy_rate": 150.0
   },
   "stocks": [
     {
-      "symbol": "7366.T",
-      "name": "LITALICO",
-      "shares": 300,
-      "purchase_price": 927.38,
-      "current_price": 927.38,
-      "currency": "JPY",
-      "current_value": 278214.0,
-      "purchase_value": 278214.0,
-      "gain_loss": 0,
-      "gain_loss_percent": 0,
-      "change": 0,
-      "change_percent": 0,
-      "sector": "教育テック"
-    },
-    {
       "symbol": "NVDA",
       "name": "NVIDIA",
       "shares": 67,
-      "purchase_price": 16.01,
-      "current_price": 16.01,
-      "currency": "USD",
-      "current_value": 1072.67,
-      "purchase_value": 1072.67,
-      "gain_loss": 0,
-      "gain_loss_percent": 0,
+      "purchase_price": 1797,
+      "current_price": 31585,
+      "currency": "JPY",
+      "current_value": 2116163,
+      "purchase_value": 120389,
+      "gain_loss": 1995774,
+      "gain_loss_percent": 1657.77,
       "change": 0,
       "change_percent": 0,
-      "sector": "AI半導体"
-    },
-    {
-      "symbol": "AVGO",
-      "name": "BROADCOM INC",
-      "shares": 15,
-      "purchase_price": 374.94,
-      "current_price": 374.94,
-      "currency": "USD",
-      "current_value": 5624.1,
-      "purchase_value": 5624.1,
-      "gain_loss": 0,
-      "gain_loss_percent": 0,
-      "change": 0,
-      "change_percent": 0,
-      "sector": "AI半導体"
+      "sector": "AI半導体",
+      "account": "主",
+      "category": "外国株式"
     },
     {
       "symbol": "GOOG",
       "name": "ALPHABET INC-C",
-      "shares": 38,
-      "purchase_price": 299.82,
-      "current_price": 299.82,
-      "currency": "USD",
-      "current_value": 11393.16,
-      "purchase_value": 11393.16,
-      "gain_loss": 0,
-      "gain_loss_percent": 0,
+      "shares": 43,
+      "purchase_price": 47370,
+      "current_price": 53120,
+      "currency": "JPY",
+      "current_value": 2284182,
+      "purchase_value": 2036925,
+      "gain_loss": 247257,
+      "gain_loss_percent": 12.13,
       "change": 0,
       "change_percent": 0,
-      "sector": "クラウド/広告"
+      "sector": "クラウド/広告",
+      "account": "主",
+      "category": "外国株式"
     },
     {
-      "symbol": "TSLA",
-      "name": "TESLA INC",
-      "shares": 1,
-      "purchase_price": 264.97,
-      "current_price": 264.97,
-      "currency": "USD",
-      "current_value": 264.97,
-      "purchase_value": 264.97,
-      "gain_loss": 0,
-      "gain_loss_percent": 0,
+      "symbol": "AVGO",
+      "name": "BROADCOM INC",
+      "shares": 17,
+      "purchase_price": 59888,
+      "current_price": 63007,
+      "currency": "JPY",
+      "current_value": 1071120,
+      "purchase_value": 1018104,
+      "gain_loss": 53016,
+      "gain_loss_percent": 5.20,
       "change": 0,
       "change_percent": 0,
-      "sector": "EV/自動運転"
-    },
-    {
-      "symbol": "INTC",
-      "name": "Intel Corporation",
-      "shares": 14,
-      "purchase_price": 28.16,
-      "current_price": 28.16,
-      "currency": "USD",
-      "current_value": 394.24,
-      "purchase_value": 394.24,
-      "gain_loss": 0,
-      "gain_loss_percent": 0,
-      "change": 0,
-      "change_percent": 0,
-      "sector": "AI半導体"
-    },
-    {
-      "symbol": "QCOM",
-      "name": "QUALCOMM INC",
-      "shares": 2,
-      "purchase_price": 163.84,
-      "current_price": 163.84,
-      "currency": "USD",
-      "current_value": 327.68,
-      "purchase_value": 327.68,
-      "gain_loss": 0,
-      "gain_loss_percent": 0,
-      "change": 0,
-      "change_percent": 0,
-      "sector": "AI半導体"
+      "sector": "AI半導体",
+      "account": "主",
+      "category": "外国株式"
     },
     {
       "symbol": "AMD",
       "name": "AMD",
       "shares": 18,
-      "purchase_price": 245.64,
-      "current_price": 245.64,
-      "currency": "USD",
-      "current_value": 4421.5199999999995,
-      "purchase_value": 4421.5199999999995,
-      "gain_loss": 0,
-      "gain_loss_percent": 0,
+      "purchase_price": 38281,
+      "current_price": 40995,
+      "currency": "JPY",
+      "current_value": 737903,
+      "purchase_value": 689066,
+      "gain_loss": 48837,
+      "gain_loss_percent": 7.08,
       "change": 0,
       "change_percent": 0,
-      "sector": "AI半導体"
+      "sector": "AI半導体",
+      "account": "主",
+      "category": "外国株式"
+    },
+    {
+      "symbol": "7366.T",
+      "name": "LITALICO",
+      "shares": 300,
+      "purchase_price": 927.38,
+      "current_price": 1250,
+      "currency": "JPY",
+      "current_value": 375000,
+      "purchase_value": 278213,
+      "gain_loss": 96787,
+      "gain_loss_percent": 34.78,
+      "change": 0,
+      "change_percent": 0,
+      "sector": "教育テック",
+      "account": "主",
+      "category": "現物株式"
+    },
+    {
+      "symbol": "INTC",
+      "name": "インテル コープ",
+      "shares": 14,
+      "purchase_price": 4444,
+      "current_price": 10314,
+      "currency": "JPY",
+      "current_value": 144392,
+      "purchase_value": 62220,
+      "gain_loss": 82172,
+      "gain_loss_percent": 132.06,
+      "change": 0,
+      "change_percent": 0,
+      "sector": "AI半導体",
+      "account": "主",
+      "category": "外国株式"
+    },
+    {
+      "symbol": "TSLA",
+      "name": "TESLA INC",
+      "shares": 1,
+      "purchase_price": 38271,
+      "current_price": 62249,
+      "currency": "JPY",
+      "current_value": 62249,
+      "purchase_value": 38271,
+      "gain_loss": 23978,
+      "gain_loss_percent": 62.65,
+      "change": 0,
+      "change_percent": 0,
+      "sector": "EV/自動運転",
+      "account": "主",
+      "category": "外国株式"
+    },
+    {
+      "symbol": "QCOM",
+      "name": "QUALCOMM INC",
+      "shares": 2,
+      "purchase_price": 23488,
+      "current_price": 21131,
+      "currency": "JPY",
+      "current_value": 42262,
+      "purchase_value": 46975,
+      "gain_loss": -4713,
+      "gain_loss_percent": -10.03,
+      "change": 0,
+      "change_percent": 0,
+      "sector": "AI半導体",
+      "account": "主",
+      "category": "外国株式"
+    },
+    {
+      "symbol": "6016884",
+      "name": "ネクストウィン H無 再",
+      "shares": 1371407,
+      "purchase_price": 2006,
+      "current_price": 3055,
+      "currency": "JPY",
+      "current_value": 4189648,
+      "purchase_value": 2751709,
+      "gain_loss": 1437939,
+      "gain_loss_percent": 52.25,
+      "change": 0,
+      "change_percent": 0,
+      "sector": "テーマ型投信",
+      "account": "主",
+      "category": "投資信託"
+    },
+    {
+      "symbol": "6006846",
+      "name": "AB米国成長A",
+      "shares": 983431,
+      "purchase_price": 3661,
+      "current_price": 4125,
+      "currency": "JPY",
+      "current_value": 4056456,
+      "purchase_value": 3600000,
+      "gain_loss": 456456,
+      "gain_loss_percent": 12.67,
+      "change": 0,
+      "change_percent": 0,
+      "sector": "米国成長株投信",
+      "account": "NISA",
+      "category": "投資信託"
+    },
+    {
+      "symbol": "6006821",
+      "name": "SMAMベトナム株式",
+      "shares": 1040257,
+      "purchase_price": 1731,
+      "current_price": 2152,
+      "currency": "JPY",
+      "current_value": 2238529,
+      "purchase_value": 1800000,
+      "gain_loss": 438529,
+      "gain_loss_percent": 24.36,
+      "change": 0,
+      "change_percent": 0,
+      "sector": "新興国株式投信",
+      "account": "NISA",
+      "category": "投資信託"
+    },
+    {
+      "symbol": "6006884",
+      "name": "ネクストウィン H無",
+      "shares": 231640,
+      "purchase_price": 2606,
+      "current_price": 3055,
+      "currency": "JPY",
+      "current_value": 707660,
+      "purchase_value": 603538,
+      "gain_loss": 104122,
+      "gain_loss_percent": 17.25,
+      "change": 0,
+      "change_percent": 0,
+      "sector": "テーマ型投信",
+      "account": "主",
+      "category": "投資信託"
     }
   ],
   "sector_allocation": [
     {
+      "sector": "テーマ型投信",
+      "value_jpy": 4897308,
+      "percentage": 27.2
+    },
+    {
+      "sector": "米国成長株投信",
+      "value_jpy": 4056456,
+      "percentage": 22.5
+    },
+    {
       "sector": "AI半導体",
-      "value_jpy": 1776032,
-      "percentage": 46.7
+      "value_jpy": 4111840,
+      "percentage": 22.8
     },
     {
       "sector": "クラウド/広告",
-      "value_jpy": 1708974,
-      "percentage": 44.9
+      "value_jpy": 2284182,
+      "percentage": 12.7
+    },
+    {
+      "sector": "新興国株式投信",
+      "value_jpy": 2238529,
+      "percentage": 12.4
     },
     {
       "sector": "教育テック",
-      "value_jpy": 278214,
-      "percentage": 7.3
+      "value_jpy": 375000,
+      "percentage": 2.1
     },
     {
       "sector": "EV/自動運転",
-      "value_jpy": 39746,
-      "percentage": 1.0
+      "value_jpy": 62249,
+      "percentage": 0.3
     }
   ],
-  "actions": [
-    {
-      "type": "HOLD",
-      "symbol": "",
-      "name": "",
-      "reason": "NVIDIA保有継続（AI経済圏の中核、循環経済圏のハブ）",
-      "trigger": ""
-    },
-    {
-      "type": "BUY",
-      "symbol": "",
-      "name": "",
-      "reason": "Broadcom優先検討（OpenAI、Google、Metaとのカスタムチップ需要、中長期成長性高い）",
-      "trigger": ""
-    },
-    {
-      "type": "BUY",
-      "symbol": "",
-      "name": "",
-      "reason": "AMD検討（OpenAI大型契約、NVIDIA対抗馬としての地位確立）",
-      "trigger": ""
-    },
-    {
-      "type": "BUY",
-      "symbol": "",
-      "name": "",
-      "reason": "Google検討（垂直統合の優位性、Anthropic支援、財務安定性）",
-      "trigger": ""
-    },
-    {
-      "type": "BUY",
-      "symbol": "",
-      "name": "",
-      "reason": "Samsung/SK Hynix検討（OpenAI経済圏への参入、メモリ需要増加）",
-      "trigger": ""
-    },
-    {
-      "type": "BUY",
-      "symbol": "",
-      "name": "",
-      "reason": "SoftBank追加検討（AI×ロボット戦略の進展監視）",
-      "trigger": ""
-    },
-    {
-      "type": "BUY",
-      "symbol": "",
-      "name": "",
-      "reason": "日立検討（日本国内AI市場のゲートキーパー）",
-      "trigger": ""
-    },
-    {
-      "type": "BUY",
-      "symbol": "",
-      "name": "",
-      "reason": "セクター分散: AI恩恵セクター（医療テック、宇宙、EV、製造業DX）への分散検討",
-      "trigger": ""
-    },
-    {
-      "type": "BUY",
-      "symbol": "",
-      "name": "",
-      "reason": "Intuitive Surgical検討（医療ロボット市場の支配的地位、安定収益モデル）",
-      "trigger": ""
-    },
-    {
-      "type": "BUY",
-      "symbol": "",
-      "name": "",
-      "reason": "Rocket Lab検討（宇宙商用化の成長株、中小型衛星需要の拡大）",
-      "trigger": ""
-    },
-    {
-      "type": "HOLD",
-      "symbol": "",
-      "name": "",
-      "reason": "予算制約内（¥3M≈$20K）で2-4銘柄に分散投資",
-      "trigger": ""
-    }
-  ],
+  "actions": [],
   "strategy": {
-    "market_status": "AI業界は決勝リーグ段階に突入。NVIDIAとOpenAIを中心とした循環型経済圏が1兆ドル（約140兆円）規模に成長。OpenAI単体で評価額5,000億ドル（わずか1年で10倍）に達し、その動向が市場全体を左右する「OpenAI指標（OpenAI Index）」が誕生",
-    "key_risks": [
-      "1990年代ドットコムバブルや2001年通信バブルに似たクロスセル経済圏による「見せかけの成長」",
-      "OpenAIの財務的脆弱性（巨額プロジェクトを推進中だが収益は限定的、借金依存）",
-      "多くのAIスタートアップは2030年まで黒字化困難。循環経済圏に入れない企業は資金枯渇状態",
-      "システム的崩壊リスク：OpenAIが失敗した場合、関連企業が連鎖的に打撃を受ける可能性",
-      "地政学的リスクによる半導体供給制約"
-    ],
-    "key_trends": [
-      "NVIDIAとOpenAIがVCとして機能し、業界の依存関係を構築（NVIDIAはOpenAIに1,000億ドル投資）",
-      "OpenAIの提携発表だけで関連企業の時価総額が6,300億ドル（約90兆円）増加する影響力",
-      "OpenAIがNVIDIA依存脱却を図り、Broadcomとカスタムチップ開発、AMDと大型契約（6GW分のGPU）",
-      "OpenAIがグローバルサプライチェーン構築（Samsung、SK Hynix、日立など各国企業と提携）",
-      "Anthropic（元OpenAIメンバー創業）がB2B市場でOpenAIを上回る実績、コーディング分野で40%シェア",
-      "AI×ロボット戦略による新市場の創出",
-      "カスタムチップによるコスト削減競争（OpenAIは3,500億ドル以上のコスト削減を狙う）",
-      "AI×ロボット戦略の現実化（Tesla Optimus, Figure AI, Boston Dynamics）",
-      "医療AIの規制緩和と実用化加速（FDA承認AI医療機器が急増）",
-      "宇宙産業の商用化拡大（SpaceX評価額8,000億ドル超、Rocket Lab急成長）",
-      "EV・自動運転のAI依存度上昇（Tesla FSD、Waymo拡大）",
-      "スマートファクトリー: Industry 4.0によるAI×製造業の統合加速"
-    ],
-    "short_term": [
-      "NVIDIAとBroadcom：OpenAI経済圏の中核として堅調、Broadcomは特にカスタムチップ需要で急成長",
-      "AMD：OpenAI大型契約で短期的に上昇期待、NVIDIA対抗馬としての地位確立",
-      "Samsung、SK Hynix：OpenAI提携発表で株価急騰、メモリ需要増加トレンド継続",
-      "Google、Microsoft：Anthropic支援やOpenAI依存脱却で再評価の可能性",
-      "半導体代替銘柄：地政学リスクで一時的上昇の可能性",
-      "クロスセル経済圏：バブル崩壊リスクに注意、OpenAI指標の動向を注視"
-    ],
-    "medium_term": [
-      "Broadcom：カスタムチップ市場のリーダーとして中長期成長（OpenAI、Google、Metaなど）",
-      "Google：垂直統合の優位性が顕在化、Anthropic経由でB2B市場も強化",
-      "SoftBank：AI×ロボット戦略の進展次第で大幅上昇",
-      "Arm：ロボット・IoT市場拡大で恩恵",
-      "日立：日本国内のAI導入ゲートキーパーとして成長",
-      "半導体装置メーカー（ASML等）：カスタムチップ需要増で恩恵",
-      "Intuitive Surgical：AI手術支援の普及加速で安定成長",
-      "Rocket Lab：宇宙商用化の波に乗る成長株",
-      "キーエンス・ファナック：Industry 4.0需要でスマートファクトリー関連が拡大"
-    ],
-    "long_term": [
-      "AI経済圏の健全性評価が最重要（OpenAIの財務状況、システム崩壊リスク）",
-      "2030年までのキャッシュフロー黒字化達成企業に注目",
-      "地政学リスク分散された企業が優位（ASML、Broadcomなど）",
-      "Anthropic vs OpenAI競争の行方（B2B市場の覇権争い）",
-      "垂直統合型企業（Google）が最終的に有利になる可能性",
-      "AI恩恵セクターへの分散投資（医療テック、宇宙、EV、製造業DX）が長期リターンを安定化",
-      "Tesla：EV+自動運転+ロボティクスの三位一体戦略の成否が鍵",
-      "宇宙経済：2040年に1兆ドル市場へ成長予測（Morgan Stanley）"
-    ],
-    "bubble_indicators": [
-      "OpenAI指標の過熱度（提携発表による株価急騰が持続可能か）",
-      "主要AI企業間のクロスセル取引比率（1兆ドル経済圏の実態）",
-      "OpenAIの財務状況（収益vs借金、プロジェクト進捗）",
-      "スタートアップのバーンレート（資金燃焼率、2030年黒字化の現実性）",
-      "循環経済圏外のスタートアップの資金枯渇状況"
-    ],
-    "positive_signals": [
-      "実需に基づく大型契約（非AI企業からの受注、Walmart、Spotifyなど）",
-      "Broadcomのカスタムチップによる実質的なコスト削減実績",
-      "Anthropicの成長（B2B市場での実績拡大）",
-      "Samsung、SK Hynix、日立など非米国企業の参入拡大",
-      "Googleの垂直統合戦略の成果",
-      "ロボット×AI統合製品の市場浸透度",
-      "FDA承認AI医療機器の増加ペース",
-      "SpaceX/Rocket Labの打ち上げ頻度と商用契約",
-      "Tesla FSD普及率とOptimus開発マイルストーン",
-      "スマートファクトリー導入企業の生産性改善データ"
-    ],
-    "risk_signals": [
-      "OpenAIの財務悪化や主要プロジェクトの遅延・失敗",
-      "Microsoftの脱OpenAI加速（独占的地位の完全崩壊）",
-      "NVIDIAの決算悪化（依存関係の連鎖崩壊の兆候）",
-      "循環経済圏の崩壊兆候（相互取引の減速）",
-      "Nexperia出荷停止の実現化",
-      "主要AI企業の決算悪化",
-      "EV販売鈍化・補助金削減による需要減退",
-      "宇宙関連企業の打ち上げ失敗・遅延",
-      "医療AI規制強化による承認遅延"
-    ]
+    "market_status": "",
+    "key_risks": [],
+    "key_trends": [],
+    "short_term": [],
+    "medium_term": [],
+    "long_term": [],
+    "bubble_indicators": [],
+    "positive_signals": [],
+    "risk_signals": []
   },
   "history": [
     {
@@ -324,8 +274,8 @@
       "symbol": "AVGO",
       "name": "BROADCOM INC",
       "shares": 5,
-      "price_per_share": 53665.0,
-      "total_amount": 268325.0,
+      "price_per_share": 53665,
+      "total_amount": 268325,
       "reason": "レポート推奨"
     },
     {
@@ -334,8 +284,8 @@
       "symbol": "GOOG",
       "name": "ALPHABET INC-C",
       "shares": 28,
-      "price_per_share": 45545.0,
-      "total_amount": 1275260.0,
+      "price_per_share": 45545,
+      "total_amount": 1275260,
       "reason": "レポート推奨"
     },
     {
@@ -344,8 +294,8 @@
       "symbol": "AMD",
       "name": "AMD",
       "shares": 18,
-      "price_per_share": 38281.0,
-      "total_amount": 689058.0,
+      "price_per_share": 38281,
+      "total_amount": 689058,
       "reason": "レポート推奨"
     }
   ]
