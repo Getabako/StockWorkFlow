@@ -276,16 +276,54 @@ td.num { text-align: right; font-family: 'Roboto', monospace; }
 .strategy-section { margin-bottom: 2rem; }
 
 .strategy-overview {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.strategy-block {
   background: var(--card-bg);
   border-radius: var(--radius);
-  padding: 1.75rem;
+  padding: 1.4rem 1.6rem;
   box-shadow: var(--shadow);
-  margin-bottom: 1rem;
+  border-left: 5px solid var(--primary);
   font-size: 1rem;
-  line-height: 2;
+  line-height: 1.9;
 }
-.strategy-overview ul { padding-left: 1.5rem; margin-top: 0.5rem; }
-.strategy-overview li { margin-bottom: 0.4rem; }
+
+.strategy-block.market  { border-left-color: var(--secondary); background: linear-gradient(90deg, #f0f9ff 0%, var(--card-bg) 40%); }
+.strategy-block.risks   { border-left-color: var(--danger);    background: linear-gradient(90deg, #fef2f2 0%, var(--card-bg) 40%); }
+.strategy-block.trends  { border-left-color: var(--success);   background: linear-gradient(90deg, #ecfdf5 0%, var(--card-bg) 40%); }
+
+.strategy-block h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.7rem;
+  letter-spacing: 0.05em;
+  padding-bottom: 0.45rem;
+  border-bottom: 1px dashed var(--border);
+}
+
+.strategy-block.market  h4 { color: var(--secondary); }
+.strategy-block.risks   h4 { color: var(--danger); }
+.strategy-block.trends  h4 { color: var(--success); }
+
+.strategy-block p { margin: 0; }
+.strategy-block ul { padding-left: 1.3rem; margin-top: 0.3rem; list-style: none; }
+.strategy-block li { margin-bottom: 0.55rem; position: relative; padding-left: 0.8rem; }
+.strategy-block li::before {
+  content: "";
+  position: absolute;
+  left: 0; top: 0.75em;
+  width: 6px; height: 6px; border-radius: 50%;
+  background: currentColor;
+  opacity: 0.6;
+}
+.strategy-block.market  li { color: var(--text-primary); }
+.strategy-block.market  li::before { background: var(--secondary); opacity: 1; }
+.strategy-block.risks   li::before { background: var(--danger);    opacity: 1; }
+.strategy-block.trends  li::before { background: var(--success);   opacity: 1; }
 
 .tab-bar {
   display: flex;
@@ -339,24 +377,49 @@ td.num { text-align: right; font-family: 'Roboto', monospace; }
 .monitor-card {
   background: var(--card-bg);
   border-radius: var(--radius);
-  padding: 1.75rem;
+  padding: 1.5rem 1.6rem 1.75rem;
   box-shadow: var(--shadow);
+  border-top: 4px solid var(--border);
+  position: relative;
 }
+
+.monitor-card.bubble      { border-top-color: var(--warning); background: linear-gradient(180deg, #fffbeb 0%, var(--card-bg) 55%); }
+.monitor-card.positive-sig{ border-top-color: var(--success); background: linear-gradient(180deg, #ecfdf5 0%, var(--card-bg) 55%); }
+.monitor-card.risk-sig    { border-top-color: var(--danger);  background: linear-gradient(180deg, #fef2f2 0%, var(--card-bg) 55%); }
 
 .monitor-card h3 {
   font-size: 1.1rem;
   margin-bottom: 1rem;
   padding-bottom: 0.6rem;
-  border-bottom: 3px solid var(--border);
+  border-bottom: 2px solid var(--border);
   letter-spacing: 0.04em;
+  font-weight: 700;
 }
 
-.monitor-card.bubble h3 { border-bottom-color: var(--warning); }
-.monitor-card.positive-sig h3 { border-bottom-color: var(--success); }
-.monitor-card.risk-sig h3 { border-bottom-color: var(--danger); }
+.monitor-card.bubble h3       { border-bottom-color: var(--warning); color: #b45309; }
+.monitor-card.positive-sig h3 { border-bottom-color: var(--success); color: #047857; }
+.monitor-card.risk-sig h3     { border-bottom-color: var(--danger);  color: #b91c1c; }
 
-.monitor-card ul { padding-left: 1.25rem; }
-.monitor-card li { font-size: 0.95rem; margin-bottom: 0.55rem; color: var(--text-primary); line-height: 1.8; }
+.monitor-card ul { padding-left: 0; list-style: none; }
+.monitor-card li {
+  font-size: 0.95rem;
+  margin-bottom: 0.6rem;
+  color: var(--text-primary);
+  line-height: 1.75;
+  position: relative;
+  padding-left: 1.1rem;
+}
+.monitor-card li::before {
+  content: "";
+  position: absolute;
+  left: 0; top: 0.7em;
+  width: 7px; height: 7px;
+  border-radius: 2px;
+  background: var(--border);
+}
+.monitor-card.bubble       li::before { background: var(--warning); }
+.monitor-card.positive-sig li::before { background: var(--success); }
+.monitor-card.risk-sig     li::before { background: var(--danger); }
 
 /* History */
 .history-table { margin-bottom: 2rem; }
@@ -838,13 +901,13 @@ function renderStrategy(strategy) {
   const overviewEl = document.getElementById("strategy-overview");
   let overviewHtml = "";
   if (strategy.market_status) {
-    overviewHtml += `<strong>市場概況:</strong> ${strategy.market_status}`;
+    overviewHtml += `<div class="strategy-block market"><h4>市場概況</h4><p>${strategy.market_status}</p></div>`;
   }
   if (strategy.key_risks && strategy.key_risks.length) {
-    overviewHtml += `<br><br><strong>主要リスク:</strong><ul>${strategy.key_risks.map(r => `<li>${r}</li>`).join("")}</ul>`;
+    overviewHtml += `<div class="strategy-block risks"><h4>主要リスク</h4><ul>${strategy.key_risks.map(r => `<li>${r}</li>`).join("")}</ul></div>`;
   }
   if (strategy.key_trends && strategy.key_trends.length) {
-    overviewHtml += `<strong>主要トレンド:</strong><ul>${strategy.key_trends.map(t => `<li>${t}</li>`).join("")}</ul>`;
+    overviewHtml += `<div class="strategy-block trends"><h4>主要トレンド</h4><ul>${strategy.key_trends.map(t => `<li>${t}</li>`).join("")}</ul></div>`;
   }
   overviewEl.innerHTML = overviewHtml;
 
